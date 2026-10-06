@@ -9,12 +9,16 @@
 
 ## Status projektu (stan: 2026-10-06)
 
-**Faza: atlas treści kompletny (132 techniki).** Strona buduje się bez błędów
-(`npm run build` → `tsc -b && vite build`), ma 5 tras (w tym 12 endpointów
-stopni `/kyu/…`), dane w `src/data/*.json` (techniki w 7 filtrach kategorii,
-wymagania linkowane automatycznie, ilustracje SVG per klucz infografii +
-gotowość na wideo z pola `video`). Przed nami zadania z `TODO.md`
-(m.in. weryfikacja treści ze sensei, brakujące kata Saiha/Seienchin).
+**Faza: atlas treści kompletny (132 techniki) + audyt danych.** Strona buduje
+się bez błędów (`npm run build` → `tsc -b && vite build`), ma 5 tras (w tym
+12 endpointów stopni `/kyu/…`), dane w `src/data/*.json` (techniki w 7
+filtrach kategorii, wymagania linkowane automatycznie, ilustracje SVG per
+klucz infografii + gotowość na wideo z pola `video`). Odtwarzalny audyt
+danych: `npm run audit` → `RAPORT.md` (0 problemów krytycznych; otwarte:
+31 mismatchów `levels[]`↔wymagania = P0.3, kolizja aliasu = P0.4).
+Nawigacja mobilna: burger w prawym górnym rogu (≤980px) z panelem sekcji.
+Przed nami zadania z `TODO.md` (m.in. weryfikacja treści ze sensei,
+brakujące kata Saiha/Seienchin).
 
 Poprzedni stan (2026-10-05, commit `fa354c3`): wersja first — jednostronicowy
 one-pager bez routera.
@@ -103,6 +107,22 @@ one-pager bez routera.
 ---
 
 ## Dziennik zmian
+
+### 2026-10-06 — Raport audytu danych, reorganizacja TODO i mobilna nawigacja
+- Zmienione pliki: `scripts/audit-danych.mjs` (nowy skrypt audytu),
+  `RAPORT.md` (generowany), `TODO.md` (nowe P0.3/P0.4/P1.7/P1.8, kolejność =
+  priorytet, nota o stałych ID), `src/components/Header.tsx` (burger +
+  panel `#site-menu`), `src/components/Icon.tsx` (ikona `menu`),
+  `src/index.css` (style ≤980px), `package.json` (skrypt `audit`).
+- Rezultat: audyt read-only `npm run audit` → `RAPORT.md`: 0 problemów
+  krytycznych, 31 mismatchów `levels[]`↔wymagania (→ P0.3), 1 kolizja aliasu
+  „kumite-turniejowe" ×7 technik (→ P0.4), linkowanie 42/81, klasyfikacja 39
+  nielinkowanych; na telefonie przycisk ☰ w prawym górnym rogu (sticky
+  header) rozwija panel ze Stopniami/Technikami/Słownikiem/Dojo-kun + CTA,
+  zamknięcie: link / Escape / klik poza / zmiana trasy.
+- Weryfikacja: `npm run build` ✅, `npm run audit` ✅ (exit 0),
+  `vite preview` 200 na `/`, `/techniki`, `/slownik`, `/kyu/9` ✅,
+  render-check Headera (toggle/aria/nav/CTA/ikona) ✅.
 
 ### 2026-10-06 — Krótkie aliasy: linkowanie wymagań 42/81
 - Zmienione pliki: `src/data/techniques.json` (16 krótkich aliasów:

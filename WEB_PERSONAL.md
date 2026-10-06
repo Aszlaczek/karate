@@ -33,6 +33,7 @@ npm install        # instalacja zależności
 npm run dev        # dev server (Vite)
 npm run build      # tsc -b && vite build -> dist/   ← WERYFIKACJA OBOWIĄZKOWA
 npm run preview    # podgląd builda z dist/ (SPA fallback działa dla tras)
+npm run audit      # audyt danych -> RAPORT.md (read-only, exit 1 przy problemach)
 ```
 
 **Po każdej edycji kodu uruchom `npm run build`.** Build musi przechodzić bez
@@ -73,6 +74,8 @@ src/
 old_src/                  # ARCHIWUM starego źródła — NIE EDYTOWAĆ
 public/favicon.svg
 public/videos/test.gif     # przykładowy plik do pola `video` w technice
+scripts/audit-danych.mjs   # audyt read-only danych (npm run audit)
+RAPORT.md                  # wynik audytu — generowany, NIE edytować ręcznie
 dist/                     # wynik builda (+ 404.html w CI)
 .github/workflows/deploy.yml
 WEB_PERSONAL.md  DONE.md  TODO.md  README.md
@@ -149,6 +152,12 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   się w środku innych nazw („Mawashi-geri" nie złapie „Ushiro-mawashi-geri");
   krótkie warianty (np. „Soto-uke", „Yoko-geri") dopisuj jako dodatkowe
   aliasy techniki.
+- **Audyt danych:** `npm run audit` (`scripts/audit-danych.mjs`) generuje
+  `RAPORT.md`: integralność struktury (krytyczne), pokrycie stopni, mismatchy
+  `levels[]`↔wymagania (warning P0.3), kolizje aliasów (P0.4), klasyfikacja
+  nielinkowanych wymagań, media i statystyki. Skrypt jest read-only i używa
+  tej samej logiki dopasowania co `RequirementsPanel` — po zmianach w JSON-ach
+  uruchom go ponownie (exit 0 = brak problemów krytycznych).
 
 ## 6. Konwencje kodu i treści
 
@@ -173,6 +182,13 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   `taikyoku` — aliasy do nowych rysunków). Media z pola `video` obsługuje
   `renderMedia()` (YouTube/`<video>`/`<img>`, klasy `.technique-media*`).
 - **Ikony** dodawaj do union `IconName` + rekordu `paths` w `components/Icon.tsx`.
+- **Nawigacja mobilna:** header jest sticky (podąża za użytkownikiem);
+  ≤980px desktopowy nav jest zastępowany przyciskiem ☰ (`.menu-toggle`,
+  ikona `menu` → `close` po otwarciu) w prawym górnym rogu — rozwija panel
+  `#site-menu` pod headerem po prawej (linki do sekcji + `.nav-cta`
+  „Sprawdź wymagania"; `.header-cta` jest wtedy ukryty). Zamykanie: klik
+  w link / Escape / klik poza headerem / zmiana trasy (`Header.tsx`);
+  a11y: `aria-expanded`, `aria-controls`. Desktop >980px bez zmian.
 - **A11y:** przyciski mają `aria-label`, modal ma `role="dialog"
   aria-modal="true"`, SVG ilustracji `role="img"` + `aria-label`.
 
@@ -196,7 +212,8 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
 3. **Realizuj** — trzymaj się konwencji z sekcji 6; miej się na baczności
    przed zakazami z sekcji 7.
 4. **Weryfikuj:** `npm run build` musi przejść bez błędów; dla zmian routingowych
-   dodatkowo `npm run preview` + sprawdzenie tras (`/`, `/kyu/9`, `/slownik`).
+   dodatkowo `npm run preview` + sprawdzenie tras (`/`, `/kyu/9`, `/slownik`);
+   dla zmian w `src/data/*.json` dodatkowo `npm run audit` (odświeży `RAPORT.md`).
 5. **Zamknięcie zadania:**
    - w `TODO.md`: zmień `- [ ]` → `- [x]` i dopisz krótki rezultat,
    - w `DONE.md`: dopisz wpis (data, zadanie, 1–2 zdania co zmieniono),
