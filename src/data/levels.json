@@ -1,0 +1,310 @@
+[
+  {
+    "id": "start",
+    "kyu": "bez stopnia",
+    "number": 0,
+    "order": 0,
+    "belt": "white",
+    "color": "#f4f1e8",
+    "stripe": null,
+    "level": "Początek drogi",
+    "time": "Start",
+    "intro": "Poznaj etykietę dojo i przygotuj ciało do regularnego treningu.",
+    "groups": [
+      {
+        "title": "Etykieta",
+        "items": ["Ukłon rei przy wejściu", "Znaczenie słowa Osu", "Bezpieczne zachowanie w dojo"]
+      },
+      {
+        "title": "Podstawy",
+        "items": ["Pozycja fudo-dachi", "Seiza i mokuso", "Oddychanie i rozgrzewka"]
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "kyu": "10 kyu",
+    "number": 10,
+    "order": 1,
+    "belt": "orange",
+    "color": "#e88937",
+    "stripe": null,
+    "level": "Fundamenty",
+    "time": "3–6 mies.",
+    "intro": "Pierwszy egzamin sprawdza postawę, koordynację i najprostsze techniki ręczne.",
+    "groups": [
+      {
+        "title": "Kihon",
+        "items": ["Yoi-dachi, zenkutsu-dachi", "Seiken chudan oi-zuki", "Jodan-uke, gedan-barai"]
+      },
+      {
+        "title": "Kopnięcia",
+        "items": ["Hiza-geri", "Kin-geri"]
+      },
+      {
+        "title": "Kata i sprawność",
+        "items": ["Taikyoku Sono Ichi", "Pompki, przysiady, brzuszki"]
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "kyu": "9 kyu",
+    "number": 9,
+    "order": 2,
+    "belt": "orange",
+    "color": "#e88937",
+    "stripe": "#245a91",
+    "level": "Fundamenty",
+    "time": "6–9 mies.",
+    "intro": "Belka nad pierwszym kolorem wymaga pewności ruchu, czystego wykończenia i świadomego oddechu.",
+    "groups": [
+      {
+        "title": "Kihon",
+        "items": ["Pewne fudo-dachi i przejścia", "Seiken chudan oi-zuki z rotacją bioder", "Czyste jodan-uke i gedan-barai"]
+      },
+      {
+        "title": "Kopnięcia",
+        "items": ["Mae-geri chudan", "Serie kopnięć bez utraty równowagi"]
+      },
+      {
+        "title": "Kata i wiedza",
+        "items": ["Taikyoku Sono Ichi — płynnie, z kiai", "Dojo-kun i znaczenie Osu", "Etykieta oraz bezpieczeństwo dojo"]
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "kyu": "8 kyu",
+    "number": 8,
+    "order": 3,
+    "belt": "blue",
+    "color": "#2e6193",
+    "stripe": null,
+    "level": "Stabilność",
+    "time": "6–12 mies.",
+    "intro": "Na tym poziomie liczy się stabilna pozycja, rotacja bioder i kontrola dystansu.",
+    "groups": [
+      {
+        "title": "Kihon",
+        "items": ["Sanchin-dachi", "Soto-uke", "Uraken shomen-uchi"]
+      },
+      {
+        "title": "Kopnięcia",
+        "items": ["Mawashi-geri gedan/chudan", "Yoko-geri"]
+      },
+      {
+        "title": "Kata i kumite",
+        "items": ["Taikyoku Sono Ni", "Podstawy kumite — kamae i dystans"]
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "kyu": "7 kyu",
+    "number": 7,
+    "order": 4,
+    "belt": "blue",
+    "color": "#2e6193",
+    "stripe": "#e8ba36",
+    "level": "Stabilność",
+    "time": "12–18 mies.",
+    "intro": "Drugi stopień niebieskiego łączy pewną technikę z pierwszymi pełnymi kombinacjami i walką.",
+    "groups": [
+      {
+        "title": "Kihon",
+        "items": ["Kokutsu-dachi", "Uchi-uke i zestawy obronne", "Uraken z rotacją bioder"]
+      },
+      {
+        "title": "Kopnięcia",
+        "items": ["Yoko-geri — pełne wykonanie", "Ushiro-geri — wprowadzenie"]
+      },
+      {
+        "title": "Kata i kumite",
+        "items": ["Taikyoku Sono San", "Pinan Sono Ichi", "Kumite z partnerem — podstawy"]
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "kyu": "6 kyu",
+    "number": 6,
+    "order": 5,
+    "belt": "yellow",
+    "color": "#e8b632",
+    "stripe": null,
+    "level": "Świadomość",
+    "time": "1–1,5 roku",
+    "intro": "Techniki stają się płynne, a adept łączy obronę z kontratakiem.",
+    "groups": [
+      {
+        "title": "Kihon",
+        "items": ["Kiba-dachi", "Tate-zuki i morote-zuki"]
+      },
+      {
+        "title": "Kopnięcia",
+        "items": ["Mawashi-geri jodan"]
+      },
+      {
+        "title": "Kata i kumite",
+        "items": ["Pinan Sono Ni", "Walki egzaminacyjne — podstawy"]
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "kyu": "5 kyu",
+    "number": 5,
+    "order": 6,
+    "belt": "yellow",
+    "color": "#e8b632",
+    "stripe": "#3e7652",
+    "level": "Świadomość",
+    "time": "1,5–2 lata",
+    "intro": "Belka żółtego wymaga pewności w całej sekwencji i spokojnej pracy bioder w walce.",
+    "groups": [
+      {
+        "title": "Kihon",
+        "items": ["Shuto mawashi-uke", "Pewne pozycje w ruchu"]
+      },
+      {
+        "title": "Kopnięcia",
+        "items": ["Uchi/soto mawashi-geri", "Kansetsu-geri"]
+      },
+      {
+        "title": "Kata i kumite",
+        "items": ["Pinan Sono San", "Sanchin-no-kata", "Walki egzaminacyjne z różnymi partnerami"]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "kyu": "4 kyu",
+    "number": 4,
+    "order": 7,
+    "belt": "green",
+    "color": "#356747",
+    "stripe": null,
+    "level": "Dojrzałość",
+    "time": "2–2,5 roku",
+    "intro": "Wymagana jest dynamika, precyzja i świadome użycie całego ciała.",
+    "groups": [
+      {
+        "title": "Technika",
+        "items": ["Shuto uchi/uke", "Kombinacje w ruchu"]
+      },
+      {
+        "title": "Kopnięcia",
+        "items": ["Oroshi-kakato-geri", "Tobi-geri"]
+      },
+      {
+        "title": "Kata i kumite",
+        "items": ["Pinan Sono Yon", "Kumite z różnymi partnerami"]
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "kyu": "3 kyu",
+    "number": 3,
+    "order": 8,
+    "belt": "green",
+    "color": "#356747",
+    "stripe": "#754537",
+    "level": "Dojrzałość",
+    "time": "2,5–3 lata",
+    "intro": "Belka zielonego to odpowiedzialność za tempo, kontrolę partnera i jakość każdego powtórzenia.",
+    "groups": [
+      {
+        "title": "Technika",
+        "items": ["Hiji-ate w wielu kierunkach", "Zaawansowane kombinacje"]
+      },
+      {
+        "title": "Kopnięcia",
+        "items": ["Ushiro-mawashi-geri"]
+      },
+      {
+        "title": "Kata i kumite",
+        "items": ["Pinan Sono Go", "Yantsu, Tsuki-no-kata", "Kumite z presją czasu"]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "kyu": "2 kyu",
+    "number": 2,
+    "order": 9,
+    "belt": "brown",
+    "color": "#70463a",
+    "stripe": null,
+    "level": "Odpowiedzialność",
+    "time": "3–4 lata",
+    "intro": "Zaawansowany stopień wymaga pełnego repertuaru, kondycji i odpowiedzialnej walki.",
+    "groups": [
+      {
+        "title": "Technika",
+        "items": ["Pełny kihon z komend", "Techniki obrotowe i z wyskoku"]
+      },
+      {
+        "title": "Kata",
+        "items": ["Gekisai Dai i Sho", "Podstawy bunkai"]
+      },
+      {
+        "title": "Próba",
+        "items": ["Test siłowy", "Wiedza o Kyokushin"]
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "kyu": "1 kyu",
+    "number": 1,
+    "order": 10,
+    "belt": "brown",
+    "color": "#70463a",
+    "stripe": "#171916",
+    "level": "Odpowiedzialność",
+    "time": "4–5 lat",
+    "intro": "Ostatni stopień przed czarnym pasem sprawdza dojrzałość techniki, interpretację kata i gotowość do roli starszego stażem.",
+    "groups": [
+      {
+        "title": "Technika",
+        "items": ["Zaawansowane kombinacje", "Precyzja technik z wyskoku"]
+      },
+      {
+        "title": "Kata",
+        "items": ["Saiha, Seienchin", "Interpretacja bunkai"]
+      },
+      {
+        "title": "Próba",
+        "items": ["Rozbudowany test siłowy", "Seria walk kumite"]
+      }
+    ]
+  },
+  {
+    "id": "dan",
+    "kyu": "1 dan+",
+    "number": 99,
+    "order": 11,
+    "belt": "black",
+    "color": "#161815",
+    "stripe": "#b99025",
+    "level": "Nowy początek",
+    "time": "5+ lat",
+    "intro": "Czarny pas nie kończy nauki. Potwierdza gotowość do świadomego rozwijania karate.",
+    "groups": [
+      {
+        "title": "Mistrzostwo podstaw",
+        "items": ["Precyzyjny kihon", "Pełen zakres kata", "Bunkai i zastosowanie"]
+      },
+      {
+        "title": "Charakter",
+        "items": ["Dojrzałość w kumite", "Pomoc młodszym stopniom", "Postawa zgodna z dojo-kun"]
+      },
+      {
+        "title": "Próba",
+        "items": ["Wymagania organizacji/branch chiefa", "Test kondycyjny", "Wielorundowe kumite"]
+      }
+    ]
+  }
+]

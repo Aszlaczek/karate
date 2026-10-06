@@ -1,0 +1,277 @@
+{
+  "categories": [
+    {
+      "id": "strefy",
+      "name": "Strefy",
+      "description": "Podział celu na trzy wysokości — determinuje przedrostki jodan, chūdan i gedan w nazwach technik.",
+      "entries": [
+        {
+          "id": "jodan",
+          "term": "Strefa górna",
+          "japanese": "上段",
+          "reading": "jōdan",
+          "description": "Głowa, twarz i kark. Ataki i bloki na tej wysokości oznaczamy przedrostkiem jodan (np. jodan-uke, mawashi-geri jodan).",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "chudan",
+          "term": "Strefa środkowa",
+          "japanese": "中段",
+          "reading": "chūdan",
+          "description": "Klatka piersiowa, żebra i brzuch — od linii barków mniej więcej do pępka. Najczęstszy cel w egzaminach i kumite.",
+          "image": null,
+          "related": ["seiken-oi-tsuki", "seiken-chudan-soto-uke"]
+        },
+        {
+          "id": "gedan-strefa",
+          "term": "Strefa dolna",
+          "japanese": "下段",
+          "reading": "gedan",
+          "description": "Podbrzusz, biodra i nogi. Techniki dolne zapisujemy przedrostkiem gedan (np. gedan-barai, kin-geri).",
+          "image": null,
+          "related": ["seiken-gedan-barai"]
+        }
+      ]
+    },
+    {
+      "id": "czesci-ciala",
+      "name": "Części ciała",
+      "description": "Nazwy części ciała używane w komendach, opisach technik i punktach uderzenia.",
+      "entries": [
+        {
+          "id": "atama",
+          "term": "Głowa",
+          "japanese": "頭",
+          "reading": "atama",
+          "description": "Cel strefy górnej. W kumite uderzenia i kopnięcia na głowę muszą być kontrolowane.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "kao",
+          "term": "Twarz",
+          "japanese": "顔",
+          "reading": "kao",
+          "description": "Część strefy górnej — broda, nos, policzki. Na egzaminie wskazywana jako cel technik jodan.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "kubi",
+          "term": "Szyja",
+          "japanese": "首",
+          "reading": "kubi",
+          "description": "Łączenie głowy z tułowiem. Kluczowa przy dźwigniach i rzutach; w prostym kihon rzadko używana jako cel.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "mune",
+          "term": "Klatka piersiowa",
+          "japanese": "胸",
+          "reading": "mune",
+          "description": "Górna część tułowia, częsty cel seiken chudan oi-zuki. Chroniona przez bloki typu soto-uke i uchi-uke.",
+          "image": null,
+          "related": ["seiken-oi-tsuki", "seiken-chudan-soto-uke"]
+        },
+        {
+          "id": "hara",
+          "term": "Brzuch / centrum",
+          "japanese": "腹",
+          "reading": "hara",
+          "description": "Dolna część tułowia. Trenujemy oddychanie przez harę; przyjęcie ciosu wymaga napięcia mięśni w tym miejscu.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "koshi",
+          "term": "Biodro",
+          "japanese": "腰",
+          "reading": "koshi",
+          "description": "Źródło mocy w większości technik — rotacja bioder napędza uderzenia i kopnięcia, a nie sama ręka czy noga.",
+          "image": null,
+          "related": ["seiken-oi-tsuki", "zenkutsu-dachi"]
+        },
+        {
+          "id": "ude",
+          "term": "Ramię",
+          "japanese": "腕",
+          "reading": "ude",
+          "description": "Górna kończyna od barku do łokcia. W blokach pracuje razem z przedramieniem i rotacją tułowia.",
+          "image": null,
+          "related": ["seiken-chudan-soto-uke"]
+        },
+        {
+          "id": "hiji",
+          "term": "Łokieć",
+          "japanese": "肘",
+          "reading": "hiji",
+          "description": "Staw wykorzystywany w technikach hiji-ate. Przy uderzeniach prostych łokieć prowadzimy blisko ciała.",
+          "image": null,
+          "related": ["seiken-chudan-soto-uke"]
+        },
+        {
+          "id": "kote",
+          "term": "Przedramię",
+          "japanese": "篭手",
+          "reading": "kote",
+          "description": "Odcinek od łokcia do nadgarstka — powierzchnia pracy przy blokach (uke) i obronie.",
+          "image": null,
+          "related": ["seiken-chudan-soto-uke", "seiken-gedan-barai"]
+        },
+        {
+          "id": "seiken",
+          "term": "Pięść",
+          "japanese": "正拳",
+          "reading": "seiken",
+          "description": "Klasyczna pięść kyokushin: uderzamy dwoma pierwszymi knykci, kciuk dociska palce od strony. Punkt kontaktu to seiken.",
+          "image": null,
+          "related": ["seiken-oi-tsuki"]
+        },
+        {
+          "id": "shuto",
+          "term": "Kant dłoni",
+          "japanese": "手刀",
+          "reading": "shuto",
+          "description": "Boczna krawędź dłoni od małego palca do nadgarstka — broń w technikach shuto uchi i shuto uke.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "hiza",
+          "term": "Kolano",
+          "japanese": "膝",
+          "reading": "hiza",
+          "description": "Punkt prowadzenia kopnięć (hiza-geri) oraz cel w strefie dolnej. W mae-geri kolano unosi się najpierw przed wyprostem.",
+          "image": null,
+          "related": ["mae-geri-chudan-chusoku"]
+        },
+        {
+          "id": "kakato",
+          "term": "Pięta",
+          "japanese": "踵",
+          "reading": "kakato",
+          "description": "Twarda część stopy używana m.in. w oroshi-kakato-geri (kopnięcie piętą z góry) i przy silnych wejściach.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "chusoku",
+          "term": "Podeszwa",
+          "japanese": "底足心",
+          "reading": "chusoku",
+          "description": "Śródstopie — punkt kontaktu przy mae-geri i innych kopnięciach frontalnych. Palce są uniesione.",
+          "image": null,
+          "related": ["mae-geri-chudan-chusoku"]
+        },
+        {
+          "id": "ashi",
+          "term": "Noga",
+          "japanese": "足",
+          "reading": "ashi",
+          "description": "Ogólna nazwa kończyny dolnej — łączy pozycje (dachi) i kopnięcia (geri) w jednym słowie.",
+          "image": null,
+          "related": ["mae-geri-chudan-chusoku", "zenkutsu-dachi"]
+        }
+      ]
+    },
+    {
+      "id": "pozycje",
+      "name": "Ustawienia stóp",
+      "description": "Fundamentalne pozycje (dachi) i postawy — baza, od której zaczyna się każda technika.",
+      "entries": [
+        {
+          "id": "fudo",
+          "term": "Pozycja bazowa",
+          "japanese": "不動立",
+          "reading": "fudo-dachi",
+          "description": "Stabilna postawa o szerokości bioder, lekko ugiętych kolanach i równomiernym ciężarze. Pierwsza pozycja na drodze egzaminacyjnej.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "musubi",
+          "term": "Pozycja powitalna",
+          "japanese": "結び立",
+          "reading": "musubi-dachi",
+          "description": "Pięty razem, palce rozstawione w literę V — pozycja do ukłonu (rei) i mokuso przed treningiem.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "heiko",
+          "term": "Pozycja równoległa",
+          "japanese": "平行立",
+          "reading": "heikō-dachi",
+          "description": "Stopy równolegle na szerokość bioder (nazywana też yoi-dachi) — punkt wyjścia do technik i przejść.",
+          "image": null,
+          "related": ["seiken-oi-tsuki"]
+        },
+        {
+          "id": "zenkutsu-dachi",
+          "term": "Pozycja wykroczna",
+          "japanese": "前屈立ち",
+          "reading": "zenkutsu-dachi",
+          "description": "Długa pozycja: przednie kolano ugięte nad stopą, tylna noga wyprostowana, ciężar ok. 60/40. Fundament oi-zuki i większości kihon.",
+          "image": null,
+          "related": ["zenkutsu-dachi", "seiken-oi-tsuki"]
+        },
+        {
+          "id": "kokutsu",
+          "term": "Pozycja zachodnia",
+          "japanese": "後屈立ち",
+          "reading": "kokutsu-dachi",
+          "description": "Ciężar głównie na nodze tylnej, przednia stopa lekko na pięcie — baza do bloków i technik obronnych.",
+          "image": null,
+          "related": ["seiken-chudan-soto-uke"]
+        },
+        {
+          "id": "sanchin-dachi",
+          "term": "Pozycja sanchin",
+          "japanese": "三戦立",
+          "reading": "sanchin-dachi",
+          "description": "Stopy w linii półksiężyca, kolana skierowane do wewnątrz, napięty brzuch — pozycja kontroli oddechu i napięcia.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "kiba",
+          "term": "Pozycja jeździecka",
+          "japanese": "騎馬立",
+          "reading": "kiba-dachi",
+          "description": "Szerokie rozkroczę z kolanami rozepchniętymi nad stopami i prostym tułowiem — buduje siłę nóg i stabilność boczną.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "neko-ashi",
+          "term": "Pozycja kocia",
+          "japanese": "猫足立ち",
+          "reading": "neko-ashi-dachi",
+          "description": "Ciężar na nodze tylnej, przednia stopa dotyka podłogi palcami — szybka, zwrotna pozycja do kopnięć.",
+          "image": null,
+          "related": ["mae-geri-chudan-chusoku"]
+        },
+        {
+          "id": "kosa",
+          "term": "Pozycja skrzyżowana",
+          "japanese": "交叉立",
+          "reading": "kosa-dachi",
+          "description": "Nogi skrzyżowane, ciężar na nodze wspierającej — stosowana po obrotach, w kombinacjach i kata.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "seiza",
+          "term": "Pozycja klęcząca",
+          "japanese": "正座",
+          "reading": "seiza",
+          "description": "Klęknienie na kolanach z podniesionymi stopami — porządek otwarcia treningu, mokuso i ukłonu w dojo.",
+          "image": null,
+          "related": []
+        }
+      ]
+    }
+  ]
+}
