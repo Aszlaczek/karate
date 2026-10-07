@@ -1,6 +1,8 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ElementType } from "react";
 import Icon from "../components/Icon";
 import { useModals } from "../components/ModalProvider";
+import { resolveMediaSrc } from "../components/TechniqueIllustration";
+import ZoneIllustration, { zoneForEntry } from "../components/ZoneIllustration";
 import { glossary } from "../data";
 
 const GlossaryPage = () => {
@@ -27,6 +29,8 @@ const GlossaryPage = () => {
   }, [activeCategory, query]);
 
   if (!activeCategory) return null;
+  const isStatic = activeCategory.id === "czesci-ciala";
+  const Card: ElementType = isStatic ? "article" : "button";
 
   return (
     <section className="section glossary-section" id="slownik">
@@ -36,8 +40,9 @@ const GlossaryPage = () => {
           <h2>Słownik karate</h2>
         </div>
         <p>
-          Strefy, części ciała i ustawienia stóp — kliknij hasło, aby zobaczyć
-          pełny opis i techniki powiązane.
+          Strefy, części ciała i ustawienia stóp — części ciała opisane są na
+          kartach; strefy i ustawienia stóp kliknij, aby zobaczyć wizualizację
+          i powiązane techniki.
         </p>
       </div>
 
@@ -69,35 +74,44 @@ const GlossaryPage = () => {
       <p className="glossary-description">{activeCategory.description}</p>
 
       <div className="glossary-grid">
-        {filteredEntries.map((entry) => (
-          <button
-            className="glossary-card"
-            key={entry.id}
-            onClick={() => openGlossaryEntry(entry, activeCategory)}
-            aria-label={`Otwórz hasło ${entry.term}`}
-          >
-            {entry.image && (
-              <span className="glossary-image">
-                <img
-                  src={entry.image}
-                  alt={entry.term}
-                  loading="lazy"
-                  decoding="async"
-                  sizes="(max-width: 600px) 100vw, 50vw"
-                />
+        {filteredEntries.map((entry) => {
+          const zone = zoneForEntry(entry.id);
+          return (
+            <Card
+              className={`glossary-card${isStatic ? " static" : ""}`}
+              key={entry.id}
+              onClick={isStatic ? undefined : () => openGlossaryEntry(entry, activeCategory)}
+              aria-label={isStatic ? undefined : `Otwórz hasło ${entry.term}`}
+            >
+              {entry.image ? (
+                <span className="glossary-image">
+                  <img
+                    src={resolveMediaSrc(entry.image)}
+                    alt={entry.term}
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 600px) 100vw, 50vw"
+                  />
+                </span>
+              ) : zone ? (
+                <span className="glossary-image diagram">
+                  <ZoneIllustration zone={zone} />
+                </span>
+              ) : null}
+              <span className="glossary-japanese">{entry.japanese}</span>
+              <span className="glossary-reading">
+                Wymowa: <strong>{entry.reading}</strong>
               </span>
-            )}
-            <span className="glossary-japanese">{entry.japanese}</span>
-            <span className="glossary-reading">
-              Wymowa: <strong>{entry.reading}</strong>
-            </span>
-            <strong className="glossary-term">{entry.term}</strong>
-            <span className="glossary-summary">{entry.description}</span>
-            <span className="glossary-hint">
-              Zobacz hasło <Icon name="arrow" size={14} />
-            </span>
-          </button>
-        ))}
+              <strong className="glossary-term">{entry.term}</strong>
+              <span className="glossary-summary">{entry.description}</span>
+              {!isStatic && (
+                <span className="glossary-hint">
+                  Zobacz hasło <Icon name="arrow" size={14} />
+                </span>
+              )}
+            </Card>
+          );
+        })}
         {filteredEntries.length === 0 && (
           <div className="empty-state">
             Brak haseł pasujących do „{query}”. Spróbuj innego słowa.

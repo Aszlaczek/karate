@@ -56,6 +56,10 @@
   seiken, hiza, zenkutsu-dachi…) i uzupełnij `image` ścieżką
   `"/images/glossary/<id>.jpg"`. Karta w gridzie pokaże miniaturę.
   Kryteria: ≥6 haseł ze zdjęciem, `npm run build` ✅.
+  Postęp (2026-10-07): 10 haseł ma zdjęcia (kategoria „Ustawienia stóp",
+  pliki w `public/images/glossary/stances/` — ścieżki w JSON dopasowane
+  do case plików); strefy mają własny diagram SVG zamiast zdjęcia;
+  „Części ciała" nadal bez zdjęć.
 
 - [ ] 🟡 **P1.5 — Self-hosted zdjęcia zamiast Unsplash**
   `techniques[].image` i `hero` używają zewnętrznych URL-i Unsplash (straszy
@@ -152,3 +156,14 @@
   MISMATCH-y tylko dla stopni kyu (`start`/`dan` nie mają atlasu, `levels[]`
   ∈ 1–10 — udokumentowane w `RAPORT.md` i `WEB_PERSONAL.md`), build ✅
   (2026-10-07).
+- [x] **Diagram stref w słowniku** — `ZoneIllustration.tsx` (karateka
+  w fudo-dachi + przerywane linie `JŌDAN`/`CHŪDAN`/`GEDAN` z podpisami
+  na liniach, aktywna strefa czerwona) w modalu hasła i w pasku karty;
+  kanji `kosa-dachi` → `kake-dachi` (掛け立ち), ścieżki zdjęć dopasowane
+  do case plików + prefiks `BASE_URL` przez `resolveMediaSrc()`, build ✅
+  (2026-10-07).
+- [x] **Statyczne karty „Części ciała"** — karta tej kategorii nie otwiera
+  modala: `<article className="glossary-card static">` zamiast `<button>`
+  (niefocusowalna, bez hintu „Zobacz hasło", `cursor: default`, bez
+  hovera); intro `/slownik` doprecykowane, chipy „Powiązane techniki"
+  na kartach świadomie pominięte, build ✅ (2026-10-07).

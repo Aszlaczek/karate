@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import { getRelatedTechniques } from "../data";
 import type { GlossaryCategory, GlossaryEntry, Technique } from "../data/types";
+import { resolveMediaSrc } from "./TechniqueIllustration";
 import Icon from "./Icon";
+import ZoneIllustration, { zoneForEntry } from "./ZoneIllustration";
 
 interface GlossaryEntryModalProps {
   entry: GlossaryEntry;
@@ -12,6 +14,7 @@ interface GlossaryEntryModalProps {
 
 const GlossaryEntryModal = ({ entry, category, onClose, onSelectTechnique }: GlossaryEntryModalProps) => {
   const related = getRelatedTechniques(entry);
+  const zone = zoneForEntry(entry.id);
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -43,7 +46,9 @@ const GlossaryEntryModal = ({ entry, category, onClose, onSelectTechnique }: Glo
             <small>Hasło słownikowe</small>
           </div>
           {entry.image ? (
-            <img className="glossary-photo" src={entry.image} alt={entry.term} />
+            <img className="glossary-photo" src={resolveMediaSrc(entry.image)} alt={entry.term} />
+          ) : zone ? (
+            <ZoneIllustration zone={zone} />
           ) : (
             <div className="glossary-visual-placeholder" aria-hidden="true">
               <span>{entry.japanese}</span>

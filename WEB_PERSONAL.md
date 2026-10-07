@@ -126,6 +126,11 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   `reading`, `description`, **`image`** (`null` = placeholder z kanji;
   docelowo `"/images/glossary/<id>.jpg"` — plik w `public/images/glossary/`),
   **`related`** (tablica `id` technik → chipy w modalu hasła).
+  `image: null` w hasłach `jodan` / `chudan` / `gedan-strefa` zamiast
+  placeholdera renderuje diagram stref (`ZoneIllustration.tsx`).
+  Ścieżki lokalne zapisuj z **dokładnym case'em** pliku na dysku
+  (macOS ukrywa różnice wielkości liter, Linux/GH Pages zwraca 404)
+  i przepuszczaj przez `resolveMediaSrc()` (prefiks `BASE_URL`).
 - **`dojoKun.json`** — `japanese` / `reading` / `polish`.
 
 ### Jak dodać treść (integracja)
@@ -140,9 +145,13 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
 - **Nowy stopień / zmiana wymagań:** edytuj `levels.json` — karty pasów,
   panel wymagań, filtr stopni i nawigacja prev/next zaktualizują się same.
 - **Nowe hasło słownika:** dopis w `glossary.json` do właściwej kategorii —
-  z `id` (slug bez spacji), `image: null` i `related` (id technik z atlasu).
-  Karta staje się klikalna automatycznie; zdjęcie wystarczy uzupełnić pole
-  `image` ścieżką do pliku w `public/images/glossary/`.
+  z `id` (slug bez spacji),   `image: null` i `related` (id technik z atlasu).
+  Karta staje się klikalna automatycznie (wyjątek: kategoria **Części
+  ciała** — statyczny `<article className="glossary-card static">`,
+  bez modala); zdjęcie wystarczy uzupełnić pole
+  `image` ścieżką do pliku w `public/images/glossary/`. Kolejność zawartości
+  wizualnej (karta i modal): `image` → dla stref `ZoneIllustration`
+  → placeholder z kanji.
 - Wymagania linkują techniki automatycznie przez `aliases` (regex zbudowany
   w `buildTechniqueLinkPattern()`) — nie wpisuj linków ręcznie w JSON.
   Dopasowanie jest odporne na zapis: spacja ≡ myślnik ≡ pauza, makrony
@@ -184,6 +193,12 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   + wpis w mapie (stare klucze: `maegeri`, `gedan`, `sotouke`, `zenkutsu`,
   `taikyoku` — aliasy do nowych rysunków). Media z pola `video` obsługuje
   `renderMedia()` (YouTube/`<video>`/`<img>`, klasy `.technique-media*`).
+- **Diagram stref (`ZoneIllustration.tsx`)** — osobny SVG (karateka
+  w fudo-dachi + przerywane linie z podpisami stref) dla haseł
+  `jodan` / `chudan` / `gedan-strefa`; mapowanie id → strefa w
+  `zoneForEntry()`, renderowany w modalu i pasku karty `.glossary-image.diagram`,
+  gdy `image` jest `null`. Styl: klasy `.zone-line` / `.zone-label`,
+  aktywna strefa (hasło otwarte przez użytkownika) przez `.active`.
 - **Media (obraz / gif / wideo):** kadruj przez `object-fit: contain` —
   `.glossary-image img`, `.glossary-photo`, `.tech-image .technique-media`;
   nigdy `cover` w kartach i modalach (mamy pokazywać całość, bez ucięcia),
@@ -194,7 +209,26 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   modal z odtwarzaczem. Otwieranie: klik w **całą** kartę techniki
   (`onClick` na `<article>`, przycisk `.tech-image` zostaje punktem
   klawiaturowym — jedno zdarzenie, bez zagnieżdżonych handlerów) albo w
-  całą kartę hasła (`<button className="glossary-card">`).
+   całą kartę hasła (`<button className="glossary-card">`, a w kategorii
+   „Części ciała" — statyczny `<article className="glossary-card static">`
+   bez otwierania).
+  W modalach obowiązuje **skalowanie bez ucięcia**: `.glossary-photo` ma
+  `flex: 1 1 0` + `height: 0` — nigdy `flex: 1`, bo `flex-basis: 0%` przy
+  nieokreślonej wysokości kontenera flex daje wysokość = proporcja naturalna
+  obrazu i stage wyrasta ponad `max-height` panelu (obcinał dół zdjęcia o
+  81–186px). Zdjęcie siedzi w białej ramce `max-width: min(100%, 520px)`
+  na `#fff` (`.glossary-photo`, `.glossary-image`). Kolumna
+  `.visualization-copy` ma `max-height: calc(100vh - 68px)` — jej długa
+  treść nie może rozpychać wiersza grid ponad panel, tylko scrolluje się
+  wewnątrz; `.visualization-stage > .technique-illustration` i
+  `> .technique-media-frame` mają `max-height: calc(100vh - 192px)` dla
+  niskich/szerokich okien (letterbox niewidoczny — tło stage ==
+  `.illustration-ground` `#252723`). Oba clampa'y resetowane przez
+  `max-height: none` w media ≤700px, gdzie panel ma `max-height: none` i
+  stronę przewinąć może modal. Zdjęcia z `glossary.json` (karta i modal)
+  przechodzą przez `resolveMediaSrc()` (eksportowane z
+  `TechniqueIllustration.tsx`) — ścieżka od `/` dostaje prefiks `BASE_URL`,
+  bo na GitHub Pages base to `/web_karate/`.
 - **Ikony** dodawaj do union `IconName` + rekordu `paths` w `components/Icon.tsx`.
 - **Nawigacja (sticky):** header `.site-header` jest `position: sticky; top: 0`
   i podąża za użytkownikiem **zarówno na desktopie, jak i na telefonie**.

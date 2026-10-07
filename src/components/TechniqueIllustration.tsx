@@ -136,7 +136,7 @@ const DRAWINGS: Record<string, Drawing> = {
   taikyoku: kataArt,
 };
 
-const resolveMediaSrc = (value: string): string =>
+export const resolveMediaSrc = (value: string): string =>
   value.startsWith("/") ? `${import.meta.env.BASE_URL}${value.slice(1)}` : value;
 
 const renderMedia = (video: string, technique: Technique, controls: boolean): ReactElement => {

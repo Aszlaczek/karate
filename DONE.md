@@ -110,6 +110,86 @@ one-pager bez routera.
 
 ## Dziennik zmian
 
+### 2026-10-07 — Statyczne karty „Części ciała" (bez modala)
+- Zmienione pliki: `src/pages/GlossaryPage.tsx`, `src/index.css`,
+  `TODO.md`, `WEB_PERSONAL.md`.
+- Rezultat: karty kategorii „Części ciała" nie otwierają już modala hasła —
+  renderują się jako statyczny `<article className="glossary-card static">`
+  (dynamiczny `Card`: `article` ↔ `button`), bez `onClick`, `aria-label`
+  i podpowiedzi „Zobacz hasło →", z `cursor: default` oraz bez efektów
+  hover (`.glossary-card.static:hover` wyłącza zmianę tła, cień
+  i podniesienie). Reszta kategorii (Strefy, Ustawienia stóp) otwiera modal
+  bez zmian; `related[]` tych haseł zostaje w JSON jako dane. Poprawiony
+  też intro `/slownik` — instrukcja „kliknij hasło" dotyczy już tylko stref
+  i ustawień stóp. Chipów „Powiązane techniki" na kartach nie dodajemy
+  (decyzja: karty części ciała mają być samowystarczalne).
+- Weryfikacja: `npm run build` ✅, `npm run audit` ✅ (0 krytycznych,
+  0 MISMATCH), headless Chrome (CDP) 1440×900 / 390×844 — **10/10**:
+  15 kart = `ARTICLE`, brak `aria-label`/hintu/`onclick`,
+  `cursor: default`, `tabIndex: -1`, hover bez efektu
+  (`rgb(244, 240, 231)` / `none` / `none`), klik → brak modala i brak
+  `#haslo-…` w hashu (aktywny element zostaje `BODY`); regresja-check:
+  Strefy otwierają modal z diagramem (12 `.zone-line`), Ustawienia stóp
+  otwierają modal; zrzuty ekranu kart bez podpowiedzi.
+
+### 2026-10-07 — Diagram stref w słowniku + poprawki ścieżek zdjęć
+- Nowy plik: `src/components/ZoneIllustration.tsx`. Zmienione:
+  `src/pages/GlossaryPage.tsx`, `src/components/GlossaryEntryModal.tsx`,
+  `src/components/TechniqueIllustration.tsx` (eksport `resolveMediaSrc`),
+  `src/index.css`, `src/data/glossary.json`, `TODO.md`, `WEB_PERSONAL.md`.
+- Rezultat: kategorie Strefy mają własną wizualizację — karateka w fudo-dachi
+  + trzy przerywane poziome linie z podpisami `JŌDAN` / `CHŪDAN` / `GEDAN`
+  na liniach (podpis „przecina" kreskowanie tłem w kolorze stage). Linia
+  aktywnej strefy (hasło, które użytkownik otworzył) jest czerwona
+  i podświetlona, pozostałe wyszarzone. Diagram renderuje się w modalu
+  (priorytet: `image` → diagram → placeholder z kanji) oraz jako ciemny
+  pasek 140px w kartach `.glossary-image.diagram`. SVG `viewBox 0 0 800 480`
+  z klasą `.technique-illustration` skaluje się bez dodatkowych reguł
+  mobilnych (podpis ~31px desktop, ~13px telefon, ~8.8px w karcie);
+  `zoneForEntry()` mapuje `jodan`/`chudan`/`gedan-strefa` → strefa.
+  Ponadto: (1) kanji `kosa-dachi` → `kake-dachi` (掛け立ち, `id`/`term`/
+  `reading` były już zmienione na `kake`); (2) 7 ścieżek zdjęć
+  w `glossary.json` poprawionych pod dokładny case plików na dysku
+  (`Fudo-Dachi.png` itd. — macOS ukrywa różnice wielkości liter,
+  GitHub Pages zwraca 404); (3) `image` w karcie i modalu przechodzi przez
+  `resolveMediaSrc()` — prefiks `BASE_URL` dla ścieżek od `/`, żeby zdjęcia
+  działały też pod `/web_karate/`.
+- Weryfikacja: `npm run build` ✅, `npm run audit` ✅ (0 krytycznych,
+  0 MISMATCH), headless Chrome (CDP) na 1440×900 / 1280×720 / 390×844:
+  3 paski diagramów w kartach + unikalne `id` patternów, każde z 3 haseł
+  otwiera modal z **jedną** czerwoną linią właściwej strefy
+  (`stroke: rgb(197, 68, 59)`, aktywny podpis zgodny: JŌDAN/CHŪDAN/GEDAN),
+  `stageOver ≤ 0`, `Kake-Dachi.png` (458px) ładuje się w modalu; zrzuty
+  ekranu kart i modalów bez ucięć.
+
+### 2026-10-07 — Skalowanie zdjęcia w modalu hasła i legenda modalu techniki
+- Zmienione pliki: `src/index.css`.
+- Rezultat: (1) zdjęcie w modalu słownika nie jest już ucinane —
+  `.glossary-photo` miało `flex: 1` (= `flex-basis: 0%`), co przy
+  nieokreślonej wysokości kontenera flex dawało wysokość = proporcja
+  naturalna (827×827), więc stage wyrastał ponad
+  `max-height: calc(100vh - 68px)` panelu i `overflow: hidden` obcinał dół
+  o 81px (1440×900) / 186px (1280×720); zmienione na `flex: 1 1 0` +
+  `height: 0`, zdjęcie w białej ramce `max-width: min(100%, 520px)`
+  (`.glossary-image` i `.glossary-photo` mają tło `#fff`). Rozmycie
+  220px miniatury Google skalowanej do ~520px zostaje — jakościowe
+  rozwiązanie to P1.2 / P1.5 (własne zdjęcia). (2) modal techniki przy
+  niskich viewportach (1280×720) ucinał legendę — kolumna
+  `.visualization-copy` wyznaczała wysokość wiersza grid (713px > 652px
+  `max-height` panelu); dodane `max-height: calc(100vh - 68px)` na kolumnie
+  (treść scrolluje się wewnątrz zamiast rozpychać panel) oraz
+  `max-height: calc(100vh - 192px)` na `.visualization-stage >
+  .technique-illustration` / `.technique-media-frame` dla niskich i szerokich
+  okien (letterbox niewidoczny — tło stage = `.illustration-ground`
+  `#252723`), oba clampa'y z `max-height: none` w media ≤700px.
+- Weryfikacja: `npm run build` ✅, `npm run audit` ✅ (0 krytycznych,
+  0 MISMATCH, 2 KOLIZJA z `techniques.json`), headless Chrome (CDP) na
+  11 viewportach (1440×900, 1280×720, 1920×1080, 1600×720, 900×700,
+  390×844, 844×390, 1440×650, 1366×600, 1280×600, 1024×576):
+  `stageOver ≤ 0`, `photoCut ≤ 0`, `object-fit: contain`, legenda
+  `legendCut ≤ 0`, kolumna tekstu scrolluje się, gdy treść nie mieści się
+  w panelu; screenshoty modalów bez ucięć.
+
 ### 2026-10-07 — Media bez ucięcia w kartach i modalach + klik w całą kartę techniki
 - Zmienione pliki: `src/index.css`, `src/pages/GlossaryPage.tsx`,
   `src/components/TechniquesSection.tsx`, `src/components/TechniqueIllustration.tsx`.

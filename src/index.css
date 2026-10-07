@@ -139,7 +139,7 @@ section[id] { scroll-margin-top: 84px; }
 .technique-media-frame { background: #171915; height: 100%; position: relative; width: 100%; }
 .technique-media { border: 0; display: block; height: 100%; inset: 0; object-fit: cover; position: absolute; width: 100%; }
 .tech-image .technique-media { object-fit: contain; pointer-events: none; }
-.visualization-stage > .technique-media-frame { aspect-ratio: 16 / 9; height: auto; margin: auto 0; width: 100%; }
+.visualization-stage > .technique-media-frame { aspect-ratio: 16 / 9; height: auto; margin: auto 0; max-height: calc(100vh - 192px); width: 100%; }
 .visualization-stage > .technique-media-frame > .technique-media { object-fit: contain; }
 .illustration-ground { fill: #252723; }
 .illustration-grid { color: #fff; }
@@ -157,6 +157,11 @@ section[id] { scroll-margin-top: 84px; }
 .kata-point { fill: #252723; stroke: #ede9df; stroke-width: 4; }
 .kata-number { fill: #ede9df; font-family: var(--serif); font-size: 13px; text-anchor: middle; }
 .svg-kanji { fill: rgba(255,255,255,.06); font-family: 'Noto Serif JP'; font-size: 170px; text-anchor: middle; }
+.zone-line { fill: none; stroke: rgba(255,255,255,.3); stroke-dasharray: 14 14; stroke-width: 2.5; }
+.zone-line.active { stroke: #c5443b; stroke-width: 4; }
+.zone-label-bg { fill: #252723; }
+.zone-label { fill: rgba(255,255,255,.6); font-family: var(--sans); font-size: 30px; font-weight: 700; letter-spacing: .1em; }
+.zone-label.active { fill: #fff; }
 .tech-body { padding: 25px; }
 .japanese { color: var(--red); float: right; font-family: 'Noto Serif JP'; font-size: 18px; writing-mode: vertical-rl; }
 .tech-body h3 { font-family: var(--serif); font-size: 20px; margin: 0 35px 5px 0; }
@@ -204,8 +209,12 @@ section[id] { scroll-margin-top: 84px; }
 .glossary-grid { display: grid; gap: 22px; grid-template-columns: repeat(3, 1fr); }
 .glossary-card { background: var(--paper); border: 1px solid rgba(23,25,22,.08); color: inherit; cursor: pointer; display: flex; flex-direction: column; font: inherit; padding: 26px; text-align: left; transition: .25s ease; width: 100%; }
 .glossary-card:hover { background: var(--white); box-shadow: 0 16px 34px rgba(23,25,22,.1); transform: translateY(-3px); }
-.glossary-image { align-items: center; background: var(--ink); display: flex; height: 140px; justify-content: center; margin: -26px -26px 4px; overflow: hidden; }
+.glossary-card.static { cursor: default; }
+.glossary-card.static:hover { background: var(--paper); box-shadow: none; transform: none; }
+.glossary-image { align-items: center; background: #fff; display: flex; height: 140px; justify-content: center; margin: -26px -26px 4px; overflow: hidden; }
 .glossary-image img { display: block; filter: grayscale(100%) contrast(1.05); height: 100%; object-fit: contain; width: 100%; }
+.glossary-image.diagram { background: #252723; }
+.glossary-image .technique-illustration { height: 100%; width: 100%; }
 .glossary-japanese { color: var(--red); font-family: 'Noto Serif JP'; font-size: 30px; line-height: 1.2; }
 .glossary-reading { color: var(--muted); font-size: 9px; letter-spacing: .06em; margin-top: 8px; text-transform: uppercase; }
 .glossary-reading strong { color: var(--ink); }
@@ -217,8 +226,8 @@ section[id] { scroll-margin-top: 84px; }
 
 .glossary-modal-panel { grid-template-columns: minmax(0, 1.1fr) minmax(360px, .9fr); }
 .glossary-visual { gap: 18px; position: relative; }
-.glossary-photo { flex: 1; height: auto; min-height: 0; object-fit: contain; width: 100%; }
-.glossary-visual-placeholder { align-items: center; display: flex; flex: 1; flex-direction: column; gap: 16px; justify-content: center; min-height: 0; }
+.glossary-photo { background: #fff; box-sizing: border-box; flex: 1 1 0; height: 0; margin-inline: auto; max-width: min(100%, 520px); min-height: 0; object-fit: contain; padding: 12px; width: 100%; }
+.glossary-visual-placeholder { align-items: center; display: flex; flex: 1 1 0; flex-direction: column; gap: 16px; justify-content: center; min-height: 0; }
 .glossary-visual-placeholder span { color: rgba(255,255,255,.16); font-family: 'Noto Serif JP'; font-size: clamp(90px, 14vw, 170px); line-height: 1; }
 .glossary-visual-placeholder small { color: rgba(255,255,255,.5); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; }
 .glossary-related { border-top: 1px solid var(--line); margin-top: 26px; padding-top: 20px; }
@@ -263,17 +272,17 @@ footer > a { color: #9a9b96; font-size: 10px; text-transform: uppercase; }
 .tech-modal { align-items: center; background: rgba(14,15,13,.88); display: flex; inset: 0; justify-content: center; padding: 34px; position: fixed; z-index: 70; backdrop-filter: blur(12px); }
 .tech-modal-panel { background: var(--white); box-shadow: 0 30px 90px rgba(0,0,0,.45); display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(360px, .65fr); max-height: calc(100vh - 68px); max-width: 1320px; overflow: hidden; position: relative; width: 100%; }
 .modal-close { align-items: center; background: var(--red); border: 0; color: white; cursor: pointer; display: flex; height: 48px; justify-content: center; position: absolute; right: 0; top: 0; width: 48px; z-index: 4; }
-.visualization-stage { background: #252723; display: flex; flex-direction: column; justify-content: center; min-height: 660px; padding: 32px; }
+.visualization-stage { background: #252723; display: flex; flex-direction: column; justify-content: center; min-height: min(660px, calc(100vh - 68px)); padding: 32px; }
 .visualization-topline { align-items: center; color: white; display: flex; justify-content: space-between; }
 .visualization-topline span { color: #d55a51; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
 .visualization-topline small { color: rgba(255,255,255,.48); font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
-.visualization-stage > .technique-illustration { margin: auto 0; width: 100%; }
+.visualization-stage > .technique-illustration { margin: auto 0; max-height: calc(100vh - 192px); width: 100%; }
 .visualization-legend { border-top: 1px solid rgba(255,255,255,.14); color: rgba(255,255,255,.6); display: flex; gap: 24px; padding-top: 18px; }
 .visualization-legend span { align-items: center; display: flex; font-size: 9px; gap: 7px; }
 .visualization-legend i { background: #ede9df; border-radius: 50%; height: 7px; width: 7px; }
 .visualization-legend .legend-ghost { background: transparent; border: 1px dashed rgba(255,255,255,.65); }
 .visualization-legend .legend-red { background: #c5443b; }
-.visualization-copy { overflow-y: auto; padding: 58px 48px 38px; position: relative; }
+.visualization-copy { max-height: calc(100vh - 68px); overflow-y: auto; padding: 58px 48px 38px; position: relative; }
 .modal-kanji { color: rgba(166,43,36,.08); font-family: 'Noto Serif JP'; font-size: 76px; position: absolute; right: 28px; top: 55px; writing-mode: vertical-rl; }
 .modal-eyebrow { color: var(--red); font-size: 9px; font-weight: 700; letter-spacing: .16em; margin: 0 0 13px; text-transform: uppercase; }
 .visualization-copy h2 { font-family: var(--serif); font-size: 36px; letter-spacing: -.035em; line-height: 1.1; margin: 0 55px 8px 0; }
@@ -315,7 +324,7 @@ footer > a { color: #9a9b96; font-size: 10px; text-transform: uppercase; }
   .dojo-list { padding-left: 35px; }
   .tech-modal-panel { grid-template-columns: 1fr 340px; }
   .glossary-modal-panel { grid-template-columns: minmax(0, 1fr) 340px; }
-  .visualization-stage { min-height: 570px; padding: 24px; }
+  .visualization-stage { min-height: min(570px, calc(100vh - 68px)); padding: 24px; }
   .visualization-copy { padding: 52px 28px 30px; }
 }
 
@@ -377,9 +386,10 @@ footer > a { color: #9a9b96; font-size: 10px; text-transform: uppercase; }
   .tech-modal { align-items: flex-start; overflow-y: auto; padding: 0; }
   .tech-modal-panel { display: flex; flex-direction: column; max-height: none; min-height: 100vh; width: 100%; }
   .visualization-stage { min-height: 420px; padding: 24px 16px 18px; }
-  .visualization-stage > .technique-illustration { margin: 25px 0 10px; }
+  .visualization-stage > .technique-illustration { margin: 25px 0 10px; max-height: none; }
+  .visualization-stage > .technique-media-frame { max-height: none; }
   .visualization-legend { flex-wrap: wrap; gap: 10px 18px; }
-  .visualization-copy { overflow: visible; padding: 42px 22px 28px; }
+  .visualization-copy { max-height: none; overflow: visible; padding: 42px 22px 28px; }
   .visualization-copy h2 { font-size: 30px; }
   .modal-kanji { font-size: 58px; top: 38px; }
 }
