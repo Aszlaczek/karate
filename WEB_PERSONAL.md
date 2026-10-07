@@ -86,7 +86,7 @@ WEB_PERSONAL.md  DONE.md  TODO.md  README.md
 | Trasa | Strona | Zawartość |
 | --- | --- | --- |
 | `/` | `HomePage` | Hero, ścieżka 12 stopni (`#stopnie`), atlas (`#techniki`), teaser słownika (`#slownik`), Dojo-kun (`#dojo-kun`) |
-| `/kyu/:kyuId` | `LevelPage` | `:kyuId` = `start`, `10`…`1`, `dan` → panel wymagań + techniki stopnia + prev/next |
+| `/kyu/:kyuId` | `LevelPage` | `:kyuId` = `start`, `10`…`1`, `dan` → panel wymagań (**z nawigacją prev / wszystkie / next** na dole panelu) + techniki stopnia |
 | `/techniki` | `TechniquesPage` | pełny atlas, filtry: kategoria × stopień × tekst |
 | `/slownik` | `GlossaryPage` | zakładki kategorii + wyszukiwarka + karty haseł |
 | `*` | `NotFoundPage` | 404 |
@@ -114,7 +114,8 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   (belka II stopnia), `level`, `time`, `intro`, `groups[]` (wymagania).
 - **`techniques.json`** — 132 techniki w 7 filtrach (Uderzenia, Kopnięcia,
   Bloki, Pozycje, Kumite, Kata): `name`, `japanese`, `reading`, `category`,
-  `description`, `tags`, `focus`, **`levels[]`** (które kyu ją egzaminuje),
+  `description`, `tags`, `focus`,   **`levels[]`** (które kyu ją egzaminuje — musi zawierać **każdy** kyu,
+  w którego wymaganiach technika jest linkowana; pilnuje tego audyt P0.3),
   **`aliases[]`** (warianty nazwy w tekście wymagań → auto-linkowanie),
   **`infographic`** (klucz → rysunek w mapie `DRAWINGS`: `zuki`, `uchi`,
   `dachi`, `uke`, `geri`, `kata`, `kumite`), `image`, **`video`**
@@ -154,7 +155,9 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   aliasy techniki.
 - **Audyt danych:** `npm run audit` (`scripts/audit-danych.mjs`) generuje
   `RAPORT.md`: integralność struktury (krytyczne), pokrycie stopni, mismatchy
-  `levels[]`↔wymagania (warning P0.3), kolizje aliasów (P0.4), klasyfikacja
+  `levels[]`↔wymagania (warning P0.3 — **tylko dla stopni kyu 1–10**;
+  `start` i `dan` celowo nie mają atlasu, `levels[]` ∈ 1–10, więc link
+  w ich wymaganiach nie jest rozjazdem), kolizje aliasów (P0.4), klasyfikacja
   nielinkowanych wymagań, media i statystyki. Skrypt jest read-only i używa
   tej samej logiki dopasowania co `RequirementsPanel` — po zmianach w JSON-ach
   uruchom go ponownie (exit 0 = brak problemów krytycznych).
@@ -182,13 +185,27 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   `taikyoku` — aliasy do nowych rysunków). Media z pola `video` obsługuje
   `renderMedia()` (YouTube/`<video>`/`<img>`, klasy `.technique-media*`).
 - **Ikony** dodawaj do union `IconName` + rekordu `paths` w `components/Icon.tsx`.
-- **Nawigacja mobilna:** header jest sticky (podąża za użytkownikiem);
-  ≤980px desktopowy nav jest zastępowany przyciskiem ☰ (`.menu-toggle`,
+- **Nawigacja (sticky):** header `.site-header` jest `position: sticky; top: 0`
+  i podąża za użytkownikiem **zarówno na desktopie, jak i na telefonie**.
+  Działa tylko dlatego, że `.app-shell` ma `overflow-x: clip`, a **nie**
+  `overflow: hidden/auto/scroll` — jakikolwiek overflow na przodku tworzy
+  scroll container i zabija sticky (nie „naprawiaj" tego wracając do
+  `hidden`). Kotwice (`#stopnie`, `#techniki`…) mają `section[id] {
+  scroll-margin-top: 84px }` (70px ≤700px), żeby nagłówki nie chowały się
+  pod headerem.
+- **Nawigacja mobilna:** ≤980px desktopowy nav jest zastępowany przyciskiem
+  ☰ (`.menu-toggle`,
   ikona `menu` → `close` po otwarciu) w prawym górnym rogu — rozwija panel
   `#site-menu` pod headerem po prawej (linki do sekcji + `.nav-cta`
   „Sprawdź wymagania"; `.header-cta` jest wtedy ukryty). Zamykanie: klik
   w link / Escape / klik poza headerem / zmiana trasy (`Header.tsx`);
   a11y: `aria-expanded`, `aria-controls`. Desktop >980px bez zmian.
+- **Nawigacja między stopniami:** pasek prev / „Wszystkie stopnie" / next
+  (`.level-nav`) jest **wewnątrz panelu wymagań** (`RequirementsPanel`,
+  pod `requirements-note`), jako siatka `repeat(3, 1fr)` — 3 równe sekcje.
+  Nie przenoś go na dół `LevelPage` (pod techniki) i nie zmieniaj siatki na
+  `1fr auto 1fr`. Brakujący sąsiad (`start`/`dan`) = sekcja-placeholder z
+  „—". Dane: `getNeighbourLevels(level.order)` z `levels.json`.
 - **A11y:** przyciski mają `aria-label`, modal ma `role="dialog"
   aria-modal="true"`, SVG ilustracji `role="img"` + `aria-label`.
 

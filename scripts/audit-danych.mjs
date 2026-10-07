@@ -107,6 +107,9 @@ for (const t of techs)
 const collisions = [...aliasMap].filter(([, ids]) => new Set(ids).size > 1);
 for (const [alias, ids] of collisions)
   warn.push(`KOLIZJA — alias "${alias}" → ${ids.length} technik: ${ids.join(", ")}`);
+const collisionTasks = ["P0.4", "P1.9"].filter((task) =>
+  collisions.some(([alias]) => (alias.includes("kumite-turniejowe") ? "P0.4" : "P1.9") === task),
+);
 
 const glossEntries = glossary.categories.flatMap((c) => c.entries);
 const glossIds = new Set(glossEntries.map((e) => e.id));
@@ -141,12 +144,17 @@ const coverage = kyuLevels.map((l) => {
   return { kyu: l.kyu, id: l.id, techCount, items: items.length, linked: linked.length };
 });
 
+// Mismatchy liczymy wyłącznie dla stopni kyu (1–10): `start` i `dan` celowo
+// nie mają technik w atlasie (`levels[]` ∈ 1–10), więc dopisek tam jest
+// niemożliwy, a link w wymaganiach tych poziomów nie jest rozjazdem danych.
 const mismatches = [];
-for (const { level, item } of allItems) {
-  for (const t of findMatches(item)) {
-    if (!t.levels.includes(Number(level.id)))
-      mismatches.push({ kyu: level.kyu, item, tech: t.name, levels: [...t.levels].sort((a, b) => b - a).join(", ") });
-  }
+for (const level of kyuLevels) {
+  for (const group of level.groups)
+    for (const item of group.items)
+      for (const t of findMatches(item)) {
+        if (!t.levels.includes(Number(level.id)))
+          mismatches.push({ kyu: level.kyu, item, tech: t.name, levels: [...t.levels].sort((a, b) => b - a).join(", ") });
+      }
 }
 for (const m of mismatches)
   warn.push(`MISMATCH — "${m.tech}" (levels=[${m.levels}]) linkowane w wymaganiach ${m.kyu}`);
@@ -196,7 +204,7 @@ p(
     ? `Krytyczne problemy: **${critical.length}**\n\n${critical.map((c) => `- ❌ ${c}`).join("\n")}`
     : "Krytycznych problemów: **0** ✅ (id unikalne, obowiązkowe pola, kategorie ↔ `CATEGORIES`, `levels`∈1–10, `infographic` ↔ `DRAWINGS`, słownik bez martwych `related`, `levels.json` bez duplikatów/pustych pozycji).",
   "",
-  `Ostrzeżenia (do zadań P0.3 / P0.4): **${warn.length}**`,
+  `Ostrzeżenia (do zadań ${mismatches.length ? "P0.3, " : ""}P0.4 / P1.9): **${warn.length}**`,
   "",
   "## 2. Pokrycie stopni",
   "",
@@ -220,12 +228,16 @@ p(
         "",
         "Zadanie: **P0.3** w `TODO.md` (dopisać stopnie albo udokumentować semantykę).",
       ]
-    : ["Brak mismatchów ✅"]),
+    : [
+        "Brak mismatchów ✅",
+        "",
+        "Sprawdzane są tylko stopnie kyu (1–10) — `start` i `dan` nie mają technik w atlasie (`levels[]` ∈ 1–10), więc link w ich wymaganiach nie jest rozjazdem danych.",
+      ]),
   "",
   "## 4. Kolizje aliasów",
   "",
   collisions.length
-    ? `${collisions.map(([alias, ids]) => `- ⚠️ „${alias}" → ${ids.length} technik: ${ids.join(", ")}`).join("\n")}\n\nZadanie: **P0.4** w \`TODO.md\`.`
+    ? `${collisions.map(([alias, ids]) => `- ⚠️ „${alias}" → ${ids.length} technik: ${ids.join(", ")}`).join("\n")}\n\nZadania w \`TODO.md\`: ${collisionTasks.map((t) => `**${t}**`).join(", ")}.`
     : "Brak kolizji ✅",
   "",
   "## 5. Linkowanie wymagań",
@@ -250,8 +262,8 @@ p(
   "",
   "## 8. Rekomendacje",
   "",
-  "1. **P0.3** — domknąć spójność `levels[]` ↔ wymagania (sekcja 3).",
-  "2. **P0.4** — rozdzielić alias „Kumite turniejowe\" (sekcja 4).",
+  "1. **P0.4** — rozdzielić alias „Kumite turniejowe\" (sekcja 4).",
+  "2. **P1.9** — poprawić aliasy krótkie ippon-kumite, kolizja „Ippon kumite 10 kyu\" (sekcja 4).",
   "3. **P1.6** — dopisać Saiha / Seienchin / Ushiro-mawashi-geri (sekcja 5, grupa „brak w atlasie\").",
   "4. **P1.7** — hasła Rei/Osu/Bunkai/Kamae + linkowanie wymagań do słownika (sekcja 5).",
   "5. **P1.5** — zdjęcia self-hosted zamiast Unsplash (sekcja 6).",

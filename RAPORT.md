@@ -1,6 +1,6 @@
 # RAPORT.md — audyt danych KIHON
 
-> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: 2026-10-06).
+> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: 2026-10-07).
 > Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`,
 > `src/data/index.ts` (CATEGORIES, normalizacja aliasów), `TechniqueIllustration.tsx` (DRAWINGS).
 
@@ -8,20 +8,20 @@
 
 Krytycznych problemów: **0** ✅ (id unikalne, obowiązkowe pola, kategorie ↔ `CATEGORIES`, `levels`∈1–10, `infographic` ↔ `DRAWINGS`, słownik bez martwych `related`, `levels.json` bez duplikatów/pustych pozycji).
 
-Ostrzeżenia (do zadań P0.3 / P0.4): **32**
+Ostrzeżenia (do zadań P0.4 / P1.9): **2**
 
 ## 2. Pokrycie stopni
 
 | Stopień | Techniki (`levels[]`) | Pozycje wymagań | Linkowane |
 |---|---:|---:|---:|
-| 10 kyu (10) | 10 | 7 | 6 |
-| 9 kyu (9) | 12 | 8 | 5 |
-| 8 kyu (8) | 12 | 7 | 6 |
-| 7 kyu (7) | 14 | 8 | 7 |
-| 6 kyu (6) | 15 | 5 | 4 |
-| 5 kyu (5) | 10 | 7 | 5 |
-| 4 kyu (4) | 21 | 6 | 4 |
-| 3 kyu (3) | 11 | 6 | 3 |
+| 10 kyu (10) | 11 | 7 | 6 |
+| 9 kyu (9) | 16 | 8 | 5 |
+| 8 kyu (8) | 18 | 7 | 6 |
+| 7 kyu (7) | 20 | 8 | 7 |
+| 6 kyu (6) | 19 | 5 | 4 |
+| 5 kyu (5) | 13 | 7 | 5 |
+| 4 kyu (4) | 24 | 6 | 4 |
+| 3 kyu (3) | 14 | 6 | 3 |
 | 2 kyu (2) | 14 | 6 | 1 |
 | 1 kyu (1) | 14 | 6 | 0 |
 | bez stopnia (start) | 0 | 6 | 1 |
@@ -31,49 +31,16 @@ Start i dan celowo nie mają technik w atlasie (`levels[]` ∈ 1–10).
 
 ## 3. Techniki ↔ stopnie (mismatchy)
 
-**31 mismatchów** — technika linkowana w wymaganiach stopnia, którego nie ma w jej `levels[]` (audyt trafień = ta sama logika co `RequirementsPanel`):
+Brak mismatchów ✅
 
-| Wymagania | Technika | `levels[]` |
-|---|---|---|
-| bez stopnia — Pozycja fudo-dachi | Fudō dachi | [10] |
-| 10 kyu — Taikyoku Sono Ichi | Taikyoku sono ichi | [9] |
-| 9 kyu — Pewne fudo-dachi i przejścia | Fudō dachi | [10] |
-| 9 kyu — Seiken chudan oi-zuki z rotacją bioder | Seiken oi-tsuki | [10] |
-| 9 kyu — Czyste jodan-uke i gedan-barai | Seiken jōdan uke | [10] |
-| 9 kyu — Czyste jodan-uke i gedan-barai | Seiken gedan-barai | [10] |
-| 8 kyu — Sanchin-dachi | Sanchin dachi | [9] |
-| 8 kyu — Soto-uke | Seiken chūdan soto-uke | [9] |
-| 8 kyu — Uraken shomen-uchi | Uraken shōmen-uchi | [6] |
-| 8 kyu — Mawashi-geri gedan/chudan | Mawashi-geri chūdan (chūsoku, haisoku) | [5] |
-| 8 kyu — Yoko-geri | Yoko-geri chūdan | [6] |
-| 8 kyu — Taikyoku Sono Ni | Taikyoku sono ni | [9] |
-| 7 kyu — Kokutsu-dachi | Kokutsu dachi | [9] |
-| 7 kyu — Uchi-uke i zestawy obronne | Seiken chūdan uchi-uke | [9] |
-| 7 kyu — Uraken z rotacją bioder | Uraken shōmen-uchi | [6] |
-| 7 kyu — Yoko-geri — pełne wykonanie | Yoko-geri chūdan | [6] |
-| 7 kyu — Ushiro-geri — wprowadzenie | Ushiro-geri chūdan | [5] |
-| 7 kyu — Taikyoku Sono San | Taikyoku sono san | [8] |
-| 6 kyu — Kiba-dachi | Kiba dachi | [8] |
-| 6 kyu — Tate-zuki i morote-zuki | Seiken tate-tsuki | [8] |
-| 6 kyu — Tate-zuki i morote-zuki | Seiken morote-tsuki | [10] |
-| 6 kyu — Mawashi-geri jodan | Mawashi-geri jōdan (chūsoku, haisoku) | [4] |
-| 5 kyu — Shuto mawashi-uke | Shūto mawashi-uke | [7, 4] |
-| 5 kyu — Kansetsu-geri | Kansetsu-geri | [6] |
-| 5 kyu — Sanchin-no-kata | Sanchin no kata | [4] |
-| 4 kyu — Oroshi-kakato-geri | Oroshi uchi kakato-geri | [1] |
-| 4 kyu — Tobi-geri | Mae tobi-geri | [2] |
-| 4 kyu — Pinan Sono Yon | Pinan sono yon | [3] |
-| 3 kyu — Pinan Sono Go | Pinan sono go | [2] |
-| 3 kyu — Yantsu, Tsuki-no-kata | Yantsu | [1] |
-| 3 kyu — Yantsu, Tsuki-no-kata | Tsuki no kata | [1] |
-
-Zadanie: **P0.3** w `TODO.md` (dopisać stopnie albo udokumentować semantykę).
+Sprawdzane są tylko stopnie kyu (1–10) — `start` i `dan` nie mają technik w atlasie (`levels[]` ∈ 1–10), więc link w ich wymaganiach nie jest rozjazdem danych.
 
 ## 4. Kolizje aliasów
 
+- ⚠️ „ippon-kumite-10-kyu" → 2 technik: ippon-kumite-1-10-kyu, ippon-kumite-10-1-kyu
 - ⚠️ „kumite-turniejowe" → 7 technik: jiyu-kumite-4-walk-7-kyu, jiyu-kumite-5-walk-6-kyu, jiyu-kumite-6-walk-5-kyu, jiyu-kumite-6-walk-4-kyu, jiyu-kumite-6-walk-3-kyu, jiyu-kumite-8-walk-2-kyu, jiyu-kumite-8-walk-1-kyu
 
-Zadanie: **P0.4** w `TODO.md`.
+Zadania w `TODO.md`: **P0.4**, **P1.9**.
 
 ## 5. Linkowanie wymagań
 
@@ -139,8 +106,8 @@ Nielinkowane (39) wg powodu:
 
 ## 8. Rekomendacje
 
-1. **P0.3** — domknąć spójność `levels[]` ↔ wymagania (sekcja 3).
-2. **P0.4** — rozdzielić alias „Kumite turniejowe" (sekcja 4).
+1. **P0.4** — rozdzielić alias „Kumite turniejowe" (sekcja 4).
+2. **P1.9** — poprawić aliasy krótkie ippon-kumite, kolizja „Ippon kumite 10 kyu" (sekcja 4).
 3. **P1.6** — dopisać Saiha / Seienchin / Ushiro-mawashi-geri (sekcja 5, grupa „brak w atlasie").
 4. **P1.7** — hasła Rei/Osu/Bunkai/Kamae + linkowanie wymagań do słownika (sekcja 5).
 5. **P1.5** — zdjęcia self-hosted zamiast Unsplash (sekcja 6).

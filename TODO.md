@@ -20,15 +20,6 @@
 
 ## Zadania
 
-- [ ] 🔴 **P0.3 — Spójność `levels[]` ↔ wymagania egzaminacyjne**
-  Audyt (`node scripts/audit-danych.mjs` → `RAPORT.md`) wykazuje **31 mismatchów**:
-  technika jest linkowana w wymaganiach stopnia, którego nie ma w jej `levels[]`
-  (np. *Seiken chudan oi-zuki* wymagany na 9 kyu, a `levels=[10]` — filtr
-  atlasu nie pokaże jej na stronie 9). Do wyboru: (a) dopisać brakujące
-  stopnie (można wygenerować z linkowanych wymagań), albo (b) udokumentować
-  semantykę „pierwszy stopień" w `WEB_PERSONAL.md` i zaakceptować rozjazd.
-  Kryteria: audyt bez warningów `MISMATCH`, `npm run build` ✅.
-
 - [ ] 🔴 **P0.4 — Kolizja aliasu „Kumite turniejowe"**
   Ten sam alias należy do 7 technik `jiyu-kumite-*` — `findTechniqueByAlias()`
   zawsze zwraca pierwszą z brzegu. Usunąć alias z 6 (zostawić przy właściwej)
@@ -85,6 +76,16 @@
   wzorce z `create-vite`) i Prettier, dodaj skrypty `npm run lint` /
   `npm run format`, napraw wszystkie znalezione ostrzeżenia.
   Kryteria: `npm run lint` bez błędów, `npm run build` ✅.
+
+- [ ] 🟡 **P1.9 — Kolizja aliasów krótkich „Ippon kumite N kyu"**
+  Po renumeracji serii ippon-kumite (`techniques.json`) alias
+  „Ippon kumite 10 kyu" należy do dwóch technik
+  (`ippon-kumite-1-10-kyu` i `ippon-kumite-10-1-kyu`), a
+  `ippon-kumite-9-2-kyu` ma w aliasach zapis „9 (1 kyu)" i „1 kyu"
+  (został po starym układzie). Na linki w wymaganiach to nie wpływa
+  (w `levels.json` nie ma „Ippon"), ale audyt raportuje KOLIZJA.
+  Kryteria: `npm run audit` raportuje tylko kolizję z P0.4,
+  `npm run build` ✅.
 
 - [ ] 🟢 **P2.1 — SEO i Open Graph**
   Uzupełnij `index.html`: `og:*`/`twitter:*` meta, `canonical`; rozważ
@@ -146,3 +147,8 @@
   „Sprawdź wymagania" (CTA schowane z headera), zamykanie: link / Escape /
   klik poza / zmiana trasy, `aria-expanded` + `aria-controls`, desktop
   >980px bez zmian, build ✅ (2026-10-06).
+- [x] **P0.3 — Spójność `levels[]` ↔ wymagania egzaminacyjne** — dopisano
+  brakujące kyu do `levels[]` 28 technik (31 mismatchów → 0), audyt liczy
+  MISMATCH-y tylko dla stopni kyu (`start`/`dan` nie mają atlasu, `levels[]`
+  ∈ 1–10 — udokumentowane w `RAPORT.md` i `WEB_PERSONAL.md`), build ✅
+  (2026-10-07).

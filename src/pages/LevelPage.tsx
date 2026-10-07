@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { Link, Navigate, useParams } from "react-router";
+import { Navigate, useParams } from "react-router";
 import BeltPath from "../components/BeltPath";
 import RequirementsPanel from "../components/RequirementsPanel";
 import TechniquesSection from "../components/TechniquesSection";
-import { BELT_NAMES, getLevel, getNeighbourLevels } from "../data";
+import { BELT_NAMES, getLevel } from "../data";
 
 const LevelPage = () => {
   const { kyuId } = useParams();
@@ -15,8 +15,6 @@ const LevelPage = () => {
   }, [level]);
 
   if (!level) return <Navigate to="/nie-istnieje" replace />;
-
-  const { prev, next } = getNeighbourLevels(level.order);
 
   return (
     <>
@@ -39,24 +37,6 @@ const LevelPage = () => {
           subtitle: `Techniki wskazane na egzaminie ${level.kyu} — pobrane z atlasu technik.`,
         }}
       />
-
-      <nav className="level-nav" aria-label="Nawigacja między stopniami">
-        {prev ? (
-          <Link className="level-nav-link" to={`/kyu/${prev.id}`}>
-            <small>← Poprzedni</small>
-            <strong>{prev.kyu}</strong>
-            <span>{prev.level}</span>
-          </Link>
-        ) : <span />}
-        <Link className="level-nav-all" to="/#stopnie">Wszystkie stopnie</Link>
-        {next ? (
-          <Link className="level-nav-link level-nav-next" to={`/kyu/${next.id}`}>
-            <small>Następny →</small>
-            <strong>{next.kyu}</strong>
-            <span>{next.level}</span>
-          </Link>
-        ) : <span />}
-      </nav>
     </>
   );
 };

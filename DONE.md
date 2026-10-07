@@ -7,16 +7,18 @@
 
 ---
 
-## Status projektu (stan: 2026-10-06)
+## Status projektu (stan: 2026-10-07)
 
-**Faza: atlas treści kompletny (132 techniki) + audyt danych.** Strona buduje
-się bez błędów (`npm run build` → `tsc -b && vite build`), ma 5 tras (w tym
-12 endpointów stopni `/kyu/…`), dane w `src/data/*.json` (techniki w 7
+**Faza: atlas treści kompletny (132 techniki) + spójność danych z UI.** Strona
+buduje się bez błędów (`npm run build` → `tsc -b && vite build`), ma 5 tras (w
+tym 12 endpointów stopni `/kyu/…`), dane w `src/data/*.json` (techniki w 7
 filtrach kategorii, wymagania linkowane automatycznie, ilustracje SVG per
 klucz infografii + gotowość na wideo z pola `video`). Odtwarzalny audyt
-danych: `npm run audit` → `RAPORT.md` (0 problemów krytycznych; otwarte:
-31 mismatchów `levels[]`↔wymagania = P0.3, kolizja aliasu = P0.4).
-Nawigacja mobilna: burger w prawym górnym rogu (≤980px) z panelem sekcji.
+danych: `npm run audit` → `RAPORT.md` (0 problemów krytycznych, 0
+mismatchów `levels[]`↔wymagania — P0.3 zamknięte; otwarte: kolizje aliasów
+= P0.4 i P1.9). Nawigacja: sticky header działa też po scrollu
+(`overflow-x: clip` na `.app-shell`), pasek prev / wszystkie / next jest w
+panelu wymagań, nie pod technikami; burger w prawym górnym rogu (≤980px).
 Przed nami zadania z `TODO.md` (m.in. weryfikacja treści ze sensei,
 brakujące kata Saiha/Seienchin).
 
@@ -107,6 +109,27 @@ one-pager bez routera.
 ---
 
 ## Dziennik zmian
+
+### 2026-10-07 — Sticky nawigacja, przyciski kyu w panelu i spójność `levels[]`
+- Zmienione pliki: `src/index.css`, `src/components/RequirementsPanel.tsx`,
+  `src/pages/LevelPage.tsx`, `src/data/techniques.json` (28 technik),
+  `scripts/audit-danych.mjs`, `RAPORT.md`, `TODO.md`, `WEB_PERSONAL.md`.
+- Rezultat: (1) header faktycznie podąża za użytkownikiem — `.app-shell`
+  miał `overflow: hidden`, które tworzyło scroll container i zabijało
+  `position: sticky`; zamienione na `overflow-x: clip` + `scroll-margin-top`
+  dla kotwic pod 84/70px header. (2) Nawigacja prev / „Wszystkie stopnie" /
+  next przeniesiona z dołu strony do wnętrza panelu wymagań, jako pasek
+  **3 równych sekcji** z wyraźnymi przyciskami (5 kyu → `6 kyu`,
+  `Wszystkie stopnie`, `4 kyu`; `start`/`dan` mają sekcję-pusta). (3)
+  większy odstęp „Stopień" ↔ „Szukaj" w toolbarze atlasu (`gap` 22 → 48px,
+  zawijanie wierszy). (4) domknięty P0.3: dopisane brakujące kyu do
+  `levels[]` 28 technik wg wymagań, audyt liczy MISMATCH-y tylko dla
+  poziomów kyu (start/dan bez atlasu).
+- Weryfikacja: `npm run audit` ✅ (0 krytycznych, 0 MISMATCH, exit 0),
+  `npm run build` ✅, `npm run preview` + curl 200 na `/`, `/kyu/9`,
+  `/kyu/start`, `/kyu/dan`, `/techniki`, `/slownik`, render-check SSR
+  (`LevelPage`/`TechniquesPage`/`HomePage`) — nav po `requirements-note`,
+  brak `level-nav` pod technikami, 3 komórki nawigacji ✅.
 
 ### 2026-10-06 — Raport audytu danych, reorganizacja TODO i mobilna nawigacja
 - Zmienione pliki: `scripts/audit-danych.mjs` (nowy skrypt audytu),

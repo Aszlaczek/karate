@@ -1,5 +1,6 @@
 import { useMemo } from "react";
-import { BELT_NAMES, buildTechniqueLinkPattern, findTechniqueByAlias } from "../data";
+import { Link } from "react-router";
+import { BELT_NAMES, buildTechniqueLinkPattern, findTechniqueByAlias, getNeighbourLevels } from "../data";
 import type { Level } from "../data/types";
 import Icon from "./Icon";
 import { useModals } from "./ModalProvider";
@@ -7,6 +8,7 @@ import { useModals } from "./ModalProvider";
 const RequirementsPanel = ({ level }: { level: Level }) => {
   const { openTechnique } = useModals();
   const pattern = useMemo(() => buildTechniqueLinkPattern(), []);
+  const { prev, next } = getNeighbourLevels(level.order);
 
   const renderRequirementItem = (item: string) =>
     item.split(pattern).map((part, index) => {
@@ -47,6 +49,37 @@ const RequirementsPanel = ({ level }: { level: Level }) => {
           ))}
         </div>
         <p className="requirements-note"><strong>Ważne:</strong> programy egzaminacyjne mogą różnić się między organizacjami i dojo. Zawsze potwierdź aktualny zakres u swojego sensei.</p>
+        <nav className="level-nav" aria-label="Nawigacja między stopniami">
+          {prev ? (
+            <Link className="level-nav-cell level-nav-prev" to={`/kyu/${prev.id}`}>
+              <small>← Poprzedni stopień</small>
+              <strong>{prev.kyu}</strong>
+              <span>{prev.level}</span>
+            </Link>
+          ) : (
+            <span className="level-nav-cell level-nav-placeholder">
+              <small>← Poprzedni stopień</small>
+              <strong>—</strong>
+            </span>
+          )}
+          <Link className="level-nav-cell level-nav-all" to="/#stopnie">
+            <small>Cała ścieżka</small>
+            <strong>Wszystkie stopnie</strong>
+            <span>12 stopni egzaminu</span>
+          </Link>
+          {next ? (
+            <Link className="level-nav-cell level-nav-next" to={`/kyu/${next.id}`}>
+              <small>Następny stopień →</small>
+              <strong>{next.kyu}</strong>
+              <span>{next.level}</span>
+            </Link>
+          ) : (
+            <span className="level-nav-cell level-nav-placeholder">
+              <small>Następny stopień →</small>
+              <strong>—</strong>
+            </span>
+          )}
+        </nav>
       </div>
     </section>
   );
