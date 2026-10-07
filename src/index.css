@@ -124,7 +124,7 @@ section[id] { scroll-margin-top: 84px; }
 .search-box input { background: transparent; border: 0; outline: 0; width: 170px; }
 .search-box input::placeholder { color: #85837b; }
 .tech-grid { display: grid; gap: 22px; grid-template-columns: repeat(3, 1fr); }
-.tech-card { background: var(--white); border: 1px solid rgba(23,25,22,.08); min-width: 0; transition: .25s ease; }
+.tech-card { background: var(--white); border: 1px solid rgba(23,25,22,.08); cursor: pointer; min-width: 0; transition: .25s ease; }
 .tech-card:hover { box-shadow: 0 18px 40px rgba(23,25,22,.12); transform: translateY(-4px); }
 .tech-image { background: var(--ink); border: 0; cursor: pointer; display: block; height: 210px; overflow: hidden; padding: 0; position: relative; text-align: left; width: 100%; }
 .tech-image::after { background: linear-gradient(0deg, rgba(23,25,22,.55), transparent 50%); content: ''; inset: 0; pointer-events: none; position: absolute; }
@@ -138,6 +138,7 @@ section[id] { scroll-margin-top: 84px; }
 .technique-illustration { color: #fff; display: block; }
 .technique-media-frame { background: #171915; height: 100%; position: relative; width: 100%; }
 .technique-media { border: 0; display: block; height: 100%; inset: 0; object-fit: cover; position: absolute; width: 100%; }
+.tech-image .technique-media { object-fit: contain; pointer-events: none; }
 .visualization-stage > .technique-media-frame { aspect-ratio: 16 / 9; height: auto; margin: auto 0; width: 100%; }
 .visualization-stage > .technique-media-frame > .technique-media { object-fit: contain; }
 .illustration-ground { fill: #252723; }
@@ -203,9 +204,8 @@ section[id] { scroll-margin-top: 84px; }
 .glossary-grid { display: grid; gap: 22px; grid-template-columns: repeat(3, 1fr); }
 .glossary-card { background: var(--paper); border: 1px solid rgba(23,25,22,.08); color: inherit; cursor: pointer; display: flex; flex-direction: column; font: inherit; padding: 26px; text-align: left; transition: .25s ease; width: 100%; }
 .glossary-card:hover { background: var(--white); box-shadow: 0 16px 34px rgba(23,25,22,.1); transform: translateY(-3px); }
-.glossary-image { background: var(--ink); display: block; height: 140px; margin: -26px -26px 4px; overflow: hidden; }
-.glossary-image img { display: block; filter: grayscale(100%) contrast(1.05); height: 100%; object-fit: cover; transition: .5s ease; width: 100%; }
-.glossary-card:hover .glossary-image img { transform: scale(1.04); }
+.glossary-image { align-items: center; background: var(--ink); display: flex; height: 140px; justify-content: center; margin: -26px -26px 4px; overflow: hidden; }
+.glossary-image img { display: block; filter: grayscale(100%) contrast(1.05); height: 100%; object-fit: contain; width: 100%; }
 .glossary-japanese { color: var(--red); font-family: 'Noto Serif JP'; font-size: 30px; line-height: 1.2; }
 .glossary-reading { color: var(--muted); font-size: 9px; letter-spacing: .06em; margin-top: 8px; text-transform: uppercase; }
 .glossary-reading strong { color: var(--ink); }
@@ -217,7 +217,7 @@ section[id] { scroll-margin-top: 84px; }
 
 .glossary-modal-panel { grid-template-columns: minmax(0, 1.1fr) minmax(360px, .9fr); }
 .glossary-visual { gap: 18px; position: relative; }
-.glossary-photo { flex: 1; height: auto; min-height: 0; object-fit: cover; width: 100%; }
+.glossary-photo { flex: 1; height: auto; min-height: 0; object-fit: contain; width: 100%; }
 .glossary-visual-placeholder { align-items: center; display: flex; flex: 1; flex-direction: column; gap: 16px; justify-content: center; min-height: 0; }
 .glossary-visual-placeholder span { color: rgba(255,255,255,.16); font-family: 'Noto Serif JP'; font-size: clamp(90px, 14vw, 170px); line-height: 1; }
 .glossary-visual-placeholder small { color: rgba(255,255,255,.5); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; }

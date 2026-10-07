@@ -184,6 +184,17 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   + wpis w mapie (stare klucze: `maegeri`, `gedan`, `sotouke`, `zenkutsu`,
   `taikyoku` — aliasy do nowych rysunków). Media z pola `video` obsługuje
   `renderMedia()` (YouTube/`<video>`/`<img>`, klasy `.technique-media*`).
+- **Media (obraz / gif / wideo):** kadruj przez `object-fit: contain` —
+  `.glossary-image img`, `.glossary-photo`, `.tech-image .technique-media`;
+  nigdy `cover` w kartach i modalach (mamy pokazywać całość, bez ucięcia),
+  letterbox na ciemnym tle (`--ink` / `.technique-media-frame`). Media w
+  karcie mają `pointer-events: none`, żeby klik trafił do przycisku karty,
+  a `<video>` dostaje `controls` **tylko w modalu** — karta przekazuje
+  `controls={false}` (`TechniqueIllustration`), więc klik w media otwiera
+  modal z odtwarzaczem. Otwieranie: klik w **całą** kartę techniki
+  (`onClick` na `<article>`, przycisk `.tech-image` zostaje punktem
+  klawiaturowym — jedno zdarzenie, bez zagnieżdżonych handlerów) albo w
+  całą kartę hasła (`<button className="glossary-card">`).
 - **Ikony** dodawaj do union `IconName` + rekordu `paths` w `components/Icon.tsx`.
 - **Nawigacja (sticky):** header `.site-header` jest `position: sticky; top: 0`
   i podąża za użytkownikiem **zarówno na desktopie, jak i na telefonie**.

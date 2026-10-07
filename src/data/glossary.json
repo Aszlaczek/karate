@@ -183,56 +183,56 @@
       "entries": [
         {
           "id": "fudo",
-          "term": "Pozycja bazowa",
+          "term": "Fudo dachi",
           "japanese": "不動立",
           "reading": "fudo-dachi",
           "description": "Stabilna postawa o szerokości bioder, lekko ugiętych kolanach i równomiernym ciężarze. Pierwsza pozycja na drodze egzaminacyjnej.",
-          "image": null,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5-qRSTmmCLGwP3sktFtNktZSr0tHP-eoJn6gIk-2LvQr3wluxFh29pkc&s=10",
           "related": []
         },
         {
           "id": "musubi",
-          "term": "Pozycja powitalna",
+          "term": "Musubi dachi",
           "japanese": "結び立",
           "reading": "musubi-dachi",
           "description": "Pięty razem, palce rozstawione w literę V — pozycja do ukłonu (rei) i mokuso przed treningiem.",
-          "image": null,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiROF_cNzbi-j4OkYRbYhBQtlXKt9cU_MrGYB-4WoFlH2pJB3v8x-BA4mv&s=10",
           "related": []
         },
         {
           "id": "heiko",
-          "term": "Pozycja równoległa",
+          "term": "Heikō dachi",
           "japanese": "平行立",
           "reading": "heikō-dachi",
           "description": "Stopy równolegle na szerokość bioder (nazywana też yoi-dachi) — punkt wyjścia do technik i przejść.",
-          "image": null,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQ8JE4B8vX0dXDlcOLjHhE2gmgYgZ78fmXIR-bPymhip54EaUyL7U-DsA&s=10",
           "related": ["seiken-oi-tsuki"]
         },
         {
           "id": "zenkutsu-dachi",
-          "term": "Pozycja wykroczna",
+          "term": "Zenkutsu dachi",
           "japanese": "前屈立ち",
           "reading": "zenkutsu-dachi",
           "description": "Długa pozycja: przednie kolano ugięte nad stopą, tylna noga wyprostowana, ciężar ok. 60/40. Fundament oi-zuki i większości kihon.",
-          "image": null,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB6G9EpswMpOEoJr-HT7X2tXEIp4Rzz4W0uRXqfzu0y9sTfom2QRC_4kQ&s=10",
           "related": ["zenkutsu-dachi", "seiken-oi-tsuki"]
         },
         {
           "id": "kokutsu",
-          "term": "Pozycja zachodnia",
+          "term": "Kokutsu dachi",
           "japanese": "後屈立ち",
           "reading": "kokutsu-dachi",
           "description": "Ciężar głównie na nodze tylnej, przednia stopa lekko na pięcie — baza do bloków i technik obronnych.",
-          "image": null,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0RwZahyi_JMsugE2YvudN76HHc5hDKj_1FobtgWgLvmOPpTVA_stzMzJy&s=10",
           "related": ["seiken-chudan-soto-uke"]
         },
         {
           "id": "sanchin-dachi",
-          "term": "Pozycja sanchin",
+          "term": "Sanchin dachi",
           "japanese": "三戦立",
           "reading": "sanchin-dachi",
           "description": "Stopy w linii półksiężyca, kolana skierowane do wewnątrz, napięty brzuch — pozycja kontroli oddechu i napięcia.",
-          "image": null,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO_V5hhkr0KcPTDwBXH141r6j8L71DdBE-DYP52nYY3-nZg5xirjg_HV4&s=10",
           "related": []
         },
         {
@@ -241,7 +241,7 @@
           "japanese": "騎馬立",
           "reading": "kiba-dachi",
           "description": "Szerokie rozkroczę z kolanami rozepchniętymi nad stopami i prostym tułowiem — buduje siłę nóg i stabilność boczną.",
-          "image": null,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEGGlD7RbW4l1n9gumPBe1tHf0URGtH7LSRwUmynQrFjPrKPn8z8jKU6FI&s=10",
           "related": []
         },
         {
@@ -250,12 +250,12 @@
           "japanese": "猫足立ち",
           "reading": "neko-ashi-dachi",
           "description": "Ciężar na nodze tylnej, przednia stopa dotyka podłogi palcami — szybka, zwrotna pozycja do kopnięć.",
-          "image": null,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTMPDQeVboG6XUa54ImoburzkIF6hBYhget6FkAR9kz4VJ4ZtXD1LEby0&s=10",
           "related": ["mae-geri-chudan-chusoku"]
         },
         {
           "id": "kosa",
-          "term": "Pozycja skrzyżowana",
+          "term": "Kosa Dachi",
           "japanese": "交叉立",
           "reading": "kosa-dachi",
           "description": "Nogi skrzyżowane, ciężar na nodze wspierającej — stosowana po obrotach, w kombinacjach i kata.",
@@ -264,11 +264,11 @@
         },
         {
           "id": "seiza",
-          "term": "Pozycja klęcząca",
+          "term": "Seiza",
           "japanese": "正座",
           "reading": "seiza",
           "description": "Klęknienie na kolanach z podniesionymi stopami — porządek otwarcia treningu, mokuso i ukłonu w dojo.",
-          "image": null,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3WnVH4RUFz_nuf5qYr8121zeyug6tSwXTUvlJBQJG1QEjJMjwrJxGB76u&s=10",
           "related": []
         }
       ]

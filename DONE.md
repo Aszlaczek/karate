@@ -110,6 +110,24 @@ one-pager bez routera.
 
 ## Dziennik zmian
 
+### 2026-10-07 — Media bez ucięcia w kartach i modalach + klik w całą kartę techniki
+- Zmienione pliki: `src/index.css`, `src/pages/GlossaryPage.tsx`,
+  `src/components/TechniquesSection.tsx`, `src/components/TechniqueIllustration.tsx`.
+- Rezultat: obrazy słownika (`object-fit: contain` w ramce 140px na ciemnym
+  tle, bez hover-zoomu) i zdjęcie w modalu hasła już się nie ucinają;
+  media w kartach atlasu (obraz/gif/mp4) też `contain` + `pointer-events:
+  none`, więc klik w media przechodzi do przycisku karty. Cała karta
+  techniki (nie tylko obraz) otwiera modal — jedno zdarzenie na `<article>`,
+  przycisk `.tech-image` zostaje punktem klawiaturowym. `<video>` dostaje
+  `controls` dopiero w modalu (`controls={false}` w karcie), klik w kartę →
+  modal z odtwarzaczem. Dodane `loading="lazy" decoding="async"` na obrazie
+  w `GlossaryPage`.
+- Weryfikacja: `npm run build` ✅, `npm run audit` ✅ (0 krytycznych,
+  0 MISMATCH), `npm run preview` + curl `/slownik`, `/techniki`, `/kyu/9`
+  (200), render-check SSR (karty: 132 × `.tech-card` + `.tech-image`,
+  słownik: 3 karty z `loading="lazy"`, mp4 bez `controls` w karcie /
+  z `controls` w modalu, gif i YouTube renderują się w obu kontekstach) ✅.
+
 ### 2026-10-07 — Sticky nawigacja, przyciski kyu w panelu i spójność `levels[]`
 - Zmienione pliki: `src/index.css`, `src/components/RequirementsPanel.tsx`,
   `src/pages/LevelPage.tsx`, `src/data/techniques.json` (28 technik),

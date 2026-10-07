@@ -71,9 +71,13 @@ const TechniquesSection = ({ sectionId = "techniki", heading = defaultHeading, l
       </div>
       <div className="tech-grid">
         {filtered.map((technique, index) => (
-          <article className="tech-card" key={technique.id}>
-            <button className="tech-image" onClick={() => openTechnique(technique)} aria-label={`Otwórz wizualizację techniki ${technique.name}`}>
-              <TechniqueIllustration technique={technique} />
+          <article className="tech-card" key={technique.id} onClick={() => openTechnique(technique)}>
+            <button
+              className="tech-image"
+              type="button"
+              aria-label={`Otwórz wizualizację techniki ${technique.name}`}
+            >
+              <TechniqueIllustration technique={technique} controls={false} />
               <span>{technique.category}</span>
               <small>{String(index + 1).padStart(2, "0")}</small>
               <b>Zobacz ruch <Icon name="arrow" size={16} /></b>

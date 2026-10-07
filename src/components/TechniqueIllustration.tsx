@@ -139,7 +139,7 @@ const DRAWINGS: Record<string, Drawing> = {
 const resolveMediaSrc = (value: string): string =>
   value.startsWith("/") ? `${import.meta.env.BASE_URL}${value.slice(1)}` : value;
 
-const renderMedia = (video: string, technique: Technique): ReactElement => {
+const renderMedia = (video: string, technique: Technique, controls: boolean): ReactElement => {
   const youtube = video.match(/(?:youtube(?:-nocookie)?\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{6,})/);
   if (youtube) {
     return (
@@ -156,12 +156,17 @@ const renderMedia = (video: string, technique: Technique): ReactElement => {
   if (/\.(gif|webp|jpe?g|png)(\?|#|$)/i.test(video)) {
     return <img className="technique-media" src={src} alt={technique.name} />;
   }
-  return <video className="technique-media" src={src} controls />;
-};
+  return <video className="technique-media" src={src} controls={controls} />;
+}
 
-function TechniqueIllustration({ technique }: { technique: Technique }) {
+interface TechniqueIllustrationProps {
+  technique: Technique;
+  controls?: boolean;
+}
+
+function TechniqueIllustration({ technique, controls = true }: TechniqueIllustrationProps) {
   if (technique.video) {
-    return <div className="technique-media-frame">{renderMedia(technique.video, technique)}</div>;
+    return <div className="technique-media-frame">{renderMedia(technique.video, technique, controls)}</div>;
   }
 
   const draw = DRAWINGS[technique.infographic] ?? DRAWINGS.zuki;
