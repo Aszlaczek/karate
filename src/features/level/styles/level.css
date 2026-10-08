@@ -1,0 +1,483 @@
+/* Ścieżka pasów, panel wymagań i nawigacja między stopniami. */
+
+.requirement-title h2 {
+  font-family: var(--serif);
+  font-size: clamp(32px, 4vw, 52px);
+  letter-spacing: -0.035em;
+  margin: 0;
+}
+
+.belt-path {
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 30px;
+}
+
+.belt-card {
+  background: transparent;
+  border: 0;
+  border-left: 1px solid var(--line);
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  min-width: 0;
+  padding: 10px 14px 27px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.belt-card:last-child {
+  border-right: 1px solid var(--line);
+}
+
+.belt-card::after {
+  background: var(--red);
+  bottom: -2px;
+  content: "";
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transition: 0.25s ease;
+  width: 0;
+}
+
+.belt-card:hover, .belt-card.active {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.belt-card.active::after {
+  left: 0;
+  width: 100%;
+}
+
+.belt-index {
+  color: #a6a297;
+  display: block;
+  font-family: var(--serif);
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+.belt-swatch {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  display: block;
+  height: 52px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: 0.2s ease;
+  width: 100%;
+}
+
+.belt-card:hover .belt-swatch, .belt-card.active .belt-swatch {
+  transform: translateY(-5px);
+  box-shadow:
+    0 10px 24px rgba(23, 25, 22, 0.15),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+
+.belt-swatch::before {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+  content: "";
+  inset: 10px 0;
+  position: absolute;
+}
+
+.belt-swatch i {
+  height: 100%;
+  position: absolute;
+  right: 14%;
+  width: 9px;
+}
+
+.belt-card > strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.belt-card > span:not(.belt-index):not(.belt-swatch) {
+  color: var(--red);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.belt-card > small {
+  color: var(--muted);
+  display: block;
+  font-size: 9px;
+  margin-top: 13px;
+  text-transform: uppercase;
+}
+
+.requirements {
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 20% 80%;
+  scroll-margin-top: 84px;
+}
+
+.requirement-side {
+  background: var(--ink);
+  color: var(--white);
+  min-height: 570px;
+  overflow: hidden;
+  position: relative;
+}
+
+.vertical-label {
+  font-size: 9px;
+  left: 28px;
+  letter-spacing: 0.22em;
+  position: absolute;
+  top: 34px;
+  writing-mode: vertical-rl;
+}
+
+.selected-belt-mark {
+  bottom: 54px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  height: 150px;
+  left: 0;
+  position: absolute;
+  width: 86%;
+}
+
+.selected-belt-mark i {
+  height: 100%;
+  position: absolute;
+  right: 18%;
+  width: 18px;
+}
+
+.gi-symbol {
+  color: rgba(255, 255, 255, 0.06);
+  font-family: "Noto Serif JP";
+  font-size: 110px;
+  position: absolute;
+  right: -12px;
+  top: 40px;
+  writing-mode: vertical-rl;
+}
+
+.requirement-content {
+  padding: 70px clamp(28px, 6vw, 90px);
+}
+
+.requirement-title {
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 38px;
+}
+
+.requirement-title > div > span {
+  color: var(--red);
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.requirement-title p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 12px 0 0;
+  max-width: 580px;
+}
+
+.time-badge {
+  background: var(--paper);
+  border-left: 3px solid var(--red);
+  min-width: 160px;
+  padding: 16px 20px;
+}
+
+.time-badge small, .time-badge strong {
+  display: block;
+}
+
+.time-badge small {
+  color: var(--muted);
+  font-size: 9px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.time-badge strong {
+  font-family: var(--serif);
+  font-size: 18px;
+}
+
+.requirement-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fights-badge {
+  border-left-color: var(--ink);
+}
+
+.requirement-groups {
+  display: grid;
+  gap: 36px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 42px 0;
+}
+
+.requirement-groups article:not(:nth-child(3n)):not(:last-child) {
+  border-right: 1px solid var(--line);
+  padding-right: 30px;
+}
+
+.group-number {
+  color: var(--red);
+  font-family: var(--serif);
+  font-size: 11px;
+}
+
+.requirement-groups h3 {
+  font-family: var(--serif);
+  font-size: 19px;
+  margin: 9px 0 20px;
+}
+
+.requirement-groups ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.requirement-groups li {
+  align-items: flex-start;
+  color: #51534e;
+  display: flex;
+  font-size: 12px;
+  gap: 8px;
+  line-height: 1.4;
+}
+
+.requirement-groups li svg {
+  color: var(--red);
+  flex: none;
+}
+
+.requirement-groups li > span {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 3px;
+}
+
+.requirements-note {
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 13px 17px;
+}
+
+.level-nav {
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 34px;
+}
+
+.level-nav-cell {
+  align-items: flex-start;
+  background: transparent;
+  border: 0;
+  border-right: 1px solid var(--line);
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  min-width: 0;
+  padding: 24px 22px;
+  text-align: left;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.level-nav-cell:last-child {
+  border-right: 0;
+}
+
+.level-nav-cell small {
+  color: var(--red);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.level-nav-cell strong {
+  font-family: var(--serif);
+  font-size: clamp(20px, 2.2vw, 27px);
+  letter-spacing: -0.02em;
+}
+
+.level-nav-cell span {
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.level-nav-cell:hover {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.level-nav-cell:hover small, .level-nav-cell:hover span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.level-nav-all {
+  align-items: center;
+  background: var(--paper);
+  text-align: center;
+}
+
+.level-nav-next {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.level-nav-all:hover {
+  background: var(--red);
+}
+
+.level-nav-placeholder {
+  color: #b4b0a5;
+  cursor: default;
+}
+
+.level-nav-placeholder:hover {
+  background: transparent;
+  color: #b4b0a5;
+}
+
+.level-nav-placeholder:hover small {
+  color: #b4b0a5;
+}
+
+@media (max-width: 980px) {
+  .belt-path {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 22px;
+  }
+
+  .requirements {
+    grid-template-columns: 16% 84%;
+  }
+
+  .requirement-groups {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .belt-path {
+    display: flex;
+    margin-right: -20px;
+    overflow-x: auto;
+    padding-right: 20px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .belt-card {
+    flex: 0 0 132px;
+    scroll-snap-align: start;
+  }
+
+  .requirements {
+    display: block;
+    scroll-margin-top: 70px;
+  }
+
+  .requirement-side {
+    min-height: 105px;
+  }
+
+  .vertical-label {
+    left: 20px;
+    top: 18px;
+    writing-mode: horizontal-tb;
+  }
+
+  .selected-belt-mark {
+    bottom: 0;
+    height: 50px;
+    left: auto;
+    right: 0;
+    width: 52%;
+  }
+
+  .gi-symbol {
+    font-size: 55px;
+    right: 55%;
+    top: 20px;
+    writing-mode: horizontal-tb;
+  }
+
+  .requirement-content {
+    padding: 45px 20px;
+  }
+
+  .requirement-title {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .time-badge {
+    width: 100%;
+  }
+
+  .requirement-groups {
+    grid-template-columns: 1fr;
+  }
+
+  .requirement-groups article:not(:last-child) {
+    border-bottom: 1px solid var(--line);
+    border-right: 0;
+    padding-bottom: 24px;
+    padding-right: 0;
+  }
+
+  .level-nav-cell {
+    gap: 4px;
+    padding: 16px 12px;
+  }
+
+  .level-nav-cell strong {
+    font-size: 17px;
+  }
+
+  .level-nav-cell small {
+    font-size: 8px;
+    letter-spacing: 0.08em;
+  }
+
+  .level-nav-cell span {
+    display: none;
+  }
+}

@@ -1,0 +1,294 @@
+/* Słownik: karty haseł, siatka, modal hasła, strefy (zone). */
+
+/* Diagram stref (ZoneIllustration) — rysunek postaci stref. */
+.zone-illustration {
+  color: #fff;
+  display: block;
+}
+
+.illustration-ground {
+  fill: #252723;
+}
+
+.illustration-grid {
+  color: #fff;
+}
+
+.floor-line {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.25);
+  stroke-dasharray: 7 8;
+  stroke-width: 2;
+}
+
+.figure-head {
+  fill: #ede9df;
+  stroke: #161815;
+  stroke-width: 6;
+}
+
+.figure-body,
+.figure-limb {
+  fill: none;
+  stroke: #ede9df;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 30;
+}
+
+.figure-body {
+  stroke-width: 48;
+}
+
+.figure-limb.accent-limb {
+  stroke: #f7f3e9;
+}
+
+.visualization-stage > .zone-illustration {
+  margin: auto 0;
+  max-height: calc(100vh - 192px);
+  width: 100%;
+}
+
+.zone-line {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.3);
+  stroke-dasharray: 14 14;
+  stroke-width: 2.5;
+}
+
+.zone-line.active {
+  stroke: #c5443b;
+  stroke-width: 4;
+}
+
+.zone-label-bg {
+  fill: #252723;
+}
+
+.zone-label {
+  fill: rgba(255, 255, 255, 0.6);
+  font-family: var(--sans);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.zone-label.active {
+  fill: #fff;
+}
+
+.glossary-section {
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+
+.glossary-description {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+  margin: -14px 0 30px;
+  max-width: 640px;
+}
+
+.glossary-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.glossary-card {
+  background: var(--paper);
+  border: 1px solid rgba(23, 25, 22, 0.08);
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font: inherit;
+  padding: 26px;
+  text-align: left;
+  transition: 0.25s ease;
+  width: 100%;
+}
+
+.glossary-card:hover {
+  background: var(--white);
+  box-shadow: 0 16px 34px rgba(23, 25, 22, 0.1);
+  transform: translateY(-3px);
+}
+
+.glossary-card.static {
+  cursor: default;
+}
+
+.glossary-card.static:hover {
+  background: var(--paper);
+  box-shadow: none;
+  transform: none;
+}
+
+.glossary-image {
+  align-items: center;
+  background: #fff;
+  display: flex;
+  height: 140px;
+  justify-content: center;
+  margin: -26px -26px 4px;
+  overflow: hidden;
+}
+
+.glossary-image img {
+  display: block;
+  filter: grayscale(100%) contrast(1.05);
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.glossary-image.diagram {
+  background: #252723;
+}
+
+.glossary-image .zone-illustration {
+  height: 100%;
+  width: 100%;
+}
+
+.glossary-japanese {
+  color: var(--red);
+  font-family: "Noto Serif JP";
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.glossary-reading {
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+.glossary-reading strong {
+  color: var(--ink);
+}
+
+.glossary-term {
+  font-family: var(--serif);
+  font-size: 19px;
+  margin: 14px 0 10px;
+}
+
+.glossary-summary {
+  color: var(--muted);
+  flex: 1;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.glossary-hint {
+  align-items: center;
+  color: var(--red);
+  display: inline-flex;
+  font-size: 10px;
+  font-weight: 700;
+  gap: 7px;
+  letter-spacing: 0.08em;
+  margin-top: 18px;
+  text-transform: uppercase;
+}
+
+.glossary-hint svg {
+  transition: 0.2s ease;
+}
+
+.glossary-card:hover .glossary-hint svg {
+  transform: translateX(4px);
+}
+
+.glossary-visual {
+  gap: 18px;
+  position: relative;
+}
+
+.glossary-photo {
+  background: #fff;
+  box-sizing: border-box;
+  flex: 1 1 0;
+  height: 0;
+  margin-inline: auto;
+  max-width: min(100%, 520px);
+  min-height: 0;
+  object-fit: contain;
+  padding: 12px;
+  width: 100%;
+}
+
+.glossary-visual-placeholder {
+  align-items: center;
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  min-height: 0;
+}
+
+.glossary-visual-placeholder span {
+  color: rgba(255, 255, 255, 0.16);
+  font-family: "Noto Serif JP";
+  font-size: clamp(90px, 14vw, 170px);
+  line-height: 1;
+}
+
+.glossary-visual-placeholder small {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.glossary-related {
+  border-top: 1px solid var(--line);
+  margin-top: 26px;
+  padding-top: 20px;
+}
+
+.glossary-related > small {
+  color: var(--muted);
+  display: block;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.glossary-related > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Przyciski powiązanych technik = TechniqueLink w wariancie chip (.technique-ref.chip). */
+
+@media (max-width: 980px) {
+  .glossary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .glossary-modal-panel {
+    grid-template-columns: minmax(0, 1fr) 340px;
+  }
+}
+
+@media (max-width: 700px) {
+  .glossary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visualization-stage > .zone-illustration {
+    margin: 25px 0 10px;
+    max-height: none;
+  }
+}

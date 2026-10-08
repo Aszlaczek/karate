@@ -1,25 +1,18 @@
-import { useMemo } from "react";
 import { Link } from "react-router";
-import { BELT_NAMES, buildTechniqueLinkPattern, findTechniqueByAlias, getNeighbourLevels } from "../data";
-import type { Level } from "../data/types";
-import Icon from "./Icon";
-import { useModals } from "./ModalProvider";
+import { BELT_NAMES, getNeighbourLevels, levels } from "@/data";
+import type { Level, RequirementItem } from "@/data/types";
+import Icon from "@/components/ui/Icon";
+import TechniqueLink from "@/features/technique/components/TechniqueLink";
+
+const itemKey = (item: RequirementItem) => (item.type === "technique" ? item.id : item.text);
+
+const fightsLabel = (count: number) => {
+  const plural = count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 12 || count % 100 > 14) ? "walki" : "walk";
+  return `${count} ${count === 1 ? "walka" : plural}`;
+};
 
 const RequirementsPanel = ({ level }: { level: Level }) => {
-  const { openTechnique } = useModals();
-  const pattern = useMemo(() => buildTechniqueLinkPattern(), []);
   const { prev, next } = getNeighbourLevels(level.order);
-
-  const renderRequirementItem = (item: string) =>
-    item.split(pattern).map((part, index) => {
-      const technique = findTechniqueByAlias(part);
-      if (!technique) return <span key={`${part}-${index}`}>{part}</span>;
-      return (
-        <button className="requirement-tech-link" key={`${part}-${index}`} onClick={() => openTechnique(technique)}>
-          {part}<Icon name="arrow" size={12} />
-        </button>
-      );
-    });
 
   return (
     <section className="requirements">
@@ -37,14 +30,26 @@ const RequirementsPanel = ({ level }: { level: Level }) => {
             <h2>Pas {BELT_NAMES[level.belt].toLowerCase()}{level.stripe ? " z belką" : ""}</h2>
             <p>{level.intro}</p>
           </div>
-          <div className="time-badge"><small>Orientacyjny staż</small><strong>{level.time}</strong></div>
+          <div className="requirement-badges">
+            <div className="time-badge"><small>Orientacyjny staż</small><strong>{level.time}</strong></div>
+            {level.fights !== null && (
+              <div className="time-badge fights-badge"><small>Walki egzaminacyjne</small><strong>{fightsLabel(level.fights)}</strong></div>
+            )}
+          </div>
         </div>
         <div className="requirement-groups">
           {level.groups.map((group, index) => (
             <article key={group.title}>
               <span className="group-number">0{index + 1}</span>
               <h3>{group.title}</h3>
-              <ul>{group.items.map((item) => <li key={item}><Icon name="check" size={16} /><span>{renderRequirementItem(item)}</span></li>)}</ul>
+              <ul>
+                {group.items.map((item) => (
+                  <li key={itemKey(item)}>
+                    <Icon name="check" size={16} />
+                    <span>{item.type === "technique" ? <TechniqueLink id={item.id} /> : item.text}</span>
+                  </li>
+                ))}
+              </ul>
             </article>
           ))}
         </div>
@@ -65,7 +70,7 @@ const RequirementsPanel = ({ level }: { level: Level }) => {
           <Link className="level-nav-cell level-nav-all" to="/#stopnie">
             <small>Cała ścieżka</small>
             <strong>Wszystkie stopnie</strong>
-            <span>12 stopni egzaminu</span>
+            <span>{levels.length} stopni egzaminu</span>
           </Link>
           {next ? (
             <Link className="level-nav-cell level-nav-next" to={`/kyu/${next.id}`}>

@@ -20,35 +20,30 @@
 
 ## Zadania
 
-- [ ] 🔴 **P0.4 — Kolizja aliasu „Kumite turniejowe"**
-  Ten sam alias należy do 7 technik `jiyu-kumite-*` — `findTechniqueByAlias()`
-  zawsze zwraca pierwszą z brzegu. Usunąć alias z 6 (zostawić przy właściwej)
-  albo rozróżnić nazwy. Kryteria: audyt bez warningów `KOLIZJA`,
-  `npm run build` ✅.
-
 - [ ] 🟡 **P1.1 — Weryfikacja treści ze sensei**
-  Wymagania 12 stopni (`levels.json`) i ~25 haseł słownika
-  (`glossary.json`) powstały programowo na bazie danych kolorowych pasów —
-  oznacz do merytorycznej korekty przez instruktora (nazwy, zakres, staż).
+  Wymagania 16 stopni (`levels.json`: start, 10–1 kyu, 1–5 dan) i ~28 haseł
+  słownika (`glossary.json`) powstały programowo na bazie danych kolorowych
+  pasów — oznacz do merytorycznej korekty przez instruktora (nazwy, zakres,
+  staż, liczby walk `fights` — w tym ekstrapolowane 10/9/8 kyu i dan).
   Kryteria: przegląd + poprawki wpisane bezpośrednio do JSON-ów, build ✅.
 
-- [ ] 🟡 **P1.6 — Brakujące techniki w atlasie (Saiha, Seienchin, ushiro-mawashi)**
-  `levels.json` wymienia techniki, których nie ma w `techniques.json`:
-  kata **Saiha** i **Seienchin** (1 dan) oraz **Ushiro-mawashi-geri** (3 kyu).
-  Dopis wpisy (`aliases`, `levels`, `infographic`: `kata` / `geri`) i sprawdź
-  linkowanie z poziomu. Decyzja (2026-10-06): to dalszy rozwój strony,
-  na razie pomijamy (te pozycje są celowo nielinkowane).
-  Kryteria: techniki widoczne w atlasie i linkowane z właściwych stopni,
-  `npm run build` ✅.
+- [ ] 🟡 **P1.6 — Brakujące techniki w atlasie (Seienchin, ushiro-mawashi)**
+  Wymagania zawierają pozycje bez odpowiednika w `techniques.json`:
+  **Seienchin** (1 kyu) i **Ushiro-mawashi-geri** (3 kyu) — trzymają się
+  w `levels.json` jako `{type:"text"}` (audyt: sekcja 5). Dopis wpisy
+  (`aliases`, `levels`, `infographic`: `kata` / `geri`) i zamień pozycje
+  na referencje `{type:"technique", id}`. (Saiha już w atlasie ✅.)
+  Kryteria: techniki widoczne w atlasie i wymagane z właściwych stopni,
+  `npm run audit` bez pozycji P1.6, `npm run build` ✅.
 
-- [ ] 🟡 **P1.7 — Słownik: Rei / Osu / Bunkai / Kamae + linkowanie wymagań**
-  Pozycje wymagań jak „Ukłon rei", „Znaczenie słowa Osu", „Podstawy bunkai",
-  „kamae i dystans" (raport: 8 pozycji, w tym „Seiza i mokuso") nie linkują,
-  bo odpowiednich haseł nie ma. Dopisz hasła do `glossary.json` (Rei, Osu,
-  Bunkai, Kamae — własne kategorie lub „Postawa i etykieta"; opcjonalnie
-  Seiza/Mokuso) i rozszerz `RequirementsPanel` o linkowanie do haseł
-  słownika (poza technikami). Kryteria: wskazane pozycje linkują,
-  `npm run build` ✅.
+- [ ] 🟡 **P1.7 — Słownik: Rei / Osu / Bunkai / Kamae + linkowanie opisów**
+  Pozycje typu `text` w wymaganiach („Ukłon rei", „Znaczenie słowa Osu",
+  „Podstawy bunkai", „kamae i dystans"…) nie linkują, bo odpowiednich haseł
+  nie ma. Dopisz hasła do `glossary.json` (Rei, Osu, Bunkai, Kamae — własne
+  kategorie lub „Postawa i etykieta"; opcjonalnie Seiza/Mokuso) i rozszerz
+  `RequirementItem` o trzeci typ `{type:"glossary", id}` linkujący do modala
+  hasła (obok `technique` i `text`; renderuje go `TechniqueLink`).
+  Kryteria: wskazane pozycje linkują, `npm run build` ✅.
 
 - [ ] 🟡 **P1.2 — Zdjęcia dla haseł słownika**
   Pola `image` w `glossary.json` są puste (`null`) → modal pokazuje placeholder
@@ -81,16 +76,6 @@
   `npm run format`, napraw wszystkie znalezione ostrzeżenia.
   Kryteria: `npm run lint` bez błędów, `npm run build` ✅.
 
-- [ ] 🟡 **P1.9 — Kolizja aliasów krótkich „Ippon kumite N kyu"**
-  Po renumeracji serii ippon-kumite (`techniques.json`) alias
-  „Ippon kumite 10 kyu" należy do dwóch technik
-  (`ippon-kumite-1-10-kyu` i `ippon-kumite-10-1-kyu`), a
-  `ippon-kumite-9-2-kyu` ma w aliasach zapis „9 (1 kyu)" i „1 kyu"
-  (został po starym układzie). Na linki w wymaganiach to nie wpływa
-  (w `levels.json` nie ma „Ippon"), ale audyt raportuje KOLIZJA.
-  Kryteria: `npm run audit` raportuje tylko kolizję z P0.4,
-  `npm run build` ✅.
-
 - [ ] 🟢 **P2.1 — SEO i Open Graph**
   Uzupełnij `index.html`: `og:*`/`twitter:*` meta, `canonical`; rozważ
   generowanie tytułów/OP dla tras (obecnie `document.title` w stronach).
@@ -122,6 +107,25 @@
 ---
 
 ## Archiwum zamkniętych zadań
+
+- [x] **P0.4 — Kolizja aliasu „Kumite turniejowe"** — rozstrzygnięte przy
+  reorganizacji walk: wpisy `jiyu-kumite-*` (7 technik-nosników aliasu)
+  usunięte z atlasu, liczbę walk przeniesiono na pole `Level.fights`;
+  audyt bez kolizji `KOLIZJA`, build ✅ (2026-10-08).
+- [x] **P1.9 — Kolizja aliasów krótkich „Ippon kumite N kyu"** — alias
+  „Ippon kumite 10 kyu" usunięty z `ippon-kumite-10-1-kyu` (został przy
+  właściwej technikze), audyt bez kolizji, build ✅ (2026-10-08).
+- [x] **Wymagania strukturalne + stopnie 1–5 dan + walki w info. głównych** —
+  `levels.json` przebudowane: 16 stopni (start, 10–1 kyu, `dan`…`dan5`
+  o `number` 11–15), pozycje wymagań jako referencje
+  `{technique|text}`, pole `fights` (badge „Walki egzaminacyjne",
+  ekstrapolowane 10/9/8 kyu i dan — do weryfikacji w P1.1), genericzna
+  technika `kumite` usunięta z atlasu; multi-use `TechniqueLink.tsx`
+  (warianty inline/chip); kata danowe z `infographic: "kata"`, przywrócone
+  pokrycie `levels[]` kyu-kata wg programu; alias-linkowanie usunięte
+  z `src/data/index.ts`; audyt przepisany na strukturalne sprawdzanie
+  (zakres 0–15, P0.3 = krytyczne) — 0 krytycznych / 0 ostrzeżeń,
+  build ✅ (2026-10-08).
 
 - [x] **Inicjalny rebuild projektu** — kompletny one-pager KIHON na
   React 19 + Vite 7 + TS + Tailwind v4, build ✅ (commit `fa354c3`, 2026-10-05).

@@ -10,14 +10,23 @@
     "level": "Początek drogi",
     "time": "Start",
     "intro": "Poznaj etykietę dojo i przygotuj ciało do regularnego treningu.",
+    "fights": null,
     "groups": [
       {
         "title": "Etykieta",
-        "items": ["Ukłon rei przy wejściu", "Znaczenie słowa Osu", "Bezpieczne zachowanie w dojo"]
+        "items": [
+          { "type": "text", "text": "Ukłon rei przy wejściu" },
+          { "type": "text", "text": "Znaczenie słowa Osu" },
+          { "type": "text", "text": "Bezpieczne zachowanie w dojo" }
+        ]
       },
       {
         "title": "Podstawy",
-        "items": ["Pozycja fudo-dachi", "Seiza i mokuso", "Oddychanie i rozgrzewka"]
+        "items": [
+          { "type": "technique", "id": "fudo-dachi" },
+          { "type": "text", "text": "Seiza i mokuso" },
+          { "type": "text", "text": "Oddychanie i rozgrzewka" }
+        ]
       }
     ]
   },
@@ -32,18 +41,37 @@
     "level": "Fundamenty",
     "time": "3–6 mies.",
     "intro": "Pierwszy egzamin sprawdza postawę, koordynację i najprostsze techniki ręczne.",
+    "fights": 1,
     "groups": [
       {
         "title": "Kihon",
-        "items": ["Yoi-dachi, zenkutsu-dachi", "Seiken chudan oi-zuki", "Jodan-uke, gedan-barai"]
+        "items": [
+          { "type": "technique", "id": "yoi-dachi" },
+          { "type": "technique", "id": "fudo-dachi" },
+          { "type": "technique", "id": "zenkutsu-dachi" },
+          { "type": "technique", "id": "seiken-oi-tsuki" },
+          { "type": "technique", "id": "seiken-morote-tsuki" },
+          { "type": "technique", "id": "seiken-jodan-uke" },
+          { "type": "technique", "id": "seiken-gedan-barai" }
+        ]
       },
       {
         "title": "Kopnięcia",
-        "items": ["Hiza-geri", "Kin-geri"]
+        "items": [
+          { "type": "technique", "id": "hiza-geri" },
+          { "type": "technique", "id": "kin-geri" }
+        ]
       },
       {
-        "title": "Kata i sprawność",
-        "items": ["Taikyoku Sono Ichi", "Pompki, przysiady, brzuszki"]
+        "title": "Kata i kumite",
+        "items": [
+          { "type": "technique", "id": "taikyoku-sono-ichi" },
+          { "type": "technique", "id": "ippon-kumite-1-10-kyu" }
+        ]
+      },
+      {
+        "title": "Sprawność",
+        "items": [{ "type": "text", "text": "Pompki, przysiady, brzuszki" }]
       }
     ]
   },
@@ -58,18 +86,43 @@
     "level": "Fundamenty",
     "time": "6–9 mies.",
     "intro": "Belka nad pierwszym kolorem wymaga pewności ruchu, czystego wykończenia i świadomego oddechu.",
+    "fights": 2,
     "groups": [
       {
         "title": "Kihon",
-        "items": ["Pewne fudo-dachi i przejścia", "Seiken chudan oi-zuki z rotacją bioder", "Czyste jodan-uke i gedan-barai"]
+        "items": [
+          { "type": "technique", "id": "fudo-dachi" },
+          { "type": "technique", "id": "sanchin-dachi" },
+          { "type": "technique", "id": "kokutsu-dachi" },
+          { "type": "technique", "id": "musubi-dachi" },
+          { "type": "technique", "id": "seiken-oi-tsuki" },
+          { "type": "technique", "id": "seiken-ago-uchi" },
+          { "type": "technique", "id": "seiken-gyaku-tsuki" },
+          { "type": "technique", "id": "seiken-jodan-uke" },
+          { "type": "technique", "id": "seiken-gedan-barai" },
+          { "type": "technique", "id": "seiken-chudan-uchi-uke" },
+          { "type": "technique", "id": "seiken-chudan-soto-uke" }
+        ]
       },
       {
         "title": "Kopnięcia",
-        "items": ["Mae-geri chudan", "Serie kopnięć bez utraty równowagi"]
+        "items": [{ "type": "technique", "id": "mae-geri-chudan-chusoku" }]
       },
       {
-        "title": "Kata i wiedza",
-        "items": ["Taikyoku Sono Ichi — płynnie, z kiai", "Dojo-kun i znaczenie Osu", "Etykieta oraz bezpieczeństwo dojo"]
+        "title": "Kata i kumite",
+        "items": [
+          { "type": "technique", "id": "taikyoku-sono-ichi" },
+          { "type": "technique", "id": "taikyoku-sono-ni" },
+          { "type": "technique", "id": "ippon-kumite-2-9-kyu" },
+          { "type": "technique", "id": "renraku-1-9-kyu" }
+        ]
+      },
+      {
+        "title": "Wiedza",
+        "items": [
+          { "type": "text", "text": "Dojo-kun i znaczenie Osu" },
+          { "type": "text", "text": "Etykieta oraz bezpieczeństwo dojo" }
+        ]
       }
     ]
   },
@@ -84,18 +137,44 @@
     "level": "Stabilność",
     "time": "6–12 mies.",
     "intro": "Na tym poziomie liczy się stabilna pozycja, rotacja bioder i kontrola dystansu.",
+    "fights": 3,
     "groups": [
       {
         "title": "Kihon",
-        "items": ["Sanchin-dachi", "Soto-uke", "Uraken shomen-uchi"]
+        "items": [
+          { "type": "technique", "id": "sanchin-dachi" },
+          { "type": "technique", "id": "kiba-dachi" },
+          { "type": "technique", "id": "seiken-tate-tsuki" },
+          { "type": "technique", "id": "seiken-shita-tsuki" },
+          { "type": "technique", "id": "seiken-jun-tsuki" },
+          { "type": "technique", "id": "uraken-shomen-uchi" },
+          { "type": "technique", "id": "seiken-chudan-soto-uke" },
+          { "type": "technique", "id": "morote-chudan-uchi-uke" },
+          { "type": "technique", "id": "morote-uchi-uke-gedan-barai" },
+          { "type": "technique", "id": "kake-wake-uke" }
+        ]
       },
       {
         "title": "Kopnięcia",
-        "items": ["Mawashi-geri gedan/chudan", "Yoko-geri"]
+        "items": [
+          { "type": "technique", "id": "mae-geri-jodan" },
+          { "type": "technique", "id": "yoko-geri-chudan" },
+          { "type": "technique", "id": "mawashi-geri-chudan-chusoku-haisoku" }
+        ]
       },
       {
         "title": "Kata i kumite",
-        "items": ["Taikyoku Sono Ni", "Podstawy kumite — kamae i dystans"]
+        "items": [
+          { "type": "technique", "id": "taikyoku-sono-ni" },
+          { "type": "technique", "id": "taikyoku-sono-san" },
+          { "type": "technique", "id": "ippon-kumite-3-8-kyu" },
+          { "type": "technique", "id": "sanbon-kumite-wariant-i" },
+          { "type": "technique", "id": "renraku-2-8-kyu" }
+        ]
+      },
+      {
+        "title": "Wiedza",
+        "items": [{ "type": "text", "text": "Podstawy kumite — kamae i dystans" }]
       }
     ]
   },
@@ -110,18 +189,45 @@
     "level": "Stabilność",
     "time": "12–18 mies.",
     "intro": "Drugi stopień niebieskiego łączy pewną technikę z pierwszymi pełnymi kombinacjami i walką.",
+    "fights": 4,
     "groups": [
       {
         "title": "Kihon",
-        "items": ["Kokutsu-dachi", "Uchi-uke i zestawy obronne", "Uraken z rotacją bioder"]
+        "items": [
+          { "type": "technique", "id": "kokutsu-dachi" },
+          { "type": "technique", "id": "neko-ashi-dachi" },
+          { "type": "technique", "id": "tettsui-oroshi-uchi" },
+          { "type": "technique", "id": "tettsui-komekami-uchi" },
+          { "type": "technique", "id": "tettsui-hizo-uchi" },
+          { "type": "technique", "id": "tettsui-yoko-uchi" },
+          { "type": "technique", "id": "uraken-shomen-uchi" },
+          { "type": "technique", "id": "seiken-chudan-uchi-uke" },
+          { "type": "technique", "id": "seiken-mawashi-gedan-barai" },
+          { "type": "technique", "id": "shuto-mawashi-uke" }
+        ]
       },
       {
         "title": "Kopnięcia",
-        "items": ["Yoko-geri — pełne wykonanie", "Ushiro-geri — wprowadzenie"]
+        "items": [
+          { "type": "technique", "id": "mae-chusoku-kaage" },
+          { "type": "technique", "id": "teisoku-mawashi-soto-keage" },
+          { "type": "technique", "id": "heisoku-mawashi-uchi-keage" },
+          { "type": "technique", "id": "yoko-keage" },
+          { "type": "technique", "id": "yoko-geri-chudan" },
+          { "type": "technique", "id": "ushiro-geri-chudan" }
+        ]
       },
       {
         "title": "Kata i kumite",
-        "items": ["Taikyoku Sono San", "Pinan Sono Ichi", "Kumite z partnerem — podstawy"]
+        "items": [
+          { "type": "technique", "id": "taikyoku-sono-san" },
+          { "type": "technique", "id": "pinan-sono-ichi" },
+          { "type": "technique", "id": "ippon-kumite-4-7-kyu" }
+        ]
+      },
+      {
+        "title": "Wiedza",
+        "items": [{ "type": "text", "text": "Kumite z partnerem — podstawy" }]
       }
     ]
   },
@@ -136,18 +242,40 @@
     "level": "Świadomość",
     "time": "1–1,5 roku",
     "intro": "Techniki stają się płynne, a adept łączy obronę z kontratakiem.",
+    "fights": 5,
     "groups": [
       {
         "title": "Kihon",
-        "items": ["Kiba-dachi", "Tate-zuki i morote-zuki"]
+        "items": [
+          { "type": "technique", "id": "kiba-dachi" },
+          { "type": "technique", "id": "tsuru-ashi-dachi" },
+          { "type": "technique", "id": "seiken-morote-tsuki" },
+          { "type": "technique", "id": "seiken-tate-tsuki" },
+          { "type": "technique", "id": "uraken-shomen-uchi" },
+          { "type": "technique", "id": "uraken-sayu-uchi" },
+          { "type": "technique", "id": "uraken-hizo-uchi" },
+          { "type": "technique", "id": "uraken-oroshi-uchi" },
+          { "type": "technique", "id": "uraken-mawashi-uchi" },
+          { "type": "technique", "id": "nihon-nukite" },
+          { "type": "technique", "id": "yonhon-nukite-chudan" },
+          { "type": "technique", "id": "seiken-juji-uke" }
+        ]
       },
       {
         "title": "Kopnięcia",
-        "items": ["Mawashi-geri jodan"]
+        "items": [
+          { "type": "technique", "id": "kansetsu-geri" },
+          { "type": "technique", "id": "yoko-geri-chudan" },
+          { "type": "technique", "id": "mawashi-geri-gedan-haisoku" },
+          { "type": "technique", "id": "mawashi-geri-jodan-chusoku-haisoku" }
+        ]
       },
       {
         "title": "Kata i kumite",
-        "items": ["Pinan Sono Ni", "Walki egzaminacyjne — podstawy"]
+        "items": [
+          { "type": "technique", "id": "pinan-sono-ni" },
+          { "type": "technique", "id": "ippon-kumite-5-6-kyu" }
+        ]
       }
     ]
   },
@@ -162,18 +290,34 @@
     "level": "Świadomość",
     "time": "1,5–2 lata",
     "intro": "Belka żółtego wymaga pewności w całej sekwencji i spokojnej pracy bioder w walce.",
+    "fights": 6,
     "groups": [
       {
         "title": "Kihon",
-        "items": ["Shuto mawashi-uke", "Pewne pozycje w ruchu"]
+        "items": [
+          { "type": "technique", "id": "moro-ashi-dachi" },
+          { "type": "technique", "id": "shotei-uchi" },
+          { "type": "technique", "id": "jodan-hiji-ate" },
+          { "type": "technique", "id": "shuto-mawashi-uke" },
+          { "type": "technique", "id": "shotei-uke" }
+        ]
       },
       {
         "title": "Kopnięcia",
-        "items": ["Uchi/soto mawashi-geri", "Kansetsu-geri"]
+        "items": [
+          { "type": "technique", "id": "kansetsu-geri" },
+          { "type": "technique", "id": "mawashi-geri-chudan-chusoku-haisoku" },
+          { "type": "technique", "id": "ushiro-geri-chudan" }
+        ]
       },
       {
         "title": "Kata i kumite",
-        "items": ["Pinan Sono San", "Sanchin-no-kata", "Walki egzaminacyjne z różnymi partnerami"]
+        "items": [
+          { "type": "technique", "id": "pinan-sono-san" },
+          { "type": "technique", "id": "sanchin-no-kata" },
+          { "type": "technique", "id": "ippon-kumite-6-5-kyu" },
+          { "type": "technique", "id": "renraku-3-5-kyu" }
+        ]
       }
     ]
   },
@@ -188,18 +332,49 @@
     "level": "Dojrzałość",
     "time": "2–2,5 roku",
     "intro": "Wymagana jest dynamika, precyzja i świadome użycie całego ciała.",
+    "fights": 6,
     "groups": [
       {
-        "title": "Technika",
-        "items": ["Shuto uchi/uke", "Kombinacje w ruchu"]
+        "title": "Kihon",
+        "items": [
+          { "type": "technique", "id": "heisoku-dachi" },
+          { "type": "technique", "id": "heiko-dachi" },
+          { "type": "technique", "id": "uchi-hachiji-dachi" },
+          { "type": "technique", "id": "shuto-sakotsu-uchi" },
+          { "type": "technique", "id": "shuto-uchi-komi" },
+          { "type": "technique", "id": "shuto-ganmen-uchi" },
+          { "type": "technique", "id": "shuto-hizo-uchi" },
+          { "type": "technique", "id": "shuto-jodan-uchi-uchi" },
+          { "type": "technique", "id": "shuto-mawashi-uke" },
+          { "type": "technique", "id": "shuto-jodan-uke" },
+          { "type": "technique", "id": "shuto-chudan-soto-uke" },
+          { "type": "technique", "id": "shuto-chudan-uchi-uke" },
+          { "type": "technique", "id": "shuto-mae-gedan-barai" },
+          { "type": "technique", "id": "shuto-kake-jodan-uke" }
+        ]
       },
       {
         "title": "Kopnięcia",
-        "items": ["Oroshi-kakato-geri", "Tobi-geri"]
+        "items": [
+          { "type": "technique", "id": "yoko-geri-jodan" },
+          { "type": "technique", "id": "mawashi-geri-jodan-chusoku-haisoku" },
+          { "type": "technique", "id": "ushiro-geri-jodan" },
+          { "type": "technique", "id": "mae-tobi-geri" },
+          { "type": "technique", "id": "oroshi-uchi-kakato-geri" }
+        ]
       },
       {
         "title": "Kata i kumite",
-        "items": ["Pinan Sono Yon", "Kumite z różnymi partnerami"]
+        "items": [
+          { "type": "technique", "id": "sanchin-no-kata" },
+          { "type": "technique", "id": "pinan-sono-yon" },
+          { "type": "technique", "id": "ippon-kumite-7-4-kyu" },
+          { "type": "technique", "id": "sanbon-kumite-wariant-ii" }
+        ]
+      },
+      {
+        "title": "Wiedza",
+        "items": [{ "type": "text", "text": "Kumite z różnymi partnerami" }]
       }
     ]
   },
@@ -214,18 +389,40 @@
     "level": "Dojrzałość",
     "time": "2,5–3 lata",
     "intro": "Belka zielonego to odpowiedzialność za tempo, kontrolę partnera i jakość każdego powtórzenia.",
+    "fights": 6,
     "groups": [
       {
-        "title": "Technika",
-        "items": ["Hiji-ate w wielu kierunkach", "Zaawansowane kombinacje"]
+        "title": "Kihon",
+        "items": [
+          { "type": "technique", "id": "kake-dachi" },
+          { "type": "technique", "id": "chudan-hiji-ate" },
+          { "type": "technique", "id": "chudan-mae-hiji-ate" },
+          { "type": "technique", "id": "age-hiji-ate" },
+          { "type": "technique", "id": "ushiro-hiji-ate" },
+          { "type": "technique", "id": "oroshi-hiji-ate" },
+          { "type": "technique", "id": "shuto-juji-uke" }
+        ]
       },
       {
         "title": "Kopnięcia",
-        "items": ["Ushiro-mawashi-geri"]
+        "items": [
+          { "type": "technique", "id": "mae-kakato-geri" },
+          { "type": "text", "text": "Ushiro-mawashi-geri" }
+        ]
       },
       {
         "title": "Kata i kumite",
-        "items": ["Pinan Sono Go", "Yantsu, Tsuki-no-kata", "Kumite z presją czasu"]
+        "items": [
+          { "type": "technique", "id": "pinan-sono-yon" },
+          { "type": "technique", "id": "pinan-sono-go" },
+          { "type": "technique", "id": "yantsu" },
+          { "type": "technique", "id": "tsuki-no-kata" },
+          { "type": "technique", "id": "ippon-kumite-8-3-kyu" }
+        ]
+      },
+      {
+        "title": "Wiedza",
+        "items": [{ "type": "text", "text": "Kumite z presją czasu" }]
       }
     ]
   },
@@ -240,18 +437,44 @@
     "level": "Odpowiedzialność",
     "time": "3–4 lata",
     "intro": "Zaawansowany stopień wymaga pełnego repertuaru, kondycji i odpowiedzialnej walki.",
+    "fights": 8,
     "groups": [
       {
-        "title": "Technika",
-        "items": ["Pełny kihon z komend", "Techniki obrotowe i z wyskoku"]
+        "title": "Kihon",
+        "items": [
+          { "type": "technique", "id": "hira-ken-tsuki" },
+          { "type": "technique", "id": "hira-ken-oroshi-uchi" },
+          { "type": "technique", "id": "hira-ken-mawashi-uchi" },
+          { "type": "technique", "id": "haishu" },
+          { "type": "technique", "id": "age-jodan-tsuki" },
+          { "type": "technique", "id": "koken-uchi" },
+          { "type": "technique", "id": "koken-uke" }
+        ]
       },
       {
-        "title": "Kata",
-        "items": ["Gekisai Dai i Sho", "Podstawy bunkai"]
+        "title": "Kopnięcia",
+        "items": [
+          { "type": "technique", "id": "tobi-nidan-geri" },
+          { "type": "technique", "id": "mae-tobi-geri" }
+        ]
       },
       {
-        "title": "Próba",
-        "items": ["Test siłowy", "Wiedza o Kyokushin"]
+        "title": "Kata i kumite",
+        "items": [
+          { "type": "technique", "id": "pinan-sono-go" },
+          { "type": "technique", "id": "gekisai-dai" },
+          { "type": "technique", "id": "gekisai-sho" },
+          { "type": "technique", "id": "ippon-kumite-9-2-kyu" },
+          { "type": "technique", "id": "renraku-4-2-kyu" }
+        ]
+      },
+      {
+        "title": "Wiedza i próba",
+        "items": [
+          { "type": "text", "text": "Podstawy bunkai" },
+          { "type": "text", "text": "Test siłowy" },
+          { "type": "text", "text": "Wiedza o Kyokushin" }
+        ]
       }
     ]
   },
@@ -266,25 +489,51 @@
     "level": "Odpowiedzialność",
     "time": "4–5 lat",
     "intro": "Ostatni stopień przed czarnym pasem sprawdza dojrzałość techniki, interpretację kata i gotowość do roli starszego stażem.",
+    "fights": 8,
     "groups": [
       {
-        "title": "Technika",
-        "items": ["Zaawansowane kombinacje", "Precyzja technik z wyskoku"]
+        "title": "Kihon",
+        "items": [
+          { "type": "technique", "id": "ryuto-ken-tsuki" },
+          { "type": "technique", "id": "naka-yubi-ippon-ken" },
+          { "type": "technique", "id": "oya-yubi-ippon-ken" },
+          { "type": "technique", "id": "morote-kake-uke" },
+          { "type": "technique", "id": "chudan-haito-uchi-uke" }
+        ]
       },
       {
-        "title": "Kata",
-        "items": ["Saiha, Seienchin", "Interpretacja bunkai"]
+        "title": "Kopnięcia",
+        "items": [
+          { "type": "technique", "id": "jodan-uchi-haisoku-geri" },
+          { "type": "technique", "id": "oroshi-uchi-kakato-geri" },
+          { "type": "technique", "id": "oroshi-soto-kakato-geri" },
+          { "type": "technique", "id": "yoko-tobi-geri" }
+        ]
       },
       {
-        "title": "Próba",
-        "items": ["Rozbudowany test siłowy", "Seria walk kumite"]
+        "title": "Kata i kumite",
+        "items": [
+          { "type": "technique", "id": "yantsu" },
+          { "type": "technique", "id": "tsuki-no-kata" },
+          { "type": "technique", "id": "saiha" },
+          { "type": "technique", "id": "ippon-kumite-10-1-kyu" },
+          { "type": "technique", "id": "renraku-5-i-6-1-kyu" }
+        ]
+      },
+      {
+        "title": "Wiedza i próba",
+        "items": [
+          { "type": "text", "text": "Seienchin" },
+          { "type": "text", "text": "Interpretacja bunkai" },
+          { "type": "text", "text": "Rozbudowany test siłowy" }
+        ]
       }
     ]
   },
   {
     "id": "dan",
-    "kyu": "1 dan+",
-    "number": 99,
+    "kyu": "1 dan",
+    "number": 11,
     "order": 11,
     "belt": "black",
     "color": "#161815",
@@ -292,18 +541,162 @@
     "level": "Nowy początek",
     "time": "5+ lat",
     "intro": "Czarny pas nie kończy nauki. Potwierdza gotowość do świadomego rozwijania karate.",
+    "fights": 10,
     "groups": [
       {
         "title": "Mistrzostwo podstaw",
-        "items": ["Precyzyjny kihon", "Pełen zakres kata", "Bunkai i zastosowanie"]
+        "items": [
+          { "type": "technique", "id": "tensho" },
+          { "type": "technique", "id": "saiha" },
+          { "type": "text", "text": "Precyzyjny kihon" },
+          { "type": "text", "text": "Bunkai i zastosowanie" }
+        ]
       },
       {
         "title": "Charakter",
-        "items": ["Dojrzałość w kumite", "Pomoc młodszym stopniom", "Postawa zgodna z dojo-kun"]
+        "items": [
+          { "type": "text", "text": "Dojrzałość w kumite" },
+          { "type": "text", "text": "Pomoc młodszym stopniom" },
+          { "type": "text", "text": "Postawa zgodna z dojo-kun" }
+        ]
       },
       {
         "title": "Próba",
-        "items": ["Wymagania organizacji/branch chiefa", "Test kondycyjny", "Wielorundowe kumite"]
+        "items": [
+          { "type": "text", "text": "Wymagania organizacji/branch chiefa" },
+          { "type": "text", "text": "Test kondycyjny" },
+          { "type": "text", "text": "Wielorundowe kumite" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dan2",
+    "kyu": "2 dan",
+    "number": 12,
+    "order": 12,
+    "belt": "black",
+    "color": "#161815",
+    "stripe": "#b99025",
+    "level": "Rozwój",
+    "time": "7+ lat",
+    "intro": "Drugi stopień czarnego pasa wymaga dojrzałej techniki i świadomej interpretacji kata.",
+    "fights": 12,
+    "groups": [
+      {
+        "title": "Kata",
+        "items": [
+          { "type": "technique", "id": "gekisai-sho" },
+          { "type": "technique", "id": "gariyu" }
+        ]
+      },
+      {
+        "title": "Charakter",
+        "items": [
+          { "type": "text", "text": "Bunkai i interpretacja kata" },
+          { "type": "text", "text": "Doskonałość kihon" },
+          { "type": "text", "text": "Pomoc młodszym stopniom" }
+        ]
+      },
+      {
+        "title": "Próba",
+        "items": [
+          { "type": "text", "text": "Wymagania organizacji/branch chiefa" },
+          { "type": "text", "text": "Test kondycyjny" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dan3",
+    "kyu": "3 dan",
+    "number": 13,
+    "order": 13,
+    "belt": "black",
+    "color": "#161815",
+    "stripe": "#b99025",
+    "level": "Dojrzałość",
+    "time": "10+ lat",
+    "intro": "Trzeci dan to samodzielność w karate — własny styl, praca z uczniami i głębokie rozumienie bunkai.",
+    "fights": 12,
+    "groups": [
+      {
+        "title": "Kata",
+        "items": [{ "type": "technique", "id": "seishin" }]
+      },
+      {
+        "title": "Charakter",
+        "items": [
+          { "type": "text", "text": "Rozwój własnego stylu karate" },
+          { "type": "text", "text": "Korekta technik młodszym stopniom" }
+        ]
+      },
+      {
+        "title": "Próba",
+        "items": [
+          { "type": "text", "text": "Wymagania organizacji/branch chiefa" },
+          { "type": "text", "text": "Test kondycyjny" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dan4",
+    "kyu": "4 dan",
+    "number": 14,
+    "order": 14,
+    "belt": "black",
+    "color": "#161815",
+    "stripe": "#b99025",
+    "level": "Instruktorstwo",
+    "time": "14+ lat",
+    "intro": "Czwarty dan łączy mistrzostwo techniki z odpowiedzialnością instruktora za dojo i uczniów.",
+    "fights": 15,
+    "groups": [
+      {
+        "title": "Kata",
+        "items": [{ "type": "technique", "id": "kanku-dai" }]
+      },
+      {
+        "title": "Charakter",
+        "items": [
+          { "type": "text", "text": "Prowadzenie zajęć jako instruktor" },
+          { "type": "text", "text": "Etyka i dojo-kun w praktyce" }
+        ]
+      },
+      {
+        "title": "Próba",
+        "items": [{ "type": "text", "text": "Wymagania organizacji/branch chiefa" }]
+      }
+    ]
+  },
+  {
+    "id": "dan5",
+    "kyu": "5 dan",
+    "number": 15,
+    "order": 15,
+    "belt": "black",
+    "color": "#161815",
+    "stripe": "#b99025",
+    "level": "Mistrzostwo",
+    "time": "18+ lat",
+    "intro": "Piąty dan potwierdza dekady praktyki — mistrz gotowy do prowadzenia i kształtowania kolejnych pokoleń.",
+    "fights": 15,
+    "groups": [
+      {
+        "title": "Kata",
+        "items": [{ "type": "technique", "id": "sushiho" }]
+      },
+      {
+        "title": "Charakter",
+        "items": [
+          { "type": "text", "text": "Mentoring kolejnych stopni" },
+          { "type": "text", "text": "Prezentacja karate jako sztuki" }
+        ]
+      },
+      {
+        "title": "Próba",
+        "items": [{ "type": "text", "text": "Wymagania organizacji/branch chiefa" }]
       }
     ]
   }

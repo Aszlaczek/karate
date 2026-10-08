@@ -1,10 +1,8 @@
-import { useEffect } from "react";
 import { Link } from "react-router";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 
 const NotFoundPage = () => {
-  useEffect(() => {
-    document.title = "Nie znaleziono strony | Kihon";
-  }, []);
+  useDocumentTitle("Nie znaleziono strony | Kihon");
 
   return (
     <section className="section not-found">

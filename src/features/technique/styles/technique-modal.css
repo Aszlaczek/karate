@@ -1,0 +1,244 @@
+/* Modal techniki: scena wizualizacji, kopia kroków, nota. */
+
+.visualization-stage > .technique-media-frame {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  margin: auto 0;
+  max-height: calc(100vh - 192px);
+  width: 100%;
+}
+
+.visualization-stage > .technique-media-frame > .technique-media {
+  object-fit: contain;
+}
+
+/* Zdjęcie techniki — biała ramka contain jak .glossary-photo. */
+.visualization-stage > .technique-photo-frame {
+  aspect-ratio: auto;
+  background: #fff;
+  box-sizing: border-box;
+  flex: 1 1 0;
+  height: 0;
+  margin: 18px auto 0;
+  max-width: min(100%, 520px);
+  min-height: 0;
+  padding: 12px;
+  width: 100%;
+}
+
+.visualization-stage > .technique-photo-frame > .technique-media {
+  height: 100%;
+  object-fit: contain;
+  position: static;
+  width: 100%;
+}
+
+/* Placeholder bez zdjęcia — jak .glossary-visual-placeholder. */
+.visualization-stage > .technique-visual-placeholder {
+  aspect-ratio: auto;
+  flex: 1 1 0;
+  gap: 16px;
+  height: 0;
+  margin: 18px auto 0;
+  min-height: 0;
+}
+
+.visualization-stage > .technique-visual-placeholder span {
+  font-size: clamp(72px, 11vw, 150px);
+}
+
+.visualization-stage > .technique-visual-placeholder small {
+  font-size: 11px;
+}
+
+.visualization-stage {
+  background: #252723;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: min(660px, calc(100vh - 68px));
+  padding: 32px;
+}
+
+.visualization-topline {
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.visualization-topline span {
+  color: #d55a51;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.visualization-topline small {
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.visualization-copy {
+  max-height: calc(100vh - 68px);
+  overflow-y: auto;
+  padding: 58px 48px 38px;
+  position: relative;
+}
+
+.modal-kanji {
+  color: rgba(166, 43, 36, 0.08);
+  font-family: "Noto Serif JP";
+  font-size: 76px;
+  position: absolute;
+  right: 28px;
+  top: 55px;
+  writing-mode: vertical-rl;
+}
+
+.modal-eyebrow {
+  color: var(--red);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  margin: 0 0 13px;
+  text-transform: uppercase;
+}
+
+.visualization-copy h2 {
+  font-family: var(--serif);
+  font-size: 36px;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  margin: 0 55px 8px 0;
+}
+
+.modal-reading {
+  color: var(--muted);
+  font-size: 10px;
+  margin: 0;
+}
+
+.modal-description {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 28px 0;
+}
+
+.checkpoint {
+  align-items: center;
+  background: var(--paper);
+  border-left: 3px solid var(--red);
+  display: flex;
+  gap: 13px;
+  padding: 14px 16px;
+}
+
+.checkpoint svg {
+  color: var(--red);
+  flex: none;
+}
+
+.checkpoint div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.checkpoint small {
+  color: var(--muted);
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.checkpoint strong {
+  font-family: var(--serif);
+  font-size: 14px;
+}
+
+.visualization-copy ol {
+  list-style: none;
+  margin: 27px 0;
+  padding: 0;
+}
+
+.visualization-copy li {
+  align-items: flex-start;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 14px;
+  padding: 15px 0;
+}
+
+.visualization-copy li > span {
+  color: var(--red);
+  font-family: var(--serif);
+  font-size: 10px;
+  padding-top: 2px;
+}
+
+.visualization-copy li p {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.visualization-copy li strong {
+  color: var(--ink);
+  display: block;
+  font-family: var(--serif);
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.safety-note {
+  background: #f0ebe1;
+  color: #77766f;
+  font-size: 8px;
+  line-height: 1.55;
+  margin: 0;
+  padding: 11px 13px;
+}
+
+@media (max-width: 980px) {
+  .visualization-stage {
+    min-height: min(570px, calc(100vh - 68px));
+    padding: 24px;
+  }
+
+  .visualization-copy {
+    padding: 52px 28px 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .visualization-stage {
+    min-height: 420px;
+    padding: 24px 16px 18px;
+  }
+
+  .visualization-stage > .technique-media-frame {
+    max-height: none;
+  }
+
+  .visualization-copy {
+    max-height: none;
+    overflow: visible;
+    padding: 42px 22px 28px;
+  }
+
+  .visualization-copy h2 {
+    font-size: 30px;
+  }
+
+  .modal-kanji {
+    font-size: 58px;
+    top: 38px;
+  }
+}

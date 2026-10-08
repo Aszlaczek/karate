@@ -7,20 +7,32 @@
 
 ---
 
-## Status projektu (stan: 2026-10-07)
+## Status projektu (stan: 2026-10-08)
 
-**Faza: atlas treści kompletny (132 techniki) + spójność danych z UI.** Strona
-buduje się bez błędów (`npm run build` → `tsc -b && vite build`), ma 5 tras (w
-tym 12 endpointów stopni `/kyu/…`), dane w `src/data/*.json` (techniki w 7
-filtrach kategorii, wymagania linkowane automatycznie, ilustracje SVG per
-klucz infografii + gotowość na wideo z pola `video`). Odtwarzalny audyt
-danych: `npm run audit` → `RAPORT.md` (0 problemów krytycznych, 0
-mismatchów `levels[]`↔wymagania — P0.3 zamknięte; otwarte: kolizje aliasów
-= P0.4 i P1.9). Nawigacja: sticky header działa też po scrollu
-(`overflow-x: clip` na `.app-shell`), pasek prev / wszystkie / next jest w
-panelu wymagań, nie pod technikami; burger w prawym górnym rogu (≤980px).
-Przed nami zadania z `TODO.md` (m.in. weryfikacja treści ze sensei,
-brakujące kata Saiha/Seienchin).
+**Faza: atlas treści kompletny (132 techniki) + jedno źródło prawdy dla
+odnośników.** Strona buduje się bez błędów (`npm run build` → `tsc -b && vite
+build`), ma 5 tras (w tym 16 endpointów stopni `/kyu/…`: start, 10–1 kyu,
+1–5 dan), dane w `src/data/*.json` (techniki w 7 filtrach kategorii,
+**wymagania strukturalne** — referencje technik `{type:"technique", id}`
+renderowane przez wspólny `TechniqueLink` + opisy `{type:"text"}`, liczba walk
+w polu `fights` jako badge w informacjach głównych, wizualizacja technik =
+zdjęcia GenAI (mapa `features/technique/data/genaiImages.json`, 96/132;
+reszta → placeholder z kanji; karta grayscale, modal pełny kolor) + gotowość
+na wideo z pola `video`). Odtwarzalny audyt danych:
+`npm run audit` → `RAPORT.md` (0 ostrzeżeń; **2 znane błędy krytyczne
+P0.3** — `gekisai-sho`/`saiha` bez stopnia kyu w `levels[]` po zewnętrznej
+edycji `techniques.json` 2026-10-08 21:08, decyzja użytkownika: nie ruszać
+danych). Nawigacja: sticky header
+działa też po scrollu (`overflow-x: clip` na `.app-shell`), pasek prev /
+wszystkie / next jest w panelu wymagań, nie pod technikami; burger w prawym
+górnym rogu (≤980px). **Architektura frontendu przebudowana (2026-10-08):**
+kod w folderach `src/app/` (router, ModalHost), `src/store/` (Zustand —
+modale + menu mobilne), `src/hooks/`, `src/components/ui/`, `src/features/*`
+(komponent + style obok siebie); style CSS per feature importowane przez
+`src/styles/index.css` (kolejność importów = kaskada); importy przez alias
+`@/*`. Przed nami zadania z `TODO.md` (m.in. weryfikacja
+treści ze sensei — w tym ekstrapolowane liczby walk, brakujące kata
+Seienchin/Ushiro-mawashi, linkowanie opisów do słownika).
 
 Poprzedni stan (2026-10-05, commit `fa354c3`): wersja first — jednostronicowy
 one-pager bez routera.
@@ -109,6 +121,129 @@ one-pager bez routera.
 ---
 
 ## Dziennik zmian
+
+### 2026-10-08 — Zdjęcia GenAI zamiast SVG + DRY modali i linków technik
+- Zmienione pliki:
+  - `src/features/technique/components/TechniqueIllustration.tsx` — usunięte
+    wszystkie rysunki SVG postaci (mapa `DRAWINGS`, funkcje `*Art`);
+    renderuje teraz: film/wideo → zdjęcie z mapy GenAI
+    (`.technique-photo-frame`) → placeholder z kanji
+    (`.technique-visual-placeholder`); nowe `resolveTechniqueImage()`,
+    `resolveMediaSrc()` nadal eksportowany dla słownika;
+  - nowe `src/features/technique/data/genaiImages.json` — 96/132 technik →
+    `/images/GenAI/techniques/{start|N|dan}/{id}.png` (folder = pierwszy
+    level techniki mający plik);
+  - usunięte `src/features/technique/styles/illustration.css` (+ import
+    z `styles/index.css`); style rysunku stref przeniesione do
+    `glossary.css`, klasa SVG `technique-illustration` → `zone-illustration`
+    (`ZoneIllustration.tsx`);
+  - `TechniqueModal.tsx` — usunięta legenda SVG, nowe copy kroku 02 i noty
+    poglądowej; nowy `src/hooks/useModalBase.ts` — wspólny Esc / blokada
+    scrolla / backdrop dla `TechniqueModal` i `GlossaryEntryModal`;
+  - `src/data/types.ts` — usunięte `infographic: string` z `Technique`
+    (pole zostaje w JSON-ach — kod je ignoruje);
+  - DRY stylów `TechniqueLink`: klasa `technique-ref` (+ modyfikator
+    `.chip`) w `technique.css`; usunięte duplikaty `.requirement-tech-link`
+    (`level.css`), `.tech-ref-chip` i `.glossary-related button`
+    (`glossary.css`);
+  - `technique.css` / `technique-modal.css` — biała ramka zdjęcia
+    (karta: grayscale + hover scale, modal: pełny kolor jak
+    `.glossary-photo`, placeholder z clampowanym kanji);
+  - `scripts/audit-danych.mjs` — check mapy GenAI (martwe klucze),
+    statystyka pokrycia, bez parsowania DRAWINGS/`tsx`.
+- Rezultat: karty i modale technik na wzorcu słownika (biała ramka,
+  `contain`; karta grayscale, modal pełny kolor), 36 technik bez zdjęcia
+  ma placeholder kanji; równolegle usunięty drugi system ilustracji
+  (SVG + pole `infographic`) i trzy zduplikowane style linku techniki;
+  logika zamykania modali w jednym hooku.
+- Weryfikacja: `npm run build` ✅ (CSS 35.01 kB), `npm run audit` —
+  0 ostrzeżeń (mapa GenAI spójna z atlasem); 2 znane błędy krytyczne
+  P0.3 (`gekisai-sho`/`saiha` — zewnętrzna edycja `techniques.json`
+  2026-10-08 21:08, decyzja użytkownika: nie ruszać danych);
+  dymek CDP przez preview: 22/22 asercji + 4 zrzuty (karta grayscale,
+  modal ze zdjęciem, placeholder kanji, strefy z chipami `.technique-ref.chip`).
+
+### 2026-10-08 — Refaktor architektury frontendu (foldery, Zustand, style per feature)
+- Zmienione pliki:
+  - przeniesienia (`git mv`): `src/components/Icon.tsx` → `components/ui/`,
+    `Header/Footer` → `features/navigation/`, `Hero` → `features/home/`,
+    `BeltPath/RequirementsPanel` → `features/level/`,
+    `TechniqueIllustration/TechniqueLink/TechniqueModal/TechniquesSection` →
+    `features/technique/`, `GlossaryEntryModal/ZoneIllustration` →
+    `features/glossary/`, `DojoKun` → `features/dojo/`;
+    usunięty `src/components/ModalProvider.tsx`;
+  - nowe: `src/app/router.tsx` (`<Routes>` + `useScrollManager`),
+    `src/app/ModalHost.tsx` (render modali + deep-linki `#technika-`/`#haslo-`),
+    `src/store/modalStore.ts` (Zustand, hook `useModals()`) i
+    `src/store/uiStore.ts` (menu mobilne), `src/hooks/useScrollManager.ts`
+    i `useDocumentTitle.ts`, `src/styles/{index,globals,tokens,modal}.css`,
+    `src/features/*/styles/*.css` (navigation, home, level, technique,
+    illustration, technique-modal, dojo, glossary);
+  - przepisane: `App.tsx` (BrowserRouter + `ModalHost` poza `.app-shell`),
+    `main.tsx` (import `./styles/index.css`), `Header.tsx` (uiStore zamiast
+    `useState`), 5 stron w `pages/` (importy `@/…`, `useDocumentTitle`);
+  - config: `tsconfig.app.json` + `vite.config.ts` (alias `@/*` → `src/*`),
+    `package.json` (+`zustand` 5.0.15);
+  - `src/index.css` (2067 linii) **rozbity** na `src/styles/` + pliki per
+    feature (walidacja: multizbiór reguł wejście == wyjście); usunięta martwa
+    reguła `.glossary-modal-panel` (zawsze nadpisywana przez media ≤700px);
+    kolejność importów w `styles/index.css` niesie kaskadę (globals pierwszy,
+    `modal.css` przed `glossary.css`);
+  - dane: `src/data/techniques.json` — naprawione 4 tablice `levels[]`
+    (`yantsu` 1+3, `tsuki-no-kata` 1+3, `gekisai-sho` 2+12, `saiha` 1+11);
+  - `scripts/audit-danych.mjs` (ścieżka do `features/technique/…`), `agents/*`
+    (WEB_PERSONAL: struktura, konwencje `@/`, zakaz CSS Modules/ponownego
+    `useState` dla stanu globalnego).
+- Rezultat: kod posegregowany per feature (komponent + style obok siebie),
+  stan globalny (modale, menu) w Zustand bez persist, monolityczny CSS
+  rozbity na czytelne pliki — **render bez zmian wizualnych/behavioralnych**.
+  Świadomie pominięte: CSS Modules (zbyt duże ryzyko zmiany klas),
+  warstwa `services/` dla `src/data` (YAGNI — tam jest już getter + cache),
+  `persist` (stan nie przeżywa odświeżenia).
+- Weryfikacja: `npm run build` ✅ (tsc + vite), `npm run audit` ✅
+  (0 krytycznych, 0 ostrzeżeń), `npm run preview` + curl 7 tras (200),
+  smoke w Chrome headless/CDP: wygląd desktop/mobile identyczny jak przed
+  refaktorem, modal techniki przez deep-link otwiera się, burger ≤980px
+  (computed styles `display:flex`, ciemne tło).
+
+### 2026-10-08 — Wymagania strukturalne, stopnie 1–5 dan, walki w info. głównych
+- Zmienione pliki: `src/data/levels.json` (przebudowany: **16 stopni** —
+  start, 10–1 kyu, `dan`…`dan5` o `number` 11–15; pozycje wymagań to teraz
+  referencje `{type:"technique", id}` / opisy `{type:"text"}`; pole
+  **`fights`** = liczba walk egzaminacyjnych, usuwane z tekstu grup),
+  `src/data/types.ts` (`RequirementItem`, `Level.fights`),
+  `src/data/techniques.json` (usunięte: duplikat `gariyu` i genericzna
+  technika `kumite` — jej rolę przejął badge walk; kata danowe
+  `infographic: "kata"` zamiast nieistniejących kluczy; przywrócone pokrycie
+  `levels[]` kyu-kata wg programu: taikyoku 9+10/8+9/7+8, sanchin 4+5,
+  pinan-yon 3+4, pinan-go 2+3, yantsu/tsuki 1+3, gekisai-sho 2+12,
+  saiha 1+11, fudo-dachi 0+9+10; usunięte kolizyjne aliasy „Kata 1/2 dan"
+  i „Ippon kumite 10 kyu"; literówki „stopien"), nowe
+  `src/components/TechniqueLink.tsx` (multi-use: wariant `inline` w panelu
+  wymagań, `chip` w modalu hasła — oba otwierają modal techniki),
+  `src/components/RequirementsPanel.tsx` (render strukturalne, badge
+  „Walki egzaminacyjne", „16 stopni egzaminu" z `levels.length`),
+  `GlossaryEntryModal.tsx` + `ModalProvider.tsx` (chipy przez `TechniqueLink`,
+  usunięty prop `onSelectTechnique`), `src/data/index.ts` (mapowanie
+  `RequirementItem`/`fights`; **usunięty martwy machinery aliasów** —
+  `buildTechniqueLinkPattern`, `findTechniqueByAlias`, `normalizeAlias`),
+  `src/index.css` (`.requirement-badges`, `.fights-badge`, `.tech-ref-chip`,
+  granice 4 grup `:nth-child(3n)`), `scripts/audit-danych.mjs` (przepisany:
+  zakres `levels[]` 0–15, walidacja strukturalnych referencji = krytyczna
+  P0.3, pokrycie 16 stopni, lista opisów `text`), `agents/*` (WEB_PERSONAL,
+  TODO: zamknięte P0.4/P1.9, aktualne P1.1/P1.6/P1.7; RAPORT.md skopiowany).
+- Rezultat: (1) jedno źródło prawdy dla odnośników — wymagania nie zależą
+  już od regexu aliasów, każda technika w panelu to referencja do
+  `techniques.json` (audyt gwarantuje zgodność z P0.3); (2) stopnie dan
+  1–5 mają własne trasy/wymagania/kata (kata dan: tensho+saiha, gekisai-sho
+  +gariyu, seishin, kanku-dai, sushiho); (3) liczby walk (1–15) przeniesione
+  do informacji głównych jako badge, treści wymagań są konkretnymi
+  technikami z atlasu zamiast ogólników; (4) P0.4 (alias „Kumite
+  turniejowe" — nośniki `jiyu-kumite-*` już nie istnieją) i P1.9
+  („Ippon kumite 10 kyu") zamknięte — audyt bez kolizji.
+- Weryfikacja: `npm run build` ✅, `npm run audit` ✅ (0 krytycznych,
+  0 ostrzeżeń: 166 referencji technik + 42 opisy, 16 stopni),
+  spójność levels↔atlas sprawdzona osobnym skryptem (0 błędów).
 
 ### 2026-10-07 — Statyczne karty „Części ciała" (bez modala)
 - Zmienione pliki: `src/pages/GlossaryPage.tsx`, `src/index.css`,

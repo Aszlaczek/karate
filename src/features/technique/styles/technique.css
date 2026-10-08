@@ -1,0 +1,418 @@
+/* Atlas technik: karty, filtry, toolbar. */
+
+.techniques-section {
+  background: #e9e3d7;
+}
+
+.tech-toolbar {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+}
+
+.category-tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.category-tabs button {
+  background: transparent;
+  border: 1px solid var(--line);
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 9px 13px;
+}
+
+.category-tabs button.active, .category-tabs button:hover {
+  background: var(--ink);
+  color: white;
+}
+
+.search-box {
+  align-items: center;
+  border-bottom: 1px solid #97958c;
+  display: flex;
+  gap: 8px;
+  min-width: 0;
+  padding: 7px 0;
+}
+
+.search-box input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  width: 170px;
+}
+
+.search-box input::placeholder {
+  color: #85837b;
+}
+
+.tech-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tech-card {
+  background: var(--white);
+  border: 1px solid rgba(23, 25, 22, 0.08);
+  cursor: pointer;
+  min-width: 0;
+  transition: 0.25s ease;
+}
+
+.tech-card:hover {
+  box-shadow: 0 18px 40px rgba(23, 25, 22, 0.12);
+  transform: translateY(-4px);
+}
+
+.tech-image {
+  background: var(--ink);
+  border: 0;
+  cursor: pointer;
+  display: block;
+  height: 210px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.tech-image::after {
+  background: linear-gradient(0deg, rgba(23, 25, 22, 0.55), transparent 50%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.tech-image .technique-photo-frame {
+  background: #fff;
+  transition: 0.5s ease;
+}
+
+.tech-card:hover .tech-image .technique-photo-frame {
+  transform: scale(1.035);
+}
+
+.tech-image .technique-photo-frame > .technique-media {
+  filter: grayscale(100%) contrast(1.05);
+}
+
+/* Placeholder bez zdjęcia — jak w słowniku: kanji + wymowa. */
+.technique-visual-placeholder {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  text-align: center;
+}
+
+.technique-visual-placeholder span {
+  color: rgba(255, 255, 255, 0.28);
+  font-family: "Noto Serif JP";
+  font-size: 54px;
+  line-height: 1.1;
+  padding: 0 16px;
+}
+
+.technique-visual-placeholder small {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.tech-image > span {
+  background: var(--red);
+  color: white;
+  font-size: 9px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0.1em;
+  padding: 8px 12px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  z-index: 2;
+}
+
+.tech-image > small {
+  bottom: 13px;
+  color: white;
+  font-family: var(--serif);
+  font-size: 12px;
+  position: absolute;
+  right: 15px;
+  z-index: 2;
+}
+
+.tech-image > b {
+  align-items: center;
+  bottom: 11px;
+  color: white;
+  display: flex;
+  font-size: 10px;
+  gap: 7px;
+  left: 15px;
+  position: absolute;
+  z-index: 2;
+}
+
+.tech-image > b svg {
+  transition: 0.2s ease;
+}
+
+.tech-card:hover .tech-image > b svg {
+  transform: translateX(4px);
+}
+
+.tech-image .technique-media {
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.tech-body {
+  padding: 25px;
+}
+
+.japanese {
+  color: var(--red);
+  float: right;
+  font-family: "Noto Serif JP";
+  font-size: 18px;
+  writing-mode: vertical-rl;
+}
+
+.tech-body h3 {
+  font-family: var(--serif);
+  font-size: 20px;
+  margin: 0 35px 5px 0;
+}
+
+.pronunciation {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.pronunciation strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.tech-body > p {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 18px 30px 18px 0;
+  min-height: 76px;
+}
+
+.tech-focus {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  display: flex;
+  font-size: 10px;
+  gap: 7px;
+  padding: 11px 0;
+}
+
+.tech-focus svg {
+  color: var(--red);
+}
+
+.tech-focus span {
+  color: var(--muted);
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-top: 14px;
+}
+
+.tech-tags span {
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 8px;
+  padding: 5px 8px;
+  text-transform: uppercase;
+}
+
+.tech-filters {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 48px;
+}
+
+.level-select {
+  align-items: center;
+  display: flex;
+  flex: none;
+  gap: 8px;
+}
+
+.level-select span {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.level-select select {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 8px 10px;
+}
+
+.category-tabs button i {
+  font-style: normal;
+  margin-left: 4px;
+  opacity: 0.55;
+}
+
+.tech-levels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-top: 12px;
+}
+
+.tech-levels span {
+  background: rgba(166, 43, 36, 0.07);
+  border: 1px solid rgba(166, 43, 36, 0.32);
+  color: var(--red);
+  font-size: 8px;
+  font-weight: 700;
+  padding: 4px 7px;
+  text-transform: uppercase;
+}
+
+/* Link referencji techniki (TechniqueLink) — wariant domyślny „inline"
+   w wymaganiach; wariant „chip" (modyfikator) w modalu słownika. */
+.technique-ref {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(166, 43, 36, 0.42);
+  color: var(--red);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: inherit;
+  font-weight: 700;
+  gap: 3px;
+  line-height: inherit;
+  padding: 0;
+}
+
+.technique-ref:hover {
+  border-bottom-color: var(--red);
+}
+
+.technique-ref svg {
+  transition: 0.2s ease;
+}
+
+.technique-ref:hover svg {
+  transform: translateX(2px);
+}
+
+.technique-ref.chip {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 600;
+  gap: 7px;
+  padding: 9px 13px;
+  transition: 0.2s ease;
+}
+
+.technique-ref.chip:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: white;
+}
+
+.technique-ref.chip svg {
+  color: var(--red);
+}
+
+.technique-ref.chip:hover svg {
+  color: white;
+  transform: translateX(3px);
+}
+
+.technique-ref-missing {
+  color: var(--red);
+}
+
+@media (max-width: 980px) {
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tech-filters {
+    flex-wrap: wrap;
+    gap: 20px 36px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tech-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .category-tabs {
+    margin-right: -20px;
+    overflow-x: auto;
+    padding-right: 20px;
+  }
+
+  .category-tabs button {
+    flex: none;
+  }
+
+  .search-box input {
+    flex: 1;
+    width: auto;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-toolbar .tech-filters {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .level-select {
+    justify-content: space-between;
+  }
+
+  .level-select select {
+    flex: 1;
+  }
+}

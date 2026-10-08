@@ -1,0 +1,64 @@
+/* Wspólny szkielet modalu (.tech-modal, panel, przycisk zamknięcia)
+   — używany przez modal techniki i modal słownika. */
+
+.tech-modal {
+  align-items: center;
+  background: rgba(14, 15, 13, 0.88);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 34px;
+  position: fixed;
+  z-index: 70;
+  backdrop-filter: blur(12px);
+}
+
+.tech-modal-panel {
+  background: var(--white);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(360px, 0.65fr);
+  max-height: calc(100vh - 68px);
+  max-width: 1320px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.modal-close {
+  align-items: center;
+  background: var(--red);
+  border: 0;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 48px;
+  z-index: 4;
+}
+
+@media (max-width: 980px) {
+  .tech-modal-panel {
+    grid-template-columns: 1fr 340px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tech-modal {
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: 0;
+  }
+
+  .tech-modal-panel {
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+    min-height: 100vh;
+    width: 100%;
+  }
+}

@@ -27,7 +27,7 @@ function ZoneIllustration({ zone }: ZoneIllustrationProps) {
 
   return (
     <svg
-      className="technique-illustration"
+      className="zone-illustration"
       role="img"
       aria-label="Karateka w pozycji fudo-dachi z liniami stref jodan, chudan i gedan"
       viewBox="0 0 800 480"

@@ -1,18 +1,17 @@
-import { useEffect, useMemo, useState, type ElementType } from "react";
-import Icon from "../components/Icon";
-import { useModals } from "../components/ModalProvider";
-import { resolveMediaSrc } from "../components/TechniqueIllustration";
-import ZoneIllustration, { zoneForEntry } from "../components/ZoneIllustration";
-import { glossary } from "../data";
+import { useMemo, useState, type ElementType } from "react";
+import { glossary } from "@/data";
+import ZoneIllustration, { zoneForEntry } from "@/features/glossary/components/ZoneIllustration";
+import { resolveMediaSrc } from "@/features/technique/components/TechniqueIllustration";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { useModals } from "@/store/modalStore";
+import Icon from "@/components/ui/Icon";
 
 const GlossaryPage = () => {
   const [activeId, setActiveId] = useState(glossary[0]?.id ?? "");
   const [query, setQuery] = useState("");
   const { openGlossaryEntry } = useModals();
 
-  useEffect(() => {
-    document.title = "Słownik karate | Kihon";
-  }, []);
+  useDocumentTitle("Słownik karate | Kihon");
 
   const activeCategory =
     glossary.find((category) => category.id === activeId) ?? glossary[0];

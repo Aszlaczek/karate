@@ -1,0 +1,13 @@
+/* Plik wejściowy stylów — kolejność importów niesie kaskadę:
+   globals (reset + klasy wspólne) → feature'y w kolejności
+   zbliżonej do oryginału; styles/modal.css przed glossary.css
+   (układ panelu modalu słownika musi nadpisywać .tech-modal-panel). */
+@import "./globals.css";
+@import "../features/navigation/styles/navigation.css";
+@import "../features/home/styles/home.css";
+@import "../features/level/styles/level.css";
+@import "../features/technique/styles/technique.css";
+@import "../features/technique/styles/technique-modal.css";
+@import "../features/dojo/styles/dojo.css";
+@import "./modal.css";
+@import "../features/glossary/styles/glossary.css";

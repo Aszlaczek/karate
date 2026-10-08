@@ -1,10 +1,8 @@
-import { useEffect } from "react";
-import TechniquesSection from "../components/TechniquesSection";
+import TechniquesSection from "@/features/technique/components/TechniquesSection";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 
 const TechniquesPage = () => {
-  useEffect(() => {
-    document.title = "Atlas technik | Kihon";
-  }, []);
+  useDocumentTitle("Atlas technik | Kihon");
 
   return <TechniquesSection />;
 };

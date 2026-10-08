@@ -188,7 +188,7 @@
           "reading": "fudo-dachi",
           "description": "Stabilna postawa o szerokości bioder, lekko ugiętych kolanach i równomiernym ciężarze. Pierwsza pozycja na drodze egzaminacyjnej.",
           "image": "/images/glossary/stances/Fudo-Dachi.png",
-          "related": []
+          "related": ["fudo-dachi"]
         },
         {
           "id": "musubi",
@@ -197,7 +197,7 @@
           "reading": "musubi-dachi",
           "description": "Pięty razem, palce rozstawione w literę V — pozycja do ukłonu (rei) i mokuso przed treningiem.",
           "image": "/images/glossary/stances/Musubi-Dachi.png",
-          "related": []
+          "related": ["musubi-dachi"]
         },
         {
           "id": "heiko",
@@ -233,7 +233,7 @@
           "reading": "sanchin-dachi",
           "description": "Stopy w linii półksiężyca, kolana skierowane do wewnątrz, napięty brzuch — pozycja kontroli oddechu i napięcia.",
           "image": "/images/glossary/stances/Sanchin-Dachi.png",
-          "related": []
+          "related": ["sanchin-dachi"]
         },
         {
           "id": "kiba",
@@ -242,7 +242,7 @@
           "reading": "kiba-dachi",
           "description": "Szerokie rozkroczę z kolanami rozepchniętymi nad stopami i prostym tułowiem — buduje siłę nóg i stabilność boczną.",
           "image": "/images/glossary/stances/Kiba-Dachi.png",
-          "related": []
+          "related": ["kiba-dachi"]
         },
         {
           "id": "neko-ashi",
@@ -260,7 +260,7 @@
           "reading": "kake-dachi",
           "description": "Nogi skrzyżowane, ciężar na nodze wspierającej — stosowana po obrotach, w kombinacjach i kata.",
           "image": "/images/glossary/stances/Kake-Dachi.png",
-          "related": []
+          "related": ["kake-dachi"]
         },
         {
           "id": "seiza",

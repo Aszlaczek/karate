@@ -9,14 +9,8 @@ const write = (p, s) => writeFileSync(join(root, p), s, "utf8");
 const techs = JSON.parse(read("src/data/techniques.json"));
 const levels = JSON.parse(read("src/data/levels.json"));
 const glossary = JSON.parse(read("src/data/glossary.json"));
-const tsx = read("src/components/TechniqueIllustration.tsx");
 const indexTs = read("src/data/index.ts");
-
-const drawings = (() => {
-  const start = tsx.indexOf("const DRAWINGS");
-  const end = tsx.indexOf("export default", start);
-  return [...tsx.slice(start, end).matchAll(/^  ([a-z]+):/gm)].map((m) => m[1]);
-})();
+const genaiImages = JSON.parse(read("src/features/technique/data/genaiImages.json"));
 
 const categories = [
   ...indexTs
@@ -24,11 +18,7 @@ const categories = [
     .matchAll(/"([^"]+)"/g),
 ].map((m) => m[1]);
 
-const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-
 const MACRONS = { "ā": "a", "ī": "i", "ū": "u", "ō": "o", "ē": "e" };
-const VOWELS = { a: "ā", i: "ī", u: "ū", o: "ō", e: "ē" };
-
 const foldMacrons = (value) => value.replace(/[āīūōē]/g, (char) => MACRONS[char]);
 
 const normalizeAlias = (value) =>
@@ -36,54 +26,12 @@ const normalizeAlias = (value) =>
     .replace(/[\s\u2014-]+/g, "-")
     .replace(/^-+|-+$/g, "");
 
-const aliasPatternSource = (alias) => {
-  let source = "";
-  let separator = false;
-  const flushSeparator = () => {
-    if (separator && source) source += "[\\s\u2014-]+";
-    separator = false;
-  };
-  for (const char of alias) {
-    const lower = foldMacrons(char.toLowerCase());
-    if (lower in VOWELS) {
-      flushSeparator();
-      source += `[${lower}${VOWELS[lower]}]`;
-    } else if (/[\s\u2014-]/.test(char)) {
-      separator = true;
-    } else {
-      flushSeparator();
-      source += escapeRegExp(char);
-    }
-  }
-  const start = /^[\p{L}\p{N}]/u.test(alias) ? "(?<![\\p{L}\\p{N}-])" : "";
-  const end = /[\p{L}\p{N}]$/u.test(alias) ? "(?![\\p{L}\\p{N}-])" : "";
-  return start + source + end;
-};
-
-const linkPattern = new RegExp(
-  `(${[...new Set(techs.flatMap((t) => t.aliases))]
-    .sort((a, b) => b.length - a.length)
-    .map(aliasPatternSource)
-    .join("|")})`,
-  "gi",
-);
-
-const byAlias = new Map();
-for (const t of techs)
-  for (const a of t.aliases ?? []) byAlias.set(normalizeAlias(a), t);
-
-const resolvedParts = (item) =>
-  item.split(linkPattern).filter((part) => byAlias.has(normalizeAlias(part)));
-
-const findMatches = (item) =>
-  resolvedParts(item).map((part) => byAlias.get(normalizeAlias(part)));
-
-const hasMatch = (item) => resolvedParts(item).length > 0;
-
 const critical = [];
 const warn = [];
 
 const uniq = (arr) => new Set(arr).size;
+
+// --- 1. techniques.json -----------------------------------------------------
 
 const dupIds = techs.map((t) => t.id).filter((id, i, a) => a.indexOf(id) !== i);
 if (dupIds.length) critical.push(`techniques.json — zduplikowane id: ${dupIds.join(", ")}`);
@@ -91,11 +39,12 @@ if (dupIds.length) critical.push(`techniques.json — zduplikowane id: ${dupIds.
 for (const t of techs) {
   if (!t.id || !t.name || !t.description) critical.push(`techniques.json — puste pole w "${t.id}" (id/name/description)`);
   if (!Array.isArray(t.levels) || t.levels.length === 0) critical.push(`techniques.json — "${t.id}" ma puste levels[]`);
-  if (t.levels && t.levels.some((l) => !Number.isInteger(l) || l < 1 || l > 10))
-    critical.push(`techniques.json — "${t.id}" ma levels poza zakresem 1–10: ${JSON.stringify(t.levels)}`);
+  if (t.levels && t.levels.some((l) => !Number.isInteger(l) || l < 0 || l > 15))
+    critical.push(`techniques.json — "${t.id}" ma levels poza zakresem 0–15: ${JSON.stringify(t.levels)}`);
   if (!categories.includes(t.category)) critical.push(`techniques.json — "${t.id}" ma kategorię spoza CATEGORIES: "${t.category}"`);
-  if (!drawings.includes(t.infographic)) critical.push(`techniques.json — "${t.id}" ma infographic bez ilustracji: "${t.infographic}"`);
 }
+
+// --- 2. kolizje aliasów -----------------------------------------------------
 
 const aliasMap = new Map();
 for (const t of techs)
@@ -107,85 +56,102 @@ for (const t of techs)
 const collisions = [...aliasMap].filter(([, ids]) => new Set(ids).size > 1);
 for (const [alias, ids] of collisions)
   warn.push(`KOLIZJA — alias "${alias}" → ${ids.length} technik: ${ids.join(", ")}`);
-const collisionTasks = ["P0.4", "P1.9"].filter((task) =>
-  collisions.some(([alias]) => (alias.includes("kumite-turniejowe") ? "P0.4" : "P1.9") === task),
-);
+
+// --- 3. glossary.json -------------------------------------------------------
 
 const glossEntries = glossary.categories.flatMap((c) => c.entries);
 const glossIds = new Set(glossEntries.map((e) => e.id));
 const techIds = new Set(techs.map((t) => t.id));
+
+// mapa obrazów GenAI (src/features/technique/data/) ↔ id technik
+for (const key of Object.keys(genaiImages))
+  if (!techIds.has(key)) warn.push(`GenAI — mapa obrazów wskazuje nieistniejącą technikę "${key}"`);
+
 const dupGloss = glossEntries.map((e) => e.id).filter((id, i, a) => a.indexOf(id) !== i);
 if (dupGloss.length) critical.push(`glossary.json — zduplikowane id: ${dupGloss.join(", ")}`);
 for (const e of glossEntries) {
   if (!e.term) critical.push(`glossary.json — pusty term w "${e.id}"`);
   for (const r of e.related ?? [])
-    if (!techIds.has(r) && !glossIds.has(r)) critical.push(`glossary.json — martwy related "${r}" w hale "${e.id}"`);
+    if (!techIds.has(r) && !glossIds.has(r)) critical.push(`glossary.json — martwy related "${r}" w haśle "${e.id}"`);
 }
 
-const levelIds = levels.map((l) => l.id);
-if (uniq(levelIds) !== levelIds.length) critical.push("levels.json — zduplikowane id stopni");
+// --- 4. levels.json (strukturalne wymagania ↔ atlas) ------------------------
+
+const techById = new Map(techs.map((t) => [t.id, t]));
+const levelByNumber = new Map(levels.map((l) => [l.number, l]));
+
+if (uniq(levels.map((l) => l.id)) !== levels.length) critical.push("levels.json — zduplikowane id stopni");
 if (uniq(levels.map((l) => l.number)) !== levels.length) critical.push("levels.json — zduplikowane number");
 if (uniq(levels.map((l) => l.order)) !== levels.length) critical.push("levels.json — zduplikowane order");
+
+const mismatches = [];
 for (const l of levels) {
   if (!l.groups || l.groups.length === 0) critical.push(`levels.json — "${l.id}" bez grup wymagań`);
-  const items = l.groups.flatMap((g) => g.items ?? []);
-  if (items.some((it) => typeof it !== "string" || !it.trim()))
-    critical.push(`levels.json — "${l.id}" ma pusty element wymagania`);
-  if (uniq(items) !== items.length) critical.push(`levels.json — "${l.id}" ma zduplikowane wymaganie`);
-}
-
-const kyuLevels = levels.filter((l) => /^\d+$/.test(l.id));
-const allItems = levels.flatMap((l) => l.groups.flatMap((g) => g.items.map((item) => ({ level: l, item }))));
-
-const coverage = kyuLevels.map((l) => {
-  const items = l.groups.flatMap((g) => g.items);
-  const linked = items.filter(hasMatch);
-  const techCount = techs.filter((t) => t.levels.includes(Number(l.id))).length;
-  return { kyu: l.kyu, id: l.id, techCount, items: items.length, linked: linked.length };
-});
-
-// Mismatchy liczymy wyłącznie dla stopni kyu (1–10): `start` i `dan` celowo
-// nie mają technik w atlasie (`levels[]` ∈ 1–10), więc dopisek tam jest
-// niemożliwy, a link w wymaganiach tych poziomów nie jest rozjazdem danych.
-const mismatches = [];
-for (const level of kyuLevels) {
-  for (const group of level.groups)
-    for (const item of group.items)
-      for (const t of findMatches(item)) {
-        if (!t.levels.includes(Number(level.id)))
-          mismatches.push({ kyu: level.kyu, item, tech: t.name, levels: [...t.levels].sort((a, b) => b - a).join(", ") });
+  if (l.fights !== null && (!Number.isInteger(l.fights) || l.fights < 0))
+    critical.push(`levels.json — "${l.id}" ma nieprawidłowe pole fights: ${JSON.stringify(l.fights)}`);
+  const seen = new Set();
+  for (const g of l.groups ?? []) {
+    if (!g.title) critical.push(`levels.json — "${l.id}" ma grupę bez tytułu`);
+    for (const it of g.items ?? []) {
+      let key;
+      if (it && it.type === "technique") {
+        if (!it.id || !it.id.trim()) critical.push(`levels.json — "${l.id}" ma technikę bez id`);
+        else if (!techById.has(it.id)) critical.push(`levels.json — "${l.id}" wskazuje nieistniejącą technikę "${it.id}"`);
+        else if (!techById.get(it.id).levels.includes(l.number))
+          mismatches.push({ kyu: l.kyu, id: it.id, levels: [...techById.get(it.id).levels].sort((a, b) => b - a).join(", ") });
+        key = `t:${it.id}`;
+      } else if (it && it.type === "text" && typeof it.text === "string" && it.text.trim()) {
+        key = `x:${it.text}`;
+      } else {
+        critical.push(`levels.json — "${l.id}" ma nieprawidłowy element wymagania: ${JSON.stringify(it)}`);
       }
+      if (key) {
+        if (seen.has(key)) critical.push(`levels.json — "${l.id}" ma zduplikowane wymaganie (${key})`);
+        seen.add(key);
+      }
+    }
+  }
 }
 for (const m of mismatches)
-  warn.push(`MISMATCH — "${m.tech}" (levels=[${m.levels}]) linkowane w wymaganiach ${m.kyu}`);
+  critical.push(`P0.3 — "${m.id}" (levels=[${m.levels}]) wymagane w ${m.kyu}, których nie ma w levels[]`);
 
-const linkedItems = allItems.filter(({ item }) => hasMatch(item));
-const unlinked = allItems.filter(({ item }) => !hasMatch(item));
+const outsideRequirements = [];
+for (const t of techs)
+  for (const n of t.levels) {
+    const l = levelByNumber.get(n);
+    if (!l) continue;
+    const refs = l.groups.flatMap((g) => g.items).filter((i) => i.type === "technique").map((i) => i.id);
+    if (!refs.includes(t.id)) outsideRequirements.push(`${l.kyu}: ${t.id}`);
+  }
+for (const o of outsideRequirements) warn.push(`POZA WYMAGANIAMI — technika z atlasu nieuwzględniona w wymaganiach: ${o}`);
 
-const classify = (item) => {
-  if (/Saiha|Seienchin|Ushiro-mawashi/i.test(item)) return "brak w atlasie → P1.6";
-  if (/\b(rei|osu|sei[zs]a|mokuso|bunkai|kamae)\b/i.test(item)) return "hasło słownika → P1.7";
-  if (/ukłon|pozdraw|etykiet|instruktor|test|pomp|rozgrzew|teori|staż|stopniow|formułk|wiedz|kryteri|egzaminator|dojo|kun/i.test(item))
-    return "nietechniczne (nie wymaga linku)";
-  return "opisowe/zbiorcze (patrz P0.3/P1.7)";
-};
+// --- 5. pokrycie i statystyki ----------------------------------------------
 
-const unlinkedGroups = new Map();
-for (const { level, item } of unlinked) {
-  const g = classify(item);
-  if (!unlinkedGroups.has(g)) unlinkedGroups.set(g, []);
-  unlinkedGroups.get(g).push(`${level.kyu}: ${item}`);
-}
+const coverage = levels.map((l) => {
+  const items = l.groups.flatMap((g) => g.items);
+  return {
+    kyu: l.kyu,
+    id: l.id,
+    atlas: techs.filter((t) => t.levels.includes(l.number)).length,
+    tech: items.filter((i) => i.type === "technique").length,
+    text: items.filter((i) => i.type === "text").length,
+    fights: l.fights,
+  };
+});
 
-const matchedTechs = new Set(linkedItems.flatMap(({ item }) => findMatches(item).map((t) => t.id)));
-const allAliases = techs.flatMap((t) => t.aliases ?? []);
-const usedAliasKeys = new Set(linkedItems.flatMap(({ item }) => resolvedParts(item).map(normalizeAlias)));
-const usedAliases = new Set(allAliases.filter((a) => usedAliasKeys.has(normalizeAlias(a))));
+const allItems = levels.flatMap((l) => l.groups.flatMap((g) => g.items.map((item) => ({ level: l, item }))));
+const techItems = allItems.filter(({ item }) => item.type === "technique");
+const textItems = allItems.filter(({ item }) => item.type === "text");
+const requiredTechIds = new Set(techItems.map(({ item }) => item.id));
+
+const missingInAtlas = textItems.filter(({ item }) => /saiha|seienchin|ushiro-mawashi/i.test(item.text));
 
 const images = techs.filter((t) => t.image);
 const uniqueImages = uniq(images.map((t) => t.image));
 const unsplash = images.filter((t) => t.image.includes("images.unsplash.com"));
 const videos = techs.filter((t) => t.video);
+const genaiCover = techs.filter((t) => genaiImages[t.id]).length;
+const allAliases = techs.flatMap((t) => t.aliases ?? []);
 
 const dt = new Date().toISOString().slice(0, 10);
 const lines = [];
@@ -196,77 +162,75 @@ p(
   "",
   `> Generowany przez \`node scripts/audit-danych.mjs\` — nie edytuj ręcznie (data: ${dt}).`,
   "> Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`,",
-  "> `src/data/index.ts` (CATEGORIES, normalizacja aliasów), `TechniqueIllustration.tsx` (DRAWINGS).",
+  "> `src/data/index.ts` (CATEGORIES), `src/features/technique/data/genaiImages.json`.",
   "",
   "## 1. Integralność struktury",
   "",
   critical.length
     ? `Krytyczne problemy: **${critical.length}**\n\n${critical.map((c) => `- ❌ ${c}`).join("\n")}`
-    : "Krytycznych problemów: **0** ✅ (id unikalne, obowiązkowe pola, kategorie ↔ `CATEGORIES`, `levels`∈1–10, `infographic` ↔ `DRAWINGS`, słownik bez martwych `related`, `levels.json` bez duplikatów/pustych pozycji).",
+    : "Krytycznych problemów: **0** ✅ (id unikalne, obowiązkowe pola, kategorie ↔ `CATEGORIES`, `levels`∈0–15, mapa GenAI ↔ id technik, słownik bez martwych `related`, `levels.json`: wymagania strukturalne wskazują istniejące techniki zgodne z P0.3).",
   "",
-  `Ostrzeżenia (do zadań ${mismatches.length ? "P0.3, " : ""}P0.4 / P1.9): **${warn.length}**`,
+  `Ostrzeżenia: **${warn.length}**`,
   "",
   "## 2. Pokrycie stopni",
   "",
-  "| Stopień | Techniki (`levels[]`) | Pozycje wymagań | Linkowane |",
-  "|---|---:|---:|---:|",
-  ...coverage.map((c) => `| ${c.kyu} (${c.id}) | ${c.techCount} | ${c.items} | ${c.linked} |`),
-  `| bez stopnia (start) | 0 | ${levels.find((l) => l.id === "start").groups.flatMap((g) => g.items).length} | ${levels.find((l) => l.id === "start").groups.flatMap((g) => g.items).filter(hasMatch).length} |`,
-  `| ${levels.find((l) => l.id === "dan").kyu} | 0 | ${levels.find((l) => l.id === "dan").groups.flatMap((g) => g.items).length} | ${levels.find((l) => l.id === "dan").groups.flatMap((g) => g.items).filter(hasMatch).length} |`,
+  "| Stopień | Techniki w atlasie | Wymagania: techniki | Wymagania: opisy | Walki |",
+  "|---|---:|---:|---:|---:|",
+  ...coverage.map((c) => `| ${c.kyu} (${c.id}) | ${c.atlas} | ${c.tech} | ${c.text} | ${c.fights === null ? "—" : c.fights} |`),
   "",
-  "Start i dan celowo nie mają technik w atlasie (`levels[]` ∈ 1–10).",
+  "Zakres `levels[]` technik i numerów stopni: 0 (start) – 15 (5 dan).",
   "",
-  "## 3. Techniki ↔ stopnie (mismatchy)",
+  "## 3. Spójność wymagań ↔ atlas (P0.3)",
   "",
-  ...(mismatches.length
+  mismatches.length || outsideRequirements.length
     ? [
-        `**${mismatches.length} mismatchów** — technika linkowana w wymaganiach stopnia, którego nie ma w jej \`levels[]\` (audyt trafień = ta sama logika co \`RequirementsPanel\`):`,
-        "",
-        "| Wymagania | Technika | \`levels[]\` |",
-        "|---|---|---|",
-        ...mismatches.map((m) => `| ${m.kyu} — ${m.item} | ${m.tech} | [${m.levels}] |`),
-        "",
-        "Zadanie: **P0.3** w `TODO.md` (dopisać stopnie albo udokumentować semantykę).",
-      ]
-    : [
-        "Brak mismatchów ✅",
-        "",
-        "Sprawdzane są tylko stopnie kyu (1–10) — `start` i `dan` nie mają technik w atlasie (`levels[]` ∈ 1–10), więc link w ich wymaganiach nie jest rozjazdem danych.",
-      ]),
+        mismatches.length ? `**Mismatches: ${mismatches.length}** (krytyczne, sekcja 1).` : "",
+        outsideRequirements.length
+          ? `**Techniki poza wymaganiami: ${outsideRequirements.length}** (ostrzeżenia):`
+          : "",
+        ...outsideRequirements.map((o) => `  - ${o}`),
+      ].filter(Boolean)
+    : "Wszystkie techniki w wymaganiach mają właściwy stopień w `levels[]`, a każda technika z atlasu występuje w wymaganiach swojego stopnia ✅",
   "",
   "## 4. Kolizje aliasów",
   "",
   collisions.length
-    ? `${collisions.map(([alias, ids]) => `- ⚠️ „${alias}" → ${ids.length} technik: ${ids.join(", ")}`).join("\n")}\n\nZadania w \`TODO.md\`: ${collisionTasks.map((t) => `**${t}**`).join(", ")}.`
-    : "Brak kolizji ✅",
+    ? collisions.map(([alias, ids]) => `- ⚠️ „${alias}" → ${ids.length} technik: ${ids.join(", ")}`).join("\n")
+    : "Brak kolizji ✅ (aliasy to obecnie tylko metadane — aplikacja nie linkuje po aliasach, wymagania to referencje strukturalne).",
   "",
-  "## 5. Linkowanie wymagań",
+  "## 5. Pozycje wymagań bez techniki (typu `text`)",
   "",
-  `**${linkedItems.length} / ${allItems.length}** pozycji wymagań linkuje do techniki.`,
+  `**${textItems.length} / ${allItems.length}** pozycji to opisy nielinkowane (etykieta, wiedza, próba).`,
   "",
-  `Nielinkowane (${unlinked.length}) wg powodu:`,
+  ...levels.flatMap((l) => {
+    const texts = l.groups.flatMap((g) => g.items).filter((i) => i.type === "text");
+    return texts.length ? [`- **${l.kyu}** (${texts.length}): ${texts.map((i) => i.text).join(" · ")}`] : [];
+  }),
   "",
-  ...[...unlinkedGroups.entries()].flatMap(([g, list]) => [`- **${g}** (${list.length}):`, ...list.map((i) => `  - ${i}`)]),
+  missingInAtlas.length
+    ? `\nZ tego braki w atlasie do zadania **P1.6**: ${missingInAtlas.map(({ item }) => `„${item.text}"`).join(", ")}.`
+    : "",
   "",
   "## 6. Media i zdjęcia",
   "",
   `- techniki z \`image\`: ${images.length}/${techs.length} (unikalnych URL-i: ${uniqueImages}, w tym Unsplash: ${unsplash.length}) → zadanie **P1.5**`,
   `- techniki z \`video\`: ${videos.length}/${techs.length}${videos.length ? ` (${videos.map((v) => `${v.name}: ${v.video}`).join("; ")})` : " (pole zawsze `null` — miejsce na przyszłe filmiki)"}`,
+  `- techniki z tymczasowym zdjęciem GenAI: **${genaiCover}/${techs.length}** (mapa \`genaiImages.json\`), bez zdjęcia → placeholder z kanji: ${techs.length - genaiCover}`,
   "",
-  "## 7. Statystyki technik i aliasów",
+  "## 7. Statystyki",
   "",
+  `- stopni: **${levels.length}** (start, 10–1 kyu, 1–5 dan)`,
   `- technik łącznie: **${techs.length}**`,
-  `- technik linkowanych z wymagań: **${matchedTechs.size}**`,
-  `- aliasów łącznie: **${allAliases.length}** (użytych w wymaganiach: ${usedAliases.size}, nieużywanych: ${allAliases.length - usedAliases.size})`,
+  `- technik powiązanych z wymaganiami: **${requiredTechIds.size}** (poza wymaganiami: ${techs.length - requiredTechIds.size})`,
+  `- aliasów łącznie: **${allAliases.length}** (kolizje: ${collisions.length})`,
   `- haseł słownika: **${glossEntries.length}** w ${glossary.categories.length} kategoriach (${glossary.categories.map((c) => `${c.name}: ${c.entries.length}`).join(", ")})`,
   "",
   "## 8. Rekomendacje",
   "",
-  "1. **P0.4** — rozdzielić alias „Kumite turniejowe\" (sekcja 4).",
-  "2. **P1.9** — poprawić aliasy krótkie ippon-kumite, kolizja „Ippon kumite 10 kyu\" (sekcja 4).",
-  "3. **P1.6** — dopisać Saiha / Seienchin / Ushiro-mawashi-geri (sekcja 5, grupa „brak w atlasie\").",
-  "4. **P1.7** — hasła Rei/Osu/Bunkai/Kamae + linkowanie wymagań do słownika (sekcja 5).",
-  "5. **P1.5** — zdjęcia self-hosted zamiast Unsplash (sekcja 6).",
+  "1. **P1.6** — dopisać do atlasu Seienchin i Ushiro-mawashi-geri (sekcja 5).",
+  "2. **P1.7** — hasła Rei/Osu/Bunkai/Kamae + linkowanie opisów wymagań do słownika (sekcja 5).",
+  "3. **P1.5** — zdjęcia self-hosted zamiast Unsplash (sekcja 6).",
+  "4. **P1.1** — weryfikacja treści 16 stopni ze sensei (nazwy, zakres, staż, liczby walk).",
   "",
 );
 
@@ -274,8 +238,8 @@ write("RAPORT.md", lines.join("\n"));
 
 console.log(`RAPORT.md zapisany (${dt})`);
 console.log(`  krytyczne: ${critical.length}`);
-console.log(`  ostrzeżenia: ${warn.length} (${mismatches.length} MISMATCH, ${collisions.length} KOLIZJA)`);
-console.log(`  pokrycie wymagań: ${linkedItems.length}/${allItems.length}`);
+console.log(`  ostrzeżenia: ${warn.length} (${collisions.length} KOLIZJA, ${outsideRequirements.length} POZA WYMAGANIAMI)`);
+console.log(`  wymagania: ${techItems.length} technik + ${textItems.length} opisów`);
 if (critical.length) {
   for (const c of critical) console.error(`  ✗ ${c}`);
   process.exit(1);

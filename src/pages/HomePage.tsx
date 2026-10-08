@@ -1,15 +1,13 @@
-import { useEffect } from "react";
 import { Link } from "react-router";
-import BeltPath from "../components/BeltPath";
-import DojoKun from "../components/DojoKun";
-import Hero from "../components/Hero";
-import TechniquesSection from "../components/TechniquesSection";
-import { glossary } from "../data";
+import DojoKun from "@/features/dojo/components/DojoKun";
+import Hero from "@/features/home/components/Hero";
+import BeltPath from "@/features/level/components/BeltPath";
+import TechniquesSection from "@/features/technique/components/TechniquesSection";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { glossary } from "@/data";
 
 const HomePage = () => {
-  useEffect(() => {
-    document.title = "Kihon — droga do egzaminu | Kyokushin Exam Guide";
-  }, []);
+  useDocumentTitle("Kihon — droga do egzaminu | Kyokushin Exam Guide");
 
   return (
     <>

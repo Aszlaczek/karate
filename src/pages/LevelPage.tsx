@@ -1,18 +1,19 @@
-import { useEffect } from "react";
 import { Navigate, useParams } from "react-router";
-import BeltPath from "../components/BeltPath";
-import RequirementsPanel from "../components/RequirementsPanel";
-import TechniquesSection from "../components/TechniquesSection";
-import { BELT_NAMES, getLevel } from "../data";
+import BeltPath from "@/features/level/components/BeltPath";
+import RequirementsPanel from "@/features/level/components/RequirementsPanel";
+import TechniquesSection from "@/features/technique/components/TechniquesSection";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { BELT_NAMES, getLevel } from "@/data";
 
 const LevelPage = () => {
   const { kyuId } = useParams();
   const level = getLevel(kyuId);
 
-  useEffect(() => {
-    if (!level) return;
-    document.title = `Wymagania ${level.kyu} — pas ${BELT_NAMES[level.belt].toLowerCase()} | Kihon`;
-  }, [level]);
+  useDocumentTitle(
+    level
+      ? `Wymagania ${level.kyu} — pas ${BELT_NAMES[level.belt].toLowerCase()} | Kihon`
+      : null,
+  );
 
   if (!level) return <Navigate to="/nie-istnieje" replace />;
 

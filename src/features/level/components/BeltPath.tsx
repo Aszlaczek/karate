@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { BELT_NAMES, levels } from "../data";
+import { BELT_NAMES, levels } from "@/data";
 
 const BeltPath = ({ activeId }: { activeId?: string }) => (
   <div className="belt-path">

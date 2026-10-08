@@ -1,32 +1,21 @@
-import { useEffect } from "react";
-import { getRelatedTechniques } from "../data";
-import type { GlossaryCategory, GlossaryEntry, Technique } from "../data/types";
-import { resolveMediaSrc } from "./TechniqueIllustration";
-import Icon from "./Icon";
-import ZoneIllustration, { zoneForEntry } from "./ZoneIllustration";
+import { getRelatedTechniques } from "@/data";
+import type { GlossaryCategory, GlossaryEntry } from "@/data/types";
+import { resolveMediaSrc } from "@/features/technique/components/TechniqueIllustration";
+import Icon from "@/components/ui/Icon";
+import TechniqueLink from "@/features/technique/components/TechniqueLink";
+import ZoneIllustration, { zoneForEntry } from "@/features/glossary/components/ZoneIllustration";
+import { useModalBase } from "@/hooks/useModalBase";
 
 interface GlossaryEntryModalProps {
   entry: GlossaryEntry;
   category: GlossaryCategory;
   onClose: () => void;
-  onSelectTechnique: (technique: Technique) => void;
 }
 
-const GlossaryEntryModal = ({ entry, category, onClose, onSelectTechnique }: GlossaryEntryModalProps) => {
+const GlossaryEntryModal = ({ entry, category, onClose }: GlossaryEntryModalProps) => {
   const related = getRelatedTechniques(entry);
   const zone = zoneForEntry(entry.id);
-
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-    const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") onClose();
-    };
-    window.addEventListener("keydown", closeOnEscape);
-    return () => {
-      document.body.style.overflow = "";
-      window.removeEventListener("keydown", closeOnEscape);
-    };
-  }, [onClose]);
+  const { onBackdropMouseDown } = useModalBase(onClose);
 
   return (
     <div
@@ -34,9 +23,7 @@ const GlossaryEntryModal = ({ entry, category, onClose, onSelectTechnique }: Glo
       role="dialog"
       aria-modal="true"
       aria-label={`Hasło słownika ${entry.term}`}
-      onMouseDown={(event) => {
-        if (event.target === event.currentTarget) onClose();
-      }}
+      onMouseDown={onBackdropMouseDown}
     >
       <div className="tech-modal-panel glossary-modal-panel">
         <button className="modal-close" aria-label="Zamknij hasło" onClick={onClose}><Icon name="close" /></button>
@@ -68,10 +55,7 @@ const GlossaryEntryModal = ({ entry, category, onClose, onSelectTechnique }: Glo
               <small>Powiązane techniki</small>
               <div>
                 {related.map((technique) => (
-                  <button key={technique.id} onClick={() => onSelectTechnique(technique)}>
-                    {technique.name}
-                    <Icon name="arrow" size={13} />
-                  </button>
+                  <TechniqueLink key={technique.id} id={technique.id} variant="chip" />
                 ))}
               </div>
             </div>

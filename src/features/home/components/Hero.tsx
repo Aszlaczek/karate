@@ -1,6 +1,6 @@
 import { Link } from "react-router";
-import { CATEGORIES, levels, techniques } from "../data";
-import Icon from "./Icon";
+import { CATEGORIES, levels, techniques } from "@/data";
+import Icon from "@/components/ui/Icon";
 
 const Hero = () => (
   <section className="hero" id="start">

@@ -1,8 +1,12 @@
 export type BeltId = "white" | "orange" | "blue" | "yellow" | "green" | "brown" | "black";
 
+export type RequirementItem =
+  | { type: "technique"; id: string }
+  | { type: "text"; text: string };
+
 export interface RequirementGroup {
   title: string;
-  items: string[];
+  items: RequirementItem[];
 }
 
 export interface Level {
@@ -16,6 +20,7 @@ export interface Level {
   level: string;
   time: string;
   intro: string;
+  fights: number | null;
   groups: RequirementGroup[];
 }
 
@@ -30,7 +35,6 @@ export interface Technique {
   focus: string;
   levels: number[];
   aliases: string[];
-  infographic: string;
   image: string;
   video: string | null;
 }

@@ -1,5 +1,5 @@
-import { dojoKun } from "../data";
-import Icon from "./Icon";
+import { dojoKun } from "@/data";
+import Icon from "@/components/ui/Icon";
 
 const DojoKun = () => (
   <section className="dojo-section" id="dojo-kun">

@@ -1,21 +1,24 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router";
-import Icon from "./Icon";
+import Icon from "@/components/ui/Icon";
+import { useUiStore } from "@/store/uiStore";
 
 const Header = () => {
   const location = useLocation();
-  const [open, setOpen] = useState(false);
+  const open = useUiStore((state) => state.mobileMenuOpen);
+  const toggleMenu = useUiStore((state) => state.toggleMobileMenu);
+  const closeMenu = useUiStore((state) => state.closeMobileMenu);
   const headerRef = useRef<HTMLElement>(null);
 
-  useEffect(() => setOpen(false), [location]);
+  useEffect(() => closeMenu(), [location, closeMenu]);
 
   useEffect(() => {
     if (!open) return;
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") closeMenu();
     };
     const onPointerDown = (event: PointerEvent) => {
-      if (headerRef.current && !headerRef.current.contains(event.target as Node)) setOpen(false);
+      if (headerRef.current && !headerRef.current.contains(event.target as Node)) closeMenu();
     };
     document.addEventListener("keydown", onKeyDown);
     document.addEventListener("pointerdown", onPointerDown);
@@ -23,7 +26,7 @@ const Header = () => {
       document.removeEventListener("keydown", onKeyDown);
       document.removeEventListener("pointerdown", onPointerDown);
     };
-  }, [open]);
+  }, [open, closeMenu]);
 
   return (
     <header className="site-header" ref={headerRef}>
@@ -45,7 +48,7 @@ const Header = () => {
         aria-label={open ? "Zamknij menu" : "Otwórz menu"}
         aria-expanded={open}
         aria-controls="site-menu"
-        onClick={() => setOpen((value) => !value)}
+        onClick={toggleMenu}
       >
         <Icon name={open ? "close" : "menu"} size={20} />
       </button>

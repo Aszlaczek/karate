@@ -1,0 +1,14 @@
+/* Tokeny projektu: zmienne CSS (:root). */
+
+:root {
+  --ink: #171916;
+  --muted: #6b6c64;
+  --paper: #f4f0e7;
+  --paper-deep: #e9e3d7;
+  --white: #fffdf8;
+  --red: #a62b24;
+  --red-dark: #7d211d;
+  --line: rgba(23, 25, 22, 0.14);
+  --serif: "Shippori Mincho", "Noto Serif JP", serif;
+  --sans: "DM Sans", sans-serif;
+}
