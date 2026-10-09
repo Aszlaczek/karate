@@ -23,7 +23,7 @@
       {
         "title": "Podstawy",
         "items": [
-          { "type": "technique", "id": "fudo-dachi" },
+          { "type": "glossary", "id": "fudo" },
           { "type": "text", "text": "Seiza i mokuso" },
           { "type": "text", "text": "Oddychanie i rozgrzewka" }
         ]
@@ -46,9 +46,9 @@
       {
         "title": "Kihon",
         "items": [
-          { "type": "technique", "id": "yoi-dachi" },
-          { "type": "technique", "id": "fudo-dachi" },
-          { "type": "technique", "id": "zenkutsu-dachi" },
+          { "type": "glossary", "id": "yoi" },
+          { "type": "glossary", "id": "fudo" },
+          { "type": "glossary", "id": "zenkutsu-dachi" },
           { "type": "technique", "id": "seiken-oi-tsuki" },
           { "type": "technique", "id": "seiken-morote-tsuki" },
           { "type": "technique", "id": "seiken-jodan-uke" },
@@ -91,10 +91,10 @@
       {
         "title": "Kihon",
         "items": [
-          { "type": "technique", "id": "fudo-dachi" },
-          { "type": "technique", "id": "sanchin-dachi" },
-          { "type": "technique", "id": "kokutsu-dachi" },
-          { "type": "technique", "id": "musubi-dachi" },
+          { "type": "glossary", "id": "fudo" },
+          { "type": "glossary", "id": "sanchin-dachi" },
+          { "type": "glossary", "id": "kokutsu" },
+          { "type": "glossary", "id": "musubi" },
           { "type": "technique", "id": "seiken-oi-tsuki" },
           { "type": "technique", "id": "seiken-ago-uchi" },
           { "type": "technique", "id": "seiken-gyaku-tsuki" },
@@ -142,8 +142,8 @@
       {
         "title": "Kihon",
         "items": [
-          { "type": "technique", "id": "sanchin-dachi" },
-          { "type": "technique", "id": "kiba-dachi" },
+          { "type": "glossary", "id": "sanchin-dachi" },
+          { "type": "glossary", "id": "kiba" },
           { "type": "technique", "id": "seiken-tate-tsuki" },
           { "type": "technique", "id": "seiken-shita-tsuki" },
           { "type": "technique", "id": "seiken-jun-tsuki" },
@@ -194,8 +194,8 @@
       {
         "title": "Kihon",
         "items": [
-          { "type": "technique", "id": "kokutsu-dachi" },
-          { "type": "technique", "id": "neko-ashi-dachi" },
+          { "type": "glossary", "id": "kokutsu" },
+          { "type": "glossary", "id": "neko-ashi" },
           { "type": "technique", "id": "tettsui-oroshi-uchi" },
           { "type": "technique", "id": "tettsui-komekami-uchi" },
           { "type": "technique", "id": "tettsui-hizo-uchi" },
@@ -247,8 +247,8 @@
       {
         "title": "Kihon",
         "items": [
-          { "type": "technique", "id": "kiba-dachi" },
-          { "type": "technique", "id": "tsuru-ashi-dachi" },
+          { "type": "glossary", "id": "kiba" },
+          { "type": "glossary", "id": "tsuru-ashi" },
           { "type": "technique", "id": "seiken-morote-tsuki" },
           { "type": "technique", "id": "seiken-tate-tsuki" },
           { "type": "technique", "id": "uraken-shomen-uchi" },
@@ -295,7 +295,7 @@
       {
         "title": "Kihon",
         "items": [
-          { "type": "technique", "id": "moro-ashi-dachi" },
+          { "type": "glossary", "id": "moro-ashi" },
           { "type": "technique", "id": "shotei-uchi" },
           { "type": "technique", "id": "jodan-hiji-ate" },
           { "type": "technique", "id": "shuto-mawashi-uke" },
@@ -337,9 +337,9 @@
       {
         "title": "Kihon",
         "items": [
-          { "type": "technique", "id": "heisoku-dachi" },
-          { "type": "technique", "id": "heiko-dachi" },
-          { "type": "technique", "id": "uchi-hachiji-dachi" },
+          { "type": "glossary", "id": "heisoku" },
+          { "type": "glossary", "id": "heiko" },
+          { "type": "glossary", "id": "uchi-hachiji" },
           { "type": "technique", "id": "shuto-sakotsu-uchi" },
           { "type": "technique", "id": "shuto-uchi-komi" },
           { "type": "technique", "id": "shuto-ganmen-uchi" },
@@ -394,7 +394,7 @@
       {
         "title": "Kihon",
         "items": [
-          { "type": "technique", "id": "kake-dachi" },
+          { "type": "glossary", "id": "kake" },
           { "type": "technique", "id": "chudan-hiji-ate" },
           { "type": "technique", "id": "chudan-mae-hiji-ate" },
           { "type": "technique", "id": "age-hiji-ate" },

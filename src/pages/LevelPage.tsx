@@ -4,6 +4,7 @@ import RequirementsPanel from "@/features/level/components/RequirementsPanel";
 import TechniquesSection from "@/features/technique/components/TechniquesSection";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import { BELT_NAMES, getLevel } from "@/data";
+import SectionHeading from "@/components/ui/SectionHeading";
 
 const LevelPage = () => {
   const { kyuId } = useParams();
@@ -20,10 +21,7 @@ const LevelPage = () => {
   return (
     <>
       <section className="section belts-section level-belts">
-        <div className="section-heading">
-          <div><span className="section-number">01</span><h2>Wybór stopnia</h2></div>
-          <p>Każdy kyu ma własny zakres egzaminu. Pas z belką to drugi stopień w danym kolorze.</p>
-        </div>
+        <SectionHeading number="01" title="Wybór stopnia" subtitle="Każdy kyu ma własny zakres egzaminu. Pas z belką to drugi stopień w danym kolorze." />
         <BeltPath activeId={level.id} />
       </section>
 

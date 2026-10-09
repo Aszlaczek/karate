@@ -40,9 +40,10 @@
   Pozycje typu `text` w wymaganiach („Ukłon rei", „Znaczenie słowa Osu",
   „Podstawy bunkai", „kamae i dystans"…) nie linkują, bo odpowiednich haseł
   nie ma. Dopisz hasła do `glossary.json` (Rei, Osu, Bunkai, Kamae — własne
-  kategorie lub „Postawa i etykieta"; opcjonalnie Seiza/Mokuso) i rozszerz
-  `RequirementItem` o trzeci typ `{type:"glossary", id}` linkujący do modala
-  hasła (obok `technique` i `text`; renderuje go `TechniqueLink`).
+  kategorie lub „Postawa i etykieta"; opcjonalnie Seiza/Mokuso). Infrastruktura
+  `{type:"glossary", id}` w `RequirementItem` gotowa (dodano w ramach konsolidacji
+  postaw), komponent `GlossaryLink` do renderowania linków. Pozostało: dodać
+  4 hasła i podmienić odpowiednie `text` pozycje w `levels.json` na `glossary`.
   Kryteria: wskazane pozycje linkują, `npm run build` ✅.
 
 - [ ] 🟡 **P1.2 — Zdjęcia dla haseł słownika**
@@ -51,10 +52,10 @@
   seiken, hiza, zenkutsu-dachi…) i uzupełnij `image` ścieżką
   `"/images/glossary/<id>.jpg"`. Karta w gridzie pokaże miniaturę.
   Kryteria: ≥6 haseł ze zdjęciem, `npm run build` ✅.
-  Postęp (2026-10-07): 10 haseł ma zdjęcia (kategoria „Ustawienia stóp",
-  pliki w `public/images/glossary/stances/` — ścieżki w JSON dopasowane
-  do case plików); strefy mają własny diagram SVG zamiast zdjęcia;
-  „Części ciała" nadal bez zdjęć.
+  Postęp (2026-10-09): 15 haseł ma zdjęcia (kategoria „Ustawienia stóp"
+  — 10 istniejących + 5 dodanych w ramach konsolidacji postaw: yoi, tsuru-ashi,
+  moro-ashi, heisoku, uchi-hachiji — pliki w `public/images/glossary/stances/`);
+  strefy mają własny diagram SVG zamiast zdjęcia; „Części ciała" nadal bez zdjęć.
 
 - [ ] 🟡 **P1.5 — Self-hosted zdjęcia zamiast Unsplash**
   `techniques[].image` i `hero` używają zewnętrznych URL-i Unsplash (straszy
@@ -171,3 +172,16 @@
   (niefocusowalna, bez hintu „Zobacz hasło", `cursor: default`, bez
   hovera); intro `/slownik` doprecykowane, chipy „Powiązane techniki"
   na kartach świadomie pominięte, build ✅ (2026-10-07).
+
+- [x] **Konsolidacja postaw (Pozycje): atlas = słownik + refaktoring komponentów** —
+  usunięto 14 duplikatów postaw z `techniques.json`, dodano 5 brakujących
+  do `glossary.json` (yoi, tsuru-ashi, moro-ashi, heisoku, uchi-hachiji),
+  19 referencji w `levels.json` zamieniono na `{type:"glossary", id}`,
+  rozszerzono `RequirementItem` o typ `glossary` + `GlossaryEntry.levels?`,
+  zaktualizowano audyt (P0.3 dla postaw), usunięto 14 kluczy z `genaiImages.json`.
+  Refaktoryzacja: nowe komponenty UI (`src/components/ui/` — Card, SectionHeading,
+  CategoryTabs, SearchBox, EmptyState), rozbicie `TechniquesSection` na
+  `TechniqueCard`, `TechniquesToolbar`, `AllTechniques`, `GlossaryPage` na
+  `GlossaryCard`, `GlossaryGrid`, `GlossaryToolbar`, `GlossaryLink`,
+  `HomePage`/`LevelPage` używają `SectionHeading`. Build ✅, audit 0/0,
+  preview 200 na 6 trasach (2026-10-09).

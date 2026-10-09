@@ -5,6 +5,7 @@ import BeltPath from "@/features/level/components/BeltPath";
 import TechniquesSection from "@/features/technique/components/TechniquesSection";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import { glossary } from "@/data";
+import SectionHeading from "@/components/ui/SectionHeading";
 
 const HomePage = () => {
   useDocumentTitle("Kihon — droga do egzaminu | Kyokushin Exam Guide");
@@ -13,18 +14,12 @@ const HomePage = () => {
     <>
       <Hero />
       <section className="section belts-section" id="stopnie">
-        <div className="section-heading">
-          <div><span className="section-number">01</span><h2>Twoja droga do czarnego pasa</h2></div>
-          <p>Wybierz stopień, aby zobaczyć zakres egzaminu. Pas z belką oznacza drugi stopień w danym kolorze.</p>
-        </div>
+        <SectionHeading number="01" title="Twoja droga do czarnego pasa" subtitle="Wybierz stopień, aby zobaczyć zakres egzaminu. Pas z belką oznacza drugi stopień w danym kolorze." />
         <BeltPath />
       </section>
       <TechniquesSection />
       <section className="section glossary-teaser" id="slownik">
-        <div className="section-heading">
-          <div><span className="section-number">03</span><h2>Słownik karate</h2></div>
-          <p>Strefy, części ciała i ustawienia stóp — słownictwo, bez którego nie zrozumiesz komend na egzaminie.</p>
-        </div>
+        <SectionHeading number="03" title="Słownik karate" subtitle="Strefy, części ciała i ustawienia stóp — słownictwo, bez którego nie zrozumiesz komend na egzaminie." />
         <div className="teaser-grid">
           {glossary.map((category) => (
             <Link className="teaser-card" key={category.id} to="/slownik">

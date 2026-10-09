@@ -1,10 +1,10 @@
 import { Link } from "react-router";
-import { BELT_NAMES, getNeighbourLevels, levels } from "@/data";
+import { BELT_NAMES, getNeighbourLevels, levels, getGlossaryEntry } from "@/data";
 import type { Level, RequirementItem } from "@/data/types";
 import Icon from "@/components/ui/Icon";
 import TechniqueLink from "@/features/technique/components/TechniqueLink";
 
-const itemKey = (item: RequirementItem) => (item.type === "technique" ? item.id : item.text);
+const itemKey = (item: RequirementItem) => (item.type === "technique" ? item.id : item.type === "glossary" ? item.id : item.text);
 
 const fightsLabel = (count: number) => {
   const plural = count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 12 || count % 100 > 14) ? "walki" : "walk";
@@ -43,12 +43,23 @@ const RequirementsPanel = ({ level }: { level: Level }) => {
               <span className="group-number">0{index + 1}</span>
               <h3>{group.title}</h3>
               <ul>
-                {group.items.map((item) => (
-                  <li key={itemKey(item)}>
-                    <Icon name="check" size={16} />
-                    <span>{item.type === "technique" ? <TechniqueLink id={item.id} /> : item.text}</span>
-                  </li>
-                ))}
+                {group.items.map((item) => {
+                  let content;
+                  if (item.type === "technique") {
+                    content = <TechniqueLink id={item.id} />;
+                  } else if (item.type === "glossary") {
+                    const lookup = getGlossaryEntry(item.id);
+                    content = <span className="technique-ref">{lookup?.entry.term ?? item.id}</span>;
+                  } else {
+                    content = item.text;
+                  }
+                  return (
+                    <li key={itemKey(item)}>
+                      <Icon name="check" size={16} />
+                      <span>{content}</span>
+                    </li>
+                  );
+                })}
               </ul>
             </article>
           ))}

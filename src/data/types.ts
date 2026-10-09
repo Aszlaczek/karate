@@ -2,6 +2,7 @@ export type BeltId = "white" | "orange" | "blue" | "yellow" | "green" | "brown" 
 
 export type RequirementItem =
   | { type: "technique"; id: string }
+  | { type: "glossary"; id: string }
   | { type: "text"; text: string };
 
 export interface RequirementGroup {
@@ -47,6 +48,7 @@ export interface GlossaryEntry {
   description: string;
   image: string | null;
   related: string[];
+  levels?: number[];
 }
 
 export interface GlossaryCategory {

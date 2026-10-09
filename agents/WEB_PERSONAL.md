@@ -83,19 +83,21 @@ src/
     home/                 # Hero + styles/home.css
     level/                # BeltPath, RequirementsPanel + styles/level.css
     technique/            # TechniquesSection, TechniqueModal, TechniqueLink,
-                          # TechniqueIllustration + data/genaiImages.json
-                          # (mapa zdjęć GenAI) + styles/technique.css,
-                          # technique-modal.css
-    glossary/             # GlossaryEntryModal, ZoneIllustration + styles/glossary.css
+                          # TechniqueIllustration, TechniqueCard, TechniquesToolbar,
+                          # AllTechniques + data/genaiImages.json (mapa zdjęć GenAI)
+                          # + styles/technique.css, technique-modal.css
+    glossary/             # GlossaryEntryModal, ZoneIllustration, GlossaryCard,
+                          # GlossaryGrid, GlossaryToolbar, GlossaryLink
+                          # + styles/glossary.css
     dojo/                 # DojoKun + styles/dojo.css
   data/                   # ★ JEDNO ŹRÓDŁO PRAWDY (JSON + typy + dostępnicy)
     levels.json           # 16 stopni: start, 10…1 kyu, 1–5 dan — wymagania
-                          # strukturalne (referencje technik + opisy + fights)
-    techniques.json       # techniki: nazwa, opis, aliasy, wideo, stopnie
-    glossary.json         # słownik: strefy / części ciała / ustawienia stóp
+                          # strukturalne (referencje: technique | glossary | text + fights)
+    techniques.json       # 118 technik: nazwa, opis, aliasy, wideo, stopnie (bez kategorii Pozycje)
+    glossary.json         # słownik: strefy / części ciała / ustawienia stóp (15 postaw w kategorii "pozycje" z levels[])
     dojoKun.json          # 7 zasad dojo
-    types.ts              # Level, RequirementItem, Technique, Glossary*, DojoKunEntry
-    index.ts              # eksporty + getLevel(), filterTechniques()… itd.
+    types.ts              # Level, RequirementItem (technique|glossary|text), Technique, GlossaryEntry (levels?), DojoKunEntry
+    index.ts              # eksporty + getLevel(), filterTechniques(), filterAtlas(), filterStances(), getStanceEntries()… itd.
   pages/                  # cienkie wrappery tras: HomePage, LevelPage,
                           # TechniquesPage, GlossaryPage, NotFoundPage
 old_src/                  # ARCHIWUM starego źródła — NIE EDYTOWAĆ
@@ -149,15 +151,18 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   „Walki egzaminacyjne" w panelu wymagań), `groups[]` (wymagania).
   **Pozycje wymagań są strukturalne** (union `RequirementItem` z `types.ts`):
   `{ "type": "technique", "id": "<id z techniques.json>" }` albo
+  `{ "type": "glossary", "id": "<id z glossary.json>" }` albo
   `{ "type": "text", "text": "…" }` (etykieta / wiedza / próba — pozycje
-  bez odpowiednika w atlasie). Referencje technik **muszą** wskazywać
-  istniejący wpis, którego `levels[]` zawiera `number` stopnia — pilnuje
-  tego audyt (`npm run audit`, błędy krytyczne P0.3), a renderuje
-  `TechniqueLink`.
-- **`techniques.json`** — 132 techniki w 7 filtrach (Uderzenia, Kopnięcia,
-  Bloki, Pozycje, Kumite, Kata): `name`, `japanese`, `reading`, `category`,
+  bez odpowiednika w atlasie/słowniku). Referencje technik **muszą** wskazywać
+  istniejący wpis, którego `levels[]` zawiera `number` stopnia; referencje
+  haseł słownika (typ `glossary`) — analogicznie, wpis w `glossary.json`
+  musi mieć `levels[]` zawierający `number` stopnia. Pilnuje tego audyt
+  (`npm run audit`, błędy krytyczne P0.3), renderuje `TechniqueLink`
+  (dla `technique`) lub `GlossaryLink` (dla `glossary`).
+- **`techniques.json`** — 118 technik w 6 filtrach (Uderzenia, Kopnięcia,
+  Bloki, Kumite, Kata): `name`, `japanese`, `reading`, `category`,
   `description`, `tags`, `focus`,   **`levels[]`** (które stopnie ją egzaminują — musi zawierać **każdy**
-  stopień, w którego wymaganiach technika występuje; zakres 0–15: 0 = start,
+  stopień, w których wymaganiach technika występuje; zakres 0–15: 0 = start,
   11–15 = 1–5 dan; pilnuje audyt P0.3),
   **`aliases[]`** (warianty nazwy — metadane i chronologia; aplikacja **nie**
   linkuje już po aliasach — wymagania to referencje strukturalne),
@@ -165,12 +170,15 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   ignoruje** — mapa `DRAWINGS` nie istnieje), `image`, **`video`**
   (`null` → tymczasowe zdjęcie GenAI z mapy `genaiImages.json`, a gdy go
   brak — placeholder z kanji; nie-null → odtwarzacz/embed zamiast zdjęcia:
-  YouTube URL, `*.mp4`, `*.gif`/`*.jpg`…).
+  YouTube URL, `*.mp4`, `*.gif`/`*.jpg`…). Kategoria "Pozycje" usunięta
+  (postawy żyją w `glossary.json`).
 - **`glossary.json`** — `categories[]` → `entries[]`:
   `id` (stabilny slug → deep-link `#haslo-<id>`), `term` PL, `japanese`,
   `reading`, `description`, **`image`** (`null` = placeholder z kanji;
   docelowo `"/images/glossary/<id>.jpg"` — plik w `public/images/glossary/`),
   **`related`** (tablica `id` technik → chipy w modalu hasła).
+  **`levels[]`** (opcjonalne, dla postaw w kategorii "Ustawienia stóp" —
+  które stopnie je egzaminują; zakres 0–15, pilnuje audyt P0.3).
   `image: null` w hasłach `jodan` / `chudan` / `gedan-strefa` zamiast
   placeholdera renderuje diagram stref (`ZoneIllustration.tsx`).
   Ścieżki lokalne zapisuj z **dokładnym case'em** pliku na dysku

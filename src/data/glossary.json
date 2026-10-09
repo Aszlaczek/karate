@@ -91,7 +91,7 @@
           "reading": "koshi",
           "description": "Źródło mocy w większości technik — rotacja bioder napędza uderzenia i kopnięcia, a nie sama ręka czy noga.",
           "image": null,
-          "related": ["seiken-oi-tsuki", "zenkutsu-dachi"]
+          "related": ["seiken-oi-tsuki"]
         },
         {
           "id": "ude",
@@ -165,14 +165,14 @@
           "image": null,
           "related": ["mae-geri-chudan-chusoku"]
         },
-        {
+{
           "id": "ashi",
           "term": "Noga",
           "japanese": "足",
           "reading": "ashi",
           "description": "Ogólna nazwa kończyny dolnej — łączy pozycje (dachi) i kopnięcia (geri) w jednym słowie.",
           "image": null,
-          "related": ["mae-geri-chudan-chusoku", "zenkutsu-dachi"]
+          "related": ["mae-geri-chudan-chusoku"]
         }
       ]
     },
@@ -188,7 +188,8 @@
           "reading": "fudo-dachi",
           "description": "Stabilna postawa o szerokości bioder, lekko ugiętych kolanach i równomiernym ciężarze. Pierwsza pozycja na drodze egzaminacyjnej.",
           "image": "/images/glossary/stances/Fudo-Dachi.png",
-          "related": ["fudo-dachi"]
+          "related": [],
+          "levels": [0, 9, 10]
         },
         {
           "id": "musubi",
@@ -197,7 +198,8 @@
           "reading": "musubi-dachi",
           "description": "Pięty razem, palce rozstawione w literę V — pozycja do ukłonu (rei) i mokuso przed treningiem.",
           "image": "/images/glossary/stances/Musubi-Dachi.png",
-          "related": ["musubi-dachi"]
+          "related": [],
+          "levels": [9]
         },
         {
           "id": "heiko",
@@ -206,7 +208,8 @@
           "reading": "heikō-dachi",
           "description": "Stopy równolegle na szerokość bioder (nazywana też yoi-dachi) — punkt wyjścia do technik i przejść.",
           "image": "/images/glossary/stances/Heiko-Dachi.png",
-          "related": ["seiken-oi-tsuki"]
+          "related": ["seiken-oi-tsuki"],
+          "levels": [4]
         },
         {
           "id": "zenkutsu-dachi",
@@ -215,7 +218,8 @@
           "reading": "zenkutsu-dachi",
           "description": "Długa pozycja: przednie kolano ugięte nad stopą, tylna noga wyprostowana, ciężar ok. 60/40. Fundament oi-zuki i większości kihon.",
           "image": "/images/glossary/stances/Zenkutsu-dachi.png",
-          "related": ["zenkutsu-dachi", "seiken-oi-tsuki"]
+          "related": ["seiken-oi-tsuki"],
+          "levels": [10]
         },
         {
           "id": "kokutsu",
@@ -224,7 +228,8 @@
           "reading": "kokutsu-dachi",
           "description": "Ciężar głównie na nodze tylnej, przednia stopa lekko na pięcie — baza do bloków i technik obronnych.",
           "image": "/images/glossary/stances/Kokutsu-dachi.png",
-          "related": ["seiken-chudan-soto-uke"]
+          "related": ["seiken-chudan-soto-uke"],
+          "levels": [7, 9]
         },
         {
           "id": "sanchin-dachi",
@@ -233,7 +238,8 @@
           "reading": "sanchin-dachi",
           "description": "Stopy w linii półksiężyca, kolana skierowane do wewnątrz, napięty brzuch — pozycja kontroli oddechu i napięcia.",
           "image": "/images/glossary/stances/Sanchin-Dachi.png",
-          "related": ["sanchin-dachi"]
+          "related": [],
+          "levels": [8, 9]
         },
         {
           "id": "kiba",
@@ -242,7 +248,8 @@
           "reading": "kiba-dachi",
           "description": "Szerokie rozkroczę z kolanami rozepchniętymi nad stopami i prostym tułowiem — buduje siłę nóg i stabilność boczną.",
           "image": "/images/glossary/stances/Kiba-Dachi.png",
-          "related": ["kiba-dachi"]
+          "related": [],
+          "levels": [6, 8]
         },
         {
           "id": "neko-ashi",
@@ -251,7 +258,8 @@
           "reading": "neko-ashi-dachi",
           "description": "Ciężar na nodze tylnej, przednia stopa dotyka podłogi palcami — szybka, zwrotna pozycja do kopnięć.",
           "image": "/images/glossary/stances/Neko-Ashi-Dachi.png",
-          "related": ["mae-geri-chudan-chusoku"]
+          "related": ["mae-geri-chudan-chusoku"],
+          "levels": [7]
         },
         {
           "id": "kake",
@@ -260,7 +268,8 @@
           "reading": "kake-dachi",
           "description": "Nogi skrzyżowane, ciężar na nodze wspierającej — stosowana po obrotach, w kombinacjach i kata.",
           "image": "/images/glossary/stances/Kake-Dachi.png",
-          "related": ["kake-dachi"]
+          "related": [],
+          "levels": [3]
         },
         {
           "id": "seiza",
@@ -270,6 +279,56 @@
           "description": "Klęknienie na kolanach z podniesionymi stopami — porządek otwarcia treningu, mokuso i ukłonu w dojo.",
           "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3WnVH4RUFz_nuf5qYr8121zeyug6tSwXTUvlJBQJG1QEjJMjwrJxGB76u&s=10",
           "related": []
+        },
+        {
+          "id": "yoi",
+          "term": "Yoi dachi",
+          "japanese": "用意立ち",
+          "reading": "yoi-dachi",
+          "description": "Postawa gotowości: stopy na szerokość barków, pięści opuszczone przed udami, wzrok przed siebie. Punkt wyjścia i powrotu dla większości technik.",
+          "image": "/images/glossary/stances/Yoi-Dachi.png",
+          "related": [],
+          "levels": [10]
+        },
+        {
+          "id": "tsuru-ashi",
+          "term": "Tsuru ashi dachi",
+          "japanese": "鶴足立ち",
+          "reading": "tsuru-ashi-dachi",
+          "description": "Stanie na jednej nodze, druga stopa przy kolanie nogi podporowej. Ćwiczy równowagę i kontrolę kopnięć.",
+          "image": "/images/glossary/stances/Tsuru-Ashi-Dachi.png",
+          "related": [],
+          "levels": [6]
+        },
+        {
+          "id": "moro-ashi",
+          "term": "Moro ashi dachi",
+          "japanese": "諸足立ち",
+          "reading": "moro-ashi-dachi",
+          "description": "Nogi na szerokości barków, stopy równoległe, tam gdzie kończy się noga zakroczna zaczyna się noga wykroczna.",
+          "image": "/images/glossary/stances/Moro-ashi-dachi.png",
+          "related": [],
+          "levels": [5]
+        },
+        {
+          "id": "heisoku",
+          "term": "Heisoku dachi",
+          "japanese": "閉足立ち",
+          "reading": "heisoku-dachi",
+          "description": "Pięty i palce razem, ciało wyprostowane. Pozycja wyjściowa wielu kata.",
+          "image": "/images/glossary/stances/Heisoku-Dachi.png",
+          "related": [],
+          "levels": [4]
+        },
+        {
+          "id": "uchi-hachiji",
+          "term": "Uchi hachiji dachi",
+          "japanese": "内八字立ち",
+          "reading": "uchi-hachiji-dachi",
+          "description": "Stopy na szerokość barków, palce skierowane do środka, kolana lekko ściągnięte do wewnątrz.",
+          "image": "/images/glossary/stances/Uchi-Hachi-Ji-Dachi.png",
+          "related": [],
+          "levels": [4]
         }
       ]
     }

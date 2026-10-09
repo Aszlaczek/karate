@@ -245,6 +245,22 @@ one-pager bez routera.
   0 ostrzeżeń: 166 referencji technik + 42 opisy, 16 stopni),
   spójność levels↔atlas sprawdzona osobnym skryptem (0 błędów).
 
+### 2026-10-09 — Konsolidacja postaw (Pozycje): atlas = słownik + refaktoring komponentów
+- Zmienione pliki:
+  - `src/data/glossary.json` — dodano 5 haseł (yoi, tsuru-ashi, moro-ashi, heisoku, uchi-hachiji), `levels[]` do 9 postaw, usunięto 8 martwych `related`
+  - `src/data/techniques.json` — usunięto 14 wpisów kategorii "Pozycje" (132 → 118 technik)
+  - `src/data/levels.json` — 19 referencji `{type:"technique"}` → `{type:"glossary"}` (mapowanie: fudo-dachi→fudo, zenkutsu-dachi→zenkutsu-dachi, kiba-dachi→kiba, neko-ashi-dachi→neko-ashi, itd.)
+  - `src/data/types.ts` — `RequirementItem` + `{type:"glossary", id}`, `GlossaryEntry.levels?`
+  - `src/data/index.ts` — `mapRequirementItem` obsługuje `glossary`, nowe `filterAtlas`, `filterStances`, `getStanceEntries`, `AtlasItem` union
+  - `src/features/technique/data/genaiImages.json` — usunięto 14 kluczy postaw
+  - `scripts/audit-danych.mjs` — walidacja `{type:"glossary"}` (id + levels), kolumna `gloss` w pokryciu, statystyki haseł
+  - `src/components/ui/` — nowe: `Card.tsx`, `SectionHeading.tsx`, `CategoryTabs.tsx`, `SearchBox.tsx`, `EmptyState.tsx`
+  - `src/features/technique/components/` — `TechniqueCard.tsx`, `TechniquesToolbar.tsx`, `AllTechniques.tsx`, zaktualizowane `TechniquesSection.tsx`
+  - `src/features/glossary/components/` — `GlossaryCard.tsx`, `GlossaryGrid.tsx`, `GlossaryToolbar.tsx`, `GlossaryLink.tsx`
+  - `src/pages/` — `HomePage.tsx`, `LevelPage.tsx`, `GlossaryPage.tsx` używają `SectionHeading`, nowe komponenty
+  - `src/features/level/components/RequirementsPanel.tsx` — obsługa 3 typów `RequirementItem`, `GlossaryLink`
+- Rezultat: jednorodowe źródło prawdy dla postaw (karta = karta słownika, zdjęcia stance z `public/images/glossary/stances/`, modal = modal hasła), usunięto duplikaty, refaktoryzacja monolitycznych komponentów na wzorzec UI primitives + feature components, `npm run build` ✅, `npm run audit` ✅ (0 krytycznych, 0 ostrzeżeń), `npm run preview` + curl 200 na 6 trasach.
+
 ### 2026-10-07 — Statyczne karty „Części ciała" (bez modala)
 - Zmienione pliki: `src/pages/GlossaryPage.tsx`, `src/index.css`,
   `TODO.md`, `WEB_PERSONAL.md`.
