@@ -293,6 +293,29 @@
   gap: 0 3px;
 }
 
+@media (max-width: 700px) {
+  .requirement-groups li > span {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--red) transparent;
+  }
+
+  .requirement-groups li > span::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .requirement-groups li > span::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .requirement-groups li > span::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+    border-radius: 3px;
+  }
+}
+
 .requirements-note {
   background: var(--paper);
   color: var(--muted);
