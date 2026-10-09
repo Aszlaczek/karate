@@ -15,6 +15,15 @@
   padding-bottom: 16px;
 }
 
+@media screen and (max-width: 768px) {
+  .category-tabs {
+    overflow: hidden;
+    max-width: 90svw;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+}
+
 .category-tabs {
   display: flex;
   gap: 6px;
@@ -29,7 +38,8 @@
   padding: 9px 13px;
 }
 
-.category-tabs button.active, .category-tabs button:hover {
+.category-tabs button.active,
+.category-tabs button:hover {
   background: var(--ink);
   color: white;
 }
