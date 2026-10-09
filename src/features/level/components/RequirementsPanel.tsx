@@ -1,39 +1,76 @@
 import { Link } from "react-router";
-import { BELT_NAMES, getNeighbourLevels, levels, getGlossaryEntry } from "@/data";
+import {
+  BELT_NAMES,
+  getNeighbourLevels,
+  levels,
+  getStripeCount,
+} from "@/data";
 import type { Level, RequirementItem } from "@/data/types";
 import Icon from "@/components/ui/Icon";
 import TechniqueLink from "@/features/technique/components/TechniqueLink";
+import GlossaryLink from "@/features/glossary/components/GlossaryLink";
 
-const itemKey = (item: RequirementItem) => (item.type === "technique" ? item.id : item.type === "glossary" ? item.id : item.text);
+const itemKey = (item: RequirementItem) =>
+  item.type === "technique"
+    ? item.id
+    : item.type === "glossary"
+      ? item.id
+      : item.text;
 
 const fightsLabel = (count: number) => {
-  const plural = count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 12 || count % 100 > 14) ? "walki" : "walk";
+  const plural =
+    count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 12 || count % 100 > 14)
+      ? "walki"
+      : "walk";
   return `${count} ${count === 1 ? "walka" : plural}`;
 };
 
 const RequirementsPanel = ({ level }: { level: Level }) => {
   const { prev, next } = getNeighbourLevels(level.order);
+  const stripeCount = getStripeCount(level);
+  const stripeLabel =
+    stripeCount === 1 ? " z belką" : stripeCount > 1 ? ` z ${stripeCount} belkami` : "";
+  const stripeColor = level.stripe;
 
   return (
     <section className="requirements">
       <div className="requirement-side">
         <span className="vertical-label">WYMAGANIA EGZAMINACYJNE</span>
-        <div className="selected-belt-mark" style={{ backgroundColor: level.color }}>
-          {level.stripe && <i style={{ backgroundColor: level.stripe }} />}
+        <div
+          className="selected-belt-mark"
+          style={{ backgroundColor: level.color }}
+        >
+          {stripeCount > 0 && stripeColor && (
+            <span className="belt-stripes">
+              {Array.from({ length: stripeCount }, (_, i) => (
+                <i key={i} style={{ backgroundColor: stripeColor }} />
+              ))}
+            </span>
+          )}
         </div>
         <span className="gi-symbol">空手</span>
       </div>
       <div className="requirement-content">
         <div className="requirement-title">
           <div>
-            <span>{level.kyu} / {level.level} / {BELT_NAMES[level.belt]}</span>
-            <h2>Pas {BELT_NAMES[level.belt].toLowerCase()}{level.stripe ? " z belką" : ""}</h2>
+            <span>
+              {level.kyu} / {level.level} / {BELT_NAMES[level.belt]}
+            </span>
+            <h2>
+              Pas {BELT_NAMES[level.belt].toLowerCase()}{stripeLabel}
+            </h2>
             <p>{level.intro}</p>
           </div>
           <div className="requirement-badges">
-            <div className="time-badge"><small>Orientacyjny staż</small><strong>{level.time}</strong></div>
+            <div className="time-badge">
+              <small>Orientacyjny staż</small>
+              <strong>{level.time}</strong>
+            </div>
             {level.fights !== null && (
-              <div className="time-badge fights-badge"><small>Walki egzaminacyjne</small><strong>{fightsLabel(level.fights)}</strong></div>
+              <div className="time-badge fights-badge">
+                <small>Walki egzaminacyjne</small>
+                <strong>{fightsLabel(level.fights)}</strong>
+              </div>
             )}
           </div>
         </div>
@@ -48,8 +85,7 @@ const RequirementsPanel = ({ level }: { level: Level }) => {
                   if (item.type === "technique") {
                     content = <TechniqueLink id={item.id} />;
                   } else if (item.type === "glossary") {
-                    const lookup = getGlossaryEntry(item.id);
-                    content = <span className="technique-ref">{lookup?.entry.term ?? item.id}</span>;
+                    content = <GlossaryLink id={item.id} />;
                   } else {
                     content = item.text;
                   }
@@ -64,10 +100,17 @@ const RequirementsPanel = ({ level }: { level: Level }) => {
             </article>
           ))}
         </div>
-        <p className="requirements-note"><strong>Ważne:</strong> programy egzaminacyjne mogą różnić się między organizacjami i dojo. Zawsze potwierdź aktualny zakres u swojego sensei.</p>
+        <p className="requirements-note">
+          <strong>Ważne:</strong> programy egzaminacyjne mogą różnić się między
+          organizacjami i dojo. Zawsze potwierdź aktualny zakres u swojego
+          sensei.
+        </p>
         <nav className="level-nav" aria-label="Nawigacja między stopniami">
           {prev ? (
-            <Link className="level-nav-cell level-nav-prev" to={`/kyu/${prev.id}`}>
+            <Link
+              className="level-nav-cell level-nav-prev"
+              to={`/kyu/${prev.id}`}
+            >
               <small>← Poprzedni stopień</small>
               <strong>{prev.kyu}</strong>
               <span>{prev.level}</span>
@@ -84,7 +127,10 @@ const RequirementsPanel = ({ level }: { level: Level }) => {
             <span>{levels.length} stopni egzaminu</span>
           </Link>
           {next ? (
-            <Link className="level-nav-cell level-nav-next" to={`/kyu/${next.id}`}>
+            <Link
+              className="level-nav-cell level-nav-next"
+              to={`/kyu/${next.id}`}
+            >
               <small>Następny stopień →</small>
               <strong>{next.kyu}</strong>
               <span>{next.level}</span>

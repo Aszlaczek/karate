@@ -82,6 +82,8 @@ src/
     navigation/           # Header, Footer + styles/navigation.css
     home/                 # Hero + styles/home.css
     level/                # BeltPath, RequirementsPanel + styles/level.css
+                          # (render belki: `belt-stripes` flex, `getStripeCount`);
+                          # RequirementsPanel używa `GlossaryLink` dla typ `glossary`
     technique/            # TechniquesSection, TechniqueModal, TechniqueLink,
                           # TechniqueIllustration, TechniqueCard, TechniquesToolbar,
                           # AllTechniques + data/genaiImages.json (mapa zdjęć GenAI)
@@ -146,7 +148,9 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
 
 - **`levels.json`** — 16 wpisów (`start`, `10`…`1`, `dan`, `dan2`…`dan5`):
   `kyu`, `number` (0 / 10–1 / 11–15 dla 1–5 dan), `order` (kolejność
-  nawigacji), `belt`, `color`, `stripe` (belka II stopnia), `level`, `time`,
+  nawigacji), `belt`, `color`, `stripe` (belka II stopnia, kolor),
+  **`stripes?`** (liczba belek: 1 dan = 1, N dan = N; kyue z belką = 1;
+  `stripe:null` → brak belek; pilnuje audyt **P0.4**), `level`, `time`,
   `intro`, **`fights`** (`null` albo liczba walk egzaminacyjnych → badge
   „Walki egzaminacyjne" w panelu wymagań), `groups[]` (wymagania).
   **Pozycje wymagań są strukturalne** (union `RequirementItem` z `types.ts`):
@@ -223,7 +227,8 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   `RAPORT.md`: integralność struktury (krytyczne), pokrycie 16 stopni
   (atlas ↔ wymagania ↔ opisy ↔ `fights`), spójność strukturalną P0.3
   (referencja techniki musi istnieć i mieć stopień w `levels[]`; technika
-  z atlasu poza wymaganiami = ostrzeżenie), kolizje aliasów (ostrzeżenia),
+  z atlasu poza wymaganiami = ostrzeżenie), **spójność belek P0.4**
+  (`stripes` zgodne z `number` stopnia: 1 dan = 1, N dan = N; `stripe:null` → brak `stripes`), kolizje aliasów (ostrzeżenia),
   lista opisów `text` (m.in. braki P1.6), media i statystyki. Skrypt jest
   read-only — po zmianach w JSON-ach uruchom go ponownie
   (exit 0 = brak problemów krytycznych).

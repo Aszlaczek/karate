@@ -43,6 +43,9 @@ export const getNeighbourLevels = (order: number) => ({
   next: levels.find((level) => level.order === order + 1),
 });
 
+export const getStripeCount = (level: Level): number =>
+  level.stripe ? (level.stripes ?? 1) : 0;
+
 export const getTechniqueById = (id?: string): Technique | undefined =>
   techniques.find((technique) => technique.id === id);
 

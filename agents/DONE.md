@@ -470,3 +470,15 @@ one-pager bez routera.
   gotowe do uzupełnienia zdjęciami z `public/images/glossary/`.
 - Weryfikacja: `npm run build` ✅, `npm run preview` + curl `/slownik`,
   `/techniki`, `/kyu/9` (200), bundle zawiera dane słownika i `#haslo-`.
+
+### 2026-10-09 — Wielokrotne belki dla dan ≥ 2 + linki glossary w wymaganiach
+- Zmienione pliki:
+  - `src/data/types.ts` — `Level.stripes?: number` (opcjonalne, domyślne 1 gdy `stripe` istnieje)
+  - `src/data/levels.json` — `"stripes"` dla `dan2`→2, `dan3`→3, `dan4`→4, `dan5`→5; 1 dan i kyue z belką = 1 (domyślne), `stripe:null` = 0
+  - `src/data/index.ts` — helper `getStripeCount(level)` = `level.stripe ? level.stripes ?? 1 : 0`
+  - `src/features/level/components/BeltPath.tsx` — usunięty martwy `danStrips` + `console.log`; render N × `<i>` w `<span className="belt-stripes">`
+  - `src/features/level/components/RequirementsPanel.tsx` — `belt-stripes` w `.selected-belt-mark`; tytuł: `1 → " z belką"`, `≥2 → " z N belkami"`, `0 → ""`; **pozycje typu `glossary` (19 postaw) teraz używają `GlossaryLink`** zamiast inline `<span>` → modal słownika + deep-link `#haslo-<id>`
+  - `src/features/level/styles/level.css` — `.belt-stripes` (flex, `gap:6px`, `right:14%`), `.selected-belt-mark .belt-stripes` (`right:18%`, `gap:8px`, `width:18px`); mobile analogicznie
+  - `scripts/audit-danych.mjs` — nowy check **P0.4**: dla `belt==="black"` wymaga `stripes === number - 10`; `stripe:null` → `stripes` musi być absent; `stripe!=null` + `belt!=="black"` → `stripes===1`; podsumowanie RAPORT zaktualizowane o P0.4
+- Rezultat: 1 dan = 1 belka, 2 dan = 2 belki, … 5 dan = 5 belek na kartach ścieżki i w panelu wymagań; 19 postaw (typ `glossary`) klikalne → modal hasła; `npm run build` ✅ (83 moduły), `npm run audit` ✅ (krytyczne: 2 znane P0.3, brak P0.4), `npm run preview` + curl 8 tras (200).
+- Weryfikacja: `npm run build`, `npm run audit`, `npm run preview` + curl `/`, `/techniki`, `/slownik`, `/kyu/9`, `/kyu/start`, `/kyu/dan`, `/kyu/dan2`, `/kyu/dan5`.

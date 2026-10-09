@@ -68,10 +68,6 @@
           { "type": "technique", "id": "taikyoku-sono-ichi" },
           { "type": "technique", "id": "ippon-kumite-1-10-kyu" }
         ]
-      },
-      {
-        "title": "Sprawność",
-        "items": [{ "type": "text", "text": "Pompki, przysiady, brzuszki" }]
       }
     ]
   },
@@ -171,10 +167,6 @@
           { "type": "technique", "id": "sanbon-kumite-wariant-i" },
           { "type": "technique", "id": "renraku-2-8-kyu" }
         ]
-      },
-      {
-        "title": "Wiedza",
-        "items": [{ "type": "text", "text": "Podstawy kumite — kamae i dystans" }]
       }
     ]
   },
@@ -224,10 +216,6 @@
           { "type": "technique", "id": "pinan-sono-ichi" },
           { "type": "technique", "id": "ippon-kumite-4-7-kyu" }
         ]
-      },
-      {
-        "title": "Wiedza",
-        "items": [{ "type": "text", "text": "Kumite z partnerem — podstawy" }]
       }
     ]
   },
@@ -371,10 +359,6 @@
           { "type": "technique", "id": "ippon-kumite-7-4-kyu" },
           { "type": "technique", "id": "sanbon-kumite-wariant-ii" }
         ]
-      },
-      {
-        "title": "Wiedza",
-        "items": [{ "type": "text", "text": "Kumite z różnymi partnerami" }]
       }
     ]
   },
@@ -419,10 +403,6 @@
           { "type": "technique", "id": "tsuki-no-kata" },
           { "type": "technique", "id": "ippon-kumite-8-3-kyu" }
         ]
-      },
-      {
-        "title": "Wiedza",
-        "items": [{ "type": "text", "text": "Kumite z presją czasu" }]
       }
     ]
   },
@@ -467,14 +447,6 @@
           { "type": "technique", "id": "ippon-kumite-9-2-kyu" },
           { "type": "technique", "id": "renraku-4-2-kyu" }
         ]
-      },
-      {
-        "title": "Wiedza i próba",
-        "items": [
-          { "type": "text", "text": "Podstawy bunkai" },
-          { "type": "text", "text": "Test siłowy" },
-          { "type": "text", "text": "Wiedza o Kyokushin" }
-        ]
       }
     ]
   },
@@ -518,14 +490,6 @@
           { "type": "technique", "id": "saiha" },
           { "type": "technique", "id": "ippon-kumite-10-1-kyu" },
           { "type": "technique", "id": "renraku-5-i-6-1-kyu" }
-        ]
-      },
-      {
-        "title": "Wiedza i próba",
-        "items": [
-          { "type": "text", "text": "Seienchin" },
-          { "type": "text", "text": "Interpretacja bunkai" },
-          { "type": "text", "text": "Rozbudowany test siłowy" }
         ]
       }
     ]
@@ -578,6 +542,7 @@
     "belt": "black",
     "color": "#161815",
     "stripe": "#b99025",
+    "stripes": 2,
     "level": "Rozwój",
     "time": "7+ lat",
     "intro": "Drugi stopień czarnego pasa wymaga dojrzałej techniki i świadomej interpretacji kata.",
@@ -615,6 +580,7 @@
     "belt": "black",
     "color": "#161815",
     "stripe": "#b99025",
+    "stripes": 3,
     "level": "Dojrzałość",
     "time": "10+ lat",
     "intro": "Trzeci dan to samodzielność w karate — własny styl, praca z uczniami i głębokie rozumienie bunkai.",
@@ -648,6 +614,7 @@
     "belt": "black",
     "color": "#161815",
     "stripe": "#b99025",
+    "stripes": 4,
     "level": "Instruktorstwo",
     "time": "14+ lat",
     "intro": "Czwarty dan łączy mistrzostwo techniki z odpowiedzialnością instruktora za dojo i uczniów.",
@@ -666,7 +633,9 @@
       },
       {
         "title": "Próba",
-        "items": [{ "type": "text", "text": "Wymagania organizacji/branch chiefa" }]
+        "items": [
+          { "type": "text", "text": "Wymagania organizacji/branch chiefa" }
+        ]
       }
     ]
   },
@@ -678,6 +647,7 @@
     "belt": "black",
     "color": "#161815",
     "stripe": "#b99025",
+    "stripes": 5,
     "level": "Mistrzostwo",
     "time": "18+ lat",
     "intro": "Piąty dan potwierdza dekady praktyki — mistrz gotowy do prowadzenia i kształtowania kolejnych pokoleń.",
@@ -696,7 +666,9 @@
       },
       {
         "title": "Próba",
-        "items": [{ "type": "text", "text": "Wymagania organizacji/branch chiefa" }]
+        "items": [
+          { "type": "text", "text": "Wymagania organizacji/branch chiefa" }
+        ]
       }
     ]
   }

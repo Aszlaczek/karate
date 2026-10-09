@@ -122,6 +122,14 @@ for (const l of levels) {
 for (const m of mismatches)
   critical.push("P0.3 — \"" + m.id + "\" (levels=[" + m.levels + "]) wymagane w " + m.kyu + ", których nie ma w levels[]");
 
+// --- 4b. Spójność belek (P0.4) ---
+for (const l of levels) {
+  const expected = l.stripe === null ? 0 : l.belt === "black" ? l.number - 10 : 1;
+  const actual = l.stripes ?? (l.stripe ? 1 : 0);
+  if (l.stripe === null && l.stripes != null) critical.push("P0.4 — \"" + l.id + "\" ma stripes bez stripe");
+  else if (actual !== expected) critical.push("P0.4 — \"" + l.id + "\" (" + l.kyu + "): stripes=" + actual + ", oczekiwano " + expected);
+}
+
 const outsideRequirements = [];
 for (const t of techs)
   for (const n of t.levels) {
@@ -178,7 +186,7 @@ p(
   "",
   critical.length
     ? "Krytyczne problemy: **" + critical.length + "**\n\n" + critical.map((c) => "- ❌ " + c).join("\n")
-    : "Krytycznych problemów: **0** ✅ (id unikalne, obowiązkowe pola, kategorie ↔ `CATEGORIES`, `levels`∈0–15, mapa GenAI ↔ id technik, słownik bez martwych `related`, `levels.json`: wymagania strukturalne wskazują istniejące techniki/haseła zgodne z P0.3).",
+    : "Krytycznych problemów: **0** ✅ (id unikalne, obowiązkowe pola, kategorie ↔ `CATEGORIES`, `levels`∈0–15, mapa GenAI ↔ id technik, słownik bez martwych `related`, `levels.json`: wymagania strukturalne wskazują istniejące techniki/haseła zgodne z P0.3, belki zgodne z stopniem P0.4).",
   "",
   "Ostrzeżenia: **" + warn.length + "**",
   "",

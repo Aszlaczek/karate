@@ -18,6 +18,7 @@ export interface Level {
   belt: BeltId;
   color: string;
   stripe: string | null;
+  stripes?: number;
   level: string;
   time: string;
   intro: string;
