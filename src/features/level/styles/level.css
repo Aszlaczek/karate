@@ -44,7 +44,8 @@
   width: 0;
 }
 
-.belt-card:hover, .belt-card.active {
+.belt-card:hover,
+.belt-card.active {
   background: rgba(255, 255, 255, 0.35);
 }
 
@@ -71,7 +72,8 @@
   width: 100%;
 }
 
-.belt-card:hover .belt-swatch, .belt-card.active .belt-swatch {
+.belt-card:hover .belt-swatch,
+.belt-card.active .belt-swatch {
   transform: translateY(-5px);
   box-shadow:
     0 10px 24px rgba(23, 25, 22, 0.15),
@@ -213,7 +215,8 @@
   padding: 16px 20px;
 }
 
-.time-badge small, .time-badge strong {
+.time-badge small,
+.time-badge strong {
   display: block;
 }
 
@@ -380,7 +383,8 @@
   color: var(--white);
 }
 
-.level-nav-cell:hover small, .level-nav-cell:hover span {
+.level-nav-cell:hover small,
+.level-nav-cell:hover span {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -417,6 +421,8 @@
   .belt-path {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 22px;
+    overflow-x: hidden;
+    scrollbar-width: none;
   }
 
   .requirements {
