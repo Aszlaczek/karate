@@ -19,10 +19,10 @@ const HomePage = () => {
       </section>
       <TechniquesSection />
       <section className="section glossary-teaser" id="slownik">
-        <SectionHeading number="03" title="Słownik karate" subtitle="Strefy, części ciała i ustawienia stóp — słownictwo, bez którego nie zrozumiesz komend na egzaminie." />
+        <SectionHeading number="03" title="Słownik karate" subtitle="Techniki, komendy, etykieta i strój — słownictwo przydatne na każdym treningu." />
         <div className="teaser-grid">
           {glossary.map((category) => (
-            <Link className="teaser-card" key={category.id} to="/slownik">
+            <Link className="teaser-card" key={category.id} to={`/slownik?kategoria=${category.id}`}>
               <span className="teaser-count">{String(category.entries.length).padStart(2, "0")}</span>
               <h3>{category.name}</h3>
               <p>{category.description}</p>

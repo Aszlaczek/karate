@@ -9,18 +9,30 @@ interface GlossaryGridProps {
   query: string;
 }
 
-export default function GlossaryGrid({ activeCategoryId, query }: GlossaryGridProps) {
+export default function GlossaryGrid({
+  activeCategoryId,
+  query,
+}: GlossaryGridProps) {
   const { openGlossaryEntry } = useModals();
 
-  const activeCategory = useMemo(() => glossary.find((c) => c.id === activeCategoryId) ?? glossary[0], [activeCategoryId]);
-  const isStatic = activeCategory.id === "czesci-ciala";
+  const activeCategory = useMemo(
+    () => glossary.find((c) => c.id === activeCategoryId) ?? glossary[0],
+    [activeCategoryId],
+  );
+  const isStatic =
+    activeCategory.id === "czesci-ciala" ||
+    activeCategory.id === "dojo-etykieta" ||
+    activeCategory.id === "stroj-sprzet" ||
+    activeCategory.id === "trening-komendy";
 
   const filteredEntries = useMemo(() => {
     if (!activeCategory) return [];
     const needle = query.trim().toLowerCase();
     if (!needle) return activeCategory.entries;
     return activeCategory.entries.filter((entry) =>
-      `${entry.term} ${entry.japanese} ${entry.reading} ${entry.description}`.toLowerCase().includes(needle),
+      `${entry.term} ${entry.japanese} ${entry.reading} ${entry.description}`
+        .toLowerCase()
+        .includes(needle),
     );
   }, [activeCategory, query]);
 
@@ -32,11 +44,17 @@ export default function GlossaryGrid({ activeCategoryId, query }: GlossaryGridPr
           entry={entry}
           category={activeCategory}
           static={isStatic}
-          onClick={isStatic ? undefined : () => openGlossaryEntry(entry, activeCategory)}
+          onClick={
+            isStatic
+              ? undefined
+              : () => openGlossaryEntry(entry, activeCategory)
+          }
         />
       ))}
       {filteredEntries.length === 0 && (
-        <EmptyState>Brak haseł pasujących do „{query}”. Spróbuj innego słowa.</EmptyState>
+        <EmptyState>
+          Brak haseł pasujących do „{query}”. Spróbuj innego słowa.
+        </EmptyState>
       )}
     </div>
   );

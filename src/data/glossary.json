@@ -21,7 +21,10 @@
           "reading": "chūdan",
           "description": "Klatka piersiowa, żebra i brzuch — od linii barków mniej więcej do pępka. Najczęstszy cel w egzaminach i kumite.",
           "image": null,
-          "related": ["seiken-oi-tsuki", "seiken-chudan-soto-uke"]
+          "related": [
+            "seiken-oi-tsuki",
+            "seiken-chudan-soto-uke"
+          ]
         },
         {
           "id": "gedan-strefa",
@@ -30,7 +33,9 @@
           "reading": "gedan",
           "description": "Podbrzusz, biodra i nogi. Techniki dolne zapisujemy przedrostkiem gedan (np. gedan-barai, kin-geri).",
           "image": null,
-          "related": ["seiken-gedan-barai"]
+          "related": [
+            "seiken-gedan-barai"
+          ]
         }
       ]
     },
@@ -73,7 +78,10 @@
           "reading": "mune",
           "description": "Górna część tułowia, częsty cel seiken chudan oi-zuki. Chroniona przez bloki typu soto-uke i uchi-uke.",
           "image": null,
-          "related": ["seiken-oi-tsuki", "seiken-chudan-soto-uke"]
+          "related": [
+            "seiken-oi-tsuki",
+            "seiken-chudan-soto-uke"
+          ]
         },
         {
           "id": "hara",
@@ -91,7 +99,9 @@
           "reading": "koshi",
           "description": "Źródło mocy w większości technik — rotacja bioder napędza uderzenia i kopnięcia, a nie sama ręka czy noga.",
           "image": null,
-          "related": ["seiken-oi-tsuki"]
+          "related": [
+            "seiken-oi-tsuki"
+          ]
         },
         {
           "id": "ude",
@@ -100,7 +110,9 @@
           "reading": "ude",
           "description": "Górna kończyna od barku do łokcia. W blokach pracuje razem z przedramieniem i rotacją tułowia.",
           "image": null,
-          "related": ["seiken-chudan-soto-uke"]
+          "related": [
+            "seiken-chudan-soto-uke"
+          ]
         },
         {
           "id": "hiji",
@@ -109,7 +121,9 @@
           "reading": "hiji",
           "description": "Staw wykorzystywany w technikach hiji-ate. Przy uderzeniach prostych łokieć prowadzimy blisko ciała.",
           "image": null,
-          "related": ["seiken-chudan-soto-uke"]
+          "related": [
+            "seiken-chudan-soto-uke"
+          ]
         },
         {
           "id": "kote",
@@ -118,7 +132,10 @@
           "reading": "kote",
           "description": "Odcinek od łokcia do nadgarstka — powierzchnia pracy przy blokach (uke) i obronie.",
           "image": null,
-          "related": ["seiken-chudan-soto-uke", "seiken-gedan-barai"]
+          "related": [
+            "seiken-chudan-soto-uke",
+            "seiken-gedan-barai"
+          ]
         },
         {
           "id": "seiken",
@@ -127,7 +144,9 @@
           "reading": "seiken",
           "description": "Klasyczna pięść kyokushin: uderzamy dwoma pierwszymi knykci, kciuk dociska palce od strony. Punkt kontaktu to seiken.",
           "image": null,
-          "related": ["seiken-oi-tsuki"]
+          "related": [
+            "seiken-oi-tsuki"
+          ]
         },
         {
           "id": "shuto",
@@ -145,7 +164,9 @@
           "reading": "hiza",
           "description": "Punkt prowadzenia kopnięć (hiza-geri) oraz cel w strefie dolnej. W mae-geri kolano unosi się najpierw przed wyprostem.",
           "image": null,
-          "related": ["mae-geri-chudan-chusoku"]
+          "related": [
+            "mae-geri-chudan-chusoku"
+          ]
         },
         {
           "id": "kakato",
@@ -163,16 +184,20 @@
           "reading": "chusoku",
           "description": "Śródstopie — punkt kontaktu przy mae-geri i innych kopnięciach frontalnych. Palce są uniesione.",
           "image": null,
-          "related": ["mae-geri-chudan-chusoku"]
+          "related": [
+            "mae-geri-chudan-chusoku"
+          ]
         },
-{
+        {
           "id": "ashi",
           "term": "Noga",
           "japanese": "足",
           "reading": "ashi",
           "description": "Ogólna nazwa kończyny dolnej — łączy pozycje (dachi) i kopnięcia (geri) w jednym słowie.",
           "image": null,
-          "related": ["mae-geri-chudan-chusoku"]
+          "related": [
+            "mae-geri-chudan-chusoku"
+          ]
         }
       ]
     },
@@ -189,7 +214,11 @@
           "description": "Stabilna postawa o szerokości bioder, lekko ugiętych kolanach i równomiernym ciężarze. Pierwsza pozycja na drodze egzaminacyjnej.",
           "image": "/images/glossary/stances/Fudo-Dachi.png",
           "related": [],
-          "levels": [0, 9, 10]
+          "levels": [
+            0,
+            9,
+            10
+          ]
         },
         {
           "id": "musubi",
@@ -199,7 +228,9 @@
           "description": "Pięty razem, palce rozstawione w literę V — pozycja do ukłonu (rei) i mokuso przed treningiem.",
           "image": "/images/glossary/stances/Musubi-Dachi.png",
           "related": [],
-          "levels": [9]
+          "levels": [
+            9
+          ]
         },
         {
           "id": "heiko",
@@ -208,8 +239,12 @@
           "reading": "heikō-dachi",
           "description": "Stopy równolegle na szerokość bioder (nazywana też yoi-dachi) — punkt wyjścia do technik i przejść.",
           "image": "/images/glossary/stances/Heiko-Dachi.png",
-          "related": ["seiken-oi-tsuki"],
-          "levels": [4]
+          "related": [
+            "seiken-oi-tsuki"
+          ],
+          "levels": [
+            4
+          ]
         },
         {
           "id": "zenkutsu-dachi",
@@ -218,8 +253,12 @@
           "reading": "zenkutsu-dachi",
           "description": "Długa pozycja: przednie kolano ugięte nad stopą, tylna noga wyprostowana, ciężar ok. 60/40. Fundament oi-zuki i większości kihon.",
           "image": "/images/glossary/stances/Zenkutsu-dachi.png",
-          "related": ["seiken-oi-tsuki"],
-          "levels": [10]
+          "related": [
+            "seiken-oi-tsuki"
+          ],
+          "levels": [
+            10
+          ]
         },
         {
           "id": "kokutsu",
@@ -228,8 +267,13 @@
           "reading": "kokutsu-dachi",
           "description": "Ciężar głównie na nodze tylnej, przednia stopa lekko na pięcie — baza do bloków i technik obronnych.",
           "image": "/images/glossary/stances/Kokutsu-dachi.png",
-          "related": ["seiken-chudan-soto-uke"],
-          "levels": [7, 9]
+          "related": [
+            "seiken-chudan-soto-uke"
+          ],
+          "levels": [
+            7,
+            9
+          ]
         },
         {
           "id": "sanchin-dachi",
@@ -239,7 +283,10 @@
           "description": "Stopy w linii półksiężyca, kolana skierowane do wewnątrz, napięty brzuch — pozycja kontroli oddechu i napięcia.",
           "image": "/images/glossary/stances/Sanchin-Dachi.png",
           "related": [],
-          "levels": [8, 9]
+          "levels": [
+            8,
+            9
+          ]
         },
         {
           "id": "kiba",
@@ -249,7 +296,10 @@
           "description": "Szerokie rozkroczę z kolanami rozepchniętymi nad stopami i prostym tułowiem — buduje siłę nóg i stabilność boczną.",
           "image": "/images/glossary/stances/Kiba-Dachi.png",
           "related": [],
-          "levels": [6, 8]
+          "levels": [
+            6,
+            8
+          ]
         },
         {
           "id": "neko-ashi",
@@ -258,8 +308,12 @@
           "reading": "neko-ashi-dachi",
           "description": "Ciężar na nodze tylnej, przednia stopa dotyka podłogi palcami — szybka, zwrotna pozycja do kopnięć.",
           "image": "/images/glossary/stances/Neko-Ashi-Dachi.png",
-          "related": ["mae-geri-chudan-chusoku"],
-          "levels": [7]
+          "related": [
+            "mae-geri-chudan-chusoku"
+          ],
+          "levels": [
+            7
+          ]
         },
         {
           "id": "kake",
@@ -269,7 +323,9 @@
           "description": "Nogi skrzyżowane, ciężar na nodze wspierającej — stosowana po obrotach, w kombinacjach i kata.",
           "image": "/images/glossary/stances/Kake-Dachi.png",
           "related": [],
-          "levels": [3]
+          "levels": [
+            3
+          ]
         },
         {
           "id": "seiza",
@@ -288,7 +344,9 @@
           "description": "Postawa gotowości: stopy na szerokość barków, pięści opuszczone przed udami, wzrok przed siebie. Punkt wyjścia i powrotu dla większości technik.",
           "image": "/images/glossary/stances/Yoi-Dachi.png",
           "related": [],
-          "levels": [10]
+          "levels": [
+            10
+          ]
         },
         {
           "id": "tsuru-ashi",
@@ -298,7 +356,9 @@
           "description": "Stanie na jednej nodze, druga stopa przy kolanie nogi podporowej. Ćwiczy równowagę i kontrolę kopnięć.",
           "image": "/images/glossary/stances/Tsuru-Ashi-Dachi.png",
           "related": [],
-          "levels": [6]
+          "levels": [
+            6
+          ]
         },
         {
           "id": "moro-ashi",
@@ -308,7 +368,9 @@
           "description": "Nogi na szerokości barków, stopy równoległe, tam gdzie kończy się noga zakroczna zaczyna się noga wykroczna.",
           "image": "/images/glossary/stances/Moro-ashi-dachi.png",
           "related": [],
-          "levels": [5]
+          "levels": [
+            5
+          ]
         },
         {
           "id": "heisoku",
@@ -318,7 +380,9 @@
           "description": "Pięty i palce razem, ciało wyprostowane. Pozycja wyjściowa wielu kata.",
           "image": "/images/glossary/stances/Heisoku-Dachi.png",
           "related": [],
-          "levels": [4]
+          "levels": [
+            4
+          ]
         },
         {
           "id": "uchi-hachiji",
@@ -328,7 +392,263 @@
           "description": "Stopy na szerokość barków, palce skierowane do środka, kolana lekko ściągnięte do wewnątrz.",
           "image": "/images/glossary/stances/Uchi-Hachi-Ji-Dachi.png",
           "related": [],
-          "levels": [4]
+          "levels": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dojo-etykieta",
+      "name": "Dojo i etykieta",
+      "description": "Ludzie, stopnie i zwyczaje, które poznasz na sali treningowej.",
+      "entries": [
+        {
+          "id": "dojo",
+          "term": "Dōjō — miejsce treningu",
+          "japanese": "道場",
+          "reading": "dodżo",
+          "description": "Sala lub miejsce praktyki sztuki walki; dosłownie miejsce drogi.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "sensei",
+          "term": "Sensei — nauczyciel",
+          "japanese": "先生",
+          "reading": "sensej",
+          "description": "Zwrot do nauczyciela prowadzącego naukę. Nie jest nazwą konkretnego stopnia pasa.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "senpai",
+          "term": "Senpai — starszy stażem",
+          "japanese": "先輩",
+          "reading": "sempaj",
+          "description": "Osoba bardziej doświadczona w danej grupie; pomaga młodszym stażem ćwiczącym.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "rei",
+          "term": "Rei — ukłon",
+          "japanese": "礼",
+          "reading": "rej",
+          "description": "Gest szacunku. Komenda rei zapowiada ukłon; sposób jego wykonania wynika z sytuacji.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "osu",
+          "term": "Osu — pozdrowienie i potwierdzenie",
+          "japanese": "押忍",
+          "reading": "osu",
+          "description": "W dojo Kyokushin: pozdrowienie, podziękowanie lub potwierdzenie. Odczytuj je w kontekście, zgodnie ze zwyczajem grupy.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "mokuso",
+          "term": "Mokusō — ciche skupienie",
+          "japanese": "黙想",
+          "reading": "mokuso",
+          "description": "Chwila wyciszenia i skupienia na początku lub końcu zajęć. Komenda mokusō yame kończy tę część.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "kyu",
+          "term": "Kyū — stopień uczniowski",
+          "japanese": "級",
+          "reading": "kju",
+          "description": "Poziom zaawansowania przed stopniami dan. W tym atlasie numeracja biegnie od 10 do 1 kyu.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "dan",
+          "term": "Dan — stopień mistrzowski",
+          "japanese": "段",
+          "reading": "dan",
+          "description": "Stopień zaawansowania oznaczany rosnącą liczbą. Sam numer nie opisuje całego doświadczenia nauczycielskiego.",
+          "image": null,
+          "related": []
+        }
+      ],
+      "sources": [
+        {
+          "title": "Jasielski Klub Karate Kyokushin — etykieta dojo",
+          "url": "https://www.kyokushin-jaslo.pl/etykieta-dojo/"
+        }
+      ]
+    },
+    {
+      "id": "trening-komendy",
+      "name": "Trening i komendy",
+      "description": "Podstawowe formy treningu, gotowość i najczęstsze polecenia.",
+      "entries": [
+        {
+          "id": "kihon",
+          "term": "Kihon — podstawy",
+          "japanese": "基本",
+          "reading": "kihon",
+          "description": "Ćwiczenie podstawowych pozycji, uderzeń, bloków i kopnięć, osobno lub w połączeniach.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "kata",
+          "term": "Kata — forma",
+          "japanese": "型",
+          "reading": "kata",
+          "description": "Ustalony układ ruchów wykonywany w określonej kolejności i kierunkach.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "kumite",
+          "term": "Kumite — ćwiczenie walki",
+          "japanese": "組手",
+          "reading": "kumite",
+          "description": "Praca z partnerem: od wcześniej ustalonych odpowiedzi po swobodniejsze formy walki.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "bunkai",
+          "term": "Bunkai — analiza zastosowań",
+          "japanese": "分解",
+          "reading": "bunkaj",
+          "description": "Analiza ruchów kata i ich możliwych zastosowań w ćwiczeniu z partnerem. Jedna sekwencja może mieć różne interpretacje.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "kamae",
+          "term": "Kamae — gotowość",
+          "japanese": "構え",
+          "reading": "kamae",
+          "description": "Ustawienie ciała i rąk połączone z uwagą oraz gotowością do działania.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "kiai",
+          "term": "Kiai — okrzyk",
+          "japanese": "気合",
+          "reading": "kiaj",
+          "description": "Okrzyk towarzyszący skupieniu energii i oddechu w technice. Nie oznacza wykrzykiwania słowa „kiai”.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "zanshin",
+          "term": "Zanshin — zachowana czujność",
+          "japanese": "残心",
+          "reading": "zanszin",
+          "description": "Uwaga utrzymywana także po zakończeniu ruchu: obserwacja, kontrola pozycji i gotowość.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "maai",
+          "term": "Maai — dystans",
+          "japanese": "間合い",
+          "reading": "maaj",
+          "description": "Odległość między ćwiczącymi rozpatrywana wraz z możliwością wykonania ruchu i czasem reakcji.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "hajime",
+          "term": "Hajime — zacznij",
+          "japanese": "始め",
+          "reading": "hadżime",
+          "description": "Komenda rozpoczęcia ćwiczenia lub walki.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "yame",
+          "term": "Yame — stop",
+          "japanese": "止め",
+          "reading": "jame",
+          "description": "Komenda zatrzymania działania; przerwij ruch i oczekuj dalszych poleceń.",
+          "image": null,
+          "related": []
+        }
+      ],
+      "sources": [
+        {
+          "title": "Musashi Kyokushin — terminologia",
+          "url": "https://musashi.nl/kyokushin-terminologie/"
+        },
+        {
+          "title": "MMAKF — terminologia karate",
+          "url": "https://mmakf.in/shotokan/terminology"
+        }
+      ]
+    },
+    {
+      "id": "stroj-sprzet",
+      "name": "Strój i sprzęt",
+      "description": "Nazwy elementów ubioru przydatne także w poradnikach.",
+      "entries": [
+        {
+          "id": "karategi",
+          "term": "Karategi — strój do karate",
+          "japanese": "空手着",
+          "reading": "karategi",
+          "description": "Strój treningowy złożony z bluzy i spodni, noszony z pasem.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "obi",
+          "term": "Obi — pas",
+          "japanese": "帯",
+          "reading": "obi",
+          "description": "Pas wiązany na stroju. Jego kolor i oznaczenia mogą wskazywać stopień w danym programie.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "uwagi",
+          "term": "Uwagi — bluza",
+          "japanese": "上着",
+          "reading": "uwagi",
+          "description": "Górna część stroju. W wielu modelach ma boczne troczki podtrzymujące poły.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "zubon",
+          "term": "Zubon — spodnie",
+          "japanese": "ズボン",
+          "reading": "dzubon",
+          "description": "Spodnie; w karategi mogą mieć sznurek, gumę lub połączenie obu rozwiązań.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "himo",
+          "term": "Himo — sznurek, troczek",
+          "japanese": "紐",
+          "reading": "himo",
+          "description": "Wiązanie, na przykład przy bluzie lub w pasie spodni. Nie jest nazwą bandaża bokserskiego.",
+          "image": null,
+          "related": []
+        }
+      ],
+      "sources": [
+        {
+          "title": "Jasielski Klub Karate Kyokushin — słownik",
+          "url": "https://www.kyokushin-jaslo.pl/slownik/"
+        },
+        {
+          "title": "Fisher Karate — nazwy stroju (PDF)",
+          "url": "https://www.fisherkarate.com/pdf/ssdk-terms.pdf"
         }
       ]
     }

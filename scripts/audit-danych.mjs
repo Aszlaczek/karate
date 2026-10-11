@@ -12,6 +12,7 @@ const glossary = JSON.parse(read("src/data/glossary.json"));
 const indexTs = read("src/data/index.ts");
 const genaiImages = JSON.parse(read("src/features/technique/data/genaiImages.json"));
 const details = JSON.parse(read("src/data/techniqueDetails.json"));
+const learning = JSON.parse(read("src/data/learning.json"));
 
 const categories = [
   ...indexTs
@@ -35,6 +36,25 @@ const uniq = (arr) => new Set(arr).size;
 // Szczegóły wszystkich pozycji atlasu: kompletność, struktura i człony nazw.
 const words = (value) => value.match(/[\p{L}\p{N}]+/gu) ?? [];
 const nonEmpty = (value) => typeof value === "string" && value.trim().length > 0;
+const validSources = (sources) => Array.isArray(sources) && sources.length > 0 && sources.every((source) => {
+  try { return nonEmpty(source.title) && new URL(source.url).protocol === "https:"; } catch { return false; }
+});
+for (const kind of ["guides", "timeline", "facts"]) {
+  const entries = learning[kind];
+  if (!Array.isArray(entries) || !entries.length) { critical.push(`learning.json — puste ${kind}`); continue; }
+  if (uniq(entries.map((entry) => entry.id)) !== entries.length) critical.push(`learning.json — powtórzone id w ${kind}`);
+  for (const entry of entries) {
+    const label = `learning.json — ${kind}/${entry.id}`;
+    if (!/^[a-z0-9-]+$/.test(entry.id) || !nonEmpty(entry.title) || !validSources(entry.sources)) critical.push(`${label}: nieprawidłowe id, tytuł lub źródła`);
+    if (kind === "guides") {
+      if (![entry.tag, entry.intro, entry.equipment, entry.note].every(nonEmpty) || !Array.isArray(entry.steps) || entry.steps.length < 3 || entry.steps.some((step) => !nonEmpty(step.title) || !nonEmpty(step.body))) critical.push(`${label}: niepełny poradnik`);
+    } else if (!nonEmpty(entry.body) || (kind === "timeline" && !nonEmpty(entry.period))) critical.push(`${label}: niepełny opis`);
+  }
+}
+if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(learning.feedback?.email ?? "") || !Array.isArray(learning.feedback?.topics) || !learning.feedback.topics.length || !learning.feedback.topics.every(nonEmpty)) critical.push("learning.json — nieprawidłowa konfiguracja kontaktu");
+for (const category of glossary.categories) {
+  if (category.sources !== undefined && !validSources(category.sources)) critical.push(`glossary.json — nieprawidłowe źródła kategorii ${category.id}`);
+}
 const stanceEntries = glossary.categories.find((category) => category.id === "pozycje").entries;
 for (const [kind, entries] of [["techniques", techs], ["stances", stanceEntries]]) {
   const group = details[kind] ?? {};
@@ -208,7 +228,7 @@ p(
   "# RAPORT.md — audyt danych KIHON",
   "",
   "> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: " + dt + ").",
-  "> Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`,",
+  "> Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`, `techniqueDetails.json`, `learning.json`,",
   "> `src/data/index.ts` (CATEGORIES), `src/features/technique/data/genaiImages.json`.",
   "",
   "## 1. Integralność struktury",
@@ -276,6 +296,7 @@ p(
   "",
   "## 7. Statystyki",
   "",
+  "- poradniki: **" + learning.guides.length + "**, wydarzenia historyczne: **" + learning.timeline.length + "**, ciekawostki: **" + learning.facts.length + "** (kompletność treści i źródeł sprawdzona)",
   "- szczegóły technik: **" + Object.keys(details.techniques).length + "/" + techs.length + "**, szczegóły postaw: **" + Object.keys(details.stances).length + "/" + stanceEntries.length + "** (tłumaczenie, wszystkie człony nazwy, minimum dwie sekcje)",
   "- stopni: **" + levels.length + "** (start, 10–1 kyu, 1–5 dan)",
   "- technik łącznie: **" + techs.length + "**",

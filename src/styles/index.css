@@ -11,3 +11,5 @@
 @import "../features/dojo/styles/dojo.css";
 @import "./modal.css";
 @import "../features/glossary/styles/glossary.css";
+@import "../features/learning/styles/learning.css";
+@import "../features/feedback/styles/feedback.css";

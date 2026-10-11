@@ -20,6 +20,48 @@
 
 ## Zadania
 
+- [x] 🟡 **P1.12 — Poradnik, ciekawostki, słownik i propozycje rozwoju**
+  Dodać dwie pozycje nawigacji i strony z instrukcjami sprzętu oraz historią
+  karate/Kyokushin, poszerzyć słownik i przygotować wiadomość z sugestią
+  na `xyz@gmail.com`. Rezultat (2026-10-11): 4 poradniki, 6 punktów historii,
+  6 ciekawostek, 23 nowe hasła (łącznie 56), formularz mailto i kopiowanie
+  wiadomości; źródła przy treściach, menu mobile ≤1180px. Build ✅;
+  112 asercji w Chrome, 7 szerokości ekranu, brak nowych błędów audytu.
+
+- [ ] 🟡 **P1.13 — Autorskie zdjęcia i filmy do poradników**
+  Uzupełnić 4 poradniki o sprawdzone przez instruktora zdjęcia kolejnych
+  kroków oraz krótkie filmy (zwłaszcza węzeł pasa i owijanie dłoni).
+  Kryteria: każdy poradnik z własną sekwencją ilustracji, tekstem alternatywnym
+  i podpisami; prawa do publikacji ustalone, kadry czytelne na telefonie,
+  build ✅.
+
+- [ ] 🟡 **P1.14 — Opcjonalne wysyłanie zgłoszeń bez aplikacji pocztowej**
+  Obecne mailto i kopiowanie działają bez backendu. Jeśli projekt ma przyjąć
+  usługę wysyłkową, dodać endpoint z walidacją, ograniczeniem liczby zgłoszeń
+  i sekretami po stronie serwera. Kryteria: wysyłka do skonfigurowanego odbiorcy,
+  czytelny stan błędu, potwierdzenie dopiero po przyjęciu wiadomości przez usługę,
+  zachowany wariant kopiowania; build ✅. Wymaga zmiany obecnej architektury
+  statycznej — nie wdrażać automatycznie.
+
+- [ ] 🟢 **P2.6 — Osobista lista przygotowań do egzaminu**
+  Dodać lokalne oznaczanie przećwiczonych technik i ulubionych poradników,
+  wybór docelowego stopnia oraz możliwość wyzerowania lub eksportu postępu.
+  Kryteria: stan zachowany po odświeżeniu, bez logowania; odznaczenie ćwiczenia
+  nie udaje oceny instruktora, build ✅.
+
+- [ ] 🟢 **P2.7 — Fiszki nazw i komend ze słownika**
+  Dodać sesję powtórek japoński → polski i polski → japoński z wyborem kategorii,
+  odsłanianiem odpowiedzi i ponowną nauką pomyłek. Opcjonalnie nagrania wymowy.
+  Kryteria: dane wyłącznie z istniejącego słownika, działanie klawiaturą
+  i na telefonie, wynik sesji bez powtarzania tych samych pytań, build ✅.
+
+- [ ] 🟢 **P2.8 — Dostęp offline w drodze do dojo**
+  Rozważyć PWA z zapisem poradników, słownika i wymagań wybranego stopnia.
+  Najpierw usunąć zależność podstawowych widoków od zewnętrznych mediów
+  (P1.5). Kryteria: wybrane treści działają po odłączeniu sieci po pierwszej
+  wizycie, aktualizacja cache nie pozostawia starych wersji programu,
+  komunikat o niedostępnym filmie online, build ✅.
+
 - [x] 🟡 **P1.10 — Szczegóły wszystkich technik i postaw (2026-10-11)**
   Rozbudować istniejące modale o polskie znaczenie nazwy, tłumaczenie wszystkich
   członów i sekcje opisowe dopasowane do techniki, kata, kumite lub postawy.
@@ -75,6 +117,9 @@
   postaw), komponent `GlossaryLink` do renderowania linków. Pozostało: dodać
   4 hasła i podmienić odpowiednie `text` pozycje w `levels.json` na `glossary`.
   Kryteria: wskazane pozycje linkują, `npm run build` ✅.
+  Postęp (2026-10-11): Rei, Osu, Bunkai, Kamae i Mokusō już dodane w P1.12.
+  Seiza istniała wcześniej. Pozostaje zamiana właściwych opisów wymagań na
+  referencje słownika wraz ze zgodnymi `levels[]`; zadanie nadal otwarte.
 
 - [ ] 🟡 **P1.2 — Zdjęcia dla haseł słownika**
   Pola `image` w `glossary.json` są puste (`null`) → modal pokazuje placeholder

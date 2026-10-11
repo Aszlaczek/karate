@@ -1,7 +1,7 @@
 # RAPORT.md — audyt danych KIHON
 
 > Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: 2026-10-11).
-> Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`,
+> Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`, `techniqueDetails.json`, `learning.json`,
 > `src/data/index.ts` (CATEGORIES), `src/features/technique/data/genaiImages.json`.
 
 ## 1. Integralność struktury
@@ -79,13 +79,14 @@ Z tego braki w atlasie do zadania **P1.6**: „Ushiro-mawashi-geri".
 
 ## 7. Statystyki
 
+- poradniki: **4**, wydarzenia historyczne: **6**, ciekawostki: **6** (kompletność treści i źródeł sprawdzona)
 - szczegóły technik: **118/118**, szczegóły postaw: **15/15** (tłumaczenie, wszystkie człony nazwy, minimum dwie sekcje)
 - stopni: **16** (start, 10–1 kyu, 1–5 dan)
 - technik łącznie: **118**
 - technik powiązanych z wymaganiami: **118** (poza wymaganiami: 0)
 - haseł słownika w wymaganiach: **14**
 - aliasów łącznie: **267** (kolizje: 0)
-- haseł słownika: **33** w 3 kategoriach (Strefy: 3, Części ciała: 15, Ustawienia stóp: 15)
+- haseł słownika: **56** w 6 kategoriach (Strefy: 3, Części ciała: 15, Ustawienia stóp: 15, Dojo i etykieta: 8, Trening i komendy: 10, Strój i sprzęt: 5)
 
 ## 8. Rekomendacje
 

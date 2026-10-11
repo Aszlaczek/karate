@@ -64,10 +64,34 @@ export interface GlossaryCategory {
   name: string;
   description: string;
   entries: GlossaryEntry[];
+  sources?: ContentSource[];
 }
 
 export interface DojoKunEntry {
   japanese: string;
   reading: string;
   polish: string;
+}
+
+export interface ContentSource {
+  title: string;
+  url: string;
+}
+
+export interface Guide {
+  id: string;
+  title: string;
+  tag: string;
+  intro: string;
+  equipment: string;
+  steps: { title: string; body: string }[];
+  note: string;
+  sources: ContentSource[];
+}
+
+export interface KnowledgeEntry {
+  id: string;
+  title: string;
+  body: string;
+  sources: ContentSource[];
 }

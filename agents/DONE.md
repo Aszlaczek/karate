@@ -521,3 +521,58 @@ one-pager bez routera.
 - Dalsze usprawnienia zapisane w TODO: P1.11 (weryfikacja nazw i spójność
   krótkich opisów), P2.4 (zatwierdzone pełne sekwencje i nagrania), P2.5
   (wyszukiwanie po znaczeniach nazw).
+
+### 2026-10-11 — Poradnik, ciekawostki, słownik i kontakt (P1.12)
+- Rezultat: dodano pozycje **Poradnik** (`/poradnik`) i **Ciekawostki**
+  (`/ciekawostki`) do istniejącej nawigacji. Poradnik zawiera 4 instrukcje
+  (18 kroków): wiązanie pasa, składanie karategi, owijanie dłoni bandażami
+  oraz wiązanie troczków stroju. Każdy opis ma listę potrzebnych rzeczy,
+  ponumerowane kroki, praktyczną uwagę i odnośniki do źródeł/pokazu.
+- Ciekawostki: 6 punktów historii od Okinawy do rozwoju Kyokushin oraz
+  6 krótkich artykułów o terminologii, zwyczajach i historii stylu.
+  Źródła są linkowane przy poszczególnych treściach. Daty sprawdzono
+  w kalendarium IKO Kyokushinkaikan, początki karate w OKIC. Poradniki:
+  Jesse Enkamp, Hayabusa i Academy of Martial Arts Mississauga; treści są
+  własnymi polskimi objaśnieniami, bez kopiowania ilustracji.
+- Słownik: **23 nowe hasła, razem 56 w 6 kategoriach**. Nowe kategorie:
+  „Dojo i etykieta” (8), „Trening i komendy” (10), „Strój i sprzęt” (5).
+  Dodano m.in. Rei, Osu, Bunkai, Kamae, Mokusō, Kiai, Zanshin, Maai,
+  Hajime, Yame, Karategi i Obi. Karty otwierają istniejący modal słownika.
+  Kategorie mają źródła, zakładki zawijają się również na tablecie,
+  a `?kategoria=<id>` umożliwia wejście do wybranej kategorii z teaserów.
+  P1.7 pozostaje otwarte w części linkowania wymagań egzaminacyjnych.
+- Kontakt (`/kontakt`): dostępny ze stopki i poradnika. Formularz przygotowuje
+  wiadomość na **xyz@gmail.com** przez `mailto` z kodowaniem tematu i treści.
+  Kategorie: pomysł, poprawka treści, problem ze stroną. Walidacja 10–1200
+  znaków, odrzucanie samych spacji, licznik, komunikaty dostępne dla czytników.
+  Alternatywa: skopiowanie adresu/tematu/treści lub ręczne kopiowanie z podglądu.
+  Strona wyraźnie informuje, że wysłanie następuje w programie pocztowym;
+  nie symuluje potwierdzenia wysyłki. W testach nie wysłano żadnej wiadomości.
+- Architektura: treści w `src/data/learning.json`, typowane eksporty
+  `src/data/learning.ts`, wspólny `ContentSources`, feature'y `learning`
+  i `feedback`. Trzy nowe strony ładowane przez `React.lazy` / `Suspense`,
+  bez nowych zależności. Rozszerzony audyt treści, źródeł HTTPS i konfiguracji
+  kontaktu. Menu mobilne od ≤1180px, aby pomieścić nowe pozycje.
+  Poprawiono `useScrollManager`: oczekiwanie na kotwicę strony lazy przez
+  `MutationObserver`, z odłączaniem po znalezieniu celu lub zmianie trasy.
+- Główne pliki: `src/pages/{GuidesPage,TriviaPage,FeedbackPage,GlossaryPage,
+  HomePage}.tsx`, `src/features/{learning,feedback}/`,
+  `src/features/navigation/{components,styles}/`,
+  `src/features/glossary/styles/glossary.css`, `src/app/router.tsx`,
+  `src/hooks/useScrollManager.ts`, `src/data/{learning.json,learning.ts,
+  glossary.json,types.ts}`, `src/styles/index.css`, `scripts/audit-danych.mjs`.
+- Weryfikacja: `npm run build` ✅, bez ostrzeżenia o rozmiarze głównego modułu
+  (494.29 kB, gzip 131.75 kB). Produkcyjny `npm run preview` + Chrome/CDP:
+  **112 asercji** — widoki na szerokościach 1440, 1181, 1180, 1024, 768,
+  390 i 320 px; brak poziomego przepełnienia, próg menu, aktywny link,
+  zamykanie menu po przejściu, bezpośrednia kotwica poradnika, nowe kategorie,
+  wyszukiwanie Bunkai i modal Dōjō, walidacja formularza, schowek i jego błąd,
+  podgląd, poprawne kodowanie polskich znaków, emoji, znaków specjalnych
+  i nowej linii w mailto; brak wyjątków JS. Obejrzano zrzuty desktop/mobile.
+- `npm run audit`: brak nowych błędów, 0 ostrzeżeń; nadal **2 znane błędy
+  P0.3** (`gekisai-sho` bez 2 kyu, `saiha` bez 1 kyu). Dane stopni pozostawiono.
+  Raport skopiowano do `agents/RAPORT.md`; `git diff --check` ✅.
+- Dalszy rozwój w TODO: P1.13 (autorskie instrukcje foto/wideo), P1.14
+  (opcjonalna usługa wysyłkowa), P2.6 (lokalny postęp i ulubione), P2.7
+  (fiszki i wymowa), P2.8 (offline/PWA). Kontekst architektury zaktualizowano
+  w `WEB_PERSONAL.md`.

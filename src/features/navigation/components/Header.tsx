@@ -38,6 +38,8 @@ const Header = () => {
         <Link to="/#stopnie">Stopnie</Link>
         <Link className={location.pathname === "/techniki" ? "active" : ""} to="/techniki">Techniki</Link>
         <Link className={location.pathname === "/slownik" ? "active" : ""} to="/slownik">Słownik</Link>
+        <Link className={location.pathname === "/poradnik" ? "active" : ""} aria-current={location.pathname === "/poradnik" ? "page" : undefined} to="/poradnik">Poradnik</Link>
+        <Link className={location.pathname === "/ciekawostki" ? "active" : ""} aria-current={location.pathname === "/ciekawostki" ? "page" : undefined} to="/ciekawostki">Ciekawostki</Link>
         <Link to="/#dojo-kun">Dojo-kun</Link>
         <Link className="nav-cta" to="/#stopnie">Sprawdź wymagania <Icon name="arrow" size={17} /></Link>
       </nav>

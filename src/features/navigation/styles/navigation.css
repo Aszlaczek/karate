@@ -54,7 +54,7 @@
 
 .site-header nav {
   display: flex;
-  gap: 40px;
+  gap: clamp(16px, 2vw, 28px);
 }
 
 .site-header nav a {
@@ -117,13 +117,19 @@ footer > p strong {
   color: white;
 }
 
-footer > a {
+.footer-links a {
   color: #9a9b96;
   font-size: 10px;
   text-transform: uppercase;
 }
 
-@media (max-width: 980px) {
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 1180px) {
   .site-header .header-cta {
     display: none;
   }

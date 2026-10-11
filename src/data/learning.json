@@ -1,0 +1,286 @@
+{
+  "guides": [
+    {
+      "id": "wiazanie-pasa",
+      "title": "Jak wiązać pas?",
+      "tag": "Obi · pas",
+      "intro": "Płaski węzeł i równo ułożone warstwy pomagają utrzymać strój podczas ruchu. Oto podstawowy sposób.",
+      "equipment": "Pas dobrany długością do sylwetki i założone karategi.",
+      "steps": [
+        {
+          "title": "Znajdź środek",
+          "body": "Złóż pas na pół i przyłóż jego środek do brzucha, poniżej pępka."
+        },
+        {
+          "title": "Owiń talię",
+          "body": "Poprowadź końce za plecy, skrzyżuj je i wróć nimi do przodu. Wyrównaj długość końców, wygładź warstwy."
+        },
+        {
+          "title": "Połącz obie warstwy",
+          "body": "Skrzyżuj końce z przodu. Koniec leżący na wierzchu przełóż od dołu pod obiema warstwami pasa i wyciągnij ku górze."
+        },
+        {
+          "title": "Zamknij węzeł",
+          "body": "Górny koniec przełóż nad dolnym, a następnie przez powstałą pętlę. Dociągnij oba końce na boki, układając płaski węzeł."
+        },
+        {
+          "title": "Sprawdź w ruchu",
+          "body": "Końce powinny mieć podobną długość. Zrób skłon i kilka spokojnych ruchów — pas ma trzymać, ale nie uciskać brzucha."
+        }
+      ],
+      "note": "Jeżeli węzeł ustawia się pionowo lub rozluźnia, popraw ostatnie przełożenie. Instrukcja źródłowa zawiera także pokaz filmowy.",
+      "sources": [
+        {
+          "title": "Jesse Enkamp — wiązanie pasa (instrukcja i film)",
+          "url": "https://www.karatebyjesse.com/how-to-tie-karate-belt-correctly/"
+        }
+      ]
+    },
+    {
+      "id": "skladanie-karategi",
+      "title": "Jak składać karategi?",
+      "tag": "Karategi · strój",
+      "intro": "Strój potocznie nazywany kimonem to karategi. Złożenie w prostokąt ułatwia zapakowanie go do torby.",
+      "equipment": "Czysta, sucha bluza i spodnie oraz płaskie podłoże.",
+      "steps": [
+        {
+          "title": "Rozłóż bluzę",
+          "body": "Połóż ją na plecach, przodem do góry, z rozłożonymi rękawami. Wygładź materiał."
+        },
+        {
+          "title": "Ułóż spodnie",
+          "body": "Złóż spodnie wzdłuż, łącząc nogawki. Połóż je centralnie na bluzie i dopasuj długość złożenia do jej wysokości."
+        },
+        {
+          "title": "Złóż boki i rękawy",
+          "body": "Zawiń boki bluzy na spodnie. Rękawy zegnij z powrotem wzdłuż pakietu, tak aby nie wystawały poza jego obrys."
+        },
+        {
+          "title": "Zamknij prostokąt",
+          "body": "Złóż dolną część pakietu ku górze, a potem jeszcze raz. Wyrównaj brzegi; pas możesz ułożyć osobno lub owinąć nim pakiet."
+        }
+      ],
+      "note": "Po treningu wyjmij wilgotny strój z torby. Pierz i susz według metki; szczelne pakowanie mokrego karategi sprzyja utrzymywaniu wilgoci.",
+      "sources": [
+        {
+          "title": "Jesse Enkamp — składanie karategi",
+          "url": "https://www.karatebyjesse.com/how-to-fold-karate-gi-like-a-japanese/"
+        }
+      ]
+    },
+    {
+      "id": "owijanie-dloni",
+      "title": "Jak zakładać taśmy na dłonie?",
+      "tag": "Bandaże · trening w rękawicach",
+      "intro": "Tutaj „taśmy” oznaczają wielorazowe bandaże bokserskie pod rękawice, a nie taśmy do kinesiotapingu.",
+      "equipment": "Czyste bandaże z pętlą i rzepem, o długości dopasowanej do dłoni.",
+      "steps": [
+        {
+          "title": "Przygotuj dłoń",
+          "body": "Rozwiń bandaż. Rozstaw lekko palce, ustaw nadgarstek prosto i zaczep pętlę o kciuk."
+        },
+        {
+          "title": "Podeprzyj nadgarstek",
+          "body": "Poprowadź materiał przez grzbiet dłoni i owiń nadgarstek dwa–trzy razy. Układaj taśmę płasko, bez mocnego rozciągania."
+        },
+        {
+          "title": "Ustabilizuj dłoń",
+          "body": "Prowadź taśmę przez grzbiet dłoni i wokół kciuka, wracając do nadgarstka. Następnie przeprowadź ją kolejno między palcami, za każdym razem wracając przez grzbiet do nadgarstka."
+        },
+        {
+          "title": "Osłoń kłykcie",
+          "body": "Pozostały materiał rozłóż kilkoma płaskimi warstwami wokół kłykci. Zakończ na nadgarstku i zapnij rzep."
+        },
+        {
+          "title": "Sprawdź dopasowanie",
+          "body": "Kilka razy otwórz dłoń i zaciśnij pięść, potem załóż rękawicę. Nie powinno być drętwienia, mrowienia ani bolesnego ucisku; jeśli wystąpią, zdejmij bandaż i nawiń luźniej."
+        }
+      ],
+      "note": "Przed pierwszym treningiem poproś instruktora o kontrolę owinięcia. Bandaże nie zastępują rękawic; ich użycie zależy od ćwiczenia i zasad dojo.",
+      "sources": [
+        {
+          "title": "Hayabusa — owijanie dłoni krok po kroku",
+          "url": "https://www.hayabusafight.co.uk/blogs/community/how-to-wrap-hands-for-boxing-step-by-step-guide"
+        }
+      ]
+    },
+    {
+      "id": "wiazania-stroju",
+      "title": "Jak wiązać troczki stroju?",
+      "tag": "Himo · troczki",
+      "intro": "Boczne wiązania bluzy utrzymują poły na miejscu. Pas zakłada się dopiero na uporządkowany strój.",
+      "equipment": "Karategi z bocznymi troczkami; nie każdy model ma identyczne zapięcie.",
+      "steps": [
+        {
+          "title": "Ułóż prawą połę",
+          "body": "Przyłóż prawą połę do tułowia. Jeżeli bluza ma wewnętrzne troczki, połącz odpowiadającą sobie parę kokardką."
+        },
+        {
+          "title": "Nałóż lewą połę",
+          "body": "Lewą połę ułóż na prawej i zawiąż zewnętrzną parę troczków. Nie łącz przypadkowych sznurków na krzyż."
+        },
+        {
+          "title": "Dopasuj spodnie",
+          "body": "W modelu ze sznurkiem wyrównaj jego końce, dopasuj obwód i zawiąż kokardkę. Zachowaj możliwość swobodnego przysiadu."
+        },
+        {
+          "title": "Schowaj luźne końce",
+          "body": "Uporządkuj sznurki, sprawdź uniesienie rąk i dopiero wtedy zawiąż pas. Troczki nie powinny mocno napinać materiału."
+        }
+      ],
+      "note": "Sposób prowadzenia sznurka w spodniach zależy od modelu. Sprawdź jego fabryczne szlufki i instrukcję producenta.",
+      "sources": [
+        {
+          "title": "AMA Mississauga — zakładanie stroju i pasa",
+          "url": "https://amadojo.ca/student-resources/belt-tying-lesson/"
+        }
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "okinawa",
+      "period": "Korzenie",
+      "title": "Okinawa i wymiana tradycji",
+      "body": "Karate wyrosło z tradycji walki Okinawy, rozwijanych także w kontaktach z Chinami. Nie ma jednej udokumentowanej daty jego narodzin — źródła historyczne są niepełne.",
+      "sources": [
+        {
+          "title": "Okinawa Karate Information Center — początki karate",
+          "url": "https://okic.okinawa/en/okinawa-karate-and-kobudo/"
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "period": "XX wiek",
+      "title": "Od lokalnych przekazów do stylów",
+      "body": "Współczesne nazwy stylów kształtowały się stosunkowo niedawno. Gōjū-ryū otrzymało nazwę w latach 30., a Chibana Chōshin nazwał swój system Shōrin-ryū w 1933 roku.",
+      "sources": [
+        {
+          "title": "Okinawa Karate Information Center — początki karate",
+          "url": "https://okic.okinawa/en/okinawa-karate-and-kobudo/"
+        }
+      ]
+    },
+    {
+      "id": "oyama",
+      "period": "1954–1956",
+      "title": "Dojo Masutatsu Ōyamy",
+      "body": "Twórca Kyokushin, Masutatsu Ōyama, oznaczył swoje dojo w Tokio nazwą Oyama Dojo w 1954 roku. W 1956 rozpoczął zajęcia w sali baletowej w Ikebukuro.",
+      "sources": [
+        {
+          "title": "IKO Kyokushinkaikan — historia organizacji",
+          "url": "https://www.kyokushinkaikan.org/en/philosophy/history/"
+        }
+      ]
+    },
+    {
+      "id": "kyokushinkaikan",
+      "period": "1964",
+      "title": "Siedziba Kyokushinkaikan",
+      "body": "W Tokio ukończono budowę siedziby Kyokushinkaikan. Ten etap stał się ważnym punktem organizacyjnego rozwoju szkoły Ōyamy.",
+      "sources": [
+        {
+          "title": "IKO Kyokushinkaikan — historia organizacji",
+          "url": "https://www.kyokushinkaikan.org/en/philosophy/history/"
+        }
+      ]
+    },
+    {
+      "id": "turnieje",
+      "period": "1969 → 1975",
+      "title": "Od turnieju krajowego do światowego",
+      "body": "W 1969 roku odbyły się pierwsze All Japan Open, a w 1975 pierwsze World Open w Tokio. Zwycięzcą turnieju światowego został Katsuaki Satō.",
+      "sources": [
+        {
+          "title": "IKO Kyokushinkaikan — historia organizacji",
+          "url": "https://www.kyokushinkaikan.org/en/philosophy/history/"
+        }
+      ]
+    },
+    {
+      "id": "rozwoj",
+      "period": "1978",
+      "title": "Europejski etap historii",
+      "body": "Kalendarium Kyokushinkaikan odnotowuje pierwsze mistrzostwa Europy w październiku 1978 roku — kolejny krok w międzynarodowym rozwoju karate Ōyamy.",
+      "sources": [
+        {
+          "title": "IKO Kyokushinkaikan — historia organizacji",
+          "url": "https://www.kyokushinkaikan.org/en/philosophy/history/"
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "nazwy-regionalne",
+      "title": "Shuri-te, Naha-te, Tomari-te",
+      "body": "Nazwy kojarzą się z dawnymi lokalnymi tradycjami, ale według OKIC ich wspólne użycie jako określeń trzech nurtów pojawiło się dopiero w 1927 roku, przy okazji pokazu na Okinawie.",
+      "sources": [
+        {
+          "title": "Okinawa Karate Information Center — początki karate",
+          "url": "https://okic.okinawa/en/okinawa-karate-and-kobudo/"
+        }
+      ]
+    },
+    {
+      "id": "trzy-elementy",
+      "title": "Trzy słowa, różne zadania",
+      "body": "Kihon oznacza podstawy, kata — ustaloną formę ruchów, a kumite — ćwiczenie walki. Dlatego przygotowanie do egzaminu obejmuje więcej niż same pojedynki.",
+      "sources": [
+        {
+          "title": "Jasielski Klub Karate Kyokushin — słownik",
+          "url": "https://www.kyokushin-jaslo.pl/slownik/"
+        }
+      ]
+    },
+    {
+      "id": "osu",
+      "title": "Jedno słowo, wiele sytuacji",
+      "body": "Osu w dojo Kyokushin może wyrażać powitanie, podziękowanie lub potwierdzenie. Znaczenie wynika z sytuacji, a zwyczaj użycia poznaje się wraz z etykietą dojo.",
+      "sources": [
+        {
+          "title": "Jasielski Klub Karate Kyokushin — słownik",
+          "url": "https://www.kyokushin-jaslo.pl/slownik/"
+        }
+      ]
+    },
+    {
+      "id": "karategi",
+      "title": "Kimono czy karategi?",
+      "body": "W języku treningowym precyzyjną nazwą stroju do karate jest karategi, a pasa — obi. Potoczne „kimono” usłyszysz często, lecz słownik pozwala rozróżnić te nazwy.",
+      "sources": [
+        {
+          "title": "Jasielski Klub Karate Kyokushin — słownik",
+          "url": "https://www.kyokushin-jaslo.pl/slownik/"
+        }
+      ]
+    },
+    {
+      "id": "uklon",
+      "title": "Ukłon też jest częścią treningu",
+      "body": "Rei wyraża szacunek i porządkuje rozpoczęcie oraz zakończenie ćwiczenia. Zwyczaje dojo obejmują również powitanie prowadzącego i chwilę skupienia przed zajęciami.",
+      "sources": [
+        {
+          "title": "Jasielski Klub Karate Kyokushin — etykieta dojo",
+          "url": "https://www.kyokushin-jaslo.pl/etykieta-dojo/"
+        }
+      ]
+    },
+    {
+      "id": "film",
+      "title": "Historia zapisana także na filmie",
+      "body": "Po pierwszych World Open powstał dokument „The Strongest Karate”, odnotowany w kalendarium organizacji pod rokiem 1976. To przykład popularyzacji Kyokushin poza salą treningową.",
+      "sources": [
+        {
+          "title": "IKO Kyokushinkaikan — historia organizacji",
+          "url": "https://www.kyokushinkaikan.org/en/philosophy/history/"
+        }
+      ]
+    }
+  ],
+  "feedback": {
+    "email": "awzorek23@gmail.com",
+    "topics": ["Pomysł na usprawnienie", "Poprawka treści", "Problem ze stroną"]
+  }
+}

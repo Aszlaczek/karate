@@ -1,9 +1,15 @@
-import { getRelatedTechniques, getStanceDetail, STANCE_CATEGORY_ID } from "@/data";
+import {
+  getRelatedTechniques,
+  getStanceDetail,
+  STANCE_CATEGORY_ID,
+} from "@/data";
 import type { GlossaryCategory, GlossaryEntry } from "@/data/types";
 import { resolveMediaSrc } from "@/features/technique/components/TechniqueIllustration";
 import Icon from "@/components/ui/Icon";
 import TechniqueLink from "@/features/technique/components/TechniqueLink";
-import ZoneIllustration, { zoneForEntry } from "@/features/glossary/components/ZoneIllustration";
+import ZoneIllustration, {
+  zoneForEntry,
+} from "@/features/glossary/components/ZoneIllustration";
 import { useModalBase } from "@/hooks/useModalBase";
 import TechniqueDetailContent from "@/features/technique/components/TechniqueDetailContent";
 
@@ -13,11 +19,16 @@ interface GlossaryEntryModalProps {
   onClose: () => void;
 }
 
-const GlossaryEntryModal = ({ entry, category, onClose }: GlossaryEntryModalProps) => {
+const GlossaryEntryModal = ({
+  entry,
+  category,
+  onClose,
+}: GlossaryEntryModalProps) => {
   const related = getRelatedTechniques(entry);
   const zone = zoneForEntry(entry.id);
   const { onBackdropMouseDown } = useModalBase(onClose);
-  const detail = category.id === STANCE_CATEGORY_ID ? getStanceDetail(entry.id) : undefined;
+  const detail =
+    category.id === STANCE_CATEGORY_ID ? getStanceDetail(entry.id) : undefined;
 
   return (
     <div
@@ -27,15 +38,27 @@ const GlossaryEntryModal = ({ entry, category, onClose }: GlossaryEntryModalProp
       aria-label={`Hasło słownika ${entry.term}`}
       onMouseDown={onBackdropMouseDown}
     >
-      <div className={`tech-modal-panel glossary-modal-panel${detail ? " technique-detail-panel" : ""}`}>
-        <button className="modal-close" aria-label="Zamknij hasło" onClick={onClose}><Icon name="close" /></button>
+      <div
+        className={`tech-modal-panel glossary-modal-panel${detail ? " technique-detail-panel" : ""}`}
+      >
+        <button
+          className="modal-close"
+          aria-label="Zamknij hasło"
+          onClick={onClose}
+        >
+          <Icon name="close" />
+        </button>
         <div className="visualization-stage glossary-visual">
           <div className="visualization-topline">
             <span>{category.name}</span>
             <small>Hasło słownikowe</small>
           </div>
           {entry.image ? (
-            <img className="glossary-photo" src={resolveMediaSrc(entry.image)} alt={entry.term} />
+            <img
+              className="glossary-photo"
+              src={resolveMediaSrc(entry.image)}
+              alt={entry.term}
+            />
           ) : zone ? (
             <ZoneIllustration zone={zone} />
           ) : (
@@ -49,22 +72,33 @@ const GlossaryEntryModal = ({ entry, category, onClose }: GlossaryEntryModalProp
           <span className="modal-kanji">{entry.japanese}</span>
           <p className="modal-eyebrow">Słownik / {category.name}</p>
           <h2>{entry.term}</h2>
-          <p className="modal-reading">Wymowa: <strong>{entry.reading}</strong></p>
-          {detail ? <TechniqueDetailContent detail={detail} /> : <p className="modal-description">{entry.description}</p>}
+          <p className="modal-reading">
+            Wymowa: <strong>{entry.reading}</strong>
+          </p>
+          {detail ? (
+            <TechniqueDetailContent detail={detail} />
+          ) : (
+            <p className="modal-description">{entry.description}</p>
+          )}
 
           {related.length > 0 && (
             <div className="glossary-related">
               <small>Powiązane techniki</small>
               <div>
                 {related.map((technique) => (
-                  <TechniqueLink key={technique.id} id={technique.id} variant="chip" />
+                  <TechniqueLink
+                    key={technique.id}
+                    id={technique.id}
+                    variant="chip"
+                  />
                 ))}
               </div>
             </div>
           )}
 
           <p className="safety-note">
-            Słownik opisuje terminy używane na egzaminach — zakres i interpretację zawsze potwierdź u swojego sensei.
+            Słownik opisuje terminy używane na egzaminach — zakres i
+            interpretację zawsze potwierdź u swojego sensei.
           </p>
         </div>
       </div>

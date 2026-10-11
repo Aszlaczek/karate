@@ -1,0 +1,26 @@
+.feedback-layout { display: grid; grid-template-columns: minmax(0, .65fr) minmax(0, 1fr); gap: clamp(32px, 7vw, 100px); align-items: start; }
+.feedback-info { border-top: 2px solid var(--red); padding-top: 24px; }
+.feedback-info h2 { font-family: var(--serif); font-size: 28px; margin: 0 0 16px; }
+.feedback-info a { color: var(--red); font-size: 20px; text-decoration: underline; text-underline-offset: 4px; overflow-wrap: anywhere; }
+.feedback-info p { color: var(--muted); font-size: 14px; line-height: 1.8; }
+.feedback-form { background: var(--paper); border: 1px solid var(--line); padding: clamp(20px, 3vw, 40px); min-width: 0; }
+.feedback-form label { font-size: 13px; font-weight: 700; display: block; margin-bottom: 10px; }
+.feedback-form select, .feedback-form textarea { background: var(--white); border: 1px solid var(--line); border-radius: 0; color: var(--ink); font: inherit; font-size: 14px; padding: 12px; width: 100%; min-width: 0; }
+.feedback-form select { margin-bottom: 26px; }
+.feedback-form textarea { resize: vertical; line-height: 1.7; }
+.feedback-form select:focus, .feedback-form textarea:focus { outline: 2px solid var(--red); outline-offset: 2px; }
+.feedback-help, .feedback-count, .feedback-status { color: var(--muted); font-size: 12px; line-height: 1.7; }
+.feedback-help { margin: -2px 0 12px; }
+.feedback-count { text-align: right; margin: 6px 0 20px; }
+.feedback-error { color: var(--red); font-size: 13px; line-height: 1.6; }
+.feedback-actions { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+.feedback-actions button { cursor: pointer; }
+.feedback-actions .primary-button { border: 0; text-align: left; line-height: 1.6; }
+.feedback-copy { border: 0; background: none; color: var(--red); font-size: 12px; padding: 8px 0; text-decoration: underline; text-underline-offset: 4px; }
+.feedback-status:empty { margin: 0; }
+.feedback-preview { margin-top: 24px; border-top: 1px solid var(--line); padding-top: 18px; }
+.feedback-preview summary { font-size: 12px; color: var(--muted); cursor: pointer; }
+.feedback-preview label { margin-top: 18px; }
+@media (max-width: 700px) {
+  .feedback-layout { grid-template-columns: 1fr; }
+}

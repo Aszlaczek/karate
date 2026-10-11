@@ -91,18 +91,23 @@ src/
     glossary/             # GlossaryEntryModal, ZoneIllustration, GlossaryCard,
                           # GlossaryGrid, GlossaryToolbar, GlossaryLink
                           # + styles/glossary.css
+    learning/             # wspólne źródła ContentSources + styles/learning.css
+    feedback/             # FeedbackForm (mailto + kopiowanie) + styles/feedback.css
     dojo/                 # DojoKun + styles/dojo.css
   data/                   # ★ JEDNO ŹRÓDŁO PRAWDY (JSON + typy + dostępnicy)
     levels.json           # 16 stopni: start, 10…1 kyu, 1–5 dan — wymagania
                           # strukturalne (referencje: technique | glossary | text + fights)
     techniques.json       # 118 technik: nazwa, opis, aliasy, wideo, stopnie (bez kategorii Pozycje)
     techniqueDetails.json # szczegóły 118 technik + 15 postaw: znaczenia, człony nazw, sekcje, uwagi
-    glossary.json         # słownik: strefy / części ciała / ustawienia stóp (15 postaw w kategorii "pozycje" z levels[])
+    learning.json         # 4 poradniki, 6 wydarzeń, 6 ciekawostek, źródła i konfiguracja kontaktu
+    learning.ts           # typowane eksporty treści nowych stron (poza głównym index.ts)
+    glossary.json         # 56 haseł / 6 kategorii; 15 postaw w "pozycje", nowe: etykieta, komendy, strój
     dojoKun.json          # 7 zasad dojo
     types.ts              # Level, RequirementItem (technique|glossary|text), Technique, GlossaryEntry (levels?), DojoKunEntry
     index.ts              # eksporty + getLevel(), filterTechniques(), filterAtlas(), filterStances(), getStanceEntries()… itd.
   pages/                  # cienkie wrappery tras: HomePage, LevelPage,
-                          # TechniquesPage, GlossaryPage, NotFoundPage
+                          # TechniquesPage, GlossaryPage, NotFoundPage;
+                          # GuidesPage, TriviaPage, FeedbackPage ładowane przez lazy
 old_src/                  # ARCHIWUM starego źródła — NIE EDYTOWAĆ
 public/favicon.svg
 public/videos/test.gif     # przykładowy plik do pola `video` w technice
@@ -122,6 +127,9 @@ agents/                   # dokumentacja agenta: WEB_PERSONAL.md, DONE.md,
 | `/kyu/:kyuId` | `LevelPage` | `:kyuId` = `start`, `10`…`1`, `dan`, `dan2`…`dan5` → panel wymagań (**z nawigacją prev / wszystkie / next** na dole panelu) + techniki stopnia |
 | `/techniki` | `TechniquesPage` | pełny atlas, filtry: kategoria × stopień × tekst |
 | `/slownik` | `GlossaryPage` | zakładki kategorii + wyszukiwarka + karty haseł |
+| `/poradnik` | `GuidesPage` | wiązanie pasa, składanie karategi, bandaże, troczki; kotwice do instrukcji |
+| `/ciekawostki` | `TriviaPage` | oś historii karate/Kyokushin i karty ciekawostek ze źródłami |
+| `/kontakt` | `FeedbackPage` | propozycje/poprawki na `xyz@gmail.com`: mailto, schowek i podgląd do skopiowania |
 | `*` | `NotFoundPage` | 404 |
 
 - Nieprawidłowy `kyuId` → `<Navigate to="/nie-istnieje" replace />`.
@@ -131,6 +139,15 @@ agents/                   # dokumentacja agenta: WEB_PERSONAL.md, DONE.md,
 - Tytuły dokumentu ustawiają strony przez `useDocumentTitle(title)`
   (`src/hooks/useDocumentTitle.ts`; `null` = nie zmieniaj — np. strona,
   która zaraz przekieruje).
+- Nowe strony (`/poradnik`, `/ciekawostki`, `/kontakt`) używają `React.lazy`
+  i wspólnego `Suspense`. Treści pobierają z `@/data/learning`, dzięki czemu
+  nie powiększają głównego modułu atlasu. Nie eksportuj ich ponownie z `@/data`.
+  `useScrollManager` czeka na kotwicę przez `MutationObserver`, jeżeli strona
+  jeszcze się ładuje; odłącza obserwację po znalezieniu celu / zmianie trasy.
+  Prefiksy modali `#technika-` i `#haslo-` są pomijane przez ten hook.
+- Słownik przyjmuje `?kategoria=<id>`; nieznany identyfikator wybiera pierwszą
+  kategorię. Zmiana kategorii czyści wyszukiwanie. Teasery na stronie głównej
+  prowadzą bezpośrednio do swojej kategorii.
 - **Modale (stan w `store/modalStore.ts`, render w `app/ModalHost.tsx`):**
   - hook `useModals()` → `openTechnique(technique)` /
     `openGlossaryEntry(entry, category)` / `close()` (wrapper nad store),
@@ -192,6 +209,20 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
 - **`dojoKun.json`** — `japanese` / `reading` / `polish`.
 
 ### Jak dodać treść (integracja)
+
+- **Poradnik/ciekawostki:** dopisz dane w `learning.json`; poradnik ma `id`,
+  `title`, `tag`, `intro`, `equipment`, `steps: {title, body}[]`, `note`,
+  `sources: {title, url}[]`. Historia i ciekawostki mają `id`, `title`, `body`,
+  `sources`, a historia dodatkowo `period`. Linki źródeł muszą być HTTPS.
+  Audyt sprawdza integralność i źródła. `GlossaryCategory.sources` jest
+  opcjonalne — nowe kategorie słownika pokazują swoją bibliografię pod kartami.
+- **Kontakt:** odbiorca i kategorie zgłoszeń są w `learning.json.feedback`.
+  Formularz wymaga 10–1200 znaków (sprawdza też same spacje), koduje temat
+  i treść przez `encodeURIComponent`. Przycisk otwiera program pocztowy,
+  a użytkownik sam wysyła e-mail. Nie pokazuj „wysłano”, bo aplikacja nie ma
+  potwierdzenia dostarczenia. Bez klienta pocztowego: schowek lub ręczne
+  kopiowanie z podglądu. Brak backendu, zewnętrznych API wysyłkowych i nowych
+  zależności. Link do kontaktu w stopce oraz na końcu poradnika.
 
 - **Szczegóły atlasu (2026-10-11):** `techniqueDetails.json` ma osobne mapy
   `techniques` i `stances` indeksowane istniejącym id. Typ `TechniqueDetail`
@@ -344,13 +375,14 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   `hidden`). Kotwice (`#stopnie`, `#techniki`…) mają `section[id] {
   scroll-margin-top: 84px }` (70px ≤700px), żeby nagłówki nie chowały się
   pod headerem.
-- **Nawigacja mobilna:** ≤980px desktopowy nav jest zastępowany przyciskiem
+- **Nawigacja mobilna:** ≤1180px desktopowy nav jest zastępowany przyciskiem
   ☰ (`.menu-toggle`,
   ikona `menu` → `close` po otwarciu) w prawym górnym rogu — rozwija panel
   `#site-menu` pod headerem po prawej (linki do sekcji + `.nav-cta`
   „Sprawdź wymagania"; `.header-cta` jest wtedy ukryty). Zamykanie: klik
   w link / Escape / klik poza headerem / zmiana trasy (`Header.tsx`);
-  a11y: `aria-expanded`, `aria-controls`. Desktop >980px bez zmian.
+  a11y: `aria-expanded`, `aria-controls`. Desktop >1180px pokazuje sześć linków
+  (w tym Poradnik i Ciekawostki); próg podniesiono po rozbudowie nawigacji.
 - **Nawigacja między stopniami:** pasek prev / „Wszystkie stopnie" / next
   (`.level-nav`) jest **wewnątrz panelu wymagań** (`RequirementsPanel`,
   pod `requirements-note`), jako siatka `repeat(3, 1fr)` — 3 równe sekcje.
