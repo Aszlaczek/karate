@@ -242,3 +242,137 @@
     top: 38px;
   }
 }
+
+/* Szczegóły atlasu: obszerniejsza kolumna treści, wspólna także dla postaw. */
+.tech-modal-panel.technique-detail-panel {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+}
+
+.technique-detail-panel .visualization-copy {
+  min-width: 0;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+
+.technique-detail-panel .modal-kanji {
+  pointer-events: none;
+}
+
+.detail-levels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 18px 0 0;
+}
+
+.detail-levels span {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  padding: 4px 9px;
+}
+
+.detail-section {
+  border-top: 1px solid var(--line);
+  margin-top: 24px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.detail-section h3 {
+  align-items: baseline;
+  color: var(--ink);
+  display: flex;
+  font-family: var(--serif);
+  font-size: 19px;
+  gap: 10px;
+  line-height: 1.3;
+  margin: 0 0 12px;
+}
+
+.detail-section h3 > span {
+  color: var(--red);
+  flex: none;
+  font-size: 12px;
+}
+
+.detail-section p,
+.detail-name-parts {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.detail-section .detail-translation {
+  color: var(--ink);
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.detail-name-parts > div {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(80px, 0.32fr) minmax(0, 1fr);
+  padding: 10px 0;
+}
+
+.detail-name-parts > div + div {
+  border-top: 1px dashed var(--line);
+}
+
+.detail-name-parts dt {
+  color: var(--red);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.detail-name-parts dd {
+  margin: 0;
+}
+
+.detail-section .detail-note {
+  background: var(--paper);
+  border-left: 2px solid var(--red);
+  font-size: 12px;
+  margin-top: 16px;
+  padding: 12px 14px;
+}
+
+.detail-note strong {
+  color: var(--ink);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.technique-detail-panel .checkpoint {
+  margin-top: 24px;
+}
+
+.technique-detail-panel .safety-note {
+  font-size: 11px;
+  margin-top: 22px;
+}
+
+@media (max-width: 980px) and (min-width: 701px) {
+  .technique-detail-panel .visualization-stage {
+    padding: 20px 16px;
+  }
+
+  .technique-detail-panel .visualization-topline {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .technique-detail-panel .modal-close {
+    position: fixed;
+  }
+
+  .technique-detail-panel .visualization-copy {
+    scrollbar-gutter: auto;
+  }
+}

@@ -11,6 +11,7 @@ const levels = JSON.parse(read("src/data/levels.json"));
 const glossary = JSON.parse(read("src/data/glossary.json"));
 const indexTs = read("src/data/index.ts");
 const genaiImages = JSON.parse(read("src/features/technique/data/genaiImages.json"));
+const details = JSON.parse(read("src/data/techniqueDetails.json"));
 
 const categories = [
   ...indexTs
@@ -30,6 +31,34 @@ const critical = [];
 const warn = [];
 
 const uniq = (arr) => new Set(arr).size;
+
+// Szczegóły wszystkich pozycji atlasu: kompletność, struktura i człony nazw.
+const words = (value) => value.match(/[\p{L}\p{N}]+/gu) ?? [];
+const nonEmpty = (value) => typeof value === "string" && value.trim().length > 0;
+const stanceEntries = glossary.categories.find((category) => category.id === "pozycje").entries;
+for (const [kind, entries] of [["techniques", techs], ["stances", stanceEntries]]) {
+  const group = details[kind] ?? {};
+  for (const entry of entries) {
+    const detail = group[entry.id];
+    const label = `techniqueDetails.json — ${kind}/${entry.id}`;
+    if (!detail) { critical.push(`${label}: brak szczegółów`); continue; }
+    if (!nonEmpty(detail.translation)) critical.push(`${label}: brak polskiego znaczenia`);
+    if (!Array.isArray(detail.nameParts) || !detail.nameParts.length ||
+      detail.nameParts.some((part) => !nonEmpty(part.term) || !nonEmpty(part.polish))) {
+      critical.push(`${label}: niepełne tłumaczenie członów nazwy`);
+    } else if (words(kind === "techniques" ? entry.name : entry.reading).join(" ") !== detail.nameParts.map((part) => part.term).join(" ")) {
+      critical.push(`${label}: człony nie pokrywają całej nazwy w jej kolejności`);
+    }
+    if (!Array.isArray(detail.sections) || detail.sections.length < 2 ||
+      detail.sections.some((section) => !nonEmpty(section.title) || !nonEmpty(section.body))) {
+      critical.push(`${label}: wymagane przynajmniej dwie pełne sekcje opisu`);
+    }
+    if (detail.note !== undefined && !nonEmpty(detail.note)) critical.push(`${label}: pusta uwaga`);
+  }
+  for (const id of Object.keys(group)) {
+    if (!entries.some((entry) => entry.id === id)) critical.push(`techniqueDetails.json — martwy wpis ${kind}/${id}`);
+  }
+}
 
 // --- 1. techniques.json -----------------------------------------------------
 
@@ -247,6 +276,7 @@ p(
   "",
   "## 7. Statystyki",
   "",
+  "- szczegóły technik: **" + Object.keys(details.techniques).length + "/" + techs.length + "**, szczegóły postaw: **" + Object.keys(details.stances).length + "/" + stanceEntries.length + "** (tłumaczenie, wszystkie człony nazwy, minimum dwie sekcje)",
   "- stopni: **" + levels.length + "** (start, 10–1 kyu, 1–5 dan)",
   "- technik łącznie: **" + techs.length + "**",
   "- technik powiązanych z wymaganiami: **" + requiredTechIds.size + "** (poza wymaganiami: " + (techs.length - requiredTechIds.size) + ")",

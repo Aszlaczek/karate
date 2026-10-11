@@ -2,7 +2,14 @@ import dojoKunJson from "./dojoKun.json";
 import glossaryJson from "./glossary.json";
 import levelsJson from "./levels.json";
 import techniquesJson from "./techniques.json";
-import type { BeltId, DojoKunEntry, GlossaryCategory, GlossaryEntry, Level, RequirementItem, Technique } from "./types";
+import techniqueDetailsJson from "./techniqueDetails.json";
+import type { BeltId, DojoKunEntry, GlossaryCategory, GlossaryEntry, Level, RequirementItem, Technique, TechniqueDetail } from "./types";
+
+const techniqueDetails: Record<string, TechniqueDetail> = techniqueDetailsJson.techniques;
+const stanceDetails: Record<string, TechniqueDetail> = techniqueDetailsJson.stances;
+
+export const getTechniqueDetail = (id: string): TechniqueDetail | undefined => techniqueDetails[id];
+export const getStanceDetail = (id: string): TechniqueDetail | undefined => stanceDetails[id];
 
 const mapRequirementItem = (item: { type: string; id?: string; text?: string }): RequirementItem =>
   item.type === "technique" && item.id !== undefined

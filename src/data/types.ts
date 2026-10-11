@@ -41,6 +41,13 @@ export interface Technique {
   video: string | null;
 }
 
+export interface TechniqueDetail {
+  translation: string;
+  nameParts: { term: string; polish: string }[];
+  sections: { title: string; body: string }[];
+  note?: string;
+}
+
 export interface GlossaryEntry {
   id: string;
   term: string;

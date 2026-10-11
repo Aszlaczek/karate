@@ -20,6 +20,36 @@
 
 ## Zadania
 
+- [x] 🟡 **P1.10 — Szczegóły wszystkich technik i postaw (2026-10-11)**
+  Rozbudować istniejące modale o polskie znaczenie nazwy, tłumaczenie wszystkich
+  członów i sekcje opisowe dopasowane do techniki, kata, kumite lub postawy.
+  Rezultat: 118 technik + 15 postaw z kompletnymi danymi; 82 indywidualne
+  opisy ruchu i kontroli, osobne treści kata/kumite/postaw, audyt pokrycia.
+  Build ✅; audyt szczegółów ✅, audyt całego programu nadal wykazuje
+  2 znane błędy P0.3 (`gekisai-sho`, `saiha`) bez nowych błędów.
+  Test przeglądarkowy: 133 widoki × 5 rozmiarów. Dokumentacja: `TECHNIQUE_DETAILS.md`.
+
+- [ ] 🟡 **P1.11 — Redakcja nazw i spójność krótkich opisów z detalami**
+  Po konsultacji z instruktorem rozstrzygnąć zapisy heisoku/haisoku,
+  kaage/keage, Gariyu/Garyū, Sushiho, Saiha, Yantsu, Seishin oraz połączony
+  morote uchi-uke / gedan-barai (lista i źródła w `TECHNIQUE_DETAILS.md`).
+  Ujednolicić kanji, romaji, wymowę i krótkie opisy kart z treścią szczegółów,
+  w tym shita-tsuki, seiza i kokutsu-dachi; przetłumaczyć zanshin w polach focus.
+  Kryteria: decyzja dla każdej pozycji, spójne karty i detale, build ✅,
+  brak nowych błędów audytu.
+
+- [ ] 🟢 **P2.4 — Pełne sekwencje kata i kombinacji zatwierdzone przez dojo**
+  Uzupełnić szczegóły o konkretne ruchy, miejsca kiai i nagrania instruktora,
+  a renraku i kumite o dokładne układy z programu. Źródło i wersja programu
+  powinny być zapisane przy treści. Kryteria: przynajmniej jedna zatwierdzona
+  sekwencja dla kata, renraku i kumite, działające media, build ✅.
+
+- [ ] 🟢 **P2.5 — Wyszukiwanie po tłumaczeniach członów nazw**
+  Rozszerzyć filtry atlasu o nowe znaczenia i człony z `techniqueDetails.json`
+  oraz normalizację znaków diakrytycznych. Kryteria: zapytania „pięta”,
+  „leżący smok”, „chudan” znajdują właściwe pozycje, zachowane filtry stopnia
+  i kategorii, build ✅.
+
 - [ ] 🟡 **P1.1 — Weryfikacja treści ze sensei**
   Wymagania 16 stopni (`levels.json`: start, 10–1 kyu, 1–5 dan) i ~28 haseł
   słownika (`glossary.json`) powstały programowo na bazie danych kolorowych

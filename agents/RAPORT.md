@@ -1,6 +1,6 @@
 # RAPORT.md — audyt danych KIHON
 
-> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: 2026-10-09).
+> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: 2026-10-11).
 > Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`,
 > `src/data/index.ts` (CATEGORIES), `src/features/technique/data/genaiImages.json`.
 
@@ -79,6 +79,7 @@ Z tego braki w atlasie do zadania **P1.6**: „Ushiro-mawashi-geri".
 
 ## 7. Statystyki
 
+- szczegóły technik: **118/118**, szczegóły postaw: **15/15** (tłumaczenie, wszystkie człony nazwy, minimum dwie sekcje)
 - stopni: **16** (start, 10–1 kyu, 1–5 dan)
 - technik łącznie: **118**
 - technik powiązanych z wymaganiami: **118** (poza wymaganiami: 0)

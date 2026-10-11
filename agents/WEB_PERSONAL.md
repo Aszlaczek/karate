@@ -96,6 +96,7 @@ src/
     levels.json           # 16 stopni: start, 10…1 kyu, 1–5 dan — wymagania
                           # strukturalne (referencje: technique | glossary | text + fights)
     techniques.json       # 118 technik: nazwa, opis, aliasy, wideo, stopnie (bez kategorii Pozycje)
+    techniqueDetails.json # szczegóły 118 technik + 15 postaw: znaczenia, człony nazw, sekcje, uwagi
     glossary.json         # słownik: strefy / części ciała / ustawienia stóp (15 postaw w kategorii "pozycje" z levels[])
     dojoKun.json          # 7 zasad dojo
     types.ts              # Level, RequirementItem (technique|glossary|text), Technique, GlossaryEntry (levels?), DojoKunEntry
@@ -191,6 +192,18 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
 - **`dojoKun.json`** — `japanese` / `reading` / `polish`.
 
 ### Jak dodać treść (integracja)
+
+- **Szczegóły atlasu (2026-10-11):** `techniqueDetails.json` ma osobne mapy
+  `techniques` i `stances` indeksowane istniejącym id. Typ `TechniqueDetail`
+  obejmuje `translation`, `nameParts: {term, polish}[]`,
+  `sections: {title, body}[]` oraz opcjonalne `note`. Dostępnicy:
+  `getTechniqueDetail(id)` / `getStanceDetail(id)` w `@/data`.
+  `TechniqueDetailContent` renderuje wspólną treść w `TechniqueModal`
+  oraz w modalu postawy ze słownika. Dotychczasowe deep-linki zachowane.
+  Nowa technika lub postawa wymaga szczegółów; audyt sprawdza kompletność,
+  kolejność wszystkich członów nazwy i osierocone wpisy. Dla postaw człony
+  bazują na `reading`, bo `term` może być polski. Nie generuj opisów w TSX.
+  Źródła, ograniczenia etymologii i dalsza redakcja: `agents/TECHNIQUE_DETAILS.md`.
 
 - **Nowa technika:** dopis wpis w `techniques.json` (+ `aliases`, `levels`).
   Zdjęcie tymczasowe: plik w `public/images/GenAI/techniques/<folder>/<id>.png`

@@ -482,3 +482,42 @@ one-pager bez routera.
   - `scripts/audit-danych.mjs` — nowy check **P0.4**: dla `belt==="black"` wymaga `stripes === number - 10`; `stripe:null` → `stripes` musi być absent; `stripe!=null` + `belt!=="black"` → `stripes===1`; podsumowanie RAPORT zaktualizowane o P0.4
 - Rezultat: 1 dan = 1 belka, 2 dan = 2 belki, … 5 dan = 5 belek na kartach ścieżki i w panelu wymagań; 19 postaw (typ `glossary`) klikalne → modal hasła; `npm run build` ✅ (83 moduły), `npm run audit` ✅ (krytyczne: 2 znane P0.3, brak P0.4), `npm run preview` + curl 8 tras (200).
 - Weryfikacja: `npm run build`, `npm run audit`, `npm run preview` + curl `/`, `/techniki`, `/slownik`, `/kyu/9`, `/kyu/start`, `/kyu/dan`, `/kyu/dan2`, `/kyu/dan5`.
+
+### 2026-10-11 — Szczegóły wszystkich technik i postaw (P1.10)
+- Zmienione pliki: `src/data/techniqueDetails.json`, `src/data/types.ts`,
+  `src/data/index.ts`, `TechniqueDetailContent.tsx`, `TechniqueModal.tsx`,
+  `TechniqueCard.tsx`, `GlossaryEntryModal.tsx`,
+  `features/technique/styles/technique-modal.css`, `scripts/audit-danych.mjs`,
+  `agents/TODO.md`, `agents/WEB_PERSONAL.md`, `agents/TECHNIQUE_DETAILS.md`,
+  `agents/RAPORT.md`.
+- Rezultat: szczegóły **118 technik i 15 postaw** w istniejących modalach.
+  Każda pozycja ma polskie znaczenie całej nazwy, wszystkie człony nazwy
+  z tłumaczeniami i minimum dwie sekcje opisowe. 82 techniki ruchowe mają
+  indywidualne opisy ruchu oraz kontroli; kata, kumite, renraku i postawy
+  mają opisy dostosowane do charakteru ćwiczenia. Liczby i warianty programu
+  odróżniono od japońskich członów nazw. Nie wymyślano nieudokumentowanych
+  sekwencji kata ani układów z partnerem.
+- UI: wspólny komponent treści z semantyczną listą definicji, szersza kolumna
+  tekstu, czytelne sekcje i stopnie; zachowane zdjęcia, deep-linki, otwieranie
+  z atlasu i wymagań. CTA kart „Poznaj technikę”. Treści nadal tylko w JSON,
+  bez nowych zależności. Pozostałe hasła słownika zachowują dotychczasowy widok.
+- Terminologia: jawne uwagi przy niejednoznacznych nazwach (m.in. kaage,
+  heisoku, Gariyu, Sushiho, Saiha, Yantsu, Seishin). Źródła oraz szczegóły
+  redakcyjne zapisane w `TECHNIQUE_DETAILS.md`. Oryginalne nazwy, krótkie
+  opisy, kanji i przypisania stopni w bazowych JSON-ach nie były zmieniane.
+- Audyt rozszerzony o brakujące/osierocone detale, puste znaczenia i sekcje,
+  kompletność oraz kolejność wszystkich członów nazwy (również powtórzeń).
+- Weryfikacja: `npm run build` ✅; Chrome headless/CDP — **133 widoki ×
+  5 rozmiarów = 665 kontroli renderu** (1440×1000, 800×900, 390×844,
+  320×640, 1280×480), brak poziomego przepełnienia i przekroczenia wysokości
+  panelu desktopowego, wszystkie człony oraz sekcje wyrenderowane. Deep-link,
+  klik karty, Escape, przycisk zamknięcia, klik tła, przywrócenie scrolla
+  i regresja modala strefy ✅; brak wyjątków JS. Zrzuty desktop/mobile
+  obejrzane. `git diff --check` ✅.
+- `npm run audit`: **0 nowych problemów**, wszystkie detale kompletne;
+  nadal exit 1 przez **2 istniejące błędy P0.3**: `gekisai-sho` bez 2 kyu,
+  `saiha` bez 1 kyu w `levels[]` (tak samo jak w poprzednim RAPORT.md).
+  Przypisań programu nie zmieniano.
+- Dalsze usprawnienia zapisane w TODO: P1.11 (weryfikacja nazw i spójność
+  krótkich opisów), P2.4 (zatwierdzone pełne sekwencje i nagrania), P2.5
+  (wyszukiwanie po znaczeniach nazw).

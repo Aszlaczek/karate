@@ -1,0 +1,3825 @@
+{
+  "techniques": {
+    "seiken-oi-tsuki": {
+      "translation": "Proste uderzenie przednią powierzchnią pięści po stronie nogi wykrocznej.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Zgraj zakończenie kroku z dojściem pięści do celu. Ręka uderzająca odpowiada nodze z przodu; druga cofa się do boku tułowia (hikite)."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Sprawdź, czy po kroku pięść i noga wykroczna są po tej samej stronie. Nie kończ uderzenia dopiero po zatrzymaniu całego ciała."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seiken",
+          "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+        },
+        {
+          "term": "oi",
+          "polish": "podążanie, ściganie; tutaj ręka po stronie nogi wykrocznej"
+        },
+        {
+          "term": "tsuki",
+          "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+        }
+      ]
+    },
+    "seiken-morote-tsuki": {
+      "translation": "Jednoczesne proste uderzenie obiema pięściami.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Obie pięści prowadź równocześnie do wyznaczonych punktów. Sprawdź, czy barki pozostają na jednym poziomie, a tułów nie przechyla się do przodu."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Porównaj zasięg obu rąk i ich moment zakończenia. Jedna pięść nie powinna wyprzedzać drugiej ani pociągać tułowia w bok."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seiken",
+          "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+        },
+        {
+          "term": "morote",
+          "polish": "obie ręce; moro — obie, te — ręce"
+        },
+        {
+          "term": "tsuki",
+          "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+        }
+      ]
+    },
+    "seiken-ago-uchi": {
+      "translation": "Uderzenie pięścią w kierunku podbródka.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Prowadź pięść krótkim ruchem ku podbródkowi umownego przeciwnika. Odróżnij tor tej techniki od długiego prostego uderzenia."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Zachowaj krótki tor i kontrolę cofnięcia ręki. Nadmierne unoszenie brody podczas własnego uderzenia odsłania głowę."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seiken",
+          "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+        },
+        {
+          "term": "ago",
+          "polish": "żuchwa, podbródek"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "seiken-gyaku-tsuki": {
+      "translation": "Proste uderzenie pięścią przeciwną do nogi wykrocznej.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Pozostaw nogę wykroczną z przodu i poprowadź przeciwną rękę wraz z obrotem bioder. Nie zastępuj rotacji wychyleniem barku."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Sprawdź, czy przeciwległe biodro uczestniczy w ruchu, a kolano wykroczne nadal podąża w kierunku stopy. Nie skręcaj samego kolana."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seiken",
+          "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+        },
+        {
+          "term": "gyaku",
+          "polish": "odwrotny; tutaj ręka przeciwna do nogi wykrocznej"
+        },
+        {
+          "term": "tsuki",
+          "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+        }
+      ]
+    },
+    "seiken-tate-tsuki": {
+      "translation": "Proste uderzenie pionowo ustawioną pięścią.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Zachowaj pionowe ustawienie pięści w zakończeniu ruchu. Nadgarstek utrzymuj w przedłużeniu przedramienia, bez dodatkowego skrętu dłoni."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "W punkcie końcowym kłykcie mają zachować pionowy układ. Nie dodawaj nawykowego obrotu pięści jak w zwykłym prostym uderzeniu."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seiken",
+          "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+        },
+        {
+          "term": "tate",
+          "polish": "pionowo"
+        },
+        {
+          "term": "tsuki",
+          "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+        }
+      ]
+    },
+    "seiken-shita-tsuki": {
+      "translation": "Krótkie uderzenie pięścią od dołu w tułów.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Łokieć pozostaje ugięty, a pięść zmierza w korpus od dołu z bliskiego dystansu. Słowo shita opisuje dół, ale nie jest poleceniem uderzania ku ziemi."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Zachowaj ugięcie łokcia i bliski dystans. Nie zamieniaj uderzenia od dołu w długie pchnięcie skierowane ku ziemi."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seiken",
+          "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+        },
+        {
+          "term": "shita",
+          "polish": "dół, poniżej; w nazwie uderzenia nie oznacza automatycznie ruchu w dół"
+        },
+        {
+          "term": "tsuki",
+          "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+        }
+      ]
+    },
+    "seiken-jun-tsuki": {
+      "translation": "Uderzenie pięścią określane jako zgodne.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Zgraj kierunek pięści z ustawieniem bioder. Jun oznacza zgodność; konkretną postawę i pracę nóg ustala ćwiczenie, dlatego nie utożsamiaj każdej wersji z krokiem oi-tsuki."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Nazwij postawę i stronę uderzającej ręki przed powtórzeniem. Samo słowo jun nie określa długości kroku ani wysokości celu."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seiken",
+          "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+        },
+        {
+          "term": "jun",
+          "polish": "zgodny, w porządku następującym po sobie"
+        },
+        {
+          "term": "tsuki",
+          "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+        }
+      ]
+    },
+    "tettsui-oroshi-uchi": {
+      "translation": "Opadające uderzenie dolną powierzchnią pięści — młotem.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Poprowadź zamkniętą pięść z góry w dół. Powierzchnią kontaktu jest jej dolny brzeg, nie przednie kłykcie."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Zatrzymaj pięść na zadanej wysokości. Kontroluj nadgarstek, aby dolna powierzchnia pięści pozostała przedłużeniem toru przedramienia."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Tettsui",
+          "polish": "żelazny młot; dolna powierzchnia zamkniętej pięści"
+        },
+        {
+          "term": "oroshi",
+          "polish": "opuszczanie, ruch z góry w dół"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "tettsui-komekami-uchi": {
+      "translation": "Uderzenie młotem pięści w kierunku skroni.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Wyznacz boczny łuk na wysokości skroni. Zatrzymaj dolną powierzchnię pięści na umownym celu, bez utraty ustawienia nadgarstka."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Łuk kończy się na bocznym celu na wysokości głowy. Nie przenoś ruchu na niski poziom właściwy dla hizō-uchi."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Tettsui",
+          "polish": "żelazny młot; dolna powierzchnia zamkniętej pięści"
+        },
+        {
+          "term": "komekami",
+          "polish": "skroń"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "tettsui-hizo-uchi": {
+      "translation": "Uderzenie młotem pięści w okolicę śledziony.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Kieruj dolny brzeg pięści w bok tułowia umownego przeciwnika. Wysokość celu odróżnia tę wersję od uderzenia na skroń."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Hizō określa okolicę śledziony po lewej stronie ciała przeciwnika. To nazwa anatomiczna celu, a nie polecenie uderzania zawsze własną lewą ręką."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Tettsui",
+          "polish": "żelazny młot; dolna powierzchnia zamkniętej pięści"
+        },
+        {
+          "term": "hizō",
+          "polish": "śledziona; okolica lewego boku tułowia"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "tettsui-yoko-uchi": {
+      "translation": "Boczne uderzenie młotem pięści.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Prowadź dolną powierzchnię pięści w bok, zgodnie z kierunkiem ćwiczenia. Yoko określa kierunek, a nie wysokość celu."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Oddziel kierunek boczny od poziomu: tę samą nazwę można uzupełnić o poziom górny, środkowy lub dolny. Sprawdź zadany wariant."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Tettsui",
+          "polish": "żelazny młot; dolna powierzchnia zamkniętej pięści"
+        },
+        {
+          "term": "yoko",
+          "polish": "bok, w bok"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "uraken-shomen-uchi": {
+      "translation": "Uderzenie grzbietem pięści na wprost.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Wyprowadź krótki ruch grzbietem pięści przed siebie. Kontroluj wyprost łokcia i ustawienie nadgarstka, zamiast wymuszać zasięg całym barkiem."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Ruch kończy się przed Tobą, a nie szeroko z boku. Nadgarstek nie powinien bezwładnie załamywać się po zatrzymaniu ręki."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Uraken",
+          "polish": "grzbiet pięści; ura — tył, ken — pięść"
+        },
+        {
+          "term": "shōmen",
+          "polish": "przód, na wprost"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "uraken-sayu-uchi": {
+      "translation": "Uderzenie grzbietem pięści w lewo i w prawo.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Przenoś uwagę między bocznymi kierunkami i sprawdzaj symetrię ruchu. Sayū określa obie strony, nie jeden stały cel."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Ćwicz obie strony z podobnym zasięgiem i zatrzymaniem. Najpierw skieruj uwagę na nowy cel, zamiast machać ręką bez kontroli kierunku."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Uraken",
+          "polish": "grzbiet pięści; ura — tył, ken — pięść"
+        },
+        {
+          "term": "sayū",
+          "polish": "lewo i prawo"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "uraken-hizo-uchi": {
+      "translation": "Uderzenie grzbietem pięści w okolicę śledziony.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Ustaw wysokość ruchu na bok korpusu. Pracuje grzbiet pięści, co odróżnia tę technikę od tettsui hizō-uchi."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Porównaj powierzchnię kontaktu z tettsui: tutaj pracuje grzbiet pięści. Nie obracaj jej tak, by zamiast niego trafiał dolny brzeg."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Uraken",
+          "polish": "grzbiet pięści; ura — tył, ken — pięść"
+        },
+        {
+          "term": "hizō",
+          "polish": "śledziona; okolica lewego boku tułowia"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "uraken-oroshi-uchi": {
+      "translation": "Opadające uderzenie grzbietem pięści.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Prowadź grzbiet pięści z góry w dół i zatrzymaj go przed umownym celem. Nie zamieniaj powierzchni kontaktu na dolny brzeg pięści."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Oroshi wskazuje opadanie; rozpoczęcie łuku i jego koniec muszą być rozpoznawalne. Nie pozwól, aby pięść opadała bez kontroli."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Uraken",
+          "polish": "grzbiet pięści; ura — tył, ken — pięść"
+        },
+        {
+          "term": "oroshi",
+          "polish": "opuszczanie, ruch z góry w dół"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "uraken-mawashi-uchi": {
+      "translation": "Okrężne uderzenie grzbietem pięści.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Połącz łuk ręki z obrotem tułowia. Utrzymuj kontrolę końcowej fazy, żeby ramię nie przelatywało bezwładnie poza cel."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Zatrzymuj obrót razem z techniką. Przekręcenie całego ciała poza umowny cel utrudnia powrót ręki i odzyskanie gotowości."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Uraken",
+          "polish": "grzbiet pięści; ura — tył, ken — pięść"
+        },
+        {
+          "term": "mawashi",
+          "polish": "obrót, ruch okrężny"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "nihon-nukite": {
+      "translation": "Uderzenie końcami dwóch palców — dwupalczastą ręką-włócznią.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Rozpoznaj układ palca wskazującego i środkowego. Ćwicz ułożenie i tor bez kontaktu z partnerem; nie obciążaj końców palców uderzaniem w twardy cel."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Dwa palce pozostają uporządkowaną powierzchnią, a nie luźnym rozstawem. Technikę poznawaj bez kontaktu w oczy i bez prób siły na palcach."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Nihon",
+          "polish": "dwa; ni — dwa, hon — liczebnik dla podłużnych przedmiotów (tu palców)"
+        },
+        {
+          "term": "nukite",
+          "polish": "ręka-włócznia; uderzenie końcami wyprostowanych palców"
+        }
+      ]
+    },
+    "yonhon-nukite-chudan": {
+      "translation": "Uderzenie czterema palcami w poziom środkowy.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Zestaw cztery palce w powierzchnię ręki-włóczni i poprowadź dłoń na wysokości tułowia. Ułożenie palców sprawdzaj bez siłowego kontaktu."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Sprawdź ustawienie czterech palców oraz poziom korpusu. Dłoń nie powinna załamywać się w nadgarstku podczas prostego prowadzenia."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Yonhon",
+          "polish": "cztery; yon — cztery, hon — liczebnik (tu palców)"
+        },
+        {
+          "term": "nukite",
+          "polish": "ręka-włócznia; uderzenie końcami wyprostowanych palców"
+        },
+        {
+          "term": "chūdan",
+          "polish": "poziom środkowy; chū — środek, dan — poziom"
+        }
+      ]
+    },
+    "shotei-uchi": {
+      "translation": "Uderzenie nasadą otwartej dłoni.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Ustaw nasadę dłoni na linii ruchu, a palce trzymaj poza powierzchnią kontaktu. Nie załamuj nadgarstka w bok."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Ustaw nasadę dłoni przed palcami względem celu. Samo otwarcie pięści nie wystarcza, jeśli obciążenie przejmuje niewłaściwie ustawiony nadgarstek."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Shōtei",
+          "polish": "nasada dłoni; shō — dłoń, tei — podstawa"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "jodan-hiji-ate": {
+      "translation": "Uderzenie łokciem na poziom górny.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Pracuj z krótkiego dystansu, unosząc łokieć do wysokości umownego celu. Jōdan określa poziom głowy; sam tytuł nie precyzuje wszystkich wariantów toru."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Zasięg wynika z krótkiego uderzenia łokciem. Nie próbuj sięgać wysoko przez przechylenie całej sylwetki i utratę podparcia."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Jōdan",
+          "polish": "poziom górny; jō — góra, dan — poziom"
+        },
+        {
+          "term": "hiji",
+          "polish": "łokieć"
+        },
+        {
+          "term": "ate",
+          "polish": "trafienie, przyłożenie uderzenia"
+        }
+      ]
+    },
+    "shuto-sakotsu-uchi": {
+      "translation": "Uderzenie zewnętrzną krawędzią dłoni w kierunku obojczyka.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Poprowadź krawędź dłoni opadającym torem ku linii obojczyka. Kontroluj zatrzymanie i nie rozchylaj palców w końcowej fazie."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Sakotsu wskazuje obojczyk, więc kontroluj cel oraz opadającą linię. Nie traktuj tej wersji jak poziomego ruchu na twarz."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Shūto",
+          "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+        },
+        {
+          "term": "sakotsu",
+          "polish": "obojczyk"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "shuto-uchi-komi": {
+      "translation": "Wbijające uderzenie zewnętrzną krawędzią dłoni.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Połącz wejście ciała z prowadzeniem krawędzi dłoni w głąb umownego celu. Uchi-komi stanowi jedno określenie sposobu uderzenia."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Uchi-komi opisuje wejście uderzenia, nie dodatkowy drugi cios. Połącz przesunięcie ciała z pracą dłoni w jedną fazę."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Shūto",
+          "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        },
+        {
+          "term": "komi",
+          "polish": "wejście w głąb; z uchi tworzy uchi-komi — wbicie uderzenia"
+        }
+      ]
+    },
+    "shuto-ganmen-uchi": {
+      "translation": "Uderzenie zewnętrzną krawędzią dłoni w kierunku twarzy.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Wyznacz cel na wysokości twarzy. Zachowaj kształt otwartej dłoni i zatrzymaj ruch, zanim stracisz kontrolę nad łokciem."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Ganmen to twarz, a nie cała górna część ciała. Zaznacz cel w przestrzeni i kontroluj zatrzymanie przed nim."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Shūto",
+          "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+        },
+        {
+          "term": "ganmen",
+          "polish": "twarz"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "shuto-hizo-uchi": {
+      "translation": "Uderzenie zewnętrzną krawędzią dłoni w okolicę śledziony.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Prowadź krawędź dłoni ku bocznej części korpusu. Porównaj poziom końcowy z ganmen-uchi, które jest kierowane ku twarzy."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Zachowaj wysokość bocznej części korpusu. Nie unoś dłoni do poziomu twarzy jak w ganmen-uchi."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Shūto",
+          "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+        },
+        {
+          "term": "hizō",
+          "polish": "śledziona; okolica lewego boku tułowia"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "shuto-jodan-uchi-uchi": {
+      "translation": "Wewnętrzne uderzenie krawędzią dłoni na poziom górny.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Poprowadź łuk ku środkowi na wysokości głowy. Pierwsze uchi oznacza tutaj wnętrze, a drugie uchi — uderzenie."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Dwa słowa uchi mają różne znaczenia. Sprawdź zarówno wewnętrzny charakter ruchu, jak i to, że wykonujesz uderzenie, a nie blok."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Shūto",
+          "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+        },
+        {
+          "term": "jōdan",
+          "polish": "poziom górny; jō — góra, dan — poziom"
+        },
+        {
+          "term": "uchi",
+          "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "chudan-hiji-ate": {
+      "translation": "Uderzenie łokciem na poziom środkowy.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Utrzymuj krótki dystans i kieruj łokieć w korpus umownego przeciwnika. Nie próbuj wydłużać zasięgu przez prostowanie ramienia."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Punkt końcowy znajduje się na wysokości korpusu. Nie podnoś łokcia do głowy wyłącznie po to, by zwiększyć zamach."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Chūdan",
+          "polish": "poziom środkowy; chū — środek, dan — poziom"
+        },
+        {
+          "term": "hiji",
+          "polish": "łokieć"
+        },
+        {
+          "term": "ate",
+          "polish": "trafienie, przyłożenie uderzenia"
+        }
+      ]
+    },
+    "chudan-mae-hiji-ate": {
+      "translation": "Uderzenie łokciem do przodu na poziom środkowy.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Nadaj łokciowi wyraźny kierunek do przodu na wysokości tułowia. Słowo mae odróżnia tę wersję od uderzeń bocznych i tylnych."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Łokieć ma przemieszczać się do przodu, nie po szerokim bocznym łuku. Sprawdź ten kierunek w wolnym wykonaniu."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Chūdan",
+          "polish": "poziom środkowy; chū — środek, dan — poziom"
+        },
+        {
+          "term": "mae",
+          "polish": "przód, do przodu"
+        },
+        {
+          "term": "hiji",
+          "polish": "łokieć"
+        },
+        {
+          "term": "ate",
+          "polish": "trafienie, przyłożenie uderzenia"
+        }
+      ]
+    },
+    "age-hiji-ate": {
+      "translation": "Wznoszące uderzenie łokciem.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Poprowadź ugięty łokieć od dołu w górę. Sprawdź, czy podnoszenie barku nie zastępuje pracy całej postawy."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Zatrzymaj wznoszenie na zadanym poziomie. Uniesiony łokieć nie powinien pociągać tułowia w nadmierny przeprost."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Age",
+          "polish": "unoszenie, w górę"
+        },
+        {
+          "term": "hiji",
+          "polish": "łokieć"
+        },
+        {
+          "term": "ate",
+          "polish": "trafienie, przyłożenie uderzenia"
+        }
+      ]
+    },
+    "ushiro-hiji-ate": {
+      "translation": "Uderzenie łokciem do tyłu.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Skieruj ugięty łokieć za siebie z kontrolowanym obrotem tułowia. Przed rozpoczęciem wyznacz wolną przestrzeń za plecami."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Ushiro określa tył. Sprawdź kontrolę przestrzeni za sobą oraz powrót ręki bez dalszego, niepotrzebnego obrotu."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Ushiro",
+          "polish": "tył, do tyłu"
+        },
+        {
+          "term": "hiji",
+          "polish": "łokieć"
+        },
+        {
+          "term": "ate",
+          "polish": "trafienie, przyłożenie uderzenia"
+        }
+      ]
+    },
+    "oroshi-hiji-ate": {
+      "translation": "Opadające uderzenie łokciem.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Prowadź łokieć z góry w dół, zachowując stabilne nogi. Zatrzymaj ruch bez gwałtownego załamywania tułowia."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Nie zastępuj pracy łokcia gwałtownym skłonem. Stabilna podstawa powinna umożliwiać przerwanie ruchu w dowolnej fazie."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Oroshi",
+          "polish": "opuszczanie, ruch z góry w dół"
+        },
+        {
+          "term": "hiji",
+          "polish": "łokieć"
+        },
+        {
+          "term": "ate",
+          "polish": "trafienie, przyłożenie uderzenia"
+        }
+      ]
+    },
+    "hira-ken-tsuki": {
+      "translation": "Proste uderzenie płaską pięścią.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Uformuj płaską pięść z palcami zgiętymi w środkowych stawach. Sprawdź ich ustawienie i prosty tor, zanim dodasz jakiekolwiek obciążenie."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Sprawdź kształt płaskiej pięści bez obciążenia. Palce zgięte w środkowych stawach nie mogą rozluźniać się przy wyproście ręki."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Hira",
+          "polish": "płaski"
+        },
+        {
+          "term": "ken",
+          "polish": "pięść"
+        },
+        {
+          "term": "tsuki",
+          "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+        }
+      ]
+    },
+    "hira-ken-oroshi-uchi": {
+      "translation": "Opadające uderzenie płaską pięścią.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Zachowaj układ płaskiej pięści podczas ruchu z góry w dół. Nie myl tej powierzchni z dolną krawędzią tettsui."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Utrzymuj tę samą powierzchnię pięści od przygotowania do końca opadania. Nie zaciskaj jej w zwykłe seiken w połowie ruchu."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Hira",
+          "polish": "płaski"
+        },
+        {
+          "term": "ken",
+          "polish": "pięść"
+        },
+        {
+          "term": "oroshi",
+          "polish": "opuszczanie, ruch z góry w dół"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "hira-ken-mawashi-uchi": {
+      "translation": "Okrężne uderzenie płaską pięścią.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Prowadź płaską pięść po łuku, utrzymując ustawienie palców. Mawashi opisuje tor, a hira-ken — powierzchnię kontaktu."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Obserwuj ustawienie palców podczas całego łuku. Obrót tułowia nie powinien zmieniać kształtu płaskiej pięści."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Hira",
+          "polish": "płaski"
+        },
+        {
+          "term": "ken",
+          "polish": "pięść"
+        },
+        {
+          "term": "mawashi",
+          "polish": "obrót, ruch okrężny"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "haishu": {
+      "translation": "Uderzenie grzbietem otwartej dłoni.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Utrzymuj otwartą dłoń i prowadź jej grzbiet do umownego celu. Nazwa określa powierzchnię; wysokość i kierunek wynikają z zadanej wersji."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Haishu oznacza otwartą dłoń, a uraken — zamkniętą pięść. Ta różnica ma pozostać widoczna przez cały ruch."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Haishu",
+          "polish": "grzbiet dłoni; hai — grzbiet, shu — dłoń"
+        }
+      ]
+    },
+    "age-jodan-tsuki": {
+      "translation": "Wznoszące uderzenie pięścią na poziom górny.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Połącz wznoszący tor z zakończeniem na wysokości głowy. Age opisuje ruch, a jōdan jego poziom końcowy."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Sprawdź dwa warunki osobno: wznoszący tor oraz zakończenie w górnej strefie. Sam wysoki cel nie czyni zwykłego prostego uderzenia wersją age."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Age",
+          "polish": "unoszenie, w górę"
+        },
+        {
+          "term": "jōdan",
+          "polish": "poziom górny; jō — góra, dan — poziom"
+        },
+        {
+          "term": "tsuki",
+          "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+        }
+      ]
+    },
+    "koken-uchi": {
+      "translation": "Uderzenie powierzchnią zgiętego nadgarstka.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Uformuj zgięcie dłoni wskazane przez instruktora. Ćwicz rozpoznanie powierzchni nadgarstka, bez wymuszania skrajnego zakresu stawu."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Przerwij próbę, jeżeli ustawienie nadgarstka wymaga bólu lub siłowego dociśnięcia. Nauka powierzchni poprzedza zwiększanie obciążenia."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Kōken",
+          "polish": "łukowata pięść; powierzchnia zgiętego nadgarstka"
+        },
+        {
+          "term": "uchi",
+          "polish": "uderzenie (打ち)"
+        }
+      ]
+    },
+    "ryuto-ken-tsuki": {
+      "translation": "Uderzenie pięścią określaną jako głowa smoka.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Ta nazwa identyfikuje szczególne uformowanie pięści. Dokładne ustawienie palców wymaga demonstracji instruktora; nie wyprowadzaj go wyłącznie z dosłownego tłumaczenia."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Nie utożsamiaj nazwy głowy smoka z dowolną pięścią o wystającym palcu. Ułożenie powinno być zgodne z wariantem pokazywanym w dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Ryūtō",
+          "polish": "głowa smoka; ryū — smok, tō — głowa"
+        },
+        {
+          "term": "ken",
+          "polish": "pięść"
+        },
+        {
+          "term": "tsuki",
+          "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+        }
+      ]
+    },
+    "naka-yubi-ippon-ken": {
+      "translation": "Pięść z pojedynczym wysuniętym stawem palca środkowego.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Wyróżnij staw palca środkowego przy pozostałych palcach stabilizujących pięść. Nie chodzi o uderzanie swobodnie wyprostowanym palcem."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Wyróżniony punkt tworzy staw palca środkowego. Sprawdź podparcie tego palca i unikaj uderzania jego luźnym końcem."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Naka",
+          "polish": "środkowy"
+        },
+        {
+          "term": "yubi",
+          "polish": "palec; naka-yubi oznacza palec środkowy"
+        },
+        {
+          "term": "ippon",
+          "polish": "jeden; ichi + hon, w złożeniu ippon"
+        },
+        {
+          "term": "ken",
+          "polish": "pięść"
+        }
+      ]
+    },
+    "oya-yubi-ippon-ken": {
+      "translation": "Pięść z wyróżnionym stawem kciuka.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Rozpoznaj ustawienie kciuka w tej odmianie pięści i skontroluj je z instruktorem. Oya-yubi oznacza cały kciuk, nie dowolny palec."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Sprawdź, czy pozostałe palce stabilizują całą pięść. Nie ćwicz siłowego kontaktu wysuniętym, niepodpartym kciukiem."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Oya",
+          "polish": "rodzic; oya-yubi oznacza kciuk"
+        },
+        {
+          "term": "yubi",
+          "polish": "palec; naka-yubi oznacza palec środkowy"
+        },
+        {
+          "term": "ippon",
+          "polish": "jeden; ichi + hon, w złożeniu ippon"
+        },
+        {
+          "term": "ken",
+          "polish": "pięść"
+        }
+      ]
+    },
+    "seiken-jodan-uke": {
+      "translation": "Blok górny przy zamkniętej pięści.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Unieś przedramię przed głowę, utrzymując zamkniętą pięść. Nazwa seiken opisuje rękę; blok nie wymaga przyjmowania ataku samymi kłykciami."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Przedramię powinno osłaniać górną strefę bez zasłaniania sobie całego pola widzenia. Nie utożsamiaj zamkniętej pięści z miejscem przyjęcia ataku."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seiken",
+          "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+        },
+        {
+          "term": "jōdan",
+          "polish": "poziom górny; jō — góra, dan — poziom"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "seiken-gedan-barai": {
+      "translation": "Zamiatający blok dolny przy zamkniętej pięści.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Prowadź przedramię od przygotowania przy przeciwnym barku w dół. Zakończ blok przed dolną częścią ciała, bez blokowania łokcia na sztywno."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Zatrzymaj blok na granicy potrzebnej osłony. Zbyt szerokie zamiatanie odciąga rękę od ciała i opóźnia następną technikę."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seiken",
+          "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+        },
+        {
+          "term": "gedan",
+          "polish": "poziom dolny; ge — dół, dan — poziom"
+        },
+        {
+          "term": "barai",
+          "polish": "zamiatanie, zgarnięcie (od harai)"
+        }
+      ]
+    },
+    "seiken-chudan-uchi-uke": {
+      "translation": "Blok środkowy od wewnątrz przy zamkniętej pięści.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Poprowadź przedramię od wewnątrz na zewnątrz, osłaniając korpus. Uchi nazywa stronę rozpoczęcia, a nie uderzenie."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Utrzymuj łokieć pod kontrolą podczas otwierania przedramienia na zewnątrz. Nadmierne rozwarcie odsłania środek tułowia."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seiken",
+          "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+        },
+        {
+          "term": "chūdan",
+          "polish": "poziom środkowy; chū — środek, dan — poziom"
+        },
+        {
+          "term": "uchi",
+          "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "seiken-chudan-soto-uke": {
+      "translation": "Blok środkowy od zewnątrz przy zamkniętej pięści.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Prowadź przedramię z zewnętrznej strony do środka na wysokości tułowia. Nie przesuwaj łokcia tak daleko, by odsłonić przeciwny bok."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Sprawdź zewnętrzne przygotowanie i ruch do środka. Nie zamieniaj tej wersji na odwrotny tor uchi-uke."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seiken",
+          "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+        },
+        {
+          "term": "chūdan",
+          "polish": "poziom środkowy; chū — środek, dan — poziom"
+        },
+        {
+          "term": "soto",
+          "polish": "zewnętrzny, od zewnątrz"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "morote-chudan-uchi-uke": {
+      "translation": "Wzmocniony obiema rękami blok środkowy od wewnątrz.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Jedna ręka wykonuje blok, druga ją wspiera. Sprawdź położenie ręki pomocniczej i zachowaj ten sam poziom ochrony korpusu."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Ręka wspierająca nie powinna spychać własnej ręki blokującej z właściwej linii. Obie mają współpracować przy jednym bloku."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Morote",
+          "polish": "obie ręce; moro — obie, te — ręce"
+        },
+        {
+          "term": "chūdan",
+          "polish": "poziom środkowy; chū — środek, dan — poziom"
+        },
+        {
+          "term": "uchi",
+          "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "morote-uchi-uke-gedan-barai": {
+      "translation": "Praca obu rąk: blok od wewnątrz i zamiatanie dolne.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Rozpoznaj dwa składniki: uchi-uke i gedan-barai. W wariancie łączonym ręce osłaniają dwa poziomy; zapis programu należy odróżnić od ćwiczenia dwóch osobnych bloków."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Jeżeli ćwiczysz wersję jednoczesną, sprawdź oba poziomy osłony naraz. Przy wersji rozdzielonej zachowaj wyraźne zakończenie każdego bloku."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Morote",
+          "polish": "obie ręce; moro — obie, te — ręce"
+        },
+        {
+          "term": "uchi",
+          "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        },
+        {
+          "term": "gedan",
+          "polish": "poziom dolny; ge — dół, dan — poziom"
+        },
+        {
+          "term": "barai",
+          "polish": "zamiatanie, zgarnięcie (od harai)"
+        }
+      ],
+      "note": "Przecinek w tytule może oznaczać listę bloków albo połączone ćwiczenie. Ustal sposób wykonania w swoim programie egzaminacyjnym."
+    },
+    "kake-wake-uke": {
+      "translation": "Blok hakowy rozdzielający.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Od ustawienia przedramion blisko siebie przejdź do rozdzielenia rąk. Zachowaj kontrolę szerokości, bez odciągania barków nadmiernie w tył."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Obie strony rozdzielenia powinny pozostać kontrolowane. Nie rozsuwaj przedramion dalej, niż wymaga przyjęta osłona."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Kake",
+          "polish": "zahaczenie, ruch hakowy"
+        },
+        {
+          "term": "wake",
+          "polish": "rozdzielenie"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "seiken-mawashi-gedan-barai": {
+      "translation": "Okrężny blok zamiatający na poziomie dolnym.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Połącz okrężne przygotowanie ręki z dolnym zgarnięciem. Rozpoznaj przejście między łukiem ruchu a końcową osłoną dolnej strefy."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Końcowy poziom pozostaje dolny mimo okrężnego przygotowania. Nie kończ bloku przy klatce piersiowej tylko dlatego, że ręka zataczała szeroki łuk."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seiken",
+          "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+        },
+        {
+          "term": "mawashi",
+          "polish": "obrót, ruch okrężny"
+        },
+        {
+          "term": "gedan",
+          "polish": "poziom dolny; ge — dół, dan — poziom"
+        },
+        {
+          "term": "barai",
+          "polish": "zamiatanie, zgarnięcie (od harai)"
+        }
+      ]
+    },
+    "shuto-mawashi-uke": {
+      "translation": "Okrężny blok otwartymi dłońmi.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Koordynuj obie ręce podczas okrężnego prowadzenia. Utrzymuj kształt dłoni i płynność przejścia między fazami, zamiast wykonywać dwa niezależne zamachy."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Obserwuj współpracę rąk przy zmianie ich ról. Zbyt duże koła utrudniają utrzymanie zwartej osłony i ciągłości ruchu."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Shūto",
+          "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+        },
+        {
+          "term": "mawashi",
+          "polish": "obrót, ruch okrężny"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "seiken-juji-uke": {
+      "translation": "Blok krzyżowy przy zamkniętych pięściach.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Skrzyżuj przedramiona przed wyznaczoną strefą. Jūji odnosi się do krzyża, a poziom górny lub dolny trzeba ustalić osobno."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Krzyż tworzą przedramiona, nie same zaciśnięte dłonie. Ustal poziom bloku przed przygotowaniem i utrzymuj oba łokcie pod kontrolą."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seiken",
+          "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+        },
+        {
+          "term": "jūji",
+          "polish": "krzyż; dosłownie kształt znaku dziesięć (十)"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "shotei-uke": {
+      "translation": "Blok nasadą dłoni.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Skieruj nasadę dłoni na linię przechwycenia i utrzymuj kontrolę nadgarstka. Dobierz wysokość do wskazanej wersji bloku."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Nasada dłoni ma pozostawać ustawiona do przechwycenia. Nadmiernie rozstawione palce nie zastąpią właściwego kierunku nacisku."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Shōtei",
+          "polish": "nasada dłoni; shō — dłoń, tei — podstawa"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "shuto-jodan-uke": {
+      "translation": "Blok górny z otwartą dłonią ustawioną w shuto.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Unieś rękę do osłony głowy, zachowując kształt krawędzi dłoni. Nie myl pozycji dłoni z koniecznością kontaktu wyłącznie jej brzegiem."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Porównaj wysokość osłony z blokiem środkowym. Dłoń pozostaje otwarta, a ramię nie powinno zasłaniać całkowicie obserwacji celu."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Shūto",
+          "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+        },
+        {
+          "term": "jōdan",
+          "polish": "poziom górny; jō — góra, dan — poziom"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "shuto-chudan-soto-uke": {
+      "translation": "Blok środkowy od zewnątrz z otwartą dłonią.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Poprowadź rękę z zewnątrz do środka, osłaniając tułów. Utrzymuj palce razem i stabilny nadgarstek."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Zewnętrzny początek ruchu odróżnia tę wersję od uchi-uke. Nie zmieniaj toru tylko dlatego, że otwarto dłoń zamiast użyć pięści."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Shūto",
+          "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+        },
+        {
+          "term": "chūdan",
+          "polish": "poziom środkowy; chū — środek, dan — poziom"
+        },
+        {
+          "term": "soto",
+          "polish": "zewnętrzny, od zewnątrz"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "shuto-chudan-uchi-uke": {
+      "translation": "Blok środkowy od wewnątrz z otwartą dłonią.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Poprowadź rękę od wewnątrz na zewnątrz, utrzymując poziom korpusu. Porównaj kierunek przygotowania z soto-uke."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Zachowaj osłonę korpusu po otwarciu ruchu na zewnątrz. Nie prowadź łokcia daleko od boku tułowia."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Shūto",
+          "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+        },
+        {
+          "term": "chūdan",
+          "polish": "poziom środkowy; chū — środek, dan — poziom"
+        },
+        {
+          "term": "uchi",
+          "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "shuto-mae-gedan-barai": {
+      "translation": "Zamiatający blok dolny przed ciałem, z otwartą dłonią.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Wyznacz końcową osłonę przed dolną częścią ciała. Mae wskazuje przód, gedan — poziom, a barai — charakter zgarnięcia."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Końcowa pozycja powinna osłaniać dół przed ciałem. Nie odciągaj dłoni za biodro po zakończeniu zamiatania."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Shūto",
+          "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+        },
+        {
+          "term": "mae",
+          "polish": "przód, do przodu"
+        },
+        {
+          "term": "gedan",
+          "polish": "poziom dolny; ge — dół, dan — poziom"
+        },
+        {
+          "term": "barai",
+          "polish": "zamiatanie, zgarnięcie (od harai)"
+        }
+      ]
+    },
+    "shuto-kake-jodan-uke": {
+      "translation": "Hakowy blok górny z otwartą dłonią.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Prowadź rękę do górnej strefy i zaznacz hakowe przechwycenie. Nie zamieniaj go w bezładny chwyt palcami."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Odróżnij hakowy charakter przechwycenia od zwykłego uniesienia ręki. Wysokość pozostaje górna, niezależnie od krótkiego ruchu dłoni."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Shūto",
+          "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+        },
+        {
+          "term": "kake",
+          "polish": "zahaczenie, ruch hakowy"
+        },
+        {
+          "term": "jōdan",
+          "polish": "poziom górny; jō — góra, dan — poziom"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "shuto-juji-uke": {
+      "translation": "Blok krzyżowy z otwartymi dłońmi.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Zgraj skrzyżowanie przedramion z przyjęciem pozycji. Utrzymuj obie dłonie otwarte; wysokość bloku ustala zadana odmiana."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Utrzymuj otwarte dłonie bez przypadkowego zaciskania ich w pięści. Sprawdź miejsce skrzyżowania oraz osłonę wybranej strefy."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Shūto",
+          "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+        },
+        {
+          "term": "jūji",
+          "polish": "krzyż; dosłownie kształt znaku dziesięć (十)"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "koken-uke": {
+      "translation": "Blok powierzchnią zgiętego nadgarstka.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Uformuj nadgarstek i przeprowadź krótki ruch przechwycenia. Kontrola stawu jest ważniejsza od siłowego odpychania."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Zgięty nadgarstek powinien pozostać kontrolowany podczas przechwycenia. Nie wymuszaj większego zasięgu przez dodatkowe zaginanie stawu."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Kōken",
+          "polish": "łukowata pięść; powierzchnia zgiętego nadgarstka"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "morote-kake-uke": {
+      "translation": "Hakowy blok wykonywany obiema rękami.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Koordynuj hakowe ustawienie obu rąk i ich pracę na zadanej linii. Morote opisuje współpracę rąk, nie dwa oddzielne powtórzenia."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Sprawdź kolejność lub jednoczesność pracy obu rąk według pokazu. Jedna ręka nie powinna blokować drogi drugiej."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Morote",
+          "polish": "obie ręce; moro — obie, te — ręce"
+        },
+        {
+          "term": "kake",
+          "polish": "zahaczenie, ruch hakowy"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "chudan-haito-uchi-uke": {
+      "translation": "Blok środkowy od wewnątrz, wewnętrzną krawędzią dłoni.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Wyróżnij krawędź po stronie kciuka i schowaj kciuk zgodnie z pokazem. Haitō jest inną powierzchnią niż zewnętrzna krawędź shutō."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Wyróżnij krawędź od strony kciuka i zabezpiecz jego ułożenie. Nie zamieniaj haitō na shutō przez mimowolne odwrócenie dłoni."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Chūdan",
+          "polish": "poziom środkowy; chū — środek, dan — poziom"
+        },
+        {
+          "term": "haitō",
+          "polish": "wewnętrzna krawędź dłoni, od strony kciuka"
+        },
+        {
+          "term": "uchi",
+          "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+        },
+        {
+          "term": "uke",
+          "polish": "przyjęcie; w karate blok lub przechwycenie"
+        }
+      ]
+    },
+    "hiza-geri": {
+      "translation": "Kopnięcie kolanem.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Unoś ugięte kolano ku umownemu celowi, bez prostowania nogi w klasyczne kopnięcie stopą. Utrzymuj stabilną nogę podporową."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Kolano pozostaje ugięte także przy celu. Wysokość uzyskuj pracą biodra, bez podskakiwania na niestabilnej nodze podporowej."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Hiza",
+          "polish": "kolano"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        }
+      ]
+    },
+    "kin-geri": {
+      "translation": "Kopnięcie w kierunku krocza.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Rozpoznaj niski cel i krótki wznoszący tor. Ćwicz przebieg bez kontaktu z partnerem, kontrolując powrót nogi."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Kontroluj zarówno wznoszenie, jak i cofnięcie nogi. Niski cel nie uzasadnia ćwiczenia niekontrolowanego kontaktu z partnerem."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Kin",
+          "polish": "skrót od kinteki — krocze (dosłownie „złoty cel”)"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        }
+      ]
+    },
+    "mae-geri-chudan-chusoku": {
+      "translation": "Kopnięcie do przodu na poziom środkowy, przednią częścią podeszwy.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Unieś kolano, poprowadź stopę do przodu i cofnij ją po tej samej drodze. Palce odciągnij tak, by powierzchnią kontaktu była część podeszwy pod nimi."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Sprawdź odciągnięcie palców i wyraźne cofnięcie kolana po wyproście. Nie odstawiaj nogi z celu bez kontroli drogi powrotnej."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Mae",
+          "polish": "przód, do przodu"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        },
+        {
+          "term": "chūdan",
+          "polish": "poziom środkowy; chū — środek, dan — poziom"
+        },
+        {
+          "term": "chūsoku",
+          "polish": "przednia część podeszwy pod palcami stopy"
+        }
+      ]
+    },
+    "mae-geri-jodan": {
+      "translation": "Kopnięcie do przodu na poziom górny.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Wyznacz wysoki cel, zachowując kierunek do przodu. Dostosuj wysokość do kontroli bioder; nie uzyskuj jej kosztem upadania tułowia w tył."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Wysokość głowy jest celem wariantu, nie obowiązkiem przekraczania własnego zakresu. Zachowaj kierunek kopnięcia przed siebie."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Mae",
+          "polish": "przód, do przodu"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        },
+        {
+          "term": "jōdan",
+          "polish": "poziom górny; jō — góra, dan — poziom"
+        }
+      ]
+    },
+    "mae-chusoku-kaage": {
+      "translation": "Wznoszące kopnięcie do przodu z zaznaczeniem przedniej części podeszwy.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Prowadź nogę w górę przed sobą i kontroluj opuszczanie. To ruch wznoszący, który należy odróżnić od wypychającego wyprostu w mae-geri."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Nie myl wznoszącego ruchu keage z wypchnięciem stopy po uniesieniu kolana. Kontrolowane opuszczanie jest częścią powtórzenia."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Mae",
+          "polish": "przód, do przodu"
+        },
+        {
+          "term": "chūsoku",
+          "polish": "przednia część podeszwy pod palcami stopy"
+        },
+        {
+          "term": "kaage",
+          "polish": "zapis w atlasie; standardowo keage — kopnięcie wznoszące"
+        }
+      ],
+      "note": "W tytule zachowano zapis kaage z programu. Standardowa forma to keage (蹴上げ)."
+    },
+    "teisoku-mawashi-soto-keage": {
+      "translation": "Okrężne kopnięcie wznoszące podeszwą, od zewnątrz.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Wyznacz łuk z zewnętrznej strony do środka. Utrzymuj świadome ustawienie podeszwy i nie wymuszaj wysokości skręcaniem kolana podporowego."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Sprawdź kierunek łuku od zewnątrz i ustawienie podeszwy. Stopa podporowa powinna pozwalać biodru pracować bez skręcania kolana."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Teisoku",
+          "polish": "podeszwa stopy"
+        },
+        {
+          "term": "mawashi",
+          "polish": "obrót, ruch okrężny"
+        },
+        {
+          "term": "soto",
+          "polish": "zewnętrzny, od zewnątrz"
+        },
+        {
+          "term": "keage",
+          "polish": "kopnięcie wznoszące; ke — kopnięcie, age — unoszenie"
+        }
+      ]
+    },
+    "heisoku-mawashi-uchi-keage": {
+      "translation": "Okrężne kopnięcie wznoszące od wewnątrz; zapis powierzchni wymaga wyjaśnienia.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Rozpoznaj łuk od wewnętrznej strony na zewnątrz. Słowo heisoku oznacza stopy złączone, więc nie określa tutaj wiarygodnie powierzchni kopiącej."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Najpierw ustal właściwą nazwę powierzchni z instruktorem. Sam błędny lub niejednoznaczny zapis nie jest podstawą do wyboru ustawienia stopy."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Heisoku",
+          "polish": "stopy złączone; hei — zamknięcie, soku — stopa"
+        },
+        {
+          "term": "mawashi",
+          "polish": "obrót, ruch okrężny"
+        },
+        {
+          "term": "uchi",
+          "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+        },
+        {
+          "term": "keage",
+          "polish": "kopnięcie wznoszące; ke — kopnięcie, age — unoszenie"
+        }
+      ],
+      "note": "Heisoku (閉足) oznacza stopy złączone; haisoku (背足) to podbicie, a sokutō (足刀) to zewnętrzna krawędź stopy. To różne terminy. Powierzchnię w tym wpisie należy potwierdzić z instruktorem."
+    },
+    "yoko-keage": {
+      "translation": "Boczne kopnięcie wznoszące.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Unoś nogę w bok z kontrolą biodra i nogi podporowej. Odróżnij wznoszący tor od wypchnięcia nogi w yoko-geri."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Wyraźnie zaznacz unoszenie w bok. Nie dodawaj automatycznie wypchnięcia nogi, które zmieni charakter techniki."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Yoko",
+          "polish": "bok, w bok"
+        },
+        {
+          "term": "keage",
+          "polish": "kopnięcie wznoszące; ke — kopnięcie, age — unoszenie"
+        }
+      ]
+    },
+    "kansetsu-geri": {
+      "translation": "Kopnięcie w kierunku stawu.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Wyznacz niski umowny cel i kontroluj wyprost nogi. Ćwicz tor bez kontaktu w staw partnera i bez przeprostu własnego kolana."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Ćwicz zatrzymanie przed umowną linią stawu. Kontrola końca ruchu jest konieczna zarówno dla nogi kopiącej, jak i bezpieczeństwa partnera."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Kansetsu",
+          "polish": "staw"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        }
+      ]
+    },
+    "yoko-geri-chudan": {
+      "translation": "Kopnięcie boczne na poziom środkowy.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Unieś kolano, ustaw biodro do ruchu bocznego i wypchnij nogę na wysokość tułowia. Cofnij ją przed odstawieniem stopy."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Sprawdź boczną linię biodro–stopa i poziom tułowia. Zbyt wczesne odstawienie nogi ukrywa brak kontroli cofnięcia."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Yoko",
+          "polish": "bok, w bok"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        },
+        {
+          "term": "chūdan",
+          "polish": "poziom środkowy; chū — środek, dan — poziom"
+        }
+      ]
+    },
+    "mawashi-geri-gedan-haisoku": {
+      "translation": "Okrężne kopnięcie dolne podbiciem.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Prowadź nogę po łuku ku dolnej strefie i zgraj obrót biodra ze stopą podporową. W tym wariancie nazwano podbicie, a nie piszczel."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Gedan wskazuje dolny poziom, a haisoku podbicie. Odróżnij ten wariant od kopnięcia piszczelą, nawet gdy oba są wykonywane po łuku."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Mawashi",
+          "polish": "obrót, ruch okrężny"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        },
+        {
+          "term": "gedan",
+          "polish": "poziom dolny; ge — dół, dan — poziom"
+        },
+        {
+          "term": "haisoku",
+          "polish": "podbicie, grzbiet stopy"
+        }
+      ]
+    },
+    "mawashi-geri-chudan-chusoku-haisoku": {
+      "translation": "Okrężne kopnięcie środkowe przodem podeszwy lub podbiciem.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Wyznacz łuk na wysokości korpusu. Wybierz jedną z dwóch powierzchni i odpowiednio ustaw palce oraz staw skokowy przed wykonaniem."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Chūsoku i haisoku są alternatywnymi powierzchniami, nie dwoma kontaktami w jednym kopnięciu. Przećwicz każdą wersję osobno."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Mawashi",
+          "polish": "obrót, ruch okrężny"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        },
+        {
+          "term": "chūdan",
+          "polish": "poziom środkowy; chū — środek, dan — poziom"
+        },
+        {
+          "term": "chūsoku",
+          "polish": "przednia część podeszwy pod palcami stopy"
+        },
+        {
+          "term": "haisoku",
+          "polish": "podbicie, grzbiet stopy"
+        }
+      ]
+    },
+    "ushiro-geri-chudan": {
+      "translation": "Kopnięcie do tyłu na poziom środkowy.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Sprawdź cel przez ramię i poprowadź nogę w tył na wysokości tułowia. Nie zmieniaj prostego toru w szerokie kopnięcie okrężne."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Kontroluj kierunek przez ramię oraz powrót nogi. Jeśli tracisz widok celu, zatrzymaj ćwiczenie i odtwórz ustawienie."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Ushiro",
+          "polish": "tył, do tyłu"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        },
+        {
+          "term": "chūdan",
+          "polish": "poziom środkowy; chū — środek, dan — poziom"
+        }
+      ]
+    },
+    "yoko-geri-jodan": {
+      "translation": "Kopnięcie boczne na poziom górny.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Po ustawieniu biodra kieruj nogę w bok ku wysokiemu celowi. Zachowaj możliwość cofnięcia kolana bez utraty równowagi."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Nie podnoś wysokości kosztem skręcania kolana podporowego. Zachowaj możliwość zatrzymania i cofnięcia kopnięcia w bok."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Yoko",
+          "polish": "bok, w bok"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        },
+        {
+          "term": "jōdan",
+          "polish": "poziom górny; jō — góra, dan — poziom"
+        }
+      ]
+    },
+    "mawashi-geri-jodan-chusoku-haisoku": {
+      "translation": "Okrężne kopnięcie górne przodem podeszwy lub podbiciem.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Ustaw powierzchnię stopy przed ruchem po łuku na wysokość głowy. Utrzymuj obrót nogi podporowej i nie wymuszaj zakresu w kolanie."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Wysoki poziom nie zmienia różnicy między przodem podeszwy a podbiciem. Dobierz ustawienie stopy przed przyspieszeniem łuku."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Mawashi",
+          "polish": "obrót, ruch okrężny"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        },
+        {
+          "term": "jōdan",
+          "polish": "poziom górny; jō — góra, dan — poziom"
+        },
+        {
+          "term": "chūsoku",
+          "polish": "przednia część podeszwy pod palcami stopy"
+        },
+        {
+          "term": "haisoku",
+          "polish": "podbicie, grzbiet stopy"
+        }
+      ]
+    },
+    "ushiro-geri-jodan": {
+      "translation": "Kopnięcie do tyłu na poziom górny.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Najpierw ustal kierunek wzrokiem, potem wysokość ruchu w tył. Zmniejsz wysokość ćwiczenia, jeżeli tracisz kontrolę cofnięcia nogi."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Najpierw opanuj tor w tył niżej, następnie zwiększaj wysokość. Nie próbuj sięgać głowy przeciwnika bez zachowania równowagi."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Ushiro",
+          "polish": "tył, do tyłu"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        },
+        {
+          "term": "jōdan",
+          "polish": "poziom górny; jō — góra, dan — poziom"
+        }
+      ]
+    },
+    "mae-kakato-geri": {
+      "translation": "Kopnięcie piętą do przodu.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Skieruj piętę ku celowi przed sobą i wyraźnie cofnij palce. Nazwa nie zawiera oroshi, więc sama nie oznacza opadającego kopnięcia z góry."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Pięta powinna prowadzić do celu przed ciałem. Nie dodawaj opadającego łuku charakterystycznego dla oroshi-kakato-geri."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Mae",
+          "polish": "przód, do przodu"
+        },
+        {
+          "term": "kakato",
+          "polish": "pięta"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        }
+      ]
+    },
+    "tobi-nidan-geri": {
+      "translation": "Dwustopniowe kopnięcie w wyskoku.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Najpierw przećwicz kolejność dwóch kopnięć na małej wysokości. Zgraj zmianę nóg z kontrolowanym lądowaniem, zgodnie z wariantem pokazanym przez instruktora."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Nidan oznacza dwa etapy kopnięcia, nie numer stopnia egzaminacyjnego. Zachowaj czytelną kolejność nóg oraz kontrolę lądowania."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Tobi",
+          "polish": "skok, w wyskoku"
+        },
+        {
+          "term": "nidan",
+          "polish": "dwa poziomy lub etapy; ni — dwa, dan — stopień"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        }
+      ]
+    },
+    "mae-tobi-geri": {
+      "translation": "Kopnięcie do przodu w wyskoku.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Połącz wybicie z kopnięciem przed siebie i przygotuj nogi do lądowania. Konkretna noga odbijająca i kopiąca zależą od ćwiczonej metody."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Mae wskazuje przód, tobi wyskok. Sam podskok bez kontrolowanego kopnięcia i lądowania nie realizuje całej techniki."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Mae",
+          "polish": "przód, do przodu"
+        },
+        {
+          "term": "tobi",
+          "polish": "skok, w wyskoku"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        }
+      ]
+    },
+    "jodan-uchi-haisoku-geri": {
+      "translation": "Kopnięcie podbiciem od wewnątrz na poziom górny.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Wyznacz łuk podbicia w wariancie wewnętrznym na wysokość głowy. Uchi opisuje odmianę ruchu, a haisoku powierzchnię stopy."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Sprawdź wewnętrzny wariant ruchu i podbicie jako powierzchnię. Nie utożsamiaj słowa uchi ze zwykłym uderzeniem ręką."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Jōdan",
+          "polish": "poziom górny; jō — góra, dan — poziom"
+        },
+        {
+          "term": "uchi",
+          "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+        },
+        {
+          "term": "haisoku",
+          "polish": "podbicie, grzbiet stopy"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        }
+      ]
+    },
+    "oroshi-uchi-kakato-geri": {
+      "translation": "Opadające kopnięcie piętą z przygotowaniem od wewnątrz.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Wprowadź nogę łukiem od wewnątrz, a następnie opuść piętę. Kontroluj zejście nogi, zamiast swobodnie upuszczać ją na cel."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Rozdziel przygotowanie od wewnątrz i opadanie pięty. Nie pomijaj kontroli nad nogą po minięciu najwyższego punktu."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Oroshi",
+          "polish": "opuszczanie, ruch z góry w dół"
+        },
+        {
+          "term": "uchi",
+          "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+        },
+        {
+          "term": "kakato",
+          "polish": "pięta"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        }
+      ]
+    },
+    "oroshi-soto-kakato-geri": {
+      "translation": "Opadające kopnięcie piętą z przygotowaniem od zewnątrz.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Wprowadź nogę łukiem od zewnętrznej strony i zakończ ruchem pięty w dół. Porównaj przygotowanie z wariantem uchi."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Soto określa stronę przygotowania, a oroshi końcowy ruch w dół. Porównaj oba elementy z odmianą uchi, nie tylko wysokość kopnięcia."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Oroshi",
+          "polish": "opuszczanie, ruch z góry w dół"
+        },
+        {
+          "term": "soto",
+          "polish": "zewnętrzny, od zewnątrz"
+        },
+        {
+          "term": "kakato",
+          "polish": "pięta"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        }
+      ]
+    },
+    "yoko-tobi-geri": {
+      "translation": "Kopnięcie boczne w wyskoku.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Połącz wybicie z ustawieniem biodra do kopnięcia w bok. Przed zwiększaniem wysokości opanuj cofnięcie nogi i stabilne lądowanie."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Ustawienie do ruchu bocznego musi być gotowe w fazie kopnięcia. Zacznij od małego wyskoku i stabilnego lądowania."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Yoko",
+          "polish": "bok, w bok"
+        },
+        {
+          "term": "tobi",
+          "polish": "skok, w wyskoku"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        }
+      ]
+    },
+    "taikyoku-sono-ichi": {
+      "translation": "Wielka ostateczność — forma pierwsza.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Początek serii Taikyoku: nauka kierunków, podstawowych bloków i prostych uderzeń."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Ćwicz osobno zmianę kierunku i następującą po niej technikę. Następnie łącz odcinki w plan poruszania się (embusen)."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Taikyoku",
+          "polish": "wielka ostateczność; tai — wielki, kyoku — kres / najwyższa zasada"
+        },
+        {
+          "term": "sono",
+          "polish": "ten, dany; w nazwie wskazuje numer formy"
+        },
+        {
+          "term": "ichi",
+          "polish": "jeden, pierwszy"
+        }
+      ]
+    },
+    "taikyoku-sono-ni": {
+      "translation": "Wielka ostateczność — forma druga.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Druga forma serii wykorzystuje znany schemat poruszania, zmieniając wysokość uderzeń na górną."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Porównaj poziom końcowy pięści z pierwszą formą. Pilnuj, by zmiana celu nie powodowała podnoszenia barków."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Taikyoku",
+          "polish": "wielka ostateczność; tai — wielki, kyoku — kres / najwyższa zasada"
+        },
+        {
+          "term": "sono",
+          "polish": "ten, dany; w nazwie wskazuje numer formy"
+        },
+        {
+          "term": "ni",
+          "polish": "dwa, drugi"
+        }
+      ]
+    },
+    "taikyoku-sono-san": {
+      "translation": "Wielka ostateczność — forma trzecia.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Trzecia forma rozwija pracę bloków i przejścia między pozycjami w serii Taikyoku."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Wydziel miejsca, w których zmienia się blok lub postawa. Nie przenoś automatycznie wszystkich ustawień z pierwszej formy."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Taikyoku",
+          "polish": "wielka ostateczność; tai — wielki, kyoku — kres / najwyższa zasada"
+        },
+        {
+          "term": "sono",
+          "polish": "ten, dany; w nazwie wskazuje numer formy"
+        },
+        {
+          "term": "san",
+          "polish": "trzy, trzeci"
+        }
+      ]
+    },
+    "pinan-sono-ichi": {
+      "translation": "Spokój i bezpieczeństwo — forma pierwsza.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Wprowadzenie do serii Pinan, łączące obronę, atak i zmiany ustawienia ciała."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Zapamiętuj krótkie grupy ruchów razem z kierunkiem patrzenia i pozycją końcową, a dopiero potem łącz całość."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Pinan",
+          "polish": "spokój i bezpieczeństwo; pin — spokój, an — bezpieczeństwo (odczyt okinawski)"
+        },
+        {
+          "term": "sono",
+          "polish": "ten, dany; w nazwie wskazuje numer formy"
+        },
+        {
+          "term": "ichi",
+          "polish": "jeden, pierwszy"
+        }
+      ]
+    },
+    "pinan-sono-ni": {
+      "translation": "Spokój i bezpieczeństwo — forma druga.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Druga forma Pinan rozwija koordynację bloków, kontrataków i przejść."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Rozpoznaj moment przejścia od osłony do odpowiedzi. Ręce i nogi powinny kończyć daną fazę w spójnym rytmie."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Pinan",
+          "polish": "spokój i bezpieczeństwo; pin — spokój, an — bezpieczeństwo (odczyt okinawski)"
+        },
+        {
+          "term": "sono",
+          "polish": "ten, dany; w nazwie wskazuje numer formy"
+        },
+        {
+          "term": "ni",
+          "polish": "dwa, drugi"
+        }
+      ]
+    },
+    "pinan-sono-san": {
+      "translation": "Spokój i bezpieczeństwo — forma trzecia.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Trzecia forma Pinan rozwija kontrolę bioder i pracy w zwartych ustawieniach."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Ćwicz obroty bez kołysania tułowia. Oddziel zapamiętanie kolejności od późniejszej pracy nad akcentami."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Pinan",
+          "polish": "spokój i bezpieczeństwo; pin — spokój, an — bezpieczeństwo (odczyt okinawski)"
+        },
+        {
+          "term": "sono",
+          "polish": "ten, dany; w nazwie wskazuje numer formy"
+        },
+        {
+          "term": "san",
+          "polish": "trzy, trzeci"
+        }
+      ]
+    },
+    "sanchin-no-kata": {
+      "translation": "Forma trzech walk.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Forma pracy nad postawą, kontrolą napięcia i oddechem. „Trzy walki” są tradycyjnie interpretowane symbolicznie."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Łącz kroki z oddechem zgodnie z pokazem instruktora. Nie zastępuj kontroli ciała maksymalnym napięciem ani wstrzymywaniem oddechu."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Sanchin",
+          "polish": "trzy walki; san — trzy, chin — walka (odczyt okinawski)"
+        },
+        {
+          "term": "no",
+          "polish": "partykuła łącząca; tutaj „forma czegoś”"
+        },
+        {
+          "term": "kata",
+          "polish": "forma, ustalony układ ruchów"
+        }
+      ]
+    },
+    "pinan-sono-yon": {
+      "translation": "Spokój i bezpieczeństwo — forma czwarta.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Czwarta forma Pinan łączy zmiany kierunku, techniki ręczne i pracę nóg w bardziej złożone sekwencje."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Rozdziel fragmenty z pozycją skrzyżowaną i technikami łokciowymi. Sprawdź równowagę przed łączeniem ich w pełnym tempie."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Pinan",
+          "polish": "spokój i bezpieczeństwo; pin — spokój, an — bezpieczeństwo (odczyt okinawski)"
+        },
+        {
+          "term": "sono",
+          "polish": "ten, dany; w nazwie wskazuje numer formy"
+        },
+        {
+          "term": "yon",
+          "polish": "cztery, czwarty"
+        }
+      ]
+    },
+    "pinan-sono-go": {
+      "translation": "Spokój i bezpieczeństwo — forma piąta.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Ostatnia forma podstawowej serii Pinan wymaga wyraźnego rytmu i kontroli dynamicznych przejść."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Pracuj osobno nad wybiciem, zmianą kierunku i lądowaniem. W całości zachowaj różnicę między przygotowaniem a akcentem techniki."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Pinan",
+          "polish": "spokój i bezpieczeństwo; pin — spokój, an — bezpieczeństwo (odczyt okinawski)"
+        },
+        {
+          "term": "sono",
+          "polish": "ten, dany; w nazwie wskazuje numer formy"
+        },
+        {
+          "term": "go",
+          "polish": "pięć, piąty"
+        }
+      ]
+    },
+    "gekisai-dai": {
+      "translation": "Uderzyć i rozbić — duża forma.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Forma łącząca zdecydowane techniki obronne i ofensywne; dai identyfikuje dużą odmianę Gekisai."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Dziel kombinacje na obronę, ustawienie ciała i odpowiedź. Zwróć uwagę na przejścia zamiast izolować same końcowe uderzenia."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Gekisai",
+          "polish": "uderzyć i rozbić; geki — uderzenie, sai — rozbicie"
+        },
+        {
+          "term": "dai",
+          "polish": "duży, wielki"
+        }
+      ]
+    },
+    "yantsu": {
+      "translation": "Yantsu — tradycyjnie: zachować czystość.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Nazwa własna kata, a nie zwykła instrukcja ruchu. Forma rozwija kontrolę technik i zmian kierunku na niewielkiej przestrzeni."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Utrzymuj orientację w kolejnych kierunkach oraz stabilność między sekwencjami. Nie wyprowadzaj przebiegu kata z dosłownego odczytu znaków."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Yantsu",
+          "polish": "nazwa własna kata, tradycyjnie objaśniana jako zachowanie czystości; 安 — spokój, 三 — trzy, nie jest to zwykłe japońskie złożenie"
+        }
+      ],
+      "note": "Odczyt Yantsu i tradycyjne objaśnienie nie wynikają wprost z japońskiego odczytu znaków 安三. To nazwa własna o niejednoznacznej etymologii."
+    },
+    "tsuki-no-kata": {
+      "translation": "Forma prostych uderzeń.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Kata skupione na uderzeniach pięścią wykonywanych w kolejnych postawach i kierunkach."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Sprawdzaj linię każdego uderzenia i zsynchronizowanie go z pozycją. Powtarzanie tsuki nie oznacza identycznego rytmu całej formy."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Tsuki",
+          "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+        },
+        {
+          "term": "no",
+          "polish": "partykuła łącząca; tutaj „forma czegoś”"
+        },
+        {
+          "term": "kata",
+          "polish": "forma, ustalony układ ruchów"
+        }
+      ]
+    },
+    "tensho": {
+      "translation": "Obracające się dłonie.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Forma okrężnej pracy otwartych dłoni połączonej z kontrolą oddechu i postawy."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Ćwicz ciągłość obrotów dłoni oraz spokojne barki. Rozróżniaj napięcie potrzebne do ustawienia od zbędnego usztywnienia."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Tensho",
+          "polish": "obracające się dłonie; ten — obrót, shō — dłoń"
+        }
+      ]
+    },
+    "saiha": {
+      "translation": "Saiha — tradycyjnie: rozbicie, roztrzaskanie.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Nazwa przekazuje ideę rozbicia. Sam tytuł nie stanowi listy ruchów ani dokładnej instrukcji zastosowań."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Ucz się kolejności z demonstracji właściwej dla dojo. Grupuj ruchy według zmian kierunku i wyraźnie zaznaczaj zakończenia sekwencji."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Saiha",
+          "polish": "nazwa kata tłumaczona tradycyjnie jako rozbicie / roztrzaskanie; sai — najpełniejszy (最), ha — rozbicie (破)"
+        }
+      ],
+      "note": "W atlasie pozostaje 細破 (細 — drobny, 破 — rozbicie). Spotyka się też 最破, z którego wynika tradycyjne objaśnienie. Nie należy traktować tych zapisów jako dosłownie identycznych."
+    },
+    "gekisai-sho": {
+      "translation": "Uderzyć i rozbić — mała forma.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Sho odróżnia tę odmianę od Gekisai dai. „Mała” jest częścią nazwy, a nie oceną trudności."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Porównaj obie formy w miejscach zmiany pracy rąk i postaw. Nie wykonuj sho jako skróconego dai."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Gekisai",
+          "polish": "uderzyć i rozbić; geki — uderzenie, sai — rozbicie"
+        },
+        {
+          "term": "Sho",
+          "polish": "mały"
+        }
+      ]
+    },
+    "gariyu": {
+      "translation": "Garyū — leżący smok.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Tradycyjne objaśnienie nazwy odwołuje się do siły pozostającej w spoczynku i opanowania."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Pracuj nad spokojnym przejściem między fragmentami a wyraźną techniką w ich zakończeniu. Kolejność ruchów wymaga pokazu pełnej formy."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Gariyu",
+          "polish": "zapis w atlasie; zwykle Garyū — leżący smok: ga (臥) — leżeć, ryū (竜) — smok"
+        }
+      ],
+      "note": "W atlasie zachowano zapis Gariyu / 我流 („własny styl”). Dla kata Garyū tradycyjnie podaje się 臥竜 („leżący smok”). Te zapisy mają inne znaczenia."
+    },
+    "seishin": {
+      "translation": "Duch, umysł.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "W atlasie to nazwa formy przypisanej do programu dan. Znaczenie słowa nie pozwala ustalić jednoznacznej sekwencji ruchów."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Przed nauką ustal z instruktorem, którą formę program określa jako Seishin. Następnie zapisuj jej odcinki i punkty zmiany kierunku."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seishin",
+          "polish": "duch, umysł; sei — istota / duch, shin — duch / bóstwo"
+        }
+      ],
+      "note": "Seishin (精神) znaczy „duch, umysł”. Nazwa sama nie identyfikuje jednoznacznie standardowego kata Kyokushin; wersja z tego programu wymaga potwierdzenia."
+    },
+    "kanku-dai": {
+      "translation": "Obserwowanie nieba — duża forma.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Nazwa nawiązuje do obserwowania nieba, widocznego w geście otwierającym formę."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Połącz znaczenie gestu otwarcia z uważnym początkiem. Długą formę dziel na krótsze odcinki i utrzymuj orientację w jej kierunkach."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Kanku",
+          "polish": "obserwowanie nieba; kan — patrzeć, kū — niebo / pustka"
+        },
+        {
+          "term": "Dai",
+          "polish": "duży, wielki"
+        }
+      ]
+    },
+    "sushiho": {
+      "translation": "Pięćdziesiąt cztery kroki.",
+      "sections": [
+        {
+          "title": "Charakter formy",
+          "body": "Nazwa liczbowa przekazana w tradycji okinawskiej. Nie traktuj liczby 54 jako polecenia liczenia wyłącznie kroków nóg."
+        },
+        {
+          "title": "Jak pracować nad formą",
+          "body": "Ucz się krótkich sekwencji i ich połączeń. Kontroluj dokładność szybkich ruchów, zanim zwiększysz tempo całego kata."
+        },
+        {
+          "title": "Zakres nauki",
+          "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Sushiho",
+          "polish": "54 kroki; sūshi — okinawski odczyt liczby 54, ho — krok"
+        }
+      ],
+      "note": "Zapis 捌子 w atlasie nie odpowiada tradycyjnemu znaczeniu 54 kroków. Nazwę Sushiho zwykle zapisuje się 五十四歩; odczyt nazwy pochodzi z tradycji okinawskiej."
+    },
+    "ippon-kumite-1-10-kyu": {
+      "translation": "Jednokrokowa walka umowna — ćwiczenie jednego ataku i odpowiedzi.",
+      "sections": [
+        {
+          "title": "Zakres tego wpisu",
+          "body": "W programie atlasu: liczba układów 1, stopień 10 kyu. Liczba po myślniku dotyczy zestawu egzaminacyjnego; ippon nadal oznacza jeden atak w pojedynczym ćwiczeniu."
+        },
+        {
+          "title": "Role i przebieg",
+          "body": "Partnerzy ustalają atak oraz dystans. Atakujący wykonuje zapowiedzianą technikę, broniący dopasowuje pozycję, blokuje i kontroluje kontratak. Następnie obaj wracają do gotowości i zamieniają role."
+        },
+        {
+          "title": "Co wymaga uzgodnienia",
+          "body": "Dokładne ataki i odpowiedzi dla poszczególnych układów nie są rozpisane w programie atlasu. Ustal je z instruktorem; ćwicz odległość i moment reakcji bez przyspieszania kosztem partnera."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Ippon",
+          "polish": "jeden; ichi + hon, w złożeniu ippon"
+        },
+        {
+          "term": "kumite",
+          "polish": "spotkanie / połączenie rąk; kumi — zestawienie, te — ręka; ćwiczenie walki"
+        },
+        {
+          "term": "1",
+          "polish": "liczba układów w programie tego stopnia: 1"
+        },
+        {
+          "term": "10",
+          "polish": "numer stopnia uczniowskiego: 10 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    },
+    "ippon-kumite-2-9-kyu": {
+      "translation": "Jednokrokowa walka umowna — ćwiczenie jednego ataku i odpowiedzi.",
+      "sections": [
+        {
+          "title": "Zakres tego wpisu",
+          "body": "W programie atlasu: liczba układów 2, stopień 9 kyu. Liczba po myślniku dotyczy zestawu egzaminacyjnego; ippon nadal oznacza jeden atak w pojedynczym ćwiczeniu."
+        },
+        {
+          "title": "Role i przebieg",
+          "body": "Partnerzy ustalają atak oraz dystans. Atakujący wykonuje zapowiedzianą technikę, broniący dopasowuje pozycję, blokuje i kontroluje kontratak. Następnie obaj wracają do gotowości i zamieniają role."
+        },
+        {
+          "title": "Co wymaga uzgodnienia",
+          "body": "Dokładne ataki i odpowiedzi dla poszczególnych układów nie są rozpisane w programie atlasu. Ustal je z instruktorem; ćwicz odległość i moment reakcji bez przyspieszania kosztem partnera."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Ippon",
+          "polish": "jeden; ichi + hon, w złożeniu ippon"
+        },
+        {
+          "term": "kumite",
+          "polish": "spotkanie / połączenie rąk; kumi — zestawienie, te — ręka; ćwiczenie walki"
+        },
+        {
+          "term": "2",
+          "polish": "liczba układów w programie tego stopnia: 2"
+        },
+        {
+          "term": "9",
+          "polish": "numer stopnia uczniowskiego: 9 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    },
+    "ippon-kumite-3-8-kyu": {
+      "translation": "Jednokrokowa walka umowna — ćwiczenie jednego ataku i odpowiedzi.",
+      "sections": [
+        {
+          "title": "Zakres tego wpisu",
+          "body": "W programie atlasu: liczba układów 3, stopień 8 kyu. Liczba po myślniku dotyczy zestawu egzaminacyjnego; ippon nadal oznacza jeden atak w pojedynczym ćwiczeniu."
+        },
+        {
+          "title": "Role i przebieg",
+          "body": "Partnerzy ustalają atak oraz dystans. Atakujący wykonuje zapowiedzianą technikę, broniący dopasowuje pozycję, blokuje i kontroluje kontratak. Następnie obaj wracają do gotowości i zamieniają role."
+        },
+        {
+          "title": "Co wymaga uzgodnienia",
+          "body": "Dokładne ataki i odpowiedzi dla poszczególnych układów nie są rozpisane w programie atlasu. Ustal je z instruktorem; ćwicz odległość i moment reakcji bez przyspieszania kosztem partnera."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Ippon",
+          "polish": "jeden; ichi + hon, w złożeniu ippon"
+        },
+        {
+          "term": "kumite",
+          "polish": "spotkanie / połączenie rąk; kumi — zestawienie, te — ręka; ćwiczenie walki"
+        },
+        {
+          "term": "3",
+          "polish": "liczba układów w programie tego stopnia: 3"
+        },
+        {
+          "term": "8",
+          "polish": "numer stopnia uczniowskiego: 8 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    },
+    "ippon-kumite-4-7-kyu": {
+      "translation": "Jednokrokowa walka umowna — ćwiczenie jednego ataku i odpowiedzi.",
+      "sections": [
+        {
+          "title": "Zakres tego wpisu",
+          "body": "W programie atlasu: liczba układów 4, stopień 7 kyu. Liczba po myślniku dotyczy zestawu egzaminacyjnego; ippon nadal oznacza jeden atak w pojedynczym ćwiczeniu."
+        },
+        {
+          "title": "Role i przebieg",
+          "body": "Partnerzy ustalają atak oraz dystans. Atakujący wykonuje zapowiedzianą technikę, broniący dopasowuje pozycję, blokuje i kontroluje kontratak. Następnie obaj wracają do gotowości i zamieniają role."
+        },
+        {
+          "title": "Co wymaga uzgodnienia",
+          "body": "Dokładne ataki i odpowiedzi dla poszczególnych układów nie są rozpisane w programie atlasu. Ustal je z instruktorem; ćwicz odległość i moment reakcji bez przyspieszania kosztem partnera."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Ippon",
+          "polish": "jeden; ichi + hon, w złożeniu ippon"
+        },
+        {
+          "term": "kumite",
+          "polish": "spotkanie / połączenie rąk; kumi — zestawienie, te — ręka; ćwiczenie walki"
+        },
+        {
+          "term": "4",
+          "polish": "liczba układów w programie tego stopnia: 4"
+        },
+        {
+          "term": "7",
+          "polish": "numer stopnia uczniowskiego: 7 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    },
+    "ippon-kumite-5-6-kyu": {
+      "translation": "Jednokrokowa walka umowna — ćwiczenie jednego ataku i odpowiedzi.",
+      "sections": [
+        {
+          "title": "Zakres tego wpisu",
+          "body": "W programie atlasu: liczba układów 5, stopień 6 kyu. Liczba po myślniku dotyczy zestawu egzaminacyjnego; ippon nadal oznacza jeden atak w pojedynczym ćwiczeniu."
+        },
+        {
+          "title": "Role i przebieg",
+          "body": "Partnerzy ustalają atak oraz dystans. Atakujący wykonuje zapowiedzianą technikę, broniący dopasowuje pozycję, blokuje i kontroluje kontratak. Następnie obaj wracają do gotowości i zamieniają role."
+        },
+        {
+          "title": "Co wymaga uzgodnienia",
+          "body": "Dokładne ataki i odpowiedzi dla poszczególnych układów nie są rozpisane w programie atlasu. Ustal je z instruktorem; ćwicz odległość i moment reakcji bez przyspieszania kosztem partnera."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Ippon",
+          "polish": "jeden; ichi + hon, w złożeniu ippon"
+        },
+        {
+          "term": "kumite",
+          "polish": "spotkanie / połączenie rąk; kumi — zestawienie, te — ręka; ćwiczenie walki"
+        },
+        {
+          "term": "5",
+          "polish": "liczba układów w programie tego stopnia: 5"
+        },
+        {
+          "term": "6",
+          "polish": "numer stopnia uczniowskiego: 6 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    },
+    "ippon-kumite-6-5-kyu": {
+      "translation": "Jednokrokowa walka umowna — ćwiczenie jednego ataku i odpowiedzi.",
+      "sections": [
+        {
+          "title": "Zakres tego wpisu",
+          "body": "W programie atlasu: liczba układów 6, stopień 5 kyu. Liczba po myślniku dotyczy zestawu egzaminacyjnego; ippon nadal oznacza jeden atak w pojedynczym ćwiczeniu."
+        },
+        {
+          "title": "Role i przebieg",
+          "body": "Partnerzy ustalają atak oraz dystans. Atakujący wykonuje zapowiedzianą technikę, broniący dopasowuje pozycję, blokuje i kontroluje kontratak. Następnie obaj wracają do gotowości i zamieniają role."
+        },
+        {
+          "title": "Co wymaga uzgodnienia",
+          "body": "Dokładne ataki i odpowiedzi dla poszczególnych układów nie są rozpisane w programie atlasu. Ustal je z instruktorem; ćwicz odległość i moment reakcji bez przyspieszania kosztem partnera."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Ippon",
+          "polish": "jeden; ichi + hon, w złożeniu ippon"
+        },
+        {
+          "term": "kumite",
+          "polish": "spotkanie / połączenie rąk; kumi — zestawienie, te — ręka; ćwiczenie walki"
+        },
+        {
+          "term": "6",
+          "polish": "liczba układów w programie tego stopnia: 6"
+        },
+        {
+          "term": "5",
+          "polish": "numer stopnia uczniowskiego: 5 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    },
+    "ippon-kumite-7-4-kyu": {
+      "translation": "Jednokrokowa walka umowna — ćwiczenie jednego ataku i odpowiedzi.",
+      "sections": [
+        {
+          "title": "Zakres tego wpisu",
+          "body": "W programie atlasu: liczba układów 7, stopień 4 kyu. Liczba po myślniku dotyczy zestawu egzaminacyjnego; ippon nadal oznacza jeden atak w pojedynczym ćwiczeniu."
+        },
+        {
+          "title": "Role i przebieg",
+          "body": "Partnerzy ustalają atak oraz dystans. Atakujący wykonuje zapowiedzianą technikę, broniący dopasowuje pozycję, blokuje i kontroluje kontratak. Następnie obaj wracają do gotowości i zamieniają role."
+        },
+        {
+          "title": "Co wymaga uzgodnienia",
+          "body": "Dokładne ataki i odpowiedzi dla poszczególnych układów nie są rozpisane w programie atlasu. Ustal je z instruktorem; ćwicz odległość i moment reakcji bez przyspieszania kosztem partnera."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Ippon",
+          "polish": "jeden; ichi + hon, w złożeniu ippon"
+        },
+        {
+          "term": "kumite",
+          "polish": "spotkanie / połączenie rąk; kumi — zestawienie, te — ręka; ćwiczenie walki"
+        },
+        {
+          "term": "7",
+          "polish": "liczba układów w programie tego stopnia: 7"
+        },
+        {
+          "term": "4",
+          "polish": "numer stopnia uczniowskiego: 4 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    },
+    "ippon-kumite-8-3-kyu": {
+      "translation": "Jednokrokowa walka umowna — ćwiczenie jednego ataku i odpowiedzi.",
+      "sections": [
+        {
+          "title": "Zakres tego wpisu",
+          "body": "W programie atlasu: liczba układów 8, stopień 3 kyu. Liczba po myślniku dotyczy zestawu egzaminacyjnego; ippon nadal oznacza jeden atak w pojedynczym ćwiczeniu."
+        },
+        {
+          "title": "Role i przebieg",
+          "body": "Partnerzy ustalają atak oraz dystans. Atakujący wykonuje zapowiedzianą technikę, broniący dopasowuje pozycję, blokuje i kontroluje kontratak. Następnie obaj wracają do gotowości i zamieniają role."
+        },
+        {
+          "title": "Co wymaga uzgodnienia",
+          "body": "Dokładne ataki i odpowiedzi dla poszczególnych układów nie są rozpisane w programie atlasu. Ustal je z instruktorem; ćwicz odległość i moment reakcji bez przyspieszania kosztem partnera."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Ippon",
+          "polish": "jeden; ichi + hon, w złożeniu ippon"
+        },
+        {
+          "term": "kumite",
+          "polish": "spotkanie / połączenie rąk; kumi — zestawienie, te — ręka; ćwiczenie walki"
+        },
+        {
+          "term": "8",
+          "polish": "liczba układów w programie tego stopnia: 8"
+        },
+        {
+          "term": "3",
+          "polish": "numer stopnia uczniowskiego: 3 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    },
+    "ippon-kumite-9-2-kyu": {
+      "translation": "Jednokrokowa walka umowna — ćwiczenie jednego ataku i odpowiedzi.",
+      "sections": [
+        {
+          "title": "Zakres tego wpisu",
+          "body": "W programie atlasu: liczba układów 9, stopień 2 kyu. Liczba po myślniku dotyczy zestawu egzaminacyjnego; ippon nadal oznacza jeden atak w pojedynczym ćwiczeniu."
+        },
+        {
+          "title": "Role i przebieg",
+          "body": "Partnerzy ustalają atak oraz dystans. Atakujący wykonuje zapowiedzianą technikę, broniący dopasowuje pozycję, blokuje i kontroluje kontratak. Następnie obaj wracają do gotowości i zamieniają role."
+        },
+        {
+          "title": "Co wymaga uzgodnienia",
+          "body": "Dokładne ataki i odpowiedzi dla poszczególnych układów nie są rozpisane w programie atlasu. Ustal je z instruktorem; ćwicz odległość i moment reakcji bez przyspieszania kosztem partnera."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Ippon",
+          "polish": "jeden; ichi + hon, w złożeniu ippon"
+        },
+        {
+          "term": "kumite",
+          "polish": "spotkanie / połączenie rąk; kumi — zestawienie, te — ręka; ćwiczenie walki"
+        },
+        {
+          "term": "9",
+          "polish": "liczba układów w programie tego stopnia: 9"
+        },
+        {
+          "term": "2",
+          "polish": "numer stopnia uczniowskiego: 2 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    },
+    "ippon-kumite-10-1-kyu": {
+      "translation": "Jednokrokowa walka umowna — ćwiczenie jednego ataku i odpowiedzi.",
+      "sections": [
+        {
+          "title": "Zakres tego wpisu",
+          "body": "W programie atlasu: liczba układów 10, stopień 1 kyu. Liczba po myślniku dotyczy zestawu egzaminacyjnego; ippon nadal oznacza jeden atak w pojedynczym ćwiczeniu."
+        },
+        {
+          "title": "Role i przebieg",
+          "body": "Partnerzy ustalają atak oraz dystans. Atakujący wykonuje zapowiedzianą technikę, broniący dopasowuje pozycję, blokuje i kontroluje kontratak. Następnie obaj wracają do gotowości i zamieniają role."
+        },
+        {
+          "title": "Co wymaga uzgodnienia",
+          "body": "Dokładne ataki i odpowiedzi dla poszczególnych układów nie są rozpisane w programie atlasu. Ustal je z instruktorem; ćwicz odległość i moment reakcji bez przyspieszania kosztem partnera."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Ippon",
+          "polish": "jeden; ichi + hon, w złożeniu ippon"
+        },
+        {
+          "term": "kumite",
+          "polish": "spotkanie / połączenie rąk; kumi — zestawienie, te — ręka; ćwiczenie walki"
+        },
+        {
+          "term": "10",
+          "polish": "liczba układów w programie tego stopnia: 10"
+        },
+        {
+          "term": "1",
+          "polish": "numer stopnia uczniowskiego: 1 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    },
+    "sanbon-kumite-wariant-i": {
+      "translation": "Trzykrokowa walka umowna — wariant I.",
+      "sections": [
+        {
+          "title": "Zakres wariantu",
+          "body": "Wariant I oznacza wersję układu, a sanbon — trzy kolejne ataki. Program nie podaje dokładnych technik tej wersji; ich wybór należy potwierdzić w dojo."
+        },
+        {
+          "title": "Przebieg z partnerem",
+          "body": "Ustalcie techniki i dystans. Atakujący wykonuje trzy kolejne ataki, a broniący dopasowuje trzy obrony i kontratak po ostatniej z nich. Kontrolujcie odstęp także podczas przemieszczania."
+        },
+        {
+          "title": "Punkt kontroli",
+          "body": "Nie wyprzedzaj zapowiedzianego ataku ani nie traktuj trzech kroków jak sprintu. Każda obrona musi odpowiadać właściwemu atakowi."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Sanbon",
+          "polish": "trzy; san — trzy, bon — udźwięcznione hon"
+        },
+        {
+          "term": "kumite",
+          "polish": "spotkanie / połączenie rąk; kumi — zestawienie, te — ręka; ćwiczenie walki"
+        },
+        {
+          "term": "wariant",
+          "polish": "polskie oznaczenie wersji ćwiczenia"
+        },
+        {
+          "term": "I",
+          "polish": "numer wariantu: pierwszy"
+        }
+      ]
+    },
+    "sanbon-kumite-wariant-ii": {
+      "translation": "Trzykrokowa walka umowna — wariant II.",
+      "sections": [
+        {
+          "title": "Zakres wariantu",
+          "body": "Wariant II oznacza wersję układu, a sanbon — trzy kolejne ataki. Program nie podaje dokładnych technik tej wersji; ich wybór należy potwierdzić w dojo."
+        },
+        {
+          "title": "Przebieg z partnerem",
+          "body": "Ustalcie techniki i dystans. Atakujący wykonuje trzy kolejne ataki, a broniący dopasowuje trzy obrony i kontratak po ostatniej z nich. Kontrolujcie odstęp także podczas przemieszczania."
+        },
+        {
+          "title": "Punkt kontroli",
+          "body": "Nie wyprzedzaj zapowiedzianego ataku ani nie traktuj trzech kroków jak sprintu. Każda obrona musi odpowiadać właściwemu atakowi."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Sanbon",
+          "polish": "trzy; san — trzy, bon — udźwięcznione hon"
+        },
+        {
+          "term": "kumite",
+          "polish": "spotkanie / połączenie rąk; kumi — zestawienie, te — ręka; ćwiczenie walki"
+        },
+        {
+          "term": "wariant",
+          "polish": "polskie oznaczenie wersji ćwiczenia"
+        },
+        {
+          "term": "II",
+          "polish": "numer wariantu: drugi"
+        }
+      ]
+    },
+    "renraku-1-9-kyu": {
+      "translation": "Połączenie technik — kombinacja 1 (9 kyu).",
+      "sections": [
+        {
+          "title": "Zakres kombinacji",
+          "body": "Ten wpis dotyczy oznaczenia 1 (9 kyu) w programie atlasu. Numery identyfikują kombinacje, a nie liczbę ciosów. Renraku oznacza ich połączenie w ciąg."
+        },
+        {
+          "title": "Budowanie ciągłości",
+          "body": "Najpierw ustal dokładny zestaw z instruktorem. Wykonaj oddzielnie każdy składnik, a następnie połącz jego zakończenie z przygotowaniem kolejnego ruchu, bez zbędnego resetowania postawy."
+        },
+        {
+          "title": "Punkt kontroli",
+          "body": "Sprawdzaj pozycję po każdej technice oraz możliwość płynnego rozpoczęcia następnej. Program nie zawiera pełnej rozpiski tych kombinacji, więc sam numer nie pozwala jej odtworzyć."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Renraku",
+          "polish": "połączenie, łączność; w karate kombinacja technik"
+        },
+        {
+          "term": "1",
+          "polish": "numer kombinacji w programie: 1"
+        },
+        {
+          "term": "9",
+          "polish": "numer stopnia uczniowskiego: 9 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    },
+    "renraku-2-8-kyu": {
+      "translation": "Połączenie technik — kombinacja 2 (8 kyu).",
+      "sections": [
+        {
+          "title": "Zakres kombinacji",
+          "body": "Ten wpis dotyczy oznaczenia 2 (8 kyu) w programie atlasu. Numery identyfikują kombinacje, a nie liczbę ciosów. Renraku oznacza ich połączenie w ciąg."
+        },
+        {
+          "title": "Budowanie ciągłości",
+          "body": "Najpierw ustal dokładny zestaw z instruktorem. Wykonaj oddzielnie każdy składnik, a następnie połącz jego zakończenie z przygotowaniem kolejnego ruchu, bez zbędnego resetowania postawy."
+        },
+        {
+          "title": "Punkt kontroli",
+          "body": "Sprawdzaj pozycję po każdej technice oraz możliwość płynnego rozpoczęcia następnej. Program nie zawiera pełnej rozpiski tych kombinacji, więc sam numer nie pozwala jej odtworzyć."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Renraku",
+          "polish": "połączenie, łączność; w karate kombinacja technik"
+        },
+        {
+          "term": "2",
+          "polish": "numer kombinacji w programie: 2"
+        },
+        {
+          "term": "8",
+          "polish": "numer stopnia uczniowskiego: 8 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    },
+    "renraku-3-5-kyu": {
+      "translation": "Połączenie technik — kombinacja 3 (5 kyu).",
+      "sections": [
+        {
+          "title": "Zakres kombinacji",
+          "body": "Ten wpis dotyczy oznaczenia 3 (5 kyu) w programie atlasu. Numery identyfikują kombinacje, a nie liczbę ciosów. Renraku oznacza ich połączenie w ciąg."
+        },
+        {
+          "title": "Budowanie ciągłości",
+          "body": "Najpierw ustal dokładny zestaw z instruktorem. Wykonaj oddzielnie każdy składnik, a następnie połącz jego zakończenie z przygotowaniem kolejnego ruchu, bez zbędnego resetowania postawy."
+        },
+        {
+          "title": "Punkt kontroli",
+          "body": "Sprawdzaj pozycję po każdej technice oraz możliwość płynnego rozpoczęcia następnej. Program nie zawiera pełnej rozpiski tych kombinacji, więc sam numer nie pozwala jej odtworzyć."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Renraku",
+          "polish": "połączenie, łączność; w karate kombinacja technik"
+        },
+        {
+          "term": "3",
+          "polish": "numer kombinacji w programie: 3"
+        },
+        {
+          "term": "5",
+          "polish": "numer stopnia uczniowskiego: 5 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    },
+    "renraku-4-2-kyu": {
+      "translation": "Połączenie technik — kombinacja 4 (2 kyu).",
+      "sections": [
+        {
+          "title": "Zakres kombinacji",
+          "body": "Ten wpis dotyczy oznaczenia 4 (2 kyu) w programie atlasu. Numery identyfikują kombinacje, a nie liczbę ciosów. Renraku oznacza ich połączenie w ciąg."
+        },
+        {
+          "title": "Budowanie ciągłości",
+          "body": "Najpierw ustal dokładny zestaw z instruktorem. Wykonaj oddzielnie każdy składnik, a następnie połącz jego zakończenie z przygotowaniem kolejnego ruchu, bez zbędnego resetowania postawy."
+        },
+        {
+          "title": "Punkt kontroli",
+          "body": "Sprawdzaj pozycję po każdej technice oraz możliwość płynnego rozpoczęcia następnej. Program nie zawiera pełnej rozpiski tych kombinacji, więc sam numer nie pozwala jej odtworzyć."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Renraku",
+          "polish": "połączenie, łączność; w karate kombinacja technik"
+        },
+        {
+          "term": "4",
+          "polish": "numer kombinacji w programie: 4"
+        },
+        {
+          "term": "2",
+          "polish": "numer stopnia uczniowskiego: 2 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    },
+    "renraku-5-i-6-1-kyu": {
+      "translation": "Połączenie technik — kombinacja 5 i 6 (1 kyu).",
+      "sections": [
+        {
+          "title": "Zakres kombinacji",
+          "body": "Ten wpis dotyczy oznaczenia 5 i 6 (1 kyu) w programie atlasu. Numery identyfikują kombinacje, a nie liczbę ciosów. Renraku oznacza ich połączenie w ciąg."
+        },
+        {
+          "title": "Budowanie ciągłości",
+          "body": "Najpierw ustal dokładny zestaw z instruktorem. Wykonaj oddzielnie każdy składnik, a następnie połącz jego zakończenie z przygotowaniem kolejnego ruchu, bez zbędnego resetowania postawy."
+        },
+        {
+          "title": "Punkt kontroli",
+          "body": "Sprawdzaj pozycję po każdej technice oraz możliwość płynnego rozpoczęcia następnej. Program nie zawiera pełnej rozpiski tych kombinacji, więc sam numer nie pozwala jej odtworzyć."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Renraku",
+          "polish": "połączenie, łączność; w karate kombinacja technik"
+        },
+        {
+          "term": "5",
+          "polish": "numer kombinacji w programie: 5"
+        },
+        {
+          "term": "i",
+          "polish": "polski spójnik łączący numery kombinacji"
+        },
+        {
+          "term": "6",
+          "polish": "numer kombinacji w programie: 6"
+        },
+        {
+          "term": "1",
+          "polish": "numer stopnia uczniowskiego: 1 kyu"
+        },
+        {
+          "term": "kyu",
+          "polish": "stopień uczniowski"
+        }
+      ]
+    }
+  },
+  "stances": {
+    "fudo": {
+      "translation": "Niewzruszona pozycja.",
+      "nameParts": [
+        {
+          "term": "fudo",
+          "polish": "nieruchomy, niewzruszony; fu — nie, dō — ruch"
+        },
+        {
+          "term": "dachi",
+          "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Stabilna baza do rozpoczęcia ćwiczenia i zachowania gotowości."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Rozstaw stopy i rozłóż ciężar równomiernie. Zachowaj miękkie kolana i wyprostowaną sylwetkę bez usztywniania barków."
+        }
+      ]
+    },
+    "musubi": {
+      "translation": "Pozycja połączonych stóp.",
+      "nameParts": [
+        {
+          "term": "musubi",
+          "polish": "związanie, połączenie"
+        },
+        {
+          "term": "dachi",
+          "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Postawa formalna, używana przy ukłonie."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Połącz pięty, kierując palce na zewnątrz w kształt litery V. Utrzymuj równowagę podczas ukłonu (rei)."
+        }
+      ]
+    },
+    "heiko": {
+      "translation": "Pozycja równoległa.",
+      "nameParts": [
+        {
+          "term": "heikō",
+          "polish": "równoległy"
+        },
+        {
+          "term": "dachi",
+          "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Nazwa opisuje wzajemne ustawienie stóp."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Ustaw stopy równolegle i pozostaw odstęp odpowiadający zadanej postawie. Nie myl równoległości z koniecznością złączenia stóp."
+        }
+      ]
+    },
+    "zenkutsu-dachi": {
+      "translation": "Pozycja z ugięciem z przodu.",
+      "nameParts": [
+        {
+          "term": "zenkutsu",
+          "polish": "ugięcie z przodu; zen — przód, kutsu — zgięcie"
+        },
+        {
+          "term": "dachi",
+          "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Wydłużona baza z wyraźną pracą nogi wykrocznej."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Ugnij przednie kolano zgodnie z kierunkiem palców. Zachowaj boczny odstęp stóp i kontrolę tylnej nogi, zamiast stawać na jednej linii."
+        }
+      ]
+    },
+    "kokutsu": {
+      "translation": "Pozycja z ugięciem z tyłu.",
+      "nameParts": [
+        {
+          "term": "kokutsu",
+          "polish": "ugięcie z tyłu; ko — tył, kutsu — zgięcie"
+        },
+        {
+          "term": "dachi",
+          "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Postawa z większym obciążeniem nogi tylnej, pozwalająca pracować obroną i zmianą dystansu."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Ustaw ciężar nad tylną nogą i skontroluj kontakt przedniej stopy z podłożem według wersji Kyokushin pokazanej w dojo. Nie odchylaj tułowia jako zamiennika przeniesienia ciężaru."
+        }
+      ]
+    },
+    "sanchin-dachi": {
+      "translation": "Pozycja trzech walk.",
+      "nameParts": [
+        {
+          "term": "sanchin",
+          "polish": "trzy walki; san — trzy, chin — walka (odczyt okinawski)"
+        },
+        {
+          "term": "dachi",
+          "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Zwarta baza do koordynacji ustawienia ciała, oddechu i napięcia."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Ustaw stopy i kolana zgodnie z pokazem, utrzymując stabilną miednicę. Nie wymuszaj skrętu kolan do środka; kontrola powinna wynikać z całej pozycji."
+        }
+      ]
+    },
+    "kiba": {
+      "translation": "Pozycja jeźdźca.",
+      "nameParts": [
+        {
+          "term": "kiba",
+          "polish": "jazda konna; ki — jeździć, ba — koń"
+        },
+        {
+          "term": "dachi",
+          "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Szeroka postawa rozwijająca stabilność boczną."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Ustaw stopy równolegle i ugnij kolana nad ich kierunkiem. Zachowaj pionowy tułów; głębokość dobierz tak, by nie zapadały się kolana."
+        }
+      ]
+    },
+    "neko-ashi": {
+      "translation": "Pozycja kociej stopy.",
+      "nameParts": [
+        {
+          "term": "neko",
+          "polish": "kot"
+        },
+        {
+          "term": "ashi",
+          "polish": "noga, stopa"
+        },
+        {
+          "term": "dachi",
+          "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Odciążona noga przednia pozwala szybko rozpocząć ruch."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Przenieś większość ciężaru na nogę tylną, a przód podeszwy nogi przedniej oprzyj lekko na podłożu. Sprawdź, czy możesz ją unieść bez wcześniejszego przechylenia."
+        }
+      ]
+    },
+    "kake": {
+      "translation": "Pozycja zahaczona, skrzyżowana.",
+      "nameParts": [
+        {
+          "term": "kake",
+          "polish": "zahaczenie, ruch hakowy"
+        },
+        {
+          "term": "dachi",
+          "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Ustawienie spotykane w przejściach i obrotach."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Ustaw nogi w skrzyżowaniu zgodnie z pokazem, zachowując stabilny punkt podparcia. Kontroluj skręt stawów podczas wychodzenia z pozycji."
+        }
+      ]
+    },
+    "seiza": {
+      "translation": "Prawidłowy siad.",
+      "nameParts": [
+        {
+          "term": "seiza",
+          "polish": "prawidłowy siad; sei — prawidłowy, za — siedzenie"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Formalny siad na piętach używany podczas rozpoczęcia i zakończenia zajęć."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Uklęknij i oprzyj grzbiety stóp na podłożu, siadając na piętach w zakresie dostępnym bez bólu. Wyprostuj tułów i połóż dłonie na udach."
+        }
+      ]
+    },
+    "yoi": {
+      "translation": "Pozycja gotowości.",
+      "nameParts": [
+        {
+          "term": "yoi",
+          "polish": "gotowość, przygotowanie"
+        },
+        {
+          "term": "dachi",
+          "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Przygotowanie do rozpoczęcia ćwiczenia i powrót do uważnej postawy."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Ustaw stopy, ręce i wzrok zgodnie z komendą instruktora. Yoi nazywa gotowość; dokładny rozstaw i układ rąk wynikają z kontekstu."
+        }
+      ]
+    },
+    "tsuru-ashi": {
+      "translation": "Pozycja nogi żurawia.",
+      "nameParts": [
+        {
+          "term": "tsuru",
+          "polish": "żuraw"
+        },
+        {
+          "term": "ashi",
+          "polish": "noga, stopa"
+        },
+        {
+          "term": "dachi",
+          "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Równowaga na jednej nodze z drugą uniesioną."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Utrzymuj stabilną nogę podporową i unieś drugą do wskazanego ułożenia. Nie dociskaj stopy do boku kolana podporowego."
+        }
+      ]
+    },
+    "moro-ashi": {
+      "translation": "Pozycja obu nóg.",
+      "nameParts": [
+        {
+          "term": "moro",
+          "polish": "oba, obie"
+        },
+        {
+          "term": "ashi",
+          "polish": "noga, stopa"
+        },
+        {
+          "term": "dachi",
+          "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Zwarta postawa z jedną stopą wysuniętą względem drugiej."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Zachowaj boczny odstęp i krótkie przesunięcie stóp przód–tył. Kontroluj równowagę przy rozpoczęciu ruchu w obu kierunkach."
+        }
+      ]
+    },
+    "heisoku": {
+      "translation": "Pozycja złączonych stóp.",
+      "nameParts": [
+        {
+          "term": "heisoku",
+          "polish": "stopy złączone; hei — zamknięcie, soku — stopa"
+        },
+        {
+          "term": "dachi",
+          "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Wąska formalna baza, obecna w początkach i zakończeniach form."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Złącz pięty i palce, utrzymując stopy równolegle. Odróżnij ją od musubi-dachi, w której palce rozchodzą się na zewnątrz."
+        }
+      ]
+    },
+    "uchi-hachiji": {
+      "translation": "Pozycja z układem znaku osiem skierowanym do wewnątrz.",
+      "nameParts": [
+        {
+          "term": "uchi",
+          "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+        },
+        {
+          "term": "hachiji",
+          "polish": "kształt znaku osiem (八); hachi — osiem, ji — znak"
+        },
+        {
+          "term": "dachi",
+          "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Charakter postawy",
+          "body": "Nazwa odnosi się do kształtu ustawienia stóp."
+        },
+        {
+          "title": "Ustawienie i kontrola",
+          "body": "Rozstaw stopy, a palce skieruj lekko do środka. Utrzymuj kolana w kontrolowanym ustawieniu bez wymuszania skrętu stawów."
+        }
+      ]
+    }
+  }
+}

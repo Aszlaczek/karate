@@ -1,10 +1,11 @@
-import { getRelatedTechniques } from "@/data";
+import { getRelatedTechniques, getStanceDetail, STANCE_CATEGORY_ID } from "@/data";
 import type { GlossaryCategory, GlossaryEntry } from "@/data/types";
 import { resolveMediaSrc } from "@/features/technique/components/TechniqueIllustration";
 import Icon from "@/components/ui/Icon";
 import TechniqueLink from "@/features/technique/components/TechniqueLink";
 import ZoneIllustration, { zoneForEntry } from "@/features/glossary/components/ZoneIllustration";
 import { useModalBase } from "@/hooks/useModalBase";
+import TechniqueDetailContent from "@/features/technique/components/TechniqueDetailContent";
 
 interface GlossaryEntryModalProps {
   entry: GlossaryEntry;
@@ -16,6 +17,7 @@ const GlossaryEntryModal = ({ entry, category, onClose }: GlossaryEntryModalProp
   const related = getRelatedTechniques(entry);
   const zone = zoneForEntry(entry.id);
   const { onBackdropMouseDown } = useModalBase(onClose);
+  const detail = category.id === STANCE_CATEGORY_ID ? getStanceDetail(entry.id) : undefined;
 
   return (
     <div
@@ -25,7 +27,7 @@ const GlossaryEntryModal = ({ entry, category, onClose }: GlossaryEntryModalProp
       aria-label={`Hasło słownika ${entry.term}`}
       onMouseDown={onBackdropMouseDown}
     >
-      <div className="tech-modal-panel glossary-modal-panel">
+      <div className={`tech-modal-panel glossary-modal-panel${detail ? " technique-detail-panel" : ""}`}>
         <button className="modal-close" aria-label="Zamknij hasło" onClick={onClose}><Icon name="close" /></button>
         <div className="visualization-stage glossary-visual">
           <div className="visualization-topline">
@@ -48,7 +50,7 @@ const GlossaryEntryModal = ({ entry, category, onClose }: GlossaryEntryModalProp
           <p className="modal-eyebrow">Słownik / {category.name}</p>
           <h2>{entry.term}</h2>
           <p className="modal-reading">Wymowa: <strong>{entry.reading}</strong></p>
-          <p className="modal-description">{entry.description}</p>
+          {detail ? <TechniqueDetailContent detail={detail} /> : <p className="modal-description">{entry.description}</p>}
 
           {related.length > 0 && (
             <div className="glossary-related">

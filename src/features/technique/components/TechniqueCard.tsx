@@ -16,13 +16,13 @@ export default function TechniqueCard({ technique, index }: TechniqueCardProps) 
       <button
         className="tech-image"
         type="button"
-        aria-label={`Otwórz wizualizację techniki ${technique.name}`}
+        aria-label={`Otwórz szczegóły techniki ${technique.name}`}
       >
         <TechniqueIllustration technique={technique} controls={false} />
         <span>{technique.category}</span>
         <small>{String(index + 1).padStart(2, "0")}</small>
         <b>
-          Zobacz ruch <Icon name="arrow" size={16} />
+          Poznaj technikę <Icon name="arrow" size={16} />
         </b>
       </button>
       <div className="tech-body">
