@@ -7,9 +7,70 @@
 
 ---
 
-## Status projektu (stan: 2026-10-08)
+### 2026-11-23 — P1.3: testy + wzmocnienie CI/CD
 
-**Faza: atlas treści kompletny (132 techniki) + jedno źródło prawdy dla
+- **Testy:** Vitest 5 + Testing Library + jsdom. `vitest.config.ts` (alias `@`,
+  `setupFiles`, `clearMocks`/`restoreMocks`), `src/test/setup.ts`
+  (`@testing-library/jest-dom/vitest`, czyszczenie DOM, mock `window.scrollTo`).
+  6 plików / 11 testów: filtrowanie atlasu, trasa `/kyu/9`, modal + `Esc`,
+  kategorie słownika (dłonie/stopy), galeria `MediaGallery` i akcesory mediów.
+- **Placeholdery:** komunikat „Wideo — przykład do zastąpienia nagraniem z dojo”
+  przestał być widocznym podpisem — przeniesiony do `alt`/`aria-label` w
+  `media.json`. Nowe pole opcjonalne `MediaItem.caption` jest jedynym
+  widocznym podpisem; typografia nazw japońskich/polskich bez zmian.
+- **Skrypty:** `npm test`, `npm run test:watch`, `npm run check`
+  (`audit → test → build`).
+- **CI:** `.github/workflows/deploy.yml` → „CI + Deploy to GitHub Pages”.
+  Wyzwalacze: push do `main`/`master`, `pull_request`, `workflow_dispatch`.
+  Kolejność w `build`: `npm ci`, `npm run audit`, `npm test`, `npm run build`
+  (`VITE_BASE=/<repo>/`), `404.html`, smoke-check `dist/{index.html,404.html,videos,images}`,
+  upload `RAPORT.md` (`if: always()`) i artefaktu Pages. `timeout-minutes`
+  na oba joby. `deploy` wymaga `needs: build` i nie działa dla PR-ów.
+- **Weryfikacja:** `npm ci`, `npm run check` (0 krytycznych / 0 ostrzeżeń,
+  11 testów, build ✅).
+- **Dokumentacja:** `README.md` (badge CI, polecenia, opis bramki i publikacji),
+  `agents/WEB_PERSONAL.md` (komendy i zasady CI).
+
+---
+
+### 2026-11-23 — P1.15: galerie filmów i zdjęć + ustawienia dłoni/stóp w słowniku
+
+- **Cel:** zamiast jednego pola `video` — 2–4 wybieralne materiały (filmy
+  i/lub zdjęcia) dla techniki, postawy i hasła słownika; pliki w osobnych,
+  przewidywalnych folderach; UI czyta je bezpośrednio z tych folderów.
+- **Dane:** nowy `src/data/media.json` (sekcje `techniques`, `glossary`),
+  typy `MediaItem`/`MediaKind`/`MediaManifest`, akcesory
+  `getTechniqueMedia()` / `getGlossaryMedia()`. Generator
+  `npm run media:manifest` skanuje foldery i zachowuje ręczne opisy.
+- **Struktura:** `public/videos/techniques/<id>/…`,
+  `public/videos/stances/<reading>-*.mp4`,
+  `public/videos/glossary/<reading>-*.mp4` (analogicznie `public/images/…`).
+  Postery (`*-demo.jpg`) mają ten sam stem co film i nie są osobnymi wpisami.
+- **UI:** `MediaFrame` (YouTube/mp4/img) + `MediaGallery` z filtrem
+  „Wszystkie / Filmy / Zdjęcia”, licznikiem, badge'ami „▶ Film” / „▣ Zdjęcie”, miniaturkami
+  z posterów i strzałkami ←/→. Podpięte w `TechniqueModal` i
+  `GlossaryEntryModal`; `TechniqueCard`/`GlossaryCard` pokazują statyczną
+  miniaturę pierwszego medium. Style w `media-gallery.css`.
+- **Słownik:** 8 kategorii / 68 haseł. Nowe `ustawienia-dloni` (seiken, shuto
+  przeniesione z `czesci-ciala` + 8 nowych) i `ustawienia-stopy` (kakato,
+  chusoku przeniesione + 4 nowe). Kategoria `pozycje` ma teraz nazwę
+  „Postawy (dachi)” — `id` bez zmian, więc deep-linki i `STANCE_CATEGORY_ID`
+  działają. Nowe kategorie są klikalne (`isStatic` w `GlossaryGrid` bez zmian).
+- **Audyt:** `scripts/audit-danych.mjs` sprawdza id, 2–4 elementy, unikalność
+  `src`, rozszerzenia, folder, istnienie pliku w `public/`, poster wideo.
+  Przy okazji uzupełniono `levels[]` dla `saiha` (`[1, 11]`) i `gekisai-sho`
+  (`[2, 12]`) — zniknęły ostatnie błędy P0.3.
+- **Weryfikacja:** `npm run media:manifest`, `npm run audit` (0/0),
+  `npm run build` ✅; pliki mediów obecne w `dist/`.
+- **Ważne:** pliki `*-demo.mp4` (CC0, materiał testowy) oraz grafiki GenAI
+  to placeholdery techniczne z opisem „przykład do zastąpienia” — nie treść
+  dydaktyczna. P1.13 (autorskie zdjęcia/filmy) pozostaje otwarte.
+
+---
+
+## Status projektu (stan: 2026-11-23)
+
+**Faza: atlas treści kompletny (118 technik) + jedno źródło prawdy dla
 odnośników.** Strona buduje się bez błędów (`npm run build` → `tsc -b && vite
 build`), ma 5 tras (w tym 16 endpointów stopni `/kyu/…`: start, 10–1 kyu,
 1–5 dan), dane w `src/data/*.json` (techniki w 7 filtrach kategorii,
@@ -19,10 +80,10 @@ w polu `fights` jako badge w informacjach głównych, wizualizacja technik =
 zdjęcia GenAI (mapa `features/technique/data/genaiImages.json`, 96/132;
 reszta → placeholder z kanji; karta grayscale, modal pełny kolor) + gotowość
 na wideo z pola `video`). Odtwarzalny audyt danych:
-`npm run audit` → `RAPORT.md` (0 ostrzeżeń; **2 znane błędy krytyczne
-P0.3** — `gekisai-sho`/`saiha` bez stopnia kyu w `levels[]` po zewnętrznej
-edycji `techniques.json` 2026-10-08 21:08, decyzja użytkownika: nie ruszać
-danych). Nawigacja: sticky header
+`npm run audit` → `RAPORT.md` (0 krytycznych, 0 ostrzeżeń; dwa historyczne
+błędy P0.3 — `gekisai-sho`/`saiha` — naprawione 2026-11-23 w ramach P1.15).
+Galerie 2–4 mediów (techniki, postawy, ustawienia dłoni/stóp) opisane w
+`WEB_PERSONAL.md` i `README.md`. Nawigacja: sticky header
 działa też po scrollu (`overflow-x: clip` na `.app-shell`), pasek prev /
 wszystkie / next jest w panelu wymagań, nie pod technikami; burger w prawym
 górnym rogu (≤980px). **Architektura frontendu przebudowana (2026-10-08):**

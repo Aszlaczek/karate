@@ -28,7 +28,8 @@ każdego stopnia (kyu), atlasem technik i słownikiem.
 | Style | Tailwind v4 przez `@tailwindcss/vite` + autorskie klasy CSS per feature (`src/styles/` + `src/features/*/styles/`) |
 | Stan | **Zustand 5** (`src/store/*`, bez `persist`) — modale i menu mobilne |
 | Alias | `@/*` → `src/*` (w `tsconfig.app.json` i `vite.config.ts`) |
-| Deploy | GitHub Pages via `.github/workflows/deploy.yml` (push → `main`/`master`) |
+| Deploy | GitHub Pages via `.github/workflows/deploy.yml` (push → `main`/`master`, PR tylko weryfikacja) |
+| Testy | Vitest + Testing Library (`jsdom`), konfiguracja w `vitest.config.ts`, setup w `src/test/setup.ts` |
 
 ```bash
 npm install        # instalacja zależności
@@ -36,10 +37,13 @@ npm run dev        # dev server (Vite)
 npm run build      # tsc -b && vite build -> dist/   ← WERYFIKACJA OBOWIĄZKOWA
 npm run preview    # podgląd builda z dist/ (SPA fallback działa dla tras)
 npm run audit      # audyt danych -> RAPORT.md (read-only, exit 1 przy problemach)
+npm test           # testy Vitest jednorazowo (tryb CI)
+npm run test:watch # testy w trybie obserwowania zmian
+npm run check      # audit -> test -> build (bramka lokalna, jak w CI)
 ```
 
-**Po każdej edycji kodu uruchom `npm run build`.** Build musi przechodzić bez
-błędów TypeScript. Repo nie ma jeszcze lintera ani testów (patrz `TODO.md`).
+**Po każdej edycji kodu uruchom `npm run check`.** Build musi przechodzić bez
+błędów TypeScript, testy i audyt tak samo. Linter pozostaje w `P1.4` (`TODO.md`).
 
 ### Base URL i deploy (GitHub Pages)
 
@@ -50,13 +54,24 @@ błędów TypeScript. Repo nie ma jeszcze lintera ani testów (patrz `TODO.md`).
 - `BrowserRouter basename={import.meta.env.BASE_URL}` w `src/App.tsx`.
 - **NIE wracaj do `base: "./"`** — przy history API i głębokich trasach
   ścieżki assetów by się rozjechały.
+- CI w jobie `build` wykonuje kolejno: `npm ci` → `npm run audit` → `npm test`
+  → `npm run build` → `404.html` → smoke-check `dist/` → upload artefaktu.
+  `RAPORT.md` jest wysyłany jako artifact także przy nieudanym audycie.
+  Kroki Pages-specific (`configure-pages`, `upload-pages-artifact`) są pomijane
+  dla PR-ów (także z forków) — PR sprawdza tylko audyt, testy, build i `dist/`.
+- Job `deploy` ma `needs: build` i `if: github.event_name != 'pull_request'` —
+  PR-y są tylko sprawdzane, publikacja następuje po pushu/dispatchu.
+- Rozszerzanie testów: `src/**/__tests__/*.test.tsx`, alias `@` działa w
+  `vitest.config.ts`; `src/test/setup.ts` czyści DOM i mockuje `window.scrollTo`.
 
 ## 3. Struktura repozytorium
 
 ```
 index.html                # punkt wejścia Vite, meta SEO (lang="pl"), favicon
 vite.config.ts            # base przez env VITE_BASE + alias `@` → `src/`
+vitest.config.ts          # Vitest: jsdom, alias `@`, setupFiles, mocki
 src/
+  test/setup.ts           # jest-dom, cleanup DOM, mock window.scrollTo
   main.tsx                # mount <App/> + import stylów `./styles/index.css`
   App.tsx                 # BrowserRouter + layout (.app-shell: Header/main/Footer)
                           # + <ModalHost /> (poza app-shell)
@@ -85,9 +100,11 @@ src/
                           # (render belki: `belt-stripes` flex, `getStripeCount`);
                           # RequirementsPanel używa `GlossaryLink` dla typ `glossary`
     technique/            # TechniquesSection, TechniqueModal, TechniqueLink,
-                          # TechniqueIllustration, TechniqueCard, TechniquesToolbar,
-                          # AllTechniques + data/genaiImages.json (mapa zdjęć GenAI)
-                          # + styles/technique.css, technique-modal.css
+                          # TechniqueIllustration (legacy `video` + fallback GenAI),
+                          # MediaFrame, MediaGallery, media.ts (resolveMediaSrc,
+                          # youtubeId, miniatury), TechniqueCard, TechniquesToolbar,
+                          # AllTechniques + data/genaiImages.json (fallback)
+                          # + styles/technique.css, technique-modal.css, media-gallery.css
     glossary/             # GlossaryEntryModal, ZoneIllustration, GlossaryCard,
                           # GlossaryGrid, GlossaryToolbar, GlossaryLink
                           # + styles/glossary.css
@@ -97,21 +114,33 @@ src/
   data/                   # ★ JEDNO ŹRÓDŁO PRAWDY (JSON + typy + dostępnicy)
     levels.json           # 16 stopni: start, 10…1 kyu, 1–5 dan — wymagania
                           # strukturalne (referencje: technique | glossary | text + fights)
-    techniques.json       # 118 technik: nazwa, opis, aliasy, wideo, stopnie (bez kategorii Pozycje)
+    techniques.json       # 118 technik: nazwa, opis, aliasy, legacy `video`, stopnie (bez kategorii Pozycje)
     techniqueDetails.json # szczegóły 118 technik + 15 postaw: znaczenia, człony nazw, sekcje, uwagi
+    media.json            # ★ galerie 2–4 mediów: sekcje `techniques` i `glossary` (również postawy)
     learning.json         # 4 poradniki, 6 wydarzeń, 6 ciekawostek, źródła i konfiguracja kontaktu
     learning.ts           # typowane eksporty treści nowych stron (poza głównym index.ts)
-    glossary.json         # 56 haseł / 6 kategorii; 15 postaw w "pozycje", nowe: etykieta, komendy, strój
+    glossary.json         # 68 haseł / 8 kategorii: strefy, części ciała, pozycje (15 postaw),
+                          # ustawienia-dloni (10), ustawienia-stopy (6), etykieta, komendy, strój
     dojoKun.json          # 7 zasad dojo
-    types.ts              # Level, RequirementItem (technique|glossary|text), Technique, GlossaryEntry (levels?), DojoKunEntry
-    index.ts              # eksporty + getLevel(), filterTechniques(), filterAtlas(), filterStances(), getStanceEntries()… itd.
+    types.ts              # Level, RequirementItem, Technique, GlossaryEntry, MediaItem/MediaKind/MediaManifest
+    index.ts              # eksporty + getLevel(), filterTechniques(), filterAtlas(), filterStances(),
+                          # getStanceEntries(), getTechniqueMedia(), getGlossaryMedia() …
   pages/                  # cienkie wrappery tras: HomePage, LevelPage,
                           # TechniquesPage, GlossaryPage, NotFoundPage;
                           # GuidesPage, TriviaPage, FeedbackPage ładowane przez lazy
 old_src/                  # ARCHIWUM starego źródła — NIE EDYTOWAĆ
 public/favicon.svg
-public/videos/test.gif     # przykładowy plik do pola `video` w technice
-scripts/audit-danych.mjs   # audyt read-only danych (npm run audit)
+public/videos/
+  techniques/<id>/...      # filmy techniki, po jednym folderze na canonical id
+  stances/<stance>-*.mp4   # filmy postaw (płasko, wg przykładu fudo-dachi.mp4)
+  glossary/<id>-*.mp4      # filmy haseł dłoni/stóp
+public/images/
+  techniques/<id>/...      # zdjęcia techniki + postery do jej filmów
+  stances/<stance>-*.jpg   # zdjęcia postaw + postery
+  glossary/<id>-*.jpg      # zdjęcia dłoni/stóp + postery
+  GenAI/, glossary/stances/# stare fallbacki, NIE migruj automatycznie
+scripts/audit-danych.mjs   # audyt danych + istnienia plików galerii (npm run audit)
+scripts/generate-media.mjs # skaner folderów → media.json (npm run media:manifest)
 RAPORT.md                  # wynik audytu — generowany, NIE edytować ręcznie
 dist/                     # wynik builda (+ 404.html w CI)
 .github/workflows/deploy.yml
@@ -191,16 +220,21 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   **`infographic`** (pole zostaje w JSON-ach jako metadane, ale **kod je
   ignoruje** — mapa `DRAWINGS` nie istnieje), `image`, **`video`**
   (`null` → tymczasowe zdjęcie GenAI z mapy `genaiImages.json`, a gdy go
-  brak — placeholder z kanji; nie-null → odtwarzacz/embed zamiast zdjęcia:
-  YouTube URL, `*.mp4`, `*.gif`/`*.jpg`…). Kategoria "Pozycje" usunięta
-  (postawy żyją w `glossary.json`).
+  brak — galeria z `media.json`, potem placeholder z kanji; nie-null →
+  `MediaFrame` renderuje YouTube/`*.mp4`/`*.gif`/`*.jpg`). Kategoria
+  "Pozycje" usunięta z atlasu technik (postawy żyją w `glossary.json`).
 - **`glossary.json`** — `categories[]` → `entries[]`:
   `id` (stabilny slug → deep-link `#haslo-<id>`), `term` PL, `japanese`,
   `reading`, `description`, **`image`** (`null` = placeholder z kanji;
   docelowo `"/images/glossary/<id>.jpg"` — plik w `public/images/glossary/`),
   **`related`** (tablica `id` technik → chipy w modalu hasła).
-  **`levels[]`** (opcjonalne, dla postaw w kategorii "Ustawienia stóp" —
-  które stopnie je egzaminują; zakres 0–15, pilnuje audyt P0.3).
+  **`levels[]`** (opcjonalne, dla postaw w kategorii `pozycje` — które stopnie
+  je egzaminują; zakres 0–15, pilnuje audyt P0.3). Nazwa wyświetlana tej
+  kategorii to "Postawy (dachi)", ale jej `id` pozostaje `pozycje`
+  (deep-linki i `STANCE_CATEGORY_ID` bez zmian). Nowe kategorie:
+  `ustawienia-dloni` (10 haseł: seiken, shuto, nukite, hiraken, tettsui,
+  uraken, koken, haishu, shotei, haito) i `ustawienia-stopy`
+  (6 haseł: kakato, chusoku, haisoku, teisoku, sokuto, heisoku-ashi).
   `image: null` w hasłach `jodan` / `chudan` / `gedan-strefa` zamiast
   placeholdera renderuje diagram stref (`ZoneIllustration.tsx`).
   Ścieżki lokalne zapisuj z **dokładnym case'em** pliku na dysku
@@ -236,6 +270,36 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   bazują na `reading`, bo `term` może być polski. Nie generuj opisów w TSX.
   Źródła, ograniczenia etymologii i dalsza redakcja: `agents/TECHNIQUE_DETAILS.md`.
 
+### Galerie mediów (2026-11-23)
+
+- `src/data/media.json` ma dwie sekcje: `techniques` (klucz = id techniki)
+  i `glossary` (klucz = id hasła słownika, **również postawy**). Każdy wpis
+  to 2–4 obiekty `MediaItem { type: "video"|"image", src, label, poster?, caption?, alt? }`.
+  `type` jest obowiązkowy — UI filtruje po nim („Wszystkie / Filmy / Zdjęcia”),
+  oznacza każdą miniaturę jako „▶ Film” / „▣ Zdjęcie” i audyt go waliduje.
+  `label` to nazwa miniaturki, `alt` opis dla czytnika ekranu (`aria-label`
+  wideo), a `caption` — jedyny opcjonalny, widoczny podpis pod odtwarzaczem.
+  Informacji o placeholderze nie wpisuj do `label`/`caption`, tylko do `alt`.
+- Dostępnicy: `getTechniqueMedia(id)` / `getGlossaryMedia(id)` w `@/data`.
+  `MediaGallery` jest używany w `TechniqueModal` i `GlossaryEntryModal`;
+  karty (`TechniqueCard`, `GlossaryCard`) biorą tylko pierwszy obraz/poster
+  przez `getMediaThumbnail()` i nie montują odtwarzaczy.
+- `MediaFrame` to jedyny renderer jednego medium (YouTube, `<video>`, `<img>`);
+  `TechniqueIllustration` obsługuje już tylko legacy `video` i fallback GenAI.
+  `resolveMediaSrc()` przeniesiono do `media.ts` i re-eksportuje go
+  `TechniqueIllustration` (stare importy w słowniku działają).
+- Ścieżki: techniki `/videos/techniques/<id>/…` i `/images/techniques/<id>/…`;
+  postawy `/videos/stances/<reading>-*.mp4`, `/images/stances/…`;
+  pozostałe hasła `/videos/glossary/<reading>-*.mp4`, `/images/glossary/…`.
+  Pliki posterów mają ten sam stem co film i **nie są** osobnymi galeriami.
+- Dodawanie mediów: wrzuć pliki do folderu, uruchom `npm run media:manifest`
+  (`scripts/generate-media.mjs` skanuje foldery, dopasowuje hasła po `reading`,
+  zachowuje ręczne `label`/`alt`/`caption` i dobiera poster po stemie), a następnie
+  dopisz własne opisy w `media.json`. `npm run audit` sprawdza 2–4 elementy,
+  rozszerzenia, zgodność folderu, istnienie pliku i poster dla wideo.
+- Przykładowe pliki w repozytorium (`*-demo.mp4`, grafiki GenAI) to wyraźnie
+  oznaczone placeholdery techniczne — do zastąpienia nagraniami z dojo.
+
 - **Nowa technika:** dopis wpis w `techniques.json` (+ `aliases`, `levels`).
   Zdjęcie tymczasowe: plik w `public/images/GenAI/techniques/<folder>/<id>.png`
   (`<folder>` = `start` dla poziomu 0, `dan` dla ≥11, inaczej numer poziomu —
@@ -243,10 +307,8 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   `src/features/technique/data/genaiImages.json` (`id` → ścieżka od `/`,
   rozwiązywana przez `resolveTechniqueImage()`); audyt porównuje klucze mapy
   z atlasem (martwe klucze = ostrzeżenie). Brak wpisu = karta i modal
-  pokazują placeholder z kanji. Jeśli ma grać filmik/gif — uzupełnij pole
-  `video` (YouTube, `*.mp4`, `*.gif`; ścieżki od `/` są automatycznie
-  prefiksowane o `BASE_URL`), wtedy karta i modal renderują odtwarzacz
-  zamiast zdjęcia.
+  pokazują placeholder z kanji. Pole `video` jest legacy i zostaje jako
+  awaryjne jedno medium. Właściwe media dodawaj do galerii (patrz niżej).
 - **Nowy stopień / zmiana wymagań:** edytuj `levels.json` — karty pasów,
   panel wymagań, filtr stopni i nawigacja prev/next zaktualizują się same.
 - **Nowe hasło słownika:** dopis w `glossary.json` do właściwej kategorii —
@@ -255,8 +317,10 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   ciała** — statyczny `<article className="glossary-card static">`,
   bez modala); zdjęcie wystarczy uzupełnić pole
   `image` ścieżką do pliku w `public/images/glossary/`. Kolejność zawartości
-  wizualnej (karta i modal): `image` → dla stref `ZoneIllustration`
-  → placeholder z kanji.
+  wizualnej (karta i modal): galeria `media.json` → `image` → dla stref
+  `ZoneIllustration` → placeholder z kanji. Kategorie `ustawienia-dloni`
+  i `ustawienia-stopy` są klikalne (nie są na liście `isStatic` w
+  `GlossaryGrid.tsx`).
 - Wymagania **nie zawierają surowego tekstu technik** — każdy wpis to
   referencja `{type:"technique", id}` albo opis `{type:"text"}`. Renderuje
   je wspólny komponent **`features/technique/components/TechniqueLink.tsx`**

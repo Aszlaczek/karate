@@ -1,44 +1,25 @@
-import type { ReactElement } from "react";
-import type { Technique } from "@/data/types";
+import type { MediaItem, Technique } from "@/data/types";
 import genaiImagesJson from "@/features/technique/data/genaiImages.json";
+import MediaFrame from "./MediaFrame";
+import { isImageSrc, resolveMediaSrc } from "./media";
+
+// Zachowane dla importerów w słowniku (GlossaryCard, GlossaryEntryModal).
+export { resolveMediaSrc } from "./media";
 
 // Tymczasowe zdjęcia postaci (public/images/GenAI) — mapa id → ścieżka.
 // Generowana ręcznie; technika bez wpisu dostaje placeholder z kanji.
 const GENAI_IMAGES: Record<string, string> = genaiImagesJson as Record<string, string>;
 
-export const resolveMediaSrc = (value: string): string =>
-  value.startsWith("/")
-    ? `${import.meta.env.BASE_URL}${value.slice(1)}`
-    : value;
-
 export const resolveTechniqueImage = (technique: Technique): string | null =>
   GENAI_IMAGES[technique.id] ?? null;
 
-const renderMedia = (
-  video: string,
-  technique: Technique,
-  controls: boolean,
-): ReactElement => {
-  const youtube = video.match(
-    /(?:youtube(?:-nocookie)?\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{6,})/,
-  );
-  if (youtube) {
-    return (
-      <iframe
-        className="technique-media"
-        src={`https://www.youtube.com/embed/${youtube[1]}`}
-        title={`Wideo: ${technique.name}`}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
-    );
-  }
-  const src = resolveMediaSrc(video);
-  if (/\.(gif|webp|jpe?g|png)(\?|#|$)/i.test(video)) {
-    return <img className="technique-media" src={src} alt={technique.name} />;
-  }
-  return <video className="technique-media" src={src} controls={controls} />;
-};
+/** Legacy pole `video` traktujemy jak jednoelementową galerię. */
+const legacyMediaItem = (video: string, technique: Technique): MediaItem => ({
+  type: isImageSrc(video) ? "image" : "video",
+  src: video,
+  label: technique.name,
+  alt: technique.name,
+});
 
 interface TechniqueIllustrationProps {
   technique: Technique;
@@ -51,9 +32,11 @@ function TechniqueIllustration({
 }: TechniqueIllustrationProps) {
   if (technique.video) {
     return (
-      <div className="technique-media-frame">
-        {renderMedia(technique.video, technique, controls)}
-      </div>
+      <MediaFrame
+        item={legacyMediaItem(technique.video, technique)}
+        title={technique.name}
+        controls={controls}
+      />
     );
   }
 

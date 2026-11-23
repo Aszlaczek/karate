@@ -28,6 +28,18 @@
   wiadomości; źródła przy treściach, menu mobile ≤1180px. Build ✅;
   112 asercji w Chrome, 7 szerokości ekranu, brak nowych błędów audytu.
 
+- [x] 🟡 **P1.15 — Galerie 2–4 mediów dla technik, postaw i ustawień dłoni/stóp**
+  Dodano `src/data/media.json`, foldery `public/videos/{techniques,stances,glossary}`
+  i `public/images/{techniques,stances,glossary}`, wspólny `MediaGallery`
+  z filtrem „Wszystkie / Filmy / Zdjęcia” w modalach techniki i słownika,
+  miniatury w kartach oraz `npm run media:manifest` (generator z plików).
+  Słownik: nowe kategorie `ustawienia-dloni` (10) i `ustawienia-stopy` (6),
+  przeniesienie seiken/shuto/kakato/chusoku z `części ciała`, kategoria
+  `pozycje` przemianowana na „Postawy (dachi)” bez zmiany `id`.
+  Rezultat: 68 haseł / 8 kategorii, audyt 0 krytycznych / 0 ostrzeżeń,
+  build ✅. Przykładowe pliki `*-demo.mp4` i grafiki to placeholdery do
+  zastąpienia autorskimi nagraniami (P1.13 pozostaje otwarte).
+
 - [ ] 🟡 **P1.13 — Autorskie zdjęcia i filmy do poradników**
   Uzupełnić 4 poradniki o sprawdzone przez instruktora zdjęcia kolejnych
   kroków oraz krótkie filmy (zwłaszcza węzeł pasa i owijanie dłoni).
@@ -67,8 +79,8 @@
   członów i sekcje opisowe dopasowane do techniki, kata, kumite lub postawy.
   Rezultat: 118 technik + 15 postaw z kompletnymi danymi; 82 indywidualne
   opisy ruchu i kontroli, osobne treści kata/kumite/postaw, audyt pokrycia.
-  Build ✅; audyt szczegółów ✅, audyt całego programu nadal wykazuje
-  2 znane błędy P0.3 (`gekisai-sho`, `saiha`) bez nowych błędów.
+  Build ✅; audyt szczegółów ✅. Dwa znane błędy P0.3 (`gekisai-sho`, `saiha`)
+  zostały naprawione przy P1.15 (uzupełnienie `levels[]` o 2 i 1 kyu).
   Test przeglądarkowy: 133 widoki × 5 rozmiarów. Dokumentacja: `TECHNIQUE_DETAILS.md`.
 
 - [ ] 🟡 **P1.11 — Redakcja nazw i spójność krótkich opisów z detalami**
@@ -139,12 +151,13 @@
   słownika z P1.2).
   Kryteria: brak `images.unsplash.com` w `src/`, build ✅.
 
-- [ ] 🟡 **P1.3 — Testy (Vitest + Testing Library)**
-  Dodaj `vitest`, `@testing-library/react`, `@testing-library/jest-dom`,
-  skrypt `npm test` i pierwsze testy: filtrowanie atlasu, routing
-  (`/kyu/9` renderuje wymagania), otwieranie/zamykanie modalu (Esc),
-  renderowanie słownika (3 kategorie).
-  Kryteria: `npm test` i `npm run build` ✅.
+- [x] 🟡 **P1.3 — Testy (Vitest + Testing Library)** — wykonane 2026-11-23.
+  `vitest`, `jsdom`, `@testing-library/{react,jest-dom,user-event}`,
+  `vitest.config.ts` + `src/test/setup.ts`; skrypty `npm test`,
+  `npm run test:watch`, `npm run check`. 6 plików / 11 testów obejmuje
+  filtrowanie atlasu, routing `/kyu/9`, modal + Esc, nowe kategorie słownika,
+  galerię mediów (filtr Film/Zdjęcie, badge'e, placeholder jako `alt`) i
+  akcesory `media.json`. CI wykonuje audyt → testy → build przed deployem.
 
 - [ ] 🟡 **P1.4 — ESLint + Prettier**
   Skonfiguruj ESLint (typescript-eslint + react-hooks + react-refresh,

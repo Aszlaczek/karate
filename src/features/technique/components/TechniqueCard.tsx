@@ -1,6 +1,7 @@
 import { useModals } from "@/store/modalStore";
-import { getLevelsForTechnique } from "@/data";
+import { getLevelsForTechnique, getTechniqueMedia } from "@/data";
 import TechniqueIllustration from "./TechniqueIllustration";
+import { getMediaThumbnail, isFirstMediaVideo, resolveMediaSrc } from "./media";
 import Icon from "@/components/ui/Icon";
 
 interface TechniqueCardProps {
@@ -10,6 +11,8 @@ interface TechniqueCardProps {
 
 export default function TechniqueCard({ technique, index }: TechniqueCardProps) {
   const { openTechnique } = useModals();
+  const media = getTechniqueMedia(technique.id);
+  const thumbnail = getMediaThumbnail(media);
 
   return (
     <article className="tech-card" onClick={() => openTechnique(technique)}>
@@ -18,7 +21,24 @@ export default function TechniqueCard({ technique, index }: TechniqueCardProps) 
         type="button"
         aria-label={`Otwórz szczegóły techniki ${technique.name}`}
       >
-        <TechniqueIllustration technique={technique} controls={false} />
+        {thumbnail ? (
+          <span className="technique-media-frame technique-photo-frame media-card-thumb">
+            <img
+              className="technique-media"
+              src={resolveMediaSrc(thumbnail)}
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+            {isFirstMediaVideo(media) && (
+              <span className="media-card-play" aria-hidden="true">
+                <Icon name="play" size={18} />
+              </span>
+            )}
+          </span>
+        ) : (
+          <TechniqueIllustration technique={technique} controls={false} />
+        )}
         <span>{technique.category}</span>
         <small>{String(index + 1).padStart(2, "0")}</small>
         <b>

@@ -1,9 +1,10 @@
 import dojoKunJson from "./dojoKun.json";
 import glossaryJson from "./glossary.json";
 import levelsJson from "./levels.json";
+import mediaJson from "./media.json";
 import techniquesJson from "./techniques.json";
 import techniqueDetailsJson from "./techniqueDetails.json";
-import type { BeltId, DojoKunEntry, GlossaryCategory, GlossaryEntry, Level, RequirementItem, Technique, TechniqueDetail } from "./types";
+import type { BeltId, DojoKunEntry, GlossaryCategory, GlossaryEntry, Level, MediaItem, MediaManifest, RequirementItem, Technique, TechniqueDetail } from "./types";
 
 const techniqueDetails: Record<string, TechniqueDetail> = techniqueDetailsJson.techniques;
 const stanceDetails: Record<string, TechniqueDetail> = techniqueDetailsJson.stances;
@@ -27,6 +28,12 @@ export const levels: Level[] = levelsJson.map((level) => ({
 export const techniques: Technique[] = techniquesJson;
 export const glossary: GlossaryCategory[] = glossaryJson.categories;
 export const dojoKun: DojoKunEntry[] = dojoKunJson;
+
+/** Galerie mediów — pliki z public/, uzupełniane przez npm run media:manifest. */
+export const media = mediaJson as MediaManifest;
+
+export const getTechniqueMedia = (id: string): MediaItem[] => media.techniques[id] ?? [];
+export const getGlossaryMedia = (id: string): MediaItem[] => media.glossary[id] ?? [];
 
 export const BELT_NAMES: Record<BeltId, string> = {
   white: "Biały",

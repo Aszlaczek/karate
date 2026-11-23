@@ -8,6 +8,7 @@
 @import "../features/level/styles/level.css";
 @import "../features/technique/styles/technique.css";
 @import "../features/technique/styles/technique-modal.css";
+@import "../features/technique/styles/media-gallery.css";
 @import "../features/dojo/styles/dojo.css";
 @import "./modal.css";
 @import "../features/glossary/styles/glossary.css";

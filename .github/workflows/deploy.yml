@@ -1,8 +1,9 @@
-name: Deploy to GitHub Pages
+name: CI + Deploy to GitHub Pages
 
 on:
   push:
     branches: [main, master]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -17,6 +18,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,11 +26,17 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 22.x
           cache: npm
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Audit danych i mediów
+        run: npm run audit
+
+      - name: Testy jednostkowe
+        run: npm test
 
       - name: Typecheck and build
         run: npm run build
@@ -38,17 +46,36 @@ jobs:
       - name: SPA fallback for GitHub Pages
         run: cp dist/index.html dist/404.html
 
+      - name: Sprawdzenie wyników buildu
+        run: |
+          test -f dist/index.html
+          test -f dist/404.html
+          test -d dist/videos
+          test -d dist/images
+
+      - name: Upload raportu audytu
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: raport-audytu
+          path: RAPORT.md
+          if-no-files-found: ignore
+
       - name: Setup Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
     needs: build
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

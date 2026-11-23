@@ -1,5 +1,5 @@
-import { readFileSync, writeFileSync } from "node:fs";
-import { dirname, join } from "node:path";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { basename, dirname, extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -11,6 +11,7 @@ const levels = JSON.parse(read("src/data/levels.json"));
 const glossary = JSON.parse(read("src/data/glossary.json"));
 const indexTs = read("src/data/index.ts");
 const genaiImages = JSON.parse(read("src/features/technique/data/genaiImages.json"));
+const media = JSON.parse(read("src/data/media.json"));
 const details = JSON.parse(read("src/data/techniqueDetails.json"));
 const learning = JSON.parse(read("src/data/learning.json"));
 
@@ -124,6 +125,70 @@ for (const e of glossEntries) {
     if (!techIds.has(r) && !glossIds.has(r)) critical.push("glossary.json — martwy related \"" + r + "\" w haśle \"" + e.id + "\"");
 }
 
+// --- 3b. Galerie mediów (media.json) ---------------------------------------
+
+const stanceIds = new Set(
+  glossary.categories.find((category) => category.id === "pozycje")?.entries.map((entry) => entry.id) ?? [],
+);
+const allowedMedia = /\.(mp4|webm|mov|jpe?g|png|webp|gif|svg)$/i;
+const mediaStats = { techniques: { sets: 0, items: 0, videos: 0 }, glossary: { sets: 0, items: 0, videos: 0 } };
+
+const publicFile = (src) => src.startsWith("/") && existsSync(join(root, "public", src.slice(1)));
+
+for (const [section, ids] of [["techniques", techIds], ["glossary", glossIds]]) {
+  const group = media[section] ?? {};
+  for (const [id, items] of Object.entries(group)) {
+    const label = `media.json — ${section}/${id}`;
+    if (!ids.has(id)) { critical.push(`${label}: nieistniejący id`); continue; }
+    if (!Array.isArray(items)) { critical.push(`${label}: galeria nie jest tablicą`); continue; }
+    mediaStats[section].sets += 1;
+    mediaStats[section].items += items.length;
+    if (items.length < 2 || items.length > 4)
+      warn.push(`${label}: galeria ma ${items.length} elementów (oczekiwano 2–4)`);
+
+    const rootFor = (type) =>
+      section === "techniques" ? `/${type === "video" ? "videos" : "images"}/techniques/${id}/`
+        : stanceIds.has(id) ? `/${type === "video" ? "videos" : "images"}/stances/`
+          : `/${type === "video" ? "videos" : "images"}/glossary/`;
+
+    const seen = new Set();
+    for (const [index, item] of items.entries()) {
+      const itemLabel = `${label}[${index}]`;
+      if (!item || !nonEmpty(item.src) || !nonEmpty(item.label)) {
+        critical.push(`${itemLabel}: wymagane src i label`);
+        continue;
+      }
+      if (item.type !== "video" && item.type !== "image") critical.push(`${itemLabel}: nieprawidłowy type "${item.type}"`);
+      if (seen.has(item.src)) critical.push(`${itemLabel}: powtórzony src`);
+      seen.add(item.src);
+      if (!item.src.startsWith("/")) critical.push(`${itemLabel}: ścieżka musi zaczynać się od "/"`);
+      else if (!allowedMedia.test(item.src)) critical.push(`${itemLabel}: niedozwolone rozszerzenie "${item.src}"`);
+      else if (!publicFile(item.src)) critical.push(`${itemLabel}: brak pliku public${item.src}`);
+      if (!item.src.startsWith(rootFor(item.type)))
+        critical.push(`${itemLabel}: plik poza folderem "${rootFor(item.type)}"`);
+      const ext = extname(item.src).toLowerCase();
+      const extMatchesType = item.type === "video"
+        ? [".mp4", ".webm", ".mov"].includes(ext)
+        : [".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg"].includes(ext);
+      if (!extMatchesType) critical.push(`${itemLabel}: rozszerzenie "${ext}" nie pasuje do typu "${item.type}"`);
+      if (item.type === "video") {
+        mediaStats[section].videos += 1;
+        if (!nonEmpty(item.poster)) critical.push(`${itemLabel}: film bez posteru`);
+        else if (!allowedMedia.test(item.poster) || !publicFile(item.poster))
+          critical.push(`${itemLabel}: nieprawidłowy poster "${item.poster}"`);
+        else {
+          if (!item.poster.startsWith(rootFor("image")))
+            critical.push(`${itemLabel}: poster poza folderem "${rootFor("image")}"`);
+          const stem = basename(item.src, extname(item.src));
+          if (basename(item.poster, extname(item.poster)) !== stem)
+            warn.push(`${itemLabel}: poster ma inny stem niż film (${stem})`);
+        }
+      }
+      if (item.alt !== undefined && !nonEmpty(item.alt)) warn.push(`${itemLabel}: pusty alt`);
+    }
+  }
+}
+
 // --- 4. levels.json (strukturalne wymagania ↔ atlas + słownik) ---------------
 
 const techById = new Map(techs.map((t) => [t.id, t]));
@@ -228,8 +293,8 @@ p(
   "# RAPORT.md — audyt danych KIHON",
   "",
   "> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: " + dt + ").",
-  "> Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`, `techniqueDetails.json`, `learning.json`,",
-  "> `src/data/index.ts` (CATEGORIES), `src/features/technique/data/genaiImages.json`.",
+  "> Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`, `media.json`, `techniqueDetails.json`, `learning.json`,",
+  "> `src/data/index.ts` (CATEGORIES), `src/features/technique/data/genaiImages.json`, zawartość `public/videos/` i `public/images/`.",
   "",
   "## 1. Integralność struktury",
   "",
@@ -293,6 +358,8 @@ p(
   "- techniki z `image`: " + images.length + "/" + techs.length + " (unikalnych URL-i: " + uniqueImages + ", w tym Unsplash: " + unsplash.length + ") → zadanie **P1.5**",
   "- techniki z `video`: " + videos.length + "/" + techs.length + (videos.length ? " (" + videos.map((v) => v.name + ": " + v.video).join("; ") + ")" : " (pole zawsze `null` — miejsce na przyszłe filmiki)"),
   "- techniki z tymczasowym zdjęciem GenAI: **" + genaiCover + "/" + techs.length + "** (mapa `genaiImages.json`), bez zdjęcia → placeholder z kanji: " + (techs.length - genaiCover),
+  "- galerie w `media.json`: **" + (mediaStats.techniques.sets + mediaStats.glossary.sets) + "** (techniki: " + mediaStats.techniques.sets + ", hasła słownika: " + mediaStats.glossary.sets + ")",
+  "- materiały w galeriach: **" + (mediaStats.techniques.items + mediaStats.glossary.items) + "** (w tym filmy: " + (mediaStats.techniques.videos + mediaStats.glossary.videos) + ") — każda galeria 2–4 elementy, pliki istnieją w `public/`",
   "",
   "## 7. Statystyki",
   "",

@@ -1,0 +1,71 @@
+{
+  "techniques": {
+    "seiken-morote-tsuki": [
+      {
+        "type": "video",
+        "src": "/videos/techniques/seiken-morote-tsuki/seiken-morote-tsuki-demo.mp4",
+        "label": "Film poglądowy",
+        "poster": "/images/techniques/seiken-morote-tsuki/seiken-morote-tsuki-demo.jpg",
+        "alt": "Wideo — przykład do zastąpienia nagraniem z dojo. Przykładowy film poglądowy techniki seiken morote-tsuki"
+      },
+      {
+        "type": "image",
+        "src": "/images/techniques/seiken-morote-tsuki/seiken-morote-tsuki-ilustracja.jpg",
+        "label": "Ilustracja poglądowa",
+        "alt": "Ilustracja — tymczasowa grafika GenAI. Tymczasowa ilustracja techniki seiken morote-tsuki"
+      }
+    ]
+  },
+  "glossary": {
+    "fudo": [
+      {
+        "type": "video",
+        "src": "/videos/stances/fudo-dachi-demo.mp4",
+        "label": "Film poglądowy",
+        "poster": "/images/stances/fudo-dachi-demo.jpg",
+        "alt": "Wideo — przykład do zastąpienia nagraniem z dojo. Przykładowy film poglądowy postawy fudō dachi"
+      },
+      {
+        "type": "image",
+        "src": "/images/stances/fudo-dachi-front.jpg",
+        "label": "Zdjęcie — widok z przodu",
+        "alt": "Postawa fudō dachi, widok z przodu"
+      }
+    ],
+    "seiken": [
+      {
+        "type": "video",
+        "src": "/videos/glossary/seiken-demo.mp4",
+        "label": "Film poglądowy",
+        "poster": "/images/glossary/seiken-demo.jpg",
+        "alt": "Wideo — przykład do zastąpienia nagraniem z dojo. Przykładowy film poglądowy ustawienia dłoni seiken"
+      },
+      {
+        "type": "image",
+        "src": "/images/glossary/seiken-front.jpg",
+        "label": "Zdjęcie — ułożenie knykci",
+        "alt": "Ustawienie dłoni seiken, widok knykci"
+      },
+      {
+        "type": "image",
+        "src": "/images/glossary/seiken-piesc.jpg",
+        "label": "Zdjęcie — pięść z boku",
+        "alt": "Ustawienie dłoni seiken, widok z boku"
+      }
+    ],
+    "sokuto": [
+      {
+        "type": "image",
+        "src": "/images/glossary/sokuto-yoko-geri.jpg",
+        "label": "Zdjęcie — kontakt w yoko-geri chūdan",
+        "alt": "Krawędź stopy w kopnięciu yoko-geri chūdan"
+      },
+      {
+        "type": "image",
+        "src": "/images/glossary/sokuto-yoko-keage.jpg",
+        "label": "Zdjęcie — praca boczną krawędzią",
+        "alt": "Praca boczną krawędzią stopy w yoko-keage"
+      }
+    ]
+  }
+}

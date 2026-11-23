@@ -1,6 +1,7 @@
 import type { Technique } from "@/data/types";
-import { getLevelsForTechnique, getTechniqueDetail } from "@/data";
+import { getLevelsForTechnique, getTechniqueDetail, getTechniqueMedia } from "@/data";
 import Icon from "@/components/ui/Icon";
+import MediaGallery from "@/features/technique/components/MediaGallery";
 import TechniqueIllustration from "@/features/technique/components/TechniqueIllustration";
 import TechniqueDetailContent from "@/features/technique/components/TechniqueDetailContent";
 import { useModalBase } from "@/hooks/useModalBase";
@@ -9,6 +10,7 @@ const TechniqueModal = ({ technique, onClose }: { technique: Technique; onClose:
   const { onBackdropMouseDown } = useModalBase(onClose);
   const detail = getTechniqueDetail(technique.id);
   const levels = getLevelsForTechnique(technique);
+  const media = getTechniqueMedia(technique.id);
 
   return (
     <div className="tech-modal" role="dialog" aria-modal="true" aria-label={`Szczegóły techniki ${technique.name}`} onMouseDown={onBackdropMouseDown}>
@@ -19,7 +21,11 @@ const TechniqueModal = ({ technique, onClose }: { technique: Technique; onClose:
             <span>{technique.category}</span>
             <small>Wizualizacja techniki</small>
           </div>
-          <TechniqueIllustration technique={technique} />
+          {media.length > 0 ? (
+            <MediaGallery key={technique.id} items={media} title={technique.name} />
+          ) : (
+            <TechniqueIllustration technique={technique} />
+          )}
         </div>
         <div className="visualization-copy">
           <span className="modal-kanji" lang="ja" aria-hidden="true">{technique.japanese}</span>

@@ -1,9 +1,11 @@
 import {
+  getGlossaryMedia,
   getRelatedTechniques,
   getStanceDetail,
   STANCE_CATEGORY_ID,
 } from "@/data";
 import type { GlossaryCategory, GlossaryEntry } from "@/data/types";
+import MediaGallery from "@/features/technique/components/MediaGallery";
 import { resolveMediaSrc } from "@/features/technique/components/TechniqueIllustration";
 import Icon from "@/components/ui/Icon";
 import TechniqueLink from "@/features/technique/components/TechniqueLink";
@@ -29,6 +31,7 @@ const GlossaryEntryModal = ({
   const { onBackdropMouseDown } = useModalBase(onClose);
   const detail =
     category.id === STANCE_CATEGORY_ID ? getStanceDetail(entry.id) : undefined;
+  const media = getGlossaryMedia(entry.id);
 
   return (
     <div
@@ -53,7 +56,9 @@ const GlossaryEntryModal = ({
             <span>{category.name}</span>
             <small>Hasło słownikowe</small>
           </div>
-          {entry.image ? (
+          {media.length > 0 ? (
+            <MediaGallery key={entry.id} items={media} title={entry.term} />
+          ) : entry.image ? (
             <img
               className="glossary-photo"
               src={resolveMediaSrc(entry.image)}

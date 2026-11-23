@@ -1,0 +1,195 @@
+/* Galeria materiałów techniki, postawy i haseł słownika. */
+
+.media-gallery {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 0;
+  width: 100%;
+}
+
+.media-gallery-stage {
+  flex: 1 1 auto;
+  min-height: 0;
+  position: relative;
+}
+
+.media-gallery-frame {
+  aspect-ratio: 16 / 9;
+  background: #1b1d1a;
+  height: 100%;
+  margin: 0 auto;
+  max-height: calc(100vh - 320px);
+  overflow: hidden;
+  width: 100%;
+}
+
+.media-gallery-frame > .technique-media {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.media-gallery-counter {
+  background: rgba(14, 15, 13, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  padding: 5px 9px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.media-gallery-caption {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 11px;
+  line-height: 1.4;
+  margin: 8px 0 0;
+}
+
+.media-gallery-controls {
+  flex: 0 0 auto;
+}
+
+.media-gallery-filters {
+  display: flex;
+  gap: 8px;
+}
+
+.media-gallery-filter {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 7px 12px;
+  text-transform: uppercase;
+}
+
+.media-gallery-filter[aria-pressed="true"] {
+  background: var(--red);
+  border-color: var(--red);
+  color: #fff;
+}
+
+.media-gallery-thumbs {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  margin-top: 12px;
+}
+
+.media-gallery-thumb {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  text-align: left;
+}
+
+.media-gallery-thumb.is-active {
+  border-color: var(--red);
+  box-shadow: inset 0 0 0 1px var(--red);
+}
+
+.media-gallery-thumb-media {
+  align-items: center;
+  aspect-ratio: 16 / 10;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.media-gallery-thumb-media img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.media-gallery-type-badge {
+  background: rgba(14, 15, 13, 0.88);
+  bottom: 5px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  left: 5px;
+  letter-spacing: 0.04em;
+  padding: 4px 6px;
+  position: absolute;
+}
+
+.media-gallery-type-badge.is-video {
+  background: var(--red);
+}
+
+.media-gallery-thumb-label {
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+/* Statyczna miniatura w karcie atlasu i słownika. */
+.media-card-thumb {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.media-card-thumb > img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.glossary-image.media-card-thumb {
+  align-items: stretch;
+}
+
+.glossary-image.media-card-thumb > img {
+  object-fit: contain;
+}
+
+.media-card-play {
+  align-items: center;
+  background: var(--red);
+  border-radius: 50%;
+  bottom: 44px;
+  color: #fff;
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  position: absolute;
+  right: 14px;
+  width: 34px;
+  z-index: 3;
+}
+
+.glossary-card .media-card-play {
+  bottom: 10px;
+  right: 10px;
+}
+
+@media (max-width: 700px) {
+  .media-gallery-frame {
+    max-height: none;
+  }
+
+  .media-gallery-thumbs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

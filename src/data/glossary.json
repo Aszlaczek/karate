@@ -138,51 +138,11 @@
           ]
         },
         {
-          "id": "seiken",
-          "term": "Pięść",
-          "japanese": "正拳",
-          "reading": "seiken",
-          "description": "Klasyczna pięść kyokushin: uderzamy dwoma pierwszymi knykci, kciuk dociska palce od strony. Punkt kontaktu to seiken.",
-          "image": null,
-          "related": [
-            "seiken-oi-tsuki"
-          ]
-        },
-        {
-          "id": "shuto",
-          "term": "Kant dłoni",
-          "japanese": "手刀",
-          "reading": "shuto",
-          "description": "Boczna krawędź dłoni od małego palca do nadgarstka — broń w technikach shuto uchi i shuto uke.",
-          "image": null,
-          "related": []
-        },
-        {
           "id": "hiza",
           "term": "Kolano",
           "japanese": "膝",
           "reading": "hiza",
           "description": "Punkt prowadzenia kopnięć (hiza-geri) oraz cel w strefie dolnej. W mae-geri kolano unosi się najpierw przed wyprostem.",
-          "image": null,
-          "related": [
-            "mae-geri-chudan-chusoku"
-          ]
-        },
-        {
-          "id": "kakato",
-          "term": "Pięta",
-          "japanese": "踵",
-          "reading": "kakato",
-          "description": "Twarda część stopy używana m.in. w oroshi-kakato-geri (kopnięcie piętą z góry) i przy silnych wejściach.",
-          "image": null,
-          "related": []
-        },
-        {
-          "id": "chusoku",
-          "term": "Podeszwa",
-          "japanese": "底足心",
-          "reading": "chusoku",
-          "description": "Śródstopie — punkt kontaktu przy mae-geri i innych kopnięciach frontalnych. Palce są uniesione.",
           "image": null,
           "related": [
             "mae-geri-chudan-chusoku"
@@ -203,7 +163,7 @@
     },
     {
       "id": "pozycje",
-      "name": "Ustawienia stóp",
+      "name": "Postawy (dachi)",
       "description": "Fundamentalne pozycje (dachi) i postawy — baza, od której zaczyna się każda technika.",
       "entries": [
         {
@@ -394,6 +354,199 @@
           "related": [],
           "levels": [
             4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ustawienia-dloni",
+      "name": "Ustawienia dłoni",
+      "description": "Ukształtowanie dłoni i powierzchnie kontaktu używane w uderzeniach, blokach i technikach palców.",
+      "entries": [
+        {
+          "id": "seiken",
+          "term": "Pięść",
+          "japanese": "正拳",
+          "reading": "seiken",
+          "description": "Klasyczna pięść kyokushin: uderzamy dwoma pierwszymi knykci, kciuk dociska palce od strony. Punkt kontaktu to seiken.",
+          "image": null,
+          "related": [
+            "seiken-oi-tsuki"
+          ]
+        },
+        {
+          "id": "shuto",
+          "term": "Kant dłoni",
+          "japanese": "手刀",
+          "reading": "shuto",
+          "description": "Boczna krawędź dłoni od małego palca do nadgarstka — broń w technikach shuto uchi i shuto uke.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "nukite",
+          "term": "Dłoń-włócznia",
+          "japanese": "貫手",
+          "reading": "nukite",
+          "description": "Prosto wyprostowane palce tworzące włócznię; w kyokushin najczęściej w wersji dwu- lub czteropalczastej (nihon-/yonhon-nukite).",
+          "image": null,
+          "related": [
+            "nihon-nukite",
+            "yonhon-nukite-chudan"
+          ]
+        },
+        {
+          "id": "hiraken",
+          "term": "Płaska pięść",
+          "japanese": "平拳",
+          "reading": "hiraken",
+          "description": "Palce zgięte w ostatnich stawach, knykcie ułożone w jednej płaszczyźnie. Uderzenie płaską powierzchnią pięści.",
+          "image": null,
+          "related": [
+            "hira-ken-tsuki"
+          ]
+        },
+        {
+          "id": "tettsui",
+          "term": "Młotkowa pięść",
+          "japanese": "鉄槌",
+          "reading": "tettsui",
+          "description": "Uderzenie dolną krawędzią pięści przy zgiętym nadgarstku — młotkowato, z rotacją biodra.",
+          "image": null,
+          "related": [
+            "tettsui-oroshi-uchi",
+            "tettsui-komekami-uchi"
+          ]
+        },
+        {
+          "id": "uraken",
+          "term": "Grzbiet pięści",
+          "japanese": "裏拳",
+          "reading": "uraken",
+          "description": "Powierzchnia uderzająca to grzbiet knykci; ruch prowadzony jest łukowo z rotacją przedramienia.",
+          "image": null,
+          "related": [
+            "uraken-shomen-uchi",
+            "uraken-mawashi-uchi"
+          ]
+        },
+        {
+          "id": "koken",
+          "term": "Grzbiet nadgarstka",
+          "japanese": "拳研",
+          "reading": "koken",
+          "description": "Zgięty grzbiet nadgarstka używany zarówno w uderzeniach, jak i w blokach (koken-uke).",
+          "image": null,
+          "related": [
+            "koken-uchi",
+            "koken-uke"
+          ]
+        },
+        {
+          "id": "haishu",
+          "term": "Odwrócona dłoń",
+          "japanese": "背手",
+          "reading": "haishu",
+          "description": "Wnętrze dłoni skierowane w dół lub w bok; grzbiet dłoni pracuje jako powierzchnia uderzająca.",
+          "image": null,
+          "related": [
+            "haishu"
+          ]
+        },
+        {
+          "id": "shotei",
+          "term": "Podstawa dłoni",
+          "japanese": "掌底",
+          "reading": "shotei",
+          "description": "Twarda część dłoni przy nasadzie kciuka i palca wskazującego — typowa dla technik shotei-uchi i shotei-uke.",
+          "image": null,
+          "related": [
+            "shotei-uchi",
+            "shotei-uke"
+          ]
+        },
+        {
+          "id": "haito",
+          "term": "Krawędź dłoni od kciuka",
+          "japanese": "背刀",
+          "reading": "haito",
+          "description": "Przeciwległa do shuto krawędź dłoni, prowadzona wzdłuż kciuka; częsta w blokach haito-uke.",
+          "image": null,
+          "related": [
+            "chudan-haito-uchi-uke"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ustawienia-stopy",
+      "name": "Ustawienia stóp",
+      "description": "Powierzchnie stopy używane w kopnięciach i przesunięciach — od pięty po czubki palców.",
+      "entries": [
+        {
+          "id": "kakato",
+          "term": "Pięta",
+          "japanese": "踵",
+          "reading": "kakato",
+          "description": "Twarda część stopy używana m.in. w oroshi-kakato-geri (kopnięcie piętą z góry) i przy silnych wejściach.",
+          "image": null,
+          "related": []
+        },
+        {
+          "id": "chusoku",
+          "term": "Śródstopie",
+          "japanese": "底足心",
+          "reading": "chusoku",
+          "description": "Poduszka pod palcami — punkt kontaktu przy mae-geri i innych kopnięciach frontalnych. Palce są uniesione.",
+          "image": null,
+          "related": [
+            "mae-geri-chudan-chusoku"
+          ]
+        },
+        {
+          "id": "haisoku",
+          "term": "Grzbiet stopy",
+          "japanese": "背足",
+          "reading": "haisoku",
+          "description": "Wypięty grzbiet stopy używany w kopnięciach okrężnych (mawashi-geri) i niektórych keage.",
+          "image": null,
+          "related": [
+            "mawashi-geri-gedan-haisoku",
+            "mawashi-geri-chudan-chusoku-haisoku"
+          ]
+        },
+        {
+          "id": "teisoku",
+          "term": "Podeszwa stopy",
+          "japanese": "底足",
+          "reading": "teisoku",
+          "description": "Cała podeszwa pracująca jako powierzchnia kopnięcia, m.in. w teisoku-mawashi-soto-keage.",
+          "image": null,
+          "related": [
+            "teisoku-mawashi-soto-keage"
+          ]
+        },
+        {
+          "id": "sokuto",
+          "term": "Krawędź stopy",
+          "japanese": "側足",
+          "reading": "sokuto",
+          "description": "Zewnętrzna krawędź stopy od pięty do małego palca — powierzchnia kontaktu w yoko-geri.",
+          "image": null,
+          "related": [
+            "yoko-geri-chudan",
+            "yoko-geri-jodan"
+          ]
+        },
+        {
+          "id": "heisoku-ashi",
+          "term": "Czubki palców stopy",
+          "japanese": "閉足",
+          "reading": "heisoku-ashi",
+          "description": "Zwarto ułożone palce stopy; uniesione w kopnięciach frontalnych, by punktem kontaktu zostało śródstopie.",
+          "image": null,
+          "related": [
+            "mae-geri-chudan-chusoku"
           ]
         }
       ]

@@ -1,6 +1,8 @@
+import { getGlossaryMedia } from "@/data";
 import { resolveMediaSrc } from "@/features/technique/components/TechniqueIllustration";
-import ZoneIllustration, { zoneForEntry } from "./ZoneIllustration";
+import { getMediaThumbnail, isFirstMediaVideo } from "@/features/technique/components/media";
 import Icon from "@/components/ui/Icon";
+import ZoneIllustration, { zoneForEntry } from "./ZoneIllustration";
 import Card from "@/components/ui/Card";
 
 interface GlossaryCardProps {
@@ -13,6 +15,8 @@ interface GlossaryCardProps {
 export default function GlossaryCard({ entry, static: isStatic = false, onClick }: GlossaryCardProps) {
   const zone = zoneForEntry(entry.id);
   const isInteractive = !isStatic && typeof onClick === "function";
+  const media = getGlossaryMedia(entry.id);
+  const thumbnail = getMediaThumbnail(media);
 
   return (
     <Card
@@ -21,7 +25,21 @@ export default function GlossaryCard({ entry, static: isStatic = false, onClick 
       onClick={onClick}
       aria-label={isInteractive ? `Otwórz hasło ${entry.term}` : undefined}
     >
-      {entry.image ? (
+      {thumbnail ? (
+        <span className="glossary-image media-card-thumb">
+          <img
+            src={resolveMediaSrc(thumbnail)}
+            alt=""
+            loading="lazy"
+            decoding="async"
+          />
+          {isFirstMediaVideo(media) && (
+            <span className="media-card-play" aria-hidden="true">
+              <Icon name="play" size={18} />
+            </span>
+          )}
+        </span>
+      ) : entry.image ? (
         <span className="glossary-image">
           <img
             src={resolveMediaSrc(entry.image)}

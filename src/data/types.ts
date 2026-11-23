@@ -48,6 +48,30 @@ export interface TechniqueDetail {
   note?: string;
 }
 
+/** Typ materiału w galerii — rozróżnia filmy i zdjęcia w UI i w audycie. */
+export type MediaKind = "video" | "image";
+
+export interface MediaItem {
+  type: MediaKind;
+  /** Ścieżka od "/" w public/ lub pełny adres URL. */
+  src: string;
+  /** Krótka etykieta miniaturki (nie jest opisem dla czytnika ekranu). */
+  label: string;
+  /** Miniatura filmu — dzięki niej galeria nie ładuje kilku filmów naraz. */
+  poster?: string;
+  /** Opcjonalny, widoczny podpis pod odtwarzaczem. */
+  caption?: string;
+  /** Opis dla czytnika ekranu (`alt` obrazu / `aria-label` wideo). */
+  alt?: string;
+}
+
+export interface MediaManifest {
+  /** Klucz: id z techniques.json. */
+  techniques: Record<string, MediaItem[]>;
+  /** Klucz: id hasła z glossary.json (również postawy). */
+  glossary: Record<string, MediaItem[]>;
+}
+
 export interface GlossaryEntry {
   id: string;
   term: string;

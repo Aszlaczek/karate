@@ -1,5 +1,7 @@
 # KIHON — droga do egzaminu
 
+[![CI + Deploy to GitHub Pages](https://github.com/Aszlaczek/web_karate/actions/workflows/deploy.yml/badge.svg)](https://github.com/Aszlaczek/web_karate/actions/workflows/deploy.yml)
+
 Polskojęzyczny przewodnik po karate Kyokushin, który pomaga uporządkować przygotowania do egzaminu i zrozumieć nazwy używane na treningu. Łączy wymagania na poszczególne stopnie z atlasem technik, słownikiem japońskich pojęć oraz praktycznymi poradnikami.
 
 Aplikacja działa w przeglądarce jako SPA (Single Page Application). Treści są przechowywane w plikach JSON i dołączane podczas budowania projektu. Uruchomienie nie wymaga backendu, bazy danych, kont użytkowników ani kluczy API.
@@ -8,14 +10,14 @@ Aplikacja działa w przeglądarce jako SPA (Single Page Application). Treści s�
 
 - **Ścieżka stopni:** poziom początkujący, 10–1 kyu oraz 1–5 dan. Każdy stopień ma oznaczenie pasa i belek, opis, staż, wymagania egzaminacyjne oraz przypisane techniki.
 - **Atlas technik:** wyszukiwanie po nazwie, zapisie japońskim, wymowie i opisie oraz filtrowanie według kategorii i stopnia. Kategorie obejmują uderzenia, kopnięcia, bloki, pozycje, kumite i kata.
-- **Szczegóły technik i postaw:** polskie znaczenie nazwy, tłumaczenie jej członów, opisy wykonania i ilustracje. Wymagania egzaminacyjne prowadzą bezpośrednio do odpowiednich kart.
+- **Szczegóły technik i postaw:** polskie znaczenie nazwy, tłumaczenie jej członów, opisy wykonania oraz galerie 2–4 filmów i zdjęć z wyborem ujęcia i filtrem „Filmy / Zdjęcia”. Wymagania egzaminacyjne prowadzą bezpośrednio do odpowiednich kart.
 - **Słownik karate:** strefy ciała, powierzchnie uderzające, postawy, etykieta dojo, komendy treningowe oraz strój i sprzęt. Hasła zawierają zapis japoński, wymowę, objaśnienie i powiązania z technikami.
 - **Poradniki:** wiązanie pasa, składanie karategi, zakładanie taśm na dłonie i wiązanie troczków stroju — instrukcje krok po kroku z odnośnikami do źródeł.
 - **Historia i ciekawostki:** oś czasu karate i Kyokushin oraz krótkie artykuły z bibliografią.
 - **Dojo-kun:** przysięga dojo w zapisie japońskim, z wymową i polskim tłumaczeniem, dostępna na stronie głównej.
 - **Zgłaszanie pomysłów i poprawek:** formularz przygotowuje wiadomość w programie pocztowym przez `mailto:` albo pozwala skopiować jej treść. Użytkownik wysyła wiadomość we własnej poczcie.
 
-Obecna baza zawiera **16 poziomów, 118 technik, 56 haseł słownika w 6 kategoriach (w tym 15 postaw), 4 poradniki, 6 wydarzeń historycznych i 6 ciekawostek**.
+Obecna baza zawiera **16 poziomów, 118 technik, 68 haseł słownika w 8 kategoriach (w tym 15 postaw, 10 ustawień dłoni i 6 ustawień stóp), 4 poradniki, 6 wydarzeń historycznych i 6 ciekawostek**.
 
 ## Uruchomienie lokalne
 
@@ -39,6 +41,11 @@ Otwórz adres wypisany przez Vite w terminalu, domyślnie `http://localhost:5173
 | `npm run build` | Sprawdza typy przez `tsc -b` i buduje wersję produkcyjną w `dist/`. |
 | `npm run preview` | Udostępnia lokalnie wcześniej zbudowaną aplikację, domyślnie na porcie 4173. |
 | `npm run audit` | Sprawdza spójność danych aplikacji i zapisuje raport w `RAPORT.md` w katalogu głównym. |
+| `npm run media:manifest` | Skanuje foldery z mediami i uzupełnia `src/data/media.json` (zachowuje ręczne opisy). |
+| `npm run media:check` | Alias `npm run audit` — szybkie sprawdzenie galerii i plików. |
+| `npm test` | Uruchamia testy jednostkowe Vitest jednorazowo (tryb CI). |
+| `npm run test:watch` | Uruchamia Vitest w trybie obserwowania zmian. |
+| `npm run check` | Pełna bramka lokalna: audyt danych → testy → build. |
 
 Podgląd wersji produkcyjnej:
 
@@ -63,8 +70,13 @@ npm run preview
 ```text
 .
 ├── .github/workflows/deploy.yml   # Publikacja na GitHub Pages
-├── public/                       # Favicon, obraz podglądu i ilustracje
-├── scripts/audit-danych.mjs       # Audyt spójności treści
+├── public/                       # Favicon, obraz podglądu i media
+│   ├── videos/techniques/<id>/    # Filmy techniki (osobny folder na id)
+│   ├── videos/stances/            # Filmy postaw, np. fudo-dachi.mp4
+│   ├── videos/glossary/           # Filmy ustawień dłoni i stóp
+│   └── images/{techniques,stances,glossary}/  # Zdjęcia i postery filmów
+├── scripts/audit-danych.mjs       # Audyt spójności treści i plików galerii
+├── scripts/generate-media.mjs     # Generator manifestu z zawartości folderów
 ├── src/
 │   ├── app/                      # Definicje tras i obsługa okien szczegółów
 │   ├── components/ui/            # Wspólne elementy interfejsu
@@ -114,6 +126,7 @@ Większość zmian merytorycznych można wprowadzać bez edytowania komponentów
 | [`src/data/dojoKun.json`](src/data/dojoKun.json) | Treść przysięgi dojo. |
 | [`src/data/learning.json`](src/data/learning.json) | Poradniki, historia, ciekawostki, źródła oraz adres i tematy formularza kontaktowego. |
 | [`src/features/technique/data/genaiImages.json`](src/features/technique/data/genaiImages.json) | Mapa identyfikatorów technik na ścieżki ilustracji. |
+| [`src/data/media.json`](src/data/media.json) | Galerie 2–4 filmów/zdjęć technik i haseł słownika (także postaw). |
 | [`src/data/types.ts`](src/data/types.ts) | Typy opisujące strukturę danych. |
 
 ### Powiązania między danymi
@@ -135,41 +148,95 @@ Dodając technikę:
 1. Dodaj rekord z unikalnym `id` w `techniques.json` i kategorią z `CATEGORIES` w `src/data/index.ts`.
 2. Uzupełnij wpis o tym samym `id` w `techniqueDetails.json`: tłumaczenie, człony całej nazwy w ich kolejności i co najmniej dwie sekcje opisu.
 3. Przypisz stopnie w `levels` i dodaj odwołania w wymaganiach odpowiednich stopni w `levels.json`.
-4. Jeśli dodajesz ilustrację, zapisz ją w `public/images/` i uzupełnij mapę `genaiImages.json`.
-5. Uruchom audyt danych i budowanie, a następnie sprawdź kartę w atlasie oraz na stronie stopnia.
+4. Jeśli dodajesz tymczasową ilustrację, zapisz ją w `public/images/GenAI/` i uzupełnij mapę `genaiImages.json`. Właściwe filmy/zdjęcia dodaj zgodnie z rozdziałem „Ilustracje i wideo”.
+5. Uruchom `npm run media:manifest`, audyt danych i budowanie, a następnie sprawdź kartę w atlasie oraz na stronie stopnia.
 
-Postawy są przechowywane w kategorii `pozycje` w słowniku, a ich szczegóły w sekcji `stances` pliku `techniqueDetails.json`. Atlas dołącza je do listy automatycznie. Źródła poradników, historii i ciekawostek zapisuj jako obiekty z polami `title` i `url` wskazującym adres HTTPS.
+Postawy są przechowywane w kategorii `pozycje` w słowniku (wyświetlana nazwa: „Postawy (dachi)” — `id` pozostaje niezmienione, więc dotychczasowe odnośniki działają), a ich szczegóły w sekcji `stances` pliku `techniqueDetails.json`. Atlas dołącza je do listy automatycznie. Osobne kategorie `ustawienia-dloni` i `ustawienia-stopy` grupują powierzchnie kontaktu dłoni i stóp; mają takie same galerie multimediów jak postawy. Źródła poradników, historii i ciekawostek zapisuj jako obiekty z polami `title` i `url` wskazującym adres HTTPS.
 
 ### Ilustracje i wideo
 
-Komponent `TechniqueIllustration` wybiera najpierw materiał z pola `video`, następnie ilustrację z mapy `genaiImages.json`, a przy jej braku pokazuje zapis japoński i wymowę. Pole `image` w rekordzie techniki nie jest obecnie używane przez ten mechanizm. Ścieżki zaczynające się od `/` są dostosowywane do ścieżki bazowej aplikacji.
+Każda technika, postawa oraz hasło „Ustawienia dłoni/stóp” może mieć **galerię 2–4 materiałów** — filmów, zdjęć albo obu typów naraz. W modalu wybierasz ujęcie klikając miniaturę; każda miniatura ma wyraźną etykietę „▶ Film” albo „▣ Zdjęcie”, a przy miksie typów pojawia się filtr „Wszystkie / Filmy / Zdjęcia”. Karty w atlasie i słowniku pokazują tylko pierwszą miniaturę (dla filmu — jego poster), więc nie ładują kilku filmów naraz.
 
-Obrazy technik znajdują się głównie w `public/images/GenAI/`. Obsługa materiałów YouTube i lokalnych plików wideo jest zaimplementowana, ale obecna baza ma wszystkie pola `video` ustawione na `null`.
+#### Gdzie leżą pliki
+
+```text
+public/videos/techniques/<id-techniki>/<id>-<wariant>.mp4
+public/images/techniques/<id-techniki>/<id>-<wariant>.jpg   # też postery filmów
+
+public/videos/stances/fudo-dachi.mp4                        # postawy: płasko
+public/images/stances/fudo-dachi-front.jpg
+
+public/videos/glossary/seiken.mp4                           # dłonie i stopy
+public/images/glossary/sokuto-yoko-geri.jpg
+```
+
+Folder techniki nazywa się **kanonicznym `id` z `techniques.json`** (np. `seiken-morote-tsuki`, nie `morote-tsuki`). Postawy i pozostałe hasła słownika używają nazw plików zaczynających się od ich `reading` (np. `fudo-dachi-*`, `sokuto-*`). Plik posteru ma ten sam stem co film (`seiken-demo.mp4` → `seiken-demo.jpg`) i nie jest wpisywany do galerii jako osobne zdjęcie. Starsze zasoby w `public/images/GenAI/` i `public/images/glossary/stances/` pozostają **fallbackiem** dla wpisów bez galerii.
+
+#### Jak dodać galerię
+
+1. Wrzuć 2–4 pliki `.mp4`/`.webm`/`.mov` lub `.jpg`/`.png`/`.webp` do właściwego folderu; każdy film musi mieć poster (ten sam stem co film).
+2. Uruchom `npm run media:manifest` — `scripts/generate-media.mjs` wykryje nowe pliki, dopasuje hasła po `reading`, uzupełni postery i zachowa istniejące opisy.
+3. W `src/data/media.json` dopisz czytelny `label` i `alt` dla każdego nowego elementu (generator domyślnie używa nazwy pliku).
+
+```json
+{
+  "techniques": {
+    "seiken-morote-tsuki": [
+      {
+        "type": "video",
+        "src": "/videos/techniques/seiken-morote-tsuki/seiken-morote-tsuki-demo.mp4",
+        "label": "Chūdan — praca bioder",
+        "poster": "/images/techniques/seiken-morote-tsuki/seiken-morote-tsuki-demo.jpg",
+        "alt": "Seiken morote-tsuki na chūdan, widok z boku"
+      },
+      {
+        "type": "image",
+        "src": "/images/techniques/seiken-morote-tsuki/seiken-morote-tsuki-ilustracja.jpg",
+        "label": "Ułożenie pięści",
+        "alt": "Zbliżenie na ułożenie obu pięści"
+      }
+    ]
+  }
+}
+```
+
+Pole `type` (`video` albo `image`) jest obowiązkowe. Ścieżki zaczynają się od `/` — `resolveMediaSrc()` dodaje ścieżkę bazową aplikacji (GitHub Pages). `label` to krótka nazwa miniaturki, `alt` to opis dla czytnika ekranu (`aria-label` wideo), a opcjonalny `caption` jest **jedynym widocznym podpisem** pod odtwarzaczem. Komunikaty o tym, że plik jest tymczasowy, należy wpisywać do `alt`, nie do `label` ani `caption` — dzięki temu nie są prezentowane jako treść dydaktyczna. Generator zachowuje ręczne `label`, `alt`, `caption` i `poster`. Pole `video` w `techniques.json` oraz mapa `genaiImages.json` to mechanizmy awaryjne; galeria z `media.json` ma zawsze priorytet. Obecne pliki `*-demo.mp4` i grafiki GenAI są **przykładowymi placeholderami technicznymi** — do zastąpienia nagraniami z dojo.
 
 ## Sprawdzanie zmian
 
 Po zmianach w treści lub kodzie uruchom:
 
 ```bash
-npm run audit
-npm run build
+npm run check
 ```
 
-Audyt sprawdza m.in. identyfikatory technik, wymagane pola, kategorie, referencje między wymaganiami a atlasem, powiązania słownika, kompletność szczegółowych opisów, źródła materiałów edukacyjnych i oznaczenia belek. Zapisuje lub nadpisuje `RAPORT.md` w katalogu głównym. Przy problemach krytycznych kończy się kodem `1`; ostrzeżenia trafiają do raportu i nie powodują błędu polecenia.
+`npm run check` to skrót do `npm run audit && npm test && npm run build` — ta sama kolejność, której używa CI. Poszczególne kroki możesz uruchomić osobno, jeśli diagnozujesz konkretny problem.
 
-Build sprawdza typy TypeScript i możliwość wygenerowania aplikacji. Projekt nie ma obecnie skryptów testów jednostkowych, E2E ani lintowania. Działanie wyszukiwania, filtrów, okien szczegółów i układu mobilnego sprawdzaj w przeglądarce. Workflow publikacji uruchamia build, ale nie wykonuje audytu danych.
+Audyt sprawdza m.in. identyfikatory technik, wymagane pola, kategorie, referencje między wymaganiami a atlasem, powiązania słownika, kompletność szczegółowych opisów, galerie `media.json` (2–4 elementy, typ, rozszerzenie, folder, istnienie pliku i poster wideo), źródła materiałów edukacyjnych i oznaczenia belek. Zapisuje lub nadpisuje `RAPORT.md` w katalogu głównym. Przy problemach krytycznych kończy się kodem `1`; ostrzeżenia trafiają do raportu i nie powodują błędu polecenia.
+
+Build sprawdza typy TypeScript i możliwość wygenerowania aplikacji. Testy jednostkowe (Vitest + Testing Library) obejmują m.in. filtrowanie atlasu, routing, modal z obsługą `Esc`, klikalne kategorie słownika oraz galerię `MediaGallery` — w tym to, że komunikat o placeholderze nie jest widocznym podpisem, tylko trafia do `alt`/`aria-label`. Lintowanie pozostaje w zadaniu `P1.4`; action przeglądarkowe nadal sprawdzaj w przeglądarce. Workflow CI wykonuje audyt danych, testy i build przed publikacją.
 
 ## Publikacja
 
 ### GitHub Pages
 
-Workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) uruchamia się po pushu do `main` lub `master`, a także ręcznie przez `workflow_dispatch`.
+Workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) uruchamia się po pushu do `main` lub `master`, dla każdego pull requestu oraz ręcznie przez `workflow_dispatch`. Pull requesty są tylko weryfikowane — job `deploy` jest pomijany, więc nie publikują zmian.
 
 1. W ustawieniach repozytorium wybierz **Settings → Pages → Source → GitHub Actions**.
-2. Wypchnij zmiany na jedną z obsługiwanych gałęzi lub uruchom workflow **Deploy to GitHub Pages** z zakładki **Actions**.
+2. Wypchnij zmiany na jedną z obsługiwanych gałęzi lub uruchom workflow **CI + Deploy to GitHub Pages** z zakładki **Actions**.
 3. Odczytaj adres opublikowanej strony z zakończonego wdrożenia. Dla strony projektu ma on postać `https://<USER>.github.io/<REPO>/`.
 
-Workflow instaluje zależności przez `npm ci`, buduje aplikację z `VITE_BASE=/<REPO>/`, kopiuje `dist/index.html` do `dist/404.html` i publikuje katalog `dist/`. Kopia `404.html` umożliwia załadowanie aplikacji przy bezpośrednim wejściu na podstronę, np. `/<REPO>/kyu/9`; odpowiedź serwera GitHub Pages dla takiego wejścia może nadal mieć status HTTP 404.
+Kolejność kroków w jobie `build`:
+
+1. `npm ci` — instalacja z blokady zależności.
+2. `npm run audit` — spójność danych i istnienie plików galerii; raport `RAPORT.md` jest dołączany jako artifact nawet przy błędzie.
+3. `npm test` — testy jednostkowe Vitest.
+4. `npm run build` z `VITE_BASE=/<REPO>/`.
+5. `cp dist/index.html dist/404.html` — fallback SPA dla GitHub Pages.
+6. Sprawdzenie, czy `dist/index.html`, `dist/404.html`, `dist/videos/` i `dist/images/` istnieją.
+7. Tylko dla push/dispatch: konfiguracja Pages, upload artefaktu i deploy. W pull requestach wykonują się kroki 1–6 (bez publishowania).
+
+Jeśli którykolwiek z kroków 2–6 nie przejdzie, job `deploy` się nie uruchomi. Kopia `404.html` umożliwia załadowanie aplikacji przy bezpośrednim wejściu na podstronę, np. `/<REPO>/kyu/9`; odpowiedź serwera GitHub Pages dla takiego wejścia może nadal mieć status HTTP 404.
 
 ### Inny hosting i ścieżka bazowa
 
