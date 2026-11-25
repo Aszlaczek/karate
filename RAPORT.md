@@ -1,12 +1,12 @@
 # RAPORT.md — audyt danych KIHON
 
-> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: 2026-11-23).
+> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: 2026-11-25).
 > Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`, `media.json`, `techniqueDetails.json`, `learning.json`,
-> `src/data/index.ts` (CATEGORIES), `src/features/technique/data/genaiImages.json`, zawartość `public/videos/` i `public/images/`.
+> `src/data/index.ts` (CATEGORIES), `src/data/media.json`, zawartość `public/images/`.
 
 ## 1. Integralność struktury
 
-Krytycznych problemów: **0** ✅ (id unikalne, obowiązkowe pola, kategorie ↔ `CATEGORIES`, `levels`∈0–15, mapa GenAI ↔ id technik, słownik bez martwych `related`, `levels.json`: wymagania strukturalne wskazują istniejące techniki/haseła zgodne z P0.3, belki zgodne z stopniem P0.4).
+Krytycznych problemów: **0** ✅ (id unikalne, obowiązkowe pola, kategorie ↔ `CATEGORIES`, `levels`∈0–15, słownik bez martwych `related`, `levels.json`: wymagania strukturalne wskazują istniejące techniki/haseła zgodne z P0.3, belki zgodne z stopniem P0.4).
 
 Ostrzeżenia: **0**
 
@@ -72,9 +72,9 @@ Z tego braki w atlasie do zadania **P1.6**: „Ushiro-mawashi-geri".
 
 - techniki z `image`: 118/118 (unikalnych URL-i: 1, w tym Unsplash: 118) → zadanie **P1.5**
 - techniki z `video`: 0/118 (pole zawsze `null` — miejsce na przyszłe filmiki)
-- techniki z tymczasowym zdjęciem GenAI: **82/118** (mapa `genaiImages.json`), bez zdjęcia → placeholder z kanji: 36
-- galerie w `media.json`: **4** (techniki: 1, hasła słownika: 3)
-- materiały w galeriach: **9** (w tym filmy: 3) — każda galeria 2–4 elementy, pliki istnieją w `public/`
+- techniki bez galerii (placeholder z kanji): **37/118**
+- galerie w `media.json`: **99** (techniki: 81, hasła słownika: 18)
+- materiały w galeriach: **291** (w tym filmy: 276) — galerie 2–4 elementy; wyjątki: 4 techniki z 1 filmem i `seiken` z 1 zdjęciem; pliki w R2 albo w `public/`
 
 ## 7. Statystyki
 

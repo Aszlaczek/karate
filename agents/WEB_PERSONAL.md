@@ -55,12 +55,18 @@ błędów TypeScript, testy i audyt tak samo. Linter pozostaje w `P1.4` (`TODO.m
 - **NIE wracaj do `base: "./"`** — przy history API i głębokich trasach
   ścieżki assetów by się rozjechały.
 - CI w jobie `build` wykonuje kolejno: `npm ci` → `npm run audit` → `npm test`
-  → `npm run build` → `404.html` → smoke-check `dist/` → upload artefaktu.
+  → `npm run build` → `404.html` → smoke-check `dist/index.html`, `dist/404.html`,
+  `dist/images/` → upload artefaktu. Filmy są na R2, nie w `dist/`.
   `RAPORT.md` jest wysyłany jako artifact także przy nieudanym audycie.
   Kroki Pages-specific (`configure-pages`, `upload-pages-artifact`) są pomijane
   dla PR-ów (także z forków) — PR sprawdza tylko audyt, testy, build i `dist/`.
 - Job `deploy` ma `needs: build` i `if: github.event_name != 'pull_request'` —
   PR-y są tylko sprawdzane, publikacja następuje po pushu/dispatchu.
+- Osobny workflow `media-upload.yml` (tylko `workflow_dispatch`) przygotowuje
+  klipy 1080p, wysyła je do R2 i commituje `media.json`. Wymaga sekretów
+  `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET`,
+  `R2_PUBLIC_BASE_URL`. Nie dodawaj uploadu do main CI — bez warunku przesyłałby
+  całe archiwum przy każdym pushu.
 - Rozszerzanie testów: `src/**/__tests__/*.test.tsx`, alias `@` działa w
   `vitest.config.ts`; `src/test/setup.ts` czyści DOM i mockuje `window.scrollTo`.
 
@@ -70,6 +76,8 @@ błędów TypeScript, testy i audyt tak samo. Linter pozostaje w `P1.4` (`TODO.m
 index.html                # punkt wejścia Vite, meta SEO (lang="pl"), favicon
 vite.config.ts            # base przez env VITE_BASE + alias `@` → `src/`
 vitest.config.ts          # Vitest: jsdom, alias `@`, setupFiles, mocki
+.env.r2.example          # wzór sekretów R2 (tracked)
+.env.r2                  # lokalne sekrety R2 (gitignored)
 src/
   test/setup.ts           # jest-dom, cleanup DOM, mock window.scrollTo
   main.tsx                # mount <App/> + import stylów `./styles/index.css`
@@ -100,10 +108,10 @@ src/
                           # (render belki: `belt-stripes` flex, `getStripeCount`);
                           # RequirementsPanel używa `GlossaryLink` dla typ `glossary`
     technique/            # TechniquesSection, TechniqueModal, TechniqueLink,
-                          # TechniqueIllustration (legacy `video` + fallback GenAI),
+                          # TechniqueIllustration (legacy `video` + placeholder kanji),
                           # MediaFrame, MediaGallery, media.ts (resolveMediaSrc,
                           # youtubeId, miniatury), TechniqueCard, TechniquesToolbar,
-                          # AllTechniques + data/genaiImages.json (fallback)
+                          # AllTechniques (galerie z media.json)
                           # + styles/technique.css, technique-modal.css, media-gallery.css
     glossary/             # GlossaryEntryModal, ZoneIllustration, GlossaryCard,
                           # GlossaryGrid, GlossaryToolbar, GlossaryLink
@@ -130,20 +138,29 @@ src/
                           # GuidesPage, TriviaPage, FeedbackPage ładowane przez lazy
 old_src/                  # ARCHIWUM starego źródła — NIE EDYTOWAĆ
 public/favicon.svg
-public/videos/
-  techniques/<id>/...      # filmy techniki, po jednym folderze na canonical id
-  stances/<stance>-*.mp4   # filmy postaw (płasko, wg przykładu fudo-dachi.mp4)
-  glossary/<id>-*.mp4      # filmy haseł dłoni/stóp
+media-source/              # archiwum ORYGINAŁÓW, gitignored (poza public/)
+  videos/<id>/video/*.mp4  # jeden folder na canonical id techniki/hasła
+  videos/_nieprzypisane/   # pliki bez pewnego dopasowania
+  MAPPING.md               # generowany raport mapowania (również gitignored)
+media-build/               # 480p + postery do uploadu, gitignored
+  <id>/video|poster|image/
 public/images/
-  techniques/<id>/...      # zdjęcia techniki + postery do jej filmów
-  stances/<stance>-*.jpg   # zdjęcia postaw + postery
-  glossary/<id>-*.jpg      # zdjęcia dłoni/stóp + postery
-  GenAI/, glossary/stances/# stare fallbacki, NIE migruj automatycznie
-scripts/audit-danych.mjs   # audyt danych + istnienia plików galerii (npm run audit)
-scripts/generate-media.mjs # skaner folderów → media.json (npm run media:manifest)
+  techniques/<id>/...      # lokalne zdjęcia techniki (tryb fallback)
+  stances/, glossary/…     # lokalne zdjęcia postaw i dłoni/stóp
+  glossary/stances/     # zdjęcia postaw (źródło: glossary.json)
+   glossary/human-parts/ # pięści i części ciała
+scripts/audit-danych.mjs   # audyt danych + plików/URL-i galerii (npm run audit)
+scripts/generate-media.mjs # R2 lub skaner public/ → media.json (media:manifest)
+scripts/media-map.mjs      # mapowanie plików, etykiety, selekcja ujęć
+scripts/organize-media.mjs # public/videos → media-source (media:organize)
+scripts/prepare-media.mjs  # ffmpeg-static 1080p + postery (media:prepare)
+scripts/upload-media.mjs   # S3 API → R2 (media:upload)
+scripts/check-remote-media.mjs # HEAD-check URL-i (media:check-remote)
+scripts/media-env.mjs      # loader .env.r2 / zmiennych środowiskowych
 RAPORT.md                  # wynik audytu — generowany, NIE edytować ręcznie
 dist/                     # wynik builda (+ 404.html w CI)
 .github/workflows/deploy.yml
+.github/workflows/media-upload.yml # ręczny upload do R2
 agents/                   # dokumentacja agenta: WEB_PERSONAL.md, DONE.md,
                           # TODO.md, RAPORT.md (kopia audytu)
 ```
@@ -219,8 +236,7 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   linkuje już po aliasach — wymagania to referencje strukturalne),
   **`infographic`** (pole zostaje w JSON-ach jako metadane, ale **kod je
   ignoruje** — mapa `DRAWINGS` nie istnieje), `image`, **`video`**
-  (`null` → tymczasowe zdjęcie GenAI z mapy `genaiImages.json`, a gdy go
-  brak — galeria z `media.json`, potem placeholder z kanji; nie-null →
+  (`null` → galeria z `media.json`, potem placeholder z kanji; nie-null →
   `MediaFrame` renderuje YouTube/`*.mp4`/`*.gif`/`*.jpg`). Kategoria
   "Pozycje" usunięta z atlasu technik (postawy żyją w `glossary.json`).
 - **`glossary.json`** — `categories[]` → `entries[]`:
@@ -285,30 +301,58 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   karty (`TechniqueCard`, `GlossaryCard`) biorą tylko pierwszy obraz/poster
   przez `getMediaThumbnail()` i nie montują odtwarzaczy.
 - `MediaFrame` to jedyny renderer jednego medium (YouTube, `<video>`, `<img>`);
-  `TechniqueIllustration` obsługuje już tylko legacy `video` i fallback GenAI.
+  `TechniqueIllustration` obsługuje już tylko legacy `video` i placeholder kanji.
   `resolveMediaSrc()` przeniesiono do `media.ts` i re-eksportuje go
   `TechniqueIllustration` (stare importy w słowniku działają).
-- Ścieżki: techniki `/videos/techniques/<id>/…` i `/images/techniques/<id>/…`;
-  postawy `/videos/stances/<reading>-*.mp4`, `/images/stances/…`;
-  pozostałe hasła `/videos/glossary/<reading>-*.mp4`, `/images/glossary/…`.
-  Pliki posterów mają ten sam stem co film i **nie są** osobnymi galeriami.
-- Dodawanie mediów: wrzuć pliki do folderu, uruchom `npm run media:manifest`
-  (`scripts/generate-media.mjs` skanuje foldery, dopasowuje hasła po `reading`,
-  zachowuje ręczne `label`/`alt`/`caption` i dobiera poster po stemie), a następnie
-  dopisz własne opisy w `media.json`. `npm run audit` sprawdza 2–4 elementy,
-  rozszerzenia, zgodność folderu, istnienie pliku i poster dla wideo.
-- Przykładowe pliki w repozytorium (`*-demo.mp4`, grafiki GenAI) to wyraźnie
-  oznaczone placeholdery techniczne — do zastąpienia nagraniami z dojo.
+- Docelowe źródła to pełne URL-e R2: `<id>/video/<stem>.mp4`,
+  `<id>/poster/<stem>.jpg`, `<id>/image/<stem>.jpg`. `resolveMediaSrc()`
+  przepuszcza `https://…` bez dodawania bazy. Tryb lokalny nadal
+  używa `/videos/{techniques,stances,glossary}/…` i `/images/…`.
+  Filmy i postery są zawsze 1080×1920 (9:16, z pasami zamiast ucinania,
+  `libx264 -preset slow -crf 18`, JPEG `-q:v 2`). Zdjęcia samodzielne
+  (`seiken`, `sokuto`) są kopiowane bez rekompresji z lokalnych oryginałów
+  1448×1086. Daje to około 882 MB w R2 przy darmowym limicie 10 GB-month;
+  egress jest free. `media:upload` próbuje 3 razy na plik (EPIPE bywa przejściowy).
+- Nowe nagrania: wrzuć surowe pliki do `public/videos/techniques/` i uruchom
+  `npm run media:organize` → `media-source/videos/<id>/video/` (+ `MAPPING.md`).
+  Sufiksy: `f` = przód, `s` = bok, `d` = detal, `b` = dodatkowe ujęcie,
+  `a` = wariant. Wybór: `f1 → s1 → f2 → s2 → …`, maks. 4 na wpis.
+  Nieprzypisane pliki zostają w `_nieprzypisane/` i nie trafiają do galerii.
+  Oczywiste literówki i konflikty aliasów (np. `koken-uke-jodan-*`) mają
+  jawne nadpisania w `scripts/media-map.mjs` — rozszerzaj je zamiast podnosić
+  próg dopasowania, bo krótkie hasła słownika (`seiken`, `haito`) zaczęłyby
+  pochłaniać dłuższe techniki.
+- Sekrety lokalne: skopiuj `.env.r2.example` do `.env.r2` (gitignored) i wpisz
+  `R2_*`. `scripts/media-env.mjs` ładuje ten plik; środowisko/workflow mają
+  pierwszeństwo, `R2_ENV_FILE` wskazuje inny plik. Nie commituj sekretów.
+- Publikacja: ustaw zmienne `R2_*` (patrz `media-source/README.md`), uruchom
+  `npm run media:prepare` (1080×1920 przez `ffmpeg-static`, postery q:v 2),
+  `npm run media:upload`, `npm run media:cleanup -- --apply`,
+   `R2_PUBLIC_BASE_URL=… npm run media:manifest`,
+  potem `npm run media:check-remote` i `npm run check`. Generator zachowuje
+  ręczne `label`/`alt`/`caption`. Audyt sprawdza 2–4 elementy (wyjątki: 4
+  techniki z 1 filmem, `seiken` z 1 zdjęciem), rozszerzenia, folder
+  `video`/`poster`/`image`, istnienie pliku lokalnego albo HTTPS i poster.
+- Nagrania `*-demo.mp4` i grafiki GenAI zostały usunięte z repozytorium
+  oraz z R2 (przez `media:cleanup`).
+- `entry.image` w `glossary.json` wskazuje lokalne zdjęcia `stances/`
+  (łącznie z nowym `Seiza.jpg`) oraz `human-parts/` dla `haito`, `kakato`,
+  `chusoku`, `haisoku`, `teisoku` i `hiza`. Audyt sprawdza istnienie tych
+  plików w `public/`. Hasła `seiken` i `sokuto` zostają przy swoich
+  zdjęciach w R2 (bez duplikatu w karcie).
+- Zdjęcie postawy jest **wyłącznie miniaturką na kafelku** — `GlossaryCard`
+  czyta `entry.image`, ale `GlossaryEntryModal` nie dodaje go do galerii
+  i nie używa jako fallbacku. Modal startuje od filmu; gdy postawa nie ma
+  filmu (`seiza`), pokazuje placeholder z kanji i wymową. Klatki z filmów
+  zostają w galerii jako kolejne ujęcia.
+- W galerii `kumite` pliki `kumite-kamae-f1` i `kumite-kamae-migi-f1`
+  mają w `label`/`alt` oznaczenie odpowiednio lewej i prawej strony.
+  Reguła: brak `migi` w nazwie = lewa strona, `...-migi` = prawa.
 
 - **Nowa technika:** dopis wpis w `techniques.json` (+ `aliases`, `levels`).
-  Zdjęcie tymczasowe: plik w `public/images/GenAI/techniques/<folder>/<id>.png`
-  (`<folder>` = `start` dla poziomu 0, `dan` dla ≥11, inaczej numer poziomu —
-  decyduje pierwszy level techniki mający plik) **oraz** wpis w
-  `src/features/technique/data/genaiImages.json` (`id` → ścieżka od `/`,
-  rozwiązywana przez `resolveTechniqueImage()`); audyt porównuje klucze mapy
-  z atlasem (martwe klucze = ostrzeżenie). Brak wpisu = karta i modal
-  pokazują placeholder z kanji. Pole `video` jest legacy i zostaje jako
-  awaryjne jedno medium. Właściwe media dodawaj do galerii (patrz niżej).
+  Media dodawaj do galerii w `src/data/media.json` (patrz niżej); bez galerii
+  karta i modal pokazują placeholder z kanji. Pole `video` jest legacy i
+  zostaje jako awaryjne jedno medium.
 - **Nowy stopień / zmiana wymagań:** edytuj `levels.json` — karty pasów,
   panel wymagań, filtr stopni i nawigacja prev/next zaktualizują się same.
 - **Nowe hasło słownika:** dopis w `glossary.json` do właściwej kategorii —
@@ -361,7 +405,7 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   organizacjami i dojo".
 - **Terminologia:** najpierw polska nazwa lub romaji, kanji jako element
   ozdobny/identyfikujący (`japanese`, `reading` w danych).
-- **Wizualizacja techniki = zdjęcie GenAI, nie rysunki SVG** — generowane
+- **Wizualizacja techniki = galeria filmów/zdjęć, nie rysunki SVG** — generowane
   postacie (mapa `DRAWINGS`, funkcje `*Art`, legenda pozycji) zostały
   usunięte. **Karta:** `.tech-image .technique-photo-frame` — biała ramka,
   `object-fit: contain`, `filter: grayscale(1) contrast(1.05)` (hover: skala
@@ -371,9 +415,8 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   (białe tło, padding 12, `max-width: min(100%, 520px)`, `flex: 1 1 0` +
   `height: 0`, **pełny kolor** — bez grayscale). Brak zdjęcia →
   `.technique-visual-placeholder` (kanji + wymowa; wzór z
-  `.glossary-visual-placeholder`). Mapa obrazów:
-  `src/features/technique/data/genaiImages.json`, wszystkie ścieżki
-  lokalne przechodzą przez `resolveMediaSrc()` (prefiks `BASE_URL`).
+  `.glossary-visual-placeholder`). Wszystkie ścieżki lokalne przechodzą
+  przez `resolveMediaSrc()` (prefiks `BASE_URL`).
 - **Media z pola `video`** obsługuje `renderMedia()` w
   `TechniqueIllustration.tsx` (YouTube/`<video>`/`<img>`, klasy
   `.technique-media*`), karta przekazuje `controls={false}`. Wcześniejsza
@@ -473,8 +516,8 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
 9. **Nie trzymaj stanu modali / menu mobilnego w `useState`** — źródłem
    prawdy jest `src/store/*` (Zustand); komponenty czytają go selektorami.
 10. **Nie odtwarzaj rysunków SVG postaci ani mapy `DRAWINGS`** — wizualizacja
-    techniki to zdjęcia z `public/images/GenAI/` (mapa `genaiImages.json`)
-    + placeholder kanji; zostaje tylko diagram stref (`ZoneIllustration`).
+    techniki to galeria z `media.json` + placeholder kanji; zostaje tylko
+    diagram stref (`ZoneIllustration`).
 11. **Nie edytuj plików w `src/data/`** bez wyraźnej prośby użytkownika —
     dane poprawia on sam (wpisy w historii pokazują, że edycje „obok"
     rozbijają audyt P0.3).

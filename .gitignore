@@ -10,3 +10,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .old_src
+media-source/*
+!media-source/README.md
+media-build/
+.env.r2

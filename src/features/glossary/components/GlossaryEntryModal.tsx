@@ -31,6 +31,7 @@ const GlossaryEntryModal = ({
   const { onBackdropMouseDown } = useModalBase(onClose);
   const detail =
     category.id === STANCE_CATEGORY_ID ? getStanceDetail(entry.id) : undefined;
+  // Zdjęcie postawy jest tylko miniaturką na kafelku — w modalu startują filmy.
   const media = getGlossaryMedia(entry.id);
 
   return (
@@ -58,7 +59,7 @@ const GlossaryEntryModal = ({
           </div>
           {media.length > 0 ? (
             <MediaGallery key={entry.id} items={media} title={entry.term} />
-          ) : entry.image ? (
+          ) : category.id !== STANCE_CATEGORY_ID && entry.image ? (
             <img
               className="glossary-photo"
               src={resolveMediaSrc(entry.image)}

@@ -37,8 +37,23 @@
   przeniesienie seiken/shuto/kakato/chusoku z `części ciała`, kategoria
   `pozycje` przemianowana na „Postawy (dachi)” bez zmiany `id`.
   Rezultat: 68 haseł / 8 kategorii, audyt 0 krytycznych / 0 ostrzeżeń,
-  build ✅. Przykładowe pliki `*-demo.mp4` i grafiki to placeholdery do
-  zastąpienia autorskimi nagraniami (P1.13 pozostaje otwarte).
+  build ✅. Przykładowe pliki `*-demo.mp4` i grafiki GenAI zostały
+  później usunięte (P1.13 pozostaje otwarte).
+
+- [ ] 🟡 **P1.16 — Publikacja autorskich nagrań z dojo na Cloudflare R2**
+  Infrastruktura gotowa: `media-source/` (archiwum 357 plików), skrypty
+  `media:organize` → `media:prepare` (1080×1920 CRF 18 slow + postery q:v 2) → `media:upload` →
+  `media:manifest`, audyt i testy URL-i oraz workflow `media-upload.yml`.
+  Mapowanie i 8 plików bez dopasowania opisane w `media-source/MAPPING.md`.
+  Bucket i sekrety skonfigurowane, 567 URL-i R2 osiągalnych, strona bez filmów
+  w `dist/`. Media podniesione do 1080×1920 (~710 MB przy limicie 10 GB),
+  a `haito`, `kakato`, `chusoku`, `haisoku`, `teisoku` i `hiza` mają zdjęcia
+  z `public/images/glossary/human-parts/`. Pozostaje wyłącznie ręczne
+  dopasowanie przypisań filmów (`OVERRIDES` w `scripts/media-map.mjs`)
+  i ewentualne wykorzystanie pozostałych plików `human-parts/`
+  (`keiko`, `sune`, `toho`, `naka-jubi-ippon-ken`, `oya-jubi-ippon-ken`).
+  Kryteria: galerie 2–4 elementy (wyjątki opisane w audycie), URL-e osiągalne,
+  `npm run check` ✅ i strona bez filmów w `dist/`.
 
 - [ ] 🟡 **P1.13 — Autorskie zdjęcia i filmy do poradników**
   Uzupełnić 4 poradniki o sprawdzone przez instruktora zdjęcia kolejnych

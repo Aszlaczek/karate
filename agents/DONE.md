@@ -7,6 +7,48 @@
 
 ---
 
+### 2026-11-24 — P1.16: infrastruktura publikacji nagrań na Cloudflare R2
+
+- **Decyzje:** filmy nie trafiają do `public/` (Pages ma limit 1 GB). Archiwum
+  leży w `media-source/videos/<id>/video/` (gitignored), a wybrane 480p klipy
+  i postery w `media-build/` (gitignored) — docelowo na R2 pod
+  `<id>/video|poster|image/<stem>`. Układ jest „bez sekcji”: kanoniczny `id`
+  techniki albo hasła słownika (postawy też są w słowniku).
+- **Organizacja:** `npm run media:organize` przeniósł 354 nowe pliki z
+  `public/videos/techniques/` i skopiował 3 stare demo do archiwum — łącznie
+  357 plików, 98 wpisów, 8 plików w `_nieprzypisane/`. `media-source/MAPPING.md`
+  opisuje dopasowania i wybór ujęć (`f1 → s1 → f2 → s2 → …`, max 4 na wpis).
+  Literówki (`hiraken`, `uchi-hachi-ji`, `mai`, itd.) oraz 6 plików
+  `koken-uke-jodan-*` (alias `jōdan-uke` błędnie wskazywał na seiken) mają
+  nadpisania w `scripts/media-map.mjs`; `mae-tobi-geri1/2/3`, `seiken-yodan-*`,
+  `seiken-chudan-tsuki`, `seiken-gedan-tsuki` i `IDK_1` zostały nieprzypisane.
+  `media:organize` potrafi też poprawić foldery już istniejącego archiwum,
+  a `media:prepare` czyści `media-build/` przed generowaniem.
+- **Skrypty:** `media:organize`, `media:prepare` (`ffmpeg-static`, 480p, bez
+  audio, postery), `media:upload` (S3 API R2), `media:check-remote` (HEAD).
+  `generate-media.mjs` ma tryb R2 (`R2_PUBLIC_BASE_URL`) i zachowuje ręczne
+  opisy; audyt akceptuje HTTPS, sprawdza folder `video`/`poster`/`image` i
+  opcjonalnie prefiks bucketa. `resolveMediaSrc()` przepuszcza pełne URL-e.
+- **Sekrety:** `.env.r2` gitignored (wzór `.env.r2.example`) i loader
+  `scripts/media-env.mjs`. Skrypty czytają lokalny plik, a zmienne z środowiska
+  (GitHub Secrets) mają pierwszeństwo; `R2_ENV_FILE` pozwala wskazać inny plik.
+- **CI:** nowy `media-upload.yml` (`workflow_dispatch`, sekrety `R2_*`) robi
+  prepare → upload → manifest → audyt → HEAD-check → commit `media.json`.
+  Główna bramka `audit → test → build` bez zmian; smoke-check nie wymaga już
+  `dist/videos/`, bo filmy są zdalne. `allowScripts` w `package.json` zatwierdza
+  skrypt instalacyjny `ffmpeg-static`.
+- **Weryfikacja przygotowania:** `media:prepare` wygenerował 279 filmów
+  i 291 obrazów dla 99 wpisów (33 MB w `media-build/`). Manifest testowy z
+  `R2_PUBLIC_BASE_URL=https://example.r2.dev/` ma 81 technik, 18 haseł,
+  293 elementy (każda galeria 2–4), 0 lokalnych ścieżek i przechodzi audyt
+  0/0. `npm ci && npm run check` ✅ (20 testów), `npm audit --omit=dev` → 0.
+- **Testy:** dodane testy mapowania/selekcji i pełnych URL-i (łącznie
+  7 plików / 20 testów).
+- **Pozostaje:** skonfigurować bucket i sekrety oraz uruchomić upload — opisane
+  jako P1.16 w `TODO.md`.
+
+---
+
 ### 2026-11-23 — P1.3: testy + wzmocnienie CI/CD
 
 - **Testy:** Vitest 5 + Testing Library + jsdom. `vitest.config.ts` (alias `@`,
@@ -637,3 +679,88 @@ one-pager bez routera.
   (opcjonalna usługa wysyłkowa), P2.6 (lokalny postęp i ulubione), P2.7
   (fiszki i wymowa), P2.8 (offline/PWA). Kontekst architektury zaktualizowano
   w `WEB_PERSONAL.md`.
+
+### 2026-11-25 — Porządki w mediach: koniec z GenAI i demami, jednolity pion 9:16
+
+- Usunięto `public/images/GenAI/` (~225 MB) i mapę
+  `src/features/technique/data/genaiImages.json`. `TechniqueIllustration`
+  nie ma już gałęzi z ilustracją AI — technika bez galerii dostaje placeholder
+  z kanji. Audyt odrzuca każde `src`/`poster` wskazujące na `/images/GenAI/`.
+- Usunięto nagrania testowe `fudo-dachi-demo.mp4`, `seiken-demo.mp4`
+  i `seiken-morote-tsuki-demo.mp4` z `public/`, archiwum `media-source/`
+  i R2. Hasło `seiken` ma teraz jedno własne zdjęcie pięści
+  (`public/images/glossary/human-parts/seiken-piesc.jpg`).
+- Postawy czytają zdjęcie z `entry.image` (`/images/glossary/stances/…`)
+  jako pierwszy, główny widok w karcie i modalu słownika; filmy z `media.json`
+  zostają jako kolejne ujęcia.
+- `scripts/prepare-media.mjs`: wszystkie filmy i postery mają wymiar 270×480
+  (`scale` + `pad`, bez ucinania, `setsar=1`, bez audio). Filmy poziome
+  otrzymują czarne pasy. Kafelki galerii pomniejszone do 84 px (72 px na
+  telefonie), ramka 9:16 i `object-fit: contain`.
+- Dodano `npm run media:cleanup` (podgląd i `--apply`): usuwa z R2 klucze
+  nieużyte przez `manifest-source.json`, w tym stare dema i pliki systemowe.
+  Krok czyszczenia dodany również do `workflow_dispatch` `media-upload.yml`.
+- `media.json`: 81 galerii technik + 18 haseł słownika, 567 osiągalnych URL-i
+  R2, 0 odwołań do dem/GenAI. Wyjątki audytu: 4 techniki z 1 filmem (+ klatka)
+  i `seiken` z 1 zdjęciem.
+- Weryfikacja: `npm run media:prepare` ✅ (276 filmów, 288 obrazów),
+  `media:upload` ✅, `media:cleanup -- --apply` ✅ (10 obiektów),
+  `media:manifest` ✅, `media:check-remote` ✅ (567/567),
+  `npm run check` ✅ (audyt 0/0, 24 testy, build),
+  `npm audit --omit=dev` ✅ (0 luk), `git diff --check` ✅.
+- Przypisania filmów w `scripts/media-map.mjs` (`OVERRIDES`) zostały
+  nietknięte — użytkownik ustawia je sam.
+
+---
+
+### 2026-11-25 — Zdjęcia human-parts, strony w kumite i pełna rozdzielczość R2
+
+- `entry.image` w `src/data/glossary.json` otrzymało 6 haseł bez galerii:
+  `haito`, `kakato`, `chusoku`, `haisoku`, `teisoku`, `hiza`
+  (pliki `/images/glossary/human-parts/*.svg`). Karta i modal słownika
+  renderują je przez istniejący fallback, więc zmian w React nie było.
+  `seiken` i `sokuto` zostają przy zdjęciach z R2 (bez duplikatów).
+- Audyt `scripts/audit-danych.mjs` sprawdza teraz każdy lokalny `entry.image`
+  pod kątem istnienia pliku w `public/` i odrzuca HTTP zamiast HTTPS.
+- Galeria `kumite`: `kumite-kamae-f1` → „Kamae — lewa strona”,
+  `kumite-kamae-migi-f1` → „Kamae — prawa strona” w `label` i `alt`.
+  `generate-media.mjs` zachował opisy przy regeneracji manifestu.
+- `scripts/prepare-media.mjs`: filmy i postery/klatki przeszły z 270×480
+  CRF 28 veryfast / JPEG q:v 5 na **1080×1920, `libx264 -preset slow
+  -crf 18`, JPEG `-q:v 2`**. Jedyny poziomy plik (`ippon-kumite2-s1`,
+  3840×2160) dostaje czarne pasy. Samodzielne zdjęcia `seiken` i `sokuto`
+  są kopiowane bez rekompresji z oryginałów 1448×1086.
+- `scripts/upload-media.mjs` próbuje 3 razy na plik — przejściowy `EPIPE`
+  podczas pierwszego uploadu został w ten sposób obsłużony.
+- Stan R2: **567 obiektów, 881,7 MB** (834 MB filmów, 47,6 MB obrazów)
+  przy darmowym limicie 10 GB-month; egress bezpłatny. `media:cleanup`
+  nie znalazł nieużywanych kluczy.
+- Weryfikacja: `media:prepare` ✅ (276 filmów, 291 obrazów, 99 wpisów),
+  `media:upload` ✅ (567/567), `media:cleanup -- --apply` ✅ (0 obiektów),
+  `media:manifest` ✅ (81 technik + 18 haseł, 291 elementów),
+  `media:check-remote` ✅ (567/567), `npm run check` ✅ (audyt 0/0,
+  26 testów, build), `git diff --check` ✅.
+- `OVERRIDES` w `scripts/media-map.mjs` oraz położenie plików w
+  `media-source/videos/` pozostały bez zmian.
+
+---
+
+### 2026-11-25 — Zdjęcie postawy tylko na kafelku, lokalny `Seiza.jpg`
+
+- Pobrano obraz `seiza` (300×360 JPEG, 16 KB) do
+  `public/images/glossary/stances/Seiza.jpg`. W `src/data/glossary.json`
+  pole `image` tego hasła wskazuje teraz na lokalną ścieżkę zamiast
+  zewnętrznej miniaturki Google — wszystkie zdjęcia postaw leżą w jednym
+  folderze.
+- `GlossaryEntryModal.tsx`: usunięto tworzenie `stanceImage` i dodawanie go
+  na początek galerii. Zdjęcie z `entry.image` nie jest już też fallbackiem
+  dla kategorii `pozycje`. Modal postawy startuje od filmu; `seiza` (bez
+  filmu) pokazuje placeholder z kanji i wymową. Klatki z filmów nadal są
+  kolejnymi elementami galerii.
+- `GlossaryCard.tsx` bez zmian — zdjęcie postawy pozostaje dekoracyjną
+  miniaturką kafelka (`alt=""`).
+- Dodano `GlossaryStanceMedia.test.tsx`: kafelki `fudo`/`seiza` mają lokalny
+  `src` i pusty `alt`; modal `fudo` zaczyna się od `1 / 2` i nagrania;
+  modal `seiza` nie ma `<img class="glossary-photo">`, tylko placeholder.
+- Weryfikacja: `npm test` ✅ (29 testów), `npm run check` i
+  `git diff --check` ✅. Dane `media.json` i R2 bez zmian.

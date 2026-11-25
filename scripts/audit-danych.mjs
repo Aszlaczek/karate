@@ -1,6 +1,9 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { basename, dirname, extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadMediaEnv } from "./media-env.mjs";
+
+loadMediaEnv();
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => readFileSync(join(root, p), "utf8");
@@ -10,7 +13,6 @@ const techs = JSON.parse(read("src/data/techniques.json"));
 const levels = JSON.parse(read("src/data/levels.json"));
 const glossary = JSON.parse(read("src/data/glossary.json"));
 const indexTs = read("src/data/index.ts");
-const genaiImages = JSON.parse(read("src/features/technique/data/genaiImages.json"));
 const media = JSON.parse(read("src/data/media.json"));
 const details = JSON.parse(read("src/data/techniqueDetails.json"));
 const learning = JSON.parse(read("src/data/learning.json"));
@@ -113,16 +115,21 @@ const glossEntries = glossary.categories.flatMap((c) => c.entries);
 const glossIds = new Set(glossEntries.map((e) => e.id));
 const techIds = new Set(techs.map((t) => t.id));
 
-// mapa obrazów GenAI (src/features/technique/data/) ↔ id technik
-for (const key of Object.keys(genaiImages))
-  if (!techIds.has(key)) warn.push("GenAI — mapa obrazów wskazuje nieistniejącą technikę \"" + key + "\"");
-
 const dupGloss = glossEntries.map((e) => e.id).filter((id, i, a) => a.indexOf(id) !== i);
 if (dupGloss.length) critical.push("glossary.json — zduplikowane id: " + dupGloss.join(", "));
 for (const e of glossEntries) {
   if (!e.term) critical.push("glossary.json — pusty term w \"" + e.id + "\"");
   for (const r of e.related ?? [])
     if (!techIds.has(r) && !glossIds.has(r)) critical.push("glossary.json — martwy related \"" + r + "\" w haśle \"" + e.id + "\"");
+  if (e.image) {
+    if (/^https?:\/\//i.test(e.image)) {
+      if (!/^https:\/\//i.test(e.image)) critical.push(`glossary.json — "${e.id}" ma obraz HTTP: ${e.image}`);
+    } else if (!e.image.startsWith("/")) {
+      critical.push(`glossary.json — "${e.id}" ma ścieżkę obrazu bez "/": ${e.image}`);
+    } else if (!existsSync(join(root, "public", e.image.slice(1)))) {
+      critical.push(`glossary.json — brak pliku obrazu ${e.image} w haśle "${e.id}"`);
+    }
+  }
 }
 
 // --- 3b. Galerie mediów (media.json) ---------------------------------------
@@ -130,10 +137,55 @@ for (const e of glossEntries) {
 const stanceIds = new Set(
   glossary.categories.find((category) => category.id === "pozycje")?.entries.map((entry) => entry.id) ?? [],
 );
+// Brak drugiego nagrania w archiwum — galerie jednofilmowe są świadomym wyjątkiem.
+const ONE_VIDEO_TECHNIQUES = new Set([
+  "ippon-kumite-2-9-kyu",
+  "mae-kakato-geri",
+  "seiken-shita-tsuki",
+  "yoko-keage",
+]);
+// Hasło z jednym, własnym zdjęciem zamiast filmu.
+const IMAGE_ONLY_ENTRIES = new Set(["seiken"]);
 const allowedMedia = /\.(mp4|webm|mov|jpe?g|png|webp|gif|svg)$/i;
 const mediaStats = { techniques: { sets: 0, items: 0, videos: 0 }, glossary: { sets: 0, items: 0, videos: 0 } };
 
+const isRemoteSrc = (src) => /^https?:\/\//i.test(src);
 const publicFile = (src) => src.startsWith("/") && existsSync(join(root, "public", src.slice(1)));
+const pathOf = (src) => {
+  try {
+    return isRemoteSrc(src) ? decodeURIComponent(new URL(src).pathname) : src.split(/[?#]/)[0];
+  } catch {
+    return "";
+  }
+};
+const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+const legacyRootFor = (section, id, type) =>
+  section === "techniques" ? `/${type === "video" ? "videos" : "images"}/techniques/${id}/`
+    : stanceIds.has(id) ? `/${type === "video" ? "videos" : "images"}/stances/`
+      : `/${type === "video" ? "videos" : "images"}/glossary/`;
+
+/** R2 używa kluczy `<id>/video|poster|image/<stem>`; localnie zostawiamy stare układy. */
+const mediaFolder = (kind) => (kind === "video" ? "video" : kind === "poster" ? "poster" : "image");
+const inMediaFolder = (src, id, kind, section) => {
+  const path = pathOf(src);
+  if (isRemoteSrc(src)) {
+    return new RegExp(`(?:^|/)${escapeRegExp(id)}/${mediaFolder(kind)}/[^/]+$`).test(path);
+  }
+  return path.startsWith(legacyRootFor(section, id, kind === "video" ? "video" : "image"));
+};
+const mediaAvailable = (src) => isRemoteSrc(src) || publicFile(src);
+
+const r2Base = (() => {
+  if (!process.env.R2_PUBLIC_BASE_URL) return null;
+  try {
+    const url = new URL(process.env.R2_PUBLIC_BASE_URL);
+    return `${url.origin}${url.pathname.replace(/\/$/, "")}/`;
+  } catch {
+    warn.push("R2_PUBLIC_BASE_URL: nieprawidłowy URL");
+    return null;
+  }
+})();
 
 for (const [section, ids] of [["techniques", techIds], ["glossary", glossIds]]) {
   const group = media[section] ?? {};
@@ -143,13 +195,19 @@ for (const [section, ids] of [["techniques", techIds], ["glossary", glossIds]]) 
     if (!Array.isArray(items)) { critical.push(`${label}: galeria nie jest tablicą`); continue; }
     mediaStats[section].sets += 1;
     mediaStats[section].items += items.length;
-    if (items.length < 2 || items.length > 4)
+    const videoCount = items.filter((item) => item?.type === "video").length;
+    const imageCount = items.filter((item) => item?.type === "image").length;
+    const oneVideoException = section === "techniques" && ONE_VIDEO_TECHNIQUES.has(id);
+    const imageOnlyException = IMAGE_ONLY_ENTRIES.has(id);
+    if (imageOnlyException) {
+      if (videoCount !== 0 || imageCount !== 1)
+        critical.push(`${label}: wyjątek obrazu wymaga dokładnie 1 zdjęcia i 0 filmów`);
+    } else if (oneVideoException) {
+      if (videoCount !== 1 || items.length > 2)
+        critical.push(`${label}: wyjątek jednofilmowy wymaga 1 filmu i opcjonalnie 1 klatki`);
+    } else if (items.length < 2 || items.length > 4) {
       warn.push(`${label}: galeria ma ${items.length} elementów (oczekiwano 2–4)`);
-
-    const rootFor = (type) =>
-      section === "techniques" ? `/${type === "video" ? "videos" : "images"}/techniques/${id}/`
-        : stanceIds.has(id) ? `/${type === "video" ? "videos" : "images"}/stances/`
-          : `/${type === "video" ? "videos" : "images"}/glossary/`;
+    }
 
     const seen = new Set();
     for (const [index, item] of items.entries()) {
@@ -159,14 +217,23 @@ for (const [section, ids] of [["techniques", techIds], ["glossary", glossIds]]) 
         continue;
       }
       if (item.type !== "video" && item.type !== "image") critical.push(`${itemLabel}: nieprawidłowy type "${item.type}"`);
+      if (/\/images\/GenAI\//i.test(item.src) || (item.poster && /\/images\/GenAI\//i.test(item.poster)))
+        critical.push(`${itemLabel}: grafiki GenAI nie są już obsługiwane`);
       if (seen.has(item.src)) critical.push(`${itemLabel}: powtórzony src`);
       seen.add(item.src);
-      if (!item.src.startsWith("/")) critical.push(`${itemLabel}: ścieżka musi zaczynać się od "/"`);
-      else if (!allowedMedia.test(item.src)) critical.push(`${itemLabel}: niedozwolone rozszerzenie "${item.src}"`);
-      else if (!publicFile(item.src)) critical.push(`${itemLabel}: brak pliku public${item.src}`);
-      if (!item.src.startsWith(rootFor(item.type)))
-        critical.push(`${itemLabel}: plik poza folderem "${rootFor(item.type)}"`);
-      const ext = extname(item.src).toLowerCase();
+      if (/^http:\/\//i.test(item.src)) critical.push(`${itemLabel}: źródło musi używać HTTPS`);
+      else if (!isRemoteSrc(item.src) && !item.src.startsWith("/"))
+        critical.push(`${itemLabel}: ścieżka musi zaczynać się od "/"`);
+      else if (!allowedMedia.test(pathOf(item.src)))
+        critical.push(`${itemLabel}: niedozwolone rozszerzenie "${item.src}"`);
+      else if (!mediaAvailable(item.src))
+        critical.push(`${itemLabel}: brak pliku ${item.src}`);
+      if (r2Base && isRemoteSrc(item.src) && !item.src.startsWith(r2Base))
+        critical.push(`${itemLabel}: źródło poza R2_PUBLIC_BASE_URL`);
+      if (!inMediaFolder(item.src, id, item.type === "video" ? "video" : "image", section))
+        critical.push(`${itemLabel}: plik poza folderem "${id}/${mediaFolder(item.type)}"`);
+      const path = pathOf(item.src);
+      const ext = extname(path).toLowerCase();
       const extMatchesType = item.type === "video"
         ? [".mp4", ".webm", ".mov"].includes(ext)
         : [".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg"].includes(ext);
@@ -174,13 +241,13 @@ for (const [section, ids] of [["techniques", techIds], ["glossary", glossIds]]) 
       if (item.type === "video") {
         mediaStats[section].videos += 1;
         if (!nonEmpty(item.poster)) critical.push(`${itemLabel}: film bez posteru`);
-        else if (!allowedMedia.test(item.poster) || !publicFile(item.poster))
+        else if (!allowedMedia.test(pathOf(item.poster)) || !mediaAvailable(item.poster))
           critical.push(`${itemLabel}: nieprawidłowy poster "${item.poster}"`);
         else {
-          if (!item.poster.startsWith(rootFor("image")))
-            critical.push(`${itemLabel}: poster poza folderem "${rootFor("image")}"`);
-          const stem = basename(item.src, extname(item.src));
-          if (basename(item.poster, extname(item.poster)) !== stem)
+          if (!inMediaFolder(item.poster, id, "poster", section))
+            critical.push(`${itemLabel}: poster poza folderem "${id}/poster"`);
+          const stem = basename(path, extname(path));
+          if (basename(pathOf(item.poster), extname(pathOf(item.poster))) !== stem)
             warn.push(`${itemLabel}: poster ma inny stem niż film (${stem})`);
         }
       }
@@ -282,7 +349,7 @@ const images = techs.filter((t) => t.image);
 const uniqueImages = uniq(images.map((t) => t.image));
 const unsplash = images.filter((t) => t.image.includes("images.unsplash.com"));
 const videos = techs.filter((t) => t.video);
-const genaiCover = techs.filter((t) => genaiImages[t.id]).length;
+const withoutGallery = techs.filter((t) => !(media.techniques ?? {})[t.id]).length;
 const allAliases = techs.flatMap((t) => t.aliases ?? []);
 
 const dt = new Date().toISOString().slice(0, 10);
@@ -294,13 +361,13 @@ p(
   "",
   "> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: " + dt + ").",
   "> Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`, `media.json`, `techniqueDetails.json`, `learning.json`,",
-  "> `src/data/index.ts` (CATEGORIES), `src/features/technique/data/genaiImages.json`, zawartość `public/videos/` i `public/images/`.",
+  "> `src/data/index.ts` (CATEGORIES), `src/data/media.json`, zawartość `public/images/`.",
   "",
   "## 1. Integralność struktury",
   "",
   critical.length
     ? "Krytyczne problemy: **" + critical.length + "**\n\n" + critical.map((c) => "- ❌ " + c).join("\n")
-    : "Krytycznych problemów: **0** ✅ (id unikalne, obowiązkowe pola, kategorie ↔ `CATEGORIES`, `levels`∈0–15, mapa GenAI ↔ id technik, słownik bez martwych `related`, `levels.json`: wymagania strukturalne wskazują istniejące techniki/haseła zgodne z P0.3, belki zgodne z stopniem P0.4).",
+    : "Krytycznych problemów: **0** ✅ (id unikalne, obowiązkowe pola, kategorie ↔ `CATEGORIES`, `levels`∈0–15, słownik bez martwych `related`, `levels.json`: wymagania strukturalne wskazują istniejące techniki/haseła zgodne z P0.3, belki zgodne z stopniem P0.4).",
   "",
   "Ostrzeżenia: **" + warn.length + "**",
   "",
@@ -357,9 +424,9 @@ p(
   "",
   "- techniki z `image`: " + images.length + "/" + techs.length + " (unikalnych URL-i: " + uniqueImages + ", w tym Unsplash: " + unsplash.length + ") → zadanie **P1.5**",
   "- techniki z `video`: " + videos.length + "/" + techs.length + (videos.length ? " (" + videos.map((v) => v.name + ": " + v.video).join("; ") + ")" : " (pole zawsze `null` — miejsce na przyszłe filmiki)"),
-  "- techniki z tymczasowym zdjęciem GenAI: **" + genaiCover + "/" + techs.length + "** (mapa `genaiImages.json`), bez zdjęcia → placeholder z kanji: " + (techs.length - genaiCover),
+  "- techniki bez galerii (placeholder z kanji): **" + withoutGallery + "/" + techs.length + "**",
   "- galerie w `media.json`: **" + (mediaStats.techniques.sets + mediaStats.glossary.sets) + "** (techniki: " + mediaStats.techniques.sets + ", hasła słownika: " + mediaStats.glossary.sets + ")",
-  "- materiały w galeriach: **" + (mediaStats.techniques.items + mediaStats.glossary.items) + "** (w tym filmy: " + (mediaStats.techniques.videos + mediaStats.glossary.videos) + ") — każda galeria 2–4 elementy, pliki istnieją w `public/`",
+  "- materiały w galeriach: **" + (mediaStats.techniques.items + mediaStats.glossary.items) + "** (w tym filmy: " + (mediaStats.techniques.videos + mediaStats.glossary.videos) + ") — galerie 2–4 elementy; wyjątki: 4 techniki z 1 filmem i `seiken` z 1 zdjęciem; pliki w R2 albo w `public/`",
   "",
   "## 7. Statystyki",
   "",
@@ -387,6 +454,9 @@ console.log("RAPORT.md zapisany (" + dt + ")");
 console.log("  krytyczne: " + critical.length);
 console.log("  ostrzeżenia: " + warn.length + " (" + collisions.length + " KOLIZJA, " + outsideRequirements.length + " POZA WYMAGANIAMI)");
 console.log("  wymagania: " + techItems.length + " technik + " + glossItems.length + " haseł + " + textItems.length + " opisów");
+if (warn.length) {
+  for (const w of warn) console.log("  ! " + w);
+}
 if (critical.length) {
   for (const c of critical) console.error("  ✗ " + c);
   process.exit(1);

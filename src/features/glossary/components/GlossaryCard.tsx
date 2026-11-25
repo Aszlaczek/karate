@@ -1,4 +1,4 @@
-import { getGlossaryMedia } from "@/data";
+import { getGlossaryMedia, STANCE_CATEGORY_ID } from "@/data";
 import { resolveMediaSrc } from "@/features/technique/components/TechniqueIllustration";
 import { getMediaThumbnail, isFirstMediaVideo } from "@/features/technique/components/media";
 import Icon from "@/components/ui/Icon";
@@ -12,11 +12,12 @@ interface GlossaryCardProps {
   onClick?: () => void;
 }
 
-export default function GlossaryCard({ entry, static: isStatic = false, onClick }: GlossaryCardProps) {
+export default function GlossaryCard({ entry, category, static: isStatic = false, onClick }: GlossaryCardProps) {
   const zone = zoneForEntry(entry.id);
   const isInteractive = !isStatic && typeof onClick === "function";
   const media = getGlossaryMedia(entry.id);
-  const thumbnail = getMediaThumbnail(media);
+  const isStance = category.id === STANCE_CATEGORY_ID;
+  const thumbnail = isStance && entry.image ? entry.image : getMediaThumbnail(media);
 
   return (
     <Card
@@ -33,7 +34,7 @@ export default function GlossaryCard({ entry, static: isStatic = false, onClick 
             loading="lazy"
             decoding="async"
           />
-          {isFirstMediaVideo(media) && (
+          {!isStance && isFirstMediaVideo(media) && (
             <span className="media-card-play" aria-hidden="true">
               <Icon name="play" size={18} />
             </span>

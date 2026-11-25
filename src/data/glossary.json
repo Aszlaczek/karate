@@ -143,7 +143,7 @@
           "japanese": "膝",
           "reading": "hiza",
           "description": "Punkt prowadzenia kopnięć (hiza-geri) oraz cel w strefie dolnej. W mae-geri kolano unosi się najpierw przed wyprostem.",
-          "image": null,
+          "image": "/images/glossary/human-parts/hiza.svg",
           "related": [
             "mae-geri-chudan-chusoku"
           ]
@@ -293,7 +293,7 @@
           "japanese": "正座",
           "reading": "seiza",
           "description": "Klęknienie na kolanach z podniesionymi stopami — porządek otwarcia treningu, mokuso i ukłonu w dojo.",
-          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3WnVH4RUFz_nuf5qYr8121zeyug6tSwXTUvlJBQJG1QEjJMjwrJxGB76u&s=10",
+          "image": "/images/glossary/stances/Seiza.jpg",
           "related": []
         },
         {
@@ -471,7 +471,7 @@
           "japanese": "背刀",
           "reading": "haito",
           "description": "Przeciwległa do shuto krawędź dłoni, prowadzona wzdłuż kciuka; częsta w blokach haito-uke.",
-          "image": null,
+          "image": "/images/glossary/human-parts/haito.svg",
           "related": [
             "chudan-haito-uchi-uke"
           ]
@@ -489,7 +489,7 @@
           "japanese": "踵",
           "reading": "kakato",
           "description": "Twarda część stopy używana m.in. w oroshi-kakato-geri (kopnięcie piętą z góry) i przy silnych wejściach.",
-          "image": null,
+          "image": "/images/glossary/human-parts/kakato.svg",
           "related": []
         },
         {
@@ -498,7 +498,7 @@
           "japanese": "底足心",
           "reading": "chusoku",
           "description": "Poduszka pod palcami — punkt kontaktu przy mae-geri i innych kopnięciach frontalnych. Palce są uniesione.",
-          "image": null,
+          "image": "/images/glossary/human-parts/chusoku.svg",
           "related": [
             "mae-geri-chudan-chusoku"
           ]
@@ -509,7 +509,7 @@
           "japanese": "背足",
           "reading": "haisoku",
           "description": "Wypięty grzbiet stopy używany w kopnięciach okrężnych (mawashi-geri) i niektórych keage.",
-          "image": null,
+          "image": "/images/glossary/human-parts/haisoku.svg",
           "related": [
             "mawashi-geri-gedan-haisoku",
             "mawashi-geri-chudan-chusoku-haisoku"
@@ -521,7 +521,7 @@
           "japanese": "底足",
           "reading": "teisoku",
           "description": "Cała podeszwa pracująca jako powierzchnia kopnięcia, m.in. w teisoku-mawashi-soto-keage.",
-          "image": null,
+          "image": "/images/glossary/human-parts/teisoku.svg",
           "related": [
             "teisoku-mawashi-soto-keage"
           ]

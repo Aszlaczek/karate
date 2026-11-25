@@ -41,8 +41,12 @@ Otwórz adres wypisany przez Vite w terminalu, domyślnie `http://localhost:5173
 | `npm run build` | Sprawdza typy przez `tsc -b` i buduje wersję produkcyjną w `dist/`. |
 | `npm run preview` | Udostępnia lokalnie wcześniej zbudowaną aplikację, domyślnie na porcie 4173. |
 | `npm run audit` | Sprawdza spójność danych aplikacji i zapisuje raport w `RAPORT.md` w katalogu głównym. |
-| `npm run media:manifest` | Skanuje foldery z mediami i uzupełnia `src/data/media.json` (zachowuje ręczne opisy). |
+| `npm run media:manifest` | Tworzy `src/data/media.json` z `media-build/manifest-source.json` (gdy ustawiono `R2_PUBLIC_BASE_URL`) albo skanuje `public/` w trybie lokalnym. Zachowuje ręczne opisy. |
 | `npm run media:check` | Alias `npm run audit` — szybkie sprawdzenie galerii i plików. |
+| `npm run media:organize` | Przenosi surowe nagrania do `media-source/videos/<id>/video/` i zapisuje raport dopasowań. |
+| `npm run media:prepare` | Wybiera do 4 ujęć na wpis, transkoduje je do 1080×1920 (CRF 18 slow, bez audio) i robi postery/klatki JPEG q:v 2 w `media-build/`. |
+| `npm run media:upload` | Wysyła przygotowane pliki do Cloudflare R2 (czyta sekrety z `.env.r2` lub środowiska, 3 próby na plik). |
+| `npm run media:check-remote` | Sprawdza HEAD-requestami wszystkie zdalne URL-e z `media.json`. |
 | `npm test` | Uruchamia testy jednostkowe Vitest jednorazowo (tryb CI). |
 | `npm run test:watch` | Uruchamia Vitest w trybie obserwowania zmian. |
 | `npm run check` | Pełna bramka lokalna: audyt danych → testy → build. |
@@ -69,14 +73,15 @@ npm run preview
 
 ```text
 .
-├── .github/workflows/deploy.yml   # Publikacja na GitHub Pages
-├── public/                       # Favicon, obraz podglądu i media
-│   ├── videos/techniques/<id>/    # Filmy techniki (osobny folder na id)
-│   ├── videos/stances/            # Filmy postaw, np. fudo-dachi.mp4
-│   ├── videos/glossary/           # Filmy ustawień dłoni i stóp
-│   └── images/{techniques,stances,glossary}/  # Zdjęcia i postery filmów
-├── scripts/audit-danych.mjs       # Audyt spójności treści i plików galerii
-├── scripts/generate-media.mjs     # Generator manifestu z zawartości folderów
+├── .github/workflows/deploy.yml       # CI i publikacja na GitHub Pages
+├── .github/workflows/media-upload.yml # Opcjonalny upload nagrań do R2
+├── media-source/                      # Lokalne archiwum (gitignored, poza public/)
+│   └── videos/<id>/video/*.mp4        # Wszystkie ujęcia danej techniki/postawy
+├── media-build/                       # Przygotowane klipy 480p (gitignored)
+├── public/                            # Favicon, obraz podglądu i starsze media
+│   └── images/{techniques,stances,glossary}/  # Fallback i lokalne zdjęcia
+├── scripts/audit-danych.mjs           # Audyt spójności treści i plików galerii
+├── scripts/generate-media.mjs         # Generator manifestu (R2 albo lokalny)
 ├── src/
 │   ├── app/                      # Definicje tras i obsługa okien szczegółów
 │   ├── components/ui/            # Wspólne elementy interfejsu
@@ -125,7 +130,6 @@ Większość zmian merytorycznych można wprowadzać bez edytowania komponentów
 | [`src/data/glossary.json`](src/data/glossary.json) | Kategorie słownika, hasła, postawy i powiązania z technikami. |
 | [`src/data/dojoKun.json`](src/data/dojoKun.json) | Treść przysięgi dojo. |
 | [`src/data/learning.json`](src/data/learning.json) | Poradniki, historia, ciekawostki, źródła oraz adres i tematy formularza kontaktowego. |
-| [`src/features/technique/data/genaiImages.json`](src/features/technique/data/genaiImages.json) | Mapa identyfikatorów technik na ścieżki ilustracji. |
 | [`src/data/media.json`](src/data/media.json) | Galerie 2–4 filmów/zdjęć technik i haseł słownika (także postaw). |
 | [`src/data/types.ts`](src/data/types.ts) | Typy opisujące strukturę danych. |
 
@@ -148,7 +152,7 @@ Dodając technikę:
 1. Dodaj rekord z unikalnym `id` w `techniques.json` i kategorią z `CATEGORIES` w `src/data/index.ts`.
 2. Uzupełnij wpis o tym samym `id` w `techniqueDetails.json`: tłumaczenie, człony całej nazwy w ich kolejności i co najmniej dwie sekcje opisu.
 3. Przypisz stopnie w `levels` i dodaj odwołania w wymaganiach odpowiednich stopni w `levels.json`.
-4. Jeśli dodajesz tymczasową ilustrację, zapisz ją w `public/images/GenAI/` i uzupełnij mapę `genaiImages.json`. Właściwe filmy/zdjęcia dodaj zgodnie z rozdziałem „Ilustracje i wideo”.
+4. Właściwe filmy i zdjęcia dodaj zgodnie z rozdziałem „Ilustracje i wideo". Technika bez galerii dostaje placeholder z kanji.
 5. Uruchom `npm run media:manifest`, audyt danych i budowanie, a następnie sprawdź kartę w atlasie oraz na stronie stopnia.
 
 Postawy są przechowywane w kategorii `pozycje` w słowniku (wyświetlana nazwa: „Postawy (dachi)” — `id` pozostaje niezmienione, więc dotychczasowe odnośniki działają), a ich szczegóły w sekcji `stances` pliku `techniqueDetails.json`. Atlas dołącza je do listy automatycznie. Osobne kategorie `ustawienia-dloni` i `ustawienia-stopy` grupują powierzchnie kontaktu dłoni i stóp; mają takie same galerie multimediów jak postawy. Źródła poradników, historii i ciekawostek zapisuj jako obiekty z polami `title` i `url` wskazującym adres HTTPS.
@@ -159,24 +163,32 @@ Każda technika, postawa oraz hasło „Ustawienia dłoni/stóp” może mieć *
 
 #### Gdzie leżą pliki
 
+Nagrania z dojo są publikowane na **Cloudflare R2**, a nie w `public/`. Dzięki temu repozytorium i `dist/` pozostają małe, a GitHub Pages nie przekracza limitu 1 GB.
+
 ```text
-public/videos/techniques/<id-techniki>/<id>-<wariant>.mp4
-public/images/techniques/<id-techniki>/<id>-<wariant>.jpg   # też postery filmów
+media-source/videos/<id>/video/<oryginalny-stem>.mp4   # archiwum lokalne, gitignored
+media-build/<id>/video/<stem>.mp4                      # wersja 1080×1920 do uploadu
+media-build/<id>/poster/<stem>.jpg                     # klatka z tego samego filmu
 
-public/videos/stances/fudo-dachi.mp4                        # postawy: płasko
-public/images/stances/fudo-dachi-front.jpg
-
-public/videos/glossary/seiken.mp4                           # dłonie i stopy
-public/images/glossary/sokuto-yoko-geri.jpg
+R2: <id>/video/<stem>.mp4
+    <id>/poster/<stem>.jpg
+    <id>/image/<stem>.jpg
 ```
 
-Folder techniki nazywa się **kanonicznym `id` z `techniques.json`** (np. `seiken-morote-tsuki`, nie `morote-tsuki`). Postawy i pozostałe hasła słownika używają nazw plików zaczynających się od ich `reading` (np. `fudo-dachi-*`, `sokuto-*`). Plik posteru ma ten sam stem co film (`seiken-demo.mp4` → `seiken-demo.jpg`) i nie jest wpisywany do galerii jako osobne zdjęcie. Starsze zasoby w `public/images/GenAI/` i `public/images/glossary/stances/` pozostają **fallbackiem** dla wpisów bez galerii.
+Folder nazywa się **kanonicznym `id` z `techniques.json` albo `glossary.json`** (np. `seiken-morote-tsuki`, `fudo`, `seiken`). Nie ma osobnych sekcji `techniques`/`stances` — postawy są hasłami słownika. Sufiksy w nazwach plików oznaczają: `f` — widok z przodu, `s` — widok z boku, `d` — detal, `b` — dodatkowe ujęcie, `a` — wariant ujęcia. `scripts/media-map.mjs` wybiera do 4 ujęć w kolejności `f1 → s1 → f2 → s2 → …`. Pliki bez pewnego przypisania trafiają do `media-source/videos/_nieprzypisane/` i nie są publikowane.
 
-#### Jak dodać galerię
+#### Jak opublikować nagrania z dojo
 
-1. Wrzuć 2–4 pliki `.mp4`/`.webm`/`.mov` lub `.jpg`/`.png`/`.webp` do właściwego folderu; każdy film musi mieć poster (ten sam stem co film).
-2. Uruchom `npm run media:manifest` — `scripts/generate-media.mjs` wykryje nowe pliki, dopasuje hasła po `reading`, uzupełni postery i zachowa istniejące opisy.
-3. W `src/data/media.json` dopisz czytelny `label` i `alt` dla każdego nowego elementu (generator domyślnie używa nazwy pliku).
+1. Wrzuć surowe pliki do `public/videos/techniques/` i uruchom `npm run media:organize`. Skrypt przeniesie je do `media-source/videos/<id>/video/` (z poprawieniem oczywistych literówek) i zapisze `media-source/MAPPING.md`.
+2. Skopiuj [.env.r2.example](.env.r2.example) do `.env.r2` i uzupełnij sekrety: `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET`, `R2_PUBLIC_BASE_URL`. Plik `.env.r2` jest gitignored; zmienne ustawione w środowisku mają pierwszeństwo. Szczegóły w [media-source/README.md](media-source/README.md).
+3. Uruchom `npm run media:prepare` (jednolity wymiar 1080×1920, CRF 18 slow, bez audio; postery i klatki q:v 2; zdjęcia samodzielne kopiowane bez rekompresji z lokalnych oryginałów 1448×1086) i `npm run media:upload`. Przy 276 filmach i 291 obrazach daje to około 882 MB w R2 — daleko poniżej darmowego limitu 10 GB-month, a egress jest bezpłatny.
+4. Uruchom `R2_PUBLIC_BASE_URL=https://… npm run media:manifest` — `src/data/media.json` dostanie pełne URL-e, a opisy z poprzedniego manifestu zostaną zachowane.
+5. Uruchom `npm run media:cleanup` (podgląd), a po weryfikacji `npm run media:cleanup -- --apply` — usunie z R2 klucze nieużywane przez manifest (np. po przeniesieniu filmu).
+6. Sprawdź `npm run media:check`, `npm run media:check-remote` i `npm run check`, po czym wypchnij zmiany.
+
+Alternatywnie uruchom workflow **Upload mediów do R2** z zakładki **Actions** — wykonuje powyższe kroki 3–6 (czyszczenie z `--apply`) i sam commituje `src/data/media.json`. Wymaga tych samych sekretów w ustawieniach repozytorium.
+
+Tryb lokalny pozostaje wsparciem dla istniejących materiałów: bez `R2_PUBLIC_BASE_URL` generator skanuje `public/videos/{techniques,stances,glossary}/` i `public/images/…`. Postawy czytają zdjęcia z `public/images/glossary/stances/`, a `haito`, `kakato`, `chusoku`, `haisoku`, `teisoku` i `hiza` z `public/images/glossary/human-parts/`. Grafiki GenAI i nagrania `*-demo.mp4` zostały usunięte.
 
 ```json
 {
@@ -184,14 +196,14 @@ Folder techniki nazywa się **kanonicznym `id` z `techniques.json`** (np. `seike
     "seiken-morote-tsuki": [
       {
         "type": "video",
-        "src": "/videos/techniques/seiken-morote-tsuki/seiken-morote-tsuki-demo.mp4",
-        "label": "Chūdan — praca bioder",
-        "poster": "/images/techniques/seiken-morote-tsuki/seiken-morote-tsuki-demo.jpg",
+        "src": "https://pub-example.r2.dev/seiken-morote-tsuki/video/seiken-morote-tsuki-f1.mp4",
+        "label": "Chūdan — widok z przodu 1",
+        "poster": "https://pub-example.r2.dev/seiken-morote-tsuki/poster/seiken-morote-tsuki-f1.jpg",
         "alt": "Seiken morote-tsuki na chūdan, widok z boku"
       },
       {
         "type": "image",
-        "src": "/images/techniques/seiken-morote-tsuki/seiken-morote-tsuki-ilustracja.jpg",
+        "src": "https://pub-example.r2.dev/seiken-morote-tsuki/image/seiken-morote-tsuki-ilustracja.jpg",
         "label": "Ułożenie pięści",
         "alt": "Zbliżenie na ułożenie obu pięści"
       }
@@ -200,7 +212,7 @@ Folder techniki nazywa się **kanonicznym `id` z `techniques.json`** (np. `seike
 }
 ```
 
-Pole `type` (`video` albo `image`) jest obowiązkowe. Ścieżki zaczynają się od `/` — `resolveMediaSrc()` dodaje ścieżkę bazową aplikacji (GitHub Pages). `label` to krótka nazwa miniaturki, `alt` to opis dla czytnika ekranu (`aria-label` wideo), a opcjonalny `caption` jest **jedynym widocznym podpisem** pod odtwarzaczem. Komunikaty o tym, że plik jest tymczasowy, należy wpisywać do `alt`, nie do `label` ani `caption` — dzięki temu nie są prezentowane jako treść dydaktyczna. Generator zachowuje ręczne `label`, `alt`, `caption` i `poster`. Pole `video` w `techniques.json` oraz mapa `genaiImages.json` to mechanizmy awaryjne; galeria z `media.json` ma zawsze priorytet. Obecne pliki `*-demo.mp4` i grafiki GenAI są **przykładowymi placeholderami technicznymi** — do zastąpienia nagraniami z dojo.
+Pole `type` (`video` albo `image`) jest obowiązkowe. Pełne URL-e (`https://…`) są przepuszczane przez `resolveMediaSrc()` bez dodawania bazy aplikacji; ścieżki lokalne zaczynają się od `/` i dostają bazę GitHub Pages. `label` to krótka nazwa miniaturki, `alt` to opis dla czytnika ekranu (`aria-label` wideo), a opcjonalny `caption` jest **jedynym widocznym podpisem** pod odtwarzaczem. Generator zachowuje ręczne `label`, `alt`, `caption` i `poster`. Pole `video` w `techniques.json` jest mechanizmem awaryjnym; galeria z `media.json` ma zawsze priorytet. Wyjątki od reguły 2–4 elementów: cztery techniki z jednym filmem oraz `seiken` z jednym zdjęciem pięści.
 
 ## Sprawdzanie zmian
 
@@ -212,11 +224,19 @@ npm run check
 
 `npm run check` to skrót do `npm run audit && npm test && npm run build` — ta sama kolejność, której używa CI. Poszczególne kroki możesz uruchomić osobno, jeśli diagnozujesz konkretny problem.
 
-Audyt sprawdza m.in. identyfikatory technik, wymagane pola, kategorie, referencje między wymaganiami a atlasem, powiązania słownika, kompletność szczegółowych opisów, galerie `media.json` (2–4 elementy, typ, rozszerzenie, folder, istnienie pliku i poster wideo), źródła materiałów edukacyjnych i oznaczenia belek. Zapisuje lub nadpisuje `RAPORT.md` w katalogu głównym. Przy problemach krytycznych kończy się kodem `1`; ostrzeżenia trafiają do raportu i nie powodują błędu polecenia.
+Audyt sprawdza m.in. identyfikatory technik, wymagane pola, kategorie, referencje między wymaganiami a atlasem, powiązania słownika, kompletność szczegółowych opisów, galerie `media.json` (2–4 elementy, typ, rozszerzenie, folder `video`/`poster`/`image`, istnienie lokalnego pliku albo poprawny URL HTTPS i poster wideo), źródła materiałów edukacyjnych i oznaczenia belek. Zapisuje lub nadpisuje `RAPORT.md` w katalogu głównym. Przy problemach krytycznych kończy się kodem `1`; ostrzeżenia trafiają do raportu i nie powodują błędu polecenia. `npm run media:check-remote` dodatkowo wykonuje HEAD-requesty do zdalnych źródeł — nie jest częścią głównej bramki, żeby CI nie zależał od dostępności R2.
 
 Build sprawdza typy TypeScript i możliwość wygenerowania aplikacji. Testy jednostkowe (Vitest + Testing Library) obejmują m.in. filtrowanie atlasu, routing, modal z obsługą `Esc`, klikalne kategorie słownika oraz galerię `MediaGallery` — w tym to, że komunikat o placeholderze nie jest widocznym podpisem, tylko trafia do `alt`/`aria-label`. Lintowanie pozostaje w zadaniu `P1.4`; action przeglądarkowe nadal sprawdzaj w przeglądarce. Workflow CI wykonuje audyt danych, testy i build przed publikacją.
 
 ## Publikacja
+
+### Nagrania (Cloudflare R2)
+
+Filmy nie są częścią artefaktu GitHub Pages. Bucket R2 musi mieć włączony publiczny dostęp (domena `r2.dev` albo własna), a `R2_PUBLIC_BASE_URL` musi zawierać końcowy `/`. Repozytorium przechowuje tylko `src/data/media.json` z pełnymi URL-ami; oryginały (`media-source/`) i wersje 1080p (`media-build/`) są gitignored. Domena `r2.dev` wystarcza do testów; przy większym ruchu warto ją zmienić na własną domenę.
+
+Lokalnie skrypty ładują sekrety z `.env.r2` (wzór: `.env.r2.example`); w GitHub Actions wartości pochodzą z sekretów repozytorium i nadpisują plik. Wymagane nazwy: `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET`, `R2_PUBLIC_BASE_URL`.
+
+Workflow [`.github/workflows/media-upload.yml`](.github/workflows/media-upload.yml) uruchamiasz ręcznie (**Actions → Upload mediów do R2 → Run workflow**). Przygotowuje klipy, wysyła je na R2, odświeża manifest, wykonuje audyt i sprawdzenie URL-i, a następnie commituje `media.json` — to z kolei uruchamia zwykły CI i deploy strony.
 
 ### GitHub Pages
 
@@ -233,7 +253,7 @@ Kolejność kroków w jobie `build`:
 3. `npm test` — testy jednostkowe Vitest.
 4. `npm run build` z `VITE_BASE=/<REPO>/`.
 5. `cp dist/index.html dist/404.html` — fallback SPA dla GitHub Pages.
-6. Sprawdzenie, czy `dist/index.html`, `dist/404.html`, `dist/videos/` i `dist/images/` istnieją.
+6. Sprawdzenie, czy `dist/index.html`, `dist/404.html` i `dist/images/` istnieją. Filmy są ładowane z R2, więc nie muszą być w `dist/`.
 7. Tylko dla push/dispatch: konfiguracja Pages, upload artefaktu i deploy. W pull requestach wykonują się kroki 1–6 (bez publishowania).
 
 Jeśli którykolwiek z kroków 2–6 nie przejdzie, job `deploy` się nie uruchomi. Kopia `404.html` umożliwia załadowanie aplikacji przy bezpośrednim wejściu na podstronę, np. `/<REPO>/kyu/9`; odpowiedź serwera GitHub Pages dla takiego wejścia może nadal mieć status HTTP 404.
