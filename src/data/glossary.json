@@ -145,7 +145,7 @@
           "description": "Punkt prowadzenia kopnięć (hiza-geri) oraz cel w strefie dolnej. W mae-geri kolano unosi się najpierw przed wyprostem.",
           "image": "/images/glossary/human-parts/hiza.svg",
           "related": [
-            "mae-geri-chudan-chusoku"
+            "mae-geri-chudan"
           ]
         },
         {
@@ -156,7 +156,7 @@
           "description": "Ogólna nazwa kończyny dolnej — łączy pozycje (dachi) i kopnięcia (geri) w jednym słowie.",
           "image": null,
           "related": [
-            "mae-geri-chudan-chusoku"
+            "mae-geri-chudan"
           ]
         }
       ]
@@ -269,7 +269,7 @@
           "description": "Ciężar na nodze tylnej, przednia stopa dotyka podłogi palcami — szybka, zwrotna pozycja do kopnięć.",
           "image": "/images/glossary/stances/Neko-Ashi-Dachi.png",
           "related": [
-            "mae-geri-chudan-chusoku"
+            "mae-geri-chudan"
           ],
           "levels": [
             7
@@ -500,7 +500,7 @@
           "description": "Poduszka pod palcami — punkt kontaktu przy mae-geri i innych kopnięciach frontalnych. Palce są uniesione.",
           "image": "/images/glossary/human-parts/chusoku.svg",
           "related": [
-            "mae-geri-chudan-chusoku"
+            "mae-geri-chudan"
           ]
         },
         {
@@ -546,7 +546,7 @@
           "description": "Zwarto ułożone palce stopy; uniesione w kopnięciach frontalnych, by punktem kontaktu zostało śródstopie.",
           "image": null,
           "related": [
-            "mae-geri-chudan-chusoku"
+            "mae-geri-chudan"
           ]
         }
       ]

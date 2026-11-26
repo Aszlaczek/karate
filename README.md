@@ -44,9 +44,10 @@ Otwórz adres wypisany przez Vite w terminalu, domyślnie `http://localhost:5173
 | `npm run media:manifest` | Tworzy `src/data/media.json` z `media-build/manifest-source.json` (gdy ustawiono `R2_PUBLIC_BASE_URL`) albo skanuje `public/` w trybie lokalnym. Zachowuje ręczne opisy. |
 | `npm run media:check` | Alias `npm run audit` — szybkie sprawdzenie galerii i plików. |
 | `npm run media:organize` | Przenosi surowe nagrania do `media-source/videos/<id>/video/` i zapisuje raport dopasowań. |
-| `npm run media:prepare` | Wybiera do 4 ujęć na wpis, transkoduje je do 1080×1920 (CRF 18 slow, bez audio) i robi postery/klatki JPEG q:v 2 w `media-build/`. |
+| `npm run media:prepare` | Wybiera do 4 ujęć na wpis, transkoduje je do 1080×1920 (CRF 18 slow, bez audio) i robi postery/klatki JPEG q:v 2 w `media-build/`. Czyta filmy z `<id>/video/` oraz bezpośrednio z `<id>/`. Tryb przyrostowy: `MEDIA_PREPARE_ONLY=id1,id2 npm run media:prepare` uzupełnia tylko wybrane ID. |
 | `npm run media:upload` | Wysyła przygotowane pliki do Cloudflare R2 (czyta sekrety z `.env.r2` lub środowiska, 3 próby na plik). |
 | `npm run media:check-remote` | Sprawdza HEAD-requestami wszystkie zdalne URL-e z `media.json`. |
+| `npm run media:delete-prefix` | Usuwa cały stary prefiks `<id>/` po zmianie nazwy folderu; blokuje usuwanie aktywnych ID (podgląd, `--apply` wymagany). |
 | `npm test` | Uruchamia testy jednostkowe Vitest jednorazowo (tryb CI). |
 | `npm run test:watch` | Uruchamia Vitest w trybie obserwowania zmian. |
 | `npm run check` | Pełna bramka lokalna: audyt danych → testy → build. |
@@ -77,15 +78,21 @@ npm run preview
 ├── .github/workflows/media-upload.yml # Opcjonalny upload nagrań do R2
 ├── media-source/                      # Lokalne archiwum (gitignored, poza public/)
 │   └── videos/<id>/video/*.mp4        # Wszystkie ujęcia danej techniki/postawy
-├── media-build/                       # Przygotowane klipy 480p (gitignored)
-├── public/                            # Favicon, obraz podglądu i starsze media
-│   └── images/{techniques,stances,glossary}/  # Fallback i lokalne zdjęcia
+├── media-build/                       # Przygotowane media 1080×1920 (gitignored)
+├── public/                            # Favicon, obraz podglądu i lokalne zdjęcia
+│   ├── data/{techniques,glossary}/    # Pełne dane wpisów (gitignored, generowane)
+│   └── images/{hero,techniques,stances,glossary}/  # Zdjęcia self-hosted
 ├── scripts/audit-danych.mjs           # Audyt spójności treści i plików galerii
+├── scripts/generate-detail-chunks.mjs # Generator danych na żądanie i indeksu miniaturek
 ├── scripts/generate-media.mjs         # Generator manifestu (R2 albo lokalny)
 ├── src/
 │   ├── app/                      # Definicje tras i obsługa okien szczegółów
 │   ├── components/ui/            # Wspólne elementy interfejsu
 │   ├── data/                     # Treści JSON, typy i funkcje dostępu do danych
+│   │   ├── media-thumbnails.json # Lekki indeks miniaturek dla kafelków
+│   │   ├── index.ts              # Indeks startowy (bez pełnych galerii)
+│   │   ├── onDemand.ts           # Pobieranie i cache plików z public/data/
+│   │   └── fullData.ts           # Pełne dane synchroniczne tylko dla testów
 │   ├── features/                 # Moduły funkcjonalne z komponentami i stylami
 │   ├── hooks/                    # Tytuły stron, przewijanie i obsługa modali
 │   ├── pages/                    # Widoki podstron
@@ -99,7 +106,7 @@ npm run preview
 └── vite.config.ts                # Konfiguracja Vite, aliasów i ścieżki bazowej
 ```
 
-Moduły w `src/features/` obejmują stronę główną, nawigację, stopnie, techniki, słownik, dojo-kun, materiały edukacyjne i kontakt. Alias `@/` wskazuje na katalog `src/`. Treści są pobierane przez funkcje z `src/data/index.ts` i `src/data/learning.ts`; filtrowanie odbywa się w przeglądarce.
+Moduły w `src/features/` obejmują stronę główną, nawigację, stopnie, techniki, słownik, dojo-kun, materiały edukacyjne i kontakt. Alias `@/` wskazuje na katalog `src/`. Treści startowe są pobierane przez funkcje z `src/data/index.ts` i `src/data/learning.ts`; filtrowanie odbywa się w przeglądarce. Galerie i szczegółowe opisy są ładowane z `public/data/` dopiero po otwarciu techniki lub hasła — patrz „Ładowanie danych na żądanie" poniżej.
 
 ## Podstrony i odnośniki
 
@@ -183,7 +190,7 @@ Folder nazywa się **kanonicznym `id` z `techniques.json` albo `glossary.json`**
 2. Skopiuj [.env.r2.example](.env.r2.example) do `.env.r2` i uzupełnij sekrety: `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET`, `R2_PUBLIC_BASE_URL`. Plik `.env.r2` jest gitignored; zmienne ustawione w środowisku mają pierwszeństwo. Szczegóły w [media-source/README.md](media-source/README.md).
 3. Uruchom `npm run media:prepare` (jednolity wymiar 1080×1920, CRF 18 slow, bez audio; postery i klatki q:v 2; zdjęcia samodzielne kopiowane bez rekompresji z lokalnych oryginałów 1448×1086) i `npm run media:upload`. Przy 276 filmach i 291 obrazach daje to około 882 MB w R2 — daleko poniżej darmowego limitu 10 GB-month, a egress jest bezpłatny.
 4. Uruchom `R2_PUBLIC_BASE_URL=https://… npm run media:manifest` — `src/data/media.json` dostanie pełne URL-e, a opisy z poprzedniego manifestu zostaną zachowane.
-5. Uruchom `npm run media:cleanup` (podgląd), a po weryfikacji `npm run media:cleanup -- --apply` — usunie z R2 klucze nieużywane przez manifest (np. po przeniesieniu filmu).
+5. Uruchom `npm run media:cleanup` (podgląd), a po weryfikacji `npm run media:cleanup -- --apply` — usunie z R2 klucze nieużywane przez manifest (np. po przeniesieniu filmu). Jeśli zmieniła się nazwa folderu (`id`), starego prefiksu nie usunie: użyj `npm run media:delete-prefix -- <stare-id>` (podgląd), a potem z `--apply`. Skrypt odmawia usunięcia prefiksu, który nadal jest aktywnym `id`.
 6. Sprawdź `npm run media:check`, `npm run media:check-remote` i `npm run check`, po czym wypchnij zmiany.
 
 Alternatywnie uruchom workflow **Upload mediów do R2** z zakładki **Actions** — wykonuje powyższe kroki 3–6 (czyszczenie z `--apply`) i sam commituje `src/data/media.json`. Wymaga tych samych sekretów w ustawieniach repozytorium.
@@ -212,7 +219,18 @@ Tryb lokalny pozostaje wsparciem dla istniejących materiałów: bez `R2_PUBLIC_
 }
 ```
 
-Pole `type` (`video` albo `image`) jest obowiązkowe. Pełne URL-e (`https://…`) są przepuszczane przez `resolveMediaSrc()` bez dodawania bazy aplikacji; ścieżki lokalne zaczynają się od `/` i dostają bazę GitHub Pages. `label` to krótka nazwa miniaturki, `alt` to opis dla czytnika ekranu (`aria-label` wideo), a opcjonalny `caption` jest **jedynym widocznym podpisem** pod odtwarzaczem. Generator zachowuje ręczne `label`, `alt`, `caption` i `poster`. Pole `video` w `techniques.json` jest mechanizmem awaryjnym; galeria z `media.json` ma zawsze priorytet. Wyjątki od reguły 2–4 elementów: cztery techniki z jednym filmem oraz `seiken` z jednym zdjęciem pięści.
+Pole `type` (`video` albo `image`) jest obowiązkowe. Pełne URL-e (`https://…`) są przepuszczane przez `resolveMediaSrc()` bez dodawania bazy aplikacji; ścieżki lokalne zaczynają się od `/` i dostają bazę GitHub Pages. `label` to krótka nazwa miniaturki, `alt` to opis dla czytnika ekranu (`aria-label` wideo), a opcjonalny `caption` jest **jedynym widocznym podpisem** pod odtwarzaczem. Generator zachowuje ręczne `label`, `alt`, `caption` i `poster`. `src/data/media.json` jest **jedynym źródłem filmów i zdjęć technik** — pola `image`/`video` zostały usunięte z `techniques.json`. Zdjęcie Hero jest lokalne (`public/images/hero/osu-no-seishin.jpg`) i wskazywane przez bazę aplikacji. Wyjątki od reguły 2–4 elementów: cztery techniki z jednym filmem oraz `seiken` z jednym zdjęciem pięści.
+
+## Ładowanie danych na żądanie
+
+Pełny `media.json` (291 materiałów) i `techniqueDetails.json` nie są importowane przez aplikację przy starcie. `npm run data:chunks` — uruchamiany automatycznie przed `dev`, `build`, `audit` i `test` — przygotowuje:
+
+- `src/data/media-thumbnails.json` — dla każdego z 118 technik i 68 haseł tylko `thumbnail` (pierwszy obraz albo poster) i flagę `firstIsVideo`. To jedyne dane mediów w głównym bundle'u; kafelki czytają je przez `getTechniqueCardMedia()` / `getGlossaryCardMedia()`.
+- `public/data/techniques/<id>.json` i `public/data/glossary/<id>.json` — pełna galeria `media` i opis `detail` dla jednego wpisu. Pliki są gitignored i trafiają do `dist/data/`.
+
+`src/data/onDemand.ts` pobiera właściwy plik przy otwarciu modalu i cache'uje obietnicę, więc ponowne otwarcie tej samej techniki nie wysyła drugiego zapytania. Najazd lub focus na kafelku podgrzewa cache (`prefetchTechnique` / `prefetchGlossary`). Przy błędzie sieci modal pokazuje opis z `techniques.json`/`glossary.json` i placeholder z kanji zamiast pustej galerii. Deep-linki `#technika-<id>` i `#haslo-<id>` działają bez zmian.
+
+Efekt pomiarowy: główny plik JS zmalał z **582,45 kB / 139,87 kB gzip** do **400,17 kB / 116,28 kB gzip** — ostrzeżenie Vite o chunku >500 kB zniknęło. Filmy i zdjęcia z R2 nadal nie są częścią bundle'u; w `public/data/` są tylko ich adresy i opisy.
 
 ## Sprawdzanie zmian
 

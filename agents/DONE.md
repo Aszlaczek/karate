@@ -764,3 +764,57 @@ one-pager bez routera.
   modal `seiza` nie ma `<img class="glossary-photo">`, tylko placeholder.
 - Weryfikacja: `npm test` ✅ (29 testów), `npm run check` i
   `git diff --check` ✅. Dane `media.json` i R2 bez zmian.
+
+---
+
+### 2026-11-26 — P1.5: koniec z Unsplash, `media.json` jedynym źródłem mediów
+
+- Usunięto pola `image` i `video` ze wszystkich 118 wpisów
+  `src/data/techniques.json` (236 kluczy). `image` wskazywał na jeden i ten
+  sam zewnętrzny URL Unsplash, a `video` był wszędzie `null`.
+- `src/data/types.ts`: `Technique` nie ma już pól `image`/`video`.
+  `TechniqueIllustration.tsx` obsługuje wyłącznie placeholder z kanji —
+  karta/modal techniki bez galerii nie próbują już renderować legacy wideo.
+- `Hero.tsx`: zamiast zdjęcia z Unsplash używa lokalnego
+  `public/images/hero/osu-no-seishin.jpg` (1400×933 JPEG, 170 KB, bez
+  rekompresji) przez `import.meta.env.BASE_URL`.
+- `scripts/audit-danych.mjs`: teraz błąd krytyczny przy dowolnym `image`/`video`
+  w technikach, przy `images.unsplash.com` w `src/` oraz przy braku lokalnego
+  zdjęcia Hero. Raport nie pokazuje już zadania P1.5 w rekomendacjach.
+- Testy: `media.test.ts` sprawdza brak legacy pól; nowy `Hero.test.tsx`
+  sprawdza lokalny `src`. Dostosowano `GlossaryStanceMedia.test.tsx` do
+  aktualnego `alt={entry.term}` w kafelku (zmiana niezatwierdzona w repozytorium).
+- Weryfikacja: `npm run check` i `git diff --check` ✅. `media.json`, R2,
+  `OVERRIDES` i foldery `media-source/videos/` bez zmian.
+
+---
+
+### 2026-11-26 — P1.17: szybszy start, dane mediów pobierane na żądanie
+
+- `scripts/generate-detail-chunks.mjs` tworzy `src/data/media-thumbnails.json`
+  (118 technik + 68 haseł: tylko `thumbnail` i `firstIsVideo`) oraz 186 plików
+  `public/data/{techniques,glossary}/<id>.json` z pełną galerią i opisem.
+  Katalog `public/data/` jest gitignored; skrypty `predev`, `prebuild`,
+  `preaudit`, `pretest` i `pretest:watch` uruchamiają generator automatycznie.
+- `src/data/index.ts` nie importuje już `media.json` ani
+  `techniqueDetails.json`. Dodał `getTechniqueCardMedia()` /
+  `getGlossaryCardMedia()`; synchroniczne `getTechniqueMedia`,
+  `getGlossaryMedia`, `getTechniqueDetail`, `getStanceDetail` i `media`
+  przeniesiono do `src/data/fullData.ts` (tylko testy).
+- Kafelki (`TechniqueCard`, `GlossaryCard`) czytają indeks miniaturek i
+  podgrzewają dane przy najechaniu/focusie. Modały przez `useOnDemandData`
+  i `src/data/onDemand.ts` pobierają wyłącznie plik otwartego wpisu; obietnice
+  są cache'owane, błąd sieci daje pustą galerię i opis z listy.
+- `src/test/setup.ts` mockuje `fetch` na podstawie `src/data/*.json`, więc
+  testy modali działają bez plików z `public/data/`. Dodano
+  `src/data/__tests__/onDemand.test.ts` (5 testów); zaktualizowano testy
+  modali na async. Razem 36 testów.
+- Audyt sprawdza kompletność plików w `public/data/`, brak osieroconych
+  plików oraz zgodność `media`, `detail` i indeksu miniaturek z
+  `media.json`/`techniqueDetails.json`. Raport ma nową linię w sekcji 6.
+- CI dodatkowo sprawdza istnienie `dist/data`. `README.md`, `agents/TODO.md`
+  (P1.17 `[x]`) i `agents/WEB_PERSONAL.md` zaktualizowane.
+- Weryfikacja: `npm run check` ✅ (0 krytycznych, 36 testów, build bez
+  ostrzeżenia o chunku), `git diff --check` ✅, `dist/data` = 186 plików.
+  Główny chunk 582,45 → 400,17 kB (139,87 → 116,28 kB gzip).
+  `media.json`, R2 i `media-source/videos/` bez zmian.

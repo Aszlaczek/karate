@@ -1,16 +1,19 @@
-import type { Technique } from "@/data/types";
-import { getLevelsForTechnique, getTechniqueDetail, getTechniqueMedia } from "@/data";
+import type { EntryData, Technique } from "@/data/types";
+import { getLevelsForTechnique } from "@/data";
+import { loadTechniqueData } from "@/data/onDemand";
+import { useOnDemandData } from "@/hooks/useOnDemandData";
 import Icon from "@/components/ui/Icon";
 import MediaGallery from "@/features/technique/components/MediaGallery";
 import TechniqueIllustration from "@/features/technique/components/TechniqueIllustration";
 import TechniqueDetailContent from "@/features/technique/components/TechniqueDetailContent";
 import { useModalBase } from "@/hooks/useModalBase";
 
+const EMPTY: EntryData = { media: [], detail: null };
+
 const TechniqueModal = ({ technique, onClose }: { technique: Technique; onClose: () => void }) => {
   const { onBackdropMouseDown } = useModalBase(onClose);
-  const detail = getTechniqueDetail(technique.id);
+  const { media, detail } = useOnDemandData(technique.id, loadTechniqueData, EMPTY);
   const levels = getLevelsForTechnique(technique);
-  const media = getTechniqueMedia(technique.id);
 
   return (
     <div className="tech-modal" role="dialog" aria-modal="true" aria-label={`Szczegóły techniki ${technique.name}`} onMouseDown={onBackdropMouseDown}>

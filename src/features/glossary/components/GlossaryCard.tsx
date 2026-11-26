@@ -1,6 +1,6 @@
-import { getGlossaryMedia, STANCE_CATEGORY_ID } from "@/data";
+import { getGlossaryCardMedia, STANCE_CATEGORY_ID } from "@/data";
+import { prefetchGlossary } from "@/data/onDemand";
 import { resolveMediaSrc } from "@/features/technique/components/TechniqueIllustration";
-import { getMediaThumbnail, isFirstMediaVideo } from "@/features/technique/components/media";
 import Icon from "@/components/ui/Icon";
 import ZoneIllustration, { zoneForEntry } from "./ZoneIllustration";
 import Card from "@/components/ui/Card";
@@ -12,29 +12,36 @@ interface GlossaryCardProps {
   onClick?: () => void;
 }
 
-export default function GlossaryCard({ entry, category, static: isStatic = false, onClick }: GlossaryCardProps) {
+export default function GlossaryCard({
+  entry,
+  category,
+  static: isStatic = false,
+  onClick,
+}: GlossaryCardProps) {
   const zone = zoneForEntry(entry.id);
   const isInteractive = !isStatic && typeof onClick === "function";
-  const media = getGlossaryMedia(entry.id);
+  const { thumbnail: mediaThumbnail, firstIsVideo } = getGlossaryCardMedia(entry.id);
   const isStance = category.id === STANCE_CATEGORY_ID;
-  const thumbnail = isStance && entry.image ? entry.image : getMediaThumbnail(media);
+  const thumbnail = isStance && entry.image ? entry.image : mediaThumbnail;
 
   return (
     <Card
       as={isInteractive ? "button" : "article"}
       className={`glossary-card${isStatic ? " static" : ""}`}
       onClick={onClick}
+      onMouseEnter={() => prefetchGlossary(entry.id)}
+      onFocus={() => prefetchGlossary(entry.id)}
       aria-label={isInteractive ? `Otwórz hasło ${entry.term}` : undefined}
     >
       {thumbnail ? (
         <span className="glossary-image media-card-thumb">
           <img
             src={resolveMediaSrc(thumbnail)}
-            alt=""
+            alt={entry.term}
             loading="lazy"
             decoding="async"
           />
-          {!isStance && isFirstMediaVideo(media) && (
+          {!isStance && firstIsVideo && (
             <span className="media-card-play" aria-hidden="true">
               <Icon name="play" size={18} />
             </span>

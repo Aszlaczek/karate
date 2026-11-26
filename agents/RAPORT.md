@@ -1,15 +1,12 @@
 # RAPORT.md — audyt danych KIHON
 
-> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: 2026-10-11).
-> Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`, `techniqueDetails.json`, `learning.json`,
-> `src/data/index.ts` (CATEGORIES), `src/features/technique/data/genaiImages.json`.
+> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: 2026-11-26).
+> Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`, `media.json`, `techniqueDetails.json`, `learning.json`,
+> `src/data/media-thumbnails.json`, `public/data/`, `src/data/index.ts` (CATEGORIES), zawartość `public/images/` (w tym `hero/`).
 
 ## 1. Integralność struktury
 
-Krytyczne problemy: **2**
-
-- ❌ P0.3 — "gekisai-sho" (levels=[12]) wymagane w 2 kyu, których nie ma w levels[]
-- ❌ P0.3 — "saiha" (levels=[11]) wymagane w 1 kyu, których nie ma w levels[]
+Krytycznych problemów: **0** ✅ (id unikalne, obowiązkowe pola, kategorie ↔ `CATEGORIES`, `levels`∈0–15, słownik bez martwych `related`, `levels.json`: wymagania strukturalne wskazują istniejące techniki/haseła zgodne z P0.3, belki zgodne z stopniem P0.4).
 
 Ostrzeżenia: **0**
 
@@ -26,8 +23,8 @@ Ostrzeżenia: **0**
 | 5 kyu (5) | 11 | 11 | 1 | 0 | 6 |
 | 4 kyu (4) | 20 | 20 | 3 | 0 | 6 |
 | 3 kyu (3) | 12 | 12 | 1 | 1 | 6 |
-| 2 kyu (2) | 13 | 14 | 0 | 0 | 8 |
-| 1 kyu (1) | 13 | 14 | 0 | 0 | 8 |
+| 2 kyu (2) | 14 | 14 | 0 | 0 | 8 |
+| 1 kyu (1) | 14 | 14 | 0 | 0 | 8 |
 | 1 dan (dan) | 2 | 2 | 0 | 8 | 10 |
 | 2 dan (dan2) | 2 | 2 | 0 | 5 | 12 |
 | 3 dan (dan3) | 1 | 1 | 0 | 4 | 12 |
@@ -38,7 +35,7 @@ Zakres `levels[]` technik i numerów stopni: 0 (start) – 15 (5 dan).
 
 ## 3. Spójność wymagań ↔ atlas (P0.3)
 
-**Mismatches: 2** (krytyczne, sekcja 1).
+Wszystkie techniki/haseła w wymaganiach mają właściwy stopień w `levels[]`, a każda technika z atlasu występuje w wymaganiach swojego stopnia ✅
 
 ## 4. Kolizje aliasów
 
@@ -73,9 +70,12 @@ Z tego braki w atlasie do zadania **P1.6**: „Ushiro-mawashi-geri".
 
 ## 6. Media i zdjęcia
 
-- techniki z `image`: 118/118 (unikalnych URL-i: 1, w tym Unsplash: 118) → zadanie **P1.5**
-- techniki z `video`: 0/118 (pole zawsze `null` — miejsce na przyszłe filmiki)
-- techniki z tymczasowym zdjęciem GenAI: **82/118** (mapa `genaiImages.json`), bez zdjęcia → placeholder z kanji: 36
+- martwe pola `image`/`video` w `techniques.json`: **0/118** ✅ (media wyłącznie w `media.json`)
+- zdjęcie Hero: **lokalne `public/images/hero/osu-no-seishin.jpg`**; obrazy Unsplash w `src/`: **0**
+- techniki bez galerii (placeholder z kanji): **37/118**
+- galerie w `media.json`: **99** (techniki: 81, hasła słownika: 18)
+- materiały w galeriach: **291** (w tym filmy: 276) — galerie 2–4 elementy; wyjątki: 4 techniki z 1 filmem i `seiken` z 1 zdjęciem; pliki w R2 albo w `public/`
+- dane na żądanie: **186** plików w `public/data/` (techniki: 118, hasła: 68); kafelki czytają tylko `media-thumbnails.json`, galerie i opisy wchodzą do bundle'u dopiero po otwarciu wpisu
 
 ## 7. Statystyki
 
@@ -86,11 +86,10 @@ Z tego braki w atlasie do zadania **P1.6**: „Ushiro-mawashi-geri".
 - technik powiązanych z wymaganiami: **118** (poza wymaganiami: 0)
 - haseł słownika w wymaganiach: **14**
 - aliasów łącznie: **267** (kolizje: 0)
-- haseł słownika: **56** w 6 kategoriach (Strefy: 3, Części ciała: 15, Ustawienia stóp: 15, Dojo i etykieta: 8, Trening i komendy: 10, Strój i sprzęt: 5)
+- haseł słownika: **68** w 8 kategoriach (Strefy: 3, Części ciała: 11, Postawy (dachi): 15, Ustawienia dłoni: 10, Ustawienia stóp: 6, Dojo i etykieta: 8, Trening i komendy: 10, Strój i sprzęt: 5)
 
 ## 8. Rekomendacje
 
 1. **P1.6** — dopisać do atlasu Seienchin i Ushiro-mawashi-geri (sekcja 5).
 2. **P1.7** — hasła Rei/Osu/Bunkai/Kamae + linkowanie opisów wymagań do słownika (sekcja 5); infrastruktura `{type:"glossary"}` gotowa.
-3. **P1.5** — zdjęcia self-hosted zamiast Unsplash (sekcja 6).
-4. **P1.1** — weryfikacja treści 16 stopni ze sensei (nazwy, zakres, staż, liczby walk).
+3. **P1.1** — weryfikacja treści 16 stopni ze sensei (nazwy, zakres, staż, liczby walk).

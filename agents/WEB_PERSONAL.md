@@ -156,6 +156,7 @@ scripts/organize-media.mjs # public/videos → media-source (media:organize)
 scripts/prepare-media.mjs  # ffmpeg-static 1080p + postery (media:prepare)
 scripts/upload-media.mjs   # S3 API → R2 (media:upload)
 scripts/check-remote-media.mjs # HEAD-check URL-i (media:check-remote)
+scripts/delete-r2-prefix.mjs # usuwanie starego prefiksu <id>/ po zmianie nazwy folderu
 scripts/media-env.mjs      # loader .env.r2 / zmiennych środowiskowych
 RAPORT.md                  # wynik audytu — generowany, NIE edytować ręcznie
 dist/                     # wynik builda (+ 404.html w CI)
@@ -235,9 +236,9 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   **`aliases[]`** (warianty nazwy — metadane i chronologia; aplikacja **nie**
   linkuje już po aliasach — wymagania to referencje strukturalne),
   **`infographic`** (pole zostaje w JSON-ach jako metadane, ale **kod je
-  ignoruje** — mapa `DRAWINGS` nie istnieje), `image`, **`video`**
-  (`null` → galeria z `media.json`, potem placeholder z kanji; nie-null →
-  `MediaFrame` renderuje YouTube/`*.mp4`/`*.gif`/`*.jpg`). Kategoria
+  ignoruje** — mapa `DRAWINGS` nie istnieje). Pola `image` i `video` zostały
+  usunięte: media technik żyją wyłącznie w `src/data/media.json`, a karta/modal
+  bez galerii pokazują placeholder z kanji. Kategoria
   "Pozycje" usunięta z atlasu technik (postawy żyją w `glossary.json`).
 - **`glossary.json`** — `categories[]` → `entries[]`:
   `id` (stabilny slug → deep-link `#haslo-<id>`), `term` PL, `japanese`,
@@ -296,14 +297,31 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   `label` to nazwa miniaturki, `alt` opis dla czytnika ekranu (`aria-label`
   wideo), a `caption` — jedyny opcjonalny, widoczny podpis pod odtwarzaczem.
   Informacji o placeholderze nie wpisuj do `label`/`caption`, tylko do `alt`.
-- Dostępnicy: `getTechniqueMedia(id)` / `getGlossaryMedia(id)` w `@/data`.
+- Dostęp synchroniczny (`getTechniqueMedia`, `getGlossaryMedia`,
+  `getTechniqueDetail`, `getStanceDetail`, `media`) przeniesiono do
+  `src/data/fullData.ts` — używają go testy, nie aplikacja.
   `MediaGallery` jest używany w `TechniqueModal` i `GlossaryEntryModal`;
   karty (`TechniqueCard`, `GlossaryCard`) biorą tylko pierwszy obraz/poster
-  przez `getMediaThumbnail()` i nie montują odtwarzaczy.
+  z lekkiego indeksu i nie montują odtwarzaczy.
 - `MediaFrame` to jedyny renderer jednego medium (YouTube, `<video>`, `<img>`);
-  `TechniqueIllustration` obsługuje już tylko legacy `video` i placeholder kanji.
+  `TechniqueIllustration` jest teraz wyłącznie placeholderem z kanji — pola
+  `image`/`video` usunięto z `techniques.json`, więc media technik żyją wyłącznie
+  w `media.json`.
   `resolveMediaSrc()` przeniesiono do `media.ts` i re-eksportuje go
   `TechniqueIllustration` (stare importy w słowniku działają).
+- Zdjęcie Hero jest self-hosted: `public/images/hero/osu-no-seishin.jpg`,
+  podłączone w `Hero.tsx` przez `${import.meta.env.BASE_URL}`. Audyt odrzuca
+  `images.unsplash.com` w `src/` i sprawdza istnienie tego pliku.
+- Dane na żądanie (2026-11-26, P1.17): pełny `media.json` i
+  `techniqueDetails.json` nie są w głównym bundle'u. `npm run data:chunks`
+  (predev/prebuild/preaudit/pretest) generuje `src/data/media-thumbnails.json`
+  oraz 186 plików `public/data/{techniques,glossary}/<id>.json` (gitignored).
+  Karty czytają `getTechniqueCardMedia()` / `getGlossaryCardMedia()`;
+  modały używają `useOnDemandData` + `loadTechniqueData` / `loadGlossaryData`
+  z `src/data/onDemand.ts` (cache obietnic, prefetch przy hover/focus, fallback
+  przy błędzie). `src/data/index.ts` nie eksportuje już pełnych galerii. Audyt
+  porównuje wygenerowane pliki i indeks z `media.json`.
+  Główny chunk: 400,17 kB / 116,28 kB gzip (wcześniej 582,45 / 139,87).
 - Docelowe źródła to pełne URL-e R2: `<id>/video/<stem>.mp4`,
   `<id>/poster/<stem>.jpg`, `<id>/image/<stem>.jpg`. `resolveMediaSrc()`
   przepuszcza `https://…` bez dodawania bazy. Tryb lokalny nadal
@@ -330,7 +348,13 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   `npm run media:upload`, `npm run media:cleanup -- --apply`,
    `R2_PUBLIC_BASE_URL=… npm run media:manifest`,
   potem `npm run media:check-remote` i `npm run check`. Generator zachowuje
-  ręczne `label`/`alt`/`caption`. Audyt sprawdza 2–4 elementy (wyjątki: 4
+  ręczne `label`/`alt`/`caption`. `media:prepare` czyta nagrania zarówno
+  z `<id>/video/`, jak i bezpośrednio z `<id>/` — nie trzeba przenosić plików
+  ułożonych ręcznie. `MEDIA_PREPARE_ONLY=id1,id2 npm run media:prepare`
+  uzupełnia tylko wskazane ID w istniejącym `media-build/`.
+  Po zmianie nazwy folderu (`id`) usuń stary prefiks
+  poleceniem `npm run media:delete-prefix -- <stare-id>` (podgląd) i z
+  `--apply`; `media:cleanup` go nie wykryje. Audyt sprawdza 2–4 elementy (wyjątki: 4
   techniki z 1 filmem, `seiken` z 1 zdjęciem), rozszerzenia, folder
   `video`/`poster`/`image`, istnienie pliku lokalnego albo HTTPS i poster.
 - Nagrania `*-demo.mp4` i grafiki GenAI zostały usunięte z repozytorium

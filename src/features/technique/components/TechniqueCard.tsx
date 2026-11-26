@@ -1,7 +1,8 @@
 import { useModals } from "@/store/modalStore";
-import { getLevelsForTechnique, getTechniqueMedia } from "@/data";
+import { getLevelsForTechnique, getTechniqueCardMedia } from "@/data";
+import { prefetchTechnique } from "@/data/onDemand";
 import TechniqueIllustration from "./TechniqueIllustration";
-import { getMediaThumbnail, isFirstMediaVideo, resolveMediaSrc } from "./media";
+import { resolveMediaSrc } from "./media";
 import Icon from "@/components/ui/Icon";
 
 interface TechniqueCardProps {
@@ -11,11 +12,15 @@ interface TechniqueCardProps {
 
 export default function TechniqueCard({ technique, index }: TechniqueCardProps) {
   const { openTechnique } = useModals();
-  const media = getTechniqueMedia(technique.id);
-  const thumbnail = getMediaThumbnail(media);
+  const { thumbnail, firstIsVideo } = getTechniqueCardMedia(technique.id);
 
   return (
-    <article className="tech-card" onClick={() => openTechnique(technique)}>
+    <article
+      className="tech-card"
+      onClick={() => openTechnique(technique)}
+      onMouseEnter={() => prefetchTechnique(technique.id)}
+      onFocus={() => prefetchTechnique(technique.id)}
+    >
       <button
         className="tech-image"
         type="button"
@@ -30,7 +35,7 @@ export default function TechniqueCard({ technique, index }: TechniqueCardProps) 
               loading="lazy"
               decoding="async"
             />
-            {isFirstMediaVideo(media) && (
+            {firstIsVideo && (
               <span className="media-card-play" aria-hidden="true">
                 <Icon name="play" size={18} />
               </span>

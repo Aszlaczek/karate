@@ -8,7 +8,7 @@ const category = glossary.find((item) => item.id === "pozycje")!;
 const entry = (id: string) => category.entries.find((item) => item.id === id)!;
 
 describe("zdjęcie postawy", () => {
-  it("zostaje na kafelku jako dekoracyjna miniatura", () => {
+  it("zostaje na kafelku jako miniatura z opisem hasła", () => {
     const expected = [
       ["fudo", "/images/glossary/stances/Fudo-Dachi.png"],
       ["seiza", "/images/glossary/stances/Seiza.jpg"],
@@ -21,13 +21,13 @@ describe("zdjęcie postawy", () => {
       const img = container.querySelector(".glossary-image img");
 
       expect(img).not.toBeNull();
-      expect(img?.getAttribute("alt")).toBe("");
+      expect(img?.getAttribute("alt")).toBe(entry(id).term);
       expect(img?.getAttribute("src")).toContain(src);
       unmount();
     }
   });
 
-  it("nie pojawia się w modalu postawy z filmami", () => {
+  it("nie pojawia się w modalu postawy z filmami", async () => {
     const { container } = render(
       <GlossaryEntryModal
         entry={entry("fudo")}
@@ -37,12 +37,12 @@ describe("zdjęcie postawy", () => {
     );
 
     expect(container.querySelector("img.glossary-photo")).toBeNull();
-    expect(screen.getByText("1 / 2")).toBeInTheDocument();
+    expect(await screen.findByText("1 / 2")).toBeInTheDocument();
     expect(screen.getAllByLabelText(/Nagranie z dojo/i).length).toBeGreaterThan(0);
     expect(screen.queryByRole("img", { name: /zdjęcie postawy/i })).not.toBeInTheDocument();
   });
 
-  it("dla postawy bez filmu pokazuje placeholder zamiast zdjęcia", () => {
+  it("dla postawy bez filmu pokazuje placeholder zamiast zdjęcia", async () => {
     const { container } = render(
       <GlossaryEntryModal
         entry={entry("seiza")}
@@ -51,6 +51,7 @@ describe("zdjęcie postawy", () => {
       />,
     );
 
+    expect(await screen.findByText(/Wymowa:/)).toBeInTheDocument();
     expect(container.querySelector("img.glossary-photo")).toBeNull();
     expect(container.querySelector(".glossary-visual-placeholder")).not.toBeNull();
   });

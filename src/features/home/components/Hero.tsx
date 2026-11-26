@@ -19,7 +19,10 @@ const Hero = () => (
       </div>
     </div>
     <div className="hero-visual">
-      <img src="https://images.unsplash.com/photo-1656653121475-e33829581294?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=90&w=1400" alt="Karateka zawiązujący czarny pas na białym dogi" />
+      <img
+        src={`${import.meta.env.BASE_URL}images/hero/osu-no-seishin.jpg`}
+        alt="Karateka zawiązujący czarny pas na białym dogi"
+      />
       <div className="photo-wash" />
       <div className="hero-kanji">押忍</div>
       <div className="image-caption"><span>01</span><p><strong>OSU NO SEISHIN</strong>Duch wytrwałości</p></div>

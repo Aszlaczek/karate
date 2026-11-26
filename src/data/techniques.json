@@ -14,9 +14,7 @@
       "Seiken chudan oi-zuki",
       "Seiken chūdan oi-zuki"
     ],
-    "infographic": "zuki",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "zuki"
   },
   {
     "id": "seiken-morote-tsuki",
@@ -29,9 +27,20 @@
     "focus": "Symetria obu rąk",
     "levels": [6, 10],
     "aliases": ["Morote-zuki", "Seiken morote-tsuki"],
-    "infographic": "zuki",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "zuki"
+  },
+  {
+    "id": "seiken-tsuki",
+    "name": "Seiken tsuki",
+    "japanese": "正拳突き",
+    "reading": "sejken cuki",
+    "category": "Uderzenia",
+    "description": "Podstawowe proste uderzenie przednią powierzchnią pięści na wybranym poziomie (gedan, chūdan, jōdan).",
+    "tags": ["Seiken", "Tsuki"],
+    "focus": "Prosta linia i napięcie pięści w momencie kontaktu",
+    "levels": [10],
+    "aliases": ["Seiken-zuki"],
+    "infographic": "zuki"
   },
   {
     "id": "seiken-ago-uchi",
@@ -44,9 +53,7 @@
     "focus": "Droga pięści w przód",
     "levels": [9],
     "aliases": ["Seiken ago-uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "seiken-gyaku-tsuki",
@@ -59,9 +66,7 @@
     "focus": "Rotacja biodra",
     "levels": [9],
     "aliases": ["Seiken gyaku-tsuki"],
-    "infographic": "zuki",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "zuki"
   },
   {
     "id": "seiken-tate-tsuki",
@@ -74,9 +79,7 @@
     "focus": "Pionowe ułożenie pięści",
     "levels": [6, 8],
     "aliases": ["Tate-zuki", "Seiken tate-tsuki"],
-    "infographic": "zuki",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "zuki"
   },
   {
     "id": "seiken-shita-tsuki",
@@ -89,9 +92,7 @@
     "focus": "Obniżenie sylwetki",
     "levels": [8],
     "aliases": ["Seiken shita-tsuki"],
-    "infographic": "zuki",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "zuki"
   },
   {
     "id": "seiken-jun-tsuki",
@@ -104,9 +105,7 @@
     "focus": "Zgodna praca ręki i nogi",
     "levels": [8],
     "aliases": ["Seiken jun-tsuki"],
-    "infographic": "zuki",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "zuki"
   },
   {
     "id": "tettsui-oroshi-uchi",
@@ -119,9 +118,7 @@
     "focus": "Tor z góry w dół",
     "levels": [7],
     "aliases": ["Tettsui oroshi-uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "tettsui-komekami-uchi",
@@ -134,9 +131,7 @@
     "focus": "Łukowy tor z boku",
     "levels": [7],
     "aliases": ["Tettsui komekami-uchi", "Tettsui komi kame uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "tettsui-hizo-uchi",
@@ -149,9 +144,7 @@
     "focus": "Skośny tor uderzenia",
     "levels": [7],
     "aliases": ["Tettsui hizō-uchi", "Tettsui hizo-uchi", "Tettsui hizo uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "tettsui-yoko-uchi",
@@ -164,9 +157,7 @@
     "focus": "Łuk z zewnątrz do wewnątrz",
     "levels": [7],
     "aliases": ["Tettsui yoko-uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "uraken-shomen-uchi",
@@ -184,9 +175,7 @@
       "Uraken shomen-uchi",
       "Uraken shomen uchi"
     ],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "uraken-sayu-uchi",
@@ -199,9 +188,7 @@
     "focus": "Krótki boczny łuk",
     "levels": [6],
     "aliases": ["Uraken sayū-uchi", "Uraken sayu-uchi", "Uraken sayu uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "uraken-hizo-uchi",
@@ -214,9 +201,7 @@
     "focus": "Cel: bok korpusu",
     "levels": [6],
     "aliases": ["Uraken hizō-uchi", "Uraken hizo-uchi", "Uraken hizo uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "uraken-oroshi-uchi",
@@ -229,9 +214,7 @@
     "focus": "Tor z góry w dół",
     "levels": [6],
     "aliases": ["Uraken oroshi-uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "uraken-mawashi-uchi",
@@ -244,9 +227,7 @@
     "focus": "Rotacja tułowia",
     "levels": [6],
     "aliases": ["Uraken mawashi-uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "nihon-nukite",
@@ -259,9 +240,7 @@
     "focus": "Prostota toru i napięcie palców",
     "levels": [6],
     "aliases": ["Nihon nukite", "Nihon nukite (Me tsuki)"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "yonhon-nukite-chudan",
@@ -274,9 +253,7 @@
     "focus": "Sztywność palców",
     "levels": [6],
     "aliases": ["Yonhon nukite chūdan", "Yonhon nukite chudan"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "shotei-uchi",
@@ -289,9 +266,7 @@
     "focus": "Nadgarstek ustawiony w osi",
     "levels": [5],
     "aliases": ["Shōtei uchi", "Shotei uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "jodan-hiji-ate",
@@ -304,9 +279,7 @@
     "focus": "Napęd z bioder",
     "levels": [5],
     "aliases": ["Jōdan hiji-ate", "Jodan hiji-ate", "Jodan hiji ate"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "shuto-sakotsu-uchi",
@@ -323,9 +296,7 @@
       "Shuto sakotsu-uchi",
       "Shuto sakotsu uchi"
     ],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "shuto-uchi-komi",
@@ -343,9 +314,7 @@
       "Shuto uchi-komi",
       "Shuto uchi komi"
     ],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "shuto-ganmen-uchi",
@@ -358,9 +327,7 @@
     "focus": "Precyzja celu",
     "levels": [4],
     "aliases": ["Shūto ganmen-uchi", "Shuto ganmen-uchi", "Shuto ganmen uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "shuto-hizo-uchi",
@@ -373,9 +340,7 @@
     "focus": "Skośny tor uderzenia",
     "levels": [4],
     "aliases": ["Shūto hizō-uchi", "Shuto hizo-uchi", "Shuto hizo uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "shuto-jodan-uchi-uchi",
@@ -392,9 +357,7 @@
       "Shuto jodan uchi-uchi",
       "Shuto jodan uchi uchi"
     ],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "chudan-hiji-ate",
@@ -412,9 +375,7 @@
       "Chudan hiji-ate",
       "Chudan hiji ate"
     ],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "chudan-mae-hiji-ate",
@@ -431,9 +392,7 @@
       "Chudan mae hiji-ate",
       "Chudan mae hiji ate"
     ],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "age-hiji-ate",
@@ -446,9 +405,7 @@
     "focus": "Tor od dołu w górę",
     "levels": [3],
     "aliases": ["Age hiji-ate"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "ushiro-hiji-ate",
@@ -461,9 +418,7 @@
     "focus": "Obrót bioder do tyłu",
     "levels": [3],
     "aliases": ["Ushiro hiji-ate"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "oroshi-hiji-ate",
@@ -476,9 +431,7 @@
     "focus": "Opadający tor łokcia",
     "levels": [3],
     "aliases": ["Oroshi hiji-ate"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "hira-ken-tsuki",
@@ -491,9 +444,7 @@
     "focus": "Ułożenie palców",
     "levels": [2],
     "aliases": ["Hira-ken tsuki", "Hira ken tsuki"],
-    "infographic": "zuki",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "zuki"
   },
   {
     "id": "hira-ken-oroshi-uchi",
@@ -506,9 +457,7 @@
     "focus": "Tor z góry w dół",
     "levels": [2],
     "aliases": ["Hira-ken oroshi-uchi", "Hira ken oroshi uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "hira-ken-mawashi-uchi",
@@ -521,9 +470,7 @@
     "focus": "Tor okrężny",
     "levels": [2],
     "aliases": ["Hira-ken mawashi-uchi", "Hira ken mawashi uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "haishu",
@@ -536,9 +483,7 @@
     "focus": "Krótki, sprężysty ruch nadgarstka",
     "levels": [2],
     "aliases": ["Haishu"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "age-jodan-tsuki",
@@ -551,9 +496,7 @@
     "focus": "Tor od dołu w górę",
     "levels": [2],
     "aliases": ["Age jōdan tsuki", "Age jodan tsuki"],
-    "infographic": "zuki",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "zuki"
   },
   {
     "id": "koken-uchi",
@@ -566,9 +509,7 @@
     "focus": "Ułożenie nadgarstka",
     "levels": [2],
     "aliases": ["Kōken uchi", "Koken uchi"],
-    "infographic": "uchi",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uchi"
   },
   {
     "id": "ryuto-ken-tsuki",
@@ -581,9 +522,7 @@
     "focus": "Punktowy kontakt kłykcia",
     "levels": [1],
     "aliases": ["Ryūtō-ken tsuki", "Ryuto-ken tsuki", "Ryuto ken tsuki"],
-    "infographic": "zuki",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "zuki"
   },
   {
     "id": "naka-yubi-ippon-ken",
@@ -596,9 +535,7 @@
     "focus": "Punktowy kontakt",
     "levels": [1],
     "aliases": ["Naka-yubi ippon-ken", "Naka Yubi ippon ken"],
-    "infographic": "zuki",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "zuki"
   },
   {
     "id": "oya-yubi-ippon-ken",
@@ -611,9 +548,7 @@
     "focus": "Punktowy kontakt",
     "levels": [1],
     "aliases": ["Oya-yubi ippon-ken", "Oya yubi ippon ken"],
-    "infographic": "zuki",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "zuki"
   },
   {
     "id": "seiken-jodan-uke",
@@ -626,9 +561,7 @@
     "focus": "Tor przedramienia",
     "levels": [9, 10],
     "aliases": ["Jodan-uke", "Seiken jōdan uke", "Seiken jodan uke"],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "seiken-gedan-barai",
@@ -641,9 +574,7 @@
     "focus": "Pełen zamach i zatrzymanie",
     "levels": [9, 10],
     "aliases": ["Gedan-barai", "Seiken gedan-barai", "Seiken gedan barai"],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "seiken-chudan-uchi-uke",
@@ -661,9 +592,7 @@
       "Seiken chudan uchi-uke",
       "Seiken chudan uchi uke"
     ],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "seiken-chudan-soto-uke",
@@ -681,9 +610,7 @@
       "Seiken chudan soto-uke",
       "Seiken chudan soto uke"
     ],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "morote-chudan-uchi-uke",
@@ -700,9 +627,7 @@
       "Morote chudan uchi-uke",
       "Morote chudan uchi uke"
     ],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "morote-uchi-uke-gedan-barai",
@@ -715,9 +640,7 @@
     "focus": "Płynne przejście",
     "levels": [8],
     "aliases": ["Morote uchi-uke, gedan-barai", "Morote uchi uke gedan barai"],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "kake-wake-uke",
@@ -730,9 +653,7 @@
     "focus": "Moment rozdzielenia",
     "levels": [8],
     "aliases": ["Kake-wake uke", "Kake wake uke"],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "seiken-mawashi-gedan-barai",
@@ -745,9 +666,7 @@
     "focus": "Tor okrężny",
     "levels": [7],
     "aliases": ["Seiken mawashi gedan-barai", "Seiken mawashi gedan barai"],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "shuto-mawashi-uke",
@@ -765,9 +684,7 @@
       "Shuto mawashi uke",
       "Shuto mawashi uke (mae)"
     ],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "seiken-juji-uke",
@@ -780,9 +697,7 @@
     "focus": "Moment skrzyżowania",
     "levels": [6],
     "aliases": ["Seiken jūji-uke", "Seiken juji-uke", "Seiken juji uke"],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "shotei-uke",
@@ -795,9 +710,7 @@
     "focus": "Ułożenie nadgarstka",
     "levels": [5],
     "aliases": ["Shōtei uke", "Shotei uke"],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "shuto-jodan-uke",
@@ -810,9 +723,7 @@
     "focus": "Przedramię w osi",
     "levels": [4],
     "aliases": ["Shūto jōdan uke", "Shuto jodan uke"],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "shuto-chudan-soto-uke",
@@ -829,9 +740,7 @@
       "Shuto chudan soto-uke",
       "Shuto chudan soto uke"
     ],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "shuto-chudan-uchi-uke",
@@ -848,9 +757,7 @@
       "Shuto chudan uchi-uke",
       "Shuto chudan uchi uke"
     ],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "shuto-mae-gedan-barai",
@@ -867,9 +774,7 @@
       "Shuto mae gedan-barai",
       "Shuto mae gedan barai"
     ],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "shuto-kake-jodan-uke",
@@ -882,9 +787,7 @@
     "focus": "Chwyt hakowy",
     "levels": [4],
     "aliases": ["Shūto kake jōdan uke", "Shuto kake jodan uke"],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "shuto-juji-uke",
@@ -897,9 +800,7 @@
     "focus": "Moment skrzyżowania",
     "levels": [3],
     "aliases": ["Shūto jūji-uke", "Shuto juji-uke", "Shuto juji uke"],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "koken-uke",
@@ -912,9 +813,7 @@
     "focus": "Ułożenie nadgarstka",
     "levels": [2],
     "aliases": ["Kōken uke", "Koken uke"],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "morote-kake-uke",
@@ -927,9 +826,7 @@
     "focus": "Współpraca obu rąk",
     "levels": [1],
     "aliases": ["Morote kake-uke", "Morote Kake uke"],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "chudan-haito-uchi-uke",
@@ -946,9 +843,7 @@
       "Chudan haito uchi-uke",
       "Chudan haito uchi uke"
     ],
-    "infographic": "uke",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "uke"
   },
   {
     "id": "hiza-geri",
@@ -961,9 +856,7 @@
     "focus": "Przyciągnięcie przeciwnika",
     "levels": [10],
     "aliases": ["Hiza-geri", "Hiza geri"],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "kin-geri",
@@ -976,12 +869,10 @@
     "focus": "Szybki, krótki ruch",
     "levels": [10],
     "aliases": ["Kin-geri", "Kin geri"],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
-    "id": "mae-geri-chudan-chusoku",
+    "id": "mae-geri-chudan",
     "name": "Mae-geri chūdan chūsoku",
     "japanese": "前蹴り中段中足",
     "reading": "mae-geri czudan czusoku",
@@ -996,9 +887,7 @@
       "Mae-geri chudan chusoku",
       "Mae geri chudan chusoku"
     ],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "mae-geri-jodan",
@@ -1011,9 +900,7 @@
     "focus": "Elastyczność bioder",
     "levels": [8],
     "aliases": ["Mae-geri jōdan", "Mae-geri jodan", "Mae geri jodan"],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "mae-chusoku-kaage",
@@ -1026,9 +913,7 @@
     "focus": "Wysokość wzniosu",
     "levels": [7],
     "aliases": ["Mae chūsoku kaage", "Mae chusoku kaage"],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "teisoku-mawashi-soto-keage",
@@ -1041,9 +926,7 @@
     "focus": "Tor okrężny",
     "levels": [7],
     "aliases": ["Teisoku mawashi soto-keage", "Teisoku mawashi soto keage"],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "heisoku-mawashi-uchi-keage",
@@ -1056,9 +939,7 @@
     "focus": "Tor od wewnątrz",
     "levels": [7],
     "aliases": ["Heisoku mawashi uchi-keage", "Heisoku mawashi uchi keage"],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "yoko-keage",
@@ -1071,9 +952,7 @@
     "focus": "Linia biodro–stopa",
     "levels": [7],
     "aliases": ["Yoko keage"],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "kansetsu-geri",
@@ -1086,9 +965,7 @@
     "focus": "Kontrola dystansu",
     "levels": [5, 6],
     "aliases": ["Kansetsu-geri", "Kansetsu geri"],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "yoko-geri-chudan",
@@ -1106,9 +983,7 @@
       "Yoko-geri chudan",
       "Yoko geri chudan"
     ],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "mawashi-geri-gedan-haisoku",
@@ -1125,9 +1000,7 @@
       "Mawashi geri gedan (haisoku)",
       "Mawashi gedan (haisoku)"
     ],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "mawashi-geri-chudan-chusoku-haisoku",
@@ -1145,9 +1018,7 @@
       "Mawashi-geri chudan (chusoku, haisoku)",
       "Mawashi geri chudan (chusoku, haisoku)"
     ],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "ushiro-geri-chudan",
@@ -1165,9 +1036,7 @@
       "Ushiro-geri chudan",
       "Ushiro geri (chudan)"
     ],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "yoko-geri-jodan",
@@ -1180,9 +1049,7 @@
     "focus": "Elastyczność bioder",
     "levels": [4],
     "aliases": ["Yoko-geri jōdan", "Yoko-geri jodan", "Yoko geri jodan"],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "mawashi-geri-jodan-chusoku-haisoku",
@@ -1200,9 +1067,7 @@
       "Mawashi-geri jodan (chusoku, haisoku)",
       "Mawashi geri jodan (chusoku, haisoku)"
     ],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "ushiro-geri-jodan",
@@ -1215,9 +1080,7 @@
     "focus": "Równowaga i kontrola celu",
     "levels": [4],
     "aliases": ["Ushiro-geri jōdan", "Ushiro-geri jodan", "Ushiro geri jodan"],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "mae-kakato-geri",
@@ -1230,9 +1093,7 @@
     "focus": "Uderzenie piętą",
     "levels": [3],
     "aliases": ["Mae kakato-geri", "Mae Kakato geri"],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "tobi-nidan-geri",
@@ -1245,9 +1106,7 @@
     "focus": "Wyskok i drugie kopnięcie",
     "levels": [2],
     "aliases": ["Tobi nidan-geri", "Tobi nidan geri"],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "mae-tobi-geri",
@@ -1265,9 +1124,7 @@
       "Mae tobi geri",
       "Mae tobi geri (3 metody)"
     ],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "jodan-uchi-haisoku-geri",
@@ -1284,9 +1141,7 @@
       "Jodan uchi haisoku-geri",
       "Jodan uchi haisoku geri"
     ],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "oroshi-uchi-kakato-geri",
@@ -1303,9 +1158,7 @@
       "Oroshi uchi kakato-geri",
       "Oroshi uchi kakato geri"
     ],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "oroshi-soto-kakato-geri",
@@ -1318,9 +1171,7 @@
     "focus": "Tor z góry w dół",
     "levels": [1],
     "aliases": ["Oroshi soto kakato-geri", "Oroshi soto kakato geri"],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "yoko-tobi-geri",
@@ -1333,9 +1184,7 @@
     "focus": "Wyskok i oś bioder",
     "levels": [1],
     "aliases": ["Yoko tobi-geri", "Yoko tobi geri", "Yqko tobi geri"],
-    "infographic": "geri",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "geri"
   },
   {
     "id": "taikyoku-sono-ichi",
@@ -1348,9 +1197,7 @@
     "focus": "Rytm, oddech i zanshin",
     "levels": [9, 10],
     "aliases": ["Taikyoku sono ichi"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "taikyoku-sono-ni",
@@ -1363,9 +1210,7 @@
     "focus": "Rytm, oddech i zanshin",
     "levels": [8, 9],
     "aliases": ["Taikyoku sono ni"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "taikyoku-sono-san",
@@ -1378,9 +1223,7 @@
     "focus": "Rytm, oddech i zanshin",
     "levels": [7, 8],
     "aliases": ["Taikyoku sono san"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "pinan-sono-ichi",
@@ -1393,9 +1236,7 @@
     "focus": "Rytm, oddech i zanshin",
     "levels": [7],
     "aliases": ["Pinan sono ichi"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "pinan-sono-ni",
@@ -1408,9 +1249,7 @@
     "focus": "Rytm, oddech i zanshin",
     "levels": [6],
     "aliases": ["Pinan sono ni"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "pinan-sono-san",
@@ -1423,9 +1262,7 @@
     "focus": "Rytm, oddech i zanshin",
     "levels": [5],
     "aliases": ["Pinan sono san"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "sanchin-no-kata",
@@ -1438,9 +1275,7 @@
     "focus": "Rytm, oddech i zanshin",
     "levels": [4, 5],
     "aliases": ["Sanchin no kata"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "pinan-sono-yon",
@@ -1453,9 +1288,7 @@
     "focus": "Rytm, oddech i zanshin",
     "levels": [3, 4],
     "aliases": ["Pinan sono yon"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "pinan-sono-go",
@@ -1468,9 +1301,7 @@
     "focus": "Rytm, oddech i zanshin",
     "levels": [2, 3],
     "aliases": ["Pinan sono go"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "gekisai-dai",
@@ -1483,9 +1314,7 @@
     "focus": "Rytm, oddech i zanshin",
     "levels": [2],
     "aliases": ["Gekisai dai"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "yantsu",
@@ -1498,9 +1327,7 @@
     "focus": "Rytm, oddech i zanshin",
     "levels": [1, 3],
     "aliases": ["Yantsu"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "tsuki-no-kata",
@@ -1513,9 +1340,7 @@
     "focus": "Rytm, oddech i zanshin",
     "levels": [1, 3],
     "aliases": ["Tsuki no kata"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "ippon-kumite-1-10-kyu",
@@ -1532,9 +1357,7 @@
       "Ippon kumite  1 (10 kyu)",
       "Ippon kumite 10 kyu"
     ],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "ippon-kumite-2-9-kyu",
@@ -1551,9 +1374,7 @@
       "Ippon kumite  2 (9 kyu)",
       "Ippon kumite 9 kyu"
     ],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "ippon-kumite-3-8-kyu",
@@ -1570,9 +1391,7 @@
       "Ippon kumite  3 (8 kyu)",
       "Ippon kumite 8 kyu"
     ],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "ippon-kumite-4-7-kyu",
@@ -1589,9 +1408,7 @@
       "Ippon kumite  4 (7 kyu)",
       "Ippon kumite 7 kyu"
     ],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "ippon-kumite-5-6-kyu",
@@ -1608,9 +1425,7 @@
       "Ippon kumite  5 (6 kyu)",
       "Ippon kumite 6 kyu"
     ],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "ippon-kumite-6-5-kyu",
@@ -1627,9 +1442,7 @@
       "Ippon kumite  6 (5 kyu)",
       "Ippon kumite 5 kyu"
     ],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "ippon-kumite-7-4-kyu",
@@ -1646,9 +1459,7 @@
       "Ippon kumite  7 (4 kyu)",
       "Ippon kumite 4 kyu"
     ],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "ippon-kumite-8-3-kyu",
@@ -1665,9 +1476,7 @@
       "Ippon kumite  8 (3 kyu)",
       "Ippon kumite 3 kyu"
     ],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "ippon-kumite-9-2-kyu",
@@ -1684,9 +1493,7 @@
       "Ippon kumite  9 (1 kyu)",
       "Ippon kumite 1 kyu"
     ],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "ippon-kumite-10-1-kyu",
@@ -1699,9 +1506,7 @@
     "focus": "Dystans i timing",
     "levels": [1],
     "aliases": ["Ippon kumite — 10 (1 kyu)", "Ippon kumite  10 (1 kyu)"],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "sanbon-kumite-wariant-i",
@@ -1714,9 +1519,7 @@
     "focus": "Rytm trzech ataków",
     "levels": [8],
     "aliases": ["Sanbon kumite wariant I"],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "sanbon-kumite-wariant-ii",
@@ -1729,9 +1532,7 @@
     "focus": "Rytm trzech ataków",
     "levels": [4],
     "aliases": ["Sanbon kumite wariant II"],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "renraku-1-9-kyu",
@@ -1744,9 +1545,7 @@
     "focus": "Płynność kombinacji",
     "levels": [9],
     "aliases": ["Renraku — 1 (9 kyu)", "Renraku  1 (9 kyu)", "Renraku 9 kyu"],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "renraku-2-8-kyu",
@@ -1759,9 +1558,7 @@
     "focus": "Płynność kombinacji",
     "levels": [8],
     "aliases": ["Renraku — 2 (8 kyu)", "Renraku  2 (8 kyu)", "Renraku 8 kyu"],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "renraku-3-5-kyu",
@@ -1774,9 +1571,7 @@
     "focus": "Płynność kombinacji",
     "levels": [5],
     "aliases": ["Renraku — 3 (5 kyu)", "Renraku  3 (5 kyu)", "Renraku 5 kyu"],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "renraku-4-2-kyu",
@@ -1789,9 +1584,7 @@
     "focus": "Płynność kombinacji",
     "levels": [2],
     "aliases": ["Renraku — 4 (2 kyu)", "Renraku  4 (2 kyu)", "Renraku 2 kyu"],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "renraku-5-i-6-1-kyu",
@@ -1808,9 +1601,7 @@
       "Renraku  5 i 6 (1 kyu)",
       "Renraku 1 kyu"
     ],
-    "infographic": "kumite",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kumite"
   },
   {
     "id": "tensho",
@@ -1823,9 +1614,7 @@
     "focus": "Precyzja i kontrola",
     "levels": [11],
     "aliases": ["Tensho"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "saiha",
@@ -1838,9 +1627,7 @@
     "focus": "Precyzja i kontrola",
     "levels": [1, 11],
     "aliases": ["Saiha"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "gekisai-sho",
@@ -1853,9 +1640,7 @@
     "focus": "Precyzja i kontrola",
     "levels": [2, 12],
     "aliases": ["Gekisai Sho"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "gariyu",
@@ -1868,9 +1653,7 @@
     "focus": "Precyzja i kontrola",
     "levels": [12],
     "aliases": ["Gariyu"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "seishin",
@@ -1883,9 +1666,7 @@
     "focus": "Precyzja i kontrola",
     "levels": [13],
     "aliases": ["Seishin"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "kanku-dai",
@@ -1898,9 +1679,7 @@
     "focus": "Precyzja i kontrola",
     "levels": [14],
     "aliases": ["Kanku Dai"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   },
   {
     "id": "sushiho",
@@ -1913,8 +1692,6 @@
     "focus": "Precyzja i kontrola",
     "levels": [15],
     "aliases": ["Sushiho"],
-    "infographic": "kata",
-    "image": "https://images.unsplash.com/photo-1514050566906-8d077bae7046?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=85&w=900",
-    "video": null
+    "infographic": "kata"
   }
 ]

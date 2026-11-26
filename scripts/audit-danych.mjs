@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { basename, dirname, extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadMediaEnv } from "./media-env.mjs";
@@ -8,6 +8,13 @@ loadMediaEnv();
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => readFileSync(join(root, p), "utf8");
 const write = (p, s) => writeFileSync(join(root, p), s, "utf8");
+
+const heroImage = "public/images/hero/osu-no-seishin.jpg";
+const srcFiles = (dir = "src") =>
+  readdirSync(join(root, dir), { withFileTypes: true }).flatMap((entry) => {
+    const relative = join(dir, entry.name);
+    return entry.isDirectory() ? srcFiles(relative) : entry.isFile() ? [relative] : [];
+  });
 
 const techs = JSON.parse(read("src/data/techniques.json"));
 const levels = JSON.parse(read("src/data/levels.json"));
@@ -96,6 +103,16 @@ for (const t of techs) {
   if (!categories.includes(t.category)) critical.push("techniques.json — \"" + t.id + "\" ma kategorię spoza CATEGORIES: \"" + t.category + "\"");
 }
 
+// Media technik mają jedno źródło — media.json. Pola legacy są błędem.
+const legacyMediaIds = techs.filter((t) => "image" in t || "video" in t).map((t) => t.id);
+if (legacyMediaIds.length) critical.push("techniques.json — martwe pola image/video w: " + legacyMediaIds.join(", "));
+
+const unsplashFiles = srcFiles().filter((path) => /images\.unsplash\.com/i.test(read(path)));
+if (unsplashFiles.length) critical.push("src/ — zewnętrzne obrazy Unsplash: " + unsplashFiles.join(", "));
+if (!existsSync(join(root, heroImage))) critical.push(`Hero — brak lokalnego zdjęcia ${heroImage}`);
+if (!read("src/features/home/components/Hero.tsx").includes("images/hero/osu-no-seishin.jpg"))
+  critical.push("Hero.tsx — brak lokalnej ścieżki images/hero/osu-no-seishin.jpg");
+
 // --- 2. kolizje aliasów -----------------------------------------------------
 
 const aliasMap = new Map();
@@ -139,13 +156,12 @@ const stanceIds = new Set(
 );
 // Brak drugiego nagrania w archiwum — galerie jednofilmowe są świadomym wyjątkiem.
 const ONE_VIDEO_TECHNIQUES = new Set([
-  "ippon-kumite-2-9-kyu",
-  "mae-kakato-geri",
   "seiken-shita-tsuki",
   "yoko-keage",
 ]);
-// Hasło z jednym, własnym zdjęciem zamiast filmu.
-const IMAGE_ONLY_ENTRIES = new Set(["seiken"]);
+// Wpisy z jednym własnym zdjęciem zamiast filmu (jest też klatka techniki,
+// której jedyne nagranie zostało przeniesione do innej galerii).
+const IMAGE_ONLY_ENTRIES = new Set(["seiken", "mae-kakato-geri"]);
 const allowedMedia = /\.(mp4|webm|mov|jpe?g|png|webp|gif|svg)$/i;
 const mediaStats = { techniques: { sets: 0, items: 0, videos: 0 }, glossary: { sets: 0, items: 0, videos: 0 } };
 
@@ -256,6 +272,66 @@ for (const [section, ids] of [["techniques", techIds], ["glossary", glossIds]]) 
   }
 }
 
+// --- 3c. Dane pobierane na żądanie (public/data/) ----------------------------
+
+/** Ta sama reguła co getMediaThumbnail() — pierwszy obraz albo poster pierwszego filmu. */
+const cardInfo = (items = []) => {
+  const firstIsVideo = items[0]?.type === "video";
+  for (const item of items) {
+    if (item.type === "image") return { thumbnail: item.src, firstIsVideo };
+    if (item.poster) return { thumbnail: item.poster, firstIsVideo };
+  }
+  return { thumbnail: null, firstIsVideo };
+};
+
+const thumbnails = JSON.parse(read("src/data/media-thumbnails.json"));
+const chunkStats = { techniques: 0, glossary: 0 };
+const chunkGroups = [
+  ["techniques", techs.map((t) => t.id)],
+  ["glossary", glossEntries.map((e) => e.id)],
+];
+
+for (const [section, ids] of chunkGroups) {
+  const expectedIds = new Set(ids);
+  const folder = join(root, "public/data", section);
+  if (!existsSync(folder)) {
+    critical.push(`Dane na żądanie — brak folderu public/data/${section}`);
+    continue;
+  }
+  for (const file of readdirSync(folder)) {
+    if (!file.endsWith(".json")) {
+      critical.push(`Dane na żądanie — nieoczekiwany plik ${section}/${file}`);
+    } else if (!expectedIds.has(basename(file, ".json"))) {
+      critical.push(`Dane na żądanie — osierocony plik ${section}/${file}`);
+    }
+  }
+  for (const id of ids) {
+    const path = `public/data/${section}/${id}.json`;
+    if (!existsSync(join(root, path))) {
+      critical.push(`Dane na żądanie — brak ${path}`);
+      continue;
+    }
+    let chunk;
+    try {
+      chunk = JSON.parse(read(path));
+    } catch {
+      critical.push(`Dane na żądanie — uszkodzony JSON ${path}`);
+      continue;
+    }
+    chunkStats[section] += 1;
+    const expectedMedia = media[section]?.[id] ?? [];
+    const expectedDetail = section === "techniques" ? details.techniques[id] ?? null : details.stances[id] ?? null;
+    if (JSON.stringify(chunk.media ?? []) !== JSON.stringify(expectedMedia))
+      critical.push(`Dane na żądanie — ${section}/${id}: media nie zgadza się z media.json`);
+    if (JSON.stringify(chunk.detail ?? null) !== JSON.stringify(expectedDetail ?? null))
+      critical.push(`Dane na żądanie — ${section}/${id}: opis nie zgadza się z techniqueDetails.json`);
+    if (JSON.stringify(thumbnails[section]?.[id] ?? null) !== JSON.stringify(cardInfo(expectedMedia)))
+      critical.push(`Indeks miniaturek — ${section}/${id} nie zgadza się z media.json`);
+  }
+  for (const id of Object.keys(thumbnails[section] ?? {}))
+    if (!expectedIds.has(id)) critical.push(`Indeks miniaturek — nieistniejący ${section}/${id}`);
+}
+
 // --- 4. levels.json (strukturalne wymagania ↔ atlas + słownik) ---------------
 
 const techById = new Map(techs.map((t) => [t.id, t]));
@@ -345,10 +421,6 @@ const requiredGlossIds = new Set(glossItems.map(({ item }) => item.id));
 
 const missingInAtlas = textItems.filter(({ item }) => /saiha|seienchin|ushiro-mawashi/i.test(item.text));
 
-const images = techs.filter((t) => t.image);
-const uniqueImages = uniq(images.map((t) => t.image));
-const unsplash = images.filter((t) => t.image.includes("images.unsplash.com"));
-const videos = techs.filter((t) => t.video);
 const withoutGallery = techs.filter((t) => !(media.techniques ?? {})[t.id]).length;
 const allAliases = techs.flatMap((t) => t.aliases ?? []);
 
@@ -361,7 +433,7 @@ p(
   "",
   "> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: " + dt + ").",
   "> Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`, `media.json`, `techniqueDetails.json`, `learning.json`,",
-  "> `src/data/index.ts` (CATEGORIES), `src/data/media.json`, zawartość `public/images/`.",
+  "> `src/data/media-thumbnails.json`, `public/data/`, `src/data/index.ts` (CATEGORIES), zawartość `public/images/` (w tym `hero/`).",
   "",
   "## 1. Integralność struktury",
   "",
@@ -422,11 +494,12 @@ p(
   "",
   "## 6. Media i zdjęcia",
   "",
-  "- techniki z `image`: " + images.length + "/" + techs.length + " (unikalnych URL-i: " + uniqueImages + ", w tym Unsplash: " + unsplash.length + ") → zadanie **P1.5**",
-  "- techniki z `video`: " + videos.length + "/" + techs.length + (videos.length ? " (" + videos.map((v) => v.name + ": " + v.video).join("; ") + ")" : " (pole zawsze `null` — miejsce na przyszłe filmiki)"),
+  "- martwe pola `image`/`video` w `techniques.json`: **" + legacyMediaIds.length + "/" + techs.length + "** ✅ (media wyłącznie w `media.json`)",
+  "- zdjęcie Hero: **" + (existsSync(join(root, heroImage)) ? "lokalne `public/images/hero/osu-no-seishin.jpg`" : "BRAK") + "**; obrazy Unsplash w `src/`: **" + unsplashFiles.length + "**",
   "- techniki bez galerii (placeholder z kanji): **" + withoutGallery + "/" + techs.length + "**",
   "- galerie w `media.json`: **" + (mediaStats.techniques.sets + mediaStats.glossary.sets) + "** (techniki: " + mediaStats.techniques.sets + ", hasła słownika: " + mediaStats.glossary.sets + ")",
   "- materiały w galeriach: **" + (mediaStats.techniques.items + mediaStats.glossary.items) + "** (w tym filmy: " + (mediaStats.techniques.videos + mediaStats.glossary.videos) + ") — galerie 2–4 elementy; wyjątki: 4 techniki z 1 filmem i `seiken` z 1 zdjęciem; pliki w R2 albo w `public/`",
+  "- dane na żądanie: **" + (chunkStats.techniques + chunkStats.glossary) + "** plików w `public/data/` (techniki: " + chunkStats.techniques + ", hasła: " + chunkStats.glossary + "); kafelki czytają tylko `media-thumbnails.json`, galerie i opisy wchodzą do bundle'u dopiero po otwarciu wpisu",
   "",
   "## 7. Statystyki",
   "",
@@ -443,8 +516,7 @@ p(
   "",
   "1. **P1.6** — dopisać do atlasu Seienchin i Ushiro-mawashi-geri (sekcja 5).",
   "2. **P1.7** — hasła Rei/Osu/Bunkai/Kamae + linkowanie opisów wymagań do słownika (sekcja 5); infrastruktura `{type:\"glossary\"}` gotowa.",
-  "3. **P1.5** — zdjęcia self-hosted zamiast Unsplash (sekcja 6).",
-  "4. **P1.1** — weryfikacja treści 16 stopni ze sensei (nazwy, zakres, staż, liczby walk).",
+  "3. **P1.1** — weryfikacja treści 16 stopni ze sensei (nazwy, zakres, staż, liczby walk).",
   "",
 );
 

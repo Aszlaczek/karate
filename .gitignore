@@ -13,4 +13,5 @@ yarn-error.log*
 media-source/*
 !media-source/README.md
 media-build/
+public/data/
 .env.r2

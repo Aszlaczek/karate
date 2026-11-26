@@ -54,6 +54,29 @@
         }
       ]
     },
+    "seiken-tsuki": {
+      "translation": "Proste uderzenie przednią powierzchnią pięści.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Zwieraj pięść i prowadź ją prostą linią do celu. Kontakt następuje przednią powierzchnią knykci, przy nadgarstku ustawionym w osi przedramienia."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Sprawdź, czy ramię nie wyprzedza pracy bioder i czy druga ręka pozostaje cofnięta przy boku tułowia (hikite)."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Seiken",
+          "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+        },
+        {
+          "term": "tsuki",
+          "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+        }
+      ]
+    },
     "seiken-ago-uchi": {
       "translation": "Uderzenie pięścią w kierunku podbródka.",
       "sections": [
@@ -1680,7 +1703,7 @@
         }
       ]
     },
-    "mae-geri-chudan-chusoku": {
+    "mae-geri-chudan": {
       "translation": "Kopnięcie do przodu na poziom środkowy, przednią częścią podeszwy.",
       "sections": [
         {

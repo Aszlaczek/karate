@@ -1,8 +1,16 @@
 import { describe, expect, it } from "vitest";
-import { getGlossaryMedia, getTechniqueMedia, glossary, media } from "@/data";
+import { getGlossaryCardMedia, getTechniqueCardMedia, glossary, techniques } from "@/data";
+import { getGlossaryMedia, getTechniqueMedia, media } from "@/data/fullData";
 import { getMediaThumbnail, isImageSrc, resolveMediaSrc } from "@/features/technique/components/media";
 
 describe("galerie mediów", () => {
+  it("nie trzyma obrazów i filmów w techniques.json", () => {
+    for (const technique of techniques) {
+      expect(technique).not.toHaveProperty("image");
+      expect(technique).not.toHaveProperty("video");
+    }
+  });
+
   it("udostępnia galerię techniki z posterem jako miniaturą karty", () => {
     const items = getTechniqueMedia("seiken-morote-tsuki");
 
@@ -10,6 +18,8 @@ describe("galerie mediów", () => {
     expect(items[0].type).toBe("video");
     expect(items[0].alt).toContain("Nagranie z dojo");
     expect(getMediaThumbnail(items)).toBe(items[0].poster);
+    expect(getTechniqueCardMedia("seiken-morote-tsuki").thumbnail).toBe(getMediaThumbnail(items));
+    expect(getTechniqueCardMedia("seiken-morote-tsuki").firstIsVideo).toBe(true);
   });
 
   it("nie udostępnia nagrań demo ani grafik GenAI", () => {
@@ -24,6 +34,8 @@ describe("galerie mediów", () => {
 
     expect(items.map((item) => item.type)).toEqual(["image"]);
     expect(items[0].src).toContain("/seiken/image/seiken-piesc.jpg");
+    expect(getGlossaryCardMedia("seiken").thumbnail).toBe(items[0].src);
+    expect(getGlossaryCardMedia("seiken").firstIsVideo).toBe(false);
   });
 
   it("udostępnia galerię postawy z filmem i zdjęciem", () => {

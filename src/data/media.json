@@ -1,5 +1,35 @@
 {
   "techniques": {
+    "age-hiji-ate": [
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/video/age-hiji-ate-jodan-f1.mp4",
+        "label": "Age hiji-ate — widok z przodu 1",
+        "alt": "Age hiji-ate: widok z przodu 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/poster/age-hiji-ate-jodan-f1.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/video/age-hiji-ate-jodan-f2.mp4",
+        "label": "Age hiji-ate — widok z przodu 2",
+        "alt": "Age hiji-ate: widok z przodu 2. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/poster/age-hiji-ate-jodan-f2.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/video/age-hiji-ate-jodan-s1.mp4",
+        "label": "Age hiji-ate — widok z boku 1",
+        "alt": "Age hiji-ate: widok z boku 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/poster/age-hiji-ate-jodan-s1.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/video/age-hiji-ate-jodan-s2.mp4",
+        "label": "Age hiji-ate — widok z boku 2",
+        "alt": "Age hiji-ate: widok z boku 2. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/poster/age-hiji-ate-jodan-s2.jpg"
+      }
+    ],
     "age-jodan-tsuki": [
       {
         "type": "video",
@@ -118,31 +148,31 @@
     "hira-ken-mawashi-uchi": [
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/video/hira-ken-mawashi-f1a.mp4",
-        "label": "Hira-ken mawashi-uchi — widok z przodu 1a",
-        "alt": "Hira-ken mawashi-uchi: widok z przodu 1a. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/poster/hira-ken-mawashi-f1a.jpg"
-      },
-      {
-        "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/video/hira-ken-mawashi-f2a.mp4",
-        "label": "Hira-ken mawashi-uchi — widok z przodu 2a",
-        "alt": "Hira-ken mawashi-uchi: widok z przodu 2a. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/poster/hira-ken-mawashi-f2a.jpg"
-      },
-      {
-        "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/video/hira-ken-mawashi-uchi-f1.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/video/hira-ken-mawashi-f1.mp4",
         "label": "Hira-ken mawashi-uchi — widok z przodu 1",
         "alt": "Hira-ken mawashi-uchi: widok z przodu 1. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/poster/hira-ken-mawashi-uchi-f1.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/poster/hira-ken-mawashi-f1.jpg"
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/video/hiraken-mawashi-uchi-f2.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/video/hira-ken-mawashi-f2.mp4",
         "label": "Hira-ken mawashi-uchi — widok z przodu 2",
         "alt": "Hira-ken mawashi-uchi: widok z przodu 2. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/poster/hiraken-mawashi-uchi-f2.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/poster/hira-ken-mawashi-f2.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/video/hira-ken-mawashi-uchi-f1b.mp4",
+        "label": "Hira-ken mawashi-uchi — ujęcie",
+        "alt": "Hira-ken mawashi-uchi: ujęcie. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/poster/hira-ken-mawashi-uchi-f1b.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/video/hiraken-mawashi-uchi-f2b.mp4",
+        "label": "Hira-ken mawashi-uchi — ujęcie",
+        "alt": "Hira-ken mawashi-uchi: ujęcie. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/poster/hiraken-mawashi-uchi-f2b.jpg"
       }
     ],
     "hira-ken-tsuki": [
@@ -201,32 +231,33 @@
     "ippon-kumite-1-10-kyu": [
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-1-10-kyu/video/ippon-kumite-3-f1.mp4",
-        "label": "Ippon kumite — 1 (10 kyu) — widok z przodu 1",
-        "alt": "Ippon kumite — 1 (10 kyu): widok z przodu 1. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-1-10-kyu/poster/ippon-kumite-3-f1.jpg"
-      },
-      {
-        "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-1-10-kyu/video/ippon-kumite1-f1.mp4",
         "label": "Ippon kumite — 1 (10 kyu) — widok z przodu 1",
         "alt": "Ippon kumite — 1 (10 kyu): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-1-10-kyu/poster/ippon-kumite1-f1.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-1-10-kyu/video/ippon-kumite1-s1.mp4",
+        "label": "Ippon kumite — 1 (10 kyu) — widok z boku 1",
+        "alt": "Ippon kumite — 1 (10 kyu): widok z boku 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-1-10-kyu/poster/ippon-kumite1-s1.jpg"
       }
     ],
     "ippon-kumite-2-9-kyu": [
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-2-9-kyu/video/ippon-kumite2-f1.mp4",
+        "label": "Ippon kumite — 2 (9 kyu) — widok z przodu 1",
+        "alt": "Ippon kumite — 2 (9 kyu): widok z przodu 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-2-9-kyu/poster/ippon-kumite2-f1.jpg"
+      },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-2-9-kyu/video/ippon-kumite2-s1.mp4",
         "label": "Ippon kumite — 2 (9 kyu) — widok z boku 1",
         "alt": "Ippon kumite — 2 (9 kyu): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-2-9-kyu/poster/ippon-kumite2-s1.jpg"
-      },
-      {
-        "type": "image",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-2-9-kyu/image/ippon-kumite2-s1-still.jpg",
-        "label": "Ippon kumite — 2 (9 kyu) — klatka filmu",
-        "alt": "Ippon kumite — 2 (9 kyu): dodatkowa klatka z nagrania z dojo."
       }
     ],
     "ippon-kumite-3-8-kyu": [
@@ -243,13 +274,6 @@
         "label": "Ippon kumite — 3 (8 kyu) — widok z boku 1",
         "alt": "Ippon kumite — 3 (8 kyu): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-3-8-kyu/poster/ippon-kumite3-s1.jpg"
-      },
-      {
-        "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-3-8-kyu/video/ippon-kumite3-s3.mp4",
-        "label": "Ippon kumite — 3 (8 kyu) — widok z boku 3",
-        "alt": "Ippon kumite — 3 (8 kyu): widok z boku 3. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-3-8-kyu/poster/ippon-kumite3-s3.jpg"
       }
     ],
     "ippon-kumite-4-7-kyu": [
@@ -282,13 +306,6 @@
         "label": "Ippon kumite — 5 (6 kyu) — widok z boku 1",
         "alt": "Ippon kumite — 5 (6 kyu): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-5-6-kyu/poster/ippon-kumite5-s1.jpg"
-      },
-      {
-        "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-5-6-kyu/video/ippon-kumite5-s2.mp4",
-        "label": "Ippon kumite — 5 (6 kyu) — widok z boku 2",
-        "alt": "Ippon kumite — 5 (6 kyu): widok z boku 2. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-5-6-kyu/poster/ippon-kumite5-s2.jpg"
       }
     ],
     "ippon-kumite-6-5-kyu": [
@@ -358,20 +375,6 @@
     "jodan-hiji-ate": [
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-hiji-ate/video/age-hiji-ate-jodan-f1.mp4",
-        "label": "Jōdan hiji-ate — widok z przodu 1",
-        "alt": "Jōdan hiji-ate: widok z przodu 1. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-hiji-ate/poster/age-hiji-ate-jodan-f1.jpg"
-      },
-      {
-        "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-hiji-ate/video/age-hiji-ate-jodan-f2.mp4",
-        "label": "Jōdan hiji-ate — widok z przodu 2",
-        "alt": "Jōdan hiji-ate: widok z przodu 2. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-hiji-ate/poster/age-hiji-ate-jodan-f2.jpg"
-      },
-      {
-        "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-hiji-ate/video/hiji-ate-jodan-f1.mp4",
         "label": "Jōdan hiji-ate — widok z przodu 1",
         "alt": "Jōdan hiji-ate: widok z przodu 1. Nagranie z dojo.",
@@ -379,10 +382,17 @@
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-hiji-ate/video/age-hiji-ate-jodan-s1.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-hiji-ate/video/hiji-ate-jodan-s1.mp4",
         "label": "Jōdan hiji-ate — widok z boku 1",
         "alt": "Jōdan hiji-ate: widok z boku 1. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-hiji-ate/poster/age-hiji-ate-jodan-s1.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-hiji-ate/poster/hiji-ate-jodan-s1.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-hiji-ate/video/hiji-ate-jodan-s2.mp4",
+        "label": "Jōdan hiji-ate — widok z boku 2",
+        "alt": "Jōdan hiji-ate: widok z boku 2. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-hiji-ate/poster/hiji-ate-jodan-s2.jpg"
       }
     ],
     "kansetsu-geri": [
@@ -448,17 +458,17 @@
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/koken-uke/video/koken-uke-chudan-f2a.mp4",
-        "label": "Kōken uke — widok z przodu 2a",
-        "alt": "Kōken uke: widok z przodu 2a. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/koken-uke/poster/koken-uke-chudan-f2a.jpg"
-      },
-      {
-        "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/koken-uke/video/koken-uke-gedan-f1.mp4",
         "label": "Kōken uke — widok z przodu 1",
         "alt": "Kōken uke: widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/koken-uke/poster/koken-uke-gedan-f1.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/koken-uke/video/koken-uke-gedan-f2.mp4",
+        "label": "Kōken uke — widok z przodu 2",
+        "alt": "Kōken uke: widok z przodu 2. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/koken-uke/poster/koken-uke-gedan-f2.jpg"
       }
     ],
     "mae-chusoku-kaage": [
@@ -477,34 +487,34 @@
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-chusoku-kaage/poster/mae-kaage-chusoku-s1.jpg"
       }
     ],
-    "mae-geri-chudan-chusoku": [
+    "mae-geri-chudan": [
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan-chusoku/video/mae-geri-kakato-chudan-f1.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/video/mae-geri-kakato-chudan-f1.mp4",
         "label": "Mae-geri chūdan chūsoku — widok z przodu 1",
         "alt": "Mae-geri chūdan chūsoku: widok z przodu 1. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan-chusoku/poster/mae-geri-kakato-chudan-f1.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/poster/mae-geri-kakato-chudan-f1.jpg"
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan-chusoku/video/mae-geri-kakato-chudan-f2.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/video/mae-geri-kakato-chudan-f2.mp4",
         "label": "Mae-geri chūdan chūsoku — widok z przodu 2",
         "alt": "Mae-geri chūdan chūsoku: widok z przodu 2. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan-chusoku/poster/mae-geri-kakato-chudan-f2.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/poster/mae-geri-kakato-chudan-f2.jpg"
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan-chusoku/video/mai-geri-f1.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/video/mai-geri-chusoku-chudan-f1.mp4",
         "label": "Mae-geri chūdan chūsoku — widok z przodu 1",
         "alt": "Mae-geri chūdan chūsoku: widok z przodu 1. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan-chusoku/poster/mai-geri-f1.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/poster/mai-geri-chusoku-chudan-f1.jpg"
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan-chusoku/video/mai-geri-f2.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/video/mai-geri-chusoku-chudan-f2.mp4",
         "label": "Mae-geri chūdan chūsoku — widok z przodu 2",
         "alt": "Mae-geri chūdan chūsoku: widok z przodu 2. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan-chusoku/poster/mai-geri-f2.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/poster/mai-geri-chusoku-chudan-f2.jpg"
       }
     ],
     "mae-geri-jodan": [
@@ -537,21 +547,6 @@
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/poster/mae-geri-chusoku-jodan-s1.jpg"
       }
     ],
-    "mae-kakato-geri": [
-      {
-        "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-kakato-geri/video/mae-geri-kakato-chusoku-s2.mp4",
-        "label": "Mae kakato-geri — widok z boku 2",
-        "alt": "Mae kakato-geri: widok z boku 2. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-kakato-geri/poster/mae-geri-kakato-chusoku-s2.jpg"
-      },
-      {
-        "type": "image",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-kakato-geri/image/mae-geri-kakato-chusoku-s2-still.jpg",
-        "label": "Mae kakato-geri — klatka filmu",
-        "alt": "Mae kakato-geri: dodatkowa klatka z nagrania z dojo."
-      }
-    ],
     "mae-tobi-geri": [
       {
         "type": "video",
@@ -566,89 +561,103 @@
         "label": "Mae tobi-geri — widok z boku 1",
         "alt": "Mae tobi-geri: widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-tobi-geri/poster/mae-tobi-geri-all-s1.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-tobi-geri/video/mae-tobi-geri1-s1.mp4",
+        "label": "Mae tobi-geri — widok z boku 1",
+        "alt": "Mae tobi-geri: widok z boku 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-tobi-geri/poster/mae-tobi-geri1-s1.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-tobi-geri/video/mae-tobi-geri2-s1.mp4",
+        "label": "Mae tobi-geri — widok z boku 1",
+        "alt": "Mae tobi-geri: widok z boku 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-tobi-geri/poster/mae-tobi-geri2-s1.jpg"
       }
     ],
     "mawashi-geri-chudan-chusoku-haisoku": [
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/video/mawashi-geri-chudan-chusoku-f1.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/video/mawashi-geri-chusoku-chudan-f1.mp4",
         "label": "Mawashi-geri chūdan (chūsoku, haisoku) — widok z przodu 1",
         "alt": "Mawashi-geri chūdan (chūsoku, haisoku): widok z przodu 1. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-chudan-chusoku-f1.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-chusoku-chudan-f1.jpg"
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/video/mawashi-geri-chudan-chusoku-f2.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/video/mawashi-geri-chusoku-chudan-f2.mp4",
         "label": "Mawashi-geri chūdan (chūsoku, haisoku) — widok z przodu 2",
         "alt": "Mawashi-geri chūdan (chūsoku, haisoku): widok z przodu 2. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-chudan-chusoku-f2.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-chusoku-chudan-f2.jpg"
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/video/mawashi-geri-chudan-haisoku-f1.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/video/mawashi-geri-haisoku-chudan-f1.mp4",
         "label": "Mawashi-geri chūdan (chūsoku, haisoku) — widok z przodu 1",
         "alt": "Mawashi-geri chūdan (chūsoku, haisoku): widok z przodu 1. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-chudan-haisoku-f1.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-haisoku-chudan-f1.jpg"
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/video/mawashi-geri-chudan-haisoku-f2.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/video/mawashi-geri-haisoku-chudan-f2.mp4",
         "label": "Mawashi-geri chūdan (chūsoku, haisoku) — widok z przodu 2",
         "alt": "Mawashi-geri chūdan (chūsoku, haisoku): widok z przodu 2. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-chudan-haisoku-f2.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-haisoku-chudan-f2.jpg"
       }
     ],
     "mawashi-geri-gedan-haisoku": [
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/video/mawashi-gedan-haisoku-f1.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/video/mawashi-geri-haisoku-gedan-f1.mp4",
         "label": "Mawashi-geri gedan (haisoku) — widok z przodu 1",
         "alt": "Mawashi-geri gedan (haisoku): widok z przodu 1. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/poster/mawashi-gedan-haisoku-f1.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/poster/mawashi-geri-haisoku-gedan-f1.jpg"
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/video/mawashi-gedan-haisoku-f3.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/video/mawashi-geri-haisoku-gedan-f2.mp4",
+        "label": "Mawashi-geri gedan (haisoku) — widok z przodu 2",
+        "alt": "Mawashi-geri gedan (haisoku): widok z przodu 2. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/poster/mawashi-geri-haisoku-gedan-f2.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/video/mawashi-geri-haisoku-gedan-f3.mp4",
         "label": "Mawashi-geri gedan (haisoku) — widok z przodu 3",
         "alt": "Mawashi-geri gedan (haisoku): widok z przodu 3. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/poster/mawashi-gedan-haisoku-f3.jpg"
-      },
-      {
-        "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/video/mawashi-gedan-haisoku-f4.mp4",
-        "label": "Mawashi-geri gedan (haisoku) — widok z przodu 4",
-        "alt": "Mawashi-geri gedan (haisoku): widok z przodu 4. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/poster/mawashi-gedan-haisoku-f4.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/poster/mawashi-geri-haisoku-gedan-f3.jpg"
       }
     ],
     "mawashi-geri-jodan-chusoku-haisoku": [
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-jodan-chusoku-f1.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-chusoku-jodan-f1.mp4",
         "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z przodu 1",
         "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z przodu 1. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-jodan-chusoku-f1.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-chusoku-jodan-f1.jpg"
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-jodan-chusoku-f2.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-chusoku-jodan-f2.mp4",
         "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z przodu 2",
         "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z przodu 2. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-jodan-chusoku-f2.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-chusoku-jodan-f2.jpg"
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-jodan-haisoku-f1.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-haisoku-jodan-f1.mp4",
         "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z przodu 1",
         "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z przodu 1. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-jodan-haisoku-f1.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-haisoku-jodan-f1.jpg"
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-jodan-haisoku-f2.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-haisoku-jodan-f2.mp4",
         "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z przodu 2",
         "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z przodu 2. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-jodan-haisoku-f2.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-haisoku-jodan-f2.jpg"
       }
     ],
     "morote-kake-uke": [
@@ -686,17 +695,17 @@
     "naka-yubi-ippon-ken": [
       {
         "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/naka-yubi-ippon-ken/video/naka-yubi-ippon-ken-chudan-f1.mp4",
+        "label": "Naka-yubi ippon-ken — widok z przodu 1",
+        "alt": "Naka-yubi ippon-ken: widok z przodu 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/naka-yubi-ippon-ken/poster/naka-yubi-ippon-ken-chudan-f1.jpg"
+      },
+      {
+        "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/naka-yubi-ippon-ken/video/naka-yubi-ippon-ken-chudan-f2.mp4",
         "label": "Naka-yubi ippon-ken — widok z przodu 2",
         "alt": "Naka-yubi ippon-ken: widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/naka-yubi-ippon-ken/poster/naka-yubi-ippon-ken-chudan-f2.jpg"
-      },
-      {
-        "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/naka-yubi-ippon-ken/video/naka-yubi-ippon-ken-f1.mp4",
-        "label": "Naka-yubi ippon-ken — widok z przodu 1",
-        "alt": "Naka-yubi ippon-ken: widok z przodu 1. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/naka-yubi-ippon-ken/poster/naka-yubi-ippon-ken-f1.jpg"
       }
     ],
     "nihon-nukite": [
@@ -746,17 +755,17 @@
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-hiji-ate/video/hiji-ate-oroshi-f3.mp4",
-        "label": "Oroshi hiji-ate — widok z przodu 3",
-        "alt": "Oroshi hiji-ate: widok z przodu 3. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-hiji-ate/poster/hiji-ate-oroshi-f3.jpg"
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-hiji-ate/video/hiji-ate-oroshi-s1.mp4",
+        "label": "Oroshi hiji-ate — widok z boku 1",
+        "alt": "Oroshi hiji-ate: widok z boku 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-hiji-ate/poster/hiji-ate-oroshi-s1.jpg"
       },
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-hiji-ate/video/hiji-ate-oroshi-f4.mp4",
-        "label": "Oroshi hiji-ate — widok z przodu 4",
-        "alt": "Oroshi hiji-ate: widok z przodu 4. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-hiji-ate/poster/hiji-ate-oroshi-f4.jpg"
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-hiji-ate/video/hiji-ate-oroshi-s2.mp4",
+        "label": "Oroshi hiji-ate — widok z boku 2",
+        "alt": "Oroshi hiji-ate: widok z boku 2. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-hiji-ate/poster/hiji-ate-oroshi-s2.jpg"
       }
     ],
     "oroshi-uchi-kakato-geri": [
@@ -1145,6 +1154,29 @@
         "label": "Seiken tate-tsuki — widok z przodu 1",
         "alt": "Seiken tate-tsuki: widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-tate-tsuki/poster/seiken-tate-tsuki-jodan-f1.jpg"
+      }
+    ],
+    "seiken-tsuki": [
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-tsuki/video/seiken-chudan-tsuki-f1.mp4",
+        "label": "Seiken tsuki — widok z przodu 1",
+        "alt": "Seiken tsuki: widok z przodu 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-tsuki/poster/seiken-chudan-tsuki-f1.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-tsuki/video/seiken-gedan-tsuki-f1.mp4",
+        "label": "Seiken tsuki — widok z przodu 1",
+        "alt": "Seiken tsuki: widok z przodu 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-tsuki/poster/seiken-gedan-tsuki-f1.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-tsuki/video/seiken-yodan-tsuki-f1.mp4",
+        "label": "Seiken tsuki — widok z przodu 1",
+        "alt": "Seiken tsuki: widok z przodu 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-tsuki/poster/seiken-yodan-tsuki-f1.jpg"
       }
     ],
     "shotei-uchi": [
@@ -1921,6 +1953,14 @@
         "alt": "Yonhon nukite chūdan: widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yonhon-nukite-chudan/poster/yonhon-nukite-chudan-f2.jpg"
       }
+    ],
+    "mae-kakato-geri": [
+      {
+        "type": "image",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-kakato-geri/image/mae-geri-kakato-chusoku-s2-still.jpg",
+        "label": "Mae kakato-geri — klatka filmu",
+        "alt": "Mae kakato-geri: dodatkowa klatka z nagrania z dojo."
+      }
     ]
   },
   "glossary": {
@@ -2056,10 +2096,10 @@
     "kumite": [
       {
         "type": "video",
-        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kumite/video/kumite-kamae-f1.mp4",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kumite/video/kumite-kamae-hidari-f1.mp4",
         "label": "Kamae — lewa strona",
         "alt": "Kumite — kamae, lewa strona. Nagranie z dojo.",
-        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kumite/poster/kumite-kamae-f1.jpg"
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kumite/poster/kumite-kamae-hidari-f1.jpg"
       },
       {
         "type": "video",

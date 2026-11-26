@@ -37,8 +37,6 @@ export interface Technique {
   focus: string;
   levels: number[];
   aliases: string[];
-  image: string;
-  video: string | null;
 }
 
 export interface TechniqueDetail {
@@ -70,6 +68,23 @@ export interface MediaManifest {
   techniques: Record<string, MediaItem[]>;
   /** Klucz: id hasła z glossary.json (również postawy). */
   glossary: Record<string, MediaItem[]>;
+}
+
+/** To, czego kafelki potrzebują z galerii — bez pełnych opisów i URL-i filmów. */
+export interface CardMedia {
+  thumbnail: string | null;
+  firstIsVideo: boolean;
+}
+
+export interface MediaThumbnails {
+  techniques: Record<string, CardMedia>;
+  glossary: Record<string, CardMedia>;
+}
+
+/** Zawartość jednego pliku z public/data/ — pobieranego po kliknięciu kafelka. */
+export interface EntryData {
+  media: MediaItem[];
+  detail: TechniqueDetail | null;
 }
 
 export interface GlossaryEntry {

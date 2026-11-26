@@ -1,10 +1,7 @@
-import {
-  getGlossaryMedia,
-  getRelatedTechniques,
-  getStanceDetail,
-  STANCE_CATEGORY_ID,
-} from "@/data";
-import type { GlossaryCategory, GlossaryEntry } from "@/data/types";
+import { getRelatedTechniques, STANCE_CATEGORY_ID } from "@/data";
+import { loadGlossaryData } from "@/data/onDemand";
+import type { EntryData, GlossaryCategory, GlossaryEntry } from "@/data/types";
+import { useOnDemandData } from "@/hooks/useOnDemandData";
 import MediaGallery from "@/features/technique/components/MediaGallery";
 import { resolveMediaSrc } from "@/features/technique/components/TechniqueIllustration";
 import Icon from "@/components/ui/Icon";
@@ -21,6 +18,8 @@ interface GlossaryEntryModalProps {
   onClose: () => void;
 }
 
+const EMPTY: EntryData = { media: [], detail: null };
+
 const GlossaryEntryModal = ({
   entry,
   category,
@@ -29,10 +28,10 @@ const GlossaryEntryModal = ({
   const related = getRelatedTechniques(entry);
   const zone = zoneForEntry(entry.id);
   const { onBackdropMouseDown } = useModalBase(onClose);
-  const detail =
-    category.id === STANCE_CATEGORY_ID ? getStanceDetail(entry.id) : undefined;
+  const data = useOnDemandData(entry.id, loadGlossaryData, EMPTY);
+  const detail = category.id === STANCE_CATEGORY_ID ? data.detail : null;
   // Zdjęcie postawy jest tylko miniaturką na kafelku — w modalu startują filmy.
-  const media = getGlossaryMedia(entry.id);
+  const media = data.media;
 
   return (
     <div

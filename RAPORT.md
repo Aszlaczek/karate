@@ -1,8 +1,8 @@
 # RAPORT.md — audyt danych KIHON
 
-> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: 2026-11-25).
+> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: 2026-11-26).
 > Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`, `media.json`, `techniqueDetails.json`, `learning.json`,
-> `src/data/index.ts` (CATEGORIES), `src/data/media.json`, zawartość `public/images/`.
+> `src/data/media-thumbnails.json`, `public/data/`, `src/data/index.ts` (CATEGORIES), zawartość `public/images/` (w tym `hero/`).
 
 ## 1. Integralność struktury
 
@@ -15,7 +15,7 @@ Ostrzeżenia: **0**
 | Stopień | Techniki w atlasie | Wymagania: techniki | Wymagania: postawy (slownik) | Wymagania: opisy | Walki |
 |---|---:|---:|---:|---:|---:|
 | bez stopnia (start) | 0 | 0 | 1 | 5 | — |
-| 10 kyu (10) | 8 | 8 | 3 | 0 | 1 |
+| 10 kyu (10) | 9 | 9 | 3 | 0 | 1 |
 | 9 kyu (9) | 12 | 12 | 4 | 2 | 2 |
 | 8 kyu (8) | 16 | 16 | 2 | 0 | 3 |
 | 7 kyu (7) | 17 | 17 | 2 | 0 | 4 |
@@ -43,8 +43,8 @@ Brak kolizji ✅ (aliasy to obecnie tylko metadane — aplikacja nie linkuje po 
 
 ## 5. Pozycje wymagań bez techniki (typu `text` i `glossary`)
 
-**31 / 197** pozycji to opisy nielinkowane (etykieta, wiedza, próba).
-**19 / 197** pozycji to linki do haseł słownika (postawy).
+**31 / 198** pozycji to opisy nielinkowane (etykieta, wiedza, próba).
+**19 / 198** pozycji to linki do haseł słownika (postawy).
 
 - **bez stopnia** (5): Ukłon rei przy wejściu · Znaczenie słowa Osu · Bezpieczne zachowanie w dojo · Seiza i mokuso · Oddychanie i rozgrzewka
 - **9 kyu** (2): Dojo-kun i znaczenie Osu · Etykieta oraz bezpieczeństwo dojo
@@ -70,26 +70,26 @@ Z tego braki w atlasie do zadania **P1.6**: „Ushiro-mawashi-geri".
 
 ## 6. Media i zdjęcia
 
-- techniki z `image`: 118/118 (unikalnych URL-i: 1, w tym Unsplash: 118) → zadanie **P1.5**
-- techniki z `video`: 0/118 (pole zawsze `null` — miejsce na przyszłe filmiki)
-- techniki bez galerii (placeholder z kanji): **37/118**
-- galerie w `media.json`: **99** (techniki: 81, hasła słownika: 18)
-- materiały w galeriach: **291** (w tym filmy: 276) — galerie 2–4 elementy; wyjątki: 4 techniki z 1 filmem i `seiken` z 1 zdjęciem; pliki w R2 albo w `public/`
+- martwe pola `image`/`video` w `techniques.json`: **0/119** ✅ (media wyłącznie w `media.json`)
+- zdjęcie Hero: **lokalne `public/images/hero/osu-no-seishin.jpg`**; obrazy Unsplash w `src/`: **0**
+- techniki bez galerii (placeholder z kanji): **36/119**
+- galerie w `media.json`: **101** (techniki: 83, hasła słownika: 18)
+- materiały w galeriach: **296** (w tym filmy: 282) — galerie 2–4 elementy; wyjątki: 4 techniki z 1 filmem i `seiken` z 1 zdjęciem; pliki w R2 albo w `public/`
+- dane na żądanie: **187** plików w `public/data/` (techniki: 119, hasła: 68); kafelki czytają tylko `media-thumbnails.json`, galerie i opisy wchodzą do bundle'u dopiero po otwarciu wpisu
 
 ## 7. Statystyki
 
 - poradniki: **4**, wydarzenia historyczne: **6**, ciekawostki: **6** (kompletność treści i źródeł sprawdzona)
-- szczegóły technik: **118/118**, szczegóły postaw: **15/15** (tłumaczenie, wszystkie człony nazwy, minimum dwie sekcje)
+- szczegóły technik: **119/119**, szczegóły postaw: **15/15** (tłumaczenie, wszystkie człony nazwy, minimum dwie sekcje)
 - stopni: **16** (start, 10–1 kyu, 1–5 dan)
-- technik łącznie: **118**
-- technik powiązanych z wymaganiami: **118** (poza wymaganiami: 0)
+- technik łącznie: **119**
+- technik powiązanych z wymaganiami: **119** (poza wymaganiami: 0)
 - haseł słownika w wymaganiach: **14**
-- aliasów łącznie: **267** (kolizje: 0)
+- aliasów łącznie: **268** (kolizje: 0)
 - haseł słownika: **68** w 8 kategoriach (Strefy: 3, Części ciała: 11, Postawy (dachi): 15, Ustawienia dłoni: 10, Ustawienia stóp: 6, Dojo i etykieta: 8, Trening i komendy: 10, Strój i sprzęt: 5)
 
 ## 8. Rekomendacje
 
 1. **P1.6** — dopisać do atlasu Seienchin i Ushiro-mawashi-geri (sekcja 5).
 2. **P1.7** — hasła Rei/Osu/Bunkai/Kamae + linkowanie opisów wymagań do słownika (sekcja 5); infrastruktura `{type:"glossary"}` gotowa.
-3. **P1.5** — zdjęcia self-hosted zamiast Unsplash (sekcja 6).
-4. **P1.1** — weryfikacja treści 16 stopni ze sensei (nazwy, zakres, staż, liczby walk).
+3. **P1.1** — weryfikacja treści 16 stopni ze sensei (nazwy, zakres, staż, liczby walk).

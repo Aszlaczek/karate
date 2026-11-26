@@ -1,5 +1,5 @@
 import { spawn } from "node:child_process";
-import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import ffmpegPath from "ffmpeg-static";
@@ -11,7 +11,12 @@ loadMediaEnv();
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const archiveRoot = join(root, "media-source/videos");
 const buildRoot = join(root, "media-build");
-if (existsSync(buildRoot)) {
+const sourcePath = join(buildRoot, "manifest-source.json");
+// Tryb przyrostowy: MEDIA_PREPARE_ONLY=id1,id2 dodaje/brakujące pliki do istniejącego
+// media-build zamiast kodować wszystkiego od nowa.
+const onlyIds = (process.env.MEDIA_PREPARE_ONLY ?? "")
+  .split(",").map((value) => value.trim()).filter(Boolean);
+if (!onlyIds.length && existsSync(buildRoot)) {
   // macOS potrafi zwrócić ENOTEMPTY przy pierwszym czyszczeniu katalogu z .DS_Store.
   for (let attempt = 0; attempt < 3; attempt += 1) {
     try {
@@ -110,17 +115,36 @@ const ids = readdirSync(archiveRoot, { withFileTypes: true })
   .map((entry) => entry.name)
   .sort();
 const limit = Number(process.env.MEDIA_PREPARE_LIMIT ?? 0);
-const selectedIds = limit > 0 ? ids.slice(0, limit) : ids;
+const selectedIds = onlyIds.length
+  ? ids.filter((id) => onlyIds.includes(id))
+  : limit > 0 ? ids.slice(0, limit) : ids;
 
-const manifestSource = {};
+const manifestSource = onlyIds.length && existsSync(sourcePath)
+  ? JSON.parse(readFileSync(sourcePath, "utf8"))
+  : {};
 const jobs = [];
+// W trybie przyrostowym pomijamy pliki, które już istnieją w media-build.
+const enqueue = (job) => {
+  if (existsSync(job.output) && statSync(job.output).size > 0) return;
+  jobs.push(job);
+};
 let videoCount = 0;
 
 for (const id of selectedIds) {
   const target = targetById.get(id);
   if (!target) continue;
-  const videos = filesIn(join(archiveRoot, id, "video"), /\.(mp4|webm|mov)$/i)
-    .filter((name) => !EXCLUDED_MEDIA_STEMS.has(name.replace(/\.[^.]+$/, "")));
+  // Pliki mogą leżeć w <id>/video/ albo bezpośrednio w <id>/ — obie lokalizacje
+  // traktujemy tak samo i zapamiętujemy faktyczną ścieżkę źródłową każdego stemu.
+  const videoSources = new Map();
+  for (const folder of [join(archiveRoot, id, "video"), join(archiveRoot, id)]) {
+    for (const name of filesIn(folder, /\.(mp4|webm|mov)$/i)) {
+      const stem = name.replace(/\.[^.]+$/, "");
+      if (!videoSources.has(stem)) videoSources.set(stem, join(folder, name));
+    }
+  }
+  const videos = [...videoSources.keys()]
+    .sort()
+    .filter((stem) => !EXCLUDED_MEDIA_STEMS.has(stem));
   if (!videos.length) continue;
 
   const folderVideo = join(buildRoot, id, "video");
@@ -143,8 +167,9 @@ for (const id of selectedIds) {
       ...(saved?.caption ? { caption: saved.caption } : {}),
       posterKey,
     });
-    jobs.push({ kind: "video", input: join(archiveRoot, id, "video", name), output: join(buildRoot, videoKey) });
-    jobs.push({ kind: "poster", input: join(archiveRoot, id, "video", name), output: join(buildRoot, posterKey) });
+    const source = videoSources.get(stem);
+    enqueue({ kind: "video", input: source, output: join(buildRoot, videoKey) });
+    enqueue({ kind: "poster", input: source, output: join(buildRoot, posterKey) });
     videoCount += 1;
   }
 
@@ -158,9 +183,9 @@ for (const id of selectedIds) {
       label: saved?.label ?? `${target.name} — klatka filmu`,
       alt: saved?.alt ?? `${target.name}: dodatkowa klatka z nagrania z dojo.`,
     });
-    jobs.push({
+    enqueue({
       kind: "still",
-      input: join(archiveRoot, id, "video", `${stem}.mp4`),
+      input: videoSources.get(stem),
       output: join(buildRoot, stillKey),
     });
   }
@@ -185,7 +210,7 @@ for (const [section, group] of [["techniques", previous.techniques ?? {}], ["glo
         ? localImageSource(stem)
         : join(root, "public", item.src.slice(1));
       if (source && existsSync(source)) {
-        jobs.push({ kind: "image", input: source, output: join(buildRoot, key) });
+        enqueue({ kind: "image", input: source, output: join(buildRoot, key) });
       } else {
         console.warn(`Brak lokalnego źródła dla ${key} — pozostawiam istniejący obiekt R2.`);
       }
@@ -236,10 +261,7 @@ await new Promise((resolve) => {
   }, 50);
 });
 
-writeFileSync(
-  join(buildRoot, "manifest-source.json"),
-  JSON.stringify(manifestSource, null, 2) + "\n",
-);
+writeFileSync(sourcePath, JSON.stringify(manifestSource, null, 2) + "\n");
 
 if (failures.length) {
   console.error("Błędy ffmpeg:");

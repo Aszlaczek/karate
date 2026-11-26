@@ -159,12 +159,24 @@
   moro-ashi, heisoku, uchi-hachiji — pliki w `public/images/glossary/stances/`);
   strefy mają własny diagram SVG zamiast zdjęcia; „Części ciała" nadal bez zdjęć.
 
-- [ ] 🟡 **P1.5 — Self-hosted zdjęcia zamiast Unsplash**
-  `techniques[].image` i `hero` używają zewnętrznych URL-i Unsplash (straszy
-  429/404 i brak sieci w CI). Pobierz/zasubskrybuj licencjonowane zdjęcia do
-  `public/images/`, podmień URL-e na ścieżki względne od base (wraz z hasłami
-  słownika z P1.2).
-  Kryteria: brak `images.unsplash.com` w `src/`, build ✅.
+- [x] 🟡 **P1.5 — Self-hosted zdjęcia zamiast Unsplash** — wykonane 2026-11-26.
+  Usunięto martwe pola `image` i `video` ze wszystkich 118 wpisów
+  `techniques.json`; `media.json` jest jedynym źródłem mediów technik.
+  Zdjęcie Hero pobrano do `public/images/hero/osu-no-seishin.jpg` i podłączono
+  przez `import.meta.env.BASE_URL`. Audyt pilnuje braku `images.unsplash.com`
+  w `src/` i istnienia lokalnego zdjęcia Hero. Kryteria: brak Unsplash w `src/`,
+  `npm run check` ✅.
+
+- [x] 🟡 **P1.17 — Szybszy start: dane mediów na żądanie** — wykonane 2026-11-26.
+  `media.json` i `techniqueDetails.json` nie są już importowane przy starcie.
+  `npm run data:chunks` (auto przed `dev`/`build`/`audit`/`test`) tworzy
+  `src/data/media-thumbnails.json` (kafelki) oraz 186 plików
+  `public/data/{techniques,glossary}/<id>.json` z pełną galerią i opisem.
+  `onDemand.ts` pobiera plik wybranego wpisu, cache'uje go i podgrzewa przy
+  hover/focus; modal ma fallback z opisem i placeholderem przy błędzie sieci.
+  Kryteria: audyt zgodności plików z `media.json`, 36 testów, build ✅;
+  główny chunk 582,45 → 400,17 kB (139,87 → 116,28 kB gzip), bez ostrzeżenia
+  Vite o >500 kB.
 
 - [x] 🟡 **P1.3 — Testy (Vitest + Testing Library)** — wykonane 2026-11-23.
   `vitest`, `jsdom`, `@testing-library/{react,jest-dom,user-event}`,

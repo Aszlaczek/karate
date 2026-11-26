@@ -1,16 +1,19 @@
 import dojoKunJson from "./dojoKun.json";
 import glossaryJson from "./glossary.json";
 import levelsJson from "./levels.json";
-import mediaJson from "./media.json";
+import mediaThumbnailsJson from "./media-thumbnails.json";
 import techniquesJson from "./techniques.json";
-import techniqueDetailsJson from "./techniqueDetails.json";
-import type { BeltId, DojoKunEntry, GlossaryCategory, GlossaryEntry, Level, MediaItem, MediaManifest, RequirementItem, Technique, TechniqueDetail } from "./types";
+import type { BeltId, CardMedia, DojoKunEntry, GlossaryCategory, GlossaryEntry, Level, MediaThumbnails, RequirementItem, Technique } from "./types";
 
-const techniqueDetails: Record<string, TechniqueDetail> = techniqueDetailsJson.techniques;
-const stanceDetails: Record<string, TechniqueDetail> = techniqueDetailsJson.stances;
+// Lekki indeks generowany przez npm run data:chunks — bez filmów i opisów.
+const thumbnails = mediaThumbnailsJson as MediaThumbnails;
+const EMPTY_CARD_MEDIA: CardMedia = { thumbnail: null, firstIsVideo: false };
 
-export const getTechniqueDetail = (id: string): TechniqueDetail | undefined => techniqueDetails[id];
-export const getStanceDetail = (id: string): TechniqueDetail | undefined => stanceDetails[id];
+export const getTechniqueCardMedia = (id: string): CardMedia =>
+  thumbnails.techniques[id] ?? EMPTY_CARD_MEDIA;
+
+export const getGlossaryCardMedia = (id: string): CardMedia =>
+  thumbnails.glossary[id] ?? EMPTY_CARD_MEDIA;
 
 const mapRequirementItem = (item: { type: string; id?: string; text?: string }): RequirementItem =>
   item.type === "technique" && item.id !== undefined
@@ -28,12 +31,6 @@ export const levels: Level[] = levelsJson.map((level) => ({
 export const techniques: Technique[] = techniquesJson;
 export const glossary: GlossaryCategory[] = glossaryJson.categories;
 export const dojoKun: DojoKunEntry[] = dojoKunJson;
-
-/** Galerie mediów — pliki z public/, uzupełniane przez npm run media:manifest. */
-export const media = mediaJson as MediaManifest;
-
-export const getTechniqueMedia = (id: string): MediaItem[] => media.techniques[id] ?? [];
-export const getGlossaryMedia = (id: string): MediaItem[] => media.glossary[id] ?? [];
 
 export const BELT_NAMES: Record<BeltId, string> = {
   white: "Biały",

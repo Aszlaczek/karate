@@ -1,0 +1,754 @@
+{
+  "techniques": {
+    "seiken-oi-tsuki": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-oi-tsuki/poster/seiken-oi-tsuki-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "seiken-morote-tsuki": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-morote-tsuki/poster/saiken-morote-tsuki-f1.jpg",
+      "firstIsVideo": true
+    },
+    "seiken-tsuki": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-tsuki/poster/seiken-chudan-tsuki-f1.jpg",
+      "firstIsVideo": true
+    },
+    "seiken-ago-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-ago-uchi/poster/seiken-ago-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "seiken-gyaku-tsuki": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-gyaku-tsuki/poster/seiken-gyaku-tsuki-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "seiken-tate-tsuki": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-tate-tsuki/poster/seiken-tate-tsuki-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "seiken-shita-tsuki": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-shita-tsuki/poster/seiken-shita-tsuki-f1.jpg",
+      "firstIsVideo": true
+    },
+    "seiken-jun-tsuki": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jun-tsuki/poster/seiken-jun-tsuki-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "tettsui-oroshi-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-oroshi-uchi/poster/tettsui-orochi-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "tettsui-komekami-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-komekami-uchi/poster/tettsui-komi-kame-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "tettsui-hizo-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-hizo-uchi/poster/tettsui-hizo-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "tettsui-yoko-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-yoko-uchi/poster/tettsui-mae-yoko-uchi-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "uraken-shomen-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-shomen-uchi/poster/uraken-shomen-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "uraken-sayu-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-sayu-uchi/poster/uraken-sayu-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "uraken-hizo-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-hizo-uchi/poster/uraken-hizo-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "uraken-oroshi-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-oroshi-uchi/poster/uraken-oroshi-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "uraken-mawashi-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-mawashi-uchi/poster/uraken-mawashi-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "nihon-nukite": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/nihon-nukite/poster/nihon-nukite-f1.jpg",
+      "firstIsVideo": true
+    },
+    "yonhon-nukite-chudan": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yonhon-nukite-chudan/poster/yonhon-nukite-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "shotei-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "jodan-hiji-ate": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-hiji-ate/poster/hiji-ate-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "shuto-sakotsu-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-sakotsu-uchi/poster/shuto-sakotsu-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "shuto-uchi-komi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-uchi-komi/poster/shuto-mae-gedn-barai-f1.jpg",
+      "firstIsVideo": true
+    },
+    "shuto-ganmen-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-ganmen-uchi/poster/shuto-ganmen-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "shuto-hizo-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-hizo-uchi/poster/shuto-hizo-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "shuto-jodan-uchi-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uchi-uchi/poster/shuto-uchi-uchi-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "chudan-hiji-ate": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/chudan-hiji-ate/poster/hiji-ate-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "chudan-mae-hiji-ate": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/chudan-mae-hiji-ate/poster/mae-hiji-ate-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "age-hiji-ate": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/poster/age-hiji-ate-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "ushiro-hiji-ate": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ushiro-hiji-ate/poster/hiji-ate-ushiro-f2.jpg",
+      "firstIsVideo": true
+    },
+    "oroshi-hiji-ate": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-hiji-ate/poster/hiji-ate-oroshi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "hira-ken-tsuki": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-tsuki/poster/hira-ken-tsuki-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "hira-ken-oroshi-uchi": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "hira-ken-mawashi-uchi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/poster/hira-ken-mawashi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "haishu": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "age-jodan-tsuki": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-jodan-tsuki/poster/age-tsuki-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "koken-uchi": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "ryuto-ken-tsuki": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ryuto-ken-tsuki/poster/ryuto-ken-tsuki-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "naka-yubi-ippon-ken": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/naka-yubi-ippon-ken/poster/naka-yubi-ippon-ken-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "oya-yubi-ippon-ken": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oya-yubi-ippon-ken/poster/oya-yubi-ippon-ken-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "seiken-jodan-uke": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jodan-uke/poster/seiken-juji-uke-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "seiken-gedan-barai": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-gedan-barai/poster/seiken-gedan-barai-f1.jpg",
+      "firstIsVideo": true
+    },
+    "seiken-chudan-uchi-uke": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-uchi-uke/poster/seiken-morote-uchi-uke-f1.jpg",
+      "firstIsVideo": true
+    },
+    "seiken-chudan-soto-uke": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-soto-uke/poster/seiken-soto-uke-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "morote-chudan-uchi-uke": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "morote-uchi-uke-gedan-barai": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/morote-uchi-uke-gedan-barai/poster/seiken-morote-uchi-uke-gedan-barai-f1.jpg",
+      "firstIsVideo": true
+    },
+    "kake-wake-uke": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "seiken-mawashi-gedan-barai": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-mawashi-gedan-barai/poster/seiken-mawashi-gedan-barai-f1.jpg",
+      "firstIsVideo": true
+    },
+    "shuto-mawashi-uke": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-mawashi-uke/poster/shuto-mawashi-uke-f1.jpg",
+      "firstIsVideo": true
+    },
+    "seiken-juji-uke": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-juji-uke/poster/seiken-juji-uke-gedan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "shotei-uke": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/poster/shotei-uke-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "shuto-jodan-uke": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uke/poster/shuto-jodan-uke-f1.jpg",
+      "firstIsVideo": true
+    },
+    "shuto-chudan-soto-uke": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-soto-uke/poster/shuto-chudan-soto-uke-f1.jpg",
+      "firstIsVideo": true
+    },
+    "shuto-chudan-uchi-uke": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-uchi-uke/poster/shuto-uchi-uke-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "shuto-mae-gedan-barai": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-mae-gedan-barai/poster/shuto-mae-gedan-barai-f2.jpg",
+      "firstIsVideo": true
+    },
+    "shuto-kake-jodan-uke": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "shuto-juji-uke": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-juji-uke/poster/shuto-juji-uke-gedan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "koken-uke": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/koken-uke/poster/koken-uke-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "morote-kake-uke": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/morote-kake-uke/poster/morote-kake-uke-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "chudan-haito-uchi-uke": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/chudan-haito-uchi-uke/poster/haito-uchi-uke-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "hiza-geri": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hiza-geri/poster/hiza-geri-f1.jpg",
+      "firstIsVideo": true
+    },
+    "kin-geri": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kin-geri/poster/kin-geri-f1.jpg",
+      "firstIsVideo": true
+    },
+    "mae-geri-chudan": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/poster/mae-geri-kakato-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "mae-geri-jodan": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/poster/mae-geri-chusoku-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "mae-chusoku-kaage": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-chusoku-kaage/poster/mae-kaage-chusoku-f1.jpg",
+      "firstIsVideo": true
+    },
+    "teisoku-mawashi-soto-keage": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/teisoku-mawashi-soto-keage/poster/mawashi-soto-kaage-teisoku-f1.jpg",
+      "firstIsVideo": true
+    },
+    "heisoku-mawashi-uchi-keage": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/heisoku-mawashi-uchi-keage/poster/mawashi-uchi-keage-heisoku-f1.jpg",
+      "firstIsVideo": true
+    },
+    "yoko-keage": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoko-keage/poster/yoko-keage-f1.jpg",
+      "firstIsVideo": true
+    },
+    "kansetsu-geri": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kansetsu-geri/poster/kansetsu-geri-f1.jpg",
+      "firstIsVideo": true
+    },
+    "yoko-geri-chudan": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoko-geri-chudan/poster/yoko-geri-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "mawashi-geri-gedan-haisoku": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/poster/mawashi-geri-haisoku-gedan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "mawashi-geri-chudan-chusoku-haisoku": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-chusoku-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "ushiro-geri-chudan": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ushiro-geri-chudan/poster/ushiro-geri-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "yoko-geri-jodan": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoko-geri-jodan/poster/yoko-geri-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "mawashi-geri-jodan-chusoku-haisoku": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-chusoku-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "ushiro-geri-jodan": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ushiro-geri-jodan/poster/ushiro-geri-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "mae-kakato-geri": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-kakato-geri/image/mae-geri-kakato-chusoku-s2-still.jpg",
+      "firstIsVideo": false
+    },
+    "tobi-nidan-geri": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tobi-nidan-geri/poster/tobi-nidan-geri-f1.jpg",
+      "firstIsVideo": true
+    },
+    "mae-tobi-geri": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-tobi-geri/poster/mae-tobi-geri-all-f1.jpg",
+      "firstIsVideo": true
+    },
+    "jodan-uchi-haisoku-geri": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "oroshi-uchi-kakato-geri": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-uchi-kakato-geri/poster/oroshi-uchi-geri-kakato-f1.jpg",
+      "firstIsVideo": true
+    },
+    "oroshi-soto-kakato-geri": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "yoko-tobi-geri": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "taikyoku-sono-ichi": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "taikyoku-sono-ni": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "taikyoku-sono-san": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "pinan-sono-ichi": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "pinan-sono-ni": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "pinan-sono-san": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "sanchin-no-kata": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "pinan-sono-yon": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "pinan-sono-go": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "gekisai-dai": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "yantsu": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "tsuki-no-kata": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "ippon-kumite-1-10-kyu": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-1-10-kyu/poster/ippon-kumite1-f1.jpg",
+      "firstIsVideo": true
+    },
+    "ippon-kumite-2-9-kyu": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-2-9-kyu/poster/ippon-kumite2-f1.jpg",
+      "firstIsVideo": true
+    },
+    "ippon-kumite-3-8-kyu": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-3-8-kyu/poster/ippon-kumite3-f1.jpg",
+      "firstIsVideo": true
+    },
+    "ippon-kumite-4-7-kyu": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-4-7-kyu/poster/ippon-kumite4-f1.jpg",
+      "firstIsVideo": true
+    },
+    "ippon-kumite-5-6-kyu": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-5-6-kyu/poster/ippon-kumite5-f1.jpg",
+      "firstIsVideo": true
+    },
+    "ippon-kumite-6-5-kyu": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-6-5-kyu/poster/ippon-kumite6-f1.jpg",
+      "firstIsVideo": true
+    },
+    "ippon-kumite-7-4-kyu": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-7-4-kyu/poster/ippon-kumite7-f1.jpg",
+      "firstIsVideo": true
+    },
+    "ippon-kumite-8-3-kyu": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-8-3-kyu/poster/ippon-kumite8-f1.jpg",
+      "firstIsVideo": true
+    },
+    "ippon-kumite-9-2-kyu": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-9-2-kyu/poster/ippon-kumite9-f1.jpg",
+      "firstIsVideo": true
+    },
+    "ippon-kumite-10-1-kyu": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "sanbon-kumite-wariant-i": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "sanbon-kumite-wariant-ii": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "renraku-1-9-kyu": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "renraku-2-8-kyu": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "renraku-3-5-kyu": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "renraku-4-2-kyu": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "renraku-5-i-6-1-kyu": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "tensho": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "saiha": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "gekisai-sho": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "gariyu": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "seishin": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "kanku-dai": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "sushiho": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    }
+  },
+  "glossary": {
+    "jodan": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "chudan": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "gedan-strefa": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "atama": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "kao": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "kubi": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "mune": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "hara": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "koshi": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "ude": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "hiji": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "kote": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "hiza": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "ashi": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "fudo": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/fudo/poster/fudo-dachi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "musubi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/musubi/poster/musibi-dachi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "heiko": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/heiko/poster/heiko-dachi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "zenkutsu-dachi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/zenkutsu-dachi/poster/zenkutsu-dachi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "kokutsu": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kokutsu/poster/kokutsu-dachi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "sanchin-dachi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/sanchin-dachi/poster/sanchi-dachi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "kiba": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kiba/poster/kiba-dachi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "neko-ashi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/neko-ashi/poster/neko-ashi-dachi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "kake": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kake/poster/Kake-dachi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "seiza": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "yoi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoi/poster/yoi-dachi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "tsuru-ashi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tsuru-ashi/poster/tsuru-ashi-dachi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "moro-ashi": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/moro-ashi/poster/moro-ashi-dachi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "heisoku": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/heisoku/poster/heisoku-dachi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "uchi-hachiji": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uchi-hachiji/poster/uchi-hachi-ji-dachi-f1.jpg",
+      "firstIsVideo": true
+    },
+    "seiken": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken/image/seiken-piesc.jpg",
+      "firstIsVideo": false
+    },
+    "shuto": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "nukite": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "hiraken": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "tettsui": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "uraken": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "koken": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "haishu": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/haishu/poster/haishu-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "shotei": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "haito": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "kakato": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "chusoku": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "haisoku": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "teisoku": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "sokuto": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/sokuto/image/sokuto-yoko-geri.jpg",
+      "firstIsVideo": false
+    },
+    "heisoku-ashi": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "dojo": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "sensei": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "senpai": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "rei": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "osu": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "mokuso": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "kyu": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "dan": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "kihon": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "kata": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "kumite": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kumite/poster/kumite-kamae-hidari-f1.jpg",
+      "firstIsVideo": true
+    },
+    "bunkai": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "kamae": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "kiai": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "zanshin": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "maai": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "hajime": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "yame": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "karategi": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "obi": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "uwagi": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "zubon": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    "himo": {
+      "thumbnail": null,
+      "firstIsVideo": false
+    }
+  }
+}

@@ -51,6 +51,7 @@
           { "type": "glossary", "id": "zenkutsu-dachi" },
           { "type": "technique", "id": "seiken-oi-tsuki" },
           { "type": "technique", "id": "seiken-morote-tsuki" },
+          { "type": "technique", "id": "seiken-tsuki" },
           { "type": "technique", "id": "seiken-jodan-uke" },
           { "type": "technique", "id": "seiken-gedan-barai" }
         ]
@@ -102,7 +103,7 @@
       },
       {
         "title": "Kopnięcia",
-        "items": [{ "type": "technique", "id": "mae-geri-chudan-chusoku" }]
+        "items": [{ "type": "technique", "id": "mae-geri-chudan" }]
       },
       {
         "title": "Kata i kumite",
