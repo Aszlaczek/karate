@@ -1,0 +1,48 @@
+{
+  "id": "tettsui-oroshi-uchi",
+  "name": "Tettsui oroshi-uchi",
+  "japanese": "鉄槌下ろし打ち",
+  "reading": "tecuj orosi-uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie „młotem” (dolna krawędź pięści) z góry w dół. Zamach z wysokości głowy, kontakt na dole ruchu.",
+  "tags": [
+    "Tettsui",
+    "Oroshi",
+    "Uchi"
+  ],
+  "focus": "Tor z góry w dół",
+  "levels": [
+    7
+  ],
+  "aliases": [
+    "Tettsui oroshi-uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Opadające uderzenie dolną powierzchnią pięści — młotem.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Poprowadź zamkniętą pięść z góry w dół. Powierzchnią kontaktu jest jej dolny brzeg, nie przednie kłykcie."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Zatrzymaj pięść na zadanej wysokości. Kontroluj nadgarstek, aby dolna powierzchnia pięści pozostała przedłużeniem toru przedramienia."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Tettsui",
+        "polish": "żelazny młot; dolna powierzchnia zamkniętej pięści"
+      },
+      {
+        "term": "oroshi",
+        "polish": "opuszczanie, ruch z góry w dół"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

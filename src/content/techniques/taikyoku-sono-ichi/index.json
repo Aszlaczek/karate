@@ -1,0 +1,52 @@
+{
+  "id": "taikyoku-sono-ichi",
+  "name": "Taikyoku sono ichi",
+  "japanese": "太極其の一",
+  "reading": "tajkjoku sono iczi",
+  "category": "Kata",
+  "description": "Pierwsze kata wstępne. Podstawowe kroki, uderzenia i bloki w układzie litery I (linia prosta).",
+  "tags": [
+    "Kata",
+    "Taikyoku"
+  ],
+  "focus": "Rytm, oddech i zanshin",
+  "levels": [
+    9,
+    10
+  ],
+  "aliases": [
+    "Taikyoku sono ichi"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Wielka ostateczność — forma pierwsza.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Początek serii Taikyoku: nauka kierunków, podstawowych bloków i prostych uderzeń."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Ćwicz osobno zmianę kierunku i następującą po niej technikę. Następnie łącz odcinki w plan poruszania się (embusen)."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Taikyoku",
+        "polish": "wielka ostateczność; tai — wielki, kyoku — kres / najwyższa zasada"
+      },
+      {
+        "term": "sono",
+        "polish": "ten, dany; w nazwie wskazuje numer formy"
+      },
+      {
+        "term": "ichi",
+        "polish": "jeden, pierwszy"
+      }
+    ]
+  }
+}

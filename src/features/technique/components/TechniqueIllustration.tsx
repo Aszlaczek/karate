@@ -1,20 +1,18 @@
 import type { Technique } from "@/data/types";
-
-// Zachowane dla importerów w słowniku (GlossaryCard, GlossaryEntryModal).
-export { resolveMediaSrc } from "./media";
+import KanjiPlaceholder from "@/features/shared/components/KanjiPlaceholder";
 
 interface TechniqueIllustrationProps {
   technique: Technique;
-  controls?: boolean;
 }
 
 function TechniqueIllustration({ technique }: TechniqueIllustrationProps) {
-  // Brak galerii — placeholder z kanji (wzór ze słownika).
   return (
-    <div className="technique-media-frame technique-visual-placeholder">
-      <span>{technique.japanese}</span>
-      <small>{technique.reading}</small>
-    </div>
+    <KanjiPlaceholder
+      className="technique-media-frame technique-visual-placeholder"
+      kanji={technique.japanese}
+      reading={technique.reading}
+      decorative
+    />
   );
 }
 

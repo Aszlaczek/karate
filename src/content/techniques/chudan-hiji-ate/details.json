@@ -1,0 +1,28 @@
+{
+  "media": [
+    {
+      "source": "hiji-ate-chudan-f1.mp4",
+      "label": "Chūdan hiji-ate — widok z przodu 1",
+      "alt": "Chūdan hiji-ate: widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "hiji-ate-chudan-f2.mp4",
+      "label": "Chūdan hiji-ate — widok z przodu 2",
+      "alt": "Chūdan hiji-ate: widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "hiji-ate-chudan-s1.mp4",
+      "label": "Chūdan hiji-ate — widok z boku 1",
+      "alt": "Chūdan hiji-ate: widok z boku 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "hiji-ate-chudan-s2.mp4",
+      "label": "Chūdan hiji-ate — widok z boku 2",
+      "alt": "Chūdan hiji-ate: widok z boku 2. Nagranie z dojo.",
+      "zone": "chudan"
+    }
+  ]
+}

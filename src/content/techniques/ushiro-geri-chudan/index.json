@@ -1,0 +1,51 @@
+{
+  "id": "ushiro-geri-chudan",
+  "name": "Ushiro-geri chūdan",
+  "japanese": "後ろ蹴り中段",
+  "reading": "uszyro-geri czudan",
+  "category": "Kopnięcia",
+  "description": "Kopnięcie do tyłu w strefę środkową. Wzrok przez ramię na cel, noga wypychana piętą.",
+  "tags": [
+    "Ushiro-geri",
+    "Chūdan"
+  ],
+  "focus": "Kontrola celu przez ramię",
+  "levels": [
+    5,
+    7
+  ],
+  "aliases": [
+    "Ushiro-geri",
+    "Ushiro-geri chūdan",
+    "Ushiro-geri chudan",
+    "Ushiro geri (chudan)"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Kopnięcie do tyłu na poziom środkowy.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Sprawdź cel przez ramię i poprowadź nogę w tył na wysokości tułowia. Nie zmieniaj prostego toru w szerokie kopnięcie okrężne."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Kontroluj kierunek przez ramię oraz powrót nogi. Jeśli tracisz widok celu, zatrzymaj ćwiczenie i odtwórz ustawienie."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Ushiro",
+        "polish": "tył, do tyłu"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      },
+      {
+        "term": "chūdan",
+        "polish": "poziom środkowy; chū — środek, dan — poziom"
+      }
+    ]
+  }
+}

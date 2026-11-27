@@ -1,0 +1,48 @@
+{
+  "id": "hira-ken-tsuki",
+  "name": "Hira-ken tsuki",
+  "japanese": "平拳突き",
+  "reading": "hira-ken cuki",
+  "category": "Uderzenia",
+  "description": "Uderzenie „płaską pięścią” (palce zgięte w środkowych stawach) w strefy jōdan i chūdan.",
+  "tags": [
+    "Hira-ken",
+    "Tsuki"
+  ],
+  "focus": "Ułożenie palców",
+  "levels": [
+    2
+  ],
+  "aliases": [
+    "Hira-ken tsuki",
+    "Hira ken tsuki"
+  ],
+  "infographic": "zuki",
+  "knowledge": {
+    "translation": "Proste uderzenie płaską pięścią.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Uformuj płaską pięść z palcami zgiętymi w środkowych stawach. Sprawdź ich ustawienie i prosty tor, zanim dodasz jakiekolwiek obciążenie."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Sprawdź kształt płaskiej pięści bez obciążenia. Palce zgięte w środkowych stawach nie mogą rozluźniać się przy wyproście ręki."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Hira",
+        "polish": "płaski"
+      },
+      {
+        "term": "ken",
+        "polish": "pięść"
+      },
+      {
+        "term": "tsuki",
+        "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+      }
+    ]
+  }
+}

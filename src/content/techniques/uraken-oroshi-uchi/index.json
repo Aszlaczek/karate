@@ -1,0 +1,48 @@
+{
+  "id": "uraken-oroshi-uchi",
+  "name": "Uraken oroshi-uchi",
+  "japanese": "裏拳下ろし打ち",
+  "reading": "uraken orosi-uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie grzbietem pięści z góry w dół, np. w nos lub czoło.",
+  "tags": [
+    "Uraken",
+    "Oroshi",
+    "Uchi"
+  ],
+  "focus": "Tor z góry w dół",
+  "levels": [
+    6
+  ],
+  "aliases": [
+    "Uraken oroshi-uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Opadające uderzenie grzbietem pięści.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Prowadź grzbiet pięści z góry w dół i zatrzymaj go przed umownym celem. Nie zamieniaj powierzchni kontaktu na dolny brzeg pięści."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Oroshi wskazuje opadanie; rozpoczęcie łuku i jego koniec muszą być rozpoznawalne. Nie pozwól, aby pięść opadała bez kontroli."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Uraken",
+        "polish": "grzbiet pięści; ura — tył, ken — pięść"
+      },
+      {
+        "term": "oroshi",
+        "polish": "opuszczanie, ruch z góry w dół"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

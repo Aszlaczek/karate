@@ -1,0 +1,53 @@
+{
+  "id": "oroshi-soto-kakato-geri",
+  "name": "Oroshi soto kakato-geri",
+  "japanese": "下ろし外踵蹴り",
+  "reading": "orosi soto kakato-geri",
+  "category": "Kopnięcia",
+  "description": "Opadające kopnięcie piętą od zewnątrz.",
+  "tags": [
+    "Oroshi",
+    "Soto",
+    "Kakato"
+  ],
+  "focus": "Tor z góry w dół",
+  "levels": [
+    1
+  ],
+  "aliases": [
+    "Oroshi soto kakato-geri",
+    "Oroshi soto kakato geri"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Opadające kopnięcie piętą z przygotowaniem od zewnątrz.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Wprowadź nogę łukiem od zewnętrznej strony i zakończ ruchem pięty w dół. Porównaj przygotowanie z wariantem uchi."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Soto określa stronę przygotowania, a oroshi końcowy ruch w dół. Porównaj oba elementy z odmianą uchi, nie tylko wysokość kopnięcia."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Oroshi",
+        "polish": "opuszczanie, ruch z góry w dół"
+      },
+      {
+        "term": "soto",
+        "polish": "zewnętrzny, od zewnątrz"
+      },
+      {
+        "term": "kakato",
+        "polish": "pięta"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "media": [
+    {
+      "source": "seiken-gedan-barai-f1.mp4",
+      "label": "Seiken gedan-barai — widok z przodu 1",
+      "alt": "Seiken gedan-barai: widok z przodu 1. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "seiken-gedan-barai-f2.mp4",
+      "label": "Seiken gedan-barai — widok z przodu 2",
+      "alt": "Seiken gedan-barai: widok z przodu 2. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "seiken-morote-gedan-barai-f1.mp4",
+      "label": "Seiken gedan-barai (morote) — widok z przodu 1",
+      "alt": "Seiken gedan-barai (morote): widok z przodu 1. Nagranie z dojo.",
+      "zone": "gedan"
+    }
+  ]
+}

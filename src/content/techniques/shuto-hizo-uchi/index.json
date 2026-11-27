@@ -1,0 +1,50 @@
+{
+  "id": "shuto-hizo-uchi",
+  "name": "Shūto hizō-uchi",
+  "japanese": "手刀脾臓打ち",
+  "reading": "szuto hidzo-uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie krawędzią dłoni w okolicę śledziony (hizō).",
+  "tags": [
+    "Shūto",
+    "Hizō",
+    "Uchi"
+  ],
+  "focus": "Skośny tor uderzenia",
+  "levels": [
+    4
+  ],
+  "aliases": [
+    "Shūto hizō-uchi",
+    "Shuto hizo-uchi",
+    "Shuto hizo uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie zewnętrzną krawędzią dłoni w okolicę śledziony.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Prowadź krawędź dłoni ku bocznej części korpusu. Porównaj poziom końcowy z ganmen-uchi, które jest kierowane ku twarzy."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Zachowaj wysokość bocznej części korpusu. Nie unoś dłoni do poziomu twarzy jak w ganmen-uchi."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Shūto",
+        "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+      },
+      {
+        "term": "hizō",
+        "polish": "śledziona; okolica lewego boku tułowia"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

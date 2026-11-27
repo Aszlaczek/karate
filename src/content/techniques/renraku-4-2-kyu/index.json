@@ -1,0 +1,57 @@
+{
+  "id": "renraku-4-2-kyu",
+  "name": "Renraku — 4 (2 kyu)",
+  "japanese": "連絡",
+  "reading": "renraku — 4",
+  "category": "Kumite",
+  "description": "Układ połączonych technik (renraku) wymagany na 2 kyu: 4.",
+  "tags": [
+    "Renraku",
+    "2 kyu"
+  ],
+  "focus": "Płynność kombinacji",
+  "levels": [
+    2
+  ],
+  "aliases": [
+    "Renraku — 4 (2 kyu)",
+    "Renraku  4 (2 kyu)",
+    "Renraku 2 kyu"
+  ],
+  "infographic": "kumite",
+  "knowledge": {
+    "translation": "Połączenie technik — kombinacja 4 (2 kyu).",
+    "sections": [
+      {
+        "title": "Zakres kombinacji",
+        "body": "Ten wpis dotyczy oznaczenia 4 (2 kyu) w programie atlasu. Numery identyfikują kombinacje, a nie liczbę ciosów. Renraku oznacza ich połączenie w ciąg."
+      },
+      {
+        "title": "Budowanie ciągłości",
+        "body": "Najpierw ustal dokładny zestaw z instruktorem. Wykonaj oddzielnie każdy składnik, a następnie połącz jego zakończenie z przygotowaniem kolejnego ruchu, bez zbędnego resetowania postawy."
+      },
+      {
+        "title": "Punkt kontroli",
+        "body": "Sprawdzaj pozycję po każdej technice oraz możliwość płynnego rozpoczęcia następnej. Program nie zawiera pełnej rozpiski tych kombinacji, więc sam numer nie pozwala jej odtworzyć."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Renraku",
+        "polish": "połączenie, łączność; w karate kombinacja technik"
+      },
+      {
+        "term": "4",
+        "polish": "numer kombinacji w programie: 4"
+      },
+      {
+        "term": "2",
+        "polish": "numer stopnia uczniowskiego: 2 kyu"
+      },
+      {
+        "term": "kyu",
+        "polish": "stopień uczniowski"
+      }
+    ]
+  }
+}

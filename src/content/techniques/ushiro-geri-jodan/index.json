@@ -1,0 +1,49 @@
+{
+  "id": "ushiro-geri-jodan",
+  "name": "Ushiro-geri jōdan",
+  "japanese": "後ろ蹴り上段",
+  "reading": "uszyro-geri dzodan",
+  "category": "Kopnięcia",
+  "description": "Kopnięcie do tyłu na wysokość głowy.",
+  "tags": [
+    "Ushiro-geri",
+    "Jōdan"
+  ],
+  "focus": "Równowaga i kontrola celu",
+  "levels": [
+    4
+  ],
+  "aliases": [
+    "Ushiro-geri jōdan",
+    "Ushiro-geri jodan",
+    "Ushiro geri jodan"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Kopnięcie do tyłu na poziom górny.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Najpierw ustal kierunek wzrokiem, potem wysokość ruchu w tył. Zmniejsz wysokość ćwiczenia, jeżeli tracisz kontrolę cofnięcia nogi."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Najpierw opanuj tor w tył niżej, następnie zwiększaj wysokość. Nie próbuj sięgać głowy przeciwnika bez zachowania równowagi."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Ushiro",
+        "polish": "tył, do tyłu"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      },
+      {
+        "term": "jōdan",
+        "polish": "poziom górny; jō — góra, dan — poziom"
+      }
+    ]
+  }
+}

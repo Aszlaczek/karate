@@ -1,0 +1,43 @@
+{
+  "id": "tensho",
+  "name": "Tensho",
+  "japanese": "転掌",
+  "reading": "tenszo",
+  "category": "Kata",
+  "description": "Kata wymagane na stopień 1 dan — krążące bloki i kontrola oddechu.",
+  "tags": [
+    "Kata",
+    "dan"
+  ],
+  "focus": "Precyzja i kontrola",
+  "levels": [
+    11
+  ],
+  "aliases": [
+    "Tensho"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Obracające się dłonie.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Forma okrężnej pracy otwartych dłoni połączonej z kontrolą oddechu i postawy."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Ćwicz ciągłość obrotów dłoni oraz spokojne barki. Rozróżniaj napięcie potrzebne do ustawienia od zbędnego usztywnienia."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Tensho",
+        "polish": "obracające się dłonie; ten — obrót, shō — dłoń"
+      }
+    ]
+  }
+}

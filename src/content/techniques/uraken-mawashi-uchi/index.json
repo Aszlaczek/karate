@@ -1,0 +1,48 @@
+{
+  "id": "uraken-mawashi-uchi",
+  "name": "Uraken mawashi-uchi",
+  "japanese": "裏拳回し打ち",
+  "reading": "uraken mawaszi-uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie grzbietem pięści po okrężnym torze (mawashi). Rotacja tułowia nadaje prędkość.",
+  "tags": [
+    "Uraken",
+    "Mawashi",
+    "Uchi"
+  ],
+  "focus": "Rotacja tułowia",
+  "levels": [
+    6
+  ],
+  "aliases": [
+    "Uraken mawashi-uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Okrężne uderzenie grzbietem pięści.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Połącz łuk ręki z obrotem tułowia. Utrzymuj kontrolę końcowej fazy, żeby ramię nie przelatywało bezwładnie poza cel."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Zatrzymuj obrót razem z techniką. Przekręcenie całego ciała poza umowny cel utrudnia powrót ręki i odzyskanie gotowości."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Uraken",
+        "polish": "grzbiet pięści; ura — tył, ken — pięść"
+      },
+      {
+        "term": "mawashi",
+        "polish": "obrót, ruch okrężny"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "media": [
+    {
+      "source": "seiken-jun-tsuki-jodan-f1.mp4",
+      "label": "Seiken jun-tsuki — widok z przodu 1",
+      "alt": "Seiken jun-tsuki: widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "seiken-jun-tsuki-jodan-f2.mp4",
+      "label": "Seiken jun-tsuki — widok z przodu 2",
+      "alt": "Seiken jun-tsuki: widok z przodu 2. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

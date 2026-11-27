@@ -1,0 +1,22 @@
+{
+  "media": [
+    {
+      "source": "seiken-oi-tsuki-chudan-f1.mp4",
+      "label": "Seiken oi-tsuki — widok z przodu 1",
+      "alt": "Seiken oi-tsuki: widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "seiken-oi-tsuki-gedan-f1.mp4",
+      "label": "Seiken oi-tsuki — widok z przodu 1",
+      "alt": "Seiken oi-tsuki: widok z przodu 1. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "seiken-oi-tsuki-jodan-f1.mp4",
+      "label": "Seiken oi-tsuki — widok z przodu 1",
+      "alt": "Seiken oi-tsuki: widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

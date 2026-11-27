@@ -1,0 +1,21 @@
+{
+  "media": [
+    {
+      "source": "seiken-gyaku-tsuki-chudan-f1.mp4",
+      "label": "Seiken gyaku-tsuki — widok z przodu 1",
+      "alt": "Seiken gyaku-tsuki: widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "seiken-gyaku-tsuki-f1.mp4",
+      "label": "Seiken gyaku-tsuki — widok z przodu 1",
+      "alt": "Seiken gyaku-tsuki: widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "seiken-gyaku-tsuki-gedan-f2.mp4",
+      "label": "Seiken gyaku-tsuki — widok z przodu 2",
+      "alt": "Seiken gyaku-tsuki: widok z przodu 2. Nagranie z dojo.",
+      "zone": "gedan"
+    }
+  ]
+}

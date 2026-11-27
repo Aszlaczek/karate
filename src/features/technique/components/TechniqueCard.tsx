@@ -2,7 +2,7 @@ import { useModals } from "@/store/modalStore";
 import { getLevelsForTechnique, getTechniqueCardMedia } from "@/data";
 import { prefetchTechnique } from "@/data/onDemand";
 import TechniqueIllustration from "./TechniqueIllustration";
-import { resolveMediaSrc } from "./media";
+import CardThumbnail from "@/features/shared/components/CardThumbnail";
 import Icon from "@/components/ui/Icon";
 
 interface TechniqueCardProps {
@@ -27,22 +27,15 @@ export default function TechniqueCard({ technique, index }: TechniqueCardProps) 
         aria-label={`Otwórz szczegóły techniki ${technique.name}`}
       >
         {thumbnail ? (
-          <span className="technique-media-frame technique-photo-frame media-card-thumb">
-            <img
-              className="technique-media"
-              src={resolveMediaSrc(thumbnail)}
-              alt=""
-              loading="lazy"
-              decoding="async"
-            />
-            {firstIsVideo && (
-              <span className="media-card-play" aria-hidden="true">
-                <Icon name="play" size={18} />
-              </span>
-            )}
-          </span>
+          <CardThumbnail
+            src={thumbnail}
+            alt=""
+            className="technique-media-frame technique-photo-frame media-card-thumb"
+            imageClassName="technique-media"
+            firstIsVideo={firstIsVideo}
+          />
         ) : (
-          <TechniqueIllustration technique={technique} controls={false} />
+          <TechniqueIllustration technique={technique} />
         )}
         <span>{technique.category}</span>
         <small>{String(index + 1).padStart(2, "0")}</small>

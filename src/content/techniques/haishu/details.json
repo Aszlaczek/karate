@@ -1,0 +1,34 @@
+{
+  "media": [
+    {
+      "source": "haishu-chudan-f1.mp4",
+      "label": "Haishu — widok z przodu 1",
+      "alt": "Haishu: widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "haishu-chudan-f2.mp4",
+      "label": "Haishu — widok z przodu 2",
+      "alt": "Haishu: widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "haishu-jodan-f1.mp4",
+      "label": "Haishu — widok z przodu 1",
+      "alt": "Haishu: widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "haishu-jodan-f2.mp4",
+      "label": "Haishu — widok z przodu 2",
+      "alt": "Haishu: widok z przodu 2. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "haishu-chudan-s1.mp4",
+      "label": "Haishu — widok z boku 1",
+      "alt": "Haishu: widok z boku 1. Nagranie z dojo.",
+      "zone": "chudan"
+    }
+  ]
+}

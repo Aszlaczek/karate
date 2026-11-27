@@ -1,0 +1,16 @@
+{
+  "media": [
+    {
+      "source": "yoko-geri-jodan-f1.mp4",
+      "label": "Yoko-geri jōdan — widok z przodu 1",
+      "alt": "Yoko-geri jōdan: widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "yoko-geri-jodan-f2.mp4",
+      "label": "Yoko-geri jōdan — widok z przodu 2",
+      "alt": "Yoko-geri jōdan: widok z przodu 2. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

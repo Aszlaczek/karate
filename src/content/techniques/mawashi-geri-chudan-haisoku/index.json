@@ -1,0 +1,55 @@
+{
+  "id": "mawashi-geri-chudan-haisoku",
+  "name": "Mawashi-geri chūdan (haisoku)",
+  "japanese": "回し蹴り中段",
+  "reading": "mawaszi-geri czudan",
+  "category": "Kopnięcia",
+  "description": "Okrężne kopnięcie w strefę środkową podbiciem (haisoku).",
+  "tags": [
+    "Mawashi-geri",
+    "Chūdan",
+    "Haisoku"
+  ],
+  "focus": "Rotacja biodra",
+  "levels": [
+    5,
+    8
+  ],
+  "aliases": [
+    "Mawashi-geri chūdan (haisoku)",
+    "Mawashi-geri chudan (haisoku)",
+    "Mawashi geri chudan (haisoku)"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Okrężne kopnięcie środkowe podbicie.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Wyznacz łuk na wysokości korpusu i wypnij podbicie przed ruchem."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Haisoku to podbicie — kontakt przebiega grzbietem stopy, nie przodem podeszwy."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Mawashi",
+        "polish": "obrót, ruch okrężny"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      },
+      {
+        "term": "chūdan",
+        "polish": "poziom środkowy; chū — środek, dan — poziom"
+      },
+      {
+        "term": "haisoku",
+        "polish": "podbicie, grzbiet stopy"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "haishu",
+  "name": "Haishu",
+  "japanese": "背手",
+  "reading": "hajszu",
+  "category": "Uderzenia",
+  "description": "Uderzenie grzbietem otwartej dłoni (jōdan, chūdan).",
+  "tags": [
+    "Haishu",
+    "Jōdan",
+    "Chūdan"
+  ],
+  "focus": "Krótki, sprężysty ruch nadgarstka",
+  "levels": [
+    2
+  ],
+  "aliases": [
+    "Haishu"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie grzbietem otwartej dłoni.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Utrzymuj otwartą dłoń i prowadź jej grzbiet do umownego celu. Nazwa określa powierzchnię; wysokość i kierunek wynikają z zadanej wersji."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Haishu oznacza otwartą dłoń, a uraken — zamkniętą pięść. Ta różnica ma pozostać widoczna przez cały ruch."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Haishu",
+        "polish": "grzbiet dłoni; hai — grzbiet, shu — dłoń"
+      }
+    ]
+  }
+}

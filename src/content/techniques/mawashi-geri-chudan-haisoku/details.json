@@ -1,0 +1,28 @@
+{
+  "media": [
+    {
+      "source": "mawashi-geri-haisoku-chudan-f1.mp4",
+      "label": "Mawashi-geri chūdan (haisoku) — widok z przodu 1",
+      "alt": "Mawashi-geri chūdan (haisoku): widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "mawashi-geri-haisoku-chudan-f2.mp4",
+      "label": "Mawashi-geri chūdan (haisoku) — widok z przodu 2",
+      "alt": "Mawashi-geri chūdan (haisoku): widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "mawashi-geri-haisoku-chudan-s1.mp4",
+      "label": "Mawashi-geri chūdan (haisoku) — widok z boku 1",
+      "alt": "Mawashi-geri chūdan (haisoku): widok z boku 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "mawashi-geri-haisoku-chudan-s2.mp4",
+      "label": "Mawashi-geri chūdan (haisoku) — widok z boku 2",
+      "alt": "Mawashi-geri chūdan (haisoku): widok z boku 2. Nagranie z dojo.",
+      "zone": "chudan"
+    }
+  ]
+}

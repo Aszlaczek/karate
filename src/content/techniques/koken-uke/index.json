@@ -1,0 +1,44 @@
+{
+  "id": "koken-uke",
+  "name": "Kōken uke",
+  "japanese": "弧拳受け",
+  "reading": "koken uke",
+  "category": "Bloki",
+  "description": "Blok nadgarstkiem (łukiem dłoni) w strefach jōdan, chūdan i gedan.",
+  "tags": [
+    "Kōken",
+    "Uke"
+  ],
+  "focus": "Ułożenie nadgarstka",
+  "levels": [
+    2
+  ],
+  "aliases": [
+    "Kōken uke",
+    "Koken uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Blok powierzchnią zgiętego nadgarstka.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Uformuj nadgarstek i przeprowadź krótki ruch przechwycenia. Kontrola stawu jest ważniejsza od siłowego odpychania."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Zgięty nadgarstek powinien pozostać kontrolowany podczas przechwycenia. Nie wymuszaj większego zasięgu przez dodatkowe zaginanie stawu."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Kōken",
+        "polish": "łukowata pięść; powierzchnia zgiętego nadgarstka"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

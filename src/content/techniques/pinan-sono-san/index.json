@@ -1,0 +1,51 @@
+{
+  "id": "pinan-sono-san",
+  "name": "Pinan sono san",
+  "japanese": "平安其の三",
+  "reading": "pinan sono san",
+  "category": "Kata",
+  "description": "Trzecie kata Pinan. Wymaga postawy moro ashi dachi i pracy bioder.",
+  "tags": [
+    "Kata",
+    "Pinan"
+  ],
+  "focus": "Rytm, oddech i zanshin",
+  "levels": [
+    5
+  ],
+  "aliases": [
+    "Pinan sono san"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Spokój i bezpieczeństwo — forma trzecia.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Trzecia forma Pinan rozwija kontrolę bioder i pracy w zwartych ustawieniach."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Ćwicz obroty bez kołysania tułowia. Oddziel zapamiętanie kolejności od późniejszej pracy nad akcentami."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Pinan",
+        "polish": "spokój i bezpieczeństwo; pin — spokój, an — bezpieczeństwo (odczyt okinawski)"
+      },
+      {
+        "term": "sono",
+        "polish": "ten, dany; w nazwie wskazuje numer formy"
+      },
+      {
+        "term": "san",
+        "polish": "trzy, trzeci"
+      }
+    ]
+  }
+}

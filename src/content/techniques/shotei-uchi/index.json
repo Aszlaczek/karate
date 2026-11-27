@@ -1,0 +1,44 @@
+{
+  "id": "shotei-uchi",
+  "name": "Shōtei uchi",
+  "japanese": "掌底打ち",
+  "reading": "szotej uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie nasadą dłoni (jōdan, chūdan, gedan). Bezpieczniejsze dla nadgarstka niż pięść, z dużym przeniesieniem siły.",
+  "tags": [
+    "Shōtei",
+    "Uchi"
+  ],
+  "focus": "Nadgarstek ustawiony w osi",
+  "levels": [
+    5
+  ],
+  "aliases": [
+    "Shōtei uchi",
+    "Shotei uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie nasadą otwartej dłoni.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Ustaw nasadę dłoni na linii ruchu, a palce trzymaj poza powierzchnią kontaktu. Nie załamuj nadgarstka w bok."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Ustaw nasadę dłoni przed palcami względem celu. Samo otwarcie pięści nie wystarcza, jeśli obciążenie przejmuje niewłaściwie ustawiony nadgarstek."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Shōtei",
+        "polish": "nasada dłoni; shō — dłoń, tei — podstawa"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

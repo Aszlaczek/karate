@@ -1,0 +1,54 @@
+{
+  "id": "shuto-chudan-uchi-uke",
+  "name": "Shūto chūdan uchi-uke",
+  "japanese": "手刀中段内受け",
+  "reading": "szuto czudan uczi-uke",
+  "category": "Bloki",
+  "description": "Blok wewnętrzny krawędzią dłoni w strefie środkowej.",
+  "tags": [
+    "Shūto",
+    "Chūdan",
+    "Uchi-uke"
+  ],
+  "focus": "Wewnętrzny tor",
+  "levels": [
+    4
+  ],
+  "aliases": [
+    "Shūto chūdan uchi-uke",
+    "Shuto chudan uchi-uke",
+    "Shuto chudan uchi uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Blok środkowy od wewnątrz z otwartą dłonią.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Poprowadź rękę od wewnątrz na zewnątrz, utrzymując poziom korpusu. Porównaj kierunek przygotowania z soto-uke."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Zachowaj osłonę korpusu po otwarciu ruchu na zewnątrz. Nie prowadź łokcia daleko od boku tułowia."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Shūto",
+        "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+      },
+      {
+        "term": "chūdan",
+        "polish": "poziom środkowy; chū — środek, dan — poziom"
+      },
+      {
+        "term": "uchi",
+        "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

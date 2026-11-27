@@ -1,0 +1,50 @@
+{
+  "id": "shuto-uchi-komi",
+  "name": "Shūto uchi-komi",
+  "japanese": "手刀打ち込み",
+  "reading": "szuto uczi-komi",
+  "category": "Uderzenia",
+  "description": "Wbijające uderzenie krawędzią dłoni, zazwyczaj w szyję lub bark.",
+  "tags": [
+    "Shūto",
+    "Uchi-komi"
+  ],
+  "focus": "Wbicie z przeniesieniem ciężaru",
+  "levels": [
+    4
+  ],
+  "aliases": [
+    "Shuto",
+    "Shūto uchi-komi",
+    "Shuto uchi-komi",
+    "Shuto uchi komi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Wbijające uderzenie zewnętrzną krawędzią dłoni.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Połącz wejście ciała z prowadzeniem krawędzi dłoni w głąb umownego celu. Uchi-komi stanowi jedno określenie sposobu uderzenia."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Uchi-komi opisuje wejście uderzenia, nie dodatkowy drugi cios. Połącz przesunięcie ciała z pracą dłoni w jedną fazę."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Shūto",
+        "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      },
+      {
+        "term": "komi",
+        "polish": "wejście w głąb; z uchi tworzy uchi-komi — wbicie uderzenia"
+      }
+    ]
+  }
+}

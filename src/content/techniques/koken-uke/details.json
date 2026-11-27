@@ -1,0 +1,40 @@
+{
+  "media": [
+    {
+      "source": "koken-uke-chudan-f1.mp4",
+      "label": "Kōken uke — widok z przodu 1",
+      "alt": "Kōken uke: widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "koken-uke-chudan-f2.mp4",
+      "label": "Kōken uke — widok z przodu 2",
+      "alt": "Kōken uke: widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "koken-uke-gedan-f1.mp4",
+      "label": "Kōken uke — widok z przodu 1",
+      "alt": "Kōken uke: widok z przodu 1. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "koken-uke-gedan-f2.mp4",
+      "label": "Kōken uke — widok z przodu 2",
+      "alt": "Kōken uke: widok z przodu 2. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "koken-uke-jodan-f1.mp4",
+      "label": "Kōken uke — widok z przodu 1",
+      "alt": "Kōken uke: widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "koken-uke-jodan-f2.mp4",
+      "label": "Kōken uke — widok z przodu 2",
+      "alt": "Kōken uke: widok z przodu 2. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

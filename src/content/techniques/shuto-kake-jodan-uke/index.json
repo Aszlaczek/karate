@@ -1,0 +1,53 @@
+{
+  "id": "shuto-kake-jodan-uke",
+  "name": "Shūto kake jōdan uke",
+  "japanese": "手刀掛け上段受け",
+  "reading": "szuto kake dzodan uke",
+  "category": "Bloki",
+  "description": "Blok krawędzią dłoni w strefie górnej.",
+  "tags": [
+    "Shūto",
+    "Kake",
+    "Jōdan"
+  ],
+  "focus": "Chwyt hakowy",
+  "levels": [
+    4
+  ],
+  "aliases": [
+    "Shūto kake jōdan uke",
+    "Shuto kake jodan uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Hakowy blok górny z otwartą dłonią.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Prowadź rękę do górnej strefy i zaznacz hakowe przechwycenie. Nie zamieniaj go w bezładny chwyt palcami."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Odróżnij hakowy charakter przechwycenia od zwykłego uniesienia ręki. Wysokość pozostaje górna, niezależnie od krótkiego ruchu dłoni."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Shūto",
+        "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+      },
+      {
+        "term": "kake",
+        "polish": "zahaczenie, ruch hakowy"
+      },
+      {
+        "term": "jōdan",
+        "polish": "poziom górny; jō — góra, dan — poziom"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

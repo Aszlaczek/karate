@@ -1,0 +1,46 @@
+{
+  "id": "saiha",
+  "name": "Saiha",
+  "japanese": "細破",
+  "reading": "saiha",
+  "category": "Kata",
+  "description": "Kata wymagane na 1 kyu oraz na stopień 1 dan.",
+  "tags": [
+    "Kata",
+    "kyu",
+    "dan"
+  ],
+  "focus": "Precyzja i kontrola",
+  "levels": [
+    1,
+    11
+  ],
+  "aliases": [
+    "Saiha"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Saiha — tradycyjnie: rozbicie, roztrzaskanie.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Nazwa przekazuje ideę rozbicia. Sam tytuł nie stanowi listy ruchów ani dokładnej instrukcji zastosowań."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Ucz się kolejności z demonstracji właściwej dla dojo. Grupuj ruchy według zmian kierunku i wyraźnie zaznaczaj zakończenia sekwencji."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Saiha",
+        "polish": "nazwa kata tłumaczona tradycyjnie jako rozbicie / roztrzaskanie; sai — najpełniejszy (最), ha — rozbicie (破)"
+      }
+    ],
+    "note": "W atlasie pozostaje 細破 (細 — drobny, 破 — rozbicie). Spotyka się też 最破, z którego wynika tradycyjne objaśnienie. Nie należy traktować tych zapisów jako dosłownie identycznych."
+  }
+}

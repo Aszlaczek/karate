@@ -1,0 +1,43 @@
+{
+  "id": "yoko-keage",
+  "name": "Yoko keage",
+  "japanese": "横蹴上げ",
+  "reading": "joko keage",
+  "category": "Kopnięcia",
+  "description": "Boczne kopnięcie wznoszące, wykonywane krawędzią stopy.",
+  "tags": [
+    "Yoko",
+    "Keage"
+  ],
+  "focus": "Linia biodro–stopa",
+  "levels": [
+    7
+  ],
+  "aliases": [
+    "Yoko keage"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Boczne kopnięcie wznoszące.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Unoś nogę w bok z kontrolą biodra i nogi podporowej. Odróżnij wznoszący tor od wypchnięcia nogi w yoko-geri."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Wyraźnie zaznacz unoszenie w bok. Nie dodawaj automatycznie wypchnięcia nogi, które zmieni charakter techniki."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Yoko",
+        "polish": "bok, w bok"
+      },
+      {
+        "term": "keage",
+        "polish": "kopnięcie wznoszące; ke — kopnięcie, age — unoszenie"
+      }
+    ]
+  }
+}

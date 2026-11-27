@@ -1,0 +1,62 @@
+{
+  "id": "ippon-kumite-6-5-kyu",
+  "name": "Ippon kumite — 6 (5 kyu)",
+  "japanese": "一本組手",
+  "reading": "ippon kumite — 6",
+  "category": "Kumite",
+  "description": "Walka umowna jednokrokowa: 6 układ(y/ów) wymagane na 5 kyu. Atakujący wykonuje jedną technikę, broniący blokuje i kontruje.",
+  "tags": [
+    "Ippon",
+    "Kumite",
+    "5 kyu"
+  ],
+  "focus": "Dystans i timing",
+  "levels": [
+    5
+  ],
+  "aliases": [
+    "Ippon kumite — 6 (5 kyu)",
+    "Ippon kumite  6 (5 kyu)",
+    "Ippon kumite 5 kyu"
+  ],
+  "infographic": "kumite",
+  "knowledge": {
+    "translation": "Jednokrokowa walka umowna — ćwiczenie jednego ataku i odpowiedzi.",
+    "sections": [
+      {
+        "title": "Zakres tego wpisu",
+        "body": "W programie atlasu: liczba układów 6, stopień 5 kyu. Liczba po myślniku dotyczy zestawu egzaminacyjnego; ippon nadal oznacza jeden atak w pojedynczym ćwiczeniu."
+      },
+      {
+        "title": "Role i przebieg",
+        "body": "Partnerzy ustalają atak oraz dystans. Atakujący wykonuje zapowiedzianą technikę, broniący dopasowuje pozycję, blokuje i kontroluje kontratak. Następnie obaj wracają do gotowości i zamieniają role."
+      },
+      {
+        "title": "Co wymaga uzgodnienia",
+        "body": "Dokładne ataki i odpowiedzi dla poszczególnych układów nie są rozpisane w programie atlasu. Ustal je z instruktorem; ćwicz odległość i moment reakcji bez przyspieszania kosztem partnera."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Ippon",
+        "polish": "jeden; ichi + hon, w złożeniu ippon"
+      },
+      {
+        "term": "kumite",
+        "polish": "spotkanie / połączenie rąk; kumi — zestawienie, te — ręka; ćwiczenie walki"
+      },
+      {
+        "term": "6",
+        "polish": "liczba układów w programie tego stopnia: 6"
+      },
+      {
+        "term": "5",
+        "polish": "numer stopnia uczniowskiego: 5 kyu"
+      },
+      {
+        "term": "kyu",
+        "polish": "stopień uczniowski"
+      }
+    ]
+  }
+}

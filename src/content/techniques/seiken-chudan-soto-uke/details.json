@@ -1,0 +1,34 @@
+{
+  "media": [
+    {
+      "source": "seiken-soto-uke-chudan-f1.mp4",
+      "label": "Seiken chūdan soto-uke (soto) — widok z przodu 1",
+      "alt": "Seiken chūdan soto-uke (soto): widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "seiken-soto-uke-chudan-f2.mp4",
+      "label": "Seiken chūdan soto-uke (soto) — widok z przodu 2",
+      "alt": "Seiken chūdan soto-uke (soto): widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "seiken-soto-uke-chudan-s1.mp4",
+      "label": "Seiken chūdan soto-uke (soto) — widok z boku 1",
+      "alt": "Seiken chūdan soto-uke (soto): widok z boku 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "seiken-soto-uke-chudan-s2.mp4",
+      "label": "Seiken chūdan soto-uke (soto) — widok z boku 2",
+      "alt": "Seiken chūdan soto-uke (soto): widok z boku 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "seiken-soto-uke-chudan-s3.mp4",
+      "label": "Seiken chūdan soto-uke (soto) — widok z boku 3",
+      "alt": "Seiken chūdan soto-uke (soto): widok z boku 3. Nagranie z dojo.",
+      "zone": "chudan"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "media": [
+    {
+      "source": "mae-geri-chusoku-jodan-f1.mp4",
+      "label": "Mae-geri jōdan (chūsoku) — widok z przodu 1",
+      "alt": "Mae-geri jōdan (chūsoku): widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "mae-geri-kakato-jodan-f1.mp4",
+      "label": "Mae-geri jōdan (kakato) — widok z przodu 1",
+      "alt": "Mae-geri jōdan (kakato): widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "mae-geri-kakato-jodan-f2.mp4",
+      "label": "Mae-geri jōdan (kakato) — widok z przodu 2",
+      "alt": "Mae-geri jōdan (kakato): widok z przodu 2. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "mae-geri-chusoku-jodan-s1.mp4",
+      "label": "Mae-geri jōdan (chūsoku) — widok z boku 1",
+      "alt": "Mae-geri jōdan (chūsoku): widok z boku 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "mae-geri-chusoku-jodan-s2.mp4",
+      "label": "Mae-geri jōdan (chūsoku) — widok z boku 2",
+      "alt": "Mae-geri jōdan (chūsoku): widok z boku 2. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "mae-geri-kakato-jodan-s1.mp4",
+      "label": "Mae-geri jōdan (kakato) — widok z boku 1",
+      "alt": "Mae-geri jōdan (kakato): widok z boku 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "mae-geri-kakato-jodan-s1a.mp4",
+      "label": "Mae-geri jōdan (kakato) — widok z boku 1a",
+      "alt": "Mae-geri jōdan (kakato): widok z boku 1a. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

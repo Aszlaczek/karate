@@ -1,0 +1,44 @@
+{
+  "id": "sushiho",
+  "name": "Sushiho",
+  "japanese": "捌子",
+  "reading": "sushiho",
+  "category": "Kata",
+  "description": "Kata wymagane na stopień 5 dan.",
+  "tags": [
+    "Kata",
+    "dan"
+  ],
+  "focus": "Precyzja i kontrola",
+  "levels": [
+    15
+  ],
+  "aliases": [
+    "Sushiho"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Pięćdziesiąt cztery kroki.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Nazwa liczbowa przekazana w tradycji okinawskiej. Nie traktuj liczby 54 jako polecenia liczenia wyłącznie kroków nóg."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Ucz się krótkich sekwencji i ich połączeń. Kontroluj dokładność szybkich ruchów, zanim zwiększysz tempo całego kata."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Sushiho",
+        "polish": "54 kroki; sūshi — okinawski odczyt liczby 54, ho — krok"
+      }
+    ],
+    "note": "Zapis 捌子 w atlasie nie odpowiada tradycyjnemu znaczeniu 54 kroków. Nazwę Sushiho zwykle zapisuje się 五十四歩; odczyt nazwy pochodzi z tradycji okinawskiej."
+  }
+}

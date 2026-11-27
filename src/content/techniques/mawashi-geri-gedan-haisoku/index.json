@@ -1,0 +1,54 @@
+{
+  "id": "mawashi-geri-gedan-haisoku",
+  "name": "Mawashi-geri gedan (haisoku)",
+  "japanese": "回し蹴り下段",
+  "reading": "mawaszi-geri gedan (hajsoku)",
+  "category": "Kopnięcia",
+  "description": "Okrężne kopnięcie w strefie dolnej (np. w udo) podbiciem (haisoku).",
+  "tags": [
+    "Mawashi-geri",
+    "Gedan",
+    "Haisoku"
+  ],
+  "focus": "Rotacja biodra i podbicie",
+  "levels": [
+    6
+  ],
+  "aliases": [
+    "Mawashi-geri gedan (haisoku)",
+    "Mawashi geri gedan (haisoku)",
+    "Mawashi gedan (haisoku)"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Okrężne kopnięcie dolne podbiciem.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Prowadź nogę po łuku ku dolnej strefie i zgraj obrót biodra ze stopą podporową. W tym wariancie nazwano podbicie, a nie piszczel."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Gedan wskazuje dolny poziom, a haisoku podbicie. Odróżnij ten wariant od kopnięcia piszczelą, nawet gdy oba są wykonywane po łuku."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Mawashi",
+        "polish": "obrót, ruch okrężny"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      },
+      {
+        "term": "gedan",
+        "polish": "poziom dolny; ge — dół, dan — poziom"
+      },
+      {
+        "term": "haisoku",
+        "polish": "podbicie, grzbiet stopy"
+      }
+    ]
+  }
+}

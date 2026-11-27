@@ -1,0 +1,44 @@
+{
+  "id": "gariyu",
+  "name": "Gariyu",
+  "japanese": "我流",
+  "reading": "gariyu",
+  "category": "Kata",
+  "description": "Kata wymagane na stopień 2 dan.",
+  "tags": [
+    "Kata",
+    "dan"
+  ],
+  "focus": "Precyzja i kontrola",
+  "levels": [
+    12
+  ],
+  "aliases": [
+    "Gariyu"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Garyū — leżący smok.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Tradycyjne objaśnienie nazwy odwołuje się do siły pozostającej w spoczynku i opanowania."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Pracuj nad spokojnym przejściem między fragmentami a wyraźną techniką w ich zakończeniu. Kolejność ruchów wymaga pokazu pełnej formy."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Gariyu",
+        "polish": "zapis w atlasie; zwykle Garyū — leżący smok: ga (臥) — leżeć, ryū (竜) — smok"
+      }
+    ],
+    "note": "W atlasie zachowano zapis Gariyu / 我流 („własny styl”). Dla kata Garyū tradycyjnie podaje się 臥竜 („leżący smok”). Te zapisy mają inne znaczenia."
+  }
+}

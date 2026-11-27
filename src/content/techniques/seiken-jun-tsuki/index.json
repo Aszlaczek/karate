@@ -1,0 +1,50 @@
+{
+  "id": "seiken-jun-tsuki",
+  "name": "Seiken jun-tsuki",
+  "japanese": "正拳順突き",
+  "reading": "sejken dzun-cuki",
+  "category": "Uderzenia",
+  "description": "Uderzenie „zgodną” ręką (ta sama strona co noga wykroczna) w strefy chūdan, jōdan i gedan.",
+  "tags": [
+    "Seiken",
+    "Jun-tsuki",
+    "Chūdan",
+    "Jōdan",
+    "Gedan"
+  ],
+  "focus": "Zgodna praca ręki i nogi",
+  "levels": [
+    8
+  ],
+  "aliases": [
+    "Seiken jun-tsuki"
+  ],
+  "infographic": "zuki",
+  "knowledge": {
+    "translation": "Uderzenie pięścią określane jako zgodne.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Zgraj kierunek pięści z ustawieniem bioder. Jun oznacza zgodność; konkretną postawę i pracę nóg ustala ćwiczenie, dlatego nie utożsamiaj każdej wersji z krokiem oi-tsuki."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Nazwij postawę i stronę uderzającej ręki przed powtórzeniem. Samo słowo jun nie określa długości kroku ani wysokości celu."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seiken",
+        "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+      },
+      {
+        "term": "jun",
+        "polish": "zgodny, w porządku następującym po sobie"
+      },
+      {
+        "term": "tsuki",
+        "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+      }
+    ]
+  }
+}

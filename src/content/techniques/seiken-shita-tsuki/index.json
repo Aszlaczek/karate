@@ -1,0 +1,48 @@
+{
+  "id": "seiken-shita-tsuki",
+  "name": "Seiken shita-tsuki",
+  "japanese": "正拳下突き",
+  "reading": "sejken szita-cuki",
+  "category": "Uderzenia",
+  "description": "Uderzenie pięścią skierowane w dół i do przodu, na niski poziom przeciwnika. Wykonywane z lekkim obniżeniem sylwetki.",
+  "tags": [
+    "Seiken",
+    "Shita",
+    "Tsuki"
+  ],
+  "focus": "Obniżenie sylwetki",
+  "levels": [
+    8
+  ],
+  "aliases": [
+    "Seiken shita-tsuki"
+  ],
+  "infographic": "zuki",
+  "knowledge": {
+    "translation": "Krótkie uderzenie pięścią od dołu w tułów.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Łokieć pozostaje ugięty, a pięść zmierza w korpus od dołu z bliskiego dystansu. Słowo shita opisuje dół, ale nie jest poleceniem uderzania ku ziemi."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Zachowaj ugięcie łokcia i bliski dystans. Nie zamieniaj uderzenia od dołu w długie pchnięcie skierowane ku ziemi."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seiken",
+        "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+      },
+      {
+        "term": "shita",
+        "polish": "dół, poniżej; w nazwie uderzenia nie oznacza automatycznie ruchu w dół"
+      },
+      {
+        "term": "tsuki",
+        "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+      }
+    ]
+  }
+}

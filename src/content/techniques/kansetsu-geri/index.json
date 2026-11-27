@@ -1,0 +1,45 @@
+{
+  "id": "kansetsu-geri",
+  "name": "Kansetsu-geri",
+  "japanese": "関節蹴り",
+  "reading": "kansecu-geri",
+  "category": "Kopnięcia",
+  "description": "Kopnięcie w staw (zwykle kolano) krawędzią stopy.",
+  "tags": [
+    "Kansetsu",
+    "Geri"
+  ],
+  "focus": "Kontrola dystansu",
+  "levels": [
+    5,
+    6
+  ],
+  "aliases": [
+    "Kansetsu-geri",
+    "Kansetsu geri"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Kopnięcie w kierunku stawu.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Wyznacz niski umowny cel i kontroluj wyprost nogi. Ćwicz tor bez kontaktu w staw partnera i bez przeprostu własnego kolana."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Ćwicz zatrzymanie przed umowną linią stawu. Kontrola końca ruchu jest konieczna zarówno dla nogi kopiącej, jak i bezpieczeństwa partnera."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Kansetsu",
+        "polish": "staw"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      }
+    ]
+  }
+}

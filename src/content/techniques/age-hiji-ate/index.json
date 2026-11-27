@@ -1,0 +1,49 @@
+{
+  "id": "age-hiji-ate",
+  "name": "Age hiji-ate",
+  "japanese": "上げ肘当て",
+  "reading": "age hidzi-ate",
+  "category": "Uderzenia",
+  "description": "Uderzenie łokciem od dołu do góry (jōdan, chūdan), np. w podbródek.",
+  "tags": [
+    "Age",
+    "Hiji-ate",
+    "Jōdan",
+    "Chūdan"
+  ],
+  "focus": "Tor od dołu w górę",
+  "levels": [
+    3
+  ],
+  "aliases": [
+    "Age hiji-ate"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Wznoszące uderzenie łokciem.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Poprowadź ugięty łokieć od dołu w górę. Sprawdź, czy podnoszenie barku nie zastępuje pracy całej postawy."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Zatrzymaj wznoszenie na zadanym poziomie. Uniesiony łokieć nie powinien pociągać tułowia w nadmierny przeprost."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Age",
+        "polish": "unoszenie, w górę"
+      },
+      {
+        "term": "hiji",
+        "polish": "łokieć"
+      },
+      {
+        "term": "ate",
+        "polish": "trafienie, przyłożenie uderzenia"
+      }
+    ]
+  }
+}

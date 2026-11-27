@@ -1,0 +1,52 @@
+{
+  "id": "tsuki-no-kata",
+  "name": "Tsuki no kata",
+  "japanese": "突きの型",
+  "reading": "cuki no kata",
+  "category": "Kata",
+  "description": "Kata uderzeń — seria uderzeń pięścią w różnych kierunkach i postawach.",
+  "tags": [
+    "Kata",
+    "Tsuki"
+  ],
+  "focus": "Rytm, oddech i zanshin",
+  "levels": [
+    1,
+    3
+  ],
+  "aliases": [
+    "Tsuki no kata"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Forma prostych uderzeń.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Kata skupione na uderzeniach pięścią wykonywanych w kolejnych postawach i kierunkach."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Sprawdzaj linię każdego uderzenia i zsynchronizowanie go z pozycją. Powtarzanie tsuki nie oznacza identycznego rytmu całej formy."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Tsuki",
+        "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+      },
+      {
+        "term": "no",
+        "polish": "partykuła łącząca; tutaj „forma czegoś”"
+      },
+      {
+        "term": "kata",
+        "polish": "forma, ustalony układ ruchów"
+      }
+    ]
+  }
+}

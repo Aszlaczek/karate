@@ -1,0 +1,29 @@
+{
+  "media": [
+    {
+      "source": "tettsui-komi-kame-uchi-f1.mp4",
+      "label": "Tettsui komekami/ganmen-uchi — widok z przodu 1",
+      "alt": "Tettsui komekami/ganmen-uchi: widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "tettsui-komi-kame-uchi-s1.mp4",
+      "label": "Tettsui komekami/ganmen-uchi — widok z boku 1",
+      "alt": "Tettsui komekami/ganmen-uchi: widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "tettsui-ganmen-uchi-d1.mp4",
+      "label": "Tettsui komekami/ganmen-uchi — detal 1 (ganmen)",
+      "alt": "Tettsui komekami/ganmen-uchi: zbliżenie na detal 1 (ganmen). Nagranie z dojo."
+    },
+    {
+      "source": "tettsui-komi-kame-uchi-d1.mp4",
+      "label": "Tettsui komekami/ganmen-uchi — detal 2 (komekami)",
+      "alt": "Tettsui komekami/ganmen-uchi: zbliżenie na detal 2 (komekami). Nagranie z dojo."
+    },
+    {
+      "source": "tettsui-komi-kame-uchi-d2.mp4",
+      "label": "Tettsui komekami/ganmen-uchi — detal 3 (komekami)",
+      "alt": "Tettsui komekami/ganmen-uchi: zbliżenie na detal 3 (komekami). Nagranie z dojo."
+    }
+  ]
+}

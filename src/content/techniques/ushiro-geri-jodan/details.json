@@ -1,0 +1,16 @@
+{
+  "media": [
+    {
+      "source": "ushiro-geri-jodan-f1.mp4",
+      "label": "Ushiro-geri jōdan — widok z przodu 1",
+      "alt": "Ushiro-geri jōdan: widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "ushiro-geri-jodan-s1.mp4",
+      "label": "Ushiro-geri jōdan — widok z boku 1",
+      "alt": "Ushiro-geri jōdan: widok z boku 1. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

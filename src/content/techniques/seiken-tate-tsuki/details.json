@@ -1,0 +1,22 @@
+{
+  "media": [
+    {
+      "source": "seiken-tate-tsuki-chudan-f1.mp4",
+      "label": "Seiken tate-tsuki — widok z przodu 1",
+      "alt": "Seiken tate-tsuki: widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "seiken-tate-tsuki-gedan-f1.mp4",
+      "label": "Seiken tate-tsuki — widok z przodu 1",
+      "alt": "Seiken tate-tsuki: widok z przodu 1. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "seiken-tate-tsuki-jodan-f1.mp4",
+      "label": "Seiken tate-tsuki — widok z przodu 1",
+      "alt": "Seiken tate-tsuki: widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

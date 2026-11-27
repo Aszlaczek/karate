@@ -1,0 +1,24 @@
+{
+  "media": [
+    {
+      "source": "hiji-ate-oroshi-f1.mp4",
+      "label": "Oroshi hiji-ate — widok z przodu 1",
+      "alt": "Oroshi hiji-ate: widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "hiji-ate-oroshi-f2.mp4",
+      "label": "Oroshi hiji-ate — widok z przodu 2",
+      "alt": "Oroshi hiji-ate: widok z przodu 2. Nagranie z dojo."
+    },
+    {
+      "source": "hiji-ate-oroshi-s1.mp4",
+      "label": "Oroshi hiji-ate — widok z boku 1",
+      "alt": "Oroshi hiji-ate: widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "hiji-ate-oroshi-s2.mp4",
+      "label": "Oroshi hiji-ate — widok z boku 2",
+      "alt": "Oroshi hiji-ate: widok z boku 2. Nagranie z dojo."
+    }
+  ]
+}

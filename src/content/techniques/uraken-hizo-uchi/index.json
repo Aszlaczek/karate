@@ -1,0 +1,50 @@
+{
+  "id": "uraken-hizo-uchi",
+  "name": "Uraken hizō-uchi",
+  "japanese": "裏拳脾臓打ち",
+  "reading": "uraken hidzo-uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie grzbietem pięści w okolicę śledziony (hizō).",
+  "tags": [
+    "Uraken",
+    "Hizō",
+    "Uchi"
+  ],
+  "focus": "Cel: bok korpusu",
+  "levels": [
+    6
+  ],
+  "aliases": [
+    "Uraken hizō-uchi",
+    "Uraken hizo-uchi",
+    "Uraken hizo uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie grzbietem pięści w okolicę śledziony.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Ustaw wysokość ruchu na bok korpusu. Pracuje grzbiet pięści, co odróżnia tę technikę od tettsui hizō-uchi."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Porównaj powierzchnię kontaktu z tettsui: tutaj pracuje grzbiet pięści. Nie obracaj jej tak, by zamiast niego trafiał dolny brzeg."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Uraken",
+        "polish": "grzbiet pięści; ura — tył, ken — pięść"
+      },
+      {
+        "term": "hizō",
+        "polish": "śledziona; okolica lewego boku tułowia"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

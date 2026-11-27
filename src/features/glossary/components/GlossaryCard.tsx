@@ -1,9 +1,9 @@
 import { getGlossaryCardMedia, STANCE_CATEGORY_ID } from "@/data";
 import { prefetchGlossary } from "@/data/onDemand";
-import { resolveMediaSrc } from "@/features/technique/components/TechniqueIllustration";
-import Icon from "@/components/ui/Icon";
+import CardThumbnail from "@/features/shared/components/CardThumbnail";
 import ZoneIllustration, { zoneForEntry } from "./ZoneIllustration";
 import Card from "@/components/ui/Card";
+import Icon from "@/components/ui/Icon";
 
 interface GlossaryCardProps {
   entry: import("@/data/types").GlossaryEntry;
@@ -34,29 +34,18 @@ export default function GlossaryCard({
       aria-label={isInteractive ? `Otwórz hasło ${entry.term}` : undefined}
     >
       {thumbnail ? (
-        <span className="glossary-image media-card-thumb">
-          <img
-            src={resolveMediaSrc(thumbnail)}
-            alt={entry.term}
-            loading="lazy"
-            decoding="async"
-          />
-          {!isStance && firstIsVideo && (
-            <span className="media-card-play" aria-hidden="true">
-              <Icon name="play" size={18} />
-            </span>
-          )}
-        </span>
+        <CardThumbnail
+          src={thumbnail}
+          alt={entry.term}
+          className="glossary-image media-card-thumb"
+          firstIsVideo={!isStance && firstIsVideo}
+        />
       ) : entry.image ? (
-        <span className="glossary-image">
-          <img
-            src={resolveMediaSrc(entry.image)}
-            alt={entry.term}
-            loading="lazy"
-            decoding="async"
-            sizes="(max-width: 600px) 100vw, 50vw"
-          />
-        </span>
+        <CardThumbnail
+          src={entry.image}
+          alt={entry.term}
+          className="glossary-image"
+        />
       ) : zone ? (
         <span className="glossary-image diagram">
           <ZoneIllustration zone={zone} />

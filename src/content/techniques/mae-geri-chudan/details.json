@@ -1,0 +1,52 @@
+{
+  "media": [
+    {
+      "source": "mae-geri-kakato-chudan-f1.mp4",
+      "label": "Mae-geri chūdan chūsoku (kakato) — widok z przodu 1",
+      "alt": "Mae-geri chūdan chūsoku (kakato): widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "mae-geri-kakato-chudan-f2.mp4",
+      "label": "Mae-geri chūdan chūsoku (kakato) — widok z przodu 2",
+      "alt": "Mae-geri chūdan chūsoku (kakato): widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "mai-geri-chusoku-chudan-f1.mp4",
+      "label": "Mae-geri chūdan chūsoku (chūsoku) — widok z przodu 1",
+      "alt": "Mae-geri chūdan chūsoku (chūsoku): widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "mai-geri-chusoku-chudan-f2.mp4",
+      "label": "Mae-geri chūdan chūsoku (chūsoku) — widok z przodu 2",
+      "alt": "Mae-geri chūdan chūsoku (chūsoku): widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "mae-geri-chusoku-chudan-s1.mp4",
+      "label": "Mae-geri chūdan chūsoku (chūsoku) — widok z boku 1",
+      "alt": "Mae-geri chūdan chūsoku (chūsoku): widok z boku 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "mae-geri-chusoku-chudan-s2.mp4",
+      "label": "Mae-geri chūdan chūsoku (chūsoku) — widok z boku 2",
+      "alt": "Mae-geri chūdan chūsoku (chūsoku): widok z boku 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "mae-geri-kakato-chudan-s1.mp4",
+      "label": "Mae-geri chūdan chūsoku (kakato) — widok z boku 1",
+      "alt": "Mae-geri chūdan chūsoku (kakato): widok z boku 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "mae-geri-kakato-chudan-s2.mp4",
+      "label": "Mae-geri chūdan chūsoku (kakato) — widok z boku 2",
+      "alt": "Mae-geri chūdan chūsoku (kakato): widok z boku 2. Nagranie z dojo.",
+      "zone": "chudan"
+    }
+  ]
+}

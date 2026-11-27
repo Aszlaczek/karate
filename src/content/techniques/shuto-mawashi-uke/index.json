@@ -1,0 +1,53 @@
+{
+  "id": "shuto-mawashi-uke",
+  "name": "Shūto mawashi-uke",
+  "japanese": "手刀回し受け",
+  "reading": "szuto mawaszi-uke",
+  "category": "Bloki",
+  "description": "Okrężny blok krawędzią dłoni, wykonywany z zamachem.",
+  "tags": [
+    "Shūto",
+    "Mawashi",
+    "Uke"
+  ],
+  "focus": "Łuk rąk",
+  "levels": [
+    4,
+    5,
+    7
+  ],
+  "aliases": [
+    "Shūto mawashi-uke",
+    "Shuto mawashi-uke",
+    "Shuto mawashi uke",
+    "Shuto mawashi uke (mae)"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Okrężny blok otwartymi dłońmi.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Koordynuj obie ręce podczas okrężnego prowadzenia. Utrzymuj kształt dłoni i płynność przejścia między fazami, zamiast wykonywać dwa niezależne zamachy."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Obserwuj współpracę rąk przy zmianie ich ról. Zbyt duże koła utrudniają utrzymanie zwartej osłony i ciągłości ruchu."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Shūto",
+        "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+      },
+      {
+        "term": "mawashi",
+        "polish": "obrót, ruch okrężny"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

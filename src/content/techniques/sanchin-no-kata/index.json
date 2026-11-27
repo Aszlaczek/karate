@@ -1,0 +1,52 @@
+{
+  "id": "sanchin-no-kata",
+  "name": "Sanchin no kata",
+  "japanese": "三戦の型",
+  "reading": "sanczin no kata",
+  "category": "Kata",
+  "description": "Kata oddechu i napięcia. Wolne ruchy w postawie sanchin dachi, z naciskiem na oddychanie i koncentrację.",
+  "tags": [
+    "Kata",
+    "Sanchin"
+  ],
+  "focus": "Rytm, oddech i zanshin",
+  "levels": [
+    4,
+    5
+  ],
+  "aliases": [
+    "Sanchin no kata"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Forma trzech walk.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Forma pracy nad postawą, kontrolą napięcia i oddechem. „Trzy walki” są tradycyjnie interpretowane symbolicznie."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Łącz kroki z oddechem zgodnie z pokazem instruktora. Nie zastępuj kontroli ciała maksymalnym napięciem ani wstrzymywaniem oddechu."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Sanchin",
+        "polish": "trzy walki; san — trzy, chin — walka (odczyt okinawski)"
+      },
+      {
+        "term": "no",
+        "polish": "partykuła łącząca; tutaj „forma czegoś”"
+      },
+      {
+        "term": "kata",
+        "polish": "forma, ustalony układ ruchów"
+      }
+    ]
+  }
+}

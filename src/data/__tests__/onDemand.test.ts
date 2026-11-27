@@ -1,21 +1,28 @@
+import { readFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import { describe, expect, it, vi } from "vitest";
 import { getGlossaryCardMedia, getTechniqueCardMedia } from "@/data";
 import { loadGlossaryData, loadTechniqueData } from "@/data/onDemand";
-import { getGlossaryMedia, getTechniqueMedia } from "@/data/fullData";
 
-describe("dane pobierane na żądanie", () => {
-  it("zwraca galerię i opis wybranej techniki", async () => {
+const here = dirname(fileURLToPath(import.meta.url));
+const readJson = (path: string) => JSON.parse(readFileSync(join(here, path), "utf8"));
+
+describe("dane pobierane z jednego pliku na wpis", () => {
+  it("zwraca galerię i wiedzę techniki z tego samego chunku", async () => {
     const data = await loadTechniqueData("seiken-morote-tsuki");
+    const source = readJson("../../content/techniques/seiken-morote-tsuki/index.json");
 
-    expect(data.media).toEqual(getTechniqueMedia("seiken-morote-tsuki"));
-    expect(data.detail?.translation).toBeTruthy();
+    expect(data.media.length).toBeGreaterThan(0);
+    expect(data.knowledge).toEqual(source.knowledge);
+    expect(data.knowledge?.translation).toBeTruthy();
   });
 
-  it("zwraca galerię i opis wybranego hasła", async () => {
+  it("zwraca wiedzę hasła słownika", async () => {
     const data = await loadGlossaryData("fudo");
 
-    expect(data.media).toEqual(getGlossaryMedia("fudo"));
-    expect(data.detail).not.toBeNull();
+    expect(data.media).toEqual([]);
+    expect(data.knowledge?.translation).toBeTruthy();
   });
 
   it("pobiera plik tylko raz dla danego id", async () => {
@@ -36,7 +43,7 @@ describe("dane pobierane na żądanie", () => {
     const id = "test-blad-sieci";
 
     fetchMock.mockImplementationOnce(async () => ({ ok: false, status: 500 }) as Response);
-    expect(await loadTechniqueData(id)).toEqual({ media: [], detail: null });
+    expect(await loadTechniqueData(id)).toEqual({ media: [], knowledge: null });
     fetchMock.mockClear();
     await loadTechniqueData(id);
 
@@ -46,9 +53,6 @@ describe("dane pobierane na żądanie", () => {
   it("indeks miniaturek nie wymaga pełnych galerii", () => {
     expect(getTechniqueCardMedia("seiken-morote-tsuki").thumbnail).toContain("/poster/");
     expect(getGlossaryCardMedia("seiken").thumbnail).toContain("/images/glossary/");
-    expect(getTechniqueCardMedia("nie-ma-mnie")).toEqual({
-      thumbnail: null,
-      firstIsVideo: false,
-    });
+    expect(getTechniqueCardMedia("nie-ma-mnie")).toEqual({ thumbnail: null, firstIsVideo: false });
   });
 });

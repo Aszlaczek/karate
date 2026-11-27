@@ -1,0 +1,16 @@
+{
+  "media": [
+    {
+      "source": "mawashi-geri-chusoku-chudan-f1.mp4",
+      "label": "Mawashi-geri chūdan (chūsoku) — widok z przodu 1",
+      "alt": "Mawashi-geri chūdan (chūsoku): widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "mawashi-geri-chusoku-chudan-f2.mp4",
+      "label": "Mawashi-geri chūdan (chūsoku) — widok z przodu 2",
+      "alt": "Mawashi-geri chūdan (chūsoku): widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    }
+  ]
+}

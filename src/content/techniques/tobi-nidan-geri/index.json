@@ -1,0 +1,49 @@
+{
+  "id": "tobi-nidan-geri",
+  "name": "Tobi nidan-geri",
+  "japanese": "飛び二段蹴り",
+  "reading": "tobi nidan-geri",
+  "category": "Kopnięcia",
+  "description": "Skoczne kopnięcie dwustopniowe (dwa kopnięcia w skoku).",
+  "tags": [
+    "Tobi",
+    "Nidan",
+    "Geri"
+  ],
+  "focus": "Wyskok i drugie kopnięcie",
+  "levels": [
+    2
+  ],
+  "aliases": [
+    "Tobi nidan-geri",
+    "Tobi nidan geri"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Dwustopniowe kopnięcie w wyskoku.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Najpierw przećwicz kolejność dwóch kopnięć na małej wysokości. Zgraj zmianę nóg z kontrolowanym lądowaniem, zgodnie z wariantem pokazanym przez instruktora."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Nidan oznacza dwa etapy kopnięcia, nie numer stopnia egzaminacyjnego. Zachowaj czytelną kolejność nóg oraz kontrolę lądowania."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Tobi",
+        "polish": "skok, w wyskoku"
+      },
+      {
+        "term": "nidan",
+        "polish": "dwa poziomy lub etapy; ni — dwa, dan — stopień"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      }
+    ]
+  }
+}

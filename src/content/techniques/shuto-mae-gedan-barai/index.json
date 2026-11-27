@@ -1,0 +1,54 @@
+{
+  "id": "shuto-mae-gedan-barai",
+  "name": "Shūto mae gedan-barai",
+  "japanese": "手刀前下段払い",
+  "reading": "szuto mae gedan-barai",
+  "category": "Bloki",
+  "description": "Zamiatanie krawędzią dłoni przed ciałem w strefie dolnej.",
+  "tags": [
+    "Shūto",
+    "Mae",
+    "Gedan-barai"
+  ],
+  "focus": "Tor przed ciałem",
+  "levels": [
+    4
+  ],
+  "aliases": [
+    "Shūto mae gedan-barai",
+    "Shuto mae gedan-barai",
+    "Shuto mae gedan barai"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Zamiatający blok dolny przed ciałem, z otwartą dłonią.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Wyznacz końcową osłonę przed dolną częścią ciała. Mae wskazuje przód, gedan — poziom, a barai — charakter zgarnięcia."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Końcowa pozycja powinna osłaniać dół przed ciałem. Nie odciągaj dłoni za biodro po zakończeniu zamiatania."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Shūto",
+        "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+      },
+      {
+        "term": "mae",
+        "polish": "przód, do przodu"
+      },
+      {
+        "term": "gedan",
+        "polish": "poziom dolny; ge — dół, dan — poziom"
+      },
+      {
+        "term": "barai",
+        "polish": "zamiatanie, zgarnięcie (od harai)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,554 @@
+{
+  "id": "pozycje",
+  "name": "Postawy (dachi)",
+  "description": "Fundamentalne pozycje (dachi) i postawy — baza, od której zaczyna się każda technika.",
+  "entries": [
+    {
+      "id": "fudo",
+      "term": "Fudo dachi",
+      "japanese": "不動立",
+      "reading": "fudo-dachi",
+      "description": "Stabilna postawa o szerokości bioder, lekko ugiętych kolanach i równomiernym ciężarze. Pierwsza pozycja na drodze egzaminacyjnej.",
+      "image": "/images/glossary/stances/Fudo-Dachi.png",
+      "related": [],
+      "levels": [
+        0,
+        9,
+        10
+      ],
+      "knowledge": {
+        "translation": "Niewzruszona pozycja.",
+        "nameParts": [
+          {
+            "term": "fudo",
+            "polish": "nieruchomy, niewzruszony; fu — nie, dō — ruch"
+          },
+          {
+            "term": "dachi",
+            "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Stabilna baza do rozpoczęcia ćwiczenia i zachowania gotowości."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Rozstaw stopy i rozłóż ciężar równomiernie. Zachowaj miękkie kolana i wyprostowaną sylwetkę bez usztywniania barków."
+          }
+        ]
+      }
+    },
+    {
+      "id": "musubi",
+      "term": "Musubi dachi",
+      "japanese": "結び立",
+      "reading": "musubi-dachi",
+      "description": "Pięty razem, palce rozstawione w literę V — pozycja do ukłonu (rei) i mokuso przed treningiem.",
+      "image": "/images/glossary/stances/Musubi-Dachi.png",
+      "related": [],
+      "levels": [
+        9
+      ],
+      "knowledge": {
+        "translation": "Pozycja połączonych stóp.",
+        "nameParts": [
+          {
+            "term": "musubi",
+            "polish": "związanie, połączenie"
+          },
+          {
+            "term": "dachi",
+            "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Postawa formalna, używana przy ukłonie."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Połącz pięty, kierując palce na zewnątrz w kształt litery V. Utrzymuj równowagę podczas ukłonu (rei)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "heiko",
+      "term": "Heikō dachi",
+      "japanese": "平行立",
+      "reading": "heikō-dachi",
+      "description": "Stopy równolegle na szerokość bioder (nazywana też yoi-dachi) — punkt wyjścia do technik i przejść.",
+      "image": "/images/glossary/stances/Heiko-Dachi.png",
+      "related": [
+        "seiken-oi-tsuki"
+      ],
+      "levels": [
+        4
+      ],
+      "knowledge": {
+        "translation": "Pozycja równoległa.",
+        "nameParts": [
+          {
+            "term": "heikō",
+            "polish": "równoległy"
+          },
+          {
+            "term": "dachi",
+            "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Nazwa opisuje wzajemne ustawienie stóp."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Ustaw stopy równolegle i pozostaw odstęp odpowiadający zadanej postawie. Nie myl równoległości z koniecznością złączenia stóp."
+          }
+        ]
+      }
+    },
+    {
+      "id": "zenkutsu-dachi",
+      "term": "Zenkutsu dachi",
+      "japanese": "前屈立ち",
+      "reading": "zenkutsu-dachi",
+      "description": "Długa pozycja: przednie kolano ugięte nad stopą, tylna noga wyprostowana, ciężar ok. 60/40. Fundament oi-zuki i większości kihon.",
+      "image": "/images/glossary/stances/Zenkutsu-dachi.png",
+      "related": [
+        "seiken-oi-tsuki"
+      ],
+      "levels": [
+        10
+      ],
+      "knowledge": {
+        "translation": "Pozycja z ugięciem z przodu.",
+        "nameParts": [
+          {
+            "term": "zenkutsu",
+            "polish": "ugięcie z przodu; zen — przód, kutsu — zgięcie"
+          },
+          {
+            "term": "dachi",
+            "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Wydłużona baza z wyraźną pracą nogi wykrocznej."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Ugnij przednie kolano zgodnie z kierunkiem palców. Zachowaj boczny odstęp stóp i kontrolę tylnej nogi, zamiast stawać na jednej linii."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kokutsu",
+      "term": "Kokutsu dachi",
+      "japanese": "後屈立ち",
+      "reading": "kokutsu-dachi",
+      "description": "Ciężar głównie na nodze tylnej, przednia stopa lekko na pięcie — baza do bloków i technik obronnych.",
+      "image": "/images/glossary/stances/Kokutsu-dachi.png",
+      "related": [
+        "seiken-chudan-soto-uke"
+      ],
+      "levels": [
+        7,
+        9
+      ],
+      "knowledge": {
+        "translation": "Pozycja z ugięciem z tyłu.",
+        "nameParts": [
+          {
+            "term": "kokutsu",
+            "polish": "ugięcie z tyłu; ko — tył, kutsu — zgięcie"
+          },
+          {
+            "term": "dachi",
+            "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Postawa z większym obciążeniem nogi tylnej, pozwalająca pracować obroną i zmianą dystansu."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Ustaw ciężar nad tylną nogą i skontroluj kontakt przedniej stopy z podłożem według wersji Kyokushin pokazanej w dojo. Nie odchylaj tułowia jako zamiennika przeniesienia ciężaru."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sanchin-dachi",
+      "term": "Sanchin dachi",
+      "japanese": "三戦立",
+      "reading": "sanchin-dachi",
+      "description": "Stopy w linii półksiężyca, kolana skierowane do wewnątrz, napięty brzuch — pozycja kontroli oddechu i napięcia.",
+      "image": "/images/glossary/stances/Sanchin-Dachi.png",
+      "related": [],
+      "levels": [
+        8,
+        9
+      ],
+      "knowledge": {
+        "translation": "Pozycja trzech walk.",
+        "nameParts": [
+          {
+            "term": "sanchin",
+            "polish": "trzy walki; san — trzy, chin — walka (odczyt okinawski)"
+          },
+          {
+            "term": "dachi",
+            "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Zwarta baza do koordynacji ustawienia ciała, oddechu i napięcia."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Ustaw stopy i kolana zgodnie z pokazem, utrzymując stabilną miednicę. Nie wymuszaj skrętu kolan do środka; kontrola powinna wynikać z całej pozycji."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kiba",
+      "term": "Pozycja jeździecka",
+      "japanese": "騎馬立",
+      "reading": "kiba-dachi",
+      "description": "Szerokie rozkroczę z kolanami rozepchniętymi nad stopami i prostym tułowiem — buduje siłę nóg i stabilność boczną.",
+      "image": "/images/glossary/stances/Kiba-Dachi.png",
+      "related": [],
+      "levels": [
+        6,
+        8
+      ],
+      "knowledge": {
+        "translation": "Pozycja jeźdźca.",
+        "nameParts": [
+          {
+            "term": "kiba",
+            "polish": "jazda konna; ki — jeździć, ba — koń"
+          },
+          {
+            "term": "dachi",
+            "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Szeroka postawa rozwijająca stabilność boczną."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Ustaw stopy równolegle i ugnij kolana nad ich kierunkiem. Zachowaj pionowy tułów; głębokość dobierz tak, by nie zapadały się kolana."
+          }
+        ]
+      }
+    },
+    {
+      "id": "neko-ashi",
+      "term": "Pozycja kocia",
+      "japanese": "猫足立ち",
+      "reading": "neko-ashi-dachi",
+      "description": "Ciężar na nodze tylnej, przednia stopa dotyka podłogi palcami — szybka, zwrotna pozycja do kopnięć.",
+      "image": "/images/glossary/stances/Neko-Ashi-Dachi.png",
+      "related": [
+        "mae-geri-chudan"
+      ],
+      "levels": [
+        7
+      ],
+      "knowledge": {
+        "translation": "Pozycja kociej stopy.",
+        "nameParts": [
+          {
+            "term": "neko",
+            "polish": "kot"
+          },
+          {
+            "term": "ashi",
+            "polish": "noga, stopa"
+          },
+          {
+            "term": "dachi",
+            "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Odciążona noga przednia pozwala szybko rozpocząć ruch."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Przenieś większość ciężaru na nogę tylną, a przód podeszwy nogi przedniej oprzyj lekko na podłożu. Sprawdź, czy możesz ją unieść bez wcześniejszego przechylenia."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kake",
+      "term": "Kake Dachi",
+      "japanese": "掛け立ち",
+      "reading": "kake-dachi",
+      "description": "Nogi skrzyżowane, ciężar na nodze wspierającej — stosowana po obrotach, w kombinacjach i kata.",
+      "image": "/images/glossary/stances/Kake-Dachi.png",
+      "related": [],
+      "levels": [
+        3
+      ],
+      "knowledge": {
+        "translation": "Pozycja zahaczona, skrzyżowana.",
+        "nameParts": [
+          {
+            "term": "kake",
+            "polish": "zahaczenie, ruch hakowy"
+          },
+          {
+            "term": "dachi",
+            "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Ustawienie spotykane w przejściach i obrotach."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Ustaw nogi w skrzyżowaniu zgodnie z pokazem, zachowując stabilny punkt podparcia. Kontroluj skręt stawów podczas wychodzenia z pozycji."
+          }
+        ]
+      }
+    },
+    {
+      "id": "seiza",
+      "term": "Seiza",
+      "japanese": "正座",
+      "reading": "seiza",
+      "description": "Klęknienie na kolanach z podniesionymi stopami — porządek otwarcia treningu, mokuso i ukłonu w dojo.",
+      "image": "/images/glossary/stances/Seiza.jpg",
+      "related": [],
+      "knowledge": {
+        "translation": "Prawidłowy siad.",
+        "nameParts": [
+          {
+            "term": "seiza",
+            "polish": "prawidłowy siad; sei — prawidłowy, za — siedzenie"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Formalny siad na piętach używany podczas rozpoczęcia i zakończenia zajęć."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Uklęknij i oprzyj grzbiety stóp na podłożu, siadając na piętach w zakresie dostępnym bez bólu. Wyprostuj tułów i połóż dłonie na udach."
+          }
+        ]
+      }
+    },
+    {
+      "id": "yoi",
+      "term": "Yoi dachi",
+      "japanese": "用意立ち",
+      "reading": "yoi-dachi",
+      "description": "Postawa gotowości: stopy na szerokość barków, pięści opuszczone przed udami, wzrok przed siebie. Punkt wyjścia i powrotu dla większości technik.",
+      "image": "/images/glossary/stances/Yoi-Dachi.png",
+      "related": [],
+      "levels": [
+        10
+      ],
+      "knowledge": {
+        "translation": "Pozycja gotowości.",
+        "nameParts": [
+          {
+            "term": "yoi",
+            "polish": "gotowość, przygotowanie"
+          },
+          {
+            "term": "dachi",
+            "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Przygotowanie do rozpoczęcia ćwiczenia i powrót do uważnej postawy."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Ustaw stopy, ręce i wzrok zgodnie z komendą instruktora. Yoi nazywa gotowość; dokładny rozstaw i układ rąk wynikają z kontekstu."
+          }
+        ]
+      }
+    },
+    {
+      "id": "tsuru-ashi",
+      "term": "Tsuru ashi dachi",
+      "japanese": "鶴足立ち",
+      "reading": "tsuru-ashi-dachi",
+      "description": "Stanie na jednej nodze, druga stopa przy kolanie nogi podporowej. Ćwiczy równowagę i kontrolę kopnięć.",
+      "image": "/images/glossary/stances/Tsuru-Ashi-Dachi.png",
+      "related": [],
+      "levels": [
+        6
+      ],
+      "knowledge": {
+        "translation": "Pozycja nogi żurawia.",
+        "nameParts": [
+          {
+            "term": "tsuru",
+            "polish": "żuraw"
+          },
+          {
+            "term": "ashi",
+            "polish": "noga, stopa"
+          },
+          {
+            "term": "dachi",
+            "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Równowaga na jednej nodze z drugą uniesioną."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Utrzymuj stabilną nogę podporową i unieś drugą do wskazanego ułożenia. Nie dociskaj stopy do boku kolana podporowego."
+          }
+        ]
+      }
+    },
+    {
+      "id": "moro-ashi",
+      "term": "Moro ashi dachi",
+      "japanese": "諸足立ち",
+      "reading": "moro-ashi-dachi",
+      "description": "Nogi na szerokości barków, stopy równoległe, tam gdzie kończy się noga zakroczna zaczyna się noga wykroczna.",
+      "image": "/images/glossary/stances/Moro-ashi-dachi.png",
+      "related": [],
+      "levels": [
+        5
+      ],
+      "knowledge": {
+        "translation": "Pozycja obu nóg.",
+        "nameParts": [
+          {
+            "term": "moro",
+            "polish": "oba, obie"
+          },
+          {
+            "term": "ashi",
+            "polish": "noga, stopa"
+          },
+          {
+            "term": "dachi",
+            "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Zwarta postawa z jedną stopą wysuniętą względem drugiej."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Zachowaj boczny odstęp i krótkie przesunięcie stóp przód–tył. Kontroluj równowagę przy rozpoczęciu ruchu w obu kierunkach."
+          }
+        ]
+      }
+    },
+    {
+      "id": "heisoku",
+      "term": "Heisoku dachi",
+      "japanese": "閉足立ち",
+      "reading": "heisoku-dachi",
+      "description": "Pięty i palce razem, ciało wyprostowane. Pozycja wyjściowa wielu kata.",
+      "image": "/images/glossary/stances/Heisoku-Dachi.png",
+      "related": [],
+      "levels": [
+        4
+      ],
+      "knowledge": {
+        "translation": "Pozycja złączonych stóp.",
+        "nameParts": [
+          {
+            "term": "heisoku",
+            "polish": "stopy złączone; hei — zamknięcie, soku — stopa"
+          },
+          {
+            "term": "dachi",
+            "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Wąska formalna baza, obecna w początkach i zakończeniach form."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Złącz pięty i palce, utrzymując stopy równolegle. Odróżnij ją od musubi-dachi, w której palce rozchodzą się na zewnątrz."
+          }
+        ]
+      }
+    },
+    {
+      "id": "uchi-hachiji",
+      "term": "Uchi hachiji dachi",
+      "japanese": "内八字立ち",
+      "reading": "uchi-hachiji-dachi",
+      "description": "Stopy na szerokość barków, palce skierowane do środka, kolana lekko ściągnięte do wewnątrz.",
+      "image": "/images/glossary/stances/Uchi-Hachi-Ji-Dachi.png",
+      "related": [],
+      "levels": [
+        4
+      ],
+      "knowledge": {
+        "translation": "Pozycja z układem znaku osiem skierowanym do wewnątrz.",
+        "nameParts": [
+          {
+            "term": "uchi",
+            "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+          },
+          {
+            "term": "hachiji",
+            "polish": "kształt znaku osiem (八); hachi — osiem, ji — znak"
+          },
+          {
+            "term": "dachi",
+            "polish": "stanie, pozycja; forma tachi używana w złożeniach"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Charakter postawy",
+            "body": "Nazwa odnosi się do kształtu ustawienia stóp."
+          },
+          {
+            "title": "Ustawienie i kontrola",
+            "body": "Rozstaw stopy, a palce skieruj lekko do środka. Utrzymuj kolana w kontrolowanym ustawieniu bez wymuszania skrętu stawów."
+          }
+        ]
+      }
+    }
+  ]
+}

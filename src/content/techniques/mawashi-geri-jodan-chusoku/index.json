@@ -1,0 +1,55 @@
+{
+  "id": "mawashi-geri-jodan-chusoku",
+  "name": "Mawashi-geri jōdan (chūsoku)",
+  "japanese": "回し蹴り上段",
+  "reading": "mawaszi-geri dzodan",
+  "category": "Kopnięcia",
+  "description": "Okrężne kopnięcie na wysokość głowy przodem podeszwy (chūsoku).",
+  "tags": [
+    "Mawashi-geri",
+    "Jōdan",
+    "Chūsoku"
+  ],
+  "focus": "Rotacja biodra i wysokość",
+  "levels": [
+    4,
+    6
+  ],
+  "aliases": [
+    "Mawashi-geri jōdan (chūsoku)",
+    "Mawashi-geri jodan (chusoku)",
+    "Mawashi geri jodan (chusoku)"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Okrężne kopnięcie górne przednia część podeszwy.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Ustaw powierzchnię stopy przed ruchem po łuku na wysokość głowy i utrzymaj obrót nogi podporowej."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Chūsoku to przednia część podeszwy — palce nie przejmują kontaktu. Nie wymuszaj zakresu w kolanie."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Mawashi",
+        "polish": "obrót, ruch okrężny"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      },
+      {
+        "term": "jōdan",
+        "polish": "poziom górny; jō — góra, dan — poziom"
+      },
+      {
+        "term": "chūsoku",
+        "polish": "przednia część podeszwy pod palcami stopy"
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "media": [
+    {
+      "source": "shotei-uchi-chudan-f1.mp4",
+      "label": "Shōtei uchi (shōtei) — widok z przodu 1",
+      "alt": "Shōtei uchi (shōtei): widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "shotei-uchi-chudan-f2.mp4",
+      "label": "Shōtei uchi (shōtei) — widok z przodu 2",
+      "alt": "Shōtei uchi (shōtei): widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "shotei-uchi-gedan-f1.mp4",
+      "label": "Shōtei uchi (shōtei) — widok z przodu 1",
+      "alt": "Shōtei uchi (shōtei): widok z przodu 1. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "shotei-uchi-gedan-f2.mp4",
+      "label": "Shōtei uchi (shōtei) — widok z przodu 2",
+      "alt": "Shōtei uchi (shōtei): widok z przodu 2. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "shotei-uchi-jodan-f1.mp4",
+      "label": "Shōtei uchi (shōtei) — widok z przodu 1",
+      "alt": "Shōtei uchi (shōtei): widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "shotei-uchi-jodan-f2.mp4",
+      "label": "Shōtei uchi (shōtei) — widok z przodu 2",
+      "alt": "Shōtei uchi (shōtei): widok z przodu 2. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "shotei-uchi-chudan-s1.mp4",
+      "label": "Shōtei uchi (shōtei) — widok z boku 1",
+      "alt": "Shōtei uchi (shōtei): widok z boku 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "shotei-uchi-chudan-s2.mp4",
+      "label": "Shōtei uchi (shōtei) — widok z boku 2",
+      "alt": "Shōtei uchi (shōtei): widok z boku 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "shotei-uchi-chudan-s3.mp4",
+      "label": "Shōtei uchi (shōtei) — widok z boku 3",
+      "alt": "Shōtei uchi (shōtei): widok z boku 3. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "shotei-uchi-gedan-s1.mp4",
+      "label": "Shōtei uchi (shōtei) — widok z boku 1",
+      "alt": "Shōtei uchi (shōtei): widok z boku 1. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "shotei-uchi-gedan-s2.mp4",
+      "label": "Shōtei uchi (shōtei) — widok z boku 2",
+      "alt": "Shōtei uchi (shōtei): widok z boku 2. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "shotei-uchi-jodan-s1.mp4",
+      "label": "Shōtei uchi (shōtei) — widok z boku 1",
+      "alt": "Shōtei uchi (shōtei): widok z boku 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "shotei-uchi-jodan-s2.mp4",
+      "label": "Shōtei uchi (shōtei) — widok z boku 2",
+      "alt": "Shōtei uchi (shōtei): widok z boku 2. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

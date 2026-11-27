@@ -1,0 +1,52 @@
+{
+  "id": "yoko-geri-chudan",
+  "name": "Yoko-geri chūdan",
+  "japanese": "横蹴り中段",
+  "reading": "joko-geri czudan",
+  "category": "Kopnięcia",
+  "description": "Boczne kopnięcie w strefę środkową. Tułów odchylony, biodro w osi ataku.",
+  "tags": [
+    "Yoko-geri",
+    "Chūdan"
+  ],
+  "focus": "Odchylenie tułowia i oś bioder",
+  "levels": [
+    6,
+    7,
+    8
+  ],
+  "aliases": [
+    "Yoko-geri",
+    "Yoko-geri chūdan",
+    "Yoko-geri chudan",
+    "Yoko geri chudan"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Kopnięcie boczne na poziom środkowy.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Unieś kolano, ustaw biodro do ruchu bocznego i wypchnij nogę na wysokość tułowia. Cofnij ją przed odstawieniem stopy."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Sprawdź boczną linię biodro–stopa i poziom tułowia. Zbyt wczesne odstawienie nogi ukrywa brak kontroli cofnięcia."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Yoko",
+        "polish": "bok, w bok"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      },
+      {
+        "term": "chūdan",
+        "polish": "poziom środkowy; chū — środek, dan — poziom"
+      }
+    ]
+  }
+}

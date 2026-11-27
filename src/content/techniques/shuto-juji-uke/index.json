@@ -1,0 +1,50 @@
+{
+  "id": "shuto-juji-uke",
+  "name": "Shūto jūji-uke",
+  "japanese": "手刀十字受け",
+  "reading": "szuto dzudzi-uke",
+  "category": "Bloki",
+  "description": "Blok skrzyżowanymi krawędziami dłoni (jōdan, gedan).",
+  "tags": [
+    "Shūto",
+    "Jūji",
+    "Uke"
+  ],
+  "focus": "Moment skrzyżowania",
+  "levels": [
+    3
+  ],
+  "aliases": [
+    "Shūto jūji-uke",
+    "Shuto juji-uke",
+    "Shuto juji uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Blok krzyżowy z otwartymi dłońmi.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Zgraj skrzyżowanie przedramion z przyjęciem pozycji. Utrzymuj obie dłonie otwarte; wysokość bloku ustala zadana odmiana."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Utrzymuj otwarte dłonie bez przypadkowego zaciskania ich w pięści. Sprawdź miejsce skrzyżowania oraz osłonę wybranej strefy."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Shūto",
+        "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+      },
+      {
+        "term": "jūji",
+        "polish": "krzyż; dosłownie kształt znaku dziesięć (十)"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

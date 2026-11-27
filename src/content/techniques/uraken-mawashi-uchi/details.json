@@ -1,0 +1,24 @@
+{
+  "media": [
+    {
+      "source": "uraken-mawashi-uchi-f1.mp4",
+      "label": "Uraken mawashi-uchi (uchi) — widok z przodu 1",
+      "alt": "Uraken mawashi-uchi (uchi): widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "uraken-mawashi-uchi-f2.mp4",
+      "label": "Uraken mawashi-uchi (uchi) — widok z przodu 2",
+      "alt": "Uraken mawashi-uchi (uchi): widok z przodu 2. Nagranie z dojo."
+    },
+    {
+      "source": "uraken-mawashi-uchi-s1.mp4",
+      "label": "Uraken mawashi-uchi (uchi) — widok z boku 1",
+      "alt": "Uraken mawashi-uchi (uchi): widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "uraken-mawashi-uchi-s2.mp4",
+      "label": "Uraken mawashi-uchi (uchi) — widok z boku 2",
+      "alt": "Uraken mawashi-uchi (uchi): widok z boku 2. Nagranie z dojo."
+    }
+  ]
+}

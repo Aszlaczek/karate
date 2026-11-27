@@ -1,0 +1,51 @@
+{
+  "id": "seiken-gedan-barai",
+  "name": "Seiken gedan-barai",
+  "japanese": "正拳下段払い",
+  "reading": "sejken gedan-barai",
+  "category": "Bloki",
+  "description": "Zamiatający blok pięścią w strefie dolnej (gedan). Ruch z przeciwnego barku w dół.",
+  "tags": [
+    "Seiken",
+    "Gedan",
+    "Barai"
+  ],
+  "focus": "Pełen zamach i zatrzymanie",
+  "levels": [
+    9,
+    10
+  ],
+  "aliases": [
+    "Gedan-barai",
+    "Seiken gedan-barai",
+    "Seiken gedan barai"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Zamiatający blok dolny przy zamkniętej pięści.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Prowadź przedramię od przygotowania przy przeciwnym barku w dół. Zakończ blok przed dolną częścią ciała, bez blokowania łokcia na sztywno."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Zatrzymaj blok na granicy potrzebnej osłony. Zbyt szerokie zamiatanie odciąga rękę od ciała i opóźnia następną technikę."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seiken",
+        "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+      },
+      {
+        "term": "gedan",
+        "polish": "poziom dolny; ge — dół, dan — poziom"
+      },
+      {
+        "term": "barai",
+        "polish": "zamiatanie, zgarnięcie (od harai)"
+      }
+    ]
+  }
+}

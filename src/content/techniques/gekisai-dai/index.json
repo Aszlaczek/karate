@@ -1,0 +1,47 @@
+{
+  "id": "gekisai-dai",
+  "name": "Gekisai dai",
+  "japanese": "撃砕大",
+  "reading": "gekisaj daj",
+  "category": "Kata",
+  "description": "Dynamiczne kombinacje bloków i uderzeń.",
+  "tags": [
+    "Kata",
+    "Gekisai"
+  ],
+  "focus": "Rytm, oddech i zanshin",
+  "levels": [
+    2
+  ],
+  "aliases": [
+    "Gekisai dai"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Uderzyć i rozbić — duża forma.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Forma łącząca zdecydowane techniki obronne i ofensywne; dai identyfikuje dużą odmianę Gekisai."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Dziel kombinacje na obronę, ustawienie ciała i odpowiedź. Zwróć uwagę na przejścia zamiast izolować same końcowe uderzenia."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Gekisai",
+        "polish": "uderzyć i rozbić; geki — uderzenie, sai — rozbicie"
+      },
+      {
+        "term": "dai",
+        "polish": "duży, wielki"
+      }
+    ]
+  }
+}

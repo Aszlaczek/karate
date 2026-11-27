@@ -1,0 +1,14 @@
+{
+  "media": [
+    {
+      "source": "tobi-nidan-geri-f1.mp4",
+      "label": "Tobi nidan-geri — widok z przodu 1",
+      "alt": "Tobi nidan-geri: widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "tobi-nidan-geri-s1.mp4",
+      "label": "Tobi nidan-geri — widok z boku 1",
+      "alt": "Tobi nidan-geri: widok z boku 1. Nagranie z dojo."
+    }
+  ]
+}

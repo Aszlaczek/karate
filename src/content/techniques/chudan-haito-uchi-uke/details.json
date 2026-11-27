@@ -1,0 +1,16 @@
+{
+  "media": [
+    {
+      "source": "haito-uchi-uke-chudan-f1.mp4",
+      "label": "Chūdan haitō uchi-uke (uchi) — widok z przodu 1",
+      "alt": "Chūdan haitō uchi-uke (uchi): widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "haito-uchi-uke-chudan-f2.mp4",
+      "label": "Chūdan haitō uchi-uke (uchi) — widok z przodu 2",
+      "alt": "Chūdan haitō uchi-uke (uchi): widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    }
+  ]
+}

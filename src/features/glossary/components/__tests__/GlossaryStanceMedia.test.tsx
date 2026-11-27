@@ -5,9 +5,10 @@ import GlossaryCard from "../GlossaryCard";
 import GlossaryEntryModal from "../GlossaryEntryModal";
 
 const category = glossary.find((item) => item.id === "pozycje")!;
+const noImageCategory = glossary.find((item) => item.id === "trening-komendy")!;
 const entry = (id: string) => category.entries.find((item) => item.id === id)!;
 
-describe("zdjęcie postawy", () => {
+describe("zdjęcie hasła słownika", () => {
   it("zostaje na kafelku jako miniatura z opisem hasła", () => {
     const expected = [
       ["fudo", "/images/glossary/stances/Fudo-Dachi.png"],
@@ -27,26 +28,22 @@ describe("zdjęcie postawy", () => {
     }
   });
 
-  it("pojawia się w galerii modalu postawy jako jedyne medium", async () => {
+  it("pojawia się w modalu jako jedyne zdjęcie, bez galerii", async () => {
     const { container } = render(
-      <GlossaryEntryModal
-        entry={entry("fudo")}
-        category={category}
-        onClose={vi.fn()}
-      />,
+      <GlossaryEntryModal entry={entry("fudo")} category={category} onClose={vi.fn()} />,
     );
 
-    expect(container.querySelector("img.glossary-photo")).toBeNull();
-    expect(await screen.findByText("1 / 1")).toBeInTheDocument();
-    expect(await screen.findByRole("img", { name: /Fudo dachi: zdjęcie/i })).toBeInTheDocument();
-    expect(screen.queryByLabelText(/Nagranie z dojo/i)).not.toBeInTheDocument();
+    expect(await screen.findByRole("img", { name: "Fudo dachi" })).toBeInTheDocument();
+    expect(container.querySelector("img.glossary-photo")).not.toBeNull();
+    expect(screen.queryByText(/1 \/ 1/)).not.toBeInTheDocument();
+    expect(screen.queryByLabelText(/Nagranie z dojo/)).not.toBeInTheDocument();
   });
 
-  it("dla postawy bez galerii pokazuje placeholder zamiast zdjęcia", async () => {
+  it("dla hasła bez zdjęcia pokazuje placeholder", async () => {
     const { container } = render(
       <GlossaryEntryModal
-        entry={entry("seiza")}
-        category={category}
+        entry={noImageCategory.entries.find((item) => item.id === "kihon")!}
+        category={noImageCategory}
         onClose={vi.fn()}
       />,
     );

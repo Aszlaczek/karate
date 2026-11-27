@@ -1,0 +1,47 @@
+{
+  "id": "ushiro-hiji-ate",
+  "name": "Ushiro hiji-ate",
+  "japanese": "後ろ肘当て",
+  "reading": "usziro hidzi-ate",
+  "category": "Uderzenia",
+  "description": "Uderzenie łokciem do tyłu, w przeciwnika stojącego za plecami.",
+  "tags": [
+    "Ushiro",
+    "Hiji-ate"
+  ],
+  "focus": "Obrót bioder do tyłu",
+  "levels": [
+    3
+  ],
+  "aliases": [
+    "Ushiro hiji-ate"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie łokciem do tyłu.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Skieruj ugięty łokieć za siebie z kontrolowanym obrotem tułowia. Przed rozpoczęciem wyznacz wolną przestrzeń za plecami."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Ushiro określa tył. Sprawdź kontrolę przestrzeni za sobą oraz powrót ręki bez dalszego, niepotrzebnego obrotu."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Ushiro",
+        "polish": "tył, do tyłu"
+      },
+      {
+        "term": "hiji",
+        "polish": "łokieć"
+      },
+      {
+        "term": "ate",
+        "polish": "trafienie, przyłożenie uderzenia"
+      }
+    ]
+  }
+}

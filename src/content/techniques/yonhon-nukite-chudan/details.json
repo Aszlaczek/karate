@@ -1,0 +1,16 @@
+{
+  "media": [
+    {
+      "source": "yonhon-nukite-chudan-f1.mp4",
+      "label": "Yonhon nukite chūdan — widok z przodu 1",
+      "alt": "Yonhon nukite chūdan: widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "yonhon-nukite-chudan-f2.mp4",
+      "label": "Yonhon nukite chūdan — widok z przodu 2",
+      "alt": "Yonhon nukite chūdan: widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    }
+  ]
+}

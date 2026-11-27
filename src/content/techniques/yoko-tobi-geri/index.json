@@ -1,0 +1,49 @@
+{
+  "id": "yoko-tobi-geri",
+  "name": "Yoko tobi-geri",
+  "japanese": "横飛び蹴り",
+  "reading": "joko tobi-geri",
+  "category": "Kopnięcia",
+  "description": "Skoczne kopnięcie boczne.",
+  "tags": [
+    "Yoko",
+    "Tobi",
+    "Geri"
+  ],
+  "focus": "Wyskok i oś bioder",
+  "levels": [
+    1
+  ],
+  "aliases": [
+    "Yoko tobi-geri",
+    "Yoko tobi geri"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Kopnięcie boczne w wyskoku.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Połącz wybicie z ustawieniem biodra do kopnięcia w bok. Przed zwiększaniem wysokości opanuj cofnięcie nogi i stabilne lądowanie."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Ustawienie do ruchu bocznego musi być gotowe w fazie kopnięcia. Zacznij od małego wyskoku i stabilnego lądowania."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Yoko",
+        "polish": "bok, w bok"
+      },
+      {
+        "term": "tobi",
+        "polish": "skok, w wyskoku"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      }
+    ]
+  }
+}

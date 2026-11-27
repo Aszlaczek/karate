@@ -1,0 +1,50 @@
+{
+  "id": "shuto-ganmen-uchi",
+  "name": "Shūto ganmen-uchi",
+  "japanese": "手刀顔面打ち",
+  "reading": "szuto ganmen-uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie krawędzią dłoni w twarz (ganmen).",
+  "tags": [
+    "Shūto",
+    "Ganmen",
+    "Uchi"
+  ],
+  "focus": "Precyzja celu",
+  "levels": [
+    4
+  ],
+  "aliases": [
+    "Shūto ganmen-uchi",
+    "Shuto ganmen-uchi",
+    "Shuto ganmen uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie zewnętrzną krawędzią dłoni w kierunku twarzy.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Wyznacz cel na wysokości twarzy. Zachowaj kształt otwartej dłoni i zatrzymaj ruch, zanim stracisz kontrolę nad łokciem."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Ganmen to twarz, a nie cała górna część ciała. Zaznacz cel w przestrzeni i kontroluj zatrzymanie przed nim."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Shūto",
+        "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+      },
+      {
+        "term": "ganmen",
+        "polish": "twarz"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

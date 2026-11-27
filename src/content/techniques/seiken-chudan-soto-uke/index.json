@@ -1,0 +1,56 @@
+{
+  "id": "seiken-chudan-soto-uke",
+  "name": "Seiken chūdan soto-uke",
+  "japanese": "正拳中段外受け",
+  "reading": "sejken czudan soto-uke",
+  "category": "Bloki",
+  "description": "Blok od zewnątrz do wewnątrz w strefie środkowej, wykonywany przedramieniem.",
+  "tags": [
+    "Seiken",
+    "Chūdan",
+    "Soto-uke"
+  ],
+  "focus": "Tor zewnętrzny",
+  "levels": [
+    8,
+    9
+  ],
+  "aliases": [
+    "Soto-uke",
+    "Seiken chūdan soto-uke",
+    "Seiken chudan soto-uke",
+    "Seiken chudan soto uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Blok środkowy od zewnątrz przy zamkniętej pięści.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Prowadź przedramię z zewnętrznej strony do środka na wysokości tułowia. Nie przesuwaj łokcia tak daleko, by odsłonić przeciwny bok."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Sprawdź zewnętrzne przygotowanie i ruch do środka. Nie zamieniaj tej wersji na odwrotny tor uchi-uke."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seiken",
+        "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+      },
+      {
+        "term": "chūdan",
+        "polish": "poziom środkowy; chū — środek, dan — poziom"
+      },
+      {
+        "term": "soto",
+        "polish": "zewnętrzny, od zewnątrz"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

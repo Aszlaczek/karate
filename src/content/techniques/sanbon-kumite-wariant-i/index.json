@@ -1,0 +1,56 @@
+{
+  "id": "sanbon-kumite-wariant-i",
+  "name": "Sanbon kumite wariant I",
+  "japanese": "三本組手",
+  "reading": "sanbon kumite wariant I",
+  "category": "Kumite",
+  "description": "Walka umowna trzykrokowa — wariant I. Atakujący wykonuje trzy kolejne ataki, broniący blokuje i kontruje po trzecim.",
+  "tags": [
+    "Sanbon",
+    "Kumite",
+    "Wariant I"
+  ],
+  "focus": "Rytm trzech ataków",
+  "levels": [
+    8
+  ],
+  "aliases": [
+    "Sanbon kumite wariant I"
+  ],
+  "infographic": "kumite",
+  "knowledge": {
+    "translation": "Trzykrokowa walka umowna — wariant I.",
+    "sections": [
+      {
+        "title": "Zakres wariantu",
+        "body": "Wariant I oznacza wersję układu, a sanbon — trzy kolejne ataki. Program nie podaje dokładnych technik tej wersji; ich wybór należy potwierdzić w dojo."
+      },
+      {
+        "title": "Przebieg z partnerem",
+        "body": "Ustalcie techniki i dystans. Atakujący wykonuje trzy kolejne ataki, a broniący dopasowuje trzy obrony i kontratak po ostatniej z nich. Kontrolujcie odstęp także podczas przemieszczania."
+      },
+      {
+        "title": "Punkt kontroli",
+        "body": "Nie wyprzedzaj zapowiedzianego ataku ani nie traktuj trzech kroków jak sprintu. Każda obrona musi odpowiadać właściwemu atakowi."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Sanbon",
+        "polish": "trzy; san — trzy, bon — udźwięcznione hon"
+      },
+      {
+        "term": "kumite",
+        "polish": "spotkanie / połączenie rąk; kumi — zestawienie, te — ręka; ćwiczenie walki"
+      },
+      {
+        "term": "wariant",
+        "polish": "polskie oznaczenie wersji ćwiczenia"
+      },
+      {
+        "term": "I",
+        "polish": "numer wariantu: pierwszy"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "media": [
+    {
+      "source": "seiken-mawashi-gedan-barai-f1.mp4",
+      "label": "Seiken mawashi gedan-barai — widok z przodu 1",
+      "alt": "Seiken mawashi gedan-barai: widok z przodu 1. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "seiken-mawashi-gedan-barai-f2.mp4",
+      "label": "Seiken mawashi gedan-barai — widok z przodu 2",
+      "alt": "Seiken mawashi gedan-barai: widok z przodu 2. Nagranie z dojo.",
+      "zone": "gedan"
+    }
+  ]
+}

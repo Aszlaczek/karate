@@ -1,0 +1,55 @@
+{
+  "id": "oroshi-uchi-kakato-geri",
+  "name": "Oroshi uchi kakato-geri",
+  "japanese": "下ろし内踵蹴り",
+  "reading": "orosi uczi kakato-geri",
+  "category": "Kopnięcia",
+  "description": "Opadające kopnięcie piętą od wewnątrz.",
+  "tags": [
+    "Oroshi",
+    "Uchi",
+    "Kakato"
+  ],
+  "focus": "Tor z góry w dół",
+  "levels": [
+    1,
+    4
+  ],
+  "aliases": [
+    "Oroshi-kakato-geri",
+    "Oroshi uchi kakato-geri",
+    "Oroshi uchi kakato geri"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Opadające kopnięcie piętą z przygotowaniem od wewnątrz.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Wprowadź nogę łukiem od wewnątrz, a następnie opuść piętę. Kontroluj zejście nogi, zamiast swobodnie upuszczać ją na cel."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Rozdziel przygotowanie od wewnątrz i opadanie pięty. Nie pomijaj kontroli nad nogą po minięciu najwyższego punktu."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Oroshi",
+        "polish": "opuszczanie, ruch z góry w dół"
+      },
+      {
+        "term": "uchi",
+        "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+      },
+      {
+        "term": "kakato",
+        "polish": "pięta"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      }
+    ]
+  }
+}

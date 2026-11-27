@@ -1,0 +1,55 @@
+{
+  "id": "mawashi-geri-chudan-chusoku",
+  "name": "Mawashi-geri chūdan (chūsoku)",
+  "japanese": "回し蹴り中段",
+  "reading": "mawaszi-geri czudan",
+  "category": "Kopnięcia",
+  "description": "Okrężne kopnięcie w strefę środkową przodem podeszwy (chūsoku).",
+  "tags": [
+    "Mawashi-geri",
+    "Chūdan",
+    "Chūsoku"
+  ],
+  "focus": "Rotacja biodra",
+  "levels": [
+    5,
+    8
+  ],
+  "aliases": [
+    "Mawashi-geri chūdan (chūsoku)",
+    "Mawashi-geri chudan (chusoku)",
+    "Mawashi geri chudan (chusoku)"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Okrężne kopnięcie środkowe przednia część podeszwy.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Wyznacz łuk na wysokości korpusu i ustaw przednią część podeszwy przed ruchem."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Chūsoku to przednia część podeszwy — palce nie przejmują kontaktu."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Mawashi",
+        "polish": "obrót, ruch okrężny"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      },
+      {
+        "term": "chūdan",
+        "polish": "poziom środkowy; chū — środek, dan — poziom"
+      },
+      {
+        "term": "chūsoku",
+        "polish": "przednia część podeszwy pod palcami stopy"
+      }
+    ]
+  }
+}

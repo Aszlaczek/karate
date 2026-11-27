@@ -1,0 +1,53 @@
+{
+  "id": "hira-ken-oroshi-uchi",
+  "name": "Hira-ken oroshi-uchi",
+  "japanese": "平拳下ろし打ち",
+  "reading": "hira-ken orosi-uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie płaską pięścią z góry w dół.",
+  "tags": [
+    "Hira-ken",
+    "Oroshi",
+    "Uchi"
+  ],
+  "focus": "Tor z góry w dół",
+  "levels": [
+    2
+  ],
+  "aliases": [
+    "Hira-ken oroshi-uchi",
+    "Hira ken oroshi uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Opadające uderzenie płaską pięścią.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Zachowaj układ płaskiej pięści podczas ruchu z góry w dół. Nie myl tej powierzchni z dolną krawędzią tettsui."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Utrzymuj tę samą powierzchnię pięści od przygotowania do końca opadania. Nie zaciskaj jej w zwykłe seiken w połowie ruchu."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Hira",
+        "polish": "płaski"
+      },
+      {
+        "term": "ken",
+        "polish": "pięść"
+      },
+      {
+        "term": "oroshi",
+        "polish": "opuszczanie, ruch z góry w dół"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

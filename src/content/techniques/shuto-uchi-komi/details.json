@@ -1,0 +1,29 @@
+{
+  "media": [
+    {
+      "source": "shuto-mae-gedn-barai-f1.mp4",
+      "label": "Shūto uchi-komi — widok z przodu 1",
+      "alt": "Shūto uchi-komi: widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "shuto-uchi-komi-f1.mp4",
+      "label": "Shūto uchi-komi (uchi) — widok z przodu 1",
+      "alt": "Shūto uchi-komi (uchi): widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "shuto-uchi-komi-f2.mp4",
+      "label": "Shūto uchi-komi (uchi) — widok z przodu 2",
+      "alt": "Shūto uchi-komi (uchi): widok z przodu 2. Nagranie z dojo."
+    },
+    {
+      "source": "shuto-uchi-komi-s1.mp4",
+      "label": "Shūto uchi-komi (uchi) — widok z boku 1",
+      "alt": "Shūto uchi-komi (uchi): widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "shuto-uchi-komi-s2.mp4",
+      "label": "Shūto uchi-komi (uchi) — widok z boku 2",
+      "alt": "Shūto uchi-komi (uchi): widok z boku 2. Nagranie z dojo."
+    }
+  ]
+}

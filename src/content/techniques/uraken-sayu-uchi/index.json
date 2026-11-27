@@ -1,0 +1,50 @@
+{
+  "id": "uraken-sayu-uchi",
+  "name": "Uraken sayū-uchi",
+  "japanese": "裏拳左右打ち",
+  "reading": "uraken saju-uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie grzbietem pięści w bok (z lewej lub prawej), po krótkim łuku.",
+  "tags": [
+    "Uraken",
+    "Sayū",
+    "Uchi"
+  ],
+  "focus": "Krótki boczny łuk",
+  "levels": [
+    6
+  ],
+  "aliases": [
+    "Uraken sayū-uchi",
+    "Uraken sayu-uchi",
+    "Uraken sayu uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie grzbietem pięści w lewo i w prawo.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Przenoś uwagę między bocznymi kierunkami i sprawdzaj symetrię ruchu. Sayū określa obie strony, nie jeden stały cel."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Ćwicz obie strony z podobnym zasięgiem i zatrzymaniem. Najpierw skieruj uwagę na nowy cel, zamiast machać ręką bez kontroli kierunku."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Uraken",
+        "polish": "grzbiet pięści; ura — tył, ken — pięść"
+      },
+      {
+        "term": "sayū",
+        "polish": "lewo i prawo"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

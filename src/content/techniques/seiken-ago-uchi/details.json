@@ -1,0 +1,24 @@
+{
+  "media": [
+    {
+      "source": "seiken-ago-uchi-f1.mp4",
+      "label": "Seiken ago-uchi (uchi) — widok z przodu 1",
+      "alt": "Seiken ago-uchi (uchi): widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "seiken-ago-uchi-f2.mp4",
+      "label": "Seiken ago-uchi (uchi) — widok z przodu 2",
+      "alt": "Seiken ago-uchi (uchi): widok z przodu 2. Nagranie z dojo."
+    },
+    {
+      "source": "seiken-ago-uchi-s1.mp4",
+      "label": "Seiken ago-uchi (uchi) — widok z boku 1",
+      "alt": "Seiken ago-uchi (uchi): widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "seiken-ago-uchi-s2.mp4",
+      "label": "Seiken ago-uchi (uchi) — widok z boku 2",
+      "alt": "Seiken ago-uchi (uchi): widok z boku 2. Nagranie z dojo."
+    }
+  ]
+}

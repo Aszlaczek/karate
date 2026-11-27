@@ -1,0 +1,51 @@
+{
+  "id": "pinan-sono-ni",
+  "name": "Pinan sono ni",
+  "japanese": "平安其の二",
+  "reading": "pinan sono ni",
+  "category": "Kata",
+  "description": "Drugie kata Pinan. Więcej kombinacji bloków i kontrataków.",
+  "tags": [
+    "Kata",
+    "Pinan"
+  ],
+  "focus": "Rytm, oddech i zanshin",
+  "levels": [
+    6
+  ],
+  "aliases": [
+    "Pinan sono ni"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Spokój i bezpieczeństwo — forma druga.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Druga forma Pinan rozwija koordynację bloków, kontrataków i przejść."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Rozpoznaj moment przejścia od osłony do odpowiedzi. Ręce i nogi powinny kończyć daną fazę w spójnym rytmie."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Pinan",
+        "polish": "spokój i bezpieczeństwo; pin — spokój, an — bezpieczeństwo (odczyt okinawski)"
+      },
+      {
+        "term": "sono",
+        "polish": "ten, dany; w nazwie wskazuje numer formy"
+      },
+      {
+        "term": "ni",
+        "polish": "dwa, drugi"
+      }
+    ]
+  }
+}

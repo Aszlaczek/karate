@@ -1,0 +1,49 @@
+{
+  "id": "gekisai-sho",
+  "name": "Gekisai Sho",
+  "japanese": "撃砕小",
+  "reading": "gekisai-sho",
+  "category": "Kata",
+  "description": "Kata wymagane na 2 kyu oraz na stopień 2 dan.",
+  "tags": [
+    "Kata",
+    "kyu",
+    "dan"
+  ],
+  "focus": "Precyzja i kontrola",
+  "levels": [
+    2,
+    12
+  ],
+  "aliases": [
+    "Gekisai Sho"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Uderzyć i rozbić — mała forma.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Sho odróżnia tę odmianę od Gekisai dai. „Mała” jest częścią nazwy, a nie oceną trudności."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Porównaj obie formy w miejscach zmiany pracy rąk i postaw. Nie wykonuj sho jako skróconego dai."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Gekisai",
+        "polish": "uderzyć i rozbić; geki — uderzenie, sai — rozbicie"
+      },
+      {
+        "term": "Sho",
+        "polish": "mały"
+      }
+    ]
+  }
+}

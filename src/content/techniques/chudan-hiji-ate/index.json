@@ -1,0 +1,51 @@
+{
+  "id": "chudan-hiji-ate",
+  "name": "Chūdan hiji-ate",
+  "japanese": "中段肘当て",
+  "reading": "czudan hidzi-ate",
+  "category": "Uderzenia",
+  "description": "Uderzenie łokciem w strefę środkową.",
+  "tags": [
+    "Chūdan",
+    "Hiji-ate",
+    "Łokieć"
+  ],
+  "focus": "Bliski dystans",
+  "levels": [
+    3
+  ],
+  "aliases": [
+    "Hiji-ate",
+    "Chūdan hiji-ate",
+    "Chudan hiji-ate",
+    "Chudan hiji ate"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie łokciem na poziom środkowy.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Utrzymuj krótki dystans i kieruj łokieć w korpus umownego przeciwnika. Nie próbuj wydłużać zasięgu przez prostowanie ramienia."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Punkt końcowy znajduje się na wysokości korpusu. Nie podnoś łokcia do głowy wyłącznie po to, by zwiększyć zamach."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Chūdan",
+        "polish": "poziom środkowy; chū — środek, dan — poziom"
+      },
+      {
+        "term": "hiji",
+        "polish": "łokieć"
+      },
+      {
+        "term": "ate",
+        "polish": "trafienie, przyłożenie uderzenia"
+      }
+    ]
+  }
+}

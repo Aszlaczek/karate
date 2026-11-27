@@ -1,0 +1,54 @@
+{
+  "id": "jodan-uchi-haisoku-geri",
+  "name": "Jōdan uchi haisoku-geri",
+  "japanese": "上段内背足蹴り",
+  "reading": "dzodan uczi hajsoku-geri",
+  "category": "Kopnięcia",
+  "description": "Kopnięcie wewnętrzną krawędzią podbicia w strefę głowy, po łuku do wewnątrz.",
+  "tags": [
+    "Jōdan",
+    "Uchi",
+    "Haisoku"
+  ],
+  "focus": "Tor do wewnątrz",
+  "levels": [
+    1
+  ],
+  "aliases": [
+    "Jōdan uchi haisoku-geri",
+    "Jodan uchi haisoku-geri",
+    "Jodan uchi haisoku geri"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Kopnięcie podbiciem od wewnątrz na poziom górny.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Wyznacz łuk podbicia w wariancie wewnętrznym na wysokość głowy. Uchi opisuje odmianę ruchu, a haisoku powierzchnię stopy."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Sprawdź wewnętrzny wariant ruchu i podbicie jako powierzchnię. Nie utożsamiaj słowa uchi ze zwykłym uderzeniem ręką."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Jōdan",
+        "polish": "poziom górny; jō — góra, dan — poziom"
+      },
+      {
+        "term": "uchi",
+        "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+      },
+      {
+        "term": "haisoku",
+        "polish": "podbicie, grzbiet stopy"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      }
+    ]
+  }
+}

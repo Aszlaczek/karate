@@ -1,0 +1,40 @@
+{
+  "media": [
+    {
+      "source": "tettsui-mae-yoko-uchi-jodan-f1.mp4",
+      "label": "Tettsui yoko-uchi (uchi) — widok z przodu 1",
+      "alt": "Tettsui yoko-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "tettsui-yoko-uchi-chudan-f1.mp4",
+      "label": "Tettsui yoko-uchi (uchi) — widok z przodu 1",
+      "alt": "Tettsui yoko-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "tettsui-yoko-uchi-gedan-f1.mp4",
+      "label": "Tettsui yoko-uchi (uchi) — widok z przodu 1",
+      "alt": "Tettsui yoko-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "tettsui-yoko-uchi-jodan-f1.mp4",
+      "label": "Tettsui yoko-uchi (uchi) — widok z przodu 1",
+      "alt": "Tettsui yoko-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "tettsui-mae-yoko-uchi-jodan-s1.mp4",
+      "label": "Tettsui yoko-uchi (uchi) — widok z boku 1",
+      "alt": "Tettsui yoko-uchi (uchi): widok z boku 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "tettsui-mae-yoko-uchi-jodan-s2.mp4",
+      "label": "Tettsui yoko-uchi (uchi) — widok z boku 2",
+      "alt": "Tettsui yoko-uchi (uchi): widok z boku 2. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

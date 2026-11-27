@@ -1,0 +1,29 @@
+{
+  "media": [
+    {
+      "source": "hiji-ate-ushiro-f2.mp4",
+      "label": "Ushiro hiji-ate — widok z przodu 2",
+      "alt": "Ushiro hiji-ate: widok z przodu 2. Nagranie z dojo."
+    },
+    {
+      "source": "hiji-ate-ushiro-s1.mp4",
+      "label": "Ushiro hiji-ate — widok z boku 1",
+      "alt": "Ushiro hiji-ate: widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "hiji-ate-ushiro-s2.mp4",
+      "label": "Ushiro hiji-ate — widok z boku 2",
+      "alt": "Ushiro hiji-ate: widok z boku 2. Nagranie z dojo."
+    },
+    {
+      "source": "hiji-ate-ushiro-s3.mp4",
+      "label": "Ushiro hiji-ate — widok z boku 3",
+      "alt": "Ushiro hiji-ate: widok z boku 3. Nagranie z dojo."
+    },
+    {
+      "source": "hiji-ate-ushiro-s4.mp4",
+      "label": "Ushiro hiji-ate — widok z boku 4",
+      "alt": "Ushiro hiji-ate: widok z boku 4. Nagranie z dojo."
+    }
+  ]
+}

@@ -1,7 +1,5 @@
-import { useMemo } from "react";
 import { BELT_NAMES, CATEGORIES, levels } from "@/data";
-import CategoryTabs from "@/components/ui/CategoryTabs";
-import SearchBox from "@/components/ui/SearchBox";
+import FilterToolbar from "@/features/shared/components/FilterToolbar";
 
 interface TechniquesToolbarProps {
   category: string;
@@ -22,20 +20,17 @@ export default function TechniquesToolbar({
   onLevelFilterChange,
   showLevelFilter,
 }: TechniquesToolbarProps) {
-  const categoryItems = useMemo(
-    () =>
-      CATEGORIES.map((c) => ({
-        value: c,
-        label: c,
-      })),
-    [],
-  );
-
   return (
-    <div className="tech-toolbar">
-      <CategoryTabs items={categoryItems} active={category} onChange={onCategoryChange} />
-      <div className="tech-filters">
-        {showLevelFilter && (
+    <FilterToolbar
+      categories={CATEGORIES.map((value) => ({ value }))}
+      active={category}
+      onCategoryChange={onCategoryChange}
+      searchLabel="Szukaj techniki"
+      searchPlaceholder="Szukaj techniki..."
+      query={query}
+      onQueryChange={onQueryChange}
+      filters={
+        showLevelFilter ? (
           <label className="level-select">
             <span>Stopień</span>
             <select
@@ -53,14 +48,8 @@ export default function TechniquesToolbar({
               ))}
             </select>
           </label>
-        )}
-        <SearchBox
-          label="Szukaj techniki"
-          placeholder="Szukaj techniki..."
-          value={query}
-          onChange={onQueryChange}
-        />
-      </div>
-    </div>
+        ) : null
+      }
+    />
   );
 }

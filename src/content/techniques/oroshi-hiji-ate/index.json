@@ -1,0 +1,47 @@
+{
+  "id": "oroshi-hiji-ate",
+  "name": "Oroshi hiji-ate",
+  "japanese": "下ろし肘当て",
+  "reading": "orosi hidzi-ate",
+  "category": "Uderzenia",
+  "description": "Uderzenie łokciem z góry w dół.",
+  "tags": [
+    "Oroshi",
+    "Hiji-ate"
+  ],
+  "focus": "Opadający tor łokcia",
+  "levels": [
+    3
+  ],
+  "aliases": [
+    "Oroshi hiji-ate"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Opadające uderzenie łokciem.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Prowadź łokieć z góry w dół, zachowując stabilne nogi. Zatrzymaj ruch bez gwałtownego załamywania tułowia."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Nie zastępuj pracy łokcia gwałtownym skłonem. Stabilna podstawa powinna umożliwiać przerwanie ruchu w dowolnej fazie."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Oroshi",
+        "polish": "opuszczanie, ruch z góry w dół"
+      },
+      {
+        "term": "hiji",
+        "polish": "łokieć"
+      },
+      {
+        "term": "ate",
+        "polish": "trafienie, przyłożenie uderzenia"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "media": [
+    {
+      "source": "age-tsuki-jodan-f1.mp4",
+      "label": "Age jōdan tsuki (age) — widok z przodu 1",
+      "alt": "Age jōdan tsuki (age): widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "age-tsuki-jodan-f2.mp4",
+      "label": "Age jōdan tsuki (age) — widok z przodu 2",
+      "alt": "Age jōdan tsuki (age): widok z przodu 2. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "age-tsuki-jodan-s1.mp4",
+      "label": "Age jōdan tsuki (age) — widok z boku 1",
+      "alt": "Age jōdan tsuki (age): widok z boku 1. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

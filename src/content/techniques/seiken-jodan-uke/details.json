@@ -1,0 +1,40 @@
+{
+  "media": [
+    {
+      "source": "seiken-juji-uke-jodan-f1.mp4",
+      "label": "Seiken jōdan uke (jūji) — widok z przodu 1",
+      "alt": "Seiken jōdan uke (jūji): widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "seiken-juji-uke-jodan-f2.mp4",
+      "label": "Seiken jōdan uke (jūji) — widok z przodu 2",
+      "alt": "Seiken jōdan uke (jūji): widok z przodu 2. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "shotei-uke-jodan-f1.mp4",
+      "label": "Seiken jōdan uke (shōtei) — widok z przodu 1",
+      "alt": "Seiken jōdan uke (shōtei): widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "shotei-uke-jodan-f2.mp4",
+      "label": "Seiken jōdan uke (shōtei) — widok z przodu 2",
+      "alt": "Seiken jōdan uke (shōtei): widok z przodu 2. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "shotei-uke-jodan-s1.mp4",
+      "label": "Seiken jōdan uke (shōtei) — widok z boku 1",
+      "alt": "Seiken jōdan uke (shōtei): widok z boku 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "shotei-uke-jodan-s2.mp4",
+      "label": "Seiken jōdan uke (shōtei) — widok z boku 2",
+      "alt": "Seiken jōdan uke (shōtei): widok z boku 2. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

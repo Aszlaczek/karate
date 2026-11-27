@@ -1,0 +1,50 @@
+{
+  "id": "jodan-hiji-ate",
+  "name": "Jōdan hiji-ate",
+  "japanese": "上段肘当て",
+  "reading": "dzodan hidzi-ate",
+  "category": "Uderzenia",
+  "description": "Uderzenie łokciem na poziom głowy. Krótki dystans, siła z obrotu bioder.",
+  "tags": [
+    "Jōdan",
+    "Hiji-ate",
+    "Łokieć"
+  ],
+  "focus": "Napęd z bioder",
+  "levels": [
+    5
+  ],
+  "aliases": [
+    "Jōdan hiji-ate",
+    "Jodan hiji-ate",
+    "Jodan hiji ate"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie łokciem na poziom górny.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Pracuj z krótkiego dystansu, unosząc łokieć do wysokości umownego celu. Jōdan określa poziom głowy; sam tytuł nie precyzuje wszystkich wariantów toru."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Zasięg wynika z krótkiego uderzenia łokciem. Nie próbuj sięgać wysoko przez przechylenie całej sylwetki i utratę podparcia."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Jōdan",
+        "polish": "poziom górny; jō — góra, dan — poziom"
+      },
+      {
+        "term": "hiji",
+        "polish": "łokieć"
+      },
+      {
+        "term": "ate",
+        "polish": "trafienie, przyłożenie uderzenia"
+      }
+    ]
+  }
+}

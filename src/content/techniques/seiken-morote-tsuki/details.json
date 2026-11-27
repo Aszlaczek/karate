@@ -1,0 +1,20 @@
+{
+  "media": [
+    {
+      "source": "saiken-morote-tsuki-f1.mp4",
+      "label": "Seiken morote-tsuki (morote) — widok z przodu 1",
+      "alt": "Seiken morote-tsuki (morote): widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "seiken-morote-tsuki-gedan-f1.mp4",
+      "label": "Seiken morote-tsuki (morote) — widok z przodu 1",
+      "alt": "Seiken morote-tsuki (morote): widok z przodu 1. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "seiken-morote-tsuki-yodan-f1.mp4",
+      "label": "Seiken morote-tsuki (morote) — widok z przodu 1",
+      "alt": "Seiken morote-tsuki (morote): widok z przodu 1. Nagranie z dojo."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "mae-tobi-geri",
+  "name": "Mae tobi-geri",
+  "japanese": "前飛び蹴り",
+  "reading": "mae tobi-geri",
+  "category": "Kopnięcia",
+  "description": "Skoczne kopnięcie do przodu, wykonywane trzema metodami.",
+  "tags": [
+    "Mae",
+    "Tobi",
+    "Geri"
+  ],
+  "focus": "Siła wyskoku",
+  "levels": [
+    2,
+    4
+  ],
+  "aliases": [
+    "Tobi-geri",
+    "Mae tobi-geri",
+    "Mae tobi geri",
+    "Mae tobi geri (3 metody)"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Kopnięcie do przodu w wyskoku.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Połącz wybicie z kopnięciem przed siebie i przygotuj nogi do lądowania. Konkretna noga odbijająca i kopiąca zależą od ćwiczonej metody."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Mae wskazuje przód, tobi wyskok. Sam podskok bez kontrolowanego kopnięcia i lądowania nie realizuje całej techniki."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Mae",
+        "polish": "przód, do przodu"
+      },
+      {
+        "term": "tobi",
+        "polish": "skok, w wyskoku"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      }
+    ]
+  }
+}

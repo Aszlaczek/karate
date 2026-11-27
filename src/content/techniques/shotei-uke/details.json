@@ -1,0 +1,52 @@
+{
+  "media": [
+    {
+      "source": "shotei-uke-chudan-f1.mp4",
+      "label": "Shōtei uke (shōtei) — widok z przodu 1",
+      "alt": "Shōtei uke (shōtei): widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "shotei-uke-chudan-f2.mp4",
+      "label": "Shōtei uke (shōtei) — widok z przodu 2",
+      "alt": "Shōtei uke (shōtei): widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "shotei-uke-gedan-f1.mp4",
+      "label": "Shōtei uke (shōtei) — widok z przodu 1",
+      "alt": "Shōtei uke (shōtei): widok z przodu 1. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "shotei-uke-gedan-f2.mp4",
+      "label": "Shōtei uke (shōtei) — widok z przodu 2",
+      "alt": "Shōtei uke (shōtei): widok z przodu 2. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "shote-uke-gedan-s1.mp4",
+      "label": "Shōtei uke — widok z boku 1",
+      "alt": "Shōtei uke: widok z boku 1. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "shotei-uke-chudan-s1.mp4",
+      "label": "Shōtei uke (shōtei) — widok z boku 1",
+      "alt": "Shōtei uke (shōtei): widok z boku 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "shotei-uke-chudan-s2.mp4",
+      "label": "Shōtei uke (shōtei) — widok z boku 2",
+      "alt": "Shōtei uke (shōtei): widok z boku 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "shotei-uke-gedan-s1.mp4",
+      "label": "Shōtei uke (shōtei) — widok z boku 1",
+      "alt": "Shōtei uke (shōtei): widok z boku 1. Nagranie z dojo.",
+      "zone": "gedan"
+    }
+  ]
+}

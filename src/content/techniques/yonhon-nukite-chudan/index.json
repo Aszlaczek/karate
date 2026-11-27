@@ -1,0 +1,49 @@
+{
+  "id": "yonhon-nukite-chudan",
+  "name": "Yonhon nukite chūdan",
+  "japanese": "四本貫手中段",
+  "reading": "jonhon nukite czudan",
+  "category": "Uderzenia",
+  "description": "Dźgnięcie czterema wyprostowanymi palcami w strefę środkową (np. splot słoneczny).",
+  "tags": [
+    "Nukite",
+    "Yonhon",
+    "Chūdan"
+  ],
+  "focus": "Sztywność palców",
+  "levels": [
+    6
+  ],
+  "aliases": [
+    "Yonhon nukite chūdan",
+    "Yonhon nukite chudan"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie czterema palcami w poziom środkowy.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Zestaw cztery palce w powierzchnię ręki-włóczni i poprowadź dłoń na wysokości tułowia. Ułożenie palców sprawdzaj bez siłowego kontaktu."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Sprawdź ustawienie czterech palców oraz poziom korpusu. Dłoń nie powinna załamywać się w nadgarstku podczas prostego prowadzenia."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Yonhon",
+        "polish": "cztery; yon — cztery, hon — liczebnik (tu palców)"
+      },
+      {
+        "term": "nukite",
+        "polish": "ręka-włócznia; uderzenie końcami wyprostowanych palców"
+      },
+      {
+        "term": "chūdan",
+        "polish": "poziom środkowy; chū — środek, dan — poziom"
+      }
+    ]
+  }
+}

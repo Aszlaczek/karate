@@ -1,0 +1,49 @@
+{
+  "id": "yoko-geri-jodan",
+  "name": "Yoko-geri jōdan",
+  "japanese": "横蹴り上段",
+  "reading": "joko-geri dzodan",
+  "category": "Kopnięcia",
+  "description": "Boczne kopnięcie na wysokość głowy.",
+  "tags": [
+    "Yoko-geri",
+    "Jōdan"
+  ],
+  "focus": "Elastyczność bioder",
+  "levels": [
+    4
+  ],
+  "aliases": [
+    "Yoko-geri jōdan",
+    "Yoko-geri jodan",
+    "Yoko geri jodan"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Kopnięcie boczne na poziom górny.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Po ustawieniu biodra kieruj nogę w bok ku wysokiemu celowi. Zachowaj możliwość cofnięcia kolana bez utraty równowagi."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Nie podnoś wysokości kosztem skręcania kolana podporowego. Zachowaj możliwość zatrzymania i cofnięcia kopnięcia w bok."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Yoko",
+        "polish": "bok, w bok"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      },
+      {
+        "term": "jōdan",
+        "polish": "poziom górny; jō — góra, dan — poziom"
+      }
+    ]
+  }
+}

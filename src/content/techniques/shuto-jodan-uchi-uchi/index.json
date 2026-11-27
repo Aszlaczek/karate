@@ -1,0 +1,54 @@
+{
+  "id": "shuto-jodan-uchi-uchi",
+  "name": "Shūto jōdan uchi-uchi",
+  "japanese": "手刀上段内打ち",
+  "reading": "szuto dzodan uczi-uczi",
+  "category": "Uderzenia",
+  "description": "Wewnętrzne uderzenie krawędzią dłoni na poziom głowy (uchi-uchi), wykonywane po łuku od zewnątrz do środka.",
+  "tags": [
+    "Shūto",
+    "Jōdan",
+    "Uchi"
+  ],
+  "focus": "Łuk do wewnątrz",
+  "levels": [
+    4
+  ],
+  "aliases": [
+    "Shūto jōdan uchi-uchi",
+    "Shuto jodan uchi-uchi",
+    "Shuto jodan uchi uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Wewnętrzne uderzenie krawędzią dłoni na poziom górny.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Poprowadź łuk ku środkowi na wysokości głowy. Pierwsze uchi oznacza tutaj wnętrze, a drugie uchi — uderzenie."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Dwa słowa uchi mają różne znaczenia. Sprawdź zarówno wewnętrzny charakter ruchu, jak i to, że wykonujesz uderzenie, a nie blok."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Shūto",
+        "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+      },
+      {
+        "term": "jōdan",
+        "polish": "poziom górny; jō — góra, dan — poziom"
+      },
+      {
+        "term": "uchi",
+        "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

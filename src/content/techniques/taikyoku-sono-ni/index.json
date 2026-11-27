@@ -1,0 +1,52 @@
+{
+  "id": "taikyoku-sono-ni",
+  "name": "Taikyoku sono ni",
+  "japanese": "太極其の二",
+  "reading": "tajkjoku sono ni",
+  "category": "Kata",
+  "description": "Drugie kata wstępne. Ten sam schemat co pierwsze, z uderzeniami na wysokość jōdan.",
+  "tags": [
+    "Kata",
+    "Taikyoku"
+  ],
+  "focus": "Rytm, oddech i zanshin",
+  "levels": [
+    8,
+    9
+  ],
+  "aliases": [
+    "Taikyoku sono ni"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Wielka ostateczność — forma druga.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Druga forma serii wykorzystuje znany schemat poruszania, zmieniając wysokość uderzeń na górną."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Porównaj poziom końcowy pięści z pierwszą formą. Pilnuj, by zmiana celu nie powodowała podnoszenia barków."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Taikyoku",
+        "polish": "wielka ostateczność; tai — wielki, kyoku — kres / najwyższa zasada"
+      },
+      {
+        "term": "sono",
+        "polish": "ten, dany; w nazwie wskazuje numer formy"
+      },
+      {
+        "term": "ni",
+        "polish": "dwa, drugi"
+      }
+    ]
+  }
+}

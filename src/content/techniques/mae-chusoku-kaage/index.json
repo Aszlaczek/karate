@@ -1,0 +1,50 @@
+{
+  "id": "mae-chusoku-kaage",
+  "name": "Mae chūsoku kaage",
+  "japanese": "前中足蹴上げ",
+  "reading": "mae czusoku keage",
+  "category": "Kopnięcia",
+  "description": "Wznoszące kopnięcie do przodu przodem stopy. [Na liście „kaage” — standardowo: keage.]",
+  "tags": [
+    "Mae",
+    "Chūsoku",
+    "Keage"
+  ],
+  "focus": "Wysokość wzniosu",
+  "levels": [
+    7
+  ],
+  "aliases": [
+    "Mae chūsoku kaage",
+    "Mae chusoku kaage"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Wznoszące kopnięcie do przodu z zaznaczeniem przedniej części podeszwy.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Prowadź nogę w górę przed sobą i kontroluj opuszczanie. To ruch wznoszący, który należy odróżnić od wypychającego wyprostu w mae-geri."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Nie myl wznoszącego ruchu keage z wypchnięciem stopy po uniesieniu kolana. Kontrolowane opuszczanie jest częścią powtórzenia."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Mae",
+        "polish": "przód, do przodu"
+      },
+      {
+        "term": "chūsoku",
+        "polish": "przednia część podeszwy pod palcami stopy"
+      },
+      {
+        "term": "kaage",
+        "polish": "zapis w atlasie; standardowo keage — kopnięcie wznoszące"
+      }
+    ],
+    "note": "W tytule zachowano zapis kaage z programu. Standardowa forma to keage (蹴上げ)."
+  }
+}

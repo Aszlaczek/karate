@@ -1,0 +1,51 @@
+{
+  "id": "seiken-jodan-uke",
+  "name": "Seiken jōdan uke",
+  "japanese": "正拳上段受け",
+  "reading": "sejken dzodan uke",
+  "category": "Bloki",
+  "description": "Blok pięścią chroniący strefę górną (jōdan). Przedramię wznosi się po osi przed twarzą.",
+  "tags": [
+    "Seiken",
+    "Jōdan",
+    "Uke"
+  ],
+  "focus": "Tor przedramienia",
+  "levels": [
+    9,
+    10
+  ],
+  "aliases": [
+    "Jodan-uke",
+    "Seiken jōdan uke",
+    "Seiken jodan uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Blok górny przy zamkniętej pięści.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Unieś przedramię przed głowę, utrzymując zamkniętą pięść. Nazwa seiken opisuje rękę; blok nie wymaga przyjmowania ataku samymi kłykciami."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Przedramię powinno osłaniać górną strefę bez zasłaniania sobie całego pola widzenia. Nie utożsamiaj zamkniętej pięści z miejscem przyjęcia ataku."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seiken",
+        "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+      },
+      {
+        "term": "jōdan",
+        "polish": "poziom górny; jō — góra, dan — poziom"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

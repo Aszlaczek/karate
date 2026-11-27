@@ -1,0 +1,16 @@
+{
+  "media": [
+    {
+      "source": "shuto-jodan-uke-f1.mp4",
+      "label": "Shūto jōdan uke — widok z przodu 1",
+      "alt": "Shūto jōdan uke: widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "shuto-jodan-uke-f2.mp4",
+      "label": "Shūto jōdan uke — widok z przodu 2",
+      "alt": "Shūto jōdan uke: widok z przodu 2. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "media": [
+    {
+      "source": "tettsui-oroshi-uchi-f1.mp4",
+      "label": "Tettsui oroshi-uchi (uchi) — widok z przodu 1",
+      "alt": "Tettsui oroshi-uchi (uchi): widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "tettsui-oroshi-uchi-d1.mp4",
+      "label": "Tettsui oroshi-uchi (uchi) — detal 1",
+      "alt": "Tettsui oroshi-uchi (uchi): zbliżenie na detal techniki 1. Nagranie z dojo."
+    },
+    {
+      "source": "tettsui-oroshi-uchi-d2.mp4",
+      "label": "Tettsui oroshi-uchi (uchi) — detal 2",
+      "alt": "Tettsui oroshi-uchi (uchi): zbliżenie na detal techniki 2. Nagranie z dojo."
+    }
+  ]
+}

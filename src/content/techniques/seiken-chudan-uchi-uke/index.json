@@ -1,0 +1,56 @@
+{
+  "id": "seiken-chudan-uchi-uke",
+  "name": "Seiken chūdan uchi-uke",
+  "japanese": "正拳中段内受け",
+  "reading": "sejken czudan uczi-uke",
+  "category": "Bloki",
+  "description": "Blok od wewnątrz na zewnątrz w strefie środkowej, wykonywany przedramieniem.",
+  "tags": [
+    "Seiken",
+    "Chūdan",
+    "Uchi-uke"
+  ],
+  "focus": "Pozycja łokcia",
+  "levels": [
+    7,
+    9
+  ],
+  "aliases": [
+    "Uchi-uke",
+    "Seiken chūdan uchi-uke",
+    "Seiken chudan uchi-uke",
+    "Seiken chudan uchi uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Blok środkowy od wewnątrz przy zamkniętej pięści.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Poprowadź przedramię od wewnątrz na zewnątrz, osłaniając korpus. Uchi nazywa stronę rozpoczęcia, a nie uderzenie."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Utrzymuj łokieć pod kontrolą podczas otwierania przedramienia na zewnątrz. Nadmierne rozwarcie odsłania środek tułowia."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seiken",
+        "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+      },
+      {
+        "term": "chūdan",
+        "polish": "poziom środkowy; chū — środek, dan — poziom"
+      },
+      {
+        "term": "uchi",
+        "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "media": [
+    {
+      "source": "uraken-shomen-uchi-f1.mp4",
+      "label": "Uraken shōmen-uchi (uchi) — widok z przodu 1",
+      "alt": "Uraken shōmen-uchi (uchi): widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "uraken-shomen-uchi-f2.mp4",
+      "label": "Uraken shōmen-uchi (uchi) — widok z przodu 2",
+      "alt": "Uraken shōmen-uchi (uchi): widok z przodu 2. Nagranie z dojo."
+    },
+    {
+      "source": "uraken-shomen-uchi-s1.mp4",
+      "label": "Uraken shōmen-uchi (uchi) — widok z boku 1",
+      "alt": "Uraken shōmen-uchi (uchi): widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "uraken-shomen-uchi-s2.mp4",
+      "label": "Uraken shōmen-uchi (uchi) — widok z boku 2",
+      "alt": "Uraken shōmen-uchi (uchi): widok z boku 2. Nagranie z dojo."
+    }
+  ]
+}

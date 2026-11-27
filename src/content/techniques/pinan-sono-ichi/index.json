@@ -1,0 +1,51 @@
+{
+  "id": "pinan-sono-ichi",
+  "name": "Pinan sono ichi",
+  "japanese": "平安其の一",
+  "reading": "pinan sono iczi",
+  "category": "Kata",
+  "description": "Pierwsze kata z serii Pinan. Podstawowe przejścia między postawami, bloki i uderzenia.",
+  "tags": [
+    "Kata",
+    "Pinan"
+  ],
+  "focus": "Rytm, oddech i zanshin",
+  "levels": [
+    7
+  ],
+  "aliases": [
+    "Pinan sono ichi"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Spokój i bezpieczeństwo — forma pierwsza.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Wprowadzenie do serii Pinan, łączące obronę, atak i zmiany ustawienia ciała."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Zapamiętuj krótkie grupy ruchów razem z kierunkiem patrzenia i pozycją końcową, a dopiero potem łącz całość."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Pinan",
+        "polish": "spokój i bezpieczeństwo; pin — spokój, an — bezpieczeństwo (odczyt okinawski)"
+      },
+      {
+        "term": "sono",
+        "polish": "ten, dany; w nazwie wskazuje numer formy"
+      },
+      {
+        "term": "ichi",
+        "polish": "jeden, pierwszy"
+      }
+    ]
+  }
+}

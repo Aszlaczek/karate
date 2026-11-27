@@ -1,0 +1,22 @@
+{
+  "media": [
+    {
+      "source": "seiken-juji-uke-gedan-f1.mp4",
+      "label": "Seiken jūji-uke (jūji) — widok z przodu 1",
+      "alt": "Seiken jūji-uke (jūji): widok z przodu 1. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "seiken-juji-uke-gedan-f2.mp4",
+      "label": "Seiken jūji-uke (jūji) — widok z przodu 2",
+      "alt": "Seiken jūji-uke (jūji): widok z przodu 2. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "seiken-juji-uke-gedan-s1.mp4",
+      "label": "Seiken jūji-uke (jūji) — widok z boku 1",
+      "alt": "Seiken jūji-uke (jūji): widok z boku 1. Nagranie z dojo.",
+      "zone": "gedan"
+    }
+  ]
+}

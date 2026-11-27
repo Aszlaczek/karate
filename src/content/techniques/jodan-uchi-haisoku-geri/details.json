@@ -1,0 +1,22 @@
+{
+  "media": [
+    {
+      "source": "uchi-mawashi-geri-jodan-f1.mp4",
+      "label": "Jōdan uchi haisoku-geri — widok z przodu 1",
+      "alt": "Jōdan uchi haisoku-geri: widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "uchi-mawashi-geri-jodan-f2.mp4",
+      "label": "Jōdan uchi haisoku-geri — widok z przodu 2",
+      "alt": "Jōdan uchi haisoku-geri: widok z przodu 2. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "uchi-mawashi-geri-jodan-s1.mp4",
+      "label": "Jōdan uchi haisoku-geri — widok z boku 1",
+      "alt": "Jōdan uchi haisoku-geri: widok z boku 1. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

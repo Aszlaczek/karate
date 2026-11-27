@@ -1,0 +1,49 @@
+{
+  "id": "shuto-jodan-uke",
+  "name": "Shūto jōdan uke",
+  "japanese": "手刀上段受け",
+  "reading": "szuto dzodan uke",
+  "category": "Bloki",
+  "description": "Blok krawędzią dłoni w strefie górnej.",
+  "tags": [
+    "Shūto",
+    "Jōdan",
+    "Uke"
+  ],
+  "focus": "Przedramię w osi",
+  "levels": [
+    4
+  ],
+  "aliases": [
+    "Shūto jōdan uke",
+    "Shuto jodan uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Blok górny z otwartą dłonią ustawioną w shuto.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Unieś rękę do osłony głowy, zachowując kształt krawędzi dłoni. Nie myl pozycji dłoni z koniecznością kontaktu wyłącznie jej brzegiem."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Porównaj wysokość osłony z blokiem środkowym. Dłoń pozostaje otwarta, a ramię nie powinno zasłaniać całkowicie obserwacji celu."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Shūto",
+        "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+      },
+      {
+        "term": "jōdan",
+        "polish": "poziom górny; jō — góra, dan — poziom"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

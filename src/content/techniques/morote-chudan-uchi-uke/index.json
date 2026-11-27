@@ -1,0 +1,54 @@
+{
+  "id": "morote-chudan-uchi-uke",
+  "name": "Morote chūdan uchi-uke",
+  "japanese": "諸手中段内受け",
+  "reading": "morote czudan uczi-uke",
+  "category": "Bloki",
+  "description": "Wzmocniony blok środkowy: jedna ręka blokuje, druga podpiera od wewnątrz.",
+  "tags": [
+    "Morote",
+    "Chūdan",
+    "Uchi-uke"
+  ],
+  "focus": "Podparcie ręką pomocniczą",
+  "levels": [
+    8
+  ],
+  "aliases": [
+    "Morote chūdan uchi-uke",
+    "Morote chudan uchi-uke",
+    "Morote chudan uchi uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Wzmocniony obiema rękami blok środkowy od wewnątrz.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Jedna ręka wykonuje blok, druga ją wspiera. Sprawdź położenie ręki pomocniczej i zachowaj ten sam poziom ochrony korpusu."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Ręka wspierająca nie powinna spychać własnej ręki blokującej z właściwej linii. Obie mają współpracować przy jednym bloku."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Morote",
+        "polish": "obie ręce; moro — obie, te — ręce"
+      },
+      {
+        "term": "chūdan",
+        "polish": "poziom środkowy; chū — środek, dan — poziom"
+      },
+      {
+        "term": "uchi",
+        "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

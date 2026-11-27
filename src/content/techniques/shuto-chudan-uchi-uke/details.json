@@ -1,0 +1,22 @@
+{
+  "media": [
+    {
+      "source": "shuto-uchi-uke-chudan-f1.mp4",
+      "label": "Shūto chūdan uchi-uke (uchi) — widok z przodu 1",
+      "alt": "Shūto chūdan uchi-uke (uchi): widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "shuto-uchi-uke-chudan-f2.mp4",
+      "label": "Shūto chūdan uchi-uke (uchi) — widok z przodu 2",
+      "alt": "Shūto chūdan uchi-uke (uchi): widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "shuto-uchi-uke-chudan-s1.mp4",
+      "label": "Shūto chūdan uchi-uke (uchi) — widok z boku 1",
+      "alt": "Shūto chūdan uchi-uke (uchi): widok z boku 1. Nagranie z dojo.",
+      "zone": "chudan"
+    }
+  ]
+}

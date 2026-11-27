@@ -1,0 +1,54 @@
+{
+  "id": "chudan-haito-uchi-uke",
+  "name": "Chūdan haitō uchi-uke",
+  "japanese": "中段背刀内受け",
+  "reading": "czudan hajto uczi-uke",
+  "category": "Bloki",
+  "description": "Blok wewnętrzny krawędzią dłoni od strony kciuka (haitō) w strefie środkowej.",
+  "tags": [
+    "Chūdan",
+    "Haitō",
+    "Uchi-uke"
+  ],
+  "focus": "Ułożenie dłoni",
+  "levels": [
+    1
+  ],
+  "aliases": [
+    "Chūdan haitō uchi-uke",
+    "Chudan haito uchi-uke",
+    "Chudan haito uchi uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Blok środkowy od wewnątrz, wewnętrzną krawędzią dłoni.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Wyróżnij krawędź po stronie kciuka i schowaj kciuk zgodnie z pokazem. Haitō jest inną powierzchnią niż zewnętrzna krawędź shutō."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Wyróżnij krawędź od strony kciuka i zabezpiecz jego ułożenie. Nie zamieniaj haitō na shutō przez mimowolne odwrócenie dłoni."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Chūdan",
+        "polish": "poziom środkowy; chū — środek, dan — poziom"
+      },
+      {
+        "term": "haitō",
+        "polish": "wewnętrzna krawędź dłoni, od strony kciuka"
+      },
+      {
+        "term": "uchi",
+        "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

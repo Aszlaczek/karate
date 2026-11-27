@@ -1,0 +1,50 @@
+{
+  "id": "seiken-tate-tsuki",
+  "name": "Seiken tate-tsuki",
+  "japanese": "正拳縦突き",
+  "reading": "sejken tate-cuki",
+  "category": "Uderzenia",
+  "description": "Uderzenie pionową pięścią (kłykcie ułożone pionowo) na strefy chūdan, jōdan i gedan. Używane zwykle z bliskiego dystansu.",
+  "tags": [
+    "Seiken",
+    "Tate",
+    "Tsuki"
+  ],
+  "focus": "Pionowe ułożenie pięści",
+  "levels": [
+    6,
+    8
+  ],
+  "aliases": [
+    "Tate-zuki",
+    "Seiken tate-tsuki"
+  ],
+  "infographic": "zuki",
+  "knowledge": {
+    "translation": "Proste uderzenie pionowo ustawioną pięścią.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Zachowaj pionowe ustawienie pięści w zakończeniu ruchu. Nadgarstek utrzymuj w przedłużeniu przedramienia, bez dodatkowego skrętu dłoni."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "W punkcie końcowym kłykcie mają zachować pionowy układ. Nie dodawaj nawykowego obrotu pięści jak w zwykłym prostym uderzeniu."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seiken",
+        "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+      },
+      {
+        "term": "tate",
+        "polish": "pionowo"
+      },
+      {
+        "term": "tsuki",
+        "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+      }
+    ]
+  }
+}

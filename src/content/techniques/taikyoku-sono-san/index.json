@@ -1,0 +1,52 @@
+{
+  "id": "taikyoku-sono-san",
+  "name": "Taikyoku sono san",
+  "japanese": "太極其の三",
+  "reading": "tajkjoku sono san",
+  "category": "Kata",
+  "description": "Trzecie kata wstępne. Wprowadza bloki i uderzenia na poziom chūdan w układzie I.",
+  "tags": [
+    "Kata",
+    "Taikyoku"
+  ],
+  "focus": "Rytm, oddech i zanshin",
+  "levels": [
+    7,
+    8
+  ],
+  "aliases": [
+    "Taikyoku sono san"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Wielka ostateczność — forma trzecia.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Trzecia forma rozwija pracę bloków i przejścia między pozycjami w serii Taikyoku."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Wydziel miejsca, w których zmienia się blok lub postawa. Nie przenoś automatycznie wszystkich ustawień z pierwszej formy."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Taikyoku",
+        "polish": "wielka ostateczność; tai — wielki, kyoku — kres / najwyższa zasada"
+      },
+      {
+        "term": "sono",
+        "polish": "ten, dany; w nazwie wskazuje numer formy"
+      },
+      {
+        "term": "san",
+        "polish": "trzy, trzeci"
+      }
+    ]
+  }
+}

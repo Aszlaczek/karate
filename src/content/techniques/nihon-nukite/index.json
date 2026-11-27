@@ -1,0 +1,45 @@
+{
+  "id": "nihon-nukite",
+  "name": "Nihon nukite",
+  "japanese": "二本貫手",
+  "reading": "nihon nukite",
+  "category": "Uderzenia",
+  "description": "Dźgnięcie dwoma palcami (wskazującym i środkowym) w oczy — „Me tsuki”. Uderzenie na wprost.",
+  "tags": [
+    "Nukite",
+    "Nihon",
+    "Me tsuki"
+  ],
+  "focus": "Prostota toru i napięcie palców",
+  "levels": [
+    6
+  ],
+  "aliases": [
+    "Nihon nukite",
+    "Nihon nukite (Me tsuki)"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie końcami dwóch palców — dwupalczastą ręką-włócznią.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Rozpoznaj układ palca wskazującego i środkowego. Ćwicz ułożenie i tor bez kontaktu z partnerem; nie obciążaj końców palców uderzaniem w twardy cel."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Dwa palce pozostają uporządkowaną powierzchnią, a nie luźnym rozstawem. Technikę poznawaj bez kontaktu w oczy i bez prób siły na palcach."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Nihon",
+        "polish": "dwa; ni — dwa, hon — liczebnik dla podłużnych przedmiotów (tu palców)"
+      },
+      {
+        "term": "nukite",
+        "polish": "ręka-włócznia; uderzenie końcami wyprostowanych palców"
+      }
+    ]
+  }
+}

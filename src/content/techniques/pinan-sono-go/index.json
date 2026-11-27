@@ -1,0 +1,52 @@
+{
+  "id": "pinan-sono-go",
+  "name": "Pinan sono go",
+  "japanese": "平安其の五",
+  "reading": "pinan sono go",
+  "category": "Kata",
+  "description": "Piąte kata Pinan. Najbardziej złożone w serii; zawiera skoki i zmiany kierunku.",
+  "tags": [
+    "Kata",
+    "Pinan"
+  ],
+  "focus": "Rytm, oddech i zanshin",
+  "levels": [
+    2,
+    3
+  ],
+  "aliases": [
+    "Pinan sono go"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Spokój i bezpieczeństwo — forma piąta.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Ostatnia forma podstawowej serii Pinan wymaga wyraźnego rytmu i kontroli dynamicznych przejść."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Pracuj osobno nad wybiciem, zmianą kierunku i lądowaniem. W całości zachowaj różnicę między przygotowaniem a akcentem techniki."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Pinan",
+        "polish": "spokój i bezpieczeństwo; pin — spokój, an — bezpieczeństwo (odczyt okinawski)"
+      },
+      {
+        "term": "sono",
+        "polish": "ten, dany; w nazwie wskazuje numer formy"
+      },
+      {
+        "term": "go",
+        "polish": "pięć, piąty"
+      }
+    ]
+  }
+}

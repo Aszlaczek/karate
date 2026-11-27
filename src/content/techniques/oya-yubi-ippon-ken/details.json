@@ -1,0 +1,28 @@
+{
+  "media": [
+    {
+      "source": "oya-yubi-ippon-ken-chudan-f1.mp4",
+      "label": "Oya-yubi ippon-ken — widok z przodu 1",
+      "alt": "Oya-yubi ippon-ken: widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "oya-yubi-ippon-ken-chudan-f2.mp4",
+      "label": "Oya-yubi ippon-ken — widok z przodu 2",
+      "alt": "Oya-yubi ippon-ken: widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "oya-yubi-ippon-ken-jodan-f1.mp4",
+      "label": "Oya-yubi ippon-ken — widok z przodu 1",
+      "alt": "Oya-yubi ippon-ken: widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "oya-yubi-ippon-ken-jodan-f2.mp4",
+      "label": "Oya-yubi ippon-ken — widok z przodu 2",
+      "alt": "Oya-yubi ippon-ken: widok z przodu 2. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

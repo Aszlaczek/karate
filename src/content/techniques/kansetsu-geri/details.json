@@ -1,0 +1,14 @@
+{
+  "media": [
+    {
+      "source": "kansetsu-geri-f1.mp4",
+      "label": "Kansetsu-geri — widok z przodu 1",
+      "alt": "Kansetsu-geri: widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "kansetsu-geri-f2.mp4",
+      "label": "Kansetsu-geri — widok z przodu 2",
+      "alt": "Kansetsu-geri: widok z przodu 2. Nagranie z dojo."
+    }
+  ]
+}

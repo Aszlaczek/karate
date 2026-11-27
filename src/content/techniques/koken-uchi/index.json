@@ -1,0 +1,44 @@
+{
+  "id": "koken-uchi",
+  "name": "Kōken uchi",
+  "japanese": "弧拳打ち",
+  "reading": "koken uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie nadgarstkiem (łukiem dłoni) w strefy jōdan, chūdan i gedan.",
+  "tags": [
+    "Kōken",
+    "Uchi"
+  ],
+  "focus": "Ułożenie nadgarstka",
+  "levels": [
+    2
+  ],
+  "aliases": [
+    "Kōken uchi",
+    "Koken uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie powierzchnią zgiętego nadgarstka.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Uformuj zgięcie dłoni wskazane przez instruktora. Ćwicz rozpoznanie powierzchni nadgarstka, bez wymuszania skrajnego zakresu stawu."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Przerwij próbę, jeżeli ustawienie nadgarstka wymaga bólu lub siłowego dociśnięcia. Nauka powierzchni poprzedza zwiększanie obciążenia."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Kōken",
+        "polish": "łukowata pięść; powierzchnia zgiętego nadgarstka"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

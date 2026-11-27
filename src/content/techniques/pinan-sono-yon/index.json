@@ -1,0 +1,52 @@
+{
+  "id": "pinan-sono-yon",
+  "name": "Pinan sono yon",
+  "japanese": "平安其の四",
+  "reading": "pinan sono jon",
+  "category": "Kata",
+  "description": "Czwarte kata Pinan. Wprowadza kake dachi i techniki łokciowe.",
+  "tags": [
+    "Kata",
+    "Pinan"
+  ],
+  "focus": "Rytm, oddech i zanshin",
+  "levels": [
+    3,
+    4
+  ],
+  "aliases": [
+    "Pinan sono yon"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Spokój i bezpieczeństwo — forma czwarta.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Czwarta forma Pinan łączy zmiany kierunku, techniki ręczne i pracę nóg w bardziej złożone sekwencje."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Rozdziel fragmenty z pozycją skrzyżowaną i technikami łokciowymi. Sprawdź równowagę przed łączeniem ich w pełnym tempie."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Pinan",
+        "polish": "spokój i bezpieczeństwo; pin — spokój, an — bezpieczeństwo (odczyt okinawski)"
+      },
+      {
+        "term": "sono",
+        "polish": "ten, dany; w nazwie wskazuje numer formy"
+      },
+      {
+        "term": "yon",
+        "polish": "cztery, czwarty"
+      }
+    ]
+  }
+}

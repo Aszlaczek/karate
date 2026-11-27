@@ -1,0 +1,54 @@
+{
+  "id": "shuto-chudan-soto-uke",
+  "name": "Shūto chūdan soto-uke",
+  "japanese": "手刀中段外受け",
+  "reading": "szuto czudan soto-uke",
+  "category": "Bloki",
+  "description": "Blok zewnętrzny krawędzią dłoni w strefie środkowej.",
+  "tags": [
+    "Shūto",
+    "Chūdan",
+    "Soto-uke"
+  ],
+  "focus": "Przesunięcie ciężaru",
+  "levels": [
+    4
+  ],
+  "aliases": [
+    "Shūto chūdan soto-uke",
+    "Shuto chudan soto-uke",
+    "Shuto chudan soto uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Blok środkowy od zewnątrz z otwartą dłonią.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Poprowadź rękę z zewnątrz do środka, osłaniając tułów. Utrzymuj palce razem i stabilny nadgarstek."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Zewnętrzny początek ruchu odróżnia tę wersję od uchi-uke. Nie zmieniaj toru tylko dlatego, że otwarto dłoń zamiast użyć pięści."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Shūto",
+        "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+      },
+      {
+        "term": "chūdan",
+        "polish": "poziom środkowy; chū — środek, dan — poziom"
+      },
+      {
+        "term": "soto",
+        "polish": "zewnętrzny, od zewnątrz"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "media": [
+    {
+      "source": "ushiro-geri-chudan-f1.mp4",
+      "label": "Ushiro-geri chūdan — widok z przodu 1",
+      "alt": "Ushiro-geri chūdan: widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "ushiro-geri-chudan-s1.mp4",
+      "label": "Ushiro-geri chūdan — widok z boku 1",
+      "alt": "Ushiro-geri chūdan: widok z boku 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "ushiro-geri-chudano-s2.mp4",
+      "label": "Ushiro-geri chūdan — widok z boku 2",
+      "alt": "Ushiro-geri chūdan: widok z boku 2. Nagranie z dojo."
+    }
+  ]
+}

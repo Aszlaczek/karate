@@ -1,0 +1,24 @@
+{
+  "media": [
+    {
+      "source": "shuto-sakotsu-uchi-f1.mp4",
+      "label": "Shūto sakotsu-uchi (uchi) — widok z przodu 1",
+      "alt": "Shūto sakotsu-uchi (uchi): widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "shuto-sakotsu-uchi-f2.mp4",
+      "label": "Shūto sakotsu-uchi (uchi) — widok z przodu 2",
+      "alt": "Shūto sakotsu-uchi (uchi): widok z przodu 2. Nagranie z dojo."
+    },
+    {
+      "source": "shuto-sakotsu-uchi-s1.mp4",
+      "label": "Shūto sakotsu-uchi (uchi) — widok z boku 1",
+      "alt": "Shūto sakotsu-uchi (uchi): widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "shuto-sakotsu-uchi-s2.mp4",
+      "label": "Shūto sakotsu-uchi (uchi) — widok z boku 2",
+      "alt": "Shūto sakotsu-uchi (uchi): widok z boku 2. Nagranie z dojo."
+    }
+  ]
+}

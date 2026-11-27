@@ -1,0 +1,55 @@
+{
+  "id": "heisoku-mawashi-uchi-keage",
+  "name": "Heisoku mawashi uchi-keage",
+  "japanese": "閉足回し内蹴上げ",
+  "reading": "hejsoku mawaszi uczi-keage",
+  "category": "Kopnięcia",
+  "description": "Okrężne kopnięcie wznoszące od wewnątrz, z krawędzi stopy (heisoku).",
+  "tags": [
+    "Heisoku",
+    "Mawashi",
+    "Uchi",
+    "Keage"
+  ],
+  "focus": "Tor od wewnątrz",
+  "levels": [
+    7
+  ],
+  "aliases": [
+    "Heisoku mawashi uchi-keage",
+    "Heisoku mawashi uchi keage"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Okrężne kopnięcie wznoszące od wewnątrz; zapis powierzchni wymaga wyjaśnienia.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Rozpoznaj łuk od wewnętrznej strony na zewnątrz. Słowo heisoku oznacza stopy złączone, więc nie określa tutaj wiarygodnie powierzchni kopiącej."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Najpierw ustal właściwą nazwę powierzchni z instruktorem. Sam błędny lub niejednoznaczny zapis nie jest podstawą do wyboru ustawienia stopy."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Heisoku",
+        "polish": "stopy złączone; hei — zamknięcie, soku — stopa"
+      },
+      {
+        "term": "mawashi",
+        "polish": "obrót, ruch okrężny"
+      },
+      {
+        "term": "uchi",
+        "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+      },
+      {
+        "term": "keage",
+        "polish": "kopnięcie wznoszące; ke — kopnięcie, age — unoszenie"
+      }
+    ],
+    "note": "Heisoku (閉足) oznacza stopy złączone; haisoku (背足) to podbicie, a sokutō (足刀) to zewnętrzna krawędź stopy. To różne terminy. Powierzchnię w tym wpisie należy potwierdzić z instruktorem."
+  }
+}

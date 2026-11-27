@@ -1,0 +1,39 @@
+name: Weryfikacja mediów
+
+# Publikacja do R2 odbywa się lokalnie (npm run media:sync -- --apply).
+# Ten workflow tylko sprawdza spójność — nie ma sekretów zapisu ani usuwania.
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "src/data/media-config.json"
+      - "src/content/**"
+      - "src/data/**"
+      - "scripts/**"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: npm
+
+      - name: Instalacja zależności
+        run: npm ci
+
+      - name: Spójność treści i plików do uploadu
+        run: npm run media:verify
+
+      - name: Audit danych
+        run: npm run audit

@@ -1,0 +1,53 @@
+{
+  "id": "hira-ken-mawashi-uchi",
+  "name": "Hira-ken mawashi-uchi",
+  "japanese": "平拳回し打ち",
+  "reading": "hira-ken mawaszi-uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie płaską pięścią po okrężnym torze (mawashi).",
+  "tags": [
+    "Hira-ken",
+    "Mawashi",
+    "Uchi"
+  ],
+  "focus": "Tor okrężny",
+  "levels": [
+    2
+  ],
+  "aliases": [
+    "Hira-ken mawashi-uchi",
+    "Hira ken mawashi uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Okrężne uderzenie płaską pięścią.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Prowadź płaską pięść po łuku, utrzymując ustawienie palców. Mawashi opisuje tor, a hira-ken — powierzchnię kontaktu."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Obserwuj ustawienie palców podczas całego łuku. Obrót tułowia nie powinien zmieniać kształtu płaskiej pięści."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Hira",
+        "polish": "płaski"
+      },
+      {
+        "term": "ken",
+        "polish": "pięść"
+      },
+      {
+        "term": "mawashi",
+        "polish": "obrót, ruch okrężny"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

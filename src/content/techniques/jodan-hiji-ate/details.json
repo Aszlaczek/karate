@@ -1,0 +1,22 @@
+{
+  "media": [
+    {
+      "source": "hiji-ate-jodan-f1.mp4",
+      "label": "Jōdan hiji-ate — widok z przodu 1",
+      "alt": "Jōdan hiji-ate: widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "hiji-ate-jodan-s1.mp4",
+      "label": "Jōdan hiji-ate — widok z boku 1",
+      "alt": "Jōdan hiji-ate: widok z boku 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "hiji-ate-jodan-s2.mp4",
+      "label": "Jōdan hiji-ate — widok z boku 2",
+      "alt": "Jōdan hiji-ate: widok z boku 2. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

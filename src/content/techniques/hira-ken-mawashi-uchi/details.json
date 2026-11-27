@@ -1,0 +1,44 @@
+{
+  "media": [
+    {
+      "source": "hira-ken-mawashi-f1.mp4",
+      "label": "Hira-ken mawashi-uchi — widok z przodu 1",
+      "alt": "Hira-ken mawashi-uchi: widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "hira-ken-mawashi-f2.mp4",
+      "label": "Hira-ken mawashi-uchi — widok z przodu 2",
+      "alt": "Hira-ken mawashi-uchi: widok z przodu 2. Nagranie z dojo."
+    },
+    {
+      "source": "hira-ken-mawashi-uchi-f1b.mp4",
+      "label": "Hira-ken mawashi-uchi (uchi) — ujęcie",
+      "alt": "Hira-ken mawashi-uchi (uchi): ujęcie. Nagranie z dojo."
+    },
+    {
+      "source": "hiraken-mawashi-uchi-f2b.mp4",
+      "label": "Hira-ken mawashi-uchi (uchi) — ujęcie",
+      "alt": "Hira-ken mawashi-uchi (uchi): ujęcie. Nagranie z dojo."
+    },
+    {
+      "source": "hira-ken-mawashi-s1.mp4",
+      "label": "Hira-ken mawashi-uchi — widok z boku 1",
+      "alt": "Hira-ken mawashi-uchi: widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "hira-ken-mawashi-s2.mp4",
+      "label": "Hira-ken mawashi-uchi — widok z boku 2",
+      "alt": "Hira-ken mawashi-uchi: widok z boku 2. Nagranie z dojo."
+    },
+    {
+      "source": "hira-ken-mawashi-uchi-s1b.mp4",
+      "label": "Hira-ken mawashi-uchi (uchi) — ujęcie",
+      "alt": "Hira-ken mawashi-uchi (uchi): ujęcie. Nagranie z dojo."
+    },
+    {
+      "source": "hira-ken-mawashi-uchi-s2b.mp4",
+      "label": "Hira-ken mawashi-uchi (uchi) — ujęcie",
+      "alt": "Hira-ken mawashi-uchi (uchi): ujęcie. Nagranie z dojo."
+    }
+  ]
+}

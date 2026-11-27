@@ -1,0 +1,22 @@
+{
+  "media": [
+    {
+      "source": "shuto-mae-gedan-barai-f2.mp4",
+      "label": "Shūto mae gedan-barai — widok z przodu 2",
+      "alt": "Shūto mae gedan-barai: widok z przodu 2. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "shuto-mae-gedan-barai-s1.mp4",
+      "label": "Shūto mae gedan-barai — widok z boku 1",
+      "alt": "Shūto mae gedan-barai: widok z boku 1. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "shuto-mae-gedan-barai-s2.mp4",
+      "label": "Shūto mae gedan-barai — widok z boku 2",
+      "alt": "Shūto mae gedan-barai: widok z boku 2. Nagranie z dojo.",
+      "zone": "gedan"
+    }
+  ]
+}

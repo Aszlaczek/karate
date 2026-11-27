@@ -1,0 +1,53 @@
+{
+  "id": "seiken-oi-tsuki",
+  "name": "Seiken oi-tsuki",
+  "japanese": "正拳追い突き",
+  "reading": "sejken oj-cuki",
+  "category": "Uderzenia",
+  "description": "Proste uderzenie pięścią wykonywane ręką po stronie nogi wykrocznej (chūdan, jōdan, gedan). Biodro napędza ruch, druga pięść wraca do hikite.",
+  "tags": [
+    "Seiken",
+    "Oi-tsuki",
+    "Chūdan",
+    "Jōdan",
+    "Gedan"
+  ],
+  "focus": "Linia bark–pięść",
+  "levels": [
+    9,
+    10
+  ],
+  "aliases": [
+    "Seiken oi-tsuki",
+    "Seiken chudan oi-zuki",
+    "Seiken chūdan oi-zuki"
+  ],
+  "infographic": "zuki",
+  "knowledge": {
+    "translation": "Proste uderzenie przednią powierzchnią pięści po stronie nogi wykrocznej.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Zgraj zakończenie kroku z dojściem pięści do celu. Ręka uderzająca odpowiada nodze z przodu; druga cofa się do boku tułowia (hikite)."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Sprawdź, czy po kroku pięść i noga wykroczna są po tej samej stronie. Nie kończ uderzenia dopiero po zatrzymaniu całego ciała."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seiken",
+        "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+      },
+      {
+        "term": "oi",
+        "polish": "podążanie, ściganie; tutaj ręka po stronie nogi wykrocznej"
+      },
+      {
+        "term": "tsuki",
+        "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+      }
+    ]
+  }
+}

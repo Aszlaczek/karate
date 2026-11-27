@@ -1,0 +1,55 @@
+{
+  "id": "mae-geri-chudan",
+  "name": "Mae-geri chūdan chūsoku",
+  "japanese": "前蹴り中段中足",
+  "reading": "mae-geri czudan czusoku",
+  "category": "Kopnięcia",
+  "description": "Kopnięcie na wprost w strefę środkową przodem stopy (chūsoku). Kolano wznosi się, potem następuje wyprost.",
+  "tags": [
+    "Mae-geri",
+    "Chūdan",
+    "Chūsoku"
+  ],
+  "focus": "Kolano i wyprost",
+  "levels": [
+    9
+  ],
+  "aliases": [
+    "Mae-geri chudan",
+    "Mae-geri chūdan chūsoku",
+    "Mae-geri chudan chusoku",
+    "Mae geri chudan chusoku"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Kopnięcie do przodu na poziom środkowy, przednią częścią podeszwy.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Unieś kolano, poprowadź stopę do przodu i cofnij ją po tej samej drodze. Palce odciągnij tak, by powierzchnią kontaktu była część podeszwy pod nimi."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Sprawdź odciągnięcie palców i wyraźne cofnięcie kolana po wyproście. Nie odstawiaj nogi z celu bez kontroli drogi powrotnej."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Mae",
+        "polish": "przód, do przodu"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      },
+      {
+        "term": "chūdan",
+        "polish": "poziom środkowy; chū — środek, dan — poziom"
+      },
+      {
+        "term": "chūsoku",
+        "polish": "przednia część podeszwy pod palcami stopy"
+      }
+    ]
+  }
+}

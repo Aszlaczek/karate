@@ -1,0 +1,44 @@
+{
+  "id": "seishin",
+  "name": "Seishin",
+  "japanese": "精神",
+  "reading": "seishin",
+  "category": "Kata",
+  "description": "Kata wymagane na stopień 3 dan.",
+  "tags": [
+    "Kata",
+    "dan"
+  ],
+  "focus": "Precyzja i kontrola",
+  "levels": [
+    13
+  ],
+  "aliases": [
+    "Seishin"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Duch, umysł.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "W atlasie to nazwa formy przypisanej do programu dan. Znaczenie słowa nie pozwala ustalić jednoznacznej sekwencji ruchów."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Przed nauką ustal z instruktorem, którą formę program określa jako Seishin. Następnie zapisuj jej odcinki i punkty zmiany kierunku."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seishin",
+        "polish": "duch, umysł; sei — istota / duch, shin — duch / bóstwo"
+      }
+    ],
+    "note": "Seishin (精神) znaczy „duch, umysł”. Nazwa sama nie identyfikuje jednoznacznie standardowego kata Kyokushin; wersja z tego programu wymaga potwierdzenia."
+  }
+}

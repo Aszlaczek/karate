@@ -1,0 +1,3721 @@
+{
+  "techniques": [
+    {
+      "id": "seiken-oi-tsuki",
+      "name": "Seiken oi-tsuki",
+      "japanese": "正拳追い突き",
+      "reading": "sejken oj-cuki",
+      "category": "Uderzenia",
+      "description": "Proste uderzenie pięścią wykonywane ręką po stronie nogi wykrocznej (chūdan, jōdan, gedan). Biodro napędza ruch, druga pięść wraca do hikite.",
+      "tags": [
+        "Seiken",
+        "Oi-tsuki",
+        "Chūdan",
+        "Jōdan",
+        "Gedan"
+      ],
+      "focus": "Linia bark–pięść",
+      "levels": [
+        9,
+        10
+      ],
+      "aliases": [
+        "Seiken oi-tsuki",
+        "Seiken chudan oi-zuki",
+        "Seiken chūdan oi-zuki"
+      ],
+      "infographic": "zuki",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-oi-tsuki/poster/seiken-oi-tsuki-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "seiken-morote-tsuki",
+      "name": "Seiken morote-tsuki",
+      "japanese": "正拳諸手突き",
+      "reading": "sejken morote-cuki",
+      "category": "Uderzenia",
+      "description": "Podwójne uderzenie pięściami (obiema rękami jednocześnie) na strefę chūdan, jōdan lub gedan. Wymaga symetrii i stabilnej postawy.",
+      "tags": [
+        "Seiken",
+        "Morote",
+        "Tsuki"
+      ],
+      "focus": "Symetria obu rąk",
+      "levels": [
+        6,
+        10
+      ],
+      "aliases": [
+        "Morote-zuki",
+        "Seiken morote-tsuki"
+      ],
+      "infographic": "zuki",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-morote-tsuki/poster/saiken-morote-tsuki-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "seiken-tsuki",
+      "name": "Seiken tsuki",
+      "japanese": "正拳突き",
+      "reading": "sejken cuki",
+      "category": "Uderzenia",
+      "description": "Podstawowe proste uderzenie przednią powierzchnią pięści na wybranym poziomie (gedan, chūdan, jōdan).",
+      "tags": [
+        "Seiken",
+        "Tsuki"
+      ],
+      "focus": "Prosta linia i napięcie pięści w momencie kontaktu",
+      "levels": [
+        10
+      ],
+      "aliases": [
+        "Seiken-zuki"
+      ],
+      "infographic": "zuki",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-tsuki/poster/seiken-chudan-tsuki-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "seiken-ago-uchi",
+      "name": "Seiken ago-uchi",
+      "japanese": "正拳顎打ち",
+      "reading": "sejken ago-uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie pięścią w żuchwę. Wykonywane krótko, z wyprostem nóg i obrotem biodra.",
+      "tags": [
+        "Seiken",
+        "Ago",
+        "Uchi"
+      ],
+      "focus": "Droga pięści w przód",
+      "levels": [
+        9
+      ],
+      "aliases": [
+        "Seiken ago-uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-ago-uchi/poster/seiken-ago-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "seiken-gyaku-tsuki",
+      "name": "Seiken gyaku-tsuki",
+      "japanese": "正拳逆突き",
+      "reading": "sejken giaku-cuki",
+      "category": "Uderzenia",
+      "description": "Uderzenie pięścią ręką przeciwną do nogi wykrocznej (chūdan, jōdan, gedan). Siła z rotacji bioder i tułowia.",
+      "tags": [
+        "Seiken",
+        "Gyaku-tsuki",
+        "Chūdan",
+        "Jōdan",
+        "Gedan"
+      ],
+      "focus": "Rotacja biodra",
+      "levels": [
+        9
+      ],
+      "aliases": [
+        "Seiken gyaku-tsuki"
+      ],
+      "infographic": "zuki",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-gyaku-tsuki/poster/seiken-gyaku-tsuki-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "seiken-tate-tsuki",
+      "name": "Seiken tate-tsuki",
+      "japanese": "正拳縦突き",
+      "reading": "sejken tate-cuki",
+      "category": "Uderzenia",
+      "description": "Uderzenie pionową pięścią (kłykcie ułożone pionowo) na strefy chūdan, jōdan i gedan. Używane zwykle z bliskiego dystansu.",
+      "tags": [
+        "Seiken",
+        "Tate",
+        "Tsuki"
+      ],
+      "focus": "Pionowe ułożenie pięści",
+      "levels": [
+        6,
+        8
+      ],
+      "aliases": [
+        "Tate-zuki",
+        "Seiken tate-tsuki"
+      ],
+      "infographic": "zuki",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-tate-tsuki/poster/seiken-tate-tsuki-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "seiken-shita-tsuki",
+      "name": "Seiken shita-tsuki",
+      "japanese": "正拳下突き",
+      "reading": "sejken szita-cuki",
+      "category": "Uderzenia",
+      "description": "Uderzenie pięścią skierowane w dół i do przodu, na niski poziom przeciwnika. Wykonywane z lekkim obniżeniem sylwetki.",
+      "tags": [
+        "Seiken",
+        "Shita",
+        "Tsuki"
+      ],
+      "focus": "Obniżenie sylwetki",
+      "levels": [
+        8
+      ],
+      "aliases": [
+        "Seiken shita-tsuki"
+      ],
+      "infographic": "zuki",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-shita-tsuki/poster/seiken-shita-tsuki-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "seiken-jun-tsuki",
+      "name": "Seiken jun-tsuki",
+      "japanese": "正拳順突き",
+      "reading": "sejken dzun-cuki",
+      "category": "Uderzenia",
+      "description": "Uderzenie „zgodną” ręką (ta sama strona co noga wykroczna) w strefy chūdan, jōdan i gedan.",
+      "tags": [
+        "Seiken",
+        "Jun-tsuki",
+        "Chūdan",
+        "Jōdan",
+        "Gedan"
+      ],
+      "focus": "Zgodna praca ręki i nogi",
+      "levels": [
+        8
+      ],
+      "aliases": [
+        "Seiken jun-tsuki"
+      ],
+      "infographic": "zuki",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jun-tsuki/poster/seiken-jun-tsuki-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "tettsui-oroshi-uchi",
+      "name": "Tettsui oroshi-uchi",
+      "japanese": "鉄槌下ろし打ち",
+      "reading": "tecuj orosi-uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie „młotem” (dolna krawędź pięści) z góry w dół. Zamach z wysokości głowy, kontakt na dole ruchu.",
+      "tags": [
+        "Tettsui",
+        "Oroshi",
+        "Uchi"
+      ],
+      "focus": "Tor z góry w dół",
+      "levels": [
+        7
+      ],
+      "aliases": [
+        "Tettsui oroshi-uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-oroshi-uchi/poster/tettsui-oroshi-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "tettsui-komekami-uchi",
+      "name": "Tettsui komekami/ganmen-uchi",
+      "japanese": "鉄槌こめかみ打ち",
+      "reading": "tecuj komekami/ganmen-uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie dolną krawędzią pięści w skroń (komekami/ganmen), po łuku z boku. Zapis na liście: „komi kame uchi”.",
+      "tags": [
+        "Tettsui",
+        "Komekami",
+        "Ganmen",
+        "Uchi"
+      ],
+      "focus": "Łukowy tor z boku",
+      "levels": [
+        7
+      ],
+      "aliases": [
+        "Tettsui komekami-uchi",
+        "Tettsui komi kame uchi",
+        "Tettsui ganmen uchi",
+        "Tettsui gan-men uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-komekami-uchi/poster/tettsui-komi-kame-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "tettsui-hizo-uchi",
+      "name": "Tettsui hizō-uchi",
+      "japanese": "鉄槌脾臓打ち",
+      "reading": "tecuj hidzo-uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie dolną krawędzią pięści w okolicę śledziony (hizō), ruchem bocznym lub skośnym.",
+      "tags": [
+        "Tettsui",
+        "Hizō",
+        "Uchi"
+      ],
+      "focus": "Skośny tor uderzenia",
+      "levels": [
+        7
+      ],
+      "aliases": [
+        "Tettsui hizō-uchi",
+        "Tettsui hizo-uchi",
+        "Tettsui hizo uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-hizo-uchi/poster/tettsui-hizo-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "tettsui-yoko-uchi",
+      "name": "Tettsui yoko-uchi",
+      "japanese": "鉄槌横打ち",
+      "reading": "tecuj joko-uczi",
+      "category": "Uderzenia",
+      "description": "Boczne uderzenie dolną krawędzią pięści (jōdan, chūdan, gedan). Ruch po łuku z zewnątrz do wewnątrz.",
+      "tags": [
+        "Tettsui",
+        "Yoko",
+        "Uchi"
+      ],
+      "focus": "Łuk z zewnątrz do wewnątrz",
+      "levels": [
+        7
+      ],
+      "aliases": [
+        "Tettsui yoko-uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-yoko-uchi/poster/tettsui-mae-yoko-uchi-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "uraken-shomen-uchi",
+      "name": "Uraken shōmen-uchi",
+      "japanese": "裏拳正面打ち",
+      "reading": "uraken szomen-uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie grzbietem pięści na wprost, w twarz. Szybkie, „biczowe” — uderzenie z łokcia i nadgarstka.",
+      "tags": [
+        "Uraken",
+        "Shōmen",
+        "Uchi"
+      ],
+      "focus": "Praca łokcia i nadgarstka",
+      "levels": [
+        6,
+        7,
+        8
+      ],
+      "aliases": [
+        "Uraken",
+        "Uraken shōmen-uchi",
+        "Uraken shomen-uchi",
+        "Uraken shomen uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-shomen-uchi/poster/uraken-shomen-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "uraken-sayu-uchi",
+      "name": "Uraken sayū-uchi",
+      "japanese": "裏拳左右打ち",
+      "reading": "uraken saju-uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie grzbietem pięści w bok (z lewej lub prawej), po krótkim łuku.",
+      "tags": [
+        "Uraken",
+        "Sayū",
+        "Uchi"
+      ],
+      "focus": "Krótki boczny łuk",
+      "levels": [
+        6
+      ],
+      "aliases": [
+        "Uraken sayū-uchi",
+        "Uraken sayu-uchi",
+        "Uraken sayu uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-sayu-uchi/poster/uraken-sayu-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "uraken-hizo-uchi",
+      "name": "Uraken hizō-uchi",
+      "japanese": "裏拳脾臓打ち",
+      "reading": "uraken hidzo-uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie grzbietem pięści w okolicę śledziony (hizō).",
+      "tags": [
+        "Uraken",
+        "Hizō",
+        "Uchi"
+      ],
+      "focus": "Cel: bok korpusu",
+      "levels": [
+        6
+      ],
+      "aliases": [
+        "Uraken hizō-uchi",
+        "Uraken hizo-uchi",
+        "Uraken hizo uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-hizo-uchi/poster/uraken-hizo-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "uraken-oroshi-uchi",
+      "name": "Uraken oroshi-uchi",
+      "japanese": "裏拳下ろし打ち",
+      "reading": "uraken orosi-uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie grzbietem pięści z góry w dół, np. w nos lub czoło.",
+      "tags": [
+        "Uraken",
+        "Oroshi",
+        "Uchi"
+      ],
+      "focus": "Tor z góry w dół",
+      "levels": [
+        6
+      ],
+      "aliases": [
+        "Uraken oroshi-uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-oroshi-uchi/poster/uraken-oroshi-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "uraken-mawashi-uchi",
+      "name": "Uraken mawashi-uchi",
+      "japanese": "裏拳回し打ち",
+      "reading": "uraken mawaszi-uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie grzbietem pięści po okrężnym torze (mawashi). Rotacja tułowia nadaje prędkość.",
+      "tags": [
+        "Uraken",
+        "Mawashi",
+        "Uchi"
+      ],
+      "focus": "Rotacja tułowia",
+      "levels": [
+        6
+      ],
+      "aliases": [
+        "Uraken mawashi-uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-mawashi-uchi/poster/uraken-mawashi-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "nihon-nukite",
+      "name": "Nihon nukite",
+      "japanese": "二本貫手",
+      "reading": "nihon nukite",
+      "category": "Uderzenia",
+      "description": "Dźgnięcie dwoma palcami (wskazującym i środkowym) w oczy — „Me tsuki”. Uderzenie na wprost.",
+      "tags": [
+        "Nukite",
+        "Nihon",
+        "Me tsuki"
+      ],
+      "focus": "Prostota toru i napięcie palców",
+      "levels": [
+        6
+      ],
+      "aliases": [
+        "Nihon nukite",
+        "Nihon nukite (Me tsuki)"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/nihon-nukite/poster/nihon-nukite-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "yonhon-nukite-chudan",
+      "name": "Yonhon nukite chūdan",
+      "japanese": "四本貫手中段",
+      "reading": "jonhon nukite czudan",
+      "category": "Uderzenia",
+      "description": "Dźgnięcie czterema wyprostowanymi palcami w strefę środkową (np. splot słoneczny).",
+      "tags": [
+        "Nukite",
+        "Yonhon",
+        "Chūdan"
+      ],
+      "focus": "Sztywność palców",
+      "levels": [
+        6
+      ],
+      "aliases": [
+        "Yonhon nukite chūdan",
+        "Yonhon nukite chudan"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yonhon-nukite-chudan/poster/yonhon-nukite-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "shotei-uchi",
+      "name": "Shōtei uchi",
+      "japanese": "掌底打ち",
+      "reading": "szotej uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie nasadą dłoni (jōdan, chūdan, gedan). Bezpieczniejsze dla nadgarstka niż pięść, z dużym przeniesieniem siły.",
+      "tags": [
+        "Shōtei",
+        "Uchi"
+      ],
+      "focus": "Nadgarstek ustawiony w osi",
+      "levels": [
+        5
+      ],
+      "aliases": [
+        "Shōtei uchi",
+        "Shotei uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "jodan-hiji-ate",
+      "name": "Jōdan hiji-ate",
+      "japanese": "上段肘当て",
+      "reading": "dzodan hidzi-ate",
+      "category": "Uderzenia",
+      "description": "Uderzenie łokciem na poziom głowy. Krótki dystans, siła z obrotu bioder.",
+      "tags": [
+        "Jōdan",
+        "Hiji-ate",
+        "Łokieć"
+      ],
+      "focus": "Napęd z bioder",
+      "levels": [
+        5
+      ],
+      "aliases": [
+        "Jōdan hiji-ate",
+        "Jodan hiji-ate",
+        "Jodan hiji ate"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-hiji-ate/poster/hiji-ate-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "shuto-sakotsu-uchi",
+      "name": "Shūto sakotsu-uchi",
+      "japanese": "手刀鎖骨打ち",
+      "reading": "szuto sakocu-uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie krawędzią dłoni (shuto) w obojczyk (sakotsu), z góry po skosie.",
+      "tags": [
+        "Shūto",
+        "Sakotsu",
+        "Uchi"
+      ],
+      "focus": "Skośny tor z góry",
+      "levels": [
+        4
+      ],
+      "aliases": [
+        "Shūto sakotsu-uchi",
+        "Shuto sakotsu-uchi",
+        "Shuto sakotsu uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-sakotsu-uchi/poster/shuto-sakotsu-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "shuto-uchi-komi",
+      "name": "Shūto uchi-komi",
+      "japanese": "手刀打ち込み",
+      "reading": "szuto uczi-komi",
+      "category": "Uderzenia",
+      "description": "Wbijające uderzenie krawędzią dłoni, zazwyczaj w szyję lub bark.",
+      "tags": [
+        "Shūto",
+        "Uchi-komi"
+      ],
+      "focus": "Wbicie z przeniesieniem ciężaru",
+      "levels": [
+        4
+      ],
+      "aliases": [
+        "Shuto",
+        "Shūto uchi-komi",
+        "Shuto uchi-komi",
+        "Shuto uchi komi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-uchi-komi/poster/shuto-mae-gedn-barai-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "shuto-ganmen-uchi",
+      "name": "Shūto ganmen-uchi",
+      "japanese": "手刀顔面打ち",
+      "reading": "szuto ganmen-uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie krawędzią dłoni w twarz (ganmen).",
+      "tags": [
+        "Shūto",
+        "Ganmen",
+        "Uchi"
+      ],
+      "focus": "Precyzja celu",
+      "levels": [
+        4
+      ],
+      "aliases": [
+        "Shūto ganmen-uchi",
+        "Shuto ganmen-uchi",
+        "Shuto ganmen uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-ganmen-uchi/poster/shuto-ganmen-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "shuto-hizo-uchi",
+      "name": "Shūto hizō-uchi",
+      "japanese": "手刀脾臓打ち",
+      "reading": "szuto hidzo-uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie krawędzią dłoni w okolicę śledziony (hizō).",
+      "tags": [
+        "Shūto",
+        "Hizō",
+        "Uchi"
+      ],
+      "focus": "Skośny tor uderzenia",
+      "levels": [
+        4
+      ],
+      "aliases": [
+        "Shūto hizō-uchi",
+        "Shuto hizo-uchi",
+        "Shuto hizo uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-hizo-uchi/poster/shuto-hizo-uchi-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "shuto-jodan-uchi-uchi",
+      "name": "Shūto jōdan uchi-uchi",
+      "japanese": "手刀上段内打ち",
+      "reading": "szuto dzodan uczi-uczi",
+      "category": "Uderzenia",
+      "description": "Wewnętrzne uderzenie krawędzią dłoni na poziom głowy (uchi-uchi), wykonywane po łuku od zewnątrz do środka.",
+      "tags": [
+        "Shūto",
+        "Jōdan",
+        "Uchi"
+      ],
+      "focus": "Łuk do wewnątrz",
+      "levels": [
+        4
+      ],
+      "aliases": [
+        "Shūto jōdan uchi-uchi",
+        "Shuto jodan uchi-uchi",
+        "Shuto jodan uchi uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uchi-uchi/poster/shuto-uchi-uchi-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "chudan-hiji-ate",
+      "name": "Chūdan hiji-ate",
+      "japanese": "中段肘当て",
+      "reading": "czudan hidzi-ate",
+      "category": "Uderzenia",
+      "description": "Uderzenie łokciem w strefę środkową.",
+      "tags": [
+        "Chūdan",
+        "Hiji-ate",
+        "Łokieć"
+      ],
+      "focus": "Bliski dystans",
+      "levels": [
+        3
+      ],
+      "aliases": [
+        "Hiji-ate",
+        "Chūdan hiji-ate",
+        "Chudan hiji-ate",
+        "Chudan hiji ate"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/chudan-hiji-ate/poster/hiji-ate-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "chudan-mae-hiji-ate",
+      "name": "Chūdan mae hiji-ate",
+      "japanese": "中段前肘当て",
+      "reading": "czudan mae hidzi-ate",
+      "category": "Uderzenia",
+      "description": "Uderzenie łokciem do przodu w strefę środkową (mae = przód).",
+      "tags": [
+        "Chūdan",
+        "Mae",
+        "Hiji-ate"
+      ],
+      "focus": "Ruch łokcia w osi ciała",
+      "levels": [
+        3
+      ],
+      "aliases": [
+        "Chūdan mae hiji-ate",
+        "Chudan mae hiji-ate",
+        "Chudan mae hiji ate"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/chudan-mae-hiji-ate/poster/mae-hiji-ate-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "age-hiji-ate",
+      "name": "Age hiji-ate",
+      "japanese": "上げ肘当て",
+      "reading": "age hidzi-ate",
+      "category": "Uderzenia",
+      "description": "Uderzenie łokciem od dołu do góry (jōdan, chūdan), np. w podbródek.",
+      "tags": [
+        "Age",
+        "Hiji-ate",
+        "Jōdan",
+        "Chūdan"
+      ],
+      "focus": "Tor od dołu w górę",
+      "levels": [
+        3
+      ],
+      "aliases": [
+        "Age hiji-ate"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/poster/age-hiji-ate-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "ushiro-hiji-ate",
+      "name": "Ushiro hiji-ate",
+      "japanese": "後ろ肘当て",
+      "reading": "usziro hidzi-ate",
+      "category": "Uderzenia",
+      "description": "Uderzenie łokciem do tyłu, w przeciwnika stojącego za plecami.",
+      "tags": [
+        "Ushiro",
+        "Hiji-ate"
+      ],
+      "focus": "Obrót bioder do tyłu",
+      "levels": [
+        3
+      ],
+      "aliases": [
+        "Ushiro hiji-ate"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ushiro-hiji-ate/poster/hiji-ate-ushiro-f2.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "oroshi-hiji-ate",
+      "name": "Oroshi hiji-ate",
+      "japanese": "下ろし肘当て",
+      "reading": "orosi hidzi-ate",
+      "category": "Uderzenia",
+      "description": "Uderzenie łokciem z góry w dół.",
+      "tags": [
+        "Oroshi",
+        "Hiji-ate"
+      ],
+      "focus": "Opadający tor łokcia",
+      "levels": [
+        3
+      ],
+      "aliases": [
+        "Oroshi hiji-ate"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-hiji-ate/poster/hiji-ate-oroshi-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "hira-ken-tsuki",
+      "name": "Hira-ken tsuki",
+      "japanese": "平拳突き",
+      "reading": "hira-ken cuki",
+      "category": "Uderzenia",
+      "description": "Uderzenie „płaską pięścią” (palce zgięte w środkowych stawach) w strefy jōdan i chūdan.",
+      "tags": [
+        "Hira-ken",
+        "Tsuki"
+      ],
+      "focus": "Ułożenie palców",
+      "levels": [
+        2
+      ],
+      "aliases": [
+        "Hira-ken tsuki",
+        "Hira ken tsuki"
+      ],
+      "infographic": "zuki",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-tsuki/poster/hira-ken-tsuki-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "hira-ken-oroshi-uchi",
+      "name": "Hira-ken oroshi-uchi",
+      "japanese": "平拳下ろし打ち",
+      "reading": "hira-ken orosi-uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie płaską pięścią z góry w dół.",
+      "tags": [
+        "Hira-ken",
+        "Oroshi",
+        "Uchi"
+      ],
+      "focus": "Tor z góry w dół",
+      "levels": [
+        2
+      ],
+      "aliases": [
+        "Hira-ken oroshi-uchi",
+        "Hira ken oroshi uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "hira-ken-mawashi-uchi",
+      "name": "Hira-ken mawashi-uchi",
+      "japanese": "平拳回し打ち",
+      "reading": "hira-ken mawaszi-uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie płaską pięścią po okrężnym torze (mawashi).",
+      "tags": [
+        "Hira-ken",
+        "Mawashi",
+        "Uchi"
+      ],
+      "focus": "Tor okrężny",
+      "levels": [
+        2
+      ],
+      "aliases": [
+        "Hira-ken mawashi-uchi",
+        "Hira ken mawashi uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/poster/hira-ken-mawashi-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "haishu",
+      "name": "Haishu",
+      "japanese": "背手",
+      "reading": "hajszu",
+      "category": "Uderzenia",
+      "description": "Uderzenie grzbietem otwartej dłoni (jōdan, chūdan).",
+      "tags": [
+        "Haishu",
+        "Jōdan",
+        "Chūdan"
+      ],
+      "focus": "Krótki, sprężysty ruch nadgarstka",
+      "levels": [
+        2
+      ],
+      "aliases": [
+        "Haishu"
+      ],
+      "infographic": "uchi",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/haishu/poster/haishu-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "age-jodan-tsuki",
+      "name": "Age jōdan tsuki",
+      "japanese": "上げ上段突き",
+      "reading": "age dzodan cuki",
+      "category": "Uderzenia",
+      "description": "Uderzenie pięścią od dołu w górę na poziom głowy (jōdan).",
+      "tags": [
+        "Age",
+        "Jōdan",
+        "Tsuki"
+      ],
+      "focus": "Tor od dołu w górę",
+      "levels": [
+        2
+      ],
+      "aliases": [
+        "Age jōdan tsuki",
+        "Age jodan tsuki"
+      ],
+      "infographic": "zuki",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-jodan-tsuki/poster/age-tsuki-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "koken-uchi",
+      "name": "Kōken uchi",
+      "japanese": "弧拳打ち",
+      "reading": "koken uczi",
+      "category": "Uderzenia",
+      "description": "Uderzenie nadgarstkiem (łukiem dłoni) w strefy jōdan, chūdan i gedan.",
+      "tags": [
+        "Kōken",
+        "Uchi"
+      ],
+      "focus": "Ułożenie nadgarstka",
+      "levels": [
+        2
+      ],
+      "aliases": [
+        "Kōken uchi",
+        "Koken uchi"
+      ],
+      "infographic": "uchi",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "ryuto-ken-tsuki",
+      "name": "Ryūtō-ken tsuki",
+      "japanese": "竜頭拳突き",
+      "reading": "rjuto-ken cuki",
+      "category": "Uderzenia",
+      "description": "Uderzenie „głową smoka” — pięścią z wysuniętym kłykciem kciuka lub palca (jōdan, chūdan).",
+      "tags": [
+        "Ryūtō-ken",
+        "Tsuki"
+      ],
+      "focus": "Punktowy kontakt kłykcia",
+      "levels": [
+        1
+      ],
+      "aliases": [
+        "Ryūtō-ken tsuki",
+        "Ryuto-ken tsuki",
+        "Ryuto ken tsuki"
+      ],
+      "infographic": "zuki",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ryuto-ken-tsuki/poster/ryuto-ken-tsuki-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "naka-yubi-ippon-ken",
+      "name": "Naka-yubi ippon-ken",
+      "japanese": "中指一本拳",
+      "reading": "naka-jubi ippon-ken",
+      "category": "Uderzenia",
+      "description": "Uderzenie pięścią z wysuniętym środkowym palcem (jōdan, chūdan). Skupia siłę w jednym punkcie.",
+      "tags": [
+        "Naka-yubi",
+        "Ippon-ken"
+      ],
+      "focus": "Punktowy kontakt",
+      "levels": [
+        1
+      ],
+      "aliases": [
+        "Naka-yubi ippon-ken",
+        "Naka Yubi ippon ken"
+      ],
+      "infographic": "zuki",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/naka-yubi-ippon-ken/poster/naka-yubi-ippon-ken-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "oya-yubi-ippon-ken",
+      "name": "Oya-yubi ippon-ken",
+      "japanese": "親指一本拳",
+      "reading": "oja-jubi ippon-ken",
+      "category": "Uderzenia",
+      "description": "Uderzenie pięścią z wysuniętym kciukiem (jōdan, chūdan).",
+      "tags": [
+        "Oya-yubi",
+        "Ippon-ken"
+      ],
+      "focus": "Punktowy kontakt",
+      "levels": [
+        1
+      ],
+      "aliases": [
+        "Oya-yubi ippon-ken",
+        "Oya yubi ippon ken"
+      ],
+      "infographic": "zuki",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oya-yubi-ippon-ken/poster/oya-yubi-ippon-ken-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "seiken-jodan-uke",
+      "name": "Seiken jōdan uke",
+      "japanese": "正拳上段受け",
+      "reading": "sejken dzodan uke",
+      "category": "Bloki",
+      "description": "Blok pięścią chroniący strefę górną (jōdan). Przedramię wznosi się po osi przed twarzą.",
+      "tags": [
+        "Seiken",
+        "Jōdan",
+        "Uke"
+      ],
+      "focus": "Tor przedramienia",
+      "levels": [
+        9,
+        10
+      ],
+      "aliases": [
+        "Jodan-uke",
+        "Seiken jōdan uke",
+        "Seiken jodan uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jodan-uke/poster/seiken-juji-uke-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "seiken-gedan-barai",
+      "name": "Seiken gedan-barai",
+      "japanese": "正拳下段払い",
+      "reading": "sejken gedan-barai",
+      "category": "Bloki",
+      "description": "Zamiatający blok pięścią w strefie dolnej (gedan). Ruch z przeciwnego barku w dół.",
+      "tags": [
+        "Seiken",
+        "Gedan",
+        "Barai"
+      ],
+      "focus": "Pełen zamach i zatrzymanie",
+      "levels": [
+        9,
+        10
+      ],
+      "aliases": [
+        "Gedan-barai",
+        "Seiken gedan-barai",
+        "Seiken gedan barai"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-gedan-barai/poster/seiken-gedan-barai-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "seiken-chudan-uchi-uke",
+      "name": "Seiken chūdan uchi-uke",
+      "japanese": "正拳中段内受け",
+      "reading": "sejken czudan uczi-uke",
+      "category": "Bloki",
+      "description": "Blok od wewnątrz na zewnątrz w strefie środkowej, wykonywany przedramieniem.",
+      "tags": [
+        "Seiken",
+        "Chūdan",
+        "Uchi-uke"
+      ],
+      "focus": "Pozycja łokcia",
+      "levels": [
+        7,
+        9
+      ],
+      "aliases": [
+        "Uchi-uke",
+        "Seiken chūdan uchi-uke",
+        "Seiken chudan uchi-uke",
+        "Seiken chudan uchi uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-uchi-uke/poster/seiken-morote-uchi-uke-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "seiken-chudan-soto-uke",
+      "name": "Seiken chūdan soto-uke",
+      "japanese": "正拳中段外受け",
+      "reading": "sejken czudan soto-uke",
+      "category": "Bloki",
+      "description": "Blok od zewnątrz do wewnątrz w strefie środkowej, wykonywany przedramieniem.",
+      "tags": [
+        "Seiken",
+        "Chūdan",
+        "Soto-uke"
+      ],
+      "focus": "Tor zewnętrzny",
+      "levels": [
+        8,
+        9
+      ],
+      "aliases": [
+        "Soto-uke",
+        "Seiken chūdan soto-uke",
+        "Seiken chudan soto-uke",
+        "Seiken chudan soto uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-soto-uke/poster/seiken-soto-uke-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "morote-chudan-uchi-uke",
+      "name": "Morote chūdan uchi-uke",
+      "japanese": "諸手中段内受け",
+      "reading": "morote czudan uczi-uke",
+      "category": "Bloki",
+      "description": "Wzmocniony blok środkowy: jedna ręka blokuje, druga podpiera od wewnątrz.",
+      "tags": [
+        "Morote",
+        "Chūdan",
+        "Uchi-uke"
+      ],
+      "focus": "Podparcie ręką pomocniczą",
+      "levels": [
+        8
+      ],
+      "aliases": [
+        "Morote chūdan uchi-uke",
+        "Morote chudan uchi-uke",
+        "Morote chudan uchi uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "morote-uchi-uke-gedan-barai",
+      "name": "Morote uchi-uke, gedan-barai",
+      "japanese": "諸手内受け下段払い",
+      "reading": "morote uczi-uke, gedan-barai",
+      "category": "Bloki",
+      "description": "Zestaw: wzmocniony blok wewnętrzny i zamiatanie w strefie dolnej. Zapis na liście może oznaczać dwa osobne bloki.",
+      "tags": [
+        "Morote",
+        "Uchi-uke",
+        "Gedan-barai"
+      ],
+      "focus": "Płynne przejście",
+      "levels": [
+        8
+      ],
+      "aliases": [
+        "Morote uchi-uke, gedan-barai",
+        "Morote uchi uke gedan barai"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/morote-uchi-uke-gedan-barai/poster/seiken-morote-uchi-uke-gedan-barai-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "kake-wake-uke",
+      "name": "Kake-wake uke / Morote gedan barai",
+      "japanese": "掛け分け受け",
+      "reading": "kake-wake uke",
+      "category": "Bloki",
+      "description": "Blok rozdzielający: skrzyżowane przedramiona rozchodzą się na boki, odpychając atak.",
+      "tags": [
+        "Kake-wake",
+        "Uke"
+      ],
+      "focus": "Moment rozdzielenia",
+      "levels": [
+        8
+      ],
+      "aliases": [
+        "Kake-wake uke",
+        "Kake wake uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kake-wake-uke/poster/kake-wake-uke-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "seiken-mawashi-gedan-barai",
+      "name": "Seiken mawashi gedan-barai",
+      "japanese": "正拳回し下段払い",
+      "reading": "sejken mawaszi gedan-barai",
+      "category": "Bloki",
+      "description": "Okrężne zamiatanie pięścią w strefie dolnej (mawashi).",
+      "tags": [
+        "Seiken",
+        "Mawashi",
+        "Gedan-barai"
+      ],
+      "focus": "Tor okrężny",
+      "levels": [
+        7
+      ],
+      "aliases": [
+        "Seiken mawashi gedan-barai",
+        "Seiken mawashi gedan barai"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-mawashi-gedan-barai/poster/seiken-mawashi-gedan-barai-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "shuto-mawashi-uke",
+      "name": "Shūto mawashi-uke",
+      "japanese": "手刀回し受け",
+      "reading": "szuto mawaszi-uke",
+      "category": "Bloki",
+      "description": "Okrężny blok krawędzią dłoni, wykonywany z zamachem.",
+      "tags": [
+        "Shūto",
+        "Mawashi",
+        "Uke"
+      ],
+      "focus": "Łuk rąk",
+      "levels": [
+        4,
+        5,
+        7
+      ],
+      "aliases": [
+        "Shūto mawashi-uke",
+        "Shuto mawashi-uke",
+        "Shuto mawashi uke",
+        "Shuto mawashi uke (mae)"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-mawashi-uke/poster/shuto-mawashi-uke-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "seiken-juji-uke",
+      "name": "Seiken jūji-uke",
+      "japanese": "正拳十字受け",
+      "reading": "sejken dzudzi-uke",
+      "category": "Bloki",
+      "description": "Blok skrzyżowanymi przedramionami w strefie jōdan lub gedan.",
+      "tags": [
+        "Seiken",
+        "Jūji",
+        "Uke"
+      ],
+      "focus": "Moment skrzyżowania",
+      "levels": [
+        6
+      ],
+      "aliases": [
+        "Seiken jūji-uke",
+        "Seiken juji-uke",
+        "Seiken juji uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-juji-uke/poster/seiken-juji-uke-gedan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "shotei-uke",
+      "name": "Shōtei uke",
+      "japanese": "掌底受け",
+      "reading": "szotej uke",
+      "category": "Bloki",
+      "description": "Blok nasadą dłoni w strefach jōdan, chūdan i gedan.",
+      "tags": [
+        "Shōtei",
+        "Uke"
+      ],
+      "focus": "Ułożenie nadgarstka",
+      "levels": [
+        5
+      ],
+      "aliases": [
+        "Shōtei uke",
+        "Shotei uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/poster/shotei-uke-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "shuto-jodan-uke",
+      "name": "Shūto jōdan uke",
+      "japanese": "手刀上段受け",
+      "reading": "szuto dzodan uke",
+      "category": "Bloki",
+      "description": "Blok krawędzią dłoni w strefie górnej.",
+      "tags": [
+        "Shūto",
+        "Jōdan",
+        "Uke"
+      ],
+      "focus": "Przedramię w osi",
+      "levels": [
+        4
+      ],
+      "aliases": [
+        "Shūto jōdan uke",
+        "Shuto jodan uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uke/poster/shuto-jodan-uke-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "shuto-chudan-soto-uke",
+      "name": "Shūto chūdan soto-uke",
+      "japanese": "手刀中段外受け",
+      "reading": "szuto czudan soto-uke",
+      "category": "Bloki",
+      "description": "Blok zewnętrzny krawędzią dłoni w strefie środkowej.",
+      "tags": [
+        "Shūto",
+        "Chūdan",
+        "Soto-uke"
+      ],
+      "focus": "Przesunięcie ciężaru",
+      "levels": [
+        4
+      ],
+      "aliases": [
+        "Shūto chūdan soto-uke",
+        "Shuto chudan soto-uke",
+        "Shuto chudan soto uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-soto-uke/poster/shuto-chudan-soto-uke-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "shuto-chudan-uchi-uke",
+      "name": "Shūto chūdan uchi-uke",
+      "japanese": "手刀中段内受け",
+      "reading": "szuto czudan uczi-uke",
+      "category": "Bloki",
+      "description": "Blok wewnętrzny krawędzią dłoni w strefie środkowej.",
+      "tags": [
+        "Shūto",
+        "Chūdan",
+        "Uchi-uke"
+      ],
+      "focus": "Wewnętrzny tor",
+      "levels": [
+        4
+      ],
+      "aliases": [
+        "Shūto chūdan uchi-uke",
+        "Shuto chudan uchi-uke",
+        "Shuto chudan uchi uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-uchi-uke/poster/shuto-uchi-uke-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "shuto-mae-gedan-barai",
+      "name": "Shūto mae gedan-barai",
+      "japanese": "手刀前下段払い",
+      "reading": "szuto mae gedan-barai",
+      "category": "Bloki",
+      "description": "Zamiatanie krawędzią dłoni przed ciałem w strefie dolnej.",
+      "tags": [
+        "Shūto",
+        "Mae",
+        "Gedan-barai"
+      ],
+      "focus": "Tor przed ciałem",
+      "levels": [
+        4
+      ],
+      "aliases": [
+        "Shūto mae gedan-barai",
+        "Shuto mae gedan-barai",
+        "Shuto mae gedan barai"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-mae-gedan-barai/poster/shuto-mae-gedan-barai-f2.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "shuto-kake-jodan-uke",
+      "name": "Shūto kake jōdan uke",
+      "japanese": "手刀掛け上段受け",
+      "reading": "szuto kake dzodan uke",
+      "category": "Bloki",
+      "description": "Blok krawędzią dłoni w strefie górnej.",
+      "tags": [
+        "Shūto",
+        "Kake",
+        "Jōdan"
+      ],
+      "focus": "Chwyt hakowy",
+      "levels": [
+        4
+      ],
+      "aliases": [
+        "Shūto kake jōdan uke",
+        "Shuto kake jodan uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-kake-jodan-uke/poster/shuto-juji-uke-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "shuto-juji-uke",
+      "name": "Shūto jūji-uke",
+      "japanese": "手刀十字受け",
+      "reading": "szuto dzudzi-uke",
+      "category": "Bloki",
+      "description": "Blok skrzyżowanymi krawędziami dłoni (jōdan, gedan).",
+      "tags": [
+        "Shūto",
+        "Jūji",
+        "Uke"
+      ],
+      "focus": "Moment skrzyżowania",
+      "levels": [
+        3
+      ],
+      "aliases": [
+        "Shūto jūji-uke",
+        "Shuto juji-uke",
+        "Shuto juji uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-juji-uke/poster/shuto-juji-uke-gedan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "koken-uke",
+      "name": "Kōken uke",
+      "japanese": "弧拳受け",
+      "reading": "koken uke",
+      "category": "Bloki",
+      "description": "Blok nadgarstkiem (łukiem dłoni) w strefach jōdan, chūdan i gedan.",
+      "tags": [
+        "Kōken",
+        "Uke"
+      ],
+      "focus": "Ułożenie nadgarstka",
+      "levels": [
+        2
+      ],
+      "aliases": [
+        "Kōken uke",
+        "Koken uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/koken-uke/poster/koken-uke-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "morote-kake-uke",
+      "name": "Morote kake-uke",
+      "japanese": "諸手掛け受け",
+      "reading": "morote kake-uke",
+      "category": "Bloki",
+      "description": "Wzmocniony blok hakowy obiema rękami (jōdan, chūdan).",
+      "tags": [
+        "Morote",
+        "Kake",
+        "Uke"
+      ],
+      "focus": "Współpraca obu rąk",
+      "levels": [
+        1
+      ],
+      "aliases": [
+        "Morote kake-uke",
+        "Morote Kake uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/morote-kake-uke/poster/morote-kake-uke-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "chudan-haito-uchi-uke",
+      "name": "Chūdan haitō uchi-uke",
+      "japanese": "中段背刀内受け",
+      "reading": "czudan hajto uczi-uke",
+      "category": "Bloki",
+      "description": "Blok wewnętrzny krawędzią dłoni od strony kciuka (haitō) w strefie środkowej.",
+      "tags": [
+        "Chūdan",
+        "Haitō",
+        "Uchi-uke"
+      ],
+      "focus": "Ułożenie dłoni",
+      "levels": [
+        1
+      ],
+      "aliases": [
+        "Chūdan haitō uchi-uke",
+        "Chudan haito uchi-uke",
+        "Chudan haito uchi uke"
+      ],
+      "infographic": "uke",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/chudan-haito-uchi-uke/poster/haito-uchi-uke-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "hiza-geri",
+      "name": "Hiza-geri",
+      "japanese": "膝蹴り",
+      "reading": "hidza-geri",
+      "category": "Kopnięcia",
+      "description": "Kopnięcie kolanem, zwykle w korpus lub głowę z krótkiego dystansu.",
+      "tags": [
+        "Hiza",
+        "Geri"
+      ],
+      "focus": "Przyciągnięcie przeciwnika",
+      "levels": [
+        10
+      ],
+      "aliases": [
+        "Hiza-geri",
+        "Hiza geri"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hiza-geri/poster/hiza-geri-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "kin-geri",
+      "name": "Kin-geri",
+      "japanese": "金的蹴り",
+      "reading": "kin-geri",
+      "category": "Kopnięcia",
+      "description": "Kopnięcie w krocze, wykonywane podbiciem lub piszczelą.",
+      "tags": [
+        "Kin",
+        "Geri"
+      ],
+      "focus": "Szybki, krótki ruch",
+      "levels": [
+        10
+      ],
+      "aliases": [
+        "Kin-geri",
+        "Kin geri"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kin-geri/poster/kin-geri-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "mae-geri-chudan",
+      "name": "Mae-geri chūdan chūsoku",
+      "japanese": "前蹴り中段中足",
+      "reading": "mae-geri czudan czusoku",
+      "category": "Kopnięcia",
+      "description": "Kopnięcie na wprost w strefę środkową przodem stopy (chūsoku). Kolano wznosi się, potem następuje wyprost.",
+      "tags": [
+        "Mae-geri",
+        "Chūdan",
+        "Chūsoku"
+      ],
+      "focus": "Kolano i wyprost",
+      "levels": [
+        9
+      ],
+      "aliases": [
+        "Mae-geri chudan",
+        "Mae-geri chūdan chūsoku",
+        "Mae-geri chudan chusoku",
+        "Mae geri chudan chusoku"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/poster/mae-geri-kakato-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "mae-geri-jodan",
+      "name": "Mae-geri jōdan",
+      "japanese": "前蹴り上段",
+      "reading": "mae-geri dzodan",
+      "category": "Kopnięcia",
+      "description": "Kopnięcie na wprost na wysokość głowy.",
+      "tags": [
+        "Mae-geri",
+        "Jōdan"
+      ],
+      "focus": "Elastyczność bioder",
+      "levels": [
+        8
+      ],
+      "aliases": [
+        "Mae-geri jōdan",
+        "Mae-geri jodan",
+        "Mae geri jodan"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/poster/mae-geri-chusoku-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "mae-chusoku-kaage",
+      "name": "Mae chūsoku kaage",
+      "japanese": "前中足蹴上げ",
+      "reading": "mae czusoku keage",
+      "category": "Kopnięcia",
+      "description": "Wznoszące kopnięcie do przodu przodem stopy. [Na liście „kaage” — standardowo: keage.]",
+      "tags": [
+        "Mae",
+        "Chūsoku",
+        "Keage"
+      ],
+      "focus": "Wysokość wzniosu",
+      "levels": [
+        7
+      ],
+      "aliases": [
+        "Mae chūsoku kaage",
+        "Mae chusoku kaage"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-chusoku-kaage/poster/mae-kaage-chusoku-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "teisoku-mawashi-soto-keage",
+      "name": "Teisoku mawashi soto-keage",
+      "japanese": "底足回し外蹴上げ",
+      "reading": "tejsoku mawaszi soto-keage",
+      "category": "Kopnięcia",
+      "description": "Okrężne kopnięcie wznoszące podeszwą stopy, wykonywane z zewnątrz do wewnątrz.",
+      "tags": [
+        "Teisoku",
+        "Mawashi",
+        "Soto",
+        "Keage"
+      ],
+      "focus": "Tor okrężny",
+      "levels": [
+        7
+      ],
+      "aliases": [
+        "Teisoku mawashi soto-keage",
+        "Teisoku mawashi soto keage"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/teisoku-mawashi-soto-keage/poster/mawashi-soto-kaage-teisoku-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "heisoku-mawashi-uchi-keage",
+      "name": "Heisoku mawashi uchi-keage",
+      "japanese": "閉足回し内蹴上げ",
+      "reading": "hejsoku mawaszi uczi-keage",
+      "category": "Kopnięcia",
+      "description": "Okrężne kopnięcie wznoszące od wewnątrz, z krawędzi stopy (heisoku).",
+      "tags": [
+        "Heisoku",
+        "Mawashi",
+        "Uchi",
+        "Keage"
+      ],
+      "focus": "Tor od wewnątrz",
+      "levels": [
+        7
+      ],
+      "aliases": [
+        "Heisoku mawashi uchi-keage",
+        "Heisoku mawashi uchi keage"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/heisoku-mawashi-uchi-keage/poster/mawashi-uchi-keage-heisoku-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "yoko-keage",
+      "name": "Yoko keage",
+      "japanese": "横蹴上げ",
+      "reading": "joko keage",
+      "category": "Kopnięcia",
+      "description": "Boczne kopnięcie wznoszące, wykonywane krawędzią stopy.",
+      "tags": [
+        "Yoko",
+        "Keage"
+      ],
+      "focus": "Linia biodro–stopa",
+      "levels": [
+        7
+      ],
+      "aliases": [
+        "Yoko keage"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoko-keage/poster/yoko-keage-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "kansetsu-geri",
+      "name": "Kansetsu-geri",
+      "japanese": "関節蹴り",
+      "reading": "kansecu-geri",
+      "category": "Kopnięcia",
+      "description": "Kopnięcie w staw (zwykle kolano) krawędzią stopy.",
+      "tags": [
+        "Kansetsu",
+        "Geri"
+      ],
+      "focus": "Kontrola dystansu",
+      "levels": [
+        5,
+        6
+      ],
+      "aliases": [
+        "Kansetsu-geri",
+        "Kansetsu geri"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kansetsu-geri/poster/kansetsu-geri-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "yoko-geri-chudan",
+      "name": "Yoko-geri chūdan",
+      "japanese": "横蹴り中段",
+      "reading": "joko-geri czudan",
+      "category": "Kopnięcia",
+      "description": "Boczne kopnięcie w strefę środkową. Tułów odchylony, biodro w osi ataku.",
+      "tags": [
+        "Yoko-geri",
+        "Chūdan"
+      ],
+      "focus": "Odchylenie tułowia i oś bioder",
+      "levels": [
+        6,
+        7,
+        8
+      ],
+      "aliases": [
+        "Yoko-geri",
+        "Yoko-geri chūdan",
+        "Yoko-geri chudan",
+        "Yoko geri chudan"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoko-geri-chudan/poster/yoko-geri-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "mawashi-geri-gedan-haisoku",
+      "name": "Mawashi-geri gedan (haisoku)",
+      "japanese": "回し蹴り下段",
+      "reading": "mawaszi-geri gedan (hajsoku)",
+      "category": "Kopnięcia",
+      "description": "Okrężne kopnięcie w strefie dolnej (np. w udo) podbiciem (haisoku).",
+      "tags": [
+        "Mawashi-geri",
+        "Gedan",
+        "Haisoku"
+      ],
+      "focus": "Rotacja biodra i podbicie",
+      "levels": [
+        6
+      ],
+      "aliases": [
+        "Mawashi-geri gedan (haisoku)",
+        "Mawashi geri gedan (haisoku)",
+        "Mawashi gedan (haisoku)"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/poster/mawashi-geri-haisoku-gedan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "mawashi-geri-chudan-chusoku",
+      "name": "Mawashi-geri chūdan (chūsoku)",
+      "japanese": "回し蹴り中段",
+      "reading": "mawaszi-geri czudan",
+      "category": "Kopnięcia",
+      "description": "Okrężne kopnięcie w strefę środkową przodem podeszwy (chūsoku).",
+      "tags": [
+        "Mawashi-geri",
+        "Chūdan",
+        "Chūsoku"
+      ],
+      "focus": "Rotacja biodra",
+      "levels": [
+        5,
+        8
+      ],
+      "aliases": [
+        "Mawashi-geri chūdan (chūsoku)",
+        "Mawashi-geri chudan (chusoku)",
+        "Mawashi geri chudan (chusoku)"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku/poster/mawashi-geri-chusoku-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "mawashi-geri-chudan-haisoku",
+      "name": "Mawashi-geri chūdan (haisoku)",
+      "japanese": "回し蹴り中段",
+      "reading": "mawaszi-geri czudan",
+      "category": "Kopnięcia",
+      "description": "Okrężne kopnięcie w strefę środkową podbiciem (haisoku).",
+      "tags": [
+        "Mawashi-geri",
+        "Chūdan",
+        "Haisoku"
+      ],
+      "focus": "Rotacja biodra",
+      "levels": [
+        5,
+        8
+      ],
+      "aliases": [
+        "Mawashi-geri chūdan (haisoku)",
+        "Mawashi-geri chudan (haisoku)",
+        "Mawashi geri chudan (haisoku)"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-haisoku/poster/mawashi-geri-haisoku-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "ushiro-geri-chudan",
+      "name": "Ushiro-geri chūdan",
+      "japanese": "後ろ蹴り中段",
+      "reading": "uszyro-geri czudan",
+      "category": "Kopnięcia",
+      "description": "Kopnięcie do tyłu w strefę środkową. Wzrok przez ramię na cel, noga wypychana piętą.",
+      "tags": [
+        "Ushiro-geri",
+        "Chūdan"
+      ],
+      "focus": "Kontrola celu przez ramię",
+      "levels": [
+        5,
+        7
+      ],
+      "aliases": [
+        "Ushiro-geri",
+        "Ushiro-geri chūdan",
+        "Ushiro-geri chudan",
+        "Ushiro geri (chudan)"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ushiro-geri-chudan/poster/ushiro-geri-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "yoko-geri-jodan",
+      "name": "Yoko-geri jōdan",
+      "japanese": "横蹴り上段",
+      "reading": "joko-geri dzodan",
+      "category": "Kopnięcia",
+      "description": "Boczne kopnięcie na wysokość głowy.",
+      "tags": [
+        "Yoko-geri",
+        "Jōdan"
+      ],
+      "focus": "Elastyczność bioder",
+      "levels": [
+        4
+      ],
+      "aliases": [
+        "Yoko-geri jōdan",
+        "Yoko-geri jodan",
+        "Yoko geri jodan"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoko-geri-jodan/poster/yoko-geri-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "mawashi-geri-jodan-chusoku",
+      "name": "Mawashi-geri jōdan (chūsoku)",
+      "japanese": "回し蹴り上段",
+      "reading": "mawaszi-geri dzodan",
+      "category": "Kopnięcia",
+      "description": "Okrężne kopnięcie na wysokość głowy przodem podeszwy (chūsoku).",
+      "tags": [
+        "Mawashi-geri",
+        "Jōdan",
+        "Chūsoku"
+      ],
+      "focus": "Rotacja biodra i wysokość",
+      "levels": [
+        4,
+        6
+      ],
+      "aliases": [
+        "Mawashi-geri jōdan (chūsoku)",
+        "Mawashi-geri jodan (chusoku)",
+        "Mawashi geri jodan (chusoku)"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku/poster/mawashi-geri-chusoku-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "mawashi-geri-jodan-haisoku",
+      "name": "Mawashi-geri jōdan (haisoku)",
+      "japanese": "回し蹴り上段",
+      "reading": "mawaszi-geri dzodan",
+      "category": "Kopnięcia",
+      "description": "Okrężne kopnięcie na wysokość głowy podbiciem (haisoku).",
+      "tags": [
+        "Mawashi-geri",
+        "Jōdan",
+        "Haisoku"
+      ],
+      "focus": "Rotacja biodra i wysokość",
+      "levels": [
+        4,
+        6
+      ],
+      "aliases": [
+        "Mawashi-geri jōdan (haisoku)",
+        "Mawashi-geri jodan (haisoku)",
+        "Mawashi geri jodan (haisoku)"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-haisoku/poster/mawashi-geri-haisoku-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "ushiro-geri-jodan",
+      "name": "Ushiro-geri jōdan",
+      "japanese": "後ろ蹴り上段",
+      "reading": "uszyro-geri dzodan",
+      "category": "Kopnięcia",
+      "description": "Kopnięcie do tyłu na wysokość głowy.",
+      "tags": [
+        "Ushiro-geri",
+        "Jōdan"
+      ],
+      "focus": "Równowaga i kontrola celu",
+      "levels": [
+        4
+      ],
+      "aliases": [
+        "Ushiro-geri jōdan",
+        "Ushiro-geri jodan",
+        "Ushiro geri jodan"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ushiro-geri-jodan/poster/ushiro-geri-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "tobi-nidan-geri",
+      "name": "Tobi nidan-geri",
+      "japanese": "飛び二段蹴り",
+      "reading": "tobi nidan-geri",
+      "category": "Kopnięcia",
+      "description": "Skoczne kopnięcie dwustopniowe (dwa kopnięcia w skoku).",
+      "tags": [
+        "Tobi",
+        "Nidan",
+        "Geri"
+      ],
+      "focus": "Wyskok i drugie kopnięcie",
+      "levels": [
+        2
+      ],
+      "aliases": [
+        "Tobi nidan-geri",
+        "Tobi nidan geri"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tobi-nidan-geri/poster/tobi-nidan-geri-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "mae-tobi-geri",
+      "name": "Mae tobi-geri",
+      "japanese": "前飛び蹴り",
+      "reading": "mae tobi-geri",
+      "category": "Kopnięcia",
+      "description": "Skoczne kopnięcie do przodu, wykonywane trzema metodami.",
+      "tags": [
+        "Mae",
+        "Tobi",
+        "Geri"
+      ],
+      "focus": "Siła wyskoku",
+      "levels": [
+        2,
+        4
+      ],
+      "aliases": [
+        "Tobi-geri",
+        "Mae tobi-geri",
+        "Mae tobi geri",
+        "Mae tobi geri (3 metody)"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-tobi-geri/poster/mae-tobi-geri-all-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "jodan-uchi-haisoku-geri",
+      "name": "Jōdan uchi haisoku-geri",
+      "japanese": "上段内背足蹴り",
+      "reading": "dzodan uczi hajsoku-geri",
+      "category": "Kopnięcia",
+      "description": "Kopnięcie wewnętrzną krawędzią podbicia w strefę głowy, po łuku do wewnątrz.",
+      "tags": [
+        "Jōdan",
+        "Uchi",
+        "Haisoku"
+      ],
+      "focus": "Tor do wewnątrz",
+      "levels": [
+        1
+      ],
+      "aliases": [
+        "Jōdan uchi haisoku-geri",
+        "Jodan uchi haisoku-geri",
+        "Jodan uchi haisoku geri"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-uchi-haisoku-geri/poster/uchi-mawashi-geri-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "oroshi-uchi-kakato-geri",
+      "name": "Oroshi uchi kakato-geri",
+      "japanese": "下ろし内踵蹴り",
+      "reading": "orosi uczi kakato-geri",
+      "category": "Kopnięcia",
+      "description": "Opadające kopnięcie piętą od wewnątrz.",
+      "tags": [
+        "Oroshi",
+        "Uchi",
+        "Kakato"
+      ],
+      "focus": "Tor z góry w dół",
+      "levels": [
+        1,
+        4
+      ],
+      "aliases": [
+        "Oroshi-kakato-geri",
+        "Oroshi uchi kakato-geri",
+        "Oroshi uchi kakato geri"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-uchi-kakato-geri/poster/oroshi-uchi-geri-kakato-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "oroshi-soto-kakato-geri",
+      "name": "Oroshi soto kakato-geri",
+      "japanese": "下ろし外踵蹴り",
+      "reading": "orosi soto kakato-geri",
+      "category": "Kopnięcia",
+      "description": "Opadające kopnięcie piętą od zewnątrz.",
+      "tags": [
+        "Oroshi",
+        "Soto",
+        "Kakato"
+      ],
+      "focus": "Tor z góry w dół",
+      "levels": [
+        1
+      ],
+      "aliases": [
+        "Oroshi soto kakato-geri",
+        "Oroshi soto kakato geri"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-soto-kakato-geri/poster/oroshi-soto-geri-kakato-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "yoko-tobi-geri",
+      "name": "Yoko tobi-geri",
+      "japanese": "横飛び蹴り",
+      "reading": "joko tobi-geri",
+      "category": "Kopnięcia",
+      "description": "Skoczne kopnięcie boczne.",
+      "tags": [
+        "Yoko",
+        "Tobi",
+        "Geri"
+      ],
+      "focus": "Wyskok i oś bioder",
+      "levels": [
+        1
+      ],
+      "aliases": [
+        "Yoko tobi-geri",
+        "Yoko tobi geri"
+      ],
+      "infographic": "geri",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoko-tobi-geri/poster/tobi-geri-yoko-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "taikyoku-sono-ichi",
+      "name": "Taikyoku sono ichi",
+      "japanese": "太極其の一",
+      "reading": "tajkjoku sono iczi",
+      "category": "Kata",
+      "description": "Pierwsze kata wstępne. Podstawowe kroki, uderzenia i bloki w układzie litery I (linia prosta).",
+      "tags": [
+        "Kata",
+        "Taikyoku"
+      ],
+      "focus": "Rytm, oddech i zanshin",
+      "levels": [
+        9,
+        10
+      ],
+      "aliases": [
+        "Taikyoku sono ichi"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "taikyoku-sono-ni",
+      "name": "Taikyoku sono ni",
+      "japanese": "太極其の二",
+      "reading": "tajkjoku sono ni",
+      "category": "Kata",
+      "description": "Drugie kata wstępne. Ten sam schemat co pierwsze, z uderzeniami na wysokość jōdan.",
+      "tags": [
+        "Kata",
+        "Taikyoku"
+      ],
+      "focus": "Rytm, oddech i zanshin",
+      "levels": [
+        8,
+        9
+      ],
+      "aliases": [
+        "Taikyoku sono ni"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "taikyoku-sono-san",
+      "name": "Taikyoku sono san",
+      "japanese": "太極其の三",
+      "reading": "tajkjoku sono san",
+      "category": "Kata",
+      "description": "Trzecie kata wstępne. Wprowadza bloki i uderzenia na poziom chūdan w układzie I.",
+      "tags": [
+        "Kata",
+        "Taikyoku"
+      ],
+      "focus": "Rytm, oddech i zanshin",
+      "levels": [
+        7,
+        8
+      ],
+      "aliases": [
+        "Taikyoku sono san"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "pinan-sono-ichi",
+      "name": "Pinan sono ichi",
+      "japanese": "平安其の一",
+      "reading": "pinan sono iczi",
+      "category": "Kata",
+      "description": "Pierwsze kata z serii Pinan. Podstawowe przejścia między postawami, bloki i uderzenia.",
+      "tags": [
+        "Kata",
+        "Pinan"
+      ],
+      "focus": "Rytm, oddech i zanshin",
+      "levels": [
+        7
+      ],
+      "aliases": [
+        "Pinan sono ichi"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "pinan-sono-ni",
+      "name": "Pinan sono ni",
+      "japanese": "平安其の二",
+      "reading": "pinan sono ni",
+      "category": "Kata",
+      "description": "Drugie kata Pinan. Więcej kombinacji bloków i kontrataków.",
+      "tags": [
+        "Kata",
+        "Pinan"
+      ],
+      "focus": "Rytm, oddech i zanshin",
+      "levels": [
+        6
+      ],
+      "aliases": [
+        "Pinan sono ni"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "pinan-sono-san",
+      "name": "Pinan sono san",
+      "japanese": "平安其の三",
+      "reading": "pinan sono san",
+      "category": "Kata",
+      "description": "Trzecie kata Pinan. Wymaga postawy moro ashi dachi i pracy bioder.",
+      "tags": [
+        "Kata",
+        "Pinan"
+      ],
+      "focus": "Rytm, oddech i zanshin",
+      "levels": [
+        5
+      ],
+      "aliases": [
+        "Pinan sono san"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "sanchin-no-kata",
+      "name": "Sanchin no kata",
+      "japanese": "三戦の型",
+      "reading": "sanczin no kata",
+      "category": "Kata",
+      "description": "Kata oddechu i napięcia. Wolne ruchy w postawie sanchin dachi, z naciskiem na oddychanie i koncentrację.",
+      "tags": [
+        "Kata",
+        "Sanchin"
+      ],
+      "focus": "Rytm, oddech i zanshin",
+      "levels": [
+        4,
+        5
+      ],
+      "aliases": [
+        "Sanchin no kata"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "pinan-sono-yon",
+      "name": "Pinan sono yon",
+      "japanese": "平安其の四",
+      "reading": "pinan sono jon",
+      "category": "Kata",
+      "description": "Czwarte kata Pinan. Wprowadza kake dachi i techniki łokciowe.",
+      "tags": [
+        "Kata",
+        "Pinan"
+      ],
+      "focus": "Rytm, oddech i zanshin",
+      "levels": [
+        3,
+        4
+      ],
+      "aliases": [
+        "Pinan sono yon"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "pinan-sono-go",
+      "name": "Pinan sono go",
+      "japanese": "平安其の五",
+      "reading": "pinan sono go",
+      "category": "Kata",
+      "description": "Piąte kata Pinan. Najbardziej złożone w serii; zawiera skoki i zmiany kierunku.",
+      "tags": [
+        "Kata",
+        "Pinan"
+      ],
+      "focus": "Rytm, oddech i zanshin",
+      "levels": [
+        2,
+        3
+      ],
+      "aliases": [
+        "Pinan sono go"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "gekisai-dai",
+      "name": "Gekisai dai",
+      "japanese": "撃砕大",
+      "reading": "gekisaj daj",
+      "category": "Kata",
+      "description": "Dynamiczne kombinacje bloków i uderzeń.",
+      "tags": [
+        "Kata",
+        "Gekisai"
+      ],
+      "focus": "Rytm, oddech i zanshin",
+      "levels": [
+        2
+      ],
+      "aliases": [
+        "Gekisai dai"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "yantsu",
+      "name": "Yantsu",
+      "japanese": "安三",
+      "reading": "jancu",
+      "category": "Kata",
+      "description": "Zaawansowane kata łączące techniki obronne i atak w zwartym, równym tempie.",
+      "tags": [
+        "Kata",
+        "Yantsu"
+      ],
+      "focus": "Rytm, oddech i zanshin",
+      "levels": [
+        1,
+        3
+      ],
+      "aliases": [
+        "Yantsu"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "tsuki-no-kata",
+      "name": "Tsuki no kata",
+      "japanese": "突きの型",
+      "reading": "cuki no kata",
+      "category": "Kata",
+      "description": "Kata uderzeń — seria uderzeń pięścią w różnych kierunkach i postawach.",
+      "tags": [
+        "Kata",
+        "Tsuki"
+      ],
+      "focus": "Rytm, oddech i zanshin",
+      "levels": [
+        1,
+        3
+      ],
+      "aliases": [
+        "Tsuki no kata"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "ippon-kumite-1-10-kyu",
+      "name": "Ippon kumite — 1 (10 kyu)",
+      "japanese": "一本組手",
+      "reading": "ippon kumite — 1",
+      "category": "Kumite",
+      "description": "Walka umowna jednokrokowa: 1 układ(y/ów) wymagane na 10 kyu. Atakujący wykonuje jedną technikę, broniący blokuje i kontruje.",
+      "tags": [
+        "Ippon",
+        "Kumite",
+        "10 kyu"
+      ],
+      "focus": "Dystans i timing",
+      "levels": [
+        10
+      ],
+      "aliases": [
+        "Ippon kumite — 1 (10 kyu)",
+        "Ippon kumite  1 (10 kyu)",
+        "Ippon kumite 10 kyu"
+      ],
+      "infographic": "kumite",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-1-10-kyu/poster/ippon-kumite1-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "ippon-kumite-2-9-kyu",
+      "name": "Ippon kumite — 2 (9 kyu)",
+      "japanese": "一本組手",
+      "reading": "ippon kumite — 2",
+      "category": "Kumite",
+      "description": "Walka umowna jednokrokowa: 2 układ(y/ów) wymagane na 9 kyu. Atakujący wykonuje jedną technikę, broniący blokuje i kontruje.",
+      "tags": [
+        "Ippon",
+        "Kumite",
+        "9 kyu"
+      ],
+      "focus": "Dystans i timing",
+      "levels": [
+        9
+      ],
+      "aliases": [
+        "Ippon kumite — 2 (9 kyu)",
+        "Ippon kumite  2 (9 kyu)",
+        "Ippon kumite 9 kyu"
+      ],
+      "infographic": "kumite",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-2-9-kyu/poster/ippon-kumite2-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "ippon-kumite-3-8-kyu",
+      "name": "Ippon kumite — 3 (8 kyu)",
+      "japanese": "一本組手",
+      "reading": "ippon kumite — 3",
+      "category": "Kumite",
+      "description": "Walka umowna jednokrokowa: 3 układ(y/ów) wymagane na 8 kyu. Atakujący wykonuje jedną technikę, broniący blokuje i kontruje.",
+      "tags": [
+        "Ippon",
+        "Kumite",
+        "8 kyu"
+      ],
+      "focus": "Dystans i timing",
+      "levels": [
+        8
+      ],
+      "aliases": [
+        "Ippon kumite — 3 (8 kyu)",
+        "Ippon kumite  3 (8 kyu)",
+        "Ippon kumite 8 kyu"
+      ],
+      "infographic": "kumite",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-3-8-kyu/poster/ippon-kumite3-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "ippon-kumite-4-7-kyu",
+      "name": "Ippon kumite — 4 (7 kyu)",
+      "japanese": "一本組手",
+      "reading": "ippon kumite — 4",
+      "category": "Kumite",
+      "description": "Walka umowna jednokrokowa: 4 układ(y/ów) wymagane na 7 kyu. Atakujący wykonuje jedną technikę, broniący blokuje i kontruje.",
+      "tags": [
+        "Ippon",
+        "Kumite",
+        "7 kyu"
+      ],
+      "focus": "Dystans i timing",
+      "levels": [
+        7
+      ],
+      "aliases": [
+        "Ippon kumite — 4 (7 kyu)",
+        "Ippon kumite  4 (7 kyu)",
+        "Ippon kumite 7 kyu"
+      ],
+      "infographic": "kumite",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-4-7-kyu/poster/ippon-kumite4-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "ippon-kumite-5-6-kyu",
+      "name": "Ippon kumite — 5 (6 kyu)",
+      "japanese": "一本組手",
+      "reading": "ippon kumite — 5",
+      "category": "Kumite",
+      "description": "Walka umowna jednokrokowa: 5 układ(y/ów) wymagane na 6 kyu (sekcja „Atak”). Atakujący wykonuje jedną technikę, broniący blokuje i kontruje.",
+      "tags": [
+        "Ippon",
+        "Kumite",
+        "6 kyu"
+      ],
+      "focus": "Dystans i timing",
+      "levels": [
+        6
+      ],
+      "aliases": [
+        "Ippon kumite — 5 (6 kyu)",
+        "Ippon kumite  5 (6 kyu)",
+        "Ippon kumite 6 kyu"
+      ],
+      "infographic": "kumite",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-5-6-kyu/poster/ippon-kumite5-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "ippon-kumite-6-5-kyu",
+      "name": "Ippon kumite — 6 (5 kyu)",
+      "japanese": "一本組手",
+      "reading": "ippon kumite — 6",
+      "category": "Kumite",
+      "description": "Walka umowna jednokrokowa: 6 układ(y/ów) wymagane na 5 kyu. Atakujący wykonuje jedną technikę, broniący blokuje i kontruje.",
+      "tags": [
+        "Ippon",
+        "Kumite",
+        "5 kyu"
+      ],
+      "focus": "Dystans i timing",
+      "levels": [
+        5
+      ],
+      "aliases": [
+        "Ippon kumite — 6 (5 kyu)",
+        "Ippon kumite  6 (5 kyu)",
+        "Ippon kumite 5 kyu"
+      ],
+      "infographic": "kumite",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-6-5-kyu/poster/ippon-kumite6-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "ippon-kumite-7-4-kyu",
+      "name": "Ippon kumite — 7 (4 kyu)",
+      "japanese": "一本組手",
+      "reading": "ippon kumite — 7",
+      "category": "Kumite",
+      "description": "Walka umowna jednokrokowa: 7 układ(y/ów) wymagane na 4 kyu. Atakujący wykonuje jedną technikę, broniący blokuje i kontruje.",
+      "tags": [
+        "Ippon",
+        "Kumite",
+        "4 kyu"
+      ],
+      "focus": "Dystans i timing",
+      "levels": [
+        4
+      ],
+      "aliases": [
+        "Ippon kumite — 7 (4 kyu)",
+        "Ippon kumite  7 (4 kyu)",
+        "Ippon kumite 4 kyu"
+      ],
+      "infographic": "kumite",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-7-4-kyu/poster/ippon-kumite7-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "ippon-kumite-8-3-kyu",
+      "name": "Ippon kumite — 8 (3 kyu)",
+      "japanese": "一本組手",
+      "reading": "ippon kumite — 8",
+      "category": "Kumite",
+      "description": "Walka umowna jednokrokowa: 8 układ(y/ów) wymagane na 3 kyu (sekcja „Atak”). Atakujący wykonuje jedną technikę, broniący blokuje i kontruje.",
+      "tags": [
+        "Ippon",
+        "Kumite",
+        "3 kyu"
+      ],
+      "focus": "Dystans i timing",
+      "levels": [
+        3
+      ],
+      "aliases": [
+        "Ippon kumite — 8 (3 kyu)",
+        "Ippon kumite  8 (3 kyu)",
+        "Ippon kumite 3 kyu"
+      ],
+      "infographic": "kumite",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-8-3-kyu/poster/ippon-kumite8-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "ippon-kumite-9-2-kyu",
+      "name": "Ippon kumite — 9 (2 kyu)",
+      "japanese": "一本組手",
+      "reading": "ippon kumite — 9",
+      "category": "Kumite",
+      "description": "Walka umowna jednokrokowa: 9 układ(y/ów) wymagane na 2 kyu (sekcja „Atak”). Atakujący wykonuje jedną technikę, broniący blokuje i kontruje.",
+      "tags": [
+        "Ippon",
+        "Kumite",
+        "2 kyu"
+      ],
+      "focus": "Dystans i timing",
+      "levels": [
+        2
+      ],
+      "aliases": [
+        "Ippon kumite — 9 (2 kyu)",
+        "Ippon kumite 9 (2 kyu)"
+      ],
+      "infographic": "kumite",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-9-2-kyu/poster/ippon-kumite9-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "ippon-kumite-10-1-kyu",
+      "name": "Ippon kumite — 10 (1 kyu)",
+      "japanese": "一本組手",
+      "reading": "ippon kumite — 10",
+      "category": "Kumite",
+      "description": "Walka umowna jednokrokowa: 10 układ(y/ów) wymagane na 1 kyu (sekcja „Atak”). Atakujący wykonuje jedną technikę, broniący blokuje i kontruje.",
+      "tags": [
+        "Ippon",
+        "Kumite",
+        "1 kyu"
+      ],
+      "focus": "Dystans i timing",
+      "levels": [
+        1
+      ],
+      "aliases": [
+        "Ippon kumite — 10 (1 kyu)",
+        "Ippon kumite  10 (1 kyu)"
+      ],
+      "infographic": "kumite",
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-10-1-kyu/poster/ippon-kumite10-f1.jpg",
+      "firstIsVideo": true
+    },
+    {
+      "id": "sanbon-kumite-wariant-i",
+      "name": "Sanbon kumite wariant I",
+      "japanese": "三本組手",
+      "reading": "sanbon kumite wariant I",
+      "category": "Kumite",
+      "description": "Walka umowna trzykrokowa — wariant I. Atakujący wykonuje trzy kolejne ataki, broniący blokuje i kontruje po trzecim.",
+      "tags": [
+        "Sanbon",
+        "Kumite",
+        "Wariant I"
+      ],
+      "focus": "Rytm trzech ataków",
+      "levels": [
+        8
+      ],
+      "aliases": [
+        "Sanbon kumite wariant I"
+      ],
+      "infographic": "kumite",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "sanbon-kumite-wariant-ii",
+      "name": "Sanbon kumite wariant II",
+      "japanese": "三本組手",
+      "reading": "sanbon kumite wariant II",
+      "category": "Kumite",
+      "description": "Walka umowna trzykrokowa — wariant II, z innym układem ataków i kontrataku.",
+      "tags": [
+        "Sanbon",
+        "Kumite",
+        "Wariant II"
+      ],
+      "focus": "Rytm trzech ataków",
+      "levels": [
+        4
+      ],
+      "aliases": [
+        "Sanbon kumite wariant II"
+      ],
+      "infographic": "kumite",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "renraku-1-9-kyu",
+      "name": "Renraku — 1 (9 kyu)",
+      "japanese": "連絡",
+      "reading": "renraku — 1",
+      "category": "Kumite",
+      "description": "Układ połączonych technik (renraku) wymagany na 9 kyu: 1.",
+      "tags": [
+        "Renraku",
+        "9 kyu"
+      ],
+      "focus": "Płynność kombinacji",
+      "levels": [
+        9
+      ],
+      "aliases": [
+        "Renraku — 1 (9 kyu)",
+        "Renraku  1 (9 kyu)",
+        "Renraku 9 kyu"
+      ],
+      "infographic": "kumite",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "renraku-2-8-kyu",
+      "name": "Renraku — 2 (8 kyu)",
+      "japanese": "連絡",
+      "reading": "renraku — 2",
+      "category": "Kumite",
+      "description": "Układ połączonych technik (renraku) wymagany na 8 kyu: 2.",
+      "tags": [
+        "Renraku",
+        "8 kyu"
+      ],
+      "focus": "Płynność kombinacji",
+      "levels": [
+        8
+      ],
+      "aliases": [
+        "Renraku — 2 (8 kyu)",
+        "Renraku  2 (8 kyu)",
+        "Renraku 8 kyu"
+      ],
+      "infographic": "kumite",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "renraku-3-5-kyu",
+      "name": "Renraku — 3 (5 kyu)",
+      "japanese": "連絡",
+      "reading": "renraku — 3",
+      "category": "Kumite",
+      "description": "Układ połączonych technik (renraku) wymagany na 5 kyu: 3.",
+      "tags": [
+        "Renraku",
+        "5 kyu"
+      ],
+      "focus": "Płynność kombinacji",
+      "levels": [
+        5
+      ],
+      "aliases": [
+        "Renraku — 3 (5 kyu)",
+        "Renraku  3 (5 kyu)",
+        "Renraku 5 kyu"
+      ],
+      "infographic": "kumite",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "renraku-4-2-kyu",
+      "name": "Renraku — 4 (2 kyu)",
+      "japanese": "連絡",
+      "reading": "renraku — 4",
+      "category": "Kumite",
+      "description": "Układ połączonych technik (renraku) wymagany na 2 kyu: 4.",
+      "tags": [
+        "Renraku",
+        "2 kyu"
+      ],
+      "focus": "Płynność kombinacji",
+      "levels": [
+        2
+      ],
+      "aliases": [
+        "Renraku — 4 (2 kyu)",
+        "Renraku  4 (2 kyu)",
+        "Renraku 2 kyu"
+      ],
+      "infographic": "kumite",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "renraku-5-i-6-1-kyu",
+      "name": "Renraku — 5 i 6 (1 kyu)",
+      "japanese": "連絡",
+      "reading": "renraku — 5 i 6",
+      "category": "Kumite",
+      "description": "Układ połączonych technik (renraku) wymagany na 1 kyu: 5 i 6.",
+      "tags": [
+        "Renraku",
+        "1 kyu"
+      ],
+      "focus": "Płynność kombinacji",
+      "levels": [
+        1
+      ],
+      "aliases": [
+        "Renraku — 5 i 6 (1 kyu)",
+        "Renraku  5 i 6 (1 kyu)",
+        "Renraku 1 kyu"
+      ],
+      "infographic": "kumite",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "tensho",
+      "name": "Tensho",
+      "japanese": "転掌",
+      "reading": "tenszo",
+      "category": "Kata",
+      "description": "Kata wymagane na stopień 1 dan — krążące bloki i kontrola oddechu.",
+      "tags": [
+        "Kata",
+        "dan"
+      ],
+      "focus": "Precyzja i kontrola",
+      "levels": [
+        11
+      ],
+      "aliases": [
+        "Tensho"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "saiha",
+      "name": "Saiha",
+      "japanese": "細破",
+      "reading": "saiha",
+      "category": "Kata",
+      "description": "Kata wymagane na 1 kyu oraz na stopień 1 dan.",
+      "tags": [
+        "Kata",
+        "kyu",
+        "dan"
+      ],
+      "focus": "Precyzja i kontrola",
+      "levels": [
+        1,
+        11
+      ],
+      "aliases": [
+        "Saiha"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "gekisai-sho",
+      "name": "Gekisai Sho",
+      "japanese": "撃砕小",
+      "reading": "gekisai-sho",
+      "category": "Kata",
+      "description": "Kata wymagane na 2 kyu oraz na stopień 2 dan.",
+      "tags": [
+        "Kata",
+        "kyu",
+        "dan"
+      ],
+      "focus": "Precyzja i kontrola",
+      "levels": [
+        2,
+        12
+      ],
+      "aliases": [
+        "Gekisai Sho"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "gariyu",
+      "name": "Gariyu",
+      "japanese": "我流",
+      "reading": "gariyu",
+      "category": "Kata",
+      "description": "Kata wymagane na stopień 2 dan.",
+      "tags": [
+        "Kata",
+        "dan"
+      ],
+      "focus": "Precyzja i kontrola",
+      "levels": [
+        12
+      ],
+      "aliases": [
+        "Gariyu"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "seishin",
+      "name": "Seishin",
+      "japanese": "精神",
+      "reading": "seishin",
+      "category": "Kata",
+      "description": "Kata wymagane na stopień 3 dan.",
+      "tags": [
+        "Kata",
+        "dan"
+      ],
+      "focus": "Precyzja i kontrola",
+      "levels": [
+        13
+      ],
+      "aliases": [
+        "Seishin"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "kanku-dai",
+      "name": "Kanku Dai",
+      "japanese": "観空大",
+      "reading": "kanku-dai",
+      "category": "Kata",
+      "description": "Kata wymagane na stopień 4 dan.",
+      "tags": [
+        "Kata",
+        "dan"
+      ],
+      "focus": "Precyzja i kontrola",
+      "levels": [
+        14
+      ],
+      "aliases": [
+        "Kanku Dai"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    },
+    {
+      "id": "sushiho",
+      "name": "Sushiho",
+      "japanese": "捌子",
+      "reading": "sushiho",
+      "category": "Kata",
+      "description": "Kata wymagane na stopień 5 dan.",
+      "tags": [
+        "Kata",
+        "dan"
+      ],
+      "focus": "Precyzja i kontrola",
+      "levels": [
+        15
+      ],
+      "aliases": [
+        "Sushiho"
+      ],
+      "infographic": "kata",
+      "thumbnail": null,
+      "firstIsVideo": false
+    }
+  ],
+  "glossary": {
+    "categories": [
+      {
+        "id": "strefy",
+        "name": "Strefy",
+        "description": "Podział celu na trzy wysokości — determinuje przedrostki jodan, chūdan i gedan w nazwach technik.",
+        "entries": [
+          {
+            "id": "jodan",
+            "term": "Strefa górna",
+            "japanese": "上段",
+            "reading": "jōdan",
+            "description": "Głowa, twarz i kark. Ataki i bloki na tej wysokości oznaczamy przedrostkiem jodan (np. jodan-uke, mawashi-geri jodan).",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "chudan",
+            "term": "Strefa środkowa",
+            "japanese": "中段",
+            "reading": "chūdan",
+            "description": "Klatka piersiowa, żebra i brzuch — od linii barków mniej więcej do pępka. Najczęstszy cel w egzaminach i kumite.",
+            "image": null,
+            "related": [
+              "seiken-oi-tsuki",
+              "seiken-chudan-soto-uke"
+            ]
+          },
+          {
+            "id": "gedan-strefa",
+            "term": "Strefa dolna",
+            "japanese": "下段",
+            "reading": "gedan",
+            "description": "Podbrzusz, biodra i nogi. Techniki dolne zapisujemy przedrostkiem gedan (np. gedan-barai, kin-geri).",
+            "image": null,
+            "related": [
+              "seiken-gedan-barai"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "czesci-ciala",
+        "name": "Części ciała",
+        "description": "Nazwy części ciała używane w komendach, opisach technik i punktach uderzenia.",
+        "entries": [
+          {
+            "id": "atama",
+            "term": "Głowa",
+            "japanese": "頭",
+            "reading": "atama",
+            "description": "Cel strefy górnej. W kumite uderzenia i kopnięcia na głowę muszą być kontrolowane.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "kao",
+            "term": "Twarz",
+            "japanese": "顔",
+            "reading": "kao",
+            "description": "Część strefy górnej — broda, nos, policzki. Na egzaminie wskazywana jako cel technik jodan.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "kubi",
+            "term": "Szyja",
+            "japanese": "首",
+            "reading": "kubi",
+            "description": "Łączenie głowy z tułowiem. Kluczowa przy dźwigniach i rzutach; w prostym kihon rzadko używana jako cel.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "mune",
+            "term": "Klatka piersiowa",
+            "japanese": "胸",
+            "reading": "mune",
+            "description": "Górna część tułowia, częsty cel seiken chudan oi-zuki. Chroniona przez bloki typu soto-uke i uchi-uke.",
+            "image": null,
+            "related": [
+              "seiken-oi-tsuki",
+              "seiken-chudan-soto-uke"
+            ]
+          },
+          {
+            "id": "hara",
+            "term": "Brzuch / centrum",
+            "japanese": "腹",
+            "reading": "hara",
+            "description": "Dolna część tułowia. Trenujemy oddychanie przez harę; przyjęcie ciosu wymaga napięcia mięśni w tym miejscu.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "koshi",
+            "term": "Biodro",
+            "japanese": "腰",
+            "reading": "koshi",
+            "description": "Źródło mocy w większości technik — rotacja bioder napędza uderzenia i kopnięcia, a nie sama ręka czy noga.",
+            "image": null,
+            "related": [
+              "seiken-oi-tsuki"
+            ]
+          },
+          {
+            "id": "ude",
+            "term": "Ramię",
+            "japanese": "腕",
+            "reading": "ude",
+            "description": "Górna kończyna od barku do łokcia. W blokach pracuje razem z przedramieniem i rotacją tułowia.",
+            "image": null,
+            "related": [
+              "seiken-chudan-soto-uke"
+            ]
+          },
+          {
+            "id": "hiji",
+            "term": "Łokieć",
+            "japanese": "肘",
+            "reading": "hiji",
+            "description": "Staw wykorzystywany w technikach hiji-ate. Przy uderzeniach prostych łokieć prowadzimy blisko ciała.",
+            "image": null,
+            "related": [
+              "seiken-chudan-soto-uke"
+            ]
+          },
+          {
+            "id": "kote",
+            "term": "Przedramię",
+            "japanese": "篭手",
+            "reading": "kote",
+            "description": "Odcinek od łokcia do nadgarstka — powierzchnia pracy przy blokach (uke) i obronie.",
+            "image": null,
+            "related": [
+              "seiken-chudan-soto-uke",
+              "seiken-gedan-barai"
+            ]
+          },
+          {
+            "id": "hiza",
+            "term": "Kolano",
+            "japanese": "膝",
+            "reading": "hiza",
+            "description": "Punkt prowadzenia kopnięć (hiza-geri) oraz cel w strefie dolnej. W mae-geri kolano unosi się najpierw przed wyprostem.",
+            "image": "/images/glossary/human-parts/hiza.svg",
+            "related": [
+              "mae-geri-chudan"
+            ]
+          },
+          {
+            "id": "ashi",
+            "term": "Noga",
+            "japanese": "足",
+            "reading": "ashi",
+            "description": "Ogólna nazwa kończyny dolnej — łączy pozycje (dachi) i kopnięcia (geri) w jednym słowie.",
+            "image": null,
+            "related": [
+              "mae-geri-chudan"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pozycje",
+        "name": "Postawy (dachi)",
+        "description": "Fundamentalne pozycje (dachi) i postawy — baza, od której zaczyna się każda technika.",
+        "entries": [
+          {
+            "id": "fudo",
+            "term": "Fudo dachi",
+            "japanese": "不動立",
+            "reading": "fudo-dachi",
+            "description": "Stabilna postawa o szerokości bioder, lekko ugiętych kolanach i równomiernym ciężarze. Pierwsza pozycja na drodze egzaminacyjnej.",
+            "image": "/images/glossary/stances/Fudo-Dachi.png",
+            "related": [],
+            "levels": [
+              0,
+              9,
+              10
+            ]
+          },
+          {
+            "id": "musubi",
+            "term": "Musubi dachi",
+            "japanese": "結び立",
+            "reading": "musubi-dachi",
+            "description": "Pięty razem, palce rozstawione w literę V — pozycja do ukłonu (rei) i mokuso przed treningiem.",
+            "image": "/images/glossary/stances/Musubi-Dachi.png",
+            "related": [],
+            "levels": [
+              9
+            ]
+          },
+          {
+            "id": "heiko",
+            "term": "Heikō dachi",
+            "japanese": "平行立",
+            "reading": "heikō-dachi",
+            "description": "Stopy równolegle na szerokość bioder (nazywana też yoi-dachi) — punkt wyjścia do technik i przejść.",
+            "image": "/images/glossary/stances/Heiko-Dachi.png",
+            "related": [
+              "seiken-oi-tsuki"
+            ],
+            "levels": [
+              4
+            ]
+          },
+          {
+            "id": "zenkutsu-dachi",
+            "term": "Zenkutsu dachi",
+            "japanese": "前屈立ち",
+            "reading": "zenkutsu-dachi",
+            "description": "Długa pozycja: przednie kolano ugięte nad stopą, tylna noga wyprostowana, ciężar ok. 60/40. Fundament oi-zuki i większości kihon.",
+            "image": "/images/glossary/stances/Zenkutsu-dachi.png",
+            "related": [
+              "seiken-oi-tsuki"
+            ],
+            "levels": [
+              10
+            ]
+          },
+          {
+            "id": "kokutsu",
+            "term": "Kokutsu dachi",
+            "japanese": "後屈立ち",
+            "reading": "kokutsu-dachi",
+            "description": "Ciężar głównie na nodze tylnej, przednia stopa lekko na pięcie — baza do bloków i technik obronnych.",
+            "image": "/images/glossary/stances/Kokutsu-dachi.png",
+            "related": [
+              "seiken-chudan-soto-uke"
+            ],
+            "levels": [
+              7,
+              9
+            ]
+          },
+          {
+            "id": "sanchin-dachi",
+            "term": "Sanchin dachi",
+            "japanese": "三戦立",
+            "reading": "sanchin-dachi",
+            "description": "Stopy w linii półksiężyca, kolana skierowane do wewnątrz, napięty brzuch — pozycja kontroli oddechu i napięcia.",
+            "image": "/images/glossary/stances/Sanchin-Dachi.png",
+            "related": [],
+            "levels": [
+              8,
+              9
+            ]
+          },
+          {
+            "id": "kiba",
+            "term": "Pozycja jeździecka",
+            "japanese": "騎馬立",
+            "reading": "kiba-dachi",
+            "description": "Szerokie rozkroczę z kolanami rozepchniętymi nad stopami i prostym tułowiem — buduje siłę nóg i stabilność boczną.",
+            "image": "/images/glossary/stances/Kiba-Dachi.png",
+            "related": [],
+            "levels": [
+              6,
+              8
+            ]
+          },
+          {
+            "id": "neko-ashi",
+            "term": "Pozycja kocia",
+            "japanese": "猫足立ち",
+            "reading": "neko-ashi-dachi",
+            "description": "Ciężar na nodze tylnej, przednia stopa dotyka podłogi palcami — szybka, zwrotna pozycja do kopnięć.",
+            "image": "/images/glossary/stances/Neko-Ashi-Dachi.png",
+            "related": [
+              "mae-geri-chudan"
+            ],
+            "levels": [
+              7
+            ]
+          },
+          {
+            "id": "kake",
+            "term": "Kake Dachi",
+            "japanese": "掛け立ち",
+            "reading": "kake-dachi",
+            "description": "Nogi skrzyżowane, ciężar na nodze wspierającej — stosowana po obrotach, w kombinacjach i kata.",
+            "image": "/images/glossary/stances/Kake-Dachi.png",
+            "related": [],
+            "levels": [
+              3
+            ]
+          },
+          {
+            "id": "seiza",
+            "term": "Seiza",
+            "japanese": "正座",
+            "reading": "seiza",
+            "description": "Klęknienie na kolanach z podniesionymi stopami — porządek otwarcia treningu, mokuso i ukłonu w dojo.",
+            "image": "/images/glossary/stances/Seiza.jpg",
+            "related": []
+          },
+          {
+            "id": "yoi",
+            "term": "Yoi dachi",
+            "japanese": "用意立ち",
+            "reading": "yoi-dachi",
+            "description": "Postawa gotowości: stopy na szerokość barków, pięści opuszczone przed udami, wzrok przed siebie. Punkt wyjścia i powrotu dla większości technik.",
+            "image": "/images/glossary/stances/Yoi-Dachi.png",
+            "related": [],
+            "levels": [
+              10
+            ]
+          },
+          {
+            "id": "tsuru-ashi",
+            "term": "Tsuru ashi dachi",
+            "japanese": "鶴足立ち",
+            "reading": "tsuru-ashi-dachi",
+            "description": "Stanie na jednej nodze, druga stopa przy kolanie nogi podporowej. Ćwiczy równowagę i kontrolę kopnięć.",
+            "image": "/images/glossary/stances/Tsuru-Ashi-Dachi.png",
+            "related": [],
+            "levels": [
+              6
+            ]
+          },
+          {
+            "id": "moro-ashi",
+            "term": "Moro ashi dachi",
+            "japanese": "諸足立ち",
+            "reading": "moro-ashi-dachi",
+            "description": "Nogi na szerokości barków, stopy równoległe, tam gdzie kończy się noga zakroczna zaczyna się noga wykroczna.",
+            "image": "/images/glossary/stances/Moro-ashi-dachi.png",
+            "related": [],
+            "levels": [
+              5
+            ]
+          },
+          {
+            "id": "heisoku",
+            "term": "Heisoku dachi",
+            "japanese": "閉足立ち",
+            "reading": "heisoku-dachi",
+            "description": "Pięty i palce razem, ciało wyprostowane. Pozycja wyjściowa wielu kata.",
+            "image": "/images/glossary/stances/Heisoku-Dachi.png",
+            "related": [],
+            "levels": [
+              4
+            ]
+          },
+          {
+            "id": "uchi-hachiji",
+            "term": "Uchi hachiji dachi",
+            "japanese": "内八字立ち",
+            "reading": "uchi-hachiji-dachi",
+            "description": "Stopy na szerokość barków, palce skierowane do środka, kolana lekko ściągnięte do wewnątrz.",
+            "image": "/images/glossary/stances/Uchi-Hachi-Ji-Dachi.png",
+            "related": [],
+            "levels": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ustawienia-dloni",
+        "name": "Ustawienia dłoni",
+        "description": "Ukształtowanie dłoni i powierzchnie kontaktu używane w uderzeniach, blokach i technikach palców.",
+        "entries": [
+          {
+            "id": "seiken",
+            "term": "Pięść",
+            "japanese": "正拳",
+            "reading": "seiken",
+            "description": "Klasyczna pięść kyokushin: uderzamy dwoma pierwszymi knykci, kciuk dociska palce od strony. Punkt kontaktu to seiken.",
+            "image": "/images/glossary/human-parts/seiken-piesc.jpg",
+            "related": [
+              "seiken-oi-tsuki"
+            ]
+          },
+          {
+            "id": "shuto",
+            "term": "Kant dłoni",
+            "japanese": "手刀",
+            "reading": "shuto",
+            "description": "Boczna krawędź dłoni od małego palca do nadgarstka — broń w technikach shuto uchi i shuto uke.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "nukite",
+            "term": "Dłoń-włócznia",
+            "japanese": "貫手",
+            "reading": "nukite",
+            "description": "Prosto wyprostowane palce tworzące włócznię; w kyokushin najczęściej w wersji dwu- lub czteropalczastej (nihon-/yonhon-nukite).",
+            "image": null,
+            "related": [
+              "nihon-nukite",
+              "yonhon-nukite-chudan"
+            ]
+          },
+          {
+            "id": "hiraken",
+            "term": "Płaska pięść",
+            "japanese": "平拳",
+            "reading": "hiraken",
+            "description": "Palce zgięte w ostatnich stawach, knykcie ułożone w jednej płaszczyźnie. Uderzenie płaską powierzchnią pięści.",
+            "image": null,
+            "related": [
+              "hira-ken-tsuki"
+            ]
+          },
+          {
+            "id": "tettsui",
+            "term": "Młotkowa pięść",
+            "japanese": "鉄槌",
+            "reading": "tettsui",
+            "description": "Uderzenie dolną krawędzią pięści przy zgiętym nadgarstku — młotkowato, z rotacją biodra.",
+            "image": null,
+            "related": [
+              "tettsui-oroshi-uchi",
+              "tettsui-komekami-uchi"
+            ]
+          },
+          {
+            "id": "uraken",
+            "term": "Grzbiet pięści",
+            "japanese": "裏拳",
+            "reading": "uraken",
+            "description": "Powierzchnia uderzająca to grzbiet knykci; ruch prowadzony jest łukowo z rotacją przedramienia.",
+            "image": null,
+            "related": [
+              "uraken-shomen-uchi",
+              "uraken-mawashi-uchi"
+            ]
+          },
+          {
+            "id": "koken",
+            "term": "Grzbiet nadgarstka",
+            "japanese": "拳研",
+            "reading": "koken",
+            "description": "Zgięty grzbiet nadgarstka używany zarówno w uderzeniach, jak i w blokach (koken-uke).",
+            "image": null,
+            "related": [
+              "koken-uchi",
+              "koken-uke"
+            ]
+          },
+          {
+            "id": "haishu",
+            "term": "Odwrócona dłoń",
+            "japanese": "背手",
+            "reading": "haishu",
+            "description": "Wnętrze dłoni skierowane w dół lub w bok; grzbiet dłoni pracuje jako powierzchnia uderzająca.",
+            "image": "/images/glossary/ustawienia-dloni/haishu.jpg",
+            "related": [
+              "haishu"
+            ]
+          },
+          {
+            "id": "shotei",
+            "term": "Podstawa dłoni",
+            "japanese": "掌底",
+            "reading": "shotei",
+            "description": "Twarda część dłoni przy nasadzie kciuka i palca wskazującego — typowa dla technik shotei-uchi i shotei-uke.",
+            "image": null,
+            "related": [
+              "shotei-uchi",
+              "shotei-uke"
+            ]
+          },
+          {
+            "id": "haito",
+            "term": "Krawędź dłoni od kciuka",
+            "japanese": "背刀",
+            "reading": "haito",
+            "description": "Przeciwległa do shuto krawędź dłoni, prowadzona wzdłuż kciuka; częsta w blokach haito-uke.",
+            "image": "/images/glossary/human-parts/haito.svg",
+            "related": [
+              "chudan-haito-uchi-uke"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ustawienia-stopy",
+        "name": "Ustawienia stóp",
+        "description": "Powierzchnie stopy używane w kopnięciach i przesunięciach — od pięty po czubki palców.",
+        "entries": [
+          {
+            "id": "kakato",
+            "term": "Pięta",
+            "japanese": "踵",
+            "reading": "kakato",
+            "description": "Twarda część stopy używana m.in. w oroshi-kakato-geri (kopnięcie piętą z góry) i przy silnych wejściach.",
+            "image": "/images/glossary/human-parts/kakato.svg",
+            "related": []
+          },
+          {
+            "id": "chusoku",
+            "term": "Śródstopie",
+            "japanese": "底足心",
+            "reading": "chusoku",
+            "description": "Poduszka pod palcami — punkt kontaktu przy mae-geri i innych kopnięciach frontalnych. Palce są uniesione.",
+            "image": "/images/glossary/human-parts/chusoku.svg",
+            "related": [
+              "mae-geri-chudan"
+            ]
+          },
+          {
+            "id": "haisoku",
+            "term": "Grzbiet stopy",
+            "japanese": "背足",
+            "reading": "haisoku",
+            "description": "Wypięty grzbiet stopy używany w kopnięciach okrężnych (mawashi-geri) i niektórych keage.",
+            "image": "/images/glossary/human-parts/haisoku.svg",
+            "related": [
+              "mawashi-geri-gedan-haisoku",
+              "mawashi-geri-chudan-chusoku",
+              "mawashi-geri-chudan-haisoku"
+            ]
+          },
+          {
+            "id": "teisoku",
+            "term": "Podeszwa stopy",
+            "japanese": "底足",
+            "reading": "teisoku",
+            "description": "Cała podeszwa pracująca jako powierzchnia kopnięcia, m.in. w teisoku-mawashi-soto-keage.",
+            "image": "/images/glossary/human-parts/teisoku.svg",
+            "related": [
+              "teisoku-mawashi-soto-keage"
+            ]
+          },
+          {
+            "id": "sokuto",
+            "term": "Krawędź stopy",
+            "japanese": "側足",
+            "reading": "sokuto",
+            "description": "Zewnętrzna krawędź stopy od pięty do małego palca — powierzchnia kontaktu w yoko-geri.",
+            "image": "/images/glossary/human-parts/sokuto.svg",
+            "related": [
+              "yoko-geri-chudan",
+              "yoko-geri-jodan"
+            ]
+          },
+          {
+            "id": "heisoku-ashi",
+            "term": "Czubki palców stopy",
+            "japanese": "閉足",
+            "reading": "heisoku-ashi",
+            "description": "Zwarto ułożone palce stopy; uniesione w kopnięciach frontalnych, by punktem kontaktu zostało śródstopie.",
+            "image": null,
+            "related": [
+              "mae-geri-chudan"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dojo-etykieta",
+        "name": "Dojo i etykieta",
+        "description": "Ludzie, stopnie i zwyczaje, które poznasz na sali treningowej.",
+        "entries": [
+          {
+            "id": "dojo",
+            "term": "Dōjō — miejsce treningu",
+            "japanese": "道場",
+            "reading": "dodżo",
+            "description": "Sala lub miejsce praktyki sztuki walki; dosłownie miejsce drogi.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "sensei",
+            "term": "Sensei — nauczyciel",
+            "japanese": "先生",
+            "reading": "sensej",
+            "description": "Zwrot do nauczyciela prowadzącego naukę. Nie jest nazwą konkretnego stopnia pasa.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "senpai",
+            "term": "Senpai — starszy stażem",
+            "japanese": "先輩",
+            "reading": "sempaj",
+            "description": "Osoba bardziej doświadczona w danej grupie; pomaga młodszym stażem ćwiczącym.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "rei",
+            "term": "Rei — ukłon",
+            "japanese": "礼",
+            "reading": "rej",
+            "description": "Gest szacunku. Komenda rei zapowiada ukłon; sposób jego wykonania wynika z sytuacji.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "osu",
+            "term": "Osu — pozdrowienie i potwierdzenie",
+            "japanese": "押忍",
+            "reading": "osu",
+            "description": "W dojo Kyokushin: pozdrowienie, podziękowanie lub potwierdzenie. Odczytuj je w kontekście, zgodnie ze zwyczajem grupy.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "mokuso",
+            "term": "Mokusō — ciche skupienie",
+            "japanese": "黙想",
+            "reading": "mokuso",
+            "description": "Chwila wyciszenia i skupienia na początku lub końcu zajęć. Komenda mokusō yame kończy tę część.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "kyu",
+            "term": "Kyū — stopień uczniowski",
+            "japanese": "級",
+            "reading": "kju",
+            "description": "Poziom zaawansowania przed stopniami dan. W tym atlasie numeracja biegnie od 10 do 1 kyu.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "dan",
+            "term": "Dan — stopień mistrzowski",
+            "japanese": "段",
+            "reading": "dan",
+            "description": "Stopień zaawansowania oznaczany rosnącą liczbą. Sam numer nie opisuje całego doświadczenia nauczycielskiego.",
+            "image": null,
+            "related": []
+          }
+        ],
+        "sources": [
+          {
+            "title": "Jasielski Klub Karate Kyokushin — etykieta dojo",
+            "url": "https://www.kyokushin-jaslo.pl/etykieta-dojo/"
+          }
+        ]
+      },
+      {
+        "id": "trening-komendy",
+        "name": "Trening i komendy",
+        "description": "Podstawowe formy treningu, gotowość i najczęstsze polecenia.",
+        "entries": [
+          {
+            "id": "kihon",
+            "term": "Kihon — podstawy",
+            "japanese": "基本",
+            "reading": "kihon",
+            "description": "Ćwiczenie podstawowych pozycji, uderzeń, bloków i kopnięć, osobno lub w połączeniach.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "kata",
+            "term": "Kata — forma",
+            "japanese": "型",
+            "reading": "kata",
+            "description": "Ustalony układ ruchów wykonywany w określonej kolejności i kierunkach.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "kumite",
+            "term": "Kumite — ćwiczenie walki",
+            "japanese": "組手",
+            "reading": "kumite",
+            "description": "Praca z partnerem: od wcześniej ustalonych odpowiedzi po swobodniejsze formy walki.",
+            "image": "/images/glossary/trening-komendy/kumite.jpg",
+            "related": []
+          },
+          {
+            "id": "bunkai",
+            "term": "Bunkai — analiza zastosowań",
+            "japanese": "分解",
+            "reading": "bunkaj",
+            "description": "Analiza ruchów kata i ich możliwych zastosowań w ćwiczeniu z partnerem. Jedna sekwencja może mieć różne interpretacje.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "kamae",
+            "term": "Kamae — gotowość",
+            "japanese": "構え",
+            "reading": "kamae",
+            "description": "Ustawienie ciała i rąk połączone z uwagą oraz gotowością do działania.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "kiai",
+            "term": "Kiai — okrzyk",
+            "japanese": "気合",
+            "reading": "kiaj",
+            "description": "Okrzyk towarzyszący skupieniu energii i oddechu w technice. Nie oznacza wykrzykiwania słowa „kiai”.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "zanshin",
+            "term": "Zanshin — zachowana czujność",
+            "japanese": "残心",
+            "reading": "zanszin",
+            "description": "Uwaga utrzymywana także po zakończeniu ruchu: obserwacja, kontrola pozycji i gotowość.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "maai",
+            "term": "Maai — dystans",
+            "japanese": "間合い",
+            "reading": "maaj",
+            "description": "Odległość między ćwiczącymi rozpatrywana wraz z możliwością wykonania ruchu i czasem reakcji.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "hajime",
+            "term": "Hajime — zacznij",
+            "japanese": "始め",
+            "reading": "hadżime",
+            "description": "Komenda rozpoczęcia ćwiczenia lub walki.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "yame",
+            "term": "Yame — stop",
+            "japanese": "止め",
+            "reading": "jame",
+            "description": "Komenda zatrzymania działania; przerwij ruch i oczekuj dalszych poleceń.",
+            "image": null,
+            "related": []
+          }
+        ],
+        "sources": [
+          {
+            "title": "Musashi Kyokushin — terminologia",
+            "url": "https://musashi.nl/kyokushin-terminologie/"
+          },
+          {
+            "title": "MMAKF — terminologia karate",
+            "url": "https://mmakf.in/shotokan/terminology"
+          }
+        ]
+      },
+      {
+        "id": "stroj-sprzet",
+        "name": "Strój i sprzęt",
+        "description": "Nazwy elementów ubioru przydatne także w poradnikach.",
+        "entries": [
+          {
+            "id": "karategi",
+            "term": "Karategi — strój do karate",
+            "japanese": "空手着",
+            "reading": "karategi",
+            "description": "Strój treningowy złożony z bluzy i spodni, noszony z pasem.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "obi",
+            "term": "Obi — pas",
+            "japanese": "帯",
+            "reading": "obi",
+            "description": "Pas wiązany na stroju. Jego kolor i oznaczenia mogą wskazywać stopień w danym programie.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "uwagi",
+            "term": "Uwagi — bluza",
+            "japanese": "上着",
+            "reading": "uwagi",
+            "description": "Górna część stroju. W wielu modelach ma boczne troczki podtrzymujące poły.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "zubon",
+            "term": "Zubon — spodnie",
+            "japanese": "ズボン",
+            "reading": "dzubon",
+            "description": "Spodnie; w karategi mogą mieć sznurek, gumę lub połączenie obu rozwiązań.",
+            "image": null,
+            "related": []
+          },
+          {
+            "id": "himo",
+            "term": "Himo — sznurek, troczek",
+            "japanese": "紐",
+            "reading": "himo",
+            "description": "Wiązanie, na przykład przy bluzie lub w pasie spodni. Nie jest nazwą bandaża bokserskiego.",
+            "image": null,
+            "related": []
+          }
+        ],
+        "sources": [
+          {
+            "title": "Jasielski Klub Karate Kyokushin — słownik",
+            "url": "https://www.kyokushin-jaslo.pl/slownik/"
+          },
+          {
+            "title": "Fisher Karate — nazwy stroju (PDF)",
+            "url": "https://www.fisherkarate.com/pdf/ssdk-terms.pdf"
+          }
+        ]
+      }
+    ]
+  }
+}

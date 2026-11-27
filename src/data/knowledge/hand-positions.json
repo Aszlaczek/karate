@@ -1,0 +1,120 @@
+{
+  "id": "ustawienia-dloni",
+  "name": "Ustawienia dłoni",
+  "description": "Ukształtowanie dłoni i powierzchnie kontaktu używane w uderzeniach, blokach i technikach palców.",
+  "entries": [
+    {
+      "id": "seiken",
+      "term": "Pięść",
+      "japanese": "正拳",
+      "reading": "seiken",
+      "description": "Klasyczna pięść kyokushin: uderzamy dwoma pierwszymi knykci, kciuk dociska palce od strony. Punkt kontaktu to seiken.",
+      "image": "/images/glossary/human-parts/seiken-piesc.jpg",
+      "related": [
+        "seiken-oi-tsuki"
+      ]
+    },
+    {
+      "id": "shuto",
+      "term": "Kant dłoni",
+      "japanese": "手刀",
+      "reading": "shuto",
+      "description": "Boczna krawędź dłoni od małego palca do nadgarstka — broń w technikach shuto uchi i shuto uke.",
+      "image": null,
+      "related": []
+    },
+    {
+      "id": "nukite",
+      "term": "Dłoń-włócznia",
+      "japanese": "貫手",
+      "reading": "nukite",
+      "description": "Prosto wyprostowane palce tworzące włócznię; w kyokushin najczęściej w wersji dwu- lub czteropalczastej (nihon-/yonhon-nukite).",
+      "image": null,
+      "related": [
+        "nihon-nukite",
+        "yonhon-nukite-chudan"
+      ]
+    },
+    {
+      "id": "hiraken",
+      "term": "Płaska pięść",
+      "japanese": "平拳",
+      "reading": "hiraken",
+      "description": "Palce zgięte w ostatnich stawach, knykcie ułożone w jednej płaszczyźnie. Uderzenie płaską powierzchnią pięści.",
+      "image": null,
+      "related": [
+        "hira-ken-tsuki"
+      ]
+    },
+    {
+      "id": "tettsui",
+      "term": "Młotkowa pięść",
+      "japanese": "鉄槌",
+      "reading": "tettsui",
+      "description": "Uderzenie dolną krawędzią pięści przy zgiętym nadgarstku — młotkowato, z rotacją biodra.",
+      "image": null,
+      "related": [
+        "tettsui-oroshi-uchi",
+        "tettsui-komekami-uchi"
+      ]
+    },
+    {
+      "id": "uraken",
+      "term": "Grzbiet pięści",
+      "japanese": "裏拳",
+      "reading": "uraken",
+      "description": "Powierzchnia uderzająca to grzbiet knykci; ruch prowadzony jest łukowo z rotacją przedramienia.",
+      "image": null,
+      "related": [
+        "uraken-shomen-uchi",
+        "uraken-mawashi-uchi"
+      ]
+    },
+    {
+      "id": "koken",
+      "term": "Grzbiet nadgarstka",
+      "japanese": "拳研",
+      "reading": "koken",
+      "description": "Zgięty grzbiet nadgarstka używany zarówno w uderzeniach, jak i w blokach (koken-uke).",
+      "image": null,
+      "related": [
+        "koken-uchi",
+        "koken-uke"
+      ]
+    },
+    {
+      "id": "haishu",
+      "term": "Odwrócona dłoń",
+      "japanese": "背手",
+      "reading": "haishu",
+      "description": "Wnętrze dłoni skierowane w dół lub w bok; grzbiet dłoni pracuje jako powierzchnia uderzająca.",
+      "image": "/images/glossary/ustawienia-dloni/haishu.jpg",
+      "related": [
+        "haishu"
+      ]
+    },
+    {
+      "id": "shotei",
+      "term": "Podstawa dłoni",
+      "japanese": "掌底",
+      "reading": "shotei",
+      "description": "Twarda część dłoni przy nasadzie kciuka i palca wskazującego — typowa dla technik shotei-uchi i shotei-uke.",
+      "image": null,
+      "related": [
+        "shotei-uchi",
+        "shotei-uke"
+      ]
+    },
+    {
+      "id": "haito",
+      "term": "Krawędź dłoni od kciuka",
+      "japanese": "背刀",
+      "reading": "haito",
+      "description": "Przeciwległa do shuto krawędź dłoni, prowadzona wzdłuż kciuka; częsta w blokach haito-uke.",
+      "image": "/images/glossary/human-parts/haito.svg",
+      "related": [
+        "chudan-haito-uchi-uke"
+      ]
+    }
+  ]
+}

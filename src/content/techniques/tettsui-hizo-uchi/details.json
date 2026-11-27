@@ -1,0 +1,19 @@
+{
+  "media": [
+    {
+      "source": "tettsui-hizo-uchi-f1.mp4",
+      "label": "Tettsui hizō-uchi (uchi) — widok z przodu 1",
+      "alt": "Tettsui hizō-uchi (uchi): widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "tettsui-hizo-uchi-d1.mp4",
+      "label": "Tettsui hizō-uchi (uchi) — detal 1",
+      "alt": "Tettsui hizō-uchi (uchi): zbliżenie na detal techniki 1. Nagranie z dojo."
+    },
+    {
+      "source": "tettsui-hizo-uchi-d2.mp4",
+      "label": "Tettsui hizō-uchi (uchi) — detal 2",
+      "alt": "Tettsui hizō-uchi (uchi): zbliżenie na detal techniki 2. Nagranie z dojo."
+    }
+  ]
+}

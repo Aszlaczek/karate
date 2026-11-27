@@ -1,0 +1,24 @@
+{
+  "media": [
+    {
+      "source": "kin-geri-f1.mp4",
+      "label": "Kin-geri — widok z przodu 1",
+      "alt": "Kin-geri: widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "kin-geri-f2.mp4",
+      "label": "Kin-geri — widok z przodu 2",
+      "alt": "Kin-geri: widok z przodu 2. Nagranie z dojo."
+    },
+    {
+      "source": "kin-geri-s1.mp4",
+      "label": "Kin-geri — widok z boku 1",
+      "alt": "Kin-geri: widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "kin-geri-s2.mp4",
+      "label": "Kin-geri — widok z boku 2",
+      "alt": "Kin-geri: widok z boku 2. Nagranie z dojo."
+    }
+  ]
+}

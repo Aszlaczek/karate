@@ -1,0 +1,48 @@
+{
+  "id": "tettsui-yoko-uchi",
+  "name": "Tettsui yoko-uchi",
+  "japanese": "鉄槌横打ち",
+  "reading": "tecuj joko-uczi",
+  "category": "Uderzenia",
+  "description": "Boczne uderzenie dolną krawędzią pięści (jōdan, chūdan, gedan). Ruch po łuku z zewnątrz do wewnątrz.",
+  "tags": [
+    "Tettsui",
+    "Yoko",
+    "Uchi"
+  ],
+  "focus": "Łuk z zewnątrz do wewnątrz",
+  "levels": [
+    7
+  ],
+  "aliases": [
+    "Tettsui yoko-uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Boczne uderzenie młotem pięści.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Prowadź dolną powierzchnię pięści w bok, zgodnie z kierunkiem ćwiczenia. Yoko określa kierunek, a nie wysokość celu."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Oddziel kierunek boczny od poziomu: tę samą nazwę można uzupełnić o poziom górny, środkowy lub dolny. Sprawdź zadany wariant."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Tettsui",
+        "polish": "żelazny młot; dolna powierzchnia zamkniętej pięści"
+      },
+      {
+        "term": "yoko",
+        "polish": "bok, w bok"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

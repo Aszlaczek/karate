@@ -1,0 +1,50 @@
+{
+  "id": "shuto-sakotsu-uchi",
+  "name": "Shūto sakotsu-uchi",
+  "japanese": "手刀鎖骨打ち",
+  "reading": "szuto sakocu-uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie krawędzią dłoni (shuto) w obojczyk (sakotsu), z góry po skosie.",
+  "tags": [
+    "Shūto",
+    "Sakotsu",
+    "Uchi"
+  ],
+  "focus": "Skośny tor z góry",
+  "levels": [
+    4
+  ],
+  "aliases": [
+    "Shūto sakotsu-uchi",
+    "Shuto sakotsu-uchi",
+    "Shuto sakotsu uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie zewnętrzną krawędzią dłoni w kierunku obojczyka.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Poprowadź krawędź dłoni opadającym torem ku linii obojczyka. Kontroluj zatrzymanie i nie rozchylaj palców w końcowej fazie."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Sakotsu wskazuje obojczyk, więc kontroluj cel oraz opadającą linię. Nie traktuj tej wersji jak poziomego ruchu na twarz."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Shūto",
+        "polish": "miecz dłoni; shu — ręka, tō — ostrze, zewnętrzna krawędź dłoni"
+      },
+      {
+        "term": "sakotsu",
+        "polish": "obojczyk"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

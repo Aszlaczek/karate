@@ -1,0 +1,52 @@
+{
+  "id": "oya-yubi-ippon-ken",
+  "name": "Oya-yubi ippon-ken",
+  "japanese": "親指一本拳",
+  "reading": "oja-jubi ippon-ken",
+  "category": "Uderzenia",
+  "description": "Uderzenie pięścią z wysuniętym kciukiem (jōdan, chūdan).",
+  "tags": [
+    "Oya-yubi",
+    "Ippon-ken"
+  ],
+  "focus": "Punktowy kontakt",
+  "levels": [
+    1
+  ],
+  "aliases": [
+    "Oya-yubi ippon-ken",
+    "Oya yubi ippon ken"
+  ],
+  "infographic": "zuki",
+  "knowledge": {
+    "translation": "Pięść z wyróżnionym stawem kciuka.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Rozpoznaj ustawienie kciuka w tej odmianie pięści i skontroluj je z instruktorem. Oya-yubi oznacza cały kciuk, nie dowolny palec."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Sprawdź, czy pozostałe palce stabilizują całą pięść. Nie ćwicz siłowego kontaktu wysuniętym, niepodpartym kciukiem."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Oya",
+        "polish": "rodzic; oya-yubi oznacza kciuk"
+      },
+      {
+        "term": "yubi",
+        "polish": "palec; naka-yubi oznacza palec środkowy"
+      },
+      {
+        "term": "ippon",
+        "polish": "jeden; ichi + hon, w złożeniu ippon"
+      },
+      {
+        "term": "ken",
+        "polish": "pięść"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "ryuto-ken-tsuki",
+  "name": "Ryūtō-ken tsuki",
+  "japanese": "竜頭拳突き",
+  "reading": "rjuto-ken cuki",
+  "category": "Uderzenia",
+  "description": "Uderzenie „głową smoka” — pięścią z wysuniętym kłykciem kciuka lub palca (jōdan, chūdan).",
+  "tags": [
+    "Ryūtō-ken",
+    "Tsuki"
+  ],
+  "focus": "Punktowy kontakt kłykcia",
+  "levels": [
+    1
+  ],
+  "aliases": [
+    "Ryūtō-ken tsuki",
+    "Ryuto-ken tsuki",
+    "Ryuto ken tsuki"
+  ],
+  "infographic": "zuki",
+  "knowledge": {
+    "translation": "Uderzenie pięścią określaną jako głowa smoka.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Ta nazwa identyfikuje szczególne uformowanie pięści. Dokładne ustawienie palców wymaga demonstracji instruktora; nie wyprowadzaj go wyłącznie z dosłownego tłumaczenia."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Nie utożsamiaj nazwy głowy smoka z dowolną pięścią o wystającym palcu. Ułożenie powinno być zgodne z wariantem pokazywanym w dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Ryūtō",
+        "polish": "głowa smoka; ryū — smok, tō — głowa"
+      },
+      {
+        "term": "ken",
+        "polish": "pięść"
+      },
+      {
+        "term": "tsuki",
+        "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+      }
+    ]
+  }
+}

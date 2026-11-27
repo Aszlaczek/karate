@@ -1,0 +1,60 @@
+{
+  "id": "kake-wake-uke",
+  "name": "Kake-wake uke / Morote gedan barai",
+  "japanese": "掛け分け受け",
+  "reading": "kake-wake uke",
+  "category": "Bloki",
+  "description": "Blok rozdzielający: skrzyżowane przedramiona rozchodzą się na boki, odpychając atak.",
+  "tags": [
+    "Kake-wake",
+    "Uke"
+  ],
+  "focus": "Moment rozdzielenia",
+  "levels": [
+    8
+  ],
+  "aliases": [
+    "Kake-wake uke",
+    "Kake wake uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Blok hakowy rozdzielający.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Od ustawienia przedramion blisko siebie przejdź do rozdzielenia rąk. Zachowaj kontrolę szerokości, bez odciągania barków nadmiernie w tył."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Obie strony rozdzielenia powinny pozostać kontrolowane. Nie rozsuwaj przedramion dalej, niż wymaga przyjęta osłona."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Kake",
+        "polish": "zahaczenie, ruch hakowy"
+      },
+      {
+        "term": "wake",
+        "polish": "rozdzielenie"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      },
+      {
+        "term": "Morote",
+        "polish": "oburącz; chwyt lub uderzenie z obu rąk"
+      },
+      {
+        "term": "gedan",
+        "polish": "dolna strefa: podbrzusze, biodra i nogi"
+      },
+      {
+        "term": "barai",
+        "polish": "odgarnięcie, wyczyszczenie"
+      }
+    ]
+  }
+}

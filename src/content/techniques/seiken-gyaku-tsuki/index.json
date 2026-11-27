@@ -1,0 +1,50 @@
+{
+  "id": "seiken-gyaku-tsuki",
+  "name": "Seiken gyaku-tsuki",
+  "japanese": "正拳逆突き",
+  "reading": "sejken giaku-cuki",
+  "category": "Uderzenia",
+  "description": "Uderzenie pięścią ręką przeciwną do nogi wykrocznej (chūdan, jōdan, gedan). Siła z rotacji bioder i tułowia.",
+  "tags": [
+    "Seiken",
+    "Gyaku-tsuki",
+    "Chūdan",
+    "Jōdan",
+    "Gedan"
+  ],
+  "focus": "Rotacja biodra",
+  "levels": [
+    9
+  ],
+  "aliases": [
+    "Seiken gyaku-tsuki"
+  ],
+  "infographic": "zuki",
+  "knowledge": {
+    "translation": "Proste uderzenie pięścią przeciwną do nogi wykrocznej.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Pozostaw nogę wykroczną z przodu i poprowadź przeciwną rękę wraz z obrotem bioder. Nie zastępuj rotacji wychyleniem barku."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Sprawdź, czy przeciwległe biodro uczestniczy w ruchu, a kolano wykroczne nadal podąża w kierunku stopy. Nie skręcaj samego kolana."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seiken",
+        "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+      },
+      {
+        "term": "gyaku",
+        "polish": "odwrotny; tutaj ręka przeciwna do nogi wykrocznej"
+      },
+      {
+        "term": "tsuki",
+        "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+      }
+    ]
+  }
+}

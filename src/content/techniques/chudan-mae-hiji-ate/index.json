@@ -1,0 +1,54 @@
+{
+  "id": "chudan-mae-hiji-ate",
+  "name": "Chūdan mae hiji-ate",
+  "japanese": "中段前肘当て",
+  "reading": "czudan mae hidzi-ate",
+  "category": "Uderzenia",
+  "description": "Uderzenie łokciem do przodu w strefę środkową (mae = przód).",
+  "tags": [
+    "Chūdan",
+    "Mae",
+    "Hiji-ate"
+  ],
+  "focus": "Ruch łokcia w osi ciała",
+  "levels": [
+    3
+  ],
+  "aliases": [
+    "Chūdan mae hiji-ate",
+    "Chudan mae hiji-ate",
+    "Chudan mae hiji ate"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie łokciem do przodu na poziom środkowy.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Nadaj łokciowi wyraźny kierunek do przodu na wysokości tułowia. Słowo mae odróżnia tę wersję od uderzeń bocznych i tylnych."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Łokieć ma przemieszczać się do przodu, nie po szerokim bocznym łuku. Sprawdź ten kierunek w wolnym wykonaniu."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Chūdan",
+        "polish": "poziom środkowy; chū — środek, dan — poziom"
+      },
+      {
+        "term": "mae",
+        "polish": "przód, do przodu"
+      },
+      {
+        "term": "hiji",
+        "polish": "łokieć"
+      },
+      {
+        "term": "ate",
+        "polish": "trafienie, przyłożenie uderzenia"
+      }
+    ]
+  }
+}

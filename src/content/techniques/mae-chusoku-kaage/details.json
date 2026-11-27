@@ -1,0 +1,14 @@
+{
+  "media": [
+    {
+      "source": "mae-kaage-chusoku-f1.mp4",
+      "label": "Mae chūsoku kaage (chūsoku) — widok z przodu 1",
+      "alt": "Mae chūsoku kaage (chūsoku): widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "mae-kaage-chusoku-s1.mp4",
+      "label": "Mae chūsoku kaage (chūsoku) — widok z boku 1",
+      "alt": "Mae chūsoku kaage (chūsoku): widok z boku 1. Nagranie z dojo."
+    }
+  ]
+}

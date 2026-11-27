@@ -32,7 +32,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Audit danych i mediów
+      - name: Spójność treści i plików do uploadu
+        run: npm run media:verify
+
+      - name: Audit danych
         run: npm run audit
 
       - name: Testy jednostkowe

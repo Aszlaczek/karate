@@ -1,0 +1,54 @@
+{
+  "id": "teisoku-mawashi-soto-keage",
+  "name": "Teisoku mawashi soto-keage",
+  "japanese": "底足回し外蹴上げ",
+  "reading": "tejsoku mawaszi soto-keage",
+  "category": "Kopnięcia",
+  "description": "Okrężne kopnięcie wznoszące podeszwą stopy, wykonywane z zewnątrz do wewnątrz.",
+  "tags": [
+    "Teisoku",
+    "Mawashi",
+    "Soto",
+    "Keage"
+  ],
+  "focus": "Tor okrężny",
+  "levels": [
+    7
+  ],
+  "aliases": [
+    "Teisoku mawashi soto-keage",
+    "Teisoku mawashi soto keage"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Okrężne kopnięcie wznoszące podeszwą, od zewnątrz.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Wyznacz łuk z zewnętrznej strony do środka. Utrzymuj świadome ustawienie podeszwy i nie wymuszaj wysokości skręcaniem kolana podporowego."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Sprawdź kierunek łuku od zewnątrz i ustawienie podeszwy. Stopa podporowa powinna pozwalać biodru pracować bez skręcania kolana."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Teisoku",
+        "polish": "podeszwa stopy"
+      },
+      {
+        "term": "mawashi",
+        "polish": "obrót, ruch okrężny"
+      },
+      {
+        "term": "soto",
+        "polish": "zewnętrzny, od zewnątrz"
+      },
+      {
+        "term": "keage",
+        "polish": "kopnięcie wznoszące; ke — kopnięcie, age — unoszenie"
+      }
+    ]
+  }
+}

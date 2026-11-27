@@ -1,19 +1,28 @@
+import atlasJson from "./atlas.json";
 import dojoKunJson from "./dojoKun.json";
-import glossaryJson from "./glossary.json";
 import levelsJson from "./levels.json";
-import mediaThumbnailsJson from "./media-thumbnails.json";
-import techniquesJson from "./techniques.json";
-import type { BeltId, CardMedia, DojoKunEntry, GlossaryCategory, GlossaryEntry, Level, MediaThumbnails, RequirementItem, Technique } from "./types";
+import type { BeltId, CardMedia, DojoKunEntry, GlossaryCategory, GlossaryEntry, Level, RequirementItem, Technique } from "./types";
 
-// Lekki indeks generowany przez npm run data:chunks — bez filmów i opisów.
-const thumbnails = mediaThumbnailsJson as MediaThumbnails;
+// Lekki indeks generowany z folderów technik przez npm run data:build.
+const atlas = atlasJson as {
+  techniques: (Technique & CardMedia)[];
+  glossary: { categories: GlossaryCategory[] };
+};
 const EMPTY_CARD_MEDIA: CardMedia = { thumbnail: null, firstIsVideo: false };
+const techniqueCards = new Map(
+  atlas.techniques.map(({ thumbnail, firstIsVideo, ...card }) => [card.id, { thumbnail, firstIsVideo }]),
+);
+const glossaryCards = new Map<string, CardMedia>(
+  atlas.glossary.categories.flatMap((category) =>
+    category.entries.map((entry) => [entry.id, { thumbnail: entry.image, firstIsVideo: false }]),
+  ),
+);
 
 export const getTechniqueCardMedia = (id: string): CardMedia =>
-  thumbnails.techniques[id] ?? EMPTY_CARD_MEDIA;
+  techniqueCards.get(id) ?? EMPTY_CARD_MEDIA;
 
 export const getGlossaryCardMedia = (id: string): CardMedia =>
-  thumbnails.glossary[id] ?? EMPTY_CARD_MEDIA;
+  glossaryCards.get(id) ?? EMPTY_CARD_MEDIA;
 
 const mapRequirementItem = (item: { type: string; id?: string; text?: string }): RequirementItem =>
   item.type === "technique" && item.id !== undefined
@@ -28,8 +37,8 @@ export const levels: Level[] = levelsJson.map((level) => ({
   fights: level.fights ?? null,
   groups: level.groups.map((group) => ({ ...group, items: group.items.map(mapRequirementItem) })),
 }));
-export const techniques: Technique[] = techniquesJson;
-export const glossary: GlossaryCategory[] = glossaryJson.categories;
+export const techniques: Technique[] = atlas.techniques.map(({ thumbnail: _thumbnail, firstIsVideo: _first, ...card }) => card);
+export const glossary: GlossaryCategory[] = atlas.glossary.categories;
 export const dojoKun: DojoKunEntry[] = dojoKunJson;
 
 export const BELT_NAMES: Record<BeltId, string> = {

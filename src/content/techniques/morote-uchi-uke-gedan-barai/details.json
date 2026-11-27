@@ -1,0 +1,16 @@
+{
+  "media": [
+    {
+      "source": "seiken-morote-uchi-uke-gedan-barai-f1.mp4",
+      "label": "Morote uchi-uke, gedan-barai (morote) — widok z przodu 1",
+      "alt": "Morote uchi-uke, gedan-barai (morote): widok z przodu 1. Nagranie z dojo.",
+      "zone": "gedan"
+    },
+    {
+      "source": "seiken-morote-uchi-uke-gedan-barai-f2.mp4",
+      "label": "Morote uchi-uke, gedan-barai (morote) — widok z przodu 2",
+      "alt": "Morote uchi-uke, gedan-barai (morote): widok z przodu 2. Nagranie z dojo.",
+      "zone": "gedan"
+    }
+  ]
+}

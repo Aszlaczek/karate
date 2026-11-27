@@ -1,0 +1,24 @@
+{
+  "media": [
+    {
+      "source": "shuto-hizo-uchi-f1.mp4",
+      "label": "Shūto hizō-uchi (uchi) — widok z przodu 1",
+      "alt": "Shūto hizō-uchi (uchi): widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "shuto-hizo-uchi-s1.mp4",
+      "label": "Shūto hizō-uchi (uchi) — widok z boku 1",
+      "alt": "Shūto hizō-uchi (uchi): widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "shuto-hizo-uchi-s2.mp4",
+      "label": "Shūto hizō-uchi (uchi) — widok z boku 2",
+      "alt": "Shūto hizō-uchi (uchi): widok z boku 2. Nagranie z dojo."
+    },
+    {
+      "source": "shuto-hizo-uchi-s3.mp4",
+      "label": "Shūto hizō-uchi (uchi) — widok z boku 3",
+      "alt": "Shūto hizō-uchi (uchi): widok z boku 3. Nagranie z dojo."
+    }
+  ]
+}

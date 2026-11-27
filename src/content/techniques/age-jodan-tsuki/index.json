@@ -1,0 +1,49 @@
+{
+  "id": "age-jodan-tsuki",
+  "name": "Age jōdan tsuki",
+  "japanese": "上げ上段突き",
+  "reading": "age dzodan cuki",
+  "category": "Uderzenia",
+  "description": "Uderzenie pięścią od dołu w górę na poziom głowy (jōdan).",
+  "tags": [
+    "Age",
+    "Jōdan",
+    "Tsuki"
+  ],
+  "focus": "Tor od dołu w górę",
+  "levels": [
+    2
+  ],
+  "aliases": [
+    "Age jōdan tsuki",
+    "Age jodan tsuki"
+  ],
+  "infographic": "zuki",
+  "knowledge": {
+    "translation": "Wznoszące uderzenie pięścią na poziom górny.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Połącz wznoszący tor z zakończeniem na wysokości głowy. Age opisuje ruch, a jōdan jego poziom końcowy."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Sprawdź dwa warunki osobno: wznoszący tor oraz zakończenie w górnej strefie. Sam wysoki cel nie czyni zwykłego prostego uderzenia wersją age."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Age",
+        "polish": "unoszenie, w górę"
+      },
+      {
+        "term": "jōdan",
+        "polish": "poziom górny; jō — góra, dan — poziom"
+      },
+      {
+        "term": "tsuki",
+        "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+      }
+    ]
+  }
+}

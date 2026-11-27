@@ -1,6 +1,6 @@
 import type { EntryData } from "./types";
 
-const EMPTY: EntryData = { media: [], detail: null };
+const EMPTY: EntryData = { media: [], knowledge: null };
 const cache = new Map<string, Promise<EntryData>>();
 
 /** Pliki leżą w public/data/ — bazę aplikacji dodajemy tak samo jak dla obrazów. */

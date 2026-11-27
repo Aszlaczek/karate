@@ -1,0 +1,44 @@
+{
+  "id": "hiza-geri",
+  "name": "Hiza-geri",
+  "japanese": "膝蹴り",
+  "reading": "hidza-geri",
+  "category": "Kopnięcia",
+  "description": "Kopnięcie kolanem, zwykle w korpus lub głowę z krótkiego dystansu.",
+  "tags": [
+    "Hiza",
+    "Geri"
+  ],
+  "focus": "Przyciągnięcie przeciwnika",
+  "levels": [
+    10
+  ],
+  "aliases": [
+    "Hiza-geri",
+    "Hiza geri"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Kopnięcie kolanem.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Unoś ugięte kolano ku umownemu celowi, bez prostowania nogi w klasyczne kopnięcie stopą. Utrzymuj stabilną nogę podporową."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Kolano pozostaje ugięte także przy celu. Wysokość uzyskuj pracą biodra, bez podskakiwania na niestabilnej nodze podporowej."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Hiza",
+        "polish": "kolano"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      }
+    ]
+  }
+}

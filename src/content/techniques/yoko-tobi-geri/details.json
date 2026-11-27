@@ -1,0 +1,14 @@
+{
+  "media": [
+    {
+      "source": "tobi-geri-yoko-f1.mp4",
+      "label": "Yoko tobi-geri — widok z przodu 1",
+      "alt": "Yoko tobi-geri: widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "tobi-geri-yoko-f2.mp4",
+      "label": "Yoko tobi-geri — widok z przodu 2",
+      "alt": "Yoko tobi-geri: widok z przodu 2. Nagranie z dojo."
+    }
+  ]
+}

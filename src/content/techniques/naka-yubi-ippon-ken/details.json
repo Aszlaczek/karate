@@ -1,0 +1,16 @@
+{
+  "media": [
+    {
+      "source": "naka-yubi-ippon-ken-chudan-f1.mp4",
+      "label": "Naka-yubi ippon-ken — widok z przodu 1",
+      "alt": "Naka-yubi ippon-ken: widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "naka-yubi-ippon-ken-chudan-f2.mp4",
+      "label": "Naka-yubi ippon-ken — widok z przodu 2",
+      "alt": "Naka-yubi ippon-ken: widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    }
+  ]
+}

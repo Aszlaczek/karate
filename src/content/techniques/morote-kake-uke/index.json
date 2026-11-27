@@ -1,0 +1,49 @@
+{
+  "id": "morote-kake-uke",
+  "name": "Morote kake-uke",
+  "japanese": "諸手掛け受け",
+  "reading": "morote kake-uke",
+  "category": "Bloki",
+  "description": "Wzmocniony blok hakowy obiema rękami (jōdan, chūdan).",
+  "tags": [
+    "Morote",
+    "Kake",
+    "Uke"
+  ],
+  "focus": "Współpraca obu rąk",
+  "levels": [
+    1
+  ],
+  "aliases": [
+    "Morote kake-uke",
+    "Morote Kake uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Hakowy blok wykonywany obiema rękami.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Koordynuj hakowe ustawienie obu rąk i ich pracę na zadanej linii. Morote opisuje współpracę rąk, nie dwa oddzielne powtórzenia."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Sprawdź kolejność lub jednoczesność pracy obu rąk według pokazu. Jedna ręka nie powinna blokować drogi drugiej."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Morote",
+        "polish": "obie ręce; moro — obie, te — ręce"
+      },
+      {
+        "term": "kake",
+        "polish": "zahaczenie, ruch hakowy"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "morote-uchi-uke-gedan-barai",
+  "name": "Morote uchi-uke, gedan-barai",
+  "japanese": "諸手内受け下段払い",
+  "reading": "morote uczi-uke, gedan-barai",
+  "category": "Bloki",
+  "description": "Zestaw: wzmocniony blok wewnętrzny i zamiatanie w strefie dolnej. Zapis na liście może oznaczać dwa osobne bloki.",
+  "tags": [
+    "Morote",
+    "Uchi-uke",
+    "Gedan-barai"
+  ],
+  "focus": "Płynne przejście",
+  "levels": [
+    8
+  ],
+  "aliases": [
+    "Morote uchi-uke, gedan-barai",
+    "Morote uchi uke gedan barai"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Praca obu rąk: blok od wewnątrz i zamiatanie dolne.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Rozpoznaj dwa składniki: uchi-uke i gedan-barai. W wariancie łączonym ręce osłaniają dwa poziomy; zapis programu należy odróżnić od ćwiczenia dwóch osobnych bloków."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Jeżeli ćwiczysz wersję jednoczesną, sprawdź oba poziomy osłony naraz. Przy wersji rozdzielonej zachowaj wyraźne zakończenie każdego bloku."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Morote",
+        "polish": "obie ręce; moro — obie, te — ręce"
+      },
+      {
+        "term": "uchi",
+        "polish": "wewnętrzny, od wewnątrz (内); kierunek określa całe złożenie"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      },
+      {
+        "term": "gedan",
+        "polish": "poziom dolny; ge — dół, dan — poziom"
+      },
+      {
+        "term": "barai",
+        "polish": "zamiatanie, zgarnięcie (od harai)"
+      }
+    ],
+    "note": "Przecinek w tytule może oznaczać listę bloków albo połączone ćwiczenie. Ustal sposób wykonania w swoim programie egzaminacyjnym."
+  }
+}

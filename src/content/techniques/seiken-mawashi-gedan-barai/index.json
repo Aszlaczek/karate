@@ -1,0 +1,53 @@
+{
+  "id": "seiken-mawashi-gedan-barai",
+  "name": "Seiken mawashi gedan-barai",
+  "japanese": "正拳回し下段払い",
+  "reading": "sejken mawaszi gedan-barai",
+  "category": "Bloki",
+  "description": "Okrężne zamiatanie pięścią w strefie dolnej (mawashi).",
+  "tags": [
+    "Seiken",
+    "Mawashi",
+    "Gedan-barai"
+  ],
+  "focus": "Tor okrężny",
+  "levels": [
+    7
+  ],
+  "aliases": [
+    "Seiken mawashi gedan-barai",
+    "Seiken mawashi gedan barai"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Okrężny blok zamiatający na poziomie dolnym.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Połącz okrężne przygotowanie ręki z dolnym zgarnięciem. Rozpoznaj przejście między łukiem ruchu a końcową osłoną dolnej strefy."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Końcowy poziom pozostaje dolny mimo okrężnego przygotowania. Nie kończ bloku przy klatce piersiowej tylko dlatego, że ręka zataczała szeroki łuk."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seiken",
+        "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+      },
+      {
+        "term": "mawashi",
+        "polish": "obrót, ruch okrężny"
+      },
+      {
+        "term": "gedan",
+        "polish": "poziom dolny; ge — dół, dan — poziom"
+      },
+      {
+        "term": "barai",
+        "polish": "zamiatanie, zgarnięcie (od harai)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "media": [
+    {
+      "source": "hira-ken-tsuki-chudan-f1.mp4",
+      "label": "Hira-ken tsuki — widok z przodu 1",
+      "alt": "Hira-ken tsuki: widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "hira-ken-tsuki-chudan-f2.mp4",
+      "label": "Hira-ken tsuki — widok z przodu 2",
+      "alt": "Hira-ken tsuki: widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "hira-ken-tsuki-jodan-f1.mp4",
+      "label": "Hira-ken tsuki — widok z przodu 1",
+      "alt": "Hira-ken tsuki: widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "hira-ken-tsuki-jodan-f2.mp4",
+      "label": "Hira-ken tsuki — widok z przodu 2",
+      "alt": "Hira-ken tsuki: widok z przodu 2. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "hira-ken-tsuki-chudan-s1.mp4",
+      "label": "Hira-ken tsuki — widok z boku 1",
+      "alt": "Hira-ken tsuki: widok z boku 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "hira-ken-tsuki-chudan-s2.mp4",
+      "label": "Hira-ken tsuki — widok z boku 2",
+      "alt": "Hira-ken tsuki: widok z boku 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "hira-ken-tsuki-jodan-s1.mp4",
+      "label": "Hira-ken tsuki — widok z boku 1",
+      "alt": "Hira-ken tsuki: widok z boku 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "hira-ken-tsuki-jodan-s2.mp4",
+      "label": "Hira-ken tsuki — widok z boku 2",
+      "alt": "Hira-ken tsuki: widok z boku 2. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

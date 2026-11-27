@@ -1,0 +1,16 @@
+{
+  "media": [
+    {
+      "source": "yoko-geri-chudan-f1.mp4",
+      "label": "Yoko-geri chūdan — widok z przodu 1",
+      "alt": "Yoko-geri chūdan: widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "yoko-geri-chudan-f2.mp4",
+      "label": "Yoko-geri chūdan — widok z przodu 2",
+      "alt": "Yoko-geri chūdan: widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    }
+  ]
+}

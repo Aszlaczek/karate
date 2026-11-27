@@ -1,0 +1,50 @@
+{
+  "id": "seiken-juji-uke",
+  "name": "Seiken jūji-uke",
+  "japanese": "正拳十字受け",
+  "reading": "sejken dzudzi-uke",
+  "category": "Bloki",
+  "description": "Blok skrzyżowanymi przedramionami w strefie jōdan lub gedan.",
+  "tags": [
+    "Seiken",
+    "Jūji",
+    "Uke"
+  ],
+  "focus": "Moment skrzyżowania",
+  "levels": [
+    6
+  ],
+  "aliases": [
+    "Seiken jūji-uke",
+    "Seiken juji-uke",
+    "Seiken juji uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Blok krzyżowy przy zamkniętych pięściach.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Skrzyżuj przedramiona przed wyznaczoną strefą. Jūji odnosi się do krzyża, a poziom górny lub dolny trzeba ustalić osobno."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Krzyż tworzą przedramiona, nie same zaciśnięte dłonie. Ustal poziom bloku przed przygotowaniem i utrzymuj oba łokcie pod kontrolą."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seiken",
+        "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+      },
+      {
+        "term": "jūji",
+        "polish": "krzyż; dosłownie kształt znaku dziesięć (十)"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

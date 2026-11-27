@@ -1,0 +1,53 @@
+{
+  "id": "uraken-shomen-uchi",
+  "name": "Uraken shōmen-uchi",
+  "japanese": "裏拳正面打ち",
+  "reading": "uraken szomen-uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie grzbietem pięści na wprost, w twarz. Szybkie, „biczowe” — uderzenie z łokcia i nadgarstka.",
+  "tags": [
+    "Uraken",
+    "Shōmen",
+    "Uchi"
+  ],
+  "focus": "Praca łokcia i nadgarstka",
+  "levels": [
+    6,
+    7,
+    8
+  ],
+  "aliases": [
+    "Uraken",
+    "Uraken shōmen-uchi",
+    "Uraken shomen-uchi",
+    "Uraken shomen uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie grzbietem pięści na wprost.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Wyprowadź krótki ruch grzbietem pięści przed siebie. Kontroluj wyprost łokcia i ustawienie nadgarstka, zamiast wymuszać zasięg całym barkiem."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Ruch kończy się przed Tobą, a nie szeroko z boku. Nadgarstek nie powinien bezwładnie załamywać się po zatrzymaniu ręki."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Uraken",
+        "polish": "grzbiet pięści; ura — tył, ken — pięść"
+      },
+      {
+        "term": "shōmen",
+        "polish": "przód, na wprost"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

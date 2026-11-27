@@ -1,0 +1,70 @@
+{
+  "media": [
+    {
+      "source": "ryuto-ken-tsuki-chudan-f1.mp4",
+      "label": "Ryūtō-ken tsuki — widok z przodu 1",
+      "alt": "Ryūtō-ken tsuki: widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "ryuto-ken-tsuki-chudan-f1a.mp4",
+      "label": "Ryūtō-ken tsuki — widok z przodu 1a",
+      "alt": "Ryūtō-ken tsuki: widok z przodu 1a. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "ryuto-ken-tsuki-chudan-f2-.mp4",
+      "label": "Ryūtō-ken tsuki — ujęcie",
+      "alt": "Ryūtō-ken tsuki: ujęcie. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "ryuto-ken-tsuki-jodan-f1.mp4",
+      "label": "Ryūtō-ken tsuki — widok z przodu 1",
+      "alt": "Ryūtō-ken tsuki: widok z przodu 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "ryuto-ken-tsuki-jodan-f2.mp4",
+      "label": "Ryūtō-ken tsuki — widok z przodu 2",
+      "alt": "Ryūtō-ken tsuki: widok z przodu 2. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "ryuto-ken-tsuki-jodan-f2a.mp4",
+      "label": "Ryūtō-ken tsuki — widok z przodu 2a",
+      "alt": "Ryūtō-ken tsuki: widok z przodu 2a. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "ryuto-ken-tsuki-chudan-s1.mp4",
+      "label": "Ryūtō-ken tsuki — widok z boku 1",
+      "alt": "Ryūtō-ken tsuki: widok z boku 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "ryuto-ken-tsuki-chudan-s2.mp4",
+      "label": "Ryūtō-ken tsuki — widok z boku 2",
+      "alt": "Ryūtō-ken tsuki: widok z boku 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "ryuto-ken-tsuki-jodan-s1.mp4",
+      "label": "Ryūtō-ken tsuki — widok z boku 1",
+      "alt": "Ryūtō-ken tsuki: widok z boku 1. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "ryuto-ken-tsuki-jodan-s1a.mp4",
+      "label": "Ryūtō-ken tsuki — widok z boku 1a",
+      "alt": "Ryūtō-ken tsuki: widok z boku 1a. Nagranie z dojo.",
+      "zone": "jodan"
+    },
+    {
+      "source": "ryuto-ken-tsuki-jodan-s2.mp4",
+      "label": "Ryūtō-ken tsuki — widok z boku 2",
+      "alt": "Ryūtō-ken tsuki: widok z boku 2. Nagranie z dojo.",
+      "zone": "jodan"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "seiken-morote-tsuki",
+  "name": "Seiken morote-tsuki",
+  "japanese": "正拳諸手突き",
+  "reading": "sejken morote-cuki",
+  "category": "Uderzenia",
+  "description": "Podwójne uderzenie pięściami (obiema rękami jednocześnie) na strefę chūdan, jōdan lub gedan. Wymaga symetrii i stabilnej postawy.",
+  "tags": [
+    "Seiken",
+    "Morote",
+    "Tsuki"
+  ],
+  "focus": "Symetria obu rąk",
+  "levels": [
+    6,
+    10
+  ],
+  "aliases": [
+    "Morote-zuki",
+    "Seiken morote-tsuki"
+  ],
+  "infographic": "zuki",
+  "knowledge": {
+    "translation": "Jednoczesne proste uderzenie obiema pięściami.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Obie pięści prowadź równocześnie do wyznaczonych punktów. Sprawdź, czy barki pozostają na jednym poziomie, a tułów nie przechyla się do przodu."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Porównaj zasięg obu rąk i ich moment zakończenia. Jedna pięść nie powinna wyprzedzać drugiej ani pociągać tułowia w bok."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seiken",
+        "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+      },
+      {
+        "term": "morote",
+        "polish": "obie ręce; moro — obie, te — ręce"
+      },
+      {
+        "term": "tsuki",
+        "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+      }
+    ]
+  }
+}

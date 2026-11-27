@@ -1,0 +1,19 @@
+{
+  "media": [
+    {
+      "source": "oroshi-uchi-geri-kakato-f1.mp4",
+      "label": "Oroshi uchi kakato-geri (kakato) — widok z przodu 1",
+      "alt": "Oroshi uchi kakato-geri (kakato): widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "oroshi-uchi-geri-kakato-f2.mp4",
+      "label": "Oroshi uchi kakato-geri (kakato) — widok z przodu 2",
+      "alt": "Oroshi uchi kakato-geri (kakato): widok z przodu 2. Nagranie z dojo."
+    },
+    {
+      "source": "oroshi-uchi-geri-kakato-s1.mp4",
+      "label": "Oroshi uchi kakato-geri (kakato) — widok z boku 1",
+      "alt": "Oroshi uchi kakato-geri (kakato): widok z boku 1. Nagranie z dojo."
+    }
+  ]
+}

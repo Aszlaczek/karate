@@ -1,0 +1,50 @@
+{
+  "id": "tettsui-hizo-uchi",
+  "name": "Tettsui hizō-uchi",
+  "japanese": "鉄槌脾臓打ち",
+  "reading": "tecuj hidzo-uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie dolną krawędzią pięści w okolicę śledziony (hizō), ruchem bocznym lub skośnym.",
+  "tags": [
+    "Tettsui",
+    "Hizō",
+    "Uchi"
+  ],
+  "focus": "Skośny tor uderzenia",
+  "levels": [
+    7
+  ],
+  "aliases": [
+    "Tettsui hizō-uchi",
+    "Tettsui hizo-uchi",
+    "Tettsui hizo uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie młotem pięści w okolicę śledziony.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Kieruj dolny brzeg pięści w bok tułowia umownego przeciwnika. Wysokość celu odróżnia tę wersję od uderzenia na skroń."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Hizō określa okolicę śledziony po lewej stronie ciała przeciwnika. To nazwa anatomiczna celu, a nie polecenie uderzania zawsze własną lewą ręką."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Tettsui",
+        "polish": "żelazny młot; dolna powierzchnia zamkniętej pięści"
+      },
+      {
+        "term": "hizō",
+        "polish": "śledziona; okolica lewego boku tułowia"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

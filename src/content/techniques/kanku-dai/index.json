@@ -1,0 +1,47 @@
+{
+  "id": "kanku-dai",
+  "name": "Kanku Dai",
+  "japanese": "観空大",
+  "reading": "kanku-dai",
+  "category": "Kata",
+  "description": "Kata wymagane na stopień 4 dan.",
+  "tags": [
+    "Kata",
+    "dan"
+  ],
+  "focus": "Precyzja i kontrola",
+  "levels": [
+    14
+  ],
+  "aliases": [
+    "Kanku Dai"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Obserwowanie nieba — duża forma.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Nazwa nawiązuje do obserwowania nieba, widocznego w geście otwierającym formę."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Połącz znaczenie gestu otwarcia z uważnym początkiem. Długą formę dziel na krótsze odcinki i utrzymuj orientację w jej kierunkach."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Kanku",
+        "polish": "obserwowanie nieba; kan — patrzeć, kū — niebo / pustka"
+      },
+      {
+        "term": "Dai",
+        "polish": "duży, wielki"
+      }
+    ]
+  }
+}

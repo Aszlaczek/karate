@@ -1,0 +1,55 @@
+{
+  "id": "mawashi-geri-jodan-haisoku",
+  "name": "Mawashi-geri jōdan (haisoku)",
+  "japanese": "回し蹴り上段",
+  "reading": "mawaszi-geri dzodan",
+  "category": "Kopnięcia",
+  "description": "Okrężne kopnięcie na wysokość głowy podbiciem (haisoku).",
+  "tags": [
+    "Mawashi-geri",
+    "Jōdan",
+    "Haisoku"
+  ],
+  "focus": "Rotacja biodra i wysokość",
+  "levels": [
+    4,
+    6
+  ],
+  "aliases": [
+    "Mawashi-geri jōdan (haisoku)",
+    "Mawashi-geri jodan (haisoku)",
+    "Mawashi geri jodan (haisoku)"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Okrężne kopnięcie górne podbicie.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Ustaw powierzchnię stopy przed ruchem po łuku na wysokość głowy i utrzymaj obrót nogi podporowej."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Haisoku to podbicie — kontakt przebiega grzbietem stopy, nie przodem podeszwy. Nie wymuszaj zakresu w kolanie."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Mawashi",
+        "polish": "obrót, ruch okrężny"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      },
+      {
+        "term": "jōdan",
+        "polish": "poziom górny; jō — góra, dan — poziom"
+      },
+      {
+        "term": "haisoku",
+        "polish": "podbicie, grzbiet stopy"
+      }
+    ]
+  }
+}

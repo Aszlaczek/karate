@@ -1,0 +1,49 @@
+{
+  "id": "mae-geri-jodan",
+  "name": "Mae-geri jōdan",
+  "japanese": "前蹴り上段",
+  "reading": "mae-geri dzodan",
+  "category": "Kopnięcia",
+  "description": "Kopnięcie na wprost na wysokość głowy.",
+  "tags": [
+    "Mae-geri",
+    "Jōdan"
+  ],
+  "focus": "Elastyczność bioder",
+  "levels": [
+    8
+  ],
+  "aliases": [
+    "Mae-geri jōdan",
+    "Mae-geri jodan",
+    "Mae geri jodan"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Kopnięcie do przodu na poziom górny.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Wyznacz wysoki cel, zachowując kierunek do przodu. Dostosuj wysokość do kontroli bioder; nie uzyskuj jej kosztem upadania tułowia w tył."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Wysokość głowy jest celem wariantu, nie obowiązkiem przekraczania własnego zakresu. Zachowaj kierunek kopnięcia przed siebie."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Mae",
+        "polish": "przód, do przodu"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      },
+      {
+        "term": "jōdan",
+        "polish": "poziom górny; jō — góra, dan — poziom"
+      }
+    ]
+  }
+}

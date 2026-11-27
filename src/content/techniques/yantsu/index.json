@@ -1,0 +1,45 @@
+{
+  "id": "yantsu",
+  "name": "Yantsu",
+  "japanese": "安三",
+  "reading": "jancu",
+  "category": "Kata",
+  "description": "Zaawansowane kata łączące techniki obronne i atak w zwartym, równym tempie.",
+  "tags": [
+    "Kata",
+    "Yantsu"
+  ],
+  "focus": "Rytm, oddech i zanshin",
+  "levels": [
+    1,
+    3
+  ],
+  "aliases": [
+    "Yantsu"
+  ],
+  "infographic": "kata",
+  "knowledge": {
+    "translation": "Yantsu — tradycyjnie: zachować czystość.",
+    "sections": [
+      {
+        "title": "Charakter formy",
+        "body": "Nazwa własna kata, a nie zwykła instrukcja ruchu. Forma rozwija kontrolę technik i zmian kierunku na niewielkiej przestrzeni."
+      },
+      {
+        "title": "Jak pracować nad formą",
+        "body": "Utrzymuj orientację w kolejnych kierunkach oraz stabilność między sekwencjami. Nie wyprowadzaj przebiegu kata z dosłownego odczytu znaków."
+      },
+      {
+        "title": "Zakres nauki",
+        "body": "Opis wyjaśnia nazwę i kierunek pracy. Pełna kolejność ruchów, miejsca okrzyku (kiai) i zastosowania (bunkai) powinny odpowiadać wersji kata nauczanej w Twoim dojo."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Yantsu",
+        "polish": "nazwa własna kata, tradycyjnie objaśniana jako zachowanie czystości; 安 — spokój, 三 — trzy, nie jest to zwykłe japońskie złożenie"
+      }
+    ],
+    "note": "Odczyt Yantsu i tradycyjne objaśnienie nie wynikają wprost z japońskiego odczytu znaków 安三. To nazwa własna o niejednoznacznej etymologii."
+  }
+}

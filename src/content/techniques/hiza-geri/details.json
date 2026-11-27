@@ -1,0 +1,19 @@
+{
+  "media": [
+    {
+      "source": "hiza-geri-f1.mp4",
+      "label": "Hiza-geri — widok z przodu 1",
+      "alt": "Hiza-geri: widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "hiza-geri-f2.mp4",
+      "label": "Hiza-geri — widok z przodu 2",
+      "alt": "Hiza-geri: widok z przodu 2. Nagranie z dojo."
+    },
+    {
+      "source": "hiza-geri-s1.mp4",
+      "label": "Hiza-geri — widok z boku 1",
+      "alt": "Hiza-geri: widok z boku 1. Nagranie z dojo."
+    }
+  ]
+}

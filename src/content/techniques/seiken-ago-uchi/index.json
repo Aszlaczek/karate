@@ -1,0 +1,48 @@
+{
+  "id": "seiken-ago-uchi",
+  "name": "Seiken ago-uchi",
+  "japanese": "正拳顎打ち",
+  "reading": "sejken ago-uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie pięścią w żuchwę. Wykonywane krótko, z wyprostem nóg i obrotem biodra.",
+  "tags": [
+    "Seiken",
+    "Ago",
+    "Uchi"
+  ],
+  "focus": "Droga pięści w przód",
+  "levels": [
+    9
+  ],
+  "aliases": [
+    "Seiken ago-uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie pięścią w kierunku podbródka.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Prowadź pięść krótkim ruchem ku podbródkowi umownego przeciwnika. Odróżnij tor tej techniki od długiego prostego uderzenia."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Zachowaj krótki tor i kontrolę cofnięcia ręki. Nadmierne unoszenie brody podczas własnego uderzenia odsłania głowę."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seiken",
+        "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+      },
+      {
+        "term": "ago",
+        "polish": "żuchwa, podbródek"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

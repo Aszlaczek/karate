@@ -39,7 +39,7 @@ export interface Technique {
   aliases: string[];
 }
 
-export interface TechniqueDetail {
+export interface TechniqueKnowledge {
   translation: string;
   nameParts: { term: string; polish: string }[];
   sections: { title: string; body: string }[];
@@ -68,28 +68,16 @@ export interface MediaItem {
   alt?: string;
 }
 
-export interface MediaManifest {
-  /** Klucz: id z techniques.json. */
-  techniques: Record<string, MediaItem[]>;
-  /** Klucz: id hasła z glossary.json (również postawy). */
-  glossary: Record<string, MediaItem[]>;
-}
-
 /** To, czego kafelki potrzebują z galerii — bez pełnych opisów i URL-i filmów. */
 export interface CardMedia {
   thumbnail: string | null;
   firstIsVideo: boolean;
 }
 
-export interface MediaThumbnails {
-  techniques: Record<string, CardMedia>;
-  glossary: Record<string, CardMedia>;
-}
-
 /** Zawartość jednego pliku z public/data/ — pobieranego po kliknięciu kafelka. */
 export interface EntryData {
   media: MediaItem[];
-  detail: TechniqueDetail | null;
+  knowledge: TechniqueKnowledge | null;
 }
 
 export interface GlossaryEntry {

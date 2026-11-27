@@ -1,0 +1,65 @@
+{
+  "id": "ustawienia-stopy",
+  "name": "Ustawienia stóp",
+  "description": "Powierzchnie stopy używane w kopnięciach i przesunięciach — od pięty po czubki palców.",
+  "entries": [
+    {
+      "id": "kakato",
+      "term": "Pięta",
+      "japanese": "踵",
+      "reading": "kakato",
+      "description": "Twarda część stopy używana m.in. w oroshi-kakato-geri (kopnięcie piętą z góry) i przy silnych wejściach.",
+      "image": "/images/glossary/human-parts/kakato.svg",
+      "related": []
+    },
+    {
+      "id": "chusoku",
+      "term": "Śródstopie",
+      "japanese": "底足心",
+      "reading": "chusoku",
+      "description": "Poduszka pod palcami — punkt kontaktu przy mae-geri i innych kopnięciach frontalnych. Palce są uniesione.",
+      "image": "/images/glossary/human-parts/chusoku.svg",
+      "related": ["mae-geri-chudan"]
+    },
+    {
+      "id": "haisoku",
+      "term": "Grzbiet stopy",
+      "japanese": "背足",
+      "reading": "haisoku",
+      "description": "Wypięty grzbiet stopy używany w kopnięciach okrężnych (mawashi-geri) i niektórych keage.",
+      "image": "/images/glossary/human-parts/haisoku.svg",
+      "related": [
+        "mawashi-geri-gedan-haisoku",
+        "mawashi-geri-chudan-chusoku",
+        "mawashi-geri-chudan-haisoku"
+      ]
+    },
+    {
+      "id": "teisoku",
+      "term": "Podeszwa stopy",
+      "japanese": "底足",
+      "reading": "teisoku",
+      "description": "Cała podeszwa pracująca jako powierzchnia kopnięcia, m.in. w teisoku-mawashi-soto-keage.",
+      "image": "/images/glossary/human-parts/teisoku.svg",
+      "related": ["teisoku-mawashi-soto-keage"]
+    },
+    {
+      "id": "sokuto",
+      "term": "Krawędź stopy",
+      "japanese": "側足",
+      "reading": "sokuto",
+      "description": "Zewnętrzna krawędź stopy od pięty do małego palca — powierzchnia kontaktu w yoko-geri.",
+      "image": "/images/glossary/human-parts/sokuto.svg",
+      "related": ["yoko-geri-chudan", "yoko-geri-jodan"]
+    },
+    {
+      "id": "heisoku-ashi",
+      "term": "Czubki palców stopy",
+      "japanese": "閉足",
+      "reading": "heisoku-ashi",
+      "description": "Zwarto ułożone palce stopy; uniesione w kopnięciach frontalnych, by punktem kontaktu zostało śródstopie.",
+      "image": null,
+      "related": ["mae-geri-chudan"]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "media": [
+    {
+      "source": "mae-tobi-geri-all-f1.mp4",
+      "label": "Mae tobi-geri — widok z przodu 1",
+      "alt": "Mae tobi-geri: widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "mae-tobi-geri-all-s1.mp4",
+      "label": "Mae tobi-geri — widok z boku 1",
+      "alt": "Mae tobi-geri: widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "mae-tobi-geri1-s1.mp4",
+      "label": "Mae tobi-geri — widok z boku 1",
+      "alt": "Mae tobi-geri: widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "mae-tobi-geri2-s1.mp4",
+      "label": "Mae tobi-geri — widok z boku 1",
+      "alt": "Mae tobi-geri: widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "mae-tobi-geri3-s1.mp4",
+      "label": "Mae tobi-geri — widok z boku 1",
+      "alt": "Mae tobi-geri: widok z boku 1. Nagranie z dojo."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "kin-geri",
+  "name": "Kin-geri",
+  "japanese": "金的蹴り",
+  "reading": "kin-geri",
+  "category": "Kopnięcia",
+  "description": "Kopnięcie w krocze, wykonywane podbiciem lub piszczelą.",
+  "tags": [
+    "Kin",
+    "Geri"
+  ],
+  "focus": "Szybki, krótki ruch",
+  "levels": [
+    10
+  ],
+  "aliases": [
+    "Kin-geri",
+    "Kin geri"
+  ],
+  "infographic": "geri",
+  "knowledge": {
+    "translation": "Kopnięcie w kierunku krocza.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Rozpoznaj niski cel i krótki wznoszący tor. Ćwicz przebieg bez kontaktu z partnerem, kontrolując powrót nogi."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Kontroluj zarówno wznoszenie, jak i cofnięcie nogi. Niski cel nie uzasadnia ćwiczenia niekontrolowanego kontaktu z partnerem."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Kin",
+        "polish": "skrót od kinteki — krocze (dosłownie „złoty cel”)"
+      },
+      {
+        "term": "geri",
+        "polish": "kopnięcie; forma keri używana w złożeniach"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "shotei-uke",
+  "name": "Shōtei uke",
+  "japanese": "掌底受け",
+  "reading": "szotej uke",
+  "category": "Bloki",
+  "description": "Blok nasadą dłoni w strefach jōdan, chūdan i gedan.",
+  "tags": [
+    "Shōtei",
+    "Uke"
+  ],
+  "focus": "Ułożenie nadgarstka",
+  "levels": [
+    5
+  ],
+  "aliases": [
+    "Shōtei uke",
+    "Shotei uke"
+  ],
+  "infographic": "uke",
+  "knowledge": {
+    "translation": "Blok nasadą dłoni.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Skieruj nasadę dłoni na linię przechwycenia i utrzymuj kontrolę nadgarstka. Dobierz wysokość do wskazanej wersji bloku."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Nasada dłoni ma pozostawać ustawiona do przechwycenia. Nadmiernie rozstawione palce nie zastąpią właściwego kierunku nacisku."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Shōtei",
+        "polish": "nasada dłoni; shō — dłoń, tei — podstawa"
+      },
+      {
+        "term": "uke",
+        "polish": "przyjęcie; w karate blok lub przechwycenie"
+      }
+    ]
+  }
+}

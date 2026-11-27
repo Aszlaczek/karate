@@ -1,0 +1,43 @@
+{
+  "id": "seiken-tsuki",
+  "name": "Seiken tsuki",
+  "japanese": "正拳突き",
+  "reading": "sejken cuki",
+  "category": "Uderzenia",
+  "description": "Podstawowe proste uderzenie przednią powierzchnią pięści na wybranym poziomie (gedan, chūdan, jōdan).",
+  "tags": [
+    "Seiken",
+    "Tsuki"
+  ],
+  "focus": "Prosta linia i napięcie pięści w momencie kontaktu",
+  "levels": [
+    10
+  ],
+  "aliases": [
+    "Seiken-zuki"
+  ],
+  "infographic": "zuki",
+  "knowledge": {
+    "translation": "Proste uderzenie przednią powierzchnią pięści.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Zwieraj pięść i prowadź ją prostą linią do celu. Kontakt następuje przednią powierzchnią knykci, przy nadgarstku ustawionym w osi przedramienia."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Sprawdź, czy ramię nie wyprzedza pracy bioder i czy druga ręka pozostaje cofnięta przy boku tułowia (hikite)."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Seiken",
+        "polish": "przednia powierzchnia pięści; dosłownie „prawidłowa pięść”"
+      },
+      {
+        "term": "tsuki",
+        "polish": "pchnięcie, proste uderzenie (także zapisywane zuki)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "tettsui-komekami-uchi",
+  "name": "Tettsui komekami/ganmen-uchi",
+  "japanese": "鉄槌こめかみ打ち",
+  "reading": "tecuj komekami/ganmen-uczi",
+  "category": "Uderzenia",
+  "description": "Uderzenie dolną krawędzią pięści w skroń (komekami/ganmen), po łuku z boku. Zapis na liście: „komi kame uchi”.",
+  "tags": [
+    "Tettsui",
+    "Komekami",
+    "Ganmen",
+    "Uchi"
+  ],
+  "focus": "Łukowy tor z boku",
+  "levels": [
+    7
+  ],
+  "aliases": [
+    "Tettsui komekami-uchi",
+    "Tettsui komi kame uchi",
+    "Tettsui ganmen uchi",
+    "Tettsui gan-men uchi"
+  ],
+  "infographic": "uchi",
+  "knowledge": {
+    "translation": "Uderzenie młotem pięści w kierunku skroni.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Wyznacz boczny łuk na wysokości skroni. Zatrzymaj dolną powierzchnię pięści na umownym celu, bez utraty ustawienia nadgarstka."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Łuk kończy się na bocznym celu na wysokości głowy. Nie przenoś ruchu na niski poziom właściwy dla hizō-uchi."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Tettsui",
+        "polish": "żelazny młot; dolna powierzchnia zamkniętej pięści"
+      },
+      {
+        "term": "komekami / ganmen",
+        "polish": "skroń"
+      },
+      {
+        "term": "uchi",
+        "polish": "uderzenie (打ち)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "media": [
+    {
+      "source": "seiken-morote-uchi-uke-f1.mp4",
+      "label": "Seiken chūdan uchi-uke (morote) — widok z przodu 1",
+      "alt": "Seiken chūdan uchi-uke (morote): widok z przodu 1. Nagranie z dojo."
+    },
+    {
+      "source": "seiken-uchi-uke-chudan-f1.mp4",
+      "label": "Seiken chūdan uchi-uke (uchi) — widok z przodu 1",
+      "alt": "Seiken chūdan uchi-uke (uchi): widok z przodu 1. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "seiken-uchi-uke-chudan-f2.mp4",
+      "label": "Seiken chūdan uchi-uke (uchi) — widok z przodu 2",
+      "alt": "Seiken chūdan uchi-uke (uchi): widok z przodu 2. Nagranie z dojo.",
+      "zone": "chudan"
+    },
+    {
+      "source": "seiken-morote-uchi-uke-s1.mp4",
+      "label": "Seiken chūdan uchi-uke (morote) — widok z boku 1",
+      "alt": "Seiken chūdan uchi-uke (morote): widok z boku 1. Nagranie z dojo."
+    },
+    {
+      "source": "seiken-uchi-uke-chudan-s1.mp4",
+      "label": "Seiken chūdan uchi-uke (uchi) — widok z boku 1",
+      "alt": "Seiken chūdan uchi-uke (uchi): widok z boku 1. Nagranie z dojo.",
+      "zone": "chudan"
+    }
+  ]
+}

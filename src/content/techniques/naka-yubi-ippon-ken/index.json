@@ -1,0 +1,52 @@
+{
+  "id": "naka-yubi-ippon-ken",
+  "name": "Naka-yubi ippon-ken",
+  "japanese": "中指一本拳",
+  "reading": "naka-jubi ippon-ken",
+  "category": "Uderzenia",
+  "description": "Uderzenie pięścią z wysuniętym środkowym palcem (jōdan, chūdan). Skupia siłę w jednym punkcie.",
+  "tags": [
+    "Naka-yubi",
+    "Ippon-ken"
+  ],
+  "focus": "Punktowy kontakt",
+  "levels": [
+    1
+  ],
+  "aliases": [
+    "Naka-yubi ippon-ken",
+    "Naka Yubi ippon ken"
+  ],
+  "infographic": "zuki",
+  "knowledge": {
+    "translation": "Pięść z pojedynczym wysuniętym stawem palca środkowego.",
+    "sections": [
+      {
+        "title": "Ruch i powierzchnia kontaktu",
+        "body": "Wyróżnij staw palca środkowego przy pozostałych palcach stabilizujących pięść. Nie chodzi o uderzanie swobodnie wyprostowanym palcem."
+      },
+      {
+        "title": "Na co zwrócić uwagę",
+        "body": "Wyróżniony punkt tworzy staw palca środkowego. Sprawdź podparcie tego palca i unikaj uderzania jego luźnym końcem."
+      }
+    ],
+    "nameParts": [
+      {
+        "term": "Naka",
+        "polish": "środkowy"
+      },
+      {
+        "term": "yubi",
+        "polish": "palec; naka-yubi oznacza palec środkowy"
+      },
+      {
+        "term": "ippon",
+        "polish": "jeden; ichi + hon, w złożeniu ippon"
+      },
+      {
+        "term": "ken",
+        "polish": "pięść"
+      }
+    ]
+  }
+}
