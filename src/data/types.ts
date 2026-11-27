@@ -49,10 +49,15 @@ export interface TechniqueDetail {
 /** Typ materiału w galerii — rozróżnia filmy i zdjęcia w UI i w audycie. */
 export type MediaKind = "video" | "image";
 
+/** Strefa ciała rozpoznana z nazwy pliku; brak oznaczenia oznacza brak pola. */
+export type MediaZone = "jodan" | "chudan" | "gedan";
+
 export interface MediaItem {
   type: MediaKind;
   /** Ścieżka od "/" w public/ lub pełny adres URL. */
   src: string;
+  /** Opcjonalna strefa: jōdan, chūdan albo gedan. */
+  zone?: MediaZone;
   /** Krótka etykieta miniaturki (nie jest opisem dla czytnika ekranu). */
   label: string;
   /** Miniatura filmu — dzięki niej galeria nie ładuje kilku filmów naraz. */

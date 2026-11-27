@@ -3,7 +3,7 @@ import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync,
 import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import ffmpegPath from "ffmpeg-static";
-import { describeMedia, EXCLUDED_MEDIA_STEMS, loadTargets, selectCandidates } from "./media-map.mjs";
+import { describeMedia, EXCLUDED_MEDIA_STEMS, loadTargets, selectCandidates, zoneOf } from "./media-map.mjs";
 import { loadMediaEnv } from "./media-env.mjs";
 
 loadMediaEnv();
@@ -128,7 +128,7 @@ const enqueue = (job) => {
   if (existsSync(job.output) && statSync(job.output).size > 0) return;
   jobs.push(job);
 };
-let videoCount = 0;
+
 
 for (const id of selectedIds) {
   const target = targetById.get(id);
@@ -159,9 +159,11 @@ for (const id of selectedIds) {
     const described = describeMedia(stem, target.name);
     const videoKey = `${id}/video/${stem}.mp4`;
     const posterKey = `${id}/poster/${stem}.jpg`;
+    const zone = zoneOf(stem);
     items.push({
       key: videoKey,
       type: "video",
+      ...(zone ? { zone } : {}),
       label: saved?.label ?? described.label,
       alt: saved?.alt ?? described.alt,
       ...(saved?.caption ? { caption: saved.caption } : {}),
@@ -170,7 +172,6 @@ for (const id of selectedIds) {
     const source = videoSources.get(stem);
     enqueue({ kind: "video", input: source, output: join(buildRoot, videoKey) });
     enqueue({ kind: "poster", input: source, output: join(buildRoot, posterKey) });
-    videoCount += 1;
   }
 
   if (items.length === 1) {
@@ -269,7 +270,8 @@ if (failures.length) {
   if (failures.length > 10) console.error(` - …i ${failures.length - 10} więcej`);
   process.exitCode = 1;
 }
+const builtVideos = jobs.filter((job) => job.kind === "video").length;
 console.log(
-  `Przygotowano ${videoCount} filmów i ${jobs.length - videoCount} obrazów dla ${Object.keys(manifestSource).length} wpisów.`,
+  `Przygotowano ${builtVideos} filmów i ${jobs.length - builtVideos} obrazów dla ${Object.keys(manifestSource).length} wpisów.`,
 );
 console.log("Manifest źródłowy: media-build/manifest-source.json");

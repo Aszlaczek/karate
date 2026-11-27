@@ -10,7 +10,7 @@ Aplikacja działa w przeglądarce jako SPA (Single Page Application). Treści s�
 
 - **Ścieżka stopni:** poziom początkujący, 10–1 kyu oraz 1–5 dan. Każdy stopień ma oznaczenie pasa i belek, opis, staż, wymagania egzaminacyjne oraz przypisane techniki.
 - **Atlas technik:** wyszukiwanie po nazwie, zapisie japońskim, wymowie i opisie oraz filtrowanie według kategorii i stopnia. Kategorie obejmują uderzenia, kopnięcia, bloki, pozycje, kumite i kata.
-- **Szczegóły technik i postaw:** polskie znaczenie nazwy, tłumaczenie jej członów, opisy wykonania oraz galerie 2–4 filmów i zdjęć z wyborem ujęcia i filtrem „Filmy / Zdjęcia”. Wymagania egzaminacyjne prowadzą bezpośrednio do odpowiednich kart.
+- **Szczegóły technik i postaw:** polskie znaczenie nazwy, tłumaczenie jej członów, opisy wykonania oraz galerie filmów i zdjęć (minimum 2, bez górnego limitu), z wyborem ujęcia, podziałem na strefy jōdan/chūdan/gedan i filtrem „Filmy / Zdjęcia". Wymagania egzaminacyjne prowadzą bezpośrednio do odpowiednich kart.
 - **Słownik karate:** strefy ciała, powierzchnie uderzające, postawy, etykieta dojo, komendy treningowe oraz strój i sprzęt. Hasła zawierają zapis japoński, wymowę, objaśnienie i powiązania z technikami.
 - **Poradniki:** wiązanie pasa, składanie karategi, zakładanie taśm na dłonie i wiązanie troczków stroju — instrukcje krok po kroku z odnośnikami do źródeł.
 - **Historia i ciekawostki:** oś czasu karate i Kyokushin oraz krótkie artykuły z bibliografią.
@@ -44,7 +44,7 @@ Otwórz adres wypisany przez Vite w terminalu, domyślnie `http://localhost:5173
 | `npm run media:manifest` | Tworzy `src/data/media.json` z `media-build/manifest-source.json` (gdy ustawiono `R2_PUBLIC_BASE_URL`) albo skanuje `public/` w trybie lokalnym. Zachowuje ręczne opisy. |
 | `npm run media:check` | Alias `npm run audit` — szybkie sprawdzenie galerii i plików. |
 | `npm run media:organize` | Przenosi surowe nagrania do `media-source/videos/<id>/video/` i zapisuje raport dopasowań. |
-| `npm run media:prepare` | Wybiera do 4 ujęć na wpis, transkoduje je do 1080×1920 (CRF 18 slow, bez audio) i robi postery/klatki JPEG q:v 2 w `media-build/`. Czyta filmy z `<id>/video/` oraz bezpośrednio z `<id>/`. Tryb przyrostowy: `MEDIA_PREPARE_ONLY=id1,id2 npm run media:prepare` uzupełnia tylko wybrane ID. |
+| `npm run media:prepare` | Wybiera wszystkie ujęcia filmu na wpis (bez limitu), transkoduje je do 1080×1920 (CRF 18 slow, bez audio) i robi postery/klatki JPEG q:v 2 w `media-build/`. Rozpoznaje strefę z nazwy pliku. Czyta filmy z `<id>/video/` oraz bezpośrednio z `<id>/`. Tryb przyrostowy: `MEDIA_PREPARE_ONLY=id1,id2 npm run media:prepare` uzupełnia tylko wybrane ID. |
 | `npm run media:upload` | Wysyła przygotowane pliki do Cloudflare R2 (czyta sekrety z `.env.r2` lub środowiska, 3 próby na plik). |
 | `npm run media:check-remote` | Sprawdza HEAD-requestami wszystkie zdalne URL-e z `media.json`. |
 | `npm run media:delete-prefix` | Usuwa cały stary prefiks `<id>/` po zmianie nazwy folderu; blokuje usuwanie aktywnych ID (podgląd, `--apply` wymagany). |
@@ -137,7 +137,7 @@ Większość zmian merytorycznych można wprowadzać bez edytowania komponentów
 | [`src/data/glossary.json`](src/data/glossary.json) | Kategorie słownika, hasła, postawy i powiązania z technikami. |
 | [`src/data/dojoKun.json`](src/data/dojoKun.json) | Treść przysięgi dojo. |
 | [`src/data/learning.json`](src/data/learning.json) | Poradniki, historia, ciekawostki, źródła oraz adres i tematy formularza kontaktowego. |
-| [`src/data/media.json`](src/data/media.json) | Galerie 2–4 filmów/zdjęć technik i haseł słownika (także postaw). |
+| [`src/data/media.json`](src/data/media.json) | Galerie filmów/zdjęć technik i haseł słownika (także postaw), od 2 elementów, bez górnego limitu; opcjonalne pole `zone`. |
 | [`src/data/types.ts`](src/data/types.ts) | Typy opisujące strukturę danych. |
 
 ### Powiązania między danymi
@@ -166,7 +166,7 @@ Postawy są przechowywane w kategorii `pozycje` w słowniku (wyświetlana nazwa:
 
 ### Ilustracje i wideo
 
-Każda technika, postawa oraz hasło „Ustawienia dłoni/stóp” może mieć **galerię 2–4 materiałów** — filmów, zdjęć albo obu typów naraz. W modalu wybierasz ujęcie klikając miniaturę; każda miniatura ma wyraźną etykietę „▶ Film” albo „▣ Zdjęcie”, a przy miksie typów pojawia się filtr „Wszystkie / Filmy / Zdjęcia”. Karty w atlasie i słowniku pokazują tylko pierwszą miniaturę (dla filmu — jego poster), więc nie ładują kilku filmów naraz.
+Każda technika, postawa oraz hasło „Ustawienia dłoni/stóp" może mieć **galerię od 2 materiałów** — filmów, zdjęć albo obu typów naraz; liczba filmów nie jest ograniczona. W modalu wybierasz ujęcie klikając miniaturę; filmy z nazwami zawierającymi `jodan`/`chudan`/`gedan` są pogrupowane w sekcje „Jōdan — strefa górna", „Chūdan — strefa środkowa" i „Gedan — strefa dolna", a pozostałe trafiają do „Bez strefy". Każda miniatura ma wyraźną etykietę „▶ Film" albo „▣ Zdjęcie", a przy miksie typów pojawia się filtr „Wszystkie / Filmy / Zdjęcia". Karty w atlasie i słowniku pokazują tylko pierwszą miniaturę (dla filmu — jego poster), więc nie ładują kilku filmów naraz.
 
 #### Gdzie leżą pliki
 
@@ -182,13 +182,13 @@ R2: <id>/video/<stem>.mp4
     <id>/image/<stem>.jpg
 ```
 
-Folder nazywa się **kanonicznym `id` z `techniques.json` albo `glossary.json`** (np. `seiken-morote-tsuki`, `fudo`, `seiken`). Nie ma osobnych sekcji `techniques`/`stances` — postawy są hasłami słownika. Sufiksy w nazwach plików oznaczają: `f` — widok z przodu, `s` — widok z boku, `d` — detal, `b` — dodatkowe ujęcie, `a` — wariant ujęcia. `scripts/media-map.mjs` wybiera do 4 ujęć w kolejności `f1 → s1 → f2 → s2 → …`. Pliki bez pewnego przypisania trafiają do `media-source/videos/_nieprzypisane/` i nie są publikowane.
+Folder nazywa się **kanonicznym `id` z `techniques.json` albo `glossary.json`** (np. `seiken-morote-tsuki`, `fudo`, `seiken`). Nie ma osobnych sekcji `techniques`/`stances` — postawy są hasłami słownika. Sufiksy w nazwach plików oznaczają: `f` — widok z przodu, `s` — widok z boku, `d` — detal, `b` — dodatkowe ujęcie, `a` — wariant ujęcia. `scripts/media-map.mjs` wybiera wszystkie ujęcia w kolejności `f1 → s1 → f2 → s2 → …` i wyznacza strefę (`jodan`/`chudan`/`gedan`) z nazwy pliku — bez oznaczenia film trafia do grupy „Bez strefy". Pliki bez pewnego przypisania trafiają do `media-source/videos/_nieprzypisane/` i nie są publikowane.
 
 #### Jak opublikować nagrania z dojo
 
 1. Wrzuć surowe pliki do `public/videos/techniques/` i uruchom `npm run media:organize`. Skrypt przeniesie je do `media-source/videos/<id>/video/` (z poprawieniem oczywistych literówek) i zapisze `media-source/MAPPING.md`.
 2. Skopiuj [.env.r2.example](.env.r2.example) do `.env.r2` i uzupełnij sekrety: `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET`, `R2_PUBLIC_BASE_URL`. Plik `.env.r2` jest gitignored; zmienne ustawione w środowisku mają pierwszeństwo. Szczegóły w [media-source/README.md](media-source/README.md).
-3. Uruchom `npm run media:prepare` (jednolity wymiar 1080×1920, CRF 18 slow, bez audio; postery i klatki q:v 2; zdjęcia samodzielne kopiowane bez rekompresji z lokalnych oryginałów 1448×1086) i `npm run media:upload`. Przy 276 filmach i 291 obrazach daje to około 882 MB w R2 — daleko poniżej darmowego limitu 10 GB-month, a egress jest bezpłatny.
+3. Uruchom `npm run media:prepare` (jednolity wymiar 1080×1920, CRF 18 slow, bez audio; postery i klatki q:v 2; zdjęcia samodzielne kopiowane bez rekompresji z lokalnych oryginałów 1448×1086) i `npm run media:upload`. Przy 342 filmach i 355 obrazach (postery, klatki i zdjęcia) daje to około 1,1 GB w R2 — daleko poniżej darmowego limitu 10 GB-month, a egress jest bezpłatny.
 4. Uruchom `R2_PUBLIC_BASE_URL=https://… npm run media:manifest` — `src/data/media.json` dostanie pełne URL-e, a opisy z poprzedniego manifestu zostaną zachowane.
 5. Uruchom `npm run media:cleanup` (podgląd), a po weryfikacji `npm run media:cleanup -- --apply` — usunie z R2 klucze nieużywane przez manifest (np. po przeniesieniu filmu). Jeśli zmieniła się nazwa folderu (`id`), starego prefiksu nie usunie: użyj `npm run media:delete-prefix -- <stare-id>` (podgląd), a potem z `--apply`. Skrypt odmawia usunięcia prefiksu, który nadal jest aktywnym `id`.
 6. Sprawdź `npm run media:check`, `npm run media:check-remote` i `npm run check`, po czym wypchnij zmiany.
@@ -219,7 +219,7 @@ Tryb lokalny pozostaje wsparciem dla istniejących materiałów: bez `R2_PUBLIC_
 }
 ```
 
-Pole `type` (`video` albo `image`) jest obowiązkowe. Pełne URL-e (`https://…`) są przepuszczane przez `resolveMediaSrc()` bez dodawania bazy aplikacji; ścieżki lokalne zaczynają się od `/` i dostają bazę GitHub Pages. `label` to krótka nazwa miniaturki, `alt` to opis dla czytnika ekranu (`aria-label` wideo), a opcjonalny `caption` jest **jedynym widocznym podpisem** pod odtwarzaczem. Generator zachowuje ręczne `label`, `alt`, `caption` i `poster`. `src/data/media.json` jest **jedynym źródłem filmów i zdjęć technik** — pola `image`/`video` zostały usunięte z `techniques.json`. Zdjęcie Hero jest lokalne (`public/images/hero/osu-no-seishin.jpg`) i wskazywane przez bazę aplikacji. Wyjątki od reguły 2–4 elementów: cztery techniki z jednym filmem oraz `seiken` z jednym zdjęciem pięści.
+Pole `type` (`video` albo `image`) jest obowiązkowe. Pełne URL-e (`https://…`) są przepuszczane przez `resolveMediaSrc()` bez dodawania bazy aplikacji; ścieżki lokalne zaczynają się od `/` i dostają bazę GitHub Pages. `label` to krótka nazwa miniaturki, `alt` to opis dla czytnika ekranu (`aria-label` wideo), a opcjonalny `caption` jest **jedynym widocznym podpisem** pod odtwarzaczem. Generator zachowuje ręczne `label`, `alt`, `caption` i `poster`. `src/data/media.json` jest **jedynym źródłem filmów i zdjęć technik** — pola `image`/`video` zostały usunięte z `techniques.json`. Zdjęcie Hero jest lokalne (`public/images/hero/osu-no-seishin.jpg`) i wskazywane przez bazę aplikacji. Wyjątki od minimum 2 elementów: techniki z jednym filmem (i opcjonalnie klatką) oraz `seiken` z jednym zdjęciem pięści. Opcjonalne pole `zone` (`jodan`/`chudan`/`gedan`) pozwala galerii pogrupować nagrania wg stref.
 
 ## Ładowanie danych na żądanie
 
@@ -242,7 +242,7 @@ npm run check
 
 `npm run check` to skrót do `npm run audit && npm test && npm run build` — ta sama kolejność, której używa CI. Poszczególne kroki możesz uruchomić osobno, jeśli diagnozujesz konkretny problem.
 
-Audyt sprawdza m.in. identyfikatory technik, wymagane pola, kategorie, referencje między wymaganiami a atlasem, powiązania słownika, kompletność szczegółowych opisów, galerie `media.json` (2–4 elementy, typ, rozszerzenie, folder `video`/`poster`/`image`, istnienie lokalnego pliku albo poprawny URL HTTPS i poster wideo), źródła materiałów edukacyjnych i oznaczenia belek. Zapisuje lub nadpisuje `RAPORT.md` w katalogu głównym. Przy problemach krytycznych kończy się kodem `1`; ostrzeżenia trafiają do raportu i nie powodują błędu polecenia. `npm run media:check-remote` dodatkowo wykonuje HEAD-requesty do zdalnych źródeł — nie jest częścią głównej bramki, żeby CI nie zależał od dostępności R2.
+Audyt sprawdza m.in. identyfikatory technik, wymagane pola, kategorie, referencje między wymaganiami a atlasem, powiązania słownika, kompletność szczegółowych opisów, galerie `media.json` (od 2 elementów, bez górnego limitu, poprawna wartość `zone`, typ, rozszerzenie, folder `video`/`poster`/`image`, istnienie lokalnego pliku albo poprawny URL HTTPS i poster wideo), źródła materiałów edukacyjnych i oznaczenia belek. Zapisuje lub nadpisuje `RAPORT.md` w katalogu głównym. Przy problemach krytycznych kończy się kodem `1`; ostrzeżenia trafiają do raportu i nie powodują błędu polecenia. `npm run media:check-remote` dodatkowo wykonuje HEAD-requesty do zdalnych źródeł — nie jest częścią głównej bramki, żeby CI nie zależał od dostępności R2.
 
 Build sprawdza typy TypeScript i możliwość wygenerowania aplikacji. Testy jednostkowe (Vitest + Testing Library) obejmują m.in. filtrowanie atlasu, routing, modal z obsługą `Esc`, klikalne kategorie słownika oraz galerię `MediaGallery` — w tym to, że komunikat o placeholderze nie jest widocznym podpisem, tylko trafia do `alt`/`aria-label`. Lintowanie pozostaje w zadaniu `P1.4`; action przeglądarkowe nadal sprawdzaj w przeglądarce. Workflow CI wykonuje audyt danych, testy i build przed publikacją.
 

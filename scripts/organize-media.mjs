@@ -91,7 +91,8 @@ const lines = [
   "| --- | --- | --- | --- |",
 ];
 for (const [id, bucket] of [...grouped].sort(([a], [b]) => a.localeCompare(b))) {
-  const selected = selectCandidates(bucket.files);
+  // Organizator to narzędzie jednorazowe — zachowujemy historyczny limit 4 plików.
+  const selected = selectCandidates(bucket.files, 4);
   lines.push(
     `| \`${id}\` | ${bucket.section} | ${bucket.files.length} | ${selected.map((file) => `\`${file}\``).join(", ")} |`,
   );

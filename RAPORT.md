@@ -1,6 +1,6 @@
 # RAPORT.md — audyt danych KIHON
 
-> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: 2026-11-26).
+> Generowany przez `node scripts/audit-danych.mjs` — nie edytuj ręcznie (data: 2026-11-27).
 > Dane wejściowe: `src/data/techniques.json`, `levels.json`, `glossary.json`, `media.json`, `techniqueDetails.json`, `learning.json`,
 > `src/data/media-thumbnails.json`, `public/data/`, `src/data/index.ts` (CATEGORIES), zawartość `public/images/` (w tym `hero/`).
 
@@ -74,7 +74,7 @@ Z tego braki w atlasie do zadania **P1.6**: „Ushiro-mawashi-geri".
 - zdjęcie Hero: **lokalne `public/images/hero/osu-no-seishin.jpg`**; obrazy Unsplash w `src/`: **0**
 - techniki bez galerii (placeholder z kanji): **36/119**
 - galerie w `media.json`: **101** (techniki: 83, hasła słownika: 18)
-- materiały w galeriach: **296** (w tym filmy: 282) — galerie 2–4 elementy; wyjątki: 4 techniki z 1 filmem i `seiken` z 1 zdjęciem; pliki w R2 albo w `public/`
+- materiały w galeriach: **356** (w tym filmy: 342) — galerie od 2 elementów, bez górnego limitu filmów; wyjątki: techniki z 1 filmem i `seiken` z 1 zdjęciem; pliki w R2 albo w `public/`
 - dane na żądanie: **187** plików w `public/data/` (techniki: 119, hasła: 68); kafelki czytają tylko `media-thumbnails.json`, galerie i opisy wchodzą do bundle'u dopiero po otwarciu wpisu
 
 ## 7. Statystyki

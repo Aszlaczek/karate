@@ -193,8 +193,15 @@ export const resolveId = (name, targets) => {
 
 const VIEW_ORDER = { f: 0, s: 1, d: 2, b: 3 };
 
-/** Kolejność wyboru: przód, bok, detal, potem pozostałe ujęcia. */
-export const selectCandidates = (names, limit = 4) =>
+/** Strefa ciała wynikająca wyłącznie z nazwy pliku; brak oznaczenia → null. */
+export const zoneOf = (name) => {
+  const stem = name.replace(/\.[^.]+$/, "");
+  const match = /(?:^|[_-])(jodan|chudan|gedan)(?:[_-]|$)/i.exec(stem);
+  return match ? match[1].toLowerCase() : null;
+};
+
+/** Kolejność wyboru: przód, bok, detal, potem pozostałe ujęcia. Bez górnego limitu. */
+export const selectCandidates = (names, limit = Infinity) =>
   [...names]
     .sort((a, b) => {
       const infoA = /(?:^|[_-])(f|s|d|b)\d+/i.exec(a);

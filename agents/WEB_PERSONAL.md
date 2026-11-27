@@ -124,7 +124,7 @@ src/
                           # strukturalne (referencje: technique | glossary | text + fights)
     techniques.json       # 118 technik: nazwa, opis, aliasy, legacy `video`, stopnie (bez kategorii Pozycje)
     techniqueDetails.json # szczegóły 118 technik + 15 postaw: znaczenia, człony nazw, sekcje, uwagi
-    media.json            # ★ galerie 2–4 mediów: sekcje `techniques` i `glossary` (również postawy)
+    media.json            # ★ galerie od 2 mediów (bez limitu filmów): `techniques` i `glossary` (również postawy)
     learning.json         # 4 poradniki, 6 wydarzeń, 6 ciekawostek, źródła i konfiguracja kontaktu
     learning.ts           # typowane eksporty treści nowych stron (poza głównym index.ts)
     glossary.json         # 68 haseł / 8 kategorii: strefy, części ciała, pozycje (15 postaw),
@@ -291,7 +291,8 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
 
 - `src/data/media.json` ma dwie sekcje: `techniques` (klucz = id techniki)
   i `glossary` (klucz = id hasła słownika, **również postawy**). Każdy wpis
-  to 2–4 obiekty `MediaItem { type: "video"|"image", src, label, poster?, caption?, alt? }`.
+  to od 2 obiektów `MediaItem { type: "video"|"image", src, zone?, label, poster?, caption?, alt? }`
+  (liczba filmów nie jest ograniczona; pole `zone` = `jodan`/`chudan`/`gedan`).
   `type` jest obowiązkowy — UI filtruje po nim („Wszystkie / Filmy / Zdjęcia”),
   oznacza każdą miniaturę jako „▶ Film” / „▣ Zdjęcie” i audyt go waliduje.
   `label` to nazwa miniaturki, `alt` opis dla czytnika ekranu (`aria-label`
@@ -329,12 +330,15 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   Filmy i postery są zawsze 1080×1920 (9:16, z pasami zamiast ucinania,
   `libx264 -preset slow -crf 18`, JPEG `-q:v 2`). Zdjęcia samodzielne
   (`seiken`, `sokuto`) są kopiowane bez rekompresji z lokalnych oryginałów
-  1448×1086. Daje to około 882 MB w R2 przy darmowym limicie 10 GB-month;
+  1448×1086. Daje to około 1,1 GB w R2 (342 filmy, 355 obrazów) przy darmowym
+  limicie 10 GB-month;
   egress jest free. `media:upload` próbuje 3 razy na plik (EPIPE bywa przejściowy).
-- Nowe nagrania: wrzuć surowe pliki do `public/videos/techniques/` i uruchom
-  `npm run media:organize` → `media-source/videos/<id>/video/` (+ `MAPPING.md`).
-  Sufiksy: `f` = przód, `s` = bok, `d` = detal, `b` = dodatkowe ujęcie,
-  `a` = wariant. Wybór: `f1 → s1 → f2 → s2 → …`, maks. 4 na wpis.
+- Nowe nagrania: wrzuć pliki bezpośrednio do `media-source/videos/<id>/`
+  (albo `<id>/video/`). Po ręcznym `mv` nie uruchamiaj `media:organize` —
+  cofnąłby przypisania. Sufiksy: `f` = przód, `s` = bok, `d` = detal,
+  `b` = dodatkowe ujęcie, `a` = wariant; `jodan`/`chudan`/`gedan` w nazwie
+  wyznaczają strefę galerii (reszta ląduje w „Bez strefy"). Wybór obejmuje
+  **wszystkie** ujęcia w kolejności `f1 → s1 → f2 → s2 → …`.
   Nieprzypisane pliki zostają w `_nieprzypisane/` i nie trafiają do galerii.
   Oczywiste literówki i konflikty aliasów (np. `koken-uke-jodan-*`) mają
   jawne nadpisania w `scripts/media-map.mjs` — rozszerzaj je zamiast podnosić
@@ -354,8 +358,9 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   uzupełnia tylko wskazane ID w istniejącym `media-build/`.
   Po zmianie nazwy folderu (`id`) usuń stary prefiks
   poleceniem `npm run media:delete-prefix -- <stare-id>` (podgląd) i z
-  `--apply`; `media:cleanup` go nie wykryje. Audyt sprawdza 2–4 elementy (wyjątki: 4
-  techniki z 1 filmem, `seiken` z 1 zdjęciem), rozszerzenia, folder
+  `--apply`; `media:cleanup` go nie wykryje. Audyt sprawdza minimum 2 elementy,
+  bez górnego limitu filmów, poprawne `zone` (wyjątki: techniki z 1 filmem,
+  `seiken` z 1 zdjęciem), rozszerzenia, folder
   `video`/`poster`/`image`, istnienie pliku lokalnego albo HTTPS i poster.
 - Nagrania `*-demo.mp4` i grafiki GenAI zostały usunięte z repozytorium
   oraz z R2 (przez `media:cleanup`).

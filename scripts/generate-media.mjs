@@ -2,6 +2,7 @@ import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadMediaEnv } from "./media-env.mjs";
+import { zoneOf } from "./media-map.mjs";
 
 loadMediaEnv();
 
@@ -81,12 +82,14 @@ if (baseUrl && existsSync(join(root, sourcePath))) {
     const section = group.section === "techniques" ? "techniques" : "glossary";
     manifest[section][id] = group.items.map((item) => {
       const src = `${base}${item.key}`;
+      const zone = item.zone ?? zoneOf(item.key.split("/").pop());
       const saved = bySrc.get(src) ?? byStem.get(stemOf(item.key.split("/").pop()));
       // Opisy ręczne mają pierwszeństwo, ale poster zawsze wskazuje na nowy plik na R2.
       const result = withSaved(
         {
           type: item.type,
           src,
+          ...(zone ? { zone } : {}),
           label: item.label,
           ...(item.alt ? { alt: item.alt } : {}),
         },
@@ -111,9 +114,11 @@ if (baseUrl) {
 const makeItem = (src, fallbackPoster) => {
   const saved = bySrc.get(src) ?? byStem.get(stemOf(src.split("/").pop()));
   const name = src.split("/").pop();
+  const zone = zoneOf(name);
   const item = {
     type: saved?.type ?? (isVideo(name) ? "video" : "image"),
     src,
+    ...(zone ? { zone } : {}),
     label: labelFrom(stemOf(name)),
   };
   const poster = saved?.poster ?? (item.type === "video" ? fallbackPoster : undefined);

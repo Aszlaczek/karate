@@ -79,6 +79,19 @@
   color: #fff;
 }
 
+.media-gallery-group + .media-gallery-group {
+  margin-top: 12px;
+}
+
+.media-gallery-group-title {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+}
+
 .media-gallery-thumbs {
   display: grid;
   gap: 6px;

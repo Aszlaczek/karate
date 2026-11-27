@@ -77,4 +77,17 @@ describe("galerie mediów", () => {
       `${import.meta.env.BASE_URL}videos/fudo/video/fudo-dachi-f1.mp4`,
     );
   });
+
+  it("publikuje wszystkie nagrania i oznacza ich strefy", () => {
+    const all = Object.values(media.techniques).flat().concat(Object.values(media.glossary).flat());
+    const counts = Object.values(media.techniques).map((items) => items.filter((item) => item.type === "video").length);
+
+    expect(Math.max(...counts)).toBeGreaterThan(4);
+    for (const item of all) {
+      if (item.zone !== undefined) expect(["jodan", "chudan", "gedan"]).toContain(item.zone);
+    }
+    expect(all.some((item) => item.zone === "jodan")).toBe(true);
+    expect(all.some((item) => item.zone === "chudan")).toBe(true);
+    expect(all.some((item) => item.zone === "gedan")).toBe(true);
+  });
 });

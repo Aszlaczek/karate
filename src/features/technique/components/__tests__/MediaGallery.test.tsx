@@ -54,4 +54,22 @@ describe("MediaGallery", () => {
 
     expect(screen.getByText("Poprawny podpis ujęcia")).toBeInTheDocument();
   });
+
+  it("grupuje ujęcia wg stref i przechodzi między grupami strzałkami", () => {
+    const zoned: MediaItem[] = [
+      { ...items[0], src: "/videos/jodan.mp4", label: "Jōdan f1", zone: "jodan" },
+      { ...items[0], src: "/videos/chudan.mp4", label: "Chūdan f1", zone: "chudan" },
+      { ...items[0], src: "/videos/bez-strefy.mp4", label: "Bez strefy f1" },
+    ];
+    render(<MediaGallery items={zoned} title="Waza" />);
+
+    expect(screen.getByText("Jōdan — strefa górna")).toBeInTheDocument();
+    expect(screen.getByText("Chūdan — strefa środkowa")).toBeInTheDocument();
+    expect(screen.getByText("Bez strefy")).toBeInTheDocument();
+    expect(screen.queryByText("Gedan — strefa dolna")).not.toBeInTheDocument();
+
+    const jodanGroup = screen.getByRole("group", { name: "Wybierz ujęcie — Jōdan — strefa górna" });
+    fireEvent.keyDown(jodanGroup, { key: "ArrowRight" });
+    expect(screen.getByRole("button", { name: "Chūdan f1 — film" })).toHaveAttribute("aria-pressed", "true");
+  });
 });

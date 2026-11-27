@@ -221,8 +221,8 @@ for (const [section, ids] of [["techniques", techIds], ["glossary", glossIds]]) 
     } else if (oneVideoException) {
       if (videoCount !== 1 || items.length > 2)
         critical.push(`${label}: wyjątek jednofilmowy wymaga 1 filmu i opcjonalnie 1 klatki`);
-    } else if (items.length < 2 || items.length > 4) {
-      warn.push(`${label}: galeria ma ${items.length} elementów (oczekiwano 2–4)`);
+    } else if (items.length < 2) {
+      warn.push(`${label}: galeria ma ${items.length} elementów (oczekiwano co najmniej 2)`);
     }
 
     const seen = new Set();
@@ -233,6 +233,8 @@ for (const [section, ids] of [["techniques", techIds], ["glossary", glossIds]]) 
         continue;
       }
       if (item.type !== "video" && item.type !== "image") critical.push(`${itemLabel}: nieprawidłowy type "${item.type}"`);
+      if (item.zone !== undefined && !["jodan", "chudan", "gedan"].includes(item.zone))
+        critical.push(`${itemLabel}: nieprawidłowa strefa "${item.zone}"`);
       if (/\/images\/GenAI\//i.test(item.src) || (item.poster && /\/images\/GenAI\//i.test(item.poster)))
         critical.push(`${itemLabel}: grafiki GenAI nie są już obsługiwane`);
       if (seen.has(item.src)) critical.push(`${itemLabel}: powtórzony src`);
@@ -498,7 +500,7 @@ p(
   "- zdjęcie Hero: **" + (existsSync(join(root, heroImage)) ? "lokalne `public/images/hero/osu-no-seishin.jpg`" : "BRAK") + "**; obrazy Unsplash w `src/`: **" + unsplashFiles.length + "**",
   "- techniki bez galerii (placeholder z kanji): **" + withoutGallery + "/" + techs.length + "**",
   "- galerie w `media.json`: **" + (mediaStats.techniques.sets + mediaStats.glossary.sets) + "** (techniki: " + mediaStats.techniques.sets + ", hasła słownika: " + mediaStats.glossary.sets + ")",
-  "- materiały w galeriach: **" + (mediaStats.techniques.items + mediaStats.glossary.items) + "** (w tym filmy: " + (mediaStats.techniques.videos + mediaStats.glossary.videos) + ") — galerie 2–4 elementy; wyjątki: 4 techniki z 1 filmem i `seiken` z 1 zdjęciem; pliki w R2 albo w `public/`",
+  "- materiały w galeriach: **" + (mediaStats.techniques.items + mediaStats.glossary.items) + "** (w tym filmy: " + (mediaStats.techniques.videos + mediaStats.glossary.videos) + ") — galerie od 2 elementów, bez górnego limitu filmów; wyjątki: techniki z 1 filmem i `seiken` z 1 zdjęciem; pliki w R2 albo w `public/`",
   "- dane na żądanie: **" + (chunkStats.techniques + chunkStats.glossary) + "** plików w `public/data/` (techniki: " + chunkStats.techniques + ", hasła: " + chunkStats.glossary + "); kafelki czytają tylko `media-thumbnails.json`, galerie i opisy wchodzą do bundle'u dopiero po otwarciu wpisu",
   "",
   "## 7. Statystyki",

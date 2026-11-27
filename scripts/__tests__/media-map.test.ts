@@ -8,6 +8,7 @@ import {
   r2Key,
   selectCandidates,
   viewInfo,
+  zoneOf,
 } from "../media-map.mjs";
 
 const { targets } = loadTargets();
@@ -48,13 +49,31 @@ describe("mapowanie nagrań", () => {
     }
   });
 
-  it("wybiera ujęcia w kolejności przód, bok, detal, maksymalnie cztery", () => {
+  it("wybiera ujęcia w kolejności przód, bok, detal, z podanym limitem", () => {
     expect(selectCandidates(["f2", "s1", "f1", "d1", "extra", "s2"], 4)).toEqual([
       "f1",
       "f2",
       "s1",
       "s2",
     ]);
+  });
+
+  it("domyślnie wybiera wszystkie ujęcia", () => {
+    expect(selectCandidates(["s1", "f2", "f1", "d1", "f3"])).toEqual([
+      "f1",
+      "f2",
+      "f3",
+      "s1",
+      "d1",
+    ]);
+  });
+
+  it("rozpoznaje strefę tylko z nazwy pliku", () => {
+    expect(zoneOf("shotei-uchi-jodan-f1.mp4")).toBe("jodan");
+    expect(zoneOf("koken-uke-chudan-f2.mp4")).toBe("chudan");
+    expect(zoneOf("koken-uke-gedan-f1.mp4")).toBe("gedan");
+    expect(zoneOf("shotei-uchi-f1.mp4")).toBeNull();
+    expect(zoneOf("mae-geri-jodan-f1.mp4")).toBe("jodan");
   });
 
   it("tworzy etykiety i klucze R2 z sufiksu", () => {
