@@ -325,12 +325,12 @@
       "firstIsVideo": true
     },
     "oroshi-soto-kakato-geri": {
-      "thumbnail": null,
-      "firstIsVideo": false
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-soto-kakato-geri/poster/oroshi-soto-geri-kakato-f1.jpg",
+      "firstIsVideo": true
     },
     "yoko-tobi-geri": {
-      "thumbnail": null,
-      "firstIsVideo": false
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoko-tobi-geri/poster/tobi-geri-yoko-f1.jpg",
+      "firstIsVideo": true
     },
     "taikyoku-sono-ichi": {
       "thumbnail": null,
@@ -417,8 +417,8 @@
       "firstIsVideo": true
     },
     "ippon-kumite-10-1-kyu": {
-      "thumbnail": null,
-      "firstIsVideo": false
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-10-1-kyu/poster/ippon-kumite10-f1.jpg",
+      "firstIsVideo": true
     },
     "sanbon-kumite-wariant-i": {
       "thumbnail": null,

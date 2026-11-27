@@ -90,4 +90,22 @@ describe("galerie mediów", () => {
     expect(all.some((item) => item.zone === "chudan")).toBe(true);
     expect(all.some((item) => item.zone === "gedan")).toBe(true);
   });
+
+  it("rozróżnia warianty ustawienia stopy i dłoni w podpisach", () => {
+    const labels = getTechniqueMedia("mae-geri-chudan").map((item) => item.label);
+
+    expect(labels.some((label) => label.includes("(kakato)"))).toBe(true);
+    expect(labels.some((label) => label.includes("(chūsoku)"))).toBe(true);
+    expect(getTechniqueMedia("seiken-jodan-uke").some((item) => item.label.includes("(jūji)"))).toBe(true);
+    expect(getTechniqueMedia("oroshi-soto-kakato-geri").every((item) => item.label.includes("(kakato)"))).toBe(true);
+    expect(getGlossaryMedia("kumite").map((item) => item.label)).toEqual(["Kamae — lewa strona", "Kamae — prawa strona"]);
+  });
+
+  it("publikuje nowe nagrania z archiwum", () => {
+    for (const id of ["ippon-kumite-10-1-kyu", "oroshi-soto-kakato-geri", "yoko-tobi-geri"]) {
+      const items = getTechniqueMedia(id);
+      expect(items.filter((item) => item.type === "video")).toHaveLength(2);
+      expect(items[0].poster).toBeTruthy();
+    }
+  });
 });

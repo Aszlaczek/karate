@@ -182,13 +182,13 @@ R2: <id>/video/<stem>.mp4
     <id>/image/<stem>.jpg
 ```
 
-Folder nazywa się **kanonicznym `id` z `techniques.json` albo `glossary.json`** (np. `seiken-morote-tsuki`, `fudo`, `seiken`). Nie ma osobnych sekcji `techniques`/`stances` — postawy są hasłami słownika. Sufiksy w nazwach plików oznaczają: `f` — widok z przodu, `s` — widok z boku, `d` — detal, `b` — dodatkowe ujęcie, `a` — wariant ujęcia. `scripts/media-map.mjs` wybiera wszystkie ujęcia w kolejności `f1 → s1 → f2 → s2 → …` i wyznacza strefę (`jodan`/`chudan`/`gedan`) z nazwy pliku — bez oznaczenia film trafia do grupy „Bez strefy". Pliki bez pewnego przypisania trafiają do `media-source/videos/_nieprzypisane/` i nie są publikowane.
+Folder nazywa się **kanonicznym `id` z `techniques.json` albo `glossary.json`** (np. `seiken-morote-tsuki`, `fudo`, `seiken`). Nie ma osobnych sekcji `techniques`/`stances` — postawy są hasłami słownika. Sufiksy w nazwach plików oznaczają: `f` — widok z przodu, `s` — widok z boku, `d` — detal, `b` — dodatkowe ujęcie, `a` — wariant ujęcia. `scripts/media-map.mjs` wybiera wszystkie ujęcia w kolejności `f1 → s1 → f2 → s2 → …`, wyznacza strefę (`jodan`/`chudan`/`gedan`) z nazwy pliku — bez oznaczenia film trafia do grupy „Bez strefy" — oraz dopisuje do podpisu rozpoznawalny wariant z nazwy pliku (np. `kakato`, `chūsoku`, `haisoku`, `jūji`, `shōtei`, `morote`, `lewa`/`prawa`). Wariant jest zawsze widoczny w `label` i `alt`, także wtedy, gdy nazwa techniki już go zawiera. Pliki bez pewnego przypisania trafiają do `media-source/videos/_nieprzypisane/` i nie są publikowane.
 
 #### Jak opublikować nagrania z dojo
 
 1. Wrzuć surowe pliki do `public/videos/techniques/` i uruchom `npm run media:organize`. Skrypt przeniesie je do `media-source/videos/<id>/video/` (z poprawieniem oczywistych literówek) i zapisze `media-source/MAPPING.md`.
 2. Skopiuj [.env.r2.example](.env.r2.example) do `.env.r2` i uzupełnij sekrety: `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET`, `R2_PUBLIC_BASE_URL`. Plik `.env.r2` jest gitignored; zmienne ustawione w środowisku mają pierwszeństwo. Szczegóły w [media-source/README.md](media-source/README.md).
-3. Uruchom `npm run media:prepare` (jednolity wymiar 1080×1920, CRF 18 slow, bez audio; postery i klatki q:v 2; zdjęcia samodzielne kopiowane bez rekompresji z lokalnych oryginałów 1448×1086) i `npm run media:upload`. Przy 342 filmach i 355 obrazach (postery, klatki i zdjęcia) daje to około 1,1 GB w R2 — daleko poniżej darmowego limitu 10 GB-month, a egress jest bezpłatny.
+3. Uruchom `npm run media:prepare` (jednolity wymiar 1080×1920, CRF 18 slow, bez audio; postery i klatki q:v 2; zdjęcia samodzielne kopiowane bez rekompresji z lokalnych oryginałów 1448×1086) i `npm run media:upload`. Przy 348 filmach i 362 obrazach (postery, klatki i zdjęcia) daje to około 1,1 GB w R2 — daleko poniżej darmowego limitu 10 GB-month, a egress jest bezpłatny.
 4. Uruchom `R2_PUBLIC_BASE_URL=https://… npm run media:manifest` — `src/data/media.json` dostanie pełne URL-e, a opisy z poprzedniego manifestu zostaną zachowane.
 5. Uruchom `npm run media:cleanup` (podgląd), a po weryfikacji `npm run media:cleanup -- --apply` — usunie z R2 klucze nieużywane przez manifest (np. po przeniesieniu filmu). Jeśli zmieniła się nazwa folderu (`id`), starego prefiksu nie usunie: użyj `npm run media:delete-prefix -- <stare-id>` (podgląd), a potem z `--apply`. Skrypt odmawia usunięcia prefiksu, który nadal jest aktywnym `id`.
 6. Sprawdź `npm run media:check`, `npm run media:check-remote` i `npm run check`, po czym wypchnij zmiany.
@@ -219,18 +219,18 @@ Tryb lokalny pozostaje wsparciem dla istniejących materiałów: bez `R2_PUBLIC_
 }
 ```
 
-Pole `type` (`video` albo `image`) jest obowiązkowe. Pełne URL-e (`https://…`) są przepuszczane przez `resolveMediaSrc()` bez dodawania bazy aplikacji; ścieżki lokalne zaczynają się od `/` i dostają bazę GitHub Pages. `label` to krótka nazwa miniaturki, `alt` to opis dla czytnika ekranu (`aria-label` wideo), a opcjonalny `caption` jest **jedynym widocznym podpisem** pod odtwarzaczem. Generator zachowuje ręczne `label`, `alt`, `caption` i `poster`. `src/data/media.json` jest **jedynym źródłem filmów i zdjęć technik** — pola `image`/`video` zostały usunięte z `techniques.json`. Zdjęcie Hero jest lokalne (`public/images/hero/osu-no-seishin.jpg`) i wskazywane przez bazę aplikacji. Wyjątki od minimum 2 elementów: techniki z jednym filmem (i opcjonalnie klatką) oraz `seiken` z jednym zdjęciem pięści. Opcjonalne pole `zone` (`jodan`/`chudan`/`gedan`) pozwala galerii pogrupować nagrania wg stref.
+Pole `type` (`video` albo `image`) jest obowiązkowe. Pełne URL-e (`https://…`) są przepuszczane przez `resolveMediaSrc()` bez dodawania bazy aplikacji; ścieżki lokalne zaczynają się od `/` i dostają bazę GitHub Pages. `label` to krótka nazwa miniaturki, `alt` to opis dla czytnika ekranu (`aria-label` wideo), a opcjonalny `caption` jest **jedynym widocznym podpisem** pod odtwarzaczem. Generator zachowuje ręczne `label`, `alt`, `caption` i `poster`; podpisy wygenerowane starszą regułą są odtwarzane na nowo, żeby dodać wariant z nazwy pliku. `src/data/media.json` jest **jedynym źródłem filmów i zdjęć technik** — pola `image`/`video` zostały usunięte z `techniques.json`. Zdjęcie Hero jest lokalne (`public/images/hero/osu-no-seishin.jpg`) i wskazywane przez bazę aplikacji. Wyjątki od minimum 2 elementów: techniki z jednym filmem (i opcjonalnie klatką) oraz `seiken` z jednym zdjęciem pięści. Opcjonalne pole `zone` (`jodan`/`chudan`/`gedan`) pozwala galerii pogrupować nagrania wg stref.
 
 ## Ładowanie danych na żądanie
 
-Pełny `media.json` (291 materiałów) i `techniqueDetails.json` nie są importowane przez aplikację przy starcie. `npm run data:chunks` — uruchamiany automatycznie przed `dev`, `build`, `audit` i `test` — przygotowuje:
+Pełny `media.json` (362 materiały) i `techniqueDetails.json` nie są importowane przez aplikację przy starcie. `npm run data:chunks` — uruchamiany automatycznie przed `dev`, `build`, `audit` i `test` — przygotowuje:
 
 - `src/data/media-thumbnails.json` — dla każdego z 118 technik i 68 haseł tylko `thumbnail` (pierwszy obraz albo poster) i flagę `firstIsVideo`. To jedyne dane mediów w głównym bundle'u; kafelki czytają je przez `getTechniqueCardMedia()` / `getGlossaryCardMedia()`.
 - `public/data/techniques/<id>.json` i `public/data/glossary/<id>.json` — pełna galeria `media` i opis `detail` dla jednego wpisu. Pliki są gitignored i trafiają do `dist/data/`.
 
 `src/data/onDemand.ts` pobiera właściwy plik przy otwarciu modalu i cache'uje obietnicę, więc ponowne otwarcie tej samej techniki nie wysyła drugiego zapytania. Najazd lub focus na kafelku podgrzewa cache (`prefetchTechnique` / `prefetchGlossary`). Przy błędzie sieci modal pokazuje opis z `techniques.json`/`glossary.json` i placeholder z kanji zamiast pustej galerii. Deep-linki `#technika-<id>` i `#haslo-<id>` działają bez zmian.
 
-Efekt pomiarowy: główny plik JS zmalał z **582,45 kB / 139,87 kB gzip** do **400,17 kB / 116,28 kB gzip** — ostrzeżenie Vite o chunku >500 kB zniknęło. Filmy i zdjęcia z R2 nadal nie są częścią bundle'u; w `public/data/` są tylko ich adresy i opisy.
+Efekt pomiarowy: główny plik JS zmalał z **582,45 kB / 139,87 kB gzip** do **401,68 kB / 116,59 kB gzip** — ostrzeżenie Vite o chunku >500 kB zniknęło. Filmy i zdjęcia z R2 nadal nie są częścią bundle'u; w `public/data/` są tylko ich adresy i opisy.
 
 ## Sprawdzanie zmian
 

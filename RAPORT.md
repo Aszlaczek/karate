@@ -72,9 +72,9 @@ Z tego braki w atlasie do zadania **P1.6**: „Ushiro-mawashi-geri".
 
 - martwe pola `image`/`video` w `techniques.json`: **0/119** ✅ (media wyłącznie w `media.json`)
 - zdjęcie Hero: **lokalne `public/images/hero/osu-no-seishin.jpg`**; obrazy Unsplash w `src/`: **0**
-- techniki bez galerii (placeholder z kanji): **36/119**
-- galerie w `media.json`: **101** (techniki: 83, hasła słownika: 18)
-- materiały w galeriach: **356** (w tym filmy: 342) — galerie od 2 elementów, bez górnego limitu filmów; wyjątki: techniki z 1 filmem i `seiken` z 1 zdjęciem; pliki w R2 albo w `public/`
+- techniki bez galerii (placeholder z kanji): **33/119**
+- galerie w `media.json`: **104** (techniki: 86, hasła słownika: 18)
+- materiały w galeriach: **362** (w tym filmy: 348) — galerie od 2 elementów, bez górnego limitu filmów; wyjątki: techniki z 1 filmem i `seiken` z 1 zdjęciem; pliki w R2 albo w `public/`
 - dane na żądanie: **187** plików w `public/data/` (techniki: 119, hasła: 68); kafelki czytają tylko `media-thumbnails.json`, galerie i opisy wchodzą do bundle'u dopiero po otwarciu wpisu
 
 ## 7. Statystyki

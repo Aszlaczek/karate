@@ -100,11 +100,41 @@ export const viewInfo = (name) => {
   };
 };
 
+/** Rozpoznawalne warianty techniki zapisane w nazwie pliku. */
+const VARIANT_LABELS = new Map(Object.entries({
+  kakato: "kakato",
+  chusoku: "chūsoku",
+  haisoku: "haisoku",
+  teisoku: "teisoku",
+  shotei: "shōtei",
+  juji: "jūji",
+  morote: "morote",
+  uchi: "uchi",
+  soto: "soto",
+  hidari: "lewa",
+  migi: "prawa",
+  kamae: "kamae",
+  age: "age",
+}));
+
+/** Wariant (np. kakato albo jūji) wynikający z nazwy pliku; brak → null. */
+export const variantLabel = (name) => {
+  const tokens = new Set(name.replace(/\.[^.]+$/, "").toLowerCase().split(/[^a-z0-9]+/).filter(Boolean));
+  // Kolejność słownika ma znaczenie: w „oroshi-soto-geri-kakato” wygrywa kakato,
+  // a w „seiken-morote-uchi-uke” — morote.
+  for (const [token, label] of VARIANT_LABELS) {
+    if (tokens.has(token)) return label;
+  }
+  return null;
+};
+
 export const describeMedia = (stem, title) => {
   const view = viewInfo(stem);
+  const variant = variantLabel(stem);
+  const name = variant ? `${title} (${variant})` : title;
   return {
-    label: `${title} — ${view.label}`,
-    alt: `${title}: ${view.alt}. Nagranie z dojo.`,
+    label: `${name} — ${view.label}`,
+    alt: `${name}: ${view.alt}. Nagranie z dojo.`,
   };
 };
 

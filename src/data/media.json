@@ -5,32 +5,32 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/video/age-hiji-ate-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Age hiji-ate — widok z przodu 1",
-        "alt": "Age hiji-ate: widok z przodu 1. Nagranie z dojo.",
+        "label": "Age hiji-ate (age) — widok z przodu 1",
+        "alt": "Age hiji-ate (age): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/poster/age-hiji-ate-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/video/age-hiji-ate-jodan-f2.mp4",
         "zone": "jodan",
-        "label": "Age hiji-ate — widok z przodu 2",
-        "alt": "Age hiji-ate: widok z przodu 2. Nagranie z dojo.",
+        "label": "Age hiji-ate (age) — widok z przodu 2",
+        "alt": "Age hiji-ate (age): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/poster/age-hiji-ate-jodan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/video/age-hiji-ate-jodan-s1.mp4",
         "zone": "jodan",
-        "label": "Age hiji-ate — widok z boku 1",
-        "alt": "Age hiji-ate: widok z boku 1. Nagranie z dojo.",
+        "label": "Age hiji-ate (age) — widok z boku 1",
+        "alt": "Age hiji-ate (age): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/poster/age-hiji-ate-jodan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/video/age-hiji-ate-jodan-s2.mp4",
         "zone": "jodan",
-        "label": "Age hiji-ate — widok z boku 2",
-        "alt": "Age hiji-ate: widok z boku 2. Nagranie z dojo.",
+        "label": "Age hiji-ate (age) — widok z boku 2",
+        "alt": "Age hiji-ate (age): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-hiji-ate/poster/age-hiji-ate-jodan-s2.jpg"
       }
     ],
@@ -39,24 +39,24 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-jodan-tsuki/video/age-tsuki-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Age jōdan tsuki — widok z przodu 1",
-        "alt": "Age jōdan tsuki: widok z przodu 1. Nagranie z dojo.",
+        "label": "Age jōdan tsuki (age) — widok z przodu 1",
+        "alt": "Age jōdan tsuki (age): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-jodan-tsuki/poster/age-tsuki-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-jodan-tsuki/video/age-tsuki-jodan-f2.mp4",
         "zone": "jodan",
-        "label": "Age jōdan tsuki — widok z przodu 2",
-        "alt": "Age jōdan tsuki: widok z przodu 2. Nagranie z dojo.",
+        "label": "Age jōdan tsuki (age) — widok z przodu 2",
+        "alt": "Age jōdan tsuki (age): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-jodan-tsuki/poster/age-tsuki-jodan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-jodan-tsuki/video/age-tsuki-jodan-s1.mp4",
         "zone": "jodan",
-        "label": "Age jōdan tsuki — widok z boku 1",
-        "alt": "Age jōdan tsuki: widok z boku 1. Nagranie z dojo.",
+        "label": "Age jōdan tsuki (age) — widok z boku 1",
+        "alt": "Age jōdan tsuki (age): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-jodan-tsuki/poster/age-tsuki-jodan-s1.jpg"
       }
     ],
@@ -65,16 +65,16 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/chudan-haito-uchi-uke/video/haito-uchi-uke-chudan-f1.mp4",
         "zone": "chudan",
-        "label": "Chūdan haitō uchi-uke — widok z przodu 1",
-        "alt": "Chūdan haitō uchi-uke: widok z przodu 1. Nagranie z dojo.",
+        "label": "Chūdan haitō uchi-uke (uchi) — widok z przodu 1",
+        "alt": "Chūdan haitō uchi-uke (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/chudan-haito-uchi-uke/poster/haito-uchi-uke-chudan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/chudan-haito-uchi-uke/video/haito-uchi-uke-chudan-f2.mp4",
         "zone": "chudan",
-        "label": "Chūdan haitō uchi-uke — widok z przodu 2",
-        "alt": "Chūdan haitō uchi-uke: widok z przodu 2. Nagranie z dojo.",
+        "label": "Chūdan haitō uchi-uke (uchi) — widok z przodu 2",
+        "alt": "Chūdan haitō uchi-uke (uchi): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/chudan-haito-uchi-uke/poster/haito-uchi-uke-chudan-f2.jpg"
       }
     ],
@@ -150,15 +150,15 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/heisoku-mawashi-uchi-keage/video/mawashi-uchi-keage-heisoku-f1.mp4",
-        "label": "Heisoku mawashi uchi-keage — widok z przodu 1",
-        "alt": "Heisoku mawashi uchi-keage: widok z przodu 1. Nagranie z dojo.",
+        "label": "Heisoku mawashi uchi-keage (uchi) — widok z przodu 1",
+        "alt": "Heisoku mawashi uchi-keage (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/heisoku-mawashi-uchi-keage/poster/mawashi-uchi-keage-heisoku-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/heisoku-mawashi-uchi-keage/video/mawashi-uchi-keage-heisoku-s1.mp4",
-        "label": "Heisoku mawashi uchi-keage — widok z boku 1",
-        "alt": "Heisoku mawashi uchi-keage: widok z boku 1. Nagranie z dojo.",
+        "label": "Heisoku mawashi uchi-keage (uchi) — widok z boku 1",
+        "alt": "Heisoku mawashi uchi-keage (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/heisoku-mawashi-uchi-keage/poster/mawashi-uchi-keage-heisoku-s1.jpg"
       }
     ],
@@ -180,15 +180,15 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/video/hira-ken-mawashi-uchi-f1b.mp4",
-        "label": "Hira-ken mawashi-uchi — ujęcie",
-        "alt": "Hira-ken mawashi-uchi: ujęcie. Nagranie z dojo.",
+        "label": "Hira-ken mawashi-uchi (uchi) — ujęcie",
+        "alt": "Hira-ken mawashi-uchi (uchi): ujęcie. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/poster/hira-ken-mawashi-uchi-f1b.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/video/hiraken-mawashi-uchi-f2b.mp4",
-        "label": "Hira-ken mawashi-uchi — ujęcie",
-        "alt": "Hira-ken mawashi-uchi: ujęcie. Nagranie z dojo.",
+        "label": "Hira-ken mawashi-uchi (uchi) — ujęcie",
+        "alt": "Hira-ken mawashi-uchi (uchi): ujęcie. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/poster/hiraken-mawashi-uchi-f2b.jpg"
       },
       {
@@ -208,15 +208,15 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/video/hira-ken-mawashi-uchi-s1b.mp4",
-        "label": "Hira-ken mawashi-uchi — ujęcie",
-        "alt": "Hira-ken mawashi-uchi: ujęcie. Nagranie z dojo.",
+        "label": "Hira-ken mawashi-uchi (uchi) — ujęcie",
+        "alt": "Hira-ken mawashi-uchi (uchi): ujęcie. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/poster/hira-ken-mawashi-uchi-s1b.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/video/hira-ken-mawashi-uchi-s2b.mp4",
-        "label": "Hira-ken mawashi-uchi — ujęcie",
-        "alt": "Hira-ken mawashi-uchi: ujęcie. Nagranie z dojo.",
+        "label": "Hira-ken mawashi-uchi (uchi) — ujęcie",
+        "alt": "Hira-ken mawashi-uchi (uchi): ujęcie. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/hira-ken-mawashi-uchi/poster/hira-ken-mawashi-uchi-s2b.jpg"
       }
     ],
@@ -579,15 +579,15 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-chusoku-kaage/video/mae-kaage-chusoku-f1.mp4",
-        "label": "Mae chūsoku kaage — widok z przodu 1",
-        "alt": "Mae chūsoku kaage: widok z przodu 1. Nagranie z dojo.",
+        "label": "Mae chūsoku kaage (chūsoku) — widok z przodu 1",
+        "alt": "Mae chūsoku kaage (chūsoku): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-chusoku-kaage/poster/mae-kaage-chusoku-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-chusoku-kaage/video/mae-kaage-chusoku-s1.mp4",
-        "label": "Mae chūsoku kaage — widok z boku 1",
-        "alt": "Mae chūsoku kaage: widok z boku 1. Nagranie z dojo.",
+        "label": "Mae chūsoku kaage (chūsoku) — widok z boku 1",
+        "alt": "Mae chūsoku kaage (chūsoku): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-chusoku-kaage/poster/mae-kaage-chusoku-s1.jpg"
       }
     ],
@@ -596,64 +596,64 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/video/mae-geri-kakato-chudan-f1.mp4",
         "zone": "chudan",
-        "label": "Mae-geri chūdan chūsoku — widok z przodu 1",
-        "alt": "Mae-geri chūdan chūsoku: widok z przodu 1. Nagranie z dojo.",
+        "label": "Mae-geri chūdan chūsoku (kakato) — widok z przodu 1",
+        "alt": "Mae-geri chūdan chūsoku (kakato): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/poster/mae-geri-kakato-chudan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/video/mae-geri-kakato-chudan-f2.mp4",
         "zone": "chudan",
-        "label": "Mae-geri chūdan chūsoku — widok z przodu 2",
-        "alt": "Mae-geri chūdan chūsoku: widok z przodu 2. Nagranie z dojo.",
+        "label": "Mae-geri chūdan chūsoku (kakato) — widok z przodu 2",
+        "alt": "Mae-geri chūdan chūsoku (kakato): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/poster/mae-geri-kakato-chudan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/video/mai-geri-chusoku-chudan-f1.mp4",
         "zone": "chudan",
-        "label": "Mae-geri chūdan chūsoku — widok z przodu 1",
-        "alt": "Mae-geri chūdan chūsoku: widok z przodu 1. Nagranie z dojo.",
+        "label": "Mae-geri chūdan chūsoku (chūsoku) — widok z przodu 1",
+        "alt": "Mae-geri chūdan chūsoku (chūsoku): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/poster/mai-geri-chusoku-chudan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/video/mai-geri-chusoku-chudan-f2.mp4",
         "zone": "chudan",
-        "label": "Mae-geri chūdan chūsoku — widok z przodu 2",
-        "alt": "Mae-geri chūdan chūsoku: widok z przodu 2. Nagranie z dojo.",
+        "label": "Mae-geri chūdan chūsoku (chūsoku) — widok z przodu 2",
+        "alt": "Mae-geri chūdan chūsoku (chūsoku): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/poster/mai-geri-chusoku-chudan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/video/mae-geri-chusoku-chudan-s1.mp4",
         "zone": "chudan",
-        "label": "Mae-geri chūdan chūsoku — widok z boku 1",
-        "alt": "Mae-geri chūdan chūsoku: widok z boku 1. Nagranie z dojo.",
+        "label": "Mae-geri chūdan chūsoku (chūsoku) — widok z boku 1",
+        "alt": "Mae-geri chūdan chūsoku (chūsoku): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/poster/mae-geri-chusoku-chudan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/video/mae-geri-chusoku-chudan-s2.mp4",
         "zone": "chudan",
-        "label": "Mae-geri chūdan chūsoku — widok z boku 2",
-        "alt": "Mae-geri chūdan chūsoku: widok z boku 2. Nagranie z dojo.",
+        "label": "Mae-geri chūdan chūsoku (chūsoku) — widok z boku 2",
+        "alt": "Mae-geri chūdan chūsoku (chūsoku): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/poster/mae-geri-chusoku-chudan-s2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/video/mae-geri-kakato-chudan-s1.mp4",
         "zone": "chudan",
-        "label": "Mae-geri chūdan chūsoku — widok z boku 1",
-        "alt": "Mae-geri chūdan chūsoku: widok z boku 1. Nagranie z dojo.",
+        "label": "Mae-geri chūdan chūsoku (kakato) — widok z boku 1",
+        "alt": "Mae-geri chūdan chūsoku (kakato): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/poster/mae-geri-kakato-chudan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/video/mae-geri-kakato-chudan-s2.mp4",
         "zone": "chudan",
-        "label": "Mae-geri chūdan chūsoku — widok z boku 2",
-        "alt": "Mae-geri chūdan chūsoku: widok z boku 2. Nagranie z dojo.",
+        "label": "Mae-geri chūdan chūsoku (kakato) — widok z boku 2",
+        "alt": "Mae-geri chūdan chūsoku (kakato): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-chudan/poster/mae-geri-kakato-chudan-s2.jpg"
       }
     ],
@@ -662,56 +662,56 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/video/mae-geri-chusoku-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Mae-geri jōdan — widok z przodu 1",
-        "alt": "Mae-geri jōdan: widok z przodu 1. Nagranie z dojo.",
+        "label": "Mae-geri jōdan (chūsoku) — widok z przodu 1",
+        "alt": "Mae-geri jōdan (chūsoku): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/poster/mae-geri-chusoku-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/video/mae-geri-kakato-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Mae-geri jōdan — widok z przodu 1",
-        "alt": "Mae-geri jōdan: widok z przodu 1. Nagranie z dojo.",
+        "label": "Mae-geri jōdan (kakato) — widok z przodu 1",
+        "alt": "Mae-geri jōdan (kakato): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/poster/mae-geri-kakato-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/video/mae-geri-kakato-jodan-f2.mp4",
         "zone": "jodan",
-        "label": "Mae-geri jōdan — widok z przodu 2",
-        "alt": "Mae-geri jōdan: widok z przodu 2. Nagranie z dojo.",
+        "label": "Mae-geri jōdan (kakato) — widok z przodu 2",
+        "alt": "Mae-geri jōdan (kakato): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/poster/mae-geri-kakato-jodan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/video/mae-geri-chusoku-jodan-s1.mp4",
         "zone": "jodan",
-        "label": "Mae-geri jōdan — widok z boku 1",
-        "alt": "Mae-geri jōdan: widok z boku 1. Nagranie z dojo.",
+        "label": "Mae-geri jōdan (chūsoku) — widok z boku 1",
+        "alt": "Mae-geri jōdan (chūsoku): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/poster/mae-geri-chusoku-jodan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/video/mae-geri-chusoku-jodan-s2.mp4",
         "zone": "jodan",
-        "label": "Mae-geri jōdan — widok z boku 2",
-        "alt": "Mae-geri jōdan: widok z boku 2. Nagranie z dojo.",
+        "label": "Mae-geri jōdan (chūsoku) — widok z boku 2",
+        "alt": "Mae-geri jōdan (chūsoku): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/poster/mae-geri-chusoku-jodan-s2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/video/mae-geri-kakato-jodan-s1.mp4",
         "zone": "jodan",
-        "label": "Mae-geri jōdan — widok z boku 1",
-        "alt": "Mae-geri jōdan: widok z boku 1. Nagranie z dojo.",
+        "label": "Mae-geri jōdan (kakato) — widok z boku 1",
+        "alt": "Mae-geri jōdan (kakato): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/poster/mae-geri-kakato-jodan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/video/mae-geri-kakato-jodan-s1a.mp4",
         "zone": "jodan",
-        "label": "Mae-geri jōdan — widok z boku 1a",
-        "alt": "Mae-geri jōdan: widok z boku 1a. Nagranie z dojo.",
+        "label": "Mae-geri jōdan (kakato) — widok z boku 1a",
+        "alt": "Mae-geri jōdan (kakato): widok z boku 1a. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-geri-jodan/poster/mae-geri-kakato-jodan-s1a.jpg"
       }
     ],
@@ -757,48 +757,48 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/video/mawashi-geri-chusoku-chudan-f1.mp4",
         "zone": "chudan",
-        "label": "Mawashi-geri chūdan (chūsoku, haisoku) — widok z przodu 1",
-        "alt": "Mawashi-geri chūdan (chūsoku, haisoku): widok z przodu 1. Nagranie z dojo.",
+        "label": "Mawashi-geri chūdan (chūsoku, haisoku) (chūsoku) — widok z przodu 1",
+        "alt": "Mawashi-geri chūdan (chūsoku, haisoku) (chūsoku): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-chusoku-chudan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/video/mawashi-geri-chusoku-chudan-f2.mp4",
         "zone": "chudan",
-        "label": "Mawashi-geri chūdan (chūsoku, haisoku) — widok z przodu 2",
-        "alt": "Mawashi-geri chūdan (chūsoku, haisoku): widok z przodu 2. Nagranie z dojo.",
+        "label": "Mawashi-geri chūdan (chūsoku, haisoku) (chūsoku) — widok z przodu 2",
+        "alt": "Mawashi-geri chūdan (chūsoku, haisoku) (chūsoku): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-chusoku-chudan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/video/mawashi-geri-haisoku-chudan-f1.mp4",
         "zone": "chudan",
-        "label": "Mawashi-geri chūdan (chūsoku, haisoku) — widok z przodu 1",
-        "alt": "Mawashi-geri chūdan (chūsoku, haisoku): widok z przodu 1. Nagranie z dojo.",
+        "label": "Mawashi-geri chūdan (chūsoku, haisoku) (haisoku) — widok z przodu 1",
+        "alt": "Mawashi-geri chūdan (chūsoku, haisoku) (haisoku): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-haisoku-chudan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/video/mawashi-geri-haisoku-chudan-f2.mp4",
         "zone": "chudan",
-        "label": "Mawashi-geri chūdan (chūsoku, haisoku) — widok z przodu 2",
-        "alt": "Mawashi-geri chūdan (chūsoku, haisoku): widok z przodu 2. Nagranie z dojo.",
+        "label": "Mawashi-geri chūdan (chūsoku, haisoku) (haisoku) — widok z przodu 2",
+        "alt": "Mawashi-geri chūdan (chūsoku, haisoku) (haisoku): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-haisoku-chudan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/video/mawashi-geri-haisoku-chudan-s1.mp4",
         "zone": "chudan",
-        "label": "Mawashi-geri chūdan (chūsoku, haisoku) — widok z boku 1",
-        "alt": "Mawashi-geri chūdan (chūsoku, haisoku): widok z boku 1. Nagranie z dojo.",
+        "label": "Mawashi-geri chūdan (chūsoku, haisoku) (haisoku) — widok z boku 1",
+        "alt": "Mawashi-geri chūdan (chūsoku, haisoku) (haisoku): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-haisoku-chudan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/video/mawashi-geri-haisoku-chudan-s2.mp4",
         "zone": "chudan",
-        "label": "Mawashi-geri chūdan (chūsoku, haisoku) — widok z boku 2",
-        "alt": "Mawashi-geri chūdan (chūsoku, haisoku): widok z boku 2. Nagranie z dojo.",
+        "label": "Mawashi-geri chūdan (chūsoku, haisoku) (haisoku) — widok z boku 2",
+        "alt": "Mawashi-geri chūdan (chūsoku, haisoku) (haisoku): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-haisoku-chudan-s2.jpg"
       }
     ],
@@ -807,24 +807,24 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/video/mawashi-geri-haisoku-gedan-f1.mp4",
         "zone": "gedan",
-        "label": "Mawashi-geri gedan (haisoku) — widok z przodu 1",
-        "alt": "Mawashi-geri gedan (haisoku): widok z przodu 1. Nagranie z dojo.",
+        "label": "Mawashi-geri gedan (haisoku) (haisoku) — widok z przodu 1",
+        "alt": "Mawashi-geri gedan (haisoku) (haisoku): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/poster/mawashi-geri-haisoku-gedan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/video/mawashi-geri-haisoku-gedan-f2.mp4",
         "zone": "gedan",
-        "label": "Mawashi-geri gedan (haisoku) — widok z przodu 2",
-        "alt": "Mawashi-geri gedan (haisoku): widok z przodu 2. Nagranie z dojo.",
+        "label": "Mawashi-geri gedan (haisoku) (haisoku) — widok z przodu 2",
+        "alt": "Mawashi-geri gedan (haisoku) (haisoku): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/poster/mawashi-geri-haisoku-gedan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/video/mawashi-geri-haisoku-gedan-f3.mp4",
         "zone": "gedan",
-        "label": "Mawashi-geri gedan (haisoku) — widok z przodu 3",
-        "alt": "Mawashi-geri gedan (haisoku): widok z przodu 3. Nagranie z dojo.",
+        "label": "Mawashi-geri gedan (haisoku) (haisoku) — widok z przodu 3",
+        "alt": "Mawashi-geri gedan (haisoku) (haisoku): widok z przodu 3. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/poster/mawashi-geri-haisoku-gedan-f3.jpg"
       }
     ],
@@ -833,88 +833,88 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-chusoku-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z przodu 1",
-        "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z przodu 1. Nagranie z dojo.",
+        "label": "Mawashi-geri jōdan (chūsoku, haisoku) (chūsoku) — widok z przodu 1",
+        "alt": "Mawashi-geri jōdan (chūsoku, haisoku) (chūsoku): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-chusoku-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-chusoku-jodan-f2.mp4",
         "zone": "jodan",
-        "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z przodu 2",
-        "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z przodu 2. Nagranie z dojo.",
+        "label": "Mawashi-geri jōdan (chūsoku, haisoku) (chūsoku) — widok z przodu 2",
+        "alt": "Mawashi-geri jōdan (chūsoku, haisoku) (chūsoku): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-chusoku-jodan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-haisoku-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z przodu 1",
-        "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z przodu 1. Nagranie z dojo.",
+        "label": "Mawashi-geri jōdan (chūsoku, haisoku) (haisoku) — widok z przodu 1",
+        "alt": "Mawashi-geri jōdan (chūsoku, haisoku) (haisoku): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-haisoku-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-haisoku-jodan-f2.mp4",
         "zone": "jodan",
-        "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z przodu 2",
-        "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z przodu 2. Nagranie z dojo.",
+        "label": "Mawashi-geri jōdan (chūsoku, haisoku) (haisoku) — widok z przodu 2",
+        "alt": "Mawashi-geri jōdan (chūsoku, haisoku) (haisoku): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-haisoku-jodan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/uchi-mawashi-geri-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z przodu 1",
-        "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z przodu 1. Nagranie z dojo.",
+        "label": "Mawashi-geri jōdan (chūsoku, haisoku) (uchi) — widok z przodu 1",
+        "alt": "Mawashi-geri jōdan (chūsoku, haisoku) (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/uchi-mawashi-geri-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/uchi-mawashi-geri-jodan-f2.mp4",
         "zone": "jodan",
-        "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z przodu 2",
-        "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z przodu 2. Nagranie z dojo.",
+        "label": "Mawashi-geri jōdan (chūsoku, haisoku) (uchi) — widok z przodu 2",
+        "alt": "Mawashi-geri jōdan (chūsoku, haisoku) (uchi): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/uchi-mawashi-geri-jodan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-chusoku-jodan-s1.mp4",
         "zone": "jodan",
-        "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z boku 1",
-        "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z boku 1. Nagranie z dojo.",
+        "label": "Mawashi-geri jōdan (chūsoku, haisoku) (chūsoku) — widok z boku 1",
+        "alt": "Mawashi-geri jōdan (chūsoku, haisoku) (chūsoku): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-chusoku-jodan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-chusoku-jodan-s2.mp4",
         "zone": "jodan",
-        "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z boku 2",
-        "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z boku 2. Nagranie z dojo.",
+        "label": "Mawashi-geri jōdan (chūsoku, haisoku) (chūsoku) — widok z boku 2",
+        "alt": "Mawashi-geri jōdan (chūsoku, haisoku) (chūsoku): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-chusoku-jodan-s2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-haisoku-jodan-s1.mp4",
         "zone": "jodan",
-        "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z boku 1",
-        "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z boku 1. Nagranie z dojo.",
+        "label": "Mawashi-geri jōdan (chūsoku, haisoku) (haisoku) — widok z boku 1",
+        "alt": "Mawashi-geri jōdan (chūsoku, haisoku) (haisoku): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-haisoku-jodan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/mawashi-geri-haisoku-jodan-s2.mp4",
         "zone": "jodan",
-        "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z boku 2",
-        "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z boku 2. Nagranie z dojo.",
+        "label": "Mawashi-geri jōdan (chūsoku, haisoku) (haisoku) — widok z boku 2",
+        "alt": "Mawashi-geri jōdan (chūsoku, haisoku) (haisoku): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-haisoku-jodan-s2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/video/uchi-mawashi-geri-jodan-s1.mp4",
         "zone": "jodan",
-        "label": "Mawashi-geri jōdan (chūsoku, haisoku) — widok z boku 1",
-        "alt": "Mawashi-geri jōdan (chūsoku, haisoku): widok z boku 1. Nagranie z dojo.",
+        "label": "Mawashi-geri jōdan (chūsoku, haisoku) (uchi) — widok z boku 1",
+        "alt": "Mawashi-geri jōdan (chūsoku, haisoku) (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/uchi-mawashi-geri-jodan-s1.jpg"
       }
     ],
@@ -923,16 +923,16 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/morote-kake-uke/video/morote-kake-uke-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Morote kake-uke — widok z przodu 1",
-        "alt": "Morote kake-uke: widok z przodu 1. Nagranie z dojo.",
+        "label": "Morote kake-uke (morote) — widok z przodu 1",
+        "alt": "Morote kake-uke (morote): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/morote-kake-uke/poster/morote-kake-uke-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/morote-kake-uke/video/morote-kake-uke-jodan-f2.mp4",
         "zone": "jodan",
-        "label": "Morote kake-uke — widok z przodu 2",
-        "alt": "Morote kake-uke: widok z przodu 2. Nagranie z dojo.",
+        "label": "Morote kake-uke (morote) — widok z przodu 2",
+        "alt": "Morote kake-uke (morote): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/morote-kake-uke/poster/morote-kake-uke-jodan-f2.jpg"
       }
     ],
@@ -941,16 +941,16 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/morote-uchi-uke-gedan-barai/video/seiken-morote-uchi-uke-gedan-barai-f1.mp4",
         "zone": "gedan",
-        "label": "Morote uchi-uke, gedan-barai — widok z przodu 1",
-        "alt": "Morote uchi-uke, gedan-barai: widok z przodu 1. Nagranie z dojo.",
+        "label": "Morote uchi-uke, gedan-barai (morote) — widok z przodu 1",
+        "alt": "Morote uchi-uke, gedan-barai (morote): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/morote-uchi-uke-gedan-barai/poster/seiken-morote-uchi-uke-gedan-barai-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/morote-uchi-uke-gedan-barai/video/seiken-morote-uchi-uke-gedan-barai-f2.mp4",
         "zone": "gedan",
-        "label": "Morote uchi-uke, gedan-barai — widok z przodu 2",
-        "alt": "Morote uchi-uke, gedan-barai: widok z przodu 2. Nagranie z dojo.",
+        "label": "Morote uchi-uke, gedan-barai (morote) — widok z przodu 2",
+        "alt": "Morote uchi-uke, gedan-barai (morote): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/morote-uchi-uke-gedan-barai/poster/seiken-morote-uchi-uke-gedan-barai-f2.jpg"
       }
     ],
@@ -1036,22 +1036,22 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-uchi-kakato-geri/video/oroshi-uchi-geri-kakato-f1.mp4",
-        "label": "Oroshi uchi kakato-geri — widok z przodu 1",
-        "alt": "Oroshi uchi kakato-geri: widok z przodu 1. Nagranie z dojo.",
+        "label": "Oroshi uchi kakato-geri (kakato) — widok z przodu 1",
+        "alt": "Oroshi uchi kakato-geri (kakato): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-uchi-kakato-geri/poster/oroshi-uchi-geri-kakato-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-uchi-kakato-geri/video/oroshi-uchi-geri-kakato-f2.mp4",
-        "label": "Oroshi uchi kakato-geri — widok z przodu 2",
-        "alt": "Oroshi uchi kakato-geri: widok z przodu 2. Nagranie z dojo.",
+        "label": "Oroshi uchi kakato-geri (kakato) — widok z przodu 2",
+        "alt": "Oroshi uchi kakato-geri (kakato): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-uchi-kakato-geri/poster/oroshi-uchi-geri-kakato-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-uchi-kakato-geri/video/oroshi-uchi-geri-kakato-s1.mp4",
-        "label": "Oroshi uchi kakato-geri — widok z boku 1",
-        "alt": "Oroshi uchi kakato-geri: widok z boku 1. Nagranie z dojo.",
+        "label": "Oroshi uchi kakato-geri (kakato) — widok z boku 1",
+        "alt": "Oroshi uchi kakato-geri (kakato): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-uchi-kakato-geri/poster/oroshi-uchi-geri-kakato-s1.jpg"
       }
     ],
@@ -1183,29 +1183,29 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-ago-uchi/video/seiken-ago-uchi-f1.mp4",
-        "label": "Seiken ago-uchi — widok z przodu 1",
-        "alt": "Seiken ago-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Seiken ago-uchi (uchi) — widok z przodu 1",
+        "alt": "Seiken ago-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-ago-uchi/poster/seiken-ago-uchi-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-ago-uchi/video/seiken-ago-uchi-f2.mp4",
-        "label": "Seiken ago-uchi — widok z przodu 2",
-        "alt": "Seiken ago-uchi: widok z przodu 2. Nagranie z dojo.",
+        "label": "Seiken ago-uchi (uchi) — widok z przodu 2",
+        "alt": "Seiken ago-uchi (uchi): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-ago-uchi/poster/seiken-ago-uchi-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-ago-uchi/video/seiken-ago-uchi-s1.mp4",
-        "label": "Seiken ago-uchi — widok z boku 1",
-        "alt": "Seiken ago-uchi: widok z boku 1. Nagranie z dojo.",
+        "label": "Seiken ago-uchi (uchi) — widok z boku 1",
+        "alt": "Seiken ago-uchi (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-ago-uchi/poster/seiken-ago-uchi-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-ago-uchi/video/seiken-ago-uchi-s2.mp4",
-        "label": "Seiken ago-uchi — widok z boku 2",
-        "alt": "Seiken ago-uchi: widok z boku 2. Nagranie z dojo.",
+        "label": "Seiken ago-uchi (uchi) — widok z boku 2",
+        "alt": "Seiken ago-uchi (uchi): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-ago-uchi/poster/seiken-ago-uchi-s2.jpg"
       }
     ],
@@ -1214,40 +1214,40 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-soto-uke/video/seiken-soto-uke-chudan-f1.mp4",
         "zone": "chudan",
-        "label": "Seiken chūdan soto-uke — widok z przodu 1",
-        "alt": "Seiken chūdan soto-uke: widok z przodu 1. Nagranie z dojo.",
+        "label": "Seiken chūdan soto-uke (soto) — widok z przodu 1",
+        "alt": "Seiken chūdan soto-uke (soto): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-soto-uke/poster/seiken-soto-uke-chudan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-soto-uke/video/seiken-soto-uke-chudan-f2.mp4",
         "zone": "chudan",
-        "label": "Seiken chūdan soto-uke — widok z przodu 2",
-        "alt": "Seiken chūdan soto-uke: widok z przodu 2. Nagranie z dojo.",
+        "label": "Seiken chūdan soto-uke (soto) — widok z przodu 2",
+        "alt": "Seiken chūdan soto-uke (soto): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-soto-uke/poster/seiken-soto-uke-chudan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-soto-uke/video/seiken-soto-uke-chudan-s1.mp4",
         "zone": "chudan",
-        "label": "Seiken chūdan soto-uke — widok z boku 1",
-        "alt": "Seiken chūdan soto-uke: widok z boku 1. Nagranie z dojo.",
+        "label": "Seiken chūdan soto-uke (soto) — widok z boku 1",
+        "alt": "Seiken chūdan soto-uke (soto): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-soto-uke/poster/seiken-soto-uke-chudan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-soto-uke/video/seiken-soto-uke-chudan-s2.mp4",
         "zone": "chudan",
-        "label": "Seiken chūdan soto-uke — widok z boku 2",
-        "alt": "Seiken chūdan soto-uke: widok z boku 2. Nagranie z dojo.",
+        "label": "Seiken chūdan soto-uke (soto) — widok z boku 2",
+        "alt": "Seiken chūdan soto-uke (soto): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-soto-uke/poster/seiken-soto-uke-chudan-s2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-soto-uke/video/seiken-soto-uke-chudan-s3.mp4",
         "zone": "chudan",
-        "label": "Seiken chūdan soto-uke — widok z boku 3",
-        "alt": "Seiken chūdan soto-uke: widok z boku 3. Nagranie z dojo.",
+        "label": "Seiken chūdan soto-uke (soto) — widok z boku 3",
+        "alt": "Seiken chūdan soto-uke (soto): widok z boku 3. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-soto-uke/poster/seiken-soto-uke-chudan-s3.jpg"
       }
     ],
@@ -1255,39 +1255,39 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-uchi-uke/video/seiken-morote-uchi-uke-f1.mp4",
-        "label": "Seiken chūdan uchi-uke — widok z przodu 1",
-        "alt": "Seiken chūdan uchi-uke: widok z przodu 1. Nagranie z dojo.",
+        "label": "Seiken chūdan uchi-uke (morote) — widok z przodu 1",
+        "alt": "Seiken chūdan uchi-uke (morote): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-uchi-uke/poster/seiken-morote-uchi-uke-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-uchi-uke/video/seiken-uchi-uke-chudan-f1.mp4",
         "zone": "chudan",
-        "label": "Seiken chūdan uchi-uke — widok z przodu 1",
-        "alt": "Seiken chūdan uchi-uke: widok z przodu 1. Nagranie z dojo.",
+        "label": "Seiken chūdan uchi-uke (uchi) — widok z przodu 1",
+        "alt": "Seiken chūdan uchi-uke (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-uchi-uke/poster/seiken-uchi-uke-chudan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-uchi-uke/video/seiken-uchi-uke-chudan-f2.mp4",
         "zone": "chudan",
-        "label": "Seiken chūdan uchi-uke — widok z przodu 2",
-        "alt": "Seiken chūdan uchi-uke: widok z przodu 2. Nagranie z dojo.",
+        "label": "Seiken chūdan uchi-uke (uchi) — widok z przodu 2",
+        "alt": "Seiken chūdan uchi-uke (uchi): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-uchi-uke/poster/seiken-uchi-uke-chudan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-uchi-uke/video/seiken-morote-uchi-uke-s1.mp4",
-        "label": "Seiken chūdan uchi-uke — widok z boku 1",
-        "alt": "Seiken chūdan uchi-uke: widok z boku 1. Nagranie z dojo.",
+        "label": "Seiken chūdan uchi-uke (morote) — widok z boku 1",
+        "alt": "Seiken chūdan uchi-uke (morote): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-uchi-uke/poster/seiken-morote-uchi-uke-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-uchi-uke/video/seiken-uchi-uke-chudan-s1.mp4",
         "zone": "chudan",
-        "label": "Seiken chūdan uchi-uke — widok z boku 1",
-        "alt": "Seiken chūdan uchi-uke: widok z boku 1. Nagranie z dojo.",
+        "label": "Seiken chūdan uchi-uke (uchi) — widok z boku 1",
+        "alt": "Seiken chūdan uchi-uke (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-chudan-uchi-uke/poster/seiken-uchi-uke-chudan-s1.jpg"
       }
     ],
@@ -1312,8 +1312,8 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-gedan-barai/video/seiken-morote-gedan-barai-f1.mp4",
         "zone": "gedan",
-        "label": "Seiken gedan-barai — widok z przodu 1",
-        "alt": "Seiken gedan-barai: widok z przodu 1. Nagranie z dojo.",
+        "label": "Seiken gedan-barai (morote) — widok z przodu 1",
+        "alt": "Seiken gedan-barai (morote): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-gedan-barai/poster/seiken-morote-gedan-barai-f1.jpg"
       }
     ],
@@ -1347,48 +1347,48 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jodan-uke/video/seiken-juji-uke-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Seiken jōdan uke — widok z przodu 1",
-        "alt": "Seiken jōdan uke: widok z przodu 1. Nagranie z dojo.",
+        "label": "Seiken jōdan uke (jūji) — widok z przodu 1",
+        "alt": "Seiken jōdan uke (jūji): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jodan-uke/poster/seiken-juji-uke-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jodan-uke/video/seiken-juji-uke-jodan-f2.mp4",
         "zone": "jodan",
-        "label": "Seiken jōdan uke — widok z przodu 2",
-        "alt": "Seiken jōdan uke: widok z przodu 2. Nagranie z dojo.",
+        "label": "Seiken jōdan uke (jūji) — widok z przodu 2",
+        "alt": "Seiken jōdan uke (jūji): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jodan-uke/poster/seiken-juji-uke-jodan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jodan-uke/video/shotei-uke-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Seiken jōdan uke — widok z przodu 1",
-        "alt": "Seiken jōdan uke: widok z przodu 1. Nagranie z dojo.",
+        "label": "Seiken jōdan uke (shōtei) — widok z przodu 1",
+        "alt": "Seiken jōdan uke (shōtei): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jodan-uke/poster/shotei-uke-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jodan-uke/video/shotei-uke-jodan-f2.mp4",
         "zone": "jodan",
-        "label": "Seiken jōdan uke — widok z przodu 2",
-        "alt": "Seiken jōdan uke: widok z przodu 2. Nagranie z dojo.",
+        "label": "Seiken jōdan uke (shōtei) — widok z przodu 2",
+        "alt": "Seiken jōdan uke (shōtei): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jodan-uke/poster/shotei-uke-jodan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jodan-uke/video/shotei-uke-jodan-s1.mp4",
         "zone": "jodan",
-        "label": "Seiken jōdan uke — widok z boku 1",
-        "alt": "Seiken jōdan uke: widok z boku 1. Nagranie z dojo.",
+        "label": "Seiken jōdan uke (shōtei) — widok z boku 1",
+        "alt": "Seiken jōdan uke (shōtei): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jodan-uke/poster/shotei-uke-jodan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jodan-uke/video/shotei-uke-jodan-s2.mp4",
         "zone": "jodan",
-        "label": "Seiken jōdan uke — widok z boku 2",
-        "alt": "Seiken jōdan uke: widok z boku 2. Nagranie z dojo.",
+        "label": "Seiken jōdan uke (shōtei) — widok z boku 2",
+        "alt": "Seiken jōdan uke (shōtei): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-jodan-uke/poster/shotei-uke-jodan-s2.jpg"
       }
     ],
@@ -1397,24 +1397,24 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-juji-uke/video/seiken-juji-uke-gedan-f1.mp4",
         "zone": "gedan",
-        "label": "Seiken jūji-uke — widok z przodu 1",
-        "alt": "Seiken jūji-uke: widok z przodu 1. Nagranie z dojo.",
+        "label": "Seiken jūji-uke (jūji) — widok z przodu 1",
+        "alt": "Seiken jūji-uke (jūji): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-juji-uke/poster/seiken-juji-uke-gedan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-juji-uke/video/seiken-juji-uke-gedan-f2.mp4",
         "zone": "gedan",
-        "label": "Seiken jūji-uke — widok z przodu 2",
-        "alt": "Seiken jūji-uke: widok z przodu 2. Nagranie z dojo.",
+        "label": "Seiken jūji-uke (jūji) — widok z przodu 2",
+        "alt": "Seiken jūji-uke (jūji): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-juji-uke/poster/seiken-juji-uke-gedan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-juji-uke/video/seiken-juji-uke-gedan-s1.mp4",
         "zone": "gedan",
-        "label": "Seiken jūji-uke — widok z boku 1",
-        "alt": "Seiken jūji-uke: widok z boku 1. Nagranie z dojo.",
+        "label": "Seiken jūji-uke (jūji) — widok z boku 1",
+        "alt": "Seiken jūji-uke (jūji): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-juji-uke/poster/seiken-juji-uke-gedan-s1.jpg"
       }
     ],
@@ -1458,23 +1458,23 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-morote-tsuki/video/saiken-morote-tsuki-f1.mp4",
-        "label": "Seiken morote-tsuki — widok z przodu 1",
-        "alt": "Seiken morote-tsuki: widok z przodu 1. Nagranie z dojo.",
+        "label": "Seiken morote-tsuki (morote) — widok z przodu 1",
+        "alt": "Seiken morote-tsuki (morote): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-morote-tsuki/poster/saiken-morote-tsuki-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-morote-tsuki/video/seiken-morote-tsuki-gedan-f1.mp4",
         "zone": "gedan",
-        "label": "Seiken morote-tsuki — widok z przodu 1",
-        "alt": "Seiken morote-tsuki: widok z przodu 1. Nagranie z dojo.",
+        "label": "Seiken morote-tsuki (morote) — widok z przodu 1",
+        "alt": "Seiken morote-tsuki (morote): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-morote-tsuki/poster/seiken-morote-tsuki-gedan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-morote-tsuki/video/seiken-morote-tsuki-yodan-f1.mp4",
-        "label": "Seiken morote-tsuki — widok z przodu 1",
-        "alt": "Seiken morote-tsuki: widok z przodu 1. Nagranie z dojo.",
+        "label": "Seiken morote-tsuki (morote) — widok z przodu 1",
+        "alt": "Seiken morote-tsuki (morote): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken-morote-tsuki/poster/seiken-morote-tsuki-yodan-f1.jpg"
       }
     ],
@@ -1575,104 +1575,104 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/video/shotei-uchi-chudan-f1.mp4",
         "zone": "chudan",
-        "label": "Shōtei uchi — widok z przodu 1",
-        "alt": "Shōtei uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Shōtei uchi (shōtei) — widok z przodu 1",
+        "alt": "Shōtei uchi (shōtei): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-chudan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/video/shotei-uchi-chudan-f2.mp4",
         "zone": "chudan",
-        "label": "Shōtei uchi — widok z przodu 2",
-        "alt": "Shōtei uchi: widok z przodu 2. Nagranie z dojo.",
+        "label": "Shōtei uchi (shōtei) — widok z przodu 2",
+        "alt": "Shōtei uchi (shōtei): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-chudan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/video/shotei-uchi-gedan-f1.mp4",
         "zone": "gedan",
-        "label": "Shōtei uchi — widok z przodu 1",
-        "alt": "Shōtei uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Shōtei uchi (shōtei) — widok z przodu 1",
+        "alt": "Shōtei uchi (shōtei): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-gedan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/video/shotei-uchi-gedan-f2.mp4",
         "zone": "gedan",
-        "label": "Shōtei uchi — widok z przodu 2",
-        "alt": "Shōtei uchi: widok z przodu 2. Nagranie z dojo.",
+        "label": "Shōtei uchi (shōtei) — widok z przodu 2",
+        "alt": "Shōtei uchi (shōtei): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-gedan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/video/shotei-uchi-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Shōtei uchi — widok z przodu 1",
-        "alt": "Shōtei uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Shōtei uchi (shōtei) — widok z przodu 1",
+        "alt": "Shōtei uchi (shōtei): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/video/shotei-uchi-jodan-f2.mp4",
         "zone": "jodan",
-        "label": "Shōtei uchi — widok z przodu 2",
-        "alt": "Shōtei uchi: widok z przodu 2. Nagranie z dojo.",
+        "label": "Shōtei uchi (shōtei) — widok z przodu 2",
+        "alt": "Shōtei uchi (shōtei): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-jodan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/video/shotei-uchi-chudan-s1.mp4",
         "zone": "chudan",
-        "label": "Shōtei uchi — widok z boku 1",
-        "alt": "Shōtei uchi: widok z boku 1. Nagranie z dojo.",
+        "label": "Shōtei uchi (shōtei) — widok z boku 1",
+        "alt": "Shōtei uchi (shōtei): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-chudan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/video/shotei-uchi-chudan-s2.mp4",
         "zone": "chudan",
-        "label": "Shōtei uchi — widok z boku 2",
-        "alt": "Shōtei uchi: widok z boku 2. Nagranie z dojo.",
+        "label": "Shōtei uchi (shōtei) — widok z boku 2",
+        "alt": "Shōtei uchi (shōtei): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-chudan-s2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/video/shotei-uchi-chudan-s3.mp4",
         "zone": "chudan",
-        "label": "Shōtei uchi — widok z boku 3",
-        "alt": "Shōtei uchi: widok z boku 3. Nagranie z dojo.",
+        "label": "Shōtei uchi (shōtei) — widok z boku 3",
+        "alt": "Shōtei uchi (shōtei): widok z boku 3. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-chudan-s3.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/video/shotei-uchi-gedan-s1.mp4",
         "zone": "gedan",
-        "label": "Shōtei uchi — widok z boku 1",
-        "alt": "Shōtei uchi: widok z boku 1. Nagranie z dojo.",
+        "label": "Shōtei uchi (shōtei) — widok z boku 1",
+        "alt": "Shōtei uchi (shōtei): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-gedan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/video/shotei-uchi-gedan-s2.mp4",
         "zone": "gedan",
-        "label": "Shōtei uchi — widok z boku 2",
-        "alt": "Shōtei uchi: widok z boku 2. Nagranie z dojo.",
+        "label": "Shōtei uchi (shōtei) — widok z boku 2",
+        "alt": "Shōtei uchi (shōtei): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-gedan-s2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/video/shotei-uchi-jodan-s1.mp4",
         "zone": "jodan",
-        "label": "Shōtei uchi — widok z boku 1",
-        "alt": "Shōtei uchi: widok z boku 1. Nagranie z dojo.",
+        "label": "Shōtei uchi (shōtei) — widok z boku 1",
+        "alt": "Shōtei uchi (shōtei): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-jodan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/video/shotei-uchi-jodan-s2.mp4",
         "zone": "jodan",
-        "label": "Shōtei uchi — widok z boku 2",
-        "alt": "Shōtei uchi: widok z boku 2. Nagranie z dojo.",
+        "label": "Shōtei uchi (shōtei) — widok z boku 2",
+        "alt": "Shōtei uchi (shōtei): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uchi/poster/shotei-uchi-jodan-s2.jpg"
       }
     ],
@@ -1681,32 +1681,32 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/video/shotei-uke-chudan-f1.mp4",
         "zone": "chudan",
-        "label": "Shōtei uke — widok z przodu 1",
-        "alt": "Shōtei uke: widok z przodu 1. Nagranie z dojo.",
+        "label": "Shōtei uke (shōtei) — widok z przodu 1",
+        "alt": "Shōtei uke (shōtei): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/poster/shotei-uke-chudan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/video/shotei-uke-chudan-f2.mp4",
         "zone": "chudan",
-        "label": "Shōtei uke — widok z przodu 2",
-        "alt": "Shōtei uke: widok z przodu 2. Nagranie z dojo.",
+        "label": "Shōtei uke (shōtei) — widok z przodu 2",
+        "alt": "Shōtei uke (shōtei): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/poster/shotei-uke-chudan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/video/shotei-uke-gedan-f1.mp4",
         "zone": "gedan",
-        "label": "Shōtei uke — widok z przodu 1",
-        "alt": "Shōtei uke: widok z przodu 1. Nagranie z dojo.",
+        "label": "Shōtei uke (shōtei) — widok z przodu 1",
+        "alt": "Shōtei uke (shōtei): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/poster/shotei-uke-gedan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/video/shotei-uke-gedan-f2.mp4",
         "zone": "gedan",
-        "label": "Shōtei uke — widok z przodu 2",
-        "alt": "Shōtei uke: widok z przodu 2. Nagranie z dojo.",
+        "label": "Shōtei uke (shōtei) — widok z przodu 2",
+        "alt": "Shōtei uke (shōtei): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/poster/shotei-uke-gedan-f2.jpg"
       },
       {
@@ -1721,24 +1721,24 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/video/shotei-uke-chudan-s1.mp4",
         "zone": "chudan",
-        "label": "Shōtei uke — widok z boku 1",
-        "alt": "Shōtei uke: widok z boku 1. Nagranie z dojo.",
+        "label": "Shōtei uke (shōtei) — widok z boku 1",
+        "alt": "Shōtei uke (shōtei): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/poster/shotei-uke-chudan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/video/shotei-uke-chudan-s2.mp4",
         "zone": "chudan",
-        "label": "Shōtei uke — widok z boku 2",
-        "alt": "Shōtei uke: widok z boku 2. Nagranie z dojo.",
+        "label": "Shōtei uke (shōtei) — widok z boku 2",
+        "alt": "Shōtei uke (shōtei): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/poster/shotei-uke-chudan-s2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/video/shotei-uke-gedan-s1.mp4",
         "zone": "gedan",
-        "label": "Shōtei uke — widok z boku 1",
-        "alt": "Shōtei uke: widok z boku 1. Nagranie z dojo.",
+        "label": "Shōtei uke (shōtei) — widok z boku 1",
+        "alt": "Shōtei uke (shōtei): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shotei-uke/poster/shotei-uke-gedan-s1.jpg"
       }
     ],
@@ -1747,32 +1747,32 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-soto-uke/video/shuto-chudan-soto-uke-f1.mp4",
         "zone": "chudan",
-        "label": "Shūto chūdan soto-uke — widok z przodu 1",
-        "alt": "Shūto chūdan soto-uke: widok z przodu 1. Nagranie z dojo.",
+        "label": "Shūto chūdan soto-uke (soto) — widok z przodu 1",
+        "alt": "Shūto chūdan soto-uke (soto): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-soto-uke/poster/shuto-chudan-soto-uke-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-soto-uke/video/shuto-chudan-soto-uke-f2.mp4",
         "zone": "chudan",
-        "label": "Shūto chūdan soto-uke — widok z przodu 2",
-        "alt": "Shūto chūdan soto-uke: widok z przodu 2. Nagranie z dojo.",
+        "label": "Shūto chūdan soto-uke (soto) — widok z przodu 2",
+        "alt": "Shūto chūdan soto-uke (soto): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-soto-uke/poster/shuto-chudan-soto-uke-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-soto-uke/video/shuto-soto-uke-chudan-s1.mp4",
         "zone": "chudan",
-        "label": "Shūto chūdan soto-uke — widok z boku 1",
-        "alt": "Shūto chūdan soto-uke: widok z boku 1. Nagranie z dojo.",
+        "label": "Shūto chūdan soto-uke (soto) — widok z boku 1",
+        "alt": "Shūto chūdan soto-uke (soto): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-soto-uke/poster/shuto-soto-uke-chudan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-soto-uke/video/shuto-soto-uke-chudan-s2.mp4",
         "zone": "chudan",
-        "label": "Shūto chūdan soto-uke — widok z boku 2",
-        "alt": "Shūto chūdan soto-uke: widok z boku 2. Nagranie z dojo.",
+        "label": "Shūto chūdan soto-uke (soto) — widok z boku 2",
+        "alt": "Shūto chūdan soto-uke (soto): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-soto-uke/poster/shuto-soto-uke-chudan-s2.jpg"
       }
     ],
@@ -1781,24 +1781,24 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-uchi-uke/video/shuto-uchi-uke-chudan-f1.mp4",
         "zone": "chudan",
-        "label": "Shūto chūdan uchi-uke — widok z przodu 1",
-        "alt": "Shūto chūdan uchi-uke: widok z przodu 1. Nagranie z dojo.",
+        "label": "Shūto chūdan uchi-uke (uchi) — widok z przodu 1",
+        "alt": "Shūto chūdan uchi-uke (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-uchi-uke/poster/shuto-uchi-uke-chudan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-uchi-uke/video/shuto-uchi-uke-chudan-f2.mp4",
         "zone": "chudan",
-        "label": "Shūto chūdan uchi-uke — widok z przodu 2",
-        "alt": "Shūto chūdan uchi-uke: widok z przodu 2. Nagranie z dojo.",
+        "label": "Shūto chūdan uchi-uke (uchi) — widok z przodu 2",
+        "alt": "Shūto chūdan uchi-uke (uchi): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-uchi-uke/poster/shuto-uchi-uke-chudan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-uchi-uke/video/shuto-uchi-uke-chudan-s1.mp4",
         "zone": "chudan",
-        "label": "Shūto chūdan uchi-uke — widok z boku 1",
-        "alt": "Shūto chūdan uchi-uke: widok z boku 1. Nagranie z dojo.",
+        "label": "Shūto chūdan uchi-uke (uchi) — widok z boku 1",
+        "alt": "Shūto chūdan uchi-uke (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-chudan-uchi-uke/poster/shuto-uchi-uke-chudan-s1.jpg"
       }
     ],
@@ -1806,29 +1806,29 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-ganmen-uchi/video/shuto-ganmen-uchi-f1.mp4",
-        "label": "Shūto ganmen-uchi — widok z przodu 1",
-        "alt": "Shūto ganmen-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Shūto ganmen-uchi (uchi) — widok z przodu 1",
+        "alt": "Shūto ganmen-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-ganmen-uchi/poster/shuto-ganmen-uchi-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-ganmen-uchi/video/shuto-ganmen-uchi-f2.mp4",
-        "label": "Shūto ganmen-uchi — widok z przodu 2",
-        "alt": "Shūto ganmen-uchi: widok z przodu 2. Nagranie z dojo.",
+        "label": "Shūto ganmen-uchi (uchi) — widok z przodu 2",
+        "alt": "Shūto ganmen-uchi (uchi): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-ganmen-uchi/poster/shuto-ganmen-uchi-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-ganmen-uchi/video/shuto-ganmen-uchi-s1.mp4",
-        "label": "Shūto ganmen-uchi — widok z boku 1",
-        "alt": "Shūto ganmen-uchi: widok z boku 1. Nagranie z dojo.",
+        "label": "Shūto ganmen-uchi (uchi) — widok z boku 1",
+        "alt": "Shūto ganmen-uchi (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-ganmen-uchi/poster/shuto-ganmen-uchi-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-ganmen-uchi/video/shuto-ganmen-uchi-s2.mp4",
-        "label": "Shūto ganmen-uchi — widok z boku 2",
-        "alt": "Shūto ganmen-uchi: widok z boku 2. Nagranie z dojo.",
+        "label": "Shūto ganmen-uchi (uchi) — widok z boku 2",
+        "alt": "Shūto ganmen-uchi (uchi): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-ganmen-uchi/poster/shuto-ganmen-uchi-s2.jpg"
       }
     ],
@@ -1836,29 +1836,29 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-hizo-uchi/video/shuto-hizo-uchi-f1.mp4",
-        "label": "Shūto hizō-uchi — widok z przodu 1",
-        "alt": "Shūto hizō-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Shūto hizō-uchi (uchi) — widok z przodu 1",
+        "alt": "Shūto hizō-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-hizo-uchi/poster/shuto-hizo-uchi-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-hizo-uchi/video/shuto-hizo-uchi-s1.mp4",
-        "label": "Shūto hizō-uchi — widok z boku 1",
-        "alt": "Shūto hizō-uchi: widok z boku 1. Nagranie z dojo.",
+        "label": "Shūto hizō-uchi (uchi) — widok z boku 1",
+        "alt": "Shūto hizō-uchi (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-hizo-uchi/poster/shuto-hizo-uchi-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-hizo-uchi/video/shuto-hizo-uchi-s2.mp4",
-        "label": "Shūto hizō-uchi — widok z boku 2",
-        "alt": "Shūto hizō-uchi: widok z boku 2. Nagranie z dojo.",
+        "label": "Shūto hizō-uchi (uchi) — widok z boku 2",
+        "alt": "Shūto hizō-uchi (uchi): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-hizo-uchi/poster/shuto-hizo-uchi-s2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-hizo-uchi/video/shuto-hizo-uchi-s3.mp4",
-        "label": "Shūto hizō-uchi — widok z boku 3",
-        "alt": "Shūto hizō-uchi: widok z boku 3. Nagranie z dojo.",
+        "label": "Shūto hizō-uchi (uchi) — widok z boku 3",
+        "alt": "Shūto hizō-uchi (uchi): widok z boku 3. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-hizo-uchi/poster/shuto-hizo-uchi-s3.jpg"
       }
     ],
@@ -1867,32 +1867,32 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uchi-uchi/video/shuto-uchi-uchi-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Shūto jōdan uchi-uchi — widok z przodu 1",
-        "alt": "Shūto jōdan uchi-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Shūto jōdan uchi-uchi (uchi) — widok z przodu 1",
+        "alt": "Shūto jōdan uchi-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uchi-uchi/poster/shuto-uchi-uchi-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uchi-uchi/video/shuto-uchi-uchi-jodan-f2.mp4",
         "zone": "jodan",
-        "label": "Shūto jōdan uchi-uchi — widok z przodu 2",
-        "alt": "Shūto jōdan uchi-uchi: widok z przodu 2. Nagranie z dojo.",
+        "label": "Shūto jōdan uchi-uchi (uchi) — widok z przodu 2",
+        "alt": "Shūto jōdan uchi-uchi (uchi): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uchi-uchi/poster/shuto-uchi-uchi-jodan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uchi-uchi/video/shuto-uchi-uchi-jodan-s1.mp4",
         "zone": "jodan",
-        "label": "Shūto jōdan uchi-uchi — widok z boku 1",
-        "alt": "Shūto jōdan uchi-uchi: widok z boku 1. Nagranie z dojo.",
+        "label": "Shūto jōdan uchi-uchi (uchi) — widok z boku 1",
+        "alt": "Shūto jōdan uchi-uchi (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uchi-uchi/poster/shuto-uchi-uchi-jodan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uchi-uchi/video/shuto-uchi-uchi-jodan-s2.mp4",
         "zone": "jodan",
-        "label": "Shūto jōdan uchi-uchi — widok z boku 2",
-        "alt": "Shūto jōdan uchi-uchi: widok z boku 2. Nagranie z dojo.",
+        "label": "Shūto jōdan uchi-uchi (uchi) — widok z boku 2",
+        "alt": "Shūto jōdan uchi-uchi (uchi): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uchi-uchi/poster/shuto-uchi-uchi-jodan-s2.jpg"
       }
     ],
@@ -1917,32 +1917,32 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uke/video/shuto-juji-uke-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Shūto jōdan uke — widok z przodu 1",
-        "alt": "Shūto jōdan uke: widok z przodu 1. Nagranie z dojo.",
+        "label": "Shūto jōdan uke (jūji) — widok z przodu 1",
+        "alt": "Shūto jōdan uke (jūji): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uke/poster/shuto-juji-uke-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uke/video/shuto-juji-uke-jodan-f2.mp4",
         "zone": "jodan",
-        "label": "Shūto jōdan uke — widok z przodu 2",
-        "alt": "Shūto jōdan uke: widok z przodu 2. Nagranie z dojo.",
+        "label": "Shūto jōdan uke (jūji) — widok z przodu 2",
+        "alt": "Shūto jōdan uke (jūji): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uke/poster/shuto-juji-uke-jodan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uke/video/shuto-juji-uke-jodan-s1.mp4",
         "zone": "jodan",
-        "label": "Shūto jōdan uke — widok z boku 1",
-        "alt": "Shūto jōdan uke: widok z boku 1. Nagranie z dojo.",
+        "label": "Shūto jōdan uke (jūji) — widok z boku 1",
+        "alt": "Shūto jōdan uke (jūji): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uke/poster/shuto-juji-uke-jodan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uke/video/shuto-juji-uke-jodan-s2.mp4",
         "zone": "jodan",
-        "label": "Shūto jōdan uke — widok z boku 2",
-        "alt": "Shūto jōdan uke: widok z boku 2. Nagranie z dojo.",
+        "label": "Shūto jōdan uke (jūji) — widok z boku 2",
+        "alt": "Shūto jōdan uke (jūji): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-jodan-uke/poster/shuto-juji-uke-jodan-s2.jpg"
       }
     ],
@@ -1951,32 +1951,32 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-juji-uke/video/shuto-juji-uke-gedan-f1.mp4",
         "zone": "gedan",
-        "label": "Shūto jūji-uke — widok z przodu 1",
-        "alt": "Shūto jūji-uke: widok z przodu 1. Nagranie z dojo.",
+        "label": "Shūto jūji-uke (jūji) — widok z przodu 1",
+        "alt": "Shūto jūji-uke (jūji): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-juji-uke/poster/shuto-juji-uke-gedan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-juji-uke/video/shuto-juji-uke-gedan-f2.mp4",
         "zone": "gedan",
-        "label": "Shūto jūji-uke — widok z przodu 2",
-        "alt": "Shūto jūji-uke: widok z przodu 2. Nagranie z dojo.",
+        "label": "Shūto jūji-uke (jūji) — widok z przodu 2",
+        "alt": "Shūto jūji-uke (jūji): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-juji-uke/poster/shuto-juji-uke-gedan-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-juji-uke/video/shuto-juji-uke-gedan-s1.mp4",
         "zone": "gedan",
-        "label": "Shūto jūji-uke — widok z boku 1",
-        "alt": "Shūto jūji-uke: widok z boku 1. Nagranie z dojo.",
+        "label": "Shūto jūji-uke (jūji) — widok z boku 1",
+        "alt": "Shūto jūji-uke (jūji): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-juji-uke/poster/shuto-juji-uke-gedan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-juji-uke/video/shuto-juji-uke-gedan-s2.mp4",
         "zone": "gedan",
-        "label": "Shūto jūji-uke — widok z boku 2",
-        "alt": "Shūto jūji-uke: widok z boku 2. Nagranie z dojo.",
+        "label": "Shūto jūji-uke (jūji) — widok z boku 2",
+        "alt": "Shūto jūji-uke (jūji): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-juji-uke/poster/shuto-juji-uke-gedan-s2.jpg"
       }
     ],
@@ -2040,29 +2040,29 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-sakotsu-uchi/video/shuto-sakotsu-uchi-f1.mp4",
-        "label": "Shūto sakotsu-uchi — widok z przodu 1",
-        "alt": "Shūto sakotsu-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Shūto sakotsu-uchi (uchi) — widok z przodu 1",
+        "alt": "Shūto sakotsu-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-sakotsu-uchi/poster/shuto-sakotsu-uchi-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-sakotsu-uchi/video/shuto-sakotsu-uchi-f2.mp4",
-        "label": "Shūto sakotsu-uchi — widok z przodu 2",
-        "alt": "Shūto sakotsu-uchi: widok z przodu 2. Nagranie z dojo.",
+        "label": "Shūto sakotsu-uchi (uchi) — widok z przodu 2",
+        "alt": "Shūto sakotsu-uchi (uchi): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-sakotsu-uchi/poster/shuto-sakotsu-uchi-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-sakotsu-uchi/video/shuto-sakotsu-uchi-s1.mp4",
-        "label": "Shūto sakotsu-uchi — widok z boku 1",
-        "alt": "Shūto sakotsu-uchi: widok z boku 1. Nagranie z dojo.",
+        "label": "Shūto sakotsu-uchi (uchi) — widok z boku 1",
+        "alt": "Shūto sakotsu-uchi (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-sakotsu-uchi/poster/shuto-sakotsu-uchi-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-sakotsu-uchi/video/shuto-sakotsu-uchi-s2.mp4",
-        "label": "Shūto sakotsu-uchi — widok z boku 2",
-        "alt": "Shūto sakotsu-uchi: widok z boku 2. Nagranie z dojo.",
+        "label": "Shūto sakotsu-uchi (uchi) — widok z boku 2",
+        "alt": "Shūto sakotsu-uchi (uchi): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-sakotsu-uchi/poster/shuto-sakotsu-uchi-s2.jpg"
       }
     ],
@@ -2077,29 +2077,29 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-uchi-komi/video/shuto-uchi-komi-f1.mp4",
-        "label": "Shūto uchi-komi — widok z przodu 1",
-        "alt": "Shūto uchi-komi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Shūto uchi-komi (uchi) — widok z przodu 1",
+        "alt": "Shūto uchi-komi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-uchi-komi/poster/shuto-uchi-komi-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-uchi-komi/video/shuto-uchi-komi-f2.mp4",
-        "label": "Shūto uchi-komi — widok z przodu 2",
-        "alt": "Shūto uchi-komi: widok z przodu 2. Nagranie z dojo.",
+        "label": "Shūto uchi-komi (uchi) — widok z przodu 2",
+        "alt": "Shūto uchi-komi (uchi): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-uchi-komi/poster/shuto-uchi-komi-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-uchi-komi/video/shuto-uchi-komi-s1.mp4",
-        "label": "Shūto uchi-komi — widok z boku 1",
-        "alt": "Shūto uchi-komi: widok z boku 1. Nagranie z dojo.",
+        "label": "Shūto uchi-komi (uchi) — widok z boku 1",
+        "alt": "Shūto uchi-komi (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-uchi-komi/poster/shuto-uchi-komi-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-uchi-komi/video/shuto-uchi-komi-s2.mp4",
-        "label": "Shūto uchi-komi — widok z boku 2",
-        "alt": "Shūto uchi-komi: widok z boku 2. Nagranie z dojo.",
+        "label": "Shūto uchi-komi (uchi) — widok z boku 2",
+        "alt": "Shūto uchi-komi (uchi): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/shuto-uchi-komi/poster/shuto-uchi-komi-s2.jpg"
       }
     ],
@@ -2107,15 +2107,15 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/teisoku-mawashi-soto-keage/video/mawashi-soto-kaage-teisoku-f1.mp4",
-        "label": "Teisoku mawashi soto-keage — widok z przodu 1",
-        "alt": "Teisoku mawashi soto-keage: widok z przodu 1. Nagranie z dojo.",
+        "label": "Teisoku mawashi soto-keage (teisoku) — widok z przodu 1",
+        "alt": "Teisoku mawashi soto-keage (teisoku): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/teisoku-mawashi-soto-keage/poster/mawashi-soto-kaage-teisoku-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/teisoku-mawashi-soto-keage/video/mawashi-soto-kaage-teisoku-s1.mp4",
-        "label": "Teisoku mawashi soto-keage — widok z boku 1",
-        "alt": "Teisoku mawashi soto-keage: widok z boku 1. Nagranie z dojo.",
+        "label": "Teisoku mawashi soto-keage (teisoku) — widok z boku 1",
+        "alt": "Teisoku mawashi soto-keage (teisoku): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/teisoku-mawashi-soto-keage/poster/mawashi-soto-kaage-teisoku-s1.jpg"
       }
     ],
@@ -2123,22 +2123,22 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-hizo-uchi/video/tettsui-hizo-uchi-f1.mp4",
-        "label": "Tettsui hizō-uchi — widok z przodu 1",
-        "alt": "Tettsui hizō-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Tettsui hizō-uchi (uchi) — widok z przodu 1",
+        "alt": "Tettsui hizō-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-hizo-uchi/poster/tettsui-hizo-uchi-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-hizo-uchi/video/tettsui-hizo-uchi-d1.mp4",
-        "label": "Tettsui hizō-uchi — detal 1",
-        "alt": "Tettsui hizō-uchi: zbliżenie na detal techniki 1. Nagranie z dojo.",
+        "label": "Tettsui hizō-uchi (uchi) — detal 1",
+        "alt": "Tettsui hizō-uchi (uchi): zbliżenie na detal techniki 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-hizo-uchi/poster/tettsui-hizo-uchi-d1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-hizo-uchi/video/tettsui-hizo-uchi-d2.mp4",
-        "label": "Tettsui hizō-uchi — detal 2",
-        "alt": "Tettsui hizō-uchi: zbliżenie na detal techniki 2. Nagranie z dojo.",
+        "label": "Tettsui hizō-uchi (uchi) — detal 2",
+        "alt": "Tettsui hizō-uchi (uchi): zbliżenie na detal techniki 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-hizo-uchi/poster/tettsui-hizo-uchi-d2.jpg"
       }
     ],
@@ -2146,36 +2146,36 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-komekami-uchi/video/tettsui-komi-kame-uchi-f1.mp4",
-        "label": "Tettsui komekami-uchi — widok z przodu 1",
-        "alt": "Tettsui komekami-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Tettsui komekami-uchi (uchi) — widok z przodu 1",
+        "alt": "Tettsui komekami-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-komekami-uchi/poster/tettsui-komi-kame-uchi-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-komekami-uchi/video/tettsui-komi-kame-uchi-s1.mp4",
-        "label": "Tettsui komekami-uchi — widok z boku 1",
-        "alt": "Tettsui komekami-uchi: widok z boku 1. Nagranie z dojo.",
+        "label": "Tettsui komekami-uchi (uchi) — widok z boku 1",
+        "alt": "Tettsui komekami-uchi (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-komekami-uchi/poster/tettsui-komi-kame-uchi-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-komekami-uchi/video/tettsui-ganmen-uchi-d1.mp4",
-        "label": "Tettsui komekami-uchi — detal 1",
-        "alt": "Tettsui komekami-uchi: zbliżenie na detal techniki 1. Nagranie z dojo.",
+        "label": "Tettsui komekami-uchi (uchi) — detal 1",
+        "alt": "Tettsui komekami-uchi (uchi): zbliżenie na detal techniki 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-komekami-uchi/poster/tettsui-ganmen-uchi-d1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-komekami-uchi/video/tettsui-komi-kame-uchi-d1.mp4",
-        "label": "Tettsui komekami-uchi — detal 1",
-        "alt": "Tettsui komekami-uchi: zbliżenie na detal techniki 1. Nagranie z dojo.",
+        "label": "Tettsui komekami-uchi (uchi) — detal 1",
+        "alt": "Tettsui komekami-uchi (uchi): zbliżenie na detal techniki 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-komekami-uchi/poster/tettsui-komi-kame-uchi-d1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-komekami-uchi/video/tettsui-komi-kame-uchi-d2.mp4",
-        "label": "Tettsui komekami-uchi — detal 2",
-        "alt": "Tettsui komekami-uchi: zbliżenie na detal techniki 2. Nagranie z dojo.",
+        "label": "Tettsui komekami-uchi (uchi) — detal 2",
+        "alt": "Tettsui komekami-uchi (uchi): zbliżenie na detal techniki 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-komekami-uchi/poster/tettsui-komi-kame-uchi-d2.jpg"
       }
     ],
@@ -2183,36 +2183,36 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-oroshi-uchi/video/tettsui-orochi-uchi-f1.mp4",
-        "label": "Tettsui oroshi-uchi — widok z przodu 1",
-        "alt": "Tettsui oroshi-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Tettsui oroshi-uchi (uchi) — widok z przodu 1",
+        "alt": "Tettsui oroshi-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-oroshi-uchi/poster/tettsui-orochi-uchi-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-oroshi-uchi/video/tettsui-oroshi-uchi-f1.mp4",
-        "label": "Tettsui oroshi-uchi — widok z przodu 1",
-        "alt": "Tettsui oroshi-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Tettsui oroshi-uchi (uchi) — widok z przodu 1",
+        "alt": "Tettsui oroshi-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-oroshi-uchi/poster/tettsui-oroshi-uchi-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-oroshi-uchi/video/tettsui-oroshi-uchi-s1.mp4",
-        "label": "Tettsui oroshi-uchi — widok z boku 1",
-        "alt": "Tettsui oroshi-uchi: widok z boku 1. Nagranie z dojo.",
+        "label": "Tettsui oroshi-uchi (uchi) — widok z boku 1",
+        "alt": "Tettsui oroshi-uchi (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-oroshi-uchi/poster/tettsui-oroshi-uchi-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-oroshi-uchi/video/tettsui-oroshi-uchi-d1.mp4",
-        "label": "Tettsui oroshi-uchi — detal 1",
-        "alt": "Tettsui oroshi-uchi: zbliżenie na detal techniki 1. Nagranie z dojo.",
+        "label": "Tettsui oroshi-uchi (uchi) — detal 1",
+        "alt": "Tettsui oroshi-uchi (uchi): zbliżenie na detal techniki 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-oroshi-uchi/poster/tettsui-oroshi-uchi-d1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-oroshi-uchi/video/tettsui-oroshi-uchi-d2.mp4",
-        "label": "Tettsui oroshi-uchi — detal 2",
-        "alt": "Tettsui oroshi-uchi: zbliżenie na detal techniki 2. Nagranie z dojo.",
+        "label": "Tettsui oroshi-uchi (uchi) — detal 2",
+        "alt": "Tettsui oroshi-uchi (uchi): zbliżenie na detal techniki 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-oroshi-uchi/poster/tettsui-oroshi-uchi-d2.jpg"
       }
     ],
@@ -2221,48 +2221,48 @@
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-yoko-uchi/video/tettsui-mae-yoko-uchi-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Tettsui yoko-uchi — widok z przodu 1",
-        "alt": "Tettsui yoko-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Tettsui yoko-uchi (uchi) — widok z przodu 1",
+        "alt": "Tettsui yoko-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-yoko-uchi/poster/tettsui-mae-yoko-uchi-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-yoko-uchi/video/tettsui-yoko-uchi-chudan-f1.mp4",
         "zone": "chudan",
-        "label": "Tettsui yoko-uchi — widok z przodu 1",
-        "alt": "Tettsui yoko-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Tettsui yoko-uchi (uchi) — widok z przodu 1",
+        "alt": "Tettsui yoko-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-yoko-uchi/poster/tettsui-yoko-uchi-chudan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-yoko-uchi/video/tettsui-yoko-uchi-gedan-f1.mp4",
         "zone": "gedan",
-        "label": "Tettsui yoko-uchi — widok z przodu 1",
-        "alt": "Tettsui yoko-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Tettsui yoko-uchi (uchi) — widok z przodu 1",
+        "alt": "Tettsui yoko-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-yoko-uchi/poster/tettsui-yoko-uchi-gedan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-yoko-uchi/video/tettsui-yoko-uchi-jodan-f1.mp4",
         "zone": "jodan",
-        "label": "Tettsui yoko-uchi — widok z przodu 1",
-        "alt": "Tettsui yoko-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Tettsui yoko-uchi (uchi) — widok z przodu 1",
+        "alt": "Tettsui yoko-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-yoko-uchi/poster/tettsui-yoko-uchi-jodan-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-yoko-uchi/video/tettsui-mae-yoko-uchi-jodan-s1.mp4",
         "zone": "jodan",
-        "label": "Tettsui yoko-uchi — widok z boku 1",
-        "alt": "Tettsui yoko-uchi: widok z boku 1. Nagranie z dojo.",
+        "label": "Tettsui yoko-uchi (uchi) — widok z boku 1",
+        "alt": "Tettsui yoko-uchi (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-yoko-uchi/poster/tettsui-mae-yoko-uchi-jodan-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-yoko-uchi/video/tettsui-mae-yoko-uchi-jodan-s2.mp4",
         "zone": "jodan",
-        "label": "Tettsui yoko-uchi — widok z boku 2",
-        "alt": "Tettsui yoko-uchi: widok z boku 2. Nagranie z dojo.",
+        "label": "Tettsui yoko-uchi (uchi) — widok z boku 2",
+        "alt": "Tettsui yoko-uchi (uchi): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tettsui-yoko-uchi/poster/tettsui-mae-yoko-uchi-jodan-s2.jpg"
       }
     ],
@@ -2286,29 +2286,29 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-hizo-uchi/video/uraken-hizo-uchi-f1.mp4",
-        "label": "Uraken hizō-uchi — widok z przodu 1",
-        "alt": "Uraken hizō-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Uraken hizō-uchi (uchi) — widok z przodu 1",
+        "alt": "Uraken hizō-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-hizo-uchi/poster/uraken-hizo-uchi-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-hizo-uchi/video/uraken-hizo-uchi-f2.mp4",
-        "label": "Uraken hizō-uchi — widok z przodu 2",
-        "alt": "Uraken hizō-uchi: widok z przodu 2. Nagranie z dojo.",
+        "label": "Uraken hizō-uchi (uchi) — widok z przodu 2",
+        "alt": "Uraken hizō-uchi (uchi): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-hizo-uchi/poster/uraken-hizo-uchi-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-hizo-uchi/video/uraken-hizo-uchi-s1.mp4",
-        "label": "Uraken hizō-uchi — widok z boku 1",
-        "alt": "Uraken hizō-uchi: widok z boku 1. Nagranie z dojo.",
+        "label": "Uraken hizō-uchi (uchi) — widok z boku 1",
+        "alt": "Uraken hizō-uchi (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-hizo-uchi/poster/uraken-hizo-uchi-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-hizo-uchi/video/uraken-hizo-uchi-s2.mp4",
-        "label": "Uraken hizō-uchi — widok z boku 2",
-        "alt": "Uraken hizō-uchi: widok z boku 2. Nagranie z dojo.",
+        "label": "Uraken hizō-uchi (uchi) — widok z boku 2",
+        "alt": "Uraken hizō-uchi (uchi): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-hizo-uchi/poster/uraken-hizo-uchi-s2.jpg"
       }
     ],
@@ -2316,29 +2316,29 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-mawashi-uchi/video/uraken-mawashi-uchi-f1.mp4",
-        "label": "Uraken mawashi-uchi — widok z przodu 1",
-        "alt": "Uraken mawashi-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Uraken mawashi-uchi (uchi) — widok z przodu 1",
+        "alt": "Uraken mawashi-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-mawashi-uchi/poster/uraken-mawashi-uchi-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-mawashi-uchi/video/uraken-mawashi-uchi-f2.mp4",
-        "label": "Uraken mawashi-uchi — widok z przodu 2",
-        "alt": "Uraken mawashi-uchi: widok z przodu 2. Nagranie z dojo.",
+        "label": "Uraken mawashi-uchi (uchi) — widok z przodu 2",
+        "alt": "Uraken mawashi-uchi (uchi): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-mawashi-uchi/poster/uraken-mawashi-uchi-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-mawashi-uchi/video/uraken-mawashi-uchi-s1.mp4",
-        "label": "Uraken mawashi-uchi — widok z boku 1",
-        "alt": "Uraken mawashi-uchi: widok z boku 1. Nagranie z dojo.",
+        "label": "Uraken mawashi-uchi (uchi) — widok z boku 1",
+        "alt": "Uraken mawashi-uchi (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-mawashi-uchi/poster/uraken-mawashi-uchi-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-mawashi-uchi/video/uraken-mawashi-uchi-s2.mp4",
-        "label": "Uraken mawashi-uchi — widok z boku 2",
-        "alt": "Uraken mawashi-uchi: widok z boku 2. Nagranie z dojo.",
+        "label": "Uraken mawashi-uchi (uchi) — widok z boku 2",
+        "alt": "Uraken mawashi-uchi (uchi): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-mawashi-uchi/poster/uraken-mawashi-uchi-s2.jpg"
       }
     ],
@@ -2346,15 +2346,15 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-oroshi-uchi/video/uraken-oroshi-uchi-f1.mp4",
-        "label": "Uraken oroshi-uchi — widok z przodu 1",
-        "alt": "Uraken oroshi-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Uraken oroshi-uchi (uchi) — widok z przodu 1",
+        "alt": "Uraken oroshi-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-oroshi-uchi/poster/uraken-oroshi-uchi-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-oroshi-uchi/video/uraken-oroshi-uchi-f2.mp4",
-        "label": "Uraken oroshi-uchi — widok z przodu 2",
-        "alt": "Uraken oroshi-uchi: widok z przodu 2. Nagranie z dojo.",
+        "label": "Uraken oroshi-uchi (uchi) — widok z przodu 2",
+        "alt": "Uraken oroshi-uchi (uchi): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-oroshi-uchi/poster/uraken-oroshi-uchi-f2.jpg"
       }
     ],
@@ -2362,15 +2362,15 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-sayu-uchi/video/uraken-sayu-uchi-f1.mp4",
-        "label": "Uraken sayū-uchi — widok z przodu 1",
-        "alt": "Uraken sayū-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Uraken sayū-uchi (uchi) — widok z przodu 1",
+        "alt": "Uraken sayū-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-sayu-uchi/poster/uraken-sayu-uchi-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-sayu-uchi/video/uraken-sayu-uchi-f2.mp4",
-        "label": "Uraken sayū-uchi — widok z przodu 2",
-        "alt": "Uraken sayū-uchi: widok z przodu 2. Nagranie z dojo.",
+        "label": "Uraken sayū-uchi (uchi) — widok z przodu 2",
+        "alt": "Uraken sayū-uchi (uchi): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-sayu-uchi/poster/uraken-sayu-uchi-f2.jpg"
       }
     ],
@@ -2378,29 +2378,29 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-shomen-uchi/video/uraken-shomen-uchi-f1.mp4",
-        "label": "Uraken shōmen-uchi — widok z przodu 1",
-        "alt": "Uraken shōmen-uchi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Uraken shōmen-uchi (uchi) — widok z przodu 1",
+        "alt": "Uraken shōmen-uchi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-shomen-uchi/poster/uraken-shomen-uchi-f1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-shomen-uchi/video/uraken-shomen-uchi-f2.mp4",
-        "label": "Uraken shōmen-uchi — widok z przodu 2",
-        "alt": "Uraken shōmen-uchi: widok z przodu 2. Nagranie z dojo.",
+        "label": "Uraken shōmen-uchi (uchi) — widok z przodu 2",
+        "alt": "Uraken shōmen-uchi (uchi): widok z przodu 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-shomen-uchi/poster/uraken-shomen-uchi-f2.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-shomen-uchi/video/uraken-shomen-uchi-s1.mp4",
-        "label": "Uraken shōmen-uchi — widok z boku 1",
-        "alt": "Uraken shōmen-uchi: widok z boku 1. Nagranie z dojo.",
+        "label": "Uraken shōmen-uchi (uchi) — widok z boku 1",
+        "alt": "Uraken shōmen-uchi (uchi): widok z boku 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-shomen-uchi/poster/uraken-shomen-uchi-s1.jpg"
       },
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-shomen-uchi/video/uraken-shomen-uchi-s2.mp4",
-        "label": "Uraken shōmen-uchi — widok z boku 2",
-        "alt": "Uraken shōmen-uchi: widok z boku 2. Nagranie z dojo.",
+        "label": "Uraken shōmen-uchi (uchi) — widok z boku 2",
+        "alt": "Uraken shōmen-uchi (uchi): widok z boku 2. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uraken-shomen-uchi/poster/uraken-shomen-uchi-s2.jpg"
       }
     ],
@@ -2559,6 +2559,54 @@
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-kakato-geri/image/mae-geri-kakato-chusoku-s2-still.jpg",
         "label": "Mae kakato-geri — klatka filmu",
         "alt": "Mae kakato-geri: dodatkowa klatka z nagrania z dojo."
+      }
+    ],
+    "ippon-kumite-10-1-kyu": [
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-10-1-kyu/video/ippon-kumite10-f1.mp4",
+        "label": "Ippon kumite — 10 (1 kyu) — widok z przodu 1",
+        "alt": "Ippon kumite — 10 (1 kyu): widok z przodu 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-10-1-kyu/poster/ippon-kumite10-f1.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-10-1-kyu/video/ippon-kumite10-s1.mp4",
+        "label": "Ippon kumite — 10 (1 kyu) — widok z boku 1",
+        "alt": "Ippon kumite — 10 (1 kyu): widok z boku 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/ippon-kumite-10-1-kyu/poster/ippon-kumite10-s1.jpg"
+      }
+    ],
+    "oroshi-soto-kakato-geri": [
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-soto-kakato-geri/video/oroshi-soto-geri-kakato-f1.mp4",
+        "label": "Oroshi soto kakato-geri (kakato) — widok z przodu 1",
+        "alt": "Oroshi soto kakato-geri (kakato): widok z przodu 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-soto-kakato-geri/poster/oroshi-soto-geri-kakato-f1.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-soto-kakato-geri/video/oroshi-soto-geri-kakato-f2.mp4",
+        "label": "Oroshi soto kakato-geri (kakato) — widok z przodu 2",
+        "alt": "Oroshi soto kakato-geri (kakato): widok z przodu 2. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-soto-kakato-geri/poster/oroshi-soto-geri-kakato-f2.jpg"
+      }
+    ],
+    "yoko-tobi-geri": [
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoko-tobi-geri/video/tobi-geri-yoko-f1.mp4",
+        "label": "Yoko tobi-geri — widok z przodu 1",
+        "alt": "Yoko tobi-geri: widok z przodu 1. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoko-tobi-geri/poster/tobi-geri-yoko-f1.jpg"
+      },
+      {
+        "type": "video",
+        "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoko-tobi-geri/video/tobi-geri-yoko-f2.mp4",
+        "label": "Yoko tobi-geri — widok z przodu 2",
+        "alt": "Yoko tobi-geri: widok z przodu 2. Nagranie z dojo.",
+        "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoko-tobi-geri/poster/tobi-geri-yoko-f2.jpg"
       }
     ]
   },
@@ -2809,8 +2857,8 @@
       {
         "type": "video",
         "src": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uchi-hachiji/video/uchi-hachi-ji-dachi-f1.mp4",
-        "label": "Uchi hachiji dachi — widok z przodu 1",
-        "alt": "Uchi hachiji dachi: widok z przodu 1. Nagranie z dojo.",
+        "label": "Uchi hachiji dachi (uchi) — widok z przodu 1",
+        "alt": "Uchi hachiji dachi (uchi): widok z przodu 1. Nagranie z dojo.",
         "poster": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uchi-hachiji/poster/uchi-hachi-ji-dachi-f1.jpg"
       },
       {

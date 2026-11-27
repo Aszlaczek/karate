@@ -2,7 +2,7 @@ import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadMediaEnv } from "./media-env.mjs";
-import { zoneOf } from "./media-map.mjs";
+import { viewInfo, zoneOf } from "./media-map.mjs";
 
 loadMediaEnv();
 
@@ -58,8 +58,14 @@ const matchEntry = (stem, stance) => entries
 
 const withSaved = (item, saved) => {
   const result = { ...item };
-  if (saved?.label) result.label = saved.label;
-  if (saved?.alt) result.alt = saved.alt;
+  const stem = stemOf(item.src.split("/").pop());
+  const view = viewInfo(stem);
+  // Wzorzec starego generatora rozpoznajemy po końcówce — dzięki temu warianty
+  // z nazwy pliku zostaną odtworzone, a ręczne opisy będą zachowane.
+  const oldLabel = saved?.label?.endsWith(` — ${view.label}`);
+  const oldAlt = saved?.alt?.endsWith(`: ${view.alt}. Nagranie z dojo.`);
+  if (saved?.label && !oldLabel) result.label = saved.label;
+  if (saved?.alt && !oldAlt) result.alt = saved.alt;
   if (saved?.caption) result.caption = saved.caption;
   if (saved?.poster) result.poster = saved.poster;
   return result;

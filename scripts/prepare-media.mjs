@@ -3,7 +3,7 @@ import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync,
 import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import ffmpegPath from "ffmpeg-static";
-import { describeMedia, EXCLUDED_MEDIA_STEMS, loadTargets, selectCandidates, zoneOf } from "./media-map.mjs";
+import { describeMedia, EXCLUDED_MEDIA_STEMS, loadTargets, selectCandidates, viewInfo, zoneOf } from "./media-map.mjs";
 import { loadMediaEnv } from "./media-env.mjs";
 
 loadMediaEnv();
@@ -157,6 +157,11 @@ for (const id of selectedIds) {
     const stem = name.replace(/\.[^.]+$/, "");
     const saved = savedFor(id, stem);
     const described = describeMedia(stem, target.name);
+    // Podpisy wygenerowane wcześniej można odtworzyć z nową regułą wariantów;
+    // prawdziwe opisy ręczne (np. „Kamae — lewa strona”) zostają nienaruszone.
+    const view = viewInfo(stem);
+    const oldLabel = saved?.label?.endsWith(` — ${view.label}`);
+    const oldAlt = saved?.alt?.endsWith(`: ${view.alt}. Nagranie z dojo.`);
     const videoKey = `${id}/video/${stem}.mp4`;
     const posterKey = `${id}/poster/${stem}.jpg`;
     const zone = zoneOf(stem);
@@ -164,8 +169,8 @@ for (const id of selectedIds) {
       key: videoKey,
       type: "video",
       ...(zone ? { zone } : {}),
-      label: saved?.label ?? described.label,
-      alt: saved?.alt ?? described.alt,
+      label: saved?.label && !oldLabel ? saved.label : described.label,
+      alt: saved?.alt && !oldAlt ? saved.alt : described.alt,
       ...(saved?.caption ? { caption: saved.caption } : {}),
       posterKey,
     });

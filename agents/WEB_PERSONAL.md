@@ -322,7 +322,7 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   z `src/data/onDemand.ts` (cache obietnic, prefetch przy hover/focus, fallback
   przy błędzie). `src/data/index.ts` nie eksportuje już pełnych galerii. Audyt
   porównuje wygenerowane pliki i indeks z `media.json`.
-  Główny chunk: 400,17 kB / 116,28 kB gzip (wcześniej 582,45 / 139,87).
+  Główny chunk: 401,68 kB / 116,59 kB gzip (wcześniej 582,45 / 139,87).
 - Docelowe źródła to pełne URL-e R2: `<id>/video/<stem>.mp4`,
   `<id>/poster/<stem>.jpg`, `<id>/image/<stem>.jpg`. `resolveMediaSrc()`
   przepuszcza `https://…` bez dodawania bazy. Tryb lokalny nadal
@@ -330,15 +330,21 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   Filmy i postery są zawsze 1080×1920 (9:16, z pasami zamiast ucinania,
   `libx264 -preset slow -crf 18`, JPEG `-q:v 2`). Zdjęcia samodzielne
   (`seiken`, `sokuto`) są kopiowane bez rekompresji z lokalnych oryginałów
-  1448×1086. Daje to około 1,1 GB w R2 (342 filmy, 355 obrazów) przy darmowym
+  1448×1086. Daje to około 1,1 GB w R2 (348 filmów, 362 obrazy) przy darmowym
   limicie 10 GB-month;
   egress jest free. `media:upload` próbuje 3 razy na plik (EPIPE bywa przejściowy).
 - Nowe nagrania: wrzuć pliki bezpośrednio do `media-source/videos/<id>/`
   (albo `<id>/video/`). Po ręcznym `mv` nie uruchamiaj `media:organize` —
   cofnąłby przypisania. Sufiksy: `f` = przód, `s` = bok, `d` = detal,
-  `b` = dodatkowe ujęcie, `a` = wariant; `jodan`/`chudan`/`gedan` w nazwie
+  `b` = dodatkowe ujęcie, `a` = wariant ujęcia; `jodan`/`chudan`/`gedan` w nazwie
   wyznaczają strefę galerii (reszta ląduje w „Bez strefy"). Wybór obejmuje
   **wszystkie** ujęcia w kolejności `f1 → s1 → f2 → s2 → …`.
+  Rozpoznawalne warianty techniki (`kakato`, `chusoku` → `chūsoku`, `haisoku`,
+  `teisoku`, `shotei` → `shōtei`, `juji` → `jūji`, `morote`, `uchi`, `soto`,
+  `hidari` → lewa, `migi` → prawa, `kamae`, `age`) trafiają zawsze do `label`
+  i `alt` jako `(wariant)` — również wtedy, gdy nazwa techniki już je zawiera.
+  Stare wygenerowane podpisy są rozpoznawane i przeliczane na nową regułę;
+  opisy ręczne (np. „Kamae — lewa strona”) zostają nienaruszone.
   Nieprzypisane pliki zostają w `_nieprzypisane/` i nie trafiają do galerii.
   Oczywiste literówki i konflikty aliasów (np. `koken-uke-jodan-*`) mają
   jawne nadpisania w `scripts/media-map.mjs` — rozszerzaj je zamiast podnosić

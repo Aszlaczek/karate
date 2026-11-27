@@ -7,6 +7,7 @@ import {
   resolveId,
   r2Key,
   selectCandidates,
+  variantLabel,
   viewInfo,
   zoneOf,
 } from "../media-map.mjs";
@@ -83,5 +84,20 @@ describe("mapowanie nagrań", () => {
     });
     expect(describeMedia("waza-f1.mp4", "Waza").label).toBe("Waza — widok z przodu 1");
     expect(r2Key("fudo", "poster", "fudo-dachi-f1")).toBe("fudo/poster/fudo-dachi-f1");
+  });
+
+  it("dopisuje wariant z nazwy pliku do etykiety i altu", () => {
+    expect(variantLabel("mae-geri-kakato-chudan-f1.mp4")).toBe("kakato");
+    expect(variantLabel("mae-geri-chusoku-chudan-f1.mp4")).toBe("chūsoku");
+    expect(variantLabel("seiken-juji-uke-jodan-f1.mp4")).toBe("jūji");
+    expect(variantLabel("shotei-uke-jodan-f1.mp4")).toBe("shōtei");
+    expect(variantLabel("oroshi-soto-geri-kakato-f1.MP4")).toBe("kakato");
+    expect(variantLabel("seiken-morote-uchi-uke-f1.mp4")).toBe("morote");
+    expect(variantLabel("ippon-kumite10-f1.MP4")).toBeNull();
+
+    expect(describeMedia("mae-geri-kakato-chudan-f1.mp4", "Mae-geri chūdan chūsoku")).toEqual({
+      label: "Mae-geri chūdan chūsoku (kakato) — widok z przodu 1",
+      alt: "Mae-geri chūdan chūsoku (kakato): widok z przodu 1. Nagranie z dojo.",
+    });
   });
 });
