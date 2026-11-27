@@ -369,7 +369,7 @@
           "japanese": "正拳",
           "reading": "seiken",
           "description": "Klasyczna pięść kyokushin: uderzamy dwoma pierwszymi knykci, kciuk dociska palce od strony. Punkt kontaktu to seiken.",
-          "image": null,
+          "image": "/images/glossary/human-parts/seiken-piesc.jpg",
           "related": [
             "seiken-oi-tsuki"
           ]
@@ -448,7 +448,7 @@
           "japanese": "背手",
           "reading": "haishu",
           "description": "Wnętrze dłoni skierowane w dół lub w bok; grzbiet dłoni pracuje jako powierzchnia uderzająca.",
-          "image": null,
+          "image": "/images/glossary/ustawienia-dloni/haishu.jpg",
           "related": [
             "haishu"
           ]
@@ -512,7 +512,8 @@
           "image": "/images/glossary/human-parts/haisoku.svg",
           "related": [
             "mawashi-geri-gedan-haisoku",
-            "mawashi-geri-chudan-chusoku-haisoku"
+            "mawashi-geri-chudan-chusoku",
+            "mawashi-geri-chudan-haisoku"
           ]
         },
         {
@@ -532,7 +533,7 @@
           "japanese": "側足",
           "reading": "sokuto",
           "description": "Zewnętrzna krawędź stopy od pięty do małego palca — powierzchnia kontaktu w yoko-geri.",
-          "image": null,
+          "image": "/images/glossary/sokuto-yoko-geri.jpg",
           "related": [
             "yoko-geri-chudan",
             "yoko-geri-jodan"
@@ -665,7 +666,7 @@
           "japanese": "組手",
           "reading": "kumite",
           "description": "Praca z partnerem: od wcześniej ustalonych odpowiedzi po swobodniejsze formy walki.",
-          "image": null,
+          "image": "/images/glossary/trening-komendy/kumite.jpg",
           "related": []
         },
         {

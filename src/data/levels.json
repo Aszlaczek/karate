@@ -156,7 +156,8 @@
         "items": [
           { "type": "technique", "id": "mae-geri-jodan" },
           { "type": "technique", "id": "yoko-geri-chudan" },
-          { "type": "technique", "id": "mawashi-geri-chudan-chusoku-haisoku" }
+          { "type": "technique", "id": "mawashi-geri-chudan-chusoku" },
+          { "type": "technique", "id": "mawashi-geri-chudan-haisoku" }
         ]
       },
       {
@@ -256,7 +257,8 @@
           { "type": "technique", "id": "kansetsu-geri" },
           { "type": "technique", "id": "yoko-geri-chudan" },
           { "type": "technique", "id": "mawashi-geri-gedan-haisoku" },
-          { "type": "technique", "id": "mawashi-geri-jodan-chusoku-haisoku" }
+          { "type": "technique", "id": "mawashi-geri-jodan-chusoku" },
+          { "type": "technique", "id": "mawashi-geri-jodan-haisoku" }
         ]
       },
       {
@@ -295,7 +297,8 @@
         "title": "Kopnięcia",
         "items": [
           { "type": "technique", "id": "kansetsu-geri" },
-          { "type": "technique", "id": "mawashi-geri-chudan-chusoku-haisoku" },
+          { "type": "technique", "id": "mawashi-geri-chudan-chusoku" },
+          { "type": "technique", "id": "mawashi-geri-chudan-haisoku" },
           { "type": "technique", "id": "ushiro-geri-chudan" }
         ]
       },
@@ -346,7 +349,8 @@
         "title": "Kopnięcia",
         "items": [
           { "type": "technique", "id": "yoko-geri-jodan" },
-          { "type": "technique", "id": "mawashi-geri-jodan-chusoku-haisoku" },
+          { "type": "technique", "id": "mawashi-geri-jodan-chusoku" },
+          { "type": "technique", "id": "mawashi-geri-jodan-haisoku" },
           { "type": "technique", "id": "ushiro-geri-jodan" },
           { "type": "technique", "id": "mae-tobi-geri" },
           { "type": "technique", "id": "oroshi-uchi-kakato-geri" }

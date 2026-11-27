@@ -1,9 +1,19 @@
 import { spawn } from "node:child_process";
-import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import ffmpegPath from "ffmpeg-static";
-import { describeMedia, EXCLUDED_MEDIA_STEMS, loadTargets, selectCandidates, viewInfo, zoneOf } from "./media-map.mjs";
+import {
+  describeMedia,
+  EXCLUDED_MEDIA_STEMS,
+  loadTargets,
+  normalizeTokens,
+  selectCandidates,
+  sourceFolderFor,
+  surfaceTokenFor,
+  viewInfo,
+  zoneOf,
+} from "./media-map.mjs";
 import { loadMediaEnv } from "./media-env.mjs";
 
 loadMediaEnv();
@@ -29,8 +39,28 @@ if (!onlyIds.length && existsSync(buildRoot)) {
 }
 mkdirSync(buildRoot, { recursive: true });
 const previous = JSON.parse(readFileSync(join(root, "src/data/media.json"), "utf8"));
-const { targets } = loadTargets();
-const targetById = new Map(targets.map((target) => [target.id, target]));
+const { glossary, targets } = loadTargets();
+// `haishu` istnieje i jako technika, i jako hasło słownika — filmy należą do techniki.
+const targetById = new Map();
+for (const target of targets) {
+  if (!targetById.has(target.id) || target.section === "techniques") targetById.set(target.id, target);
+}
+const entryById = new Map(
+  glossary.categories.flatMap((category) => category.entries.map((entry) => [entry.id, entry])),
+);
+// Nowe ID czytają opisy z dawnych galerii łączonych, żeby zachować ręczne podpisy.
+const previousIdBy = {
+  "mawashi-geri-chudan-chusoku": "mawashi-geri-chudan-chusoku-haisoku",
+  "mawashi-geri-chudan-haisoku": "mawashi-geri-chudan-chusoku-haisoku",
+  "mawashi-geri-jodan-chusoku": "mawashi-geri-jodan-chusoku-haisoku",
+  "mawashi-geri-jodan-haisoku": "mawashi-geri-jodan-chusoku-haisoku",
+};
+// Puste grupy pozostają w manifeście tylko po to, by cleanup usunął stare klucze R2.
+const retiredIds = [
+  "mawashi-geri-chudan-chusoku-haisoku",
+  "mawashi-geri-jodan-chusoku-haisoku",
+  "mae-kakato-geri",
+];
 
 const previousByKey = new Map();
 for (const [id, items] of Object.entries(previous.techniques ?? {})) {
@@ -43,7 +73,12 @@ function stemOf(src) {
   const name = decodeURIComponent(src.split("/").pop().split("?")[0]);
   return name.replace(/\.[^.]+$/, "");
 }
-const savedFor = (id, stem) => previousByKey.get(`${id}:${stem}`) ?? previousByKey.get(stem);
+const savedFor = (id, stem) => {
+  const direct = previousByKey.get(`${id}:${stem}`);
+  if (direct) return direct;
+  const previousId = previousIdBy[id];
+  return previousByKey.get(previousId ? `${previousId}:${stem}` : "") ?? previousByKey.get(stem);
+};
 
 const run = (args) =>
   new Promise((resolve, reject) => {
@@ -79,29 +114,6 @@ const frame = (input, output, seconds) =>
     "-frames:v", "1", "-vf", UNIFORM_FILTER, "-q:v", "2", output,
   ]);
 
-// Samodzielne zdjęcia (seiken, sokuto) kopiujemy bez rekompresji —
-// oryginały 1448×1086 są już w dobrej jakości, a ponowny encode tylko
-// odbierałby im detale.
-const copyImage = (input, output) => {
-  copyFileSync(input, output);
-  return Promise.resolve();
-};
-
-const IMAGE_SOURCE_DIRS = [
-  join(root, "public/images/glossary/human-parts"),
-  join(root, "public/images/glossary"),
-  join(root, "public/images/techniques"),
-];
-const localImageSource = (stem) => {
-  for (const folder of IMAGE_SOURCE_DIRS) {
-    for (const ext of [".jpg", ".jpeg", ".png", ".webp"]) {
-      const file = join(folder, `${stem}${ext}`);
-      if (existsSync(file)) return file;
-    }
-  }
-  return null;
-};
-
 const filesIn = (folder, pattern) =>
   existsSync(folder)
     ? readdirSync(folder, { withFileTypes: true })
@@ -110,10 +122,15 @@ const filesIn = (folder, pattern) =>
         .sort()
     : [];
 
-const ids = readdirSync(archiveRoot, { withFileTypes: true })
-  .filter((entry) => entry.isDirectory() && entry.name !== "_nieprzypisane")
-  .map((entry) => entry.name)
-  .sort();
+const ids = [...new Set([
+  ...readdirSync(archiveRoot, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && entry.name !== "_nieprzypisane")
+    .map((entry) => entry.name),
+  // Techniki po podziale czytają surowe pliki z folderu łączonego.
+  ...targets
+    .filter((target) => target.section === "techniques" && sourceFolderFor(target.id) !== target.id)
+    .map((target) => target.id),
+])].sort();
 const limit = Number(process.env.MEDIA_PREPARE_LIMIT ?? 0);
 const selectedIds = onlyIds.length
   ? ids.filter((id) => onlyIds.includes(id))
@@ -132,11 +149,13 @@ const enqueue = (job) => {
 
 for (const id of selectedIds) {
   const target = targetById.get(id);
-  if (!target) continue;
-  // Pliki mogą leżeć w <id>/video/ albo bezpośrednio w <id>/ — obie lokalizacje
-  // traktujemy tak samo i zapamiętujemy faktyczną ścieżkę źródłową każdego stemu.
+  if (!target || target.section !== "techniques") continue;
+  // Pliki mogą leżeć w <folder>/video/ albo bezpośrednio w <folder>/ — obie
+  // lokalizacje traktujemy tak samo i zapamiętujemy ścieżkę każdego stemu.
+  const folderName = sourceFolderFor(id);
+  const surface = surfaceTokenFor(id);
   const videoSources = new Map();
-  for (const folder of [join(archiveRoot, id, "video"), join(archiveRoot, id)]) {
+  for (const folder of [join(archiveRoot, folderName, "video"), join(archiveRoot, folderName)]) {
     for (const name of filesIn(folder, /\.(mp4|webm|mov)$/i)) {
       const stem = name.replace(/\.[^.]+$/, "");
       if (!videoSources.has(stem)) videoSources.set(stem, join(folder, name));
@@ -144,13 +163,13 @@ for (const id of selectedIds) {
   }
   const videos = [...videoSources.keys()]
     .sort()
-    .filter((stem) => !EXCLUDED_MEDIA_STEMS.has(stem));
+    .filter((stem) => !EXCLUDED_MEDIA_STEMS.has(stem))
+    .filter((stem) => !surface || normalizeTokens(stem).includes(surface));
   if (!videos.length) continue;
 
   const folderVideo = join(buildRoot, id, "video");
   const folderPoster = join(buildRoot, id, "poster");
-  const folderImage = join(buildRoot, id, "image");
-  for (const folder of [folderVideo, folderPoster, folderImage]) mkdirSync(folder, { recursive: true });
+  for (const folder of [folderVideo, folderPoster]) mkdirSync(folder, { recursive: true });
 
   const items = [];
   for (const name of selectCandidates(videos)) {
@@ -179,58 +198,46 @@ for (const id of selectedIds) {
     enqueue({ kind: "poster", input: source, output: join(buildRoot, posterKey) });
   }
 
-  if (items.length === 1) {
-    const stem = stemOf(items[0].key);
-    const stillKey = `${id}/image/${stem}-still.jpg`;
-    const saved = savedFor(id, `${stem}-still`);
-    items.push({
-      key: stillKey,
-      type: "image",
-      label: saved?.label ?? `${target.name} — klatka filmu`,
-      alt: saved?.alt ?? `${target.name}: dodatkowa klatka z nagrania z dojo.`,
-    });
-    enqueue({
-      kind: "still",
-      input: videoSources.get(stem),
-      output: join(buildRoot, stillKey),
-    });
-  }
-
   manifestSource[id] = { section: target.section, items };
 }
 
-// Hasła z samymi zdjęciami (seiken, sokuto) — pobieramy je z lokalnych
-// oryginałów i kopiujemy bez strat, bez zmiany nazw kluczy na R2.
-for (const [section, group] of [["techniques", previous.techniques ?? {}], ["glossary", previous.glossary ?? {}]]) {
-  for (const [id, items] of Object.entries(group)) {
-    if (manifestSource[id]) continue;
-    const images = items.filter((item) => item.type === "image");
-    if (!images.length) continue;
-    const folder = join(buildRoot, id, "image");
-    mkdirSync(folder, { recursive: true });
-    const builtItems = [];
-    for (const item of images.slice(0, 4)) {
-      const stem = stemOf(item.src);
-      const key = `${id}/image/${stem}.jpg`;
-      const source = item.src.startsWith("http")
-        ? localImageSource(stem)
-        : join(root, "public", item.src.slice(1));
-      if (source && existsSync(source)) {
-        enqueue({ kind: "image", input: source, output: join(buildRoot, key) });
-      } else {
-        console.warn(`Brak lokalnego źródła dla ${key} — pozostawiam istniejący obiekt R2.`);
-      }
-      builtItems.push({
-        key,
-        type: "image",
-        label: item.label,
-        ...(item.alt ? { alt: item.alt } : {}),
-        ...(item.caption ? { caption: item.caption } : {}),
-      });
-    }
-    manifestSource[id] = { section, items: builtItems };
+/** Słownik wskazuje wyłącznie na lokalne pliki z public/images/glossary/. */
+const localImageForStem = (stem) => {
+  for (const folder of ["", "human-parts", "stances", "ustawienia-dloni", "ustawienia-stopy", "trening-komendy"]) {
+    const relative = folder ? `images/glossary/${folder}/${stem}.jpg` : `images/glossary/${stem}.jpg`;
+    if (existsSync(join(root, "public", relative))) return `/${relative}`;
   }
+  return null;
+};
+
+for (const [id, items] of Object.entries(previous.glossary ?? {})) {
+  if (manifestSource[id]?.section === "techniques") continue;
+  const entry = entryById.get(id);
+  if (!entry) continue;
+  const sources = [];
+  if (entry.image) sources.push(entry.image);
+  for (const item of items) {
+    if (item.type !== "image") continue;
+    const local = localImageForStem(stemOf(item.src));
+    if (local && !sources.includes(local)) sources.push(local);
+  }
+  if (!sources.length) continue;
+  manifestSource[id] = {
+    section: "glossary",
+    items: sources.map((src, index) => {
+      const saved = items.find((item) => stemOf(item.src) === stemOf(src));
+      const label = saved?.label && !/klatka filmu/i.test(saved.label)
+        ? saved.label
+        : sources.length === 1 ? entry.term : `${entry.term} — zdjęcie ${index + 1}`;
+      const alt = saved?.alt && !/klatka z nagrania/i.test(saved.alt)
+        ? saved.alt
+        : `${entry.term}: ${sources.length === 1 ? "zdjęcie" : `zdjęcie ${index + 1}`}.`;
+      return { key: src, src, type: "image", label, alt, local: true };
+    }),
+  };
 }
+
+for (const id of retiredIds) manifestSource[id] = { section: "techniques", items: [] };
 
 const queue = [...jobs];
 let active = 0;
@@ -240,12 +247,9 @@ const next = () => {
   while (active < 4 && queue.length) {
     const job = queue.shift();
     active += 1;
-    const task =
-      job.kind === "video"
-        ? transcode(job.input, job.output)
-        : job.kind === "image"
-          ? copyImage(job.input, job.output)
-          : frame(job.input, job.output, job.kind === "still" ? 2 : 1);
+    const task = job.kind === "video"
+      ? transcode(job.input, job.output)
+      : frame(job.input, job.output, 1);
     task
       .catch((error) => failures.push(`${job.output}: ${error.message}`))
       .finally(() => {

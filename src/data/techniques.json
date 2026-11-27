@@ -1003,20 +1003,36 @@
     "infographic": "geri"
   },
   {
-    "id": "mawashi-geri-chudan-chusoku-haisoku",
-    "name": "Mawashi-geri chūdan (chūsoku, haisoku)",
+    "id": "mawashi-geri-chudan-chusoku",
+    "name": "Mawashi-geri chūdan (chūsoku)",
     "japanese": "回し蹴り中段",
     "reading": "mawaszi-geri czudan",
     "category": "Kopnięcia",
-    "description": "Okrężne kopnięcie w strefę środkową przodem stopy (chūsoku) lub podbiciem (haisoku).",
-    "tags": ["Mawashi-geri", "Chūdan", "Chūsoku", "Haisoku"],
+    "description": "Okrężne kopnięcie w strefę środkową przodem podeszwy (chūsoku).",
+    "tags": ["Mawashi-geri", "Chūdan", "Chūsoku"],
     "focus": "Rotacja biodra",
     "levels": [5, 8],
     "aliases": [
-      "Mawashi-geri",
-      "Mawashi-geri chūdan (chūsoku, haisoku)",
-      "Mawashi-geri chudan (chusoku, haisoku)",
-      "Mawashi geri chudan (chusoku, haisoku)"
+      "Mawashi-geri chūdan (chūsoku)",
+      "Mawashi-geri chudan (chusoku)",
+      "Mawashi geri chudan (chusoku)"
+    ],
+    "infographic": "geri"
+  },
+  {
+    "id": "mawashi-geri-chudan-haisoku",
+    "name": "Mawashi-geri chūdan (haisoku)",
+    "japanese": "回し蹴り中段",
+    "reading": "mawaszi-geri czudan",
+    "category": "Kopnięcia",
+    "description": "Okrężne kopnięcie w strefę środkową podbiciem (haisoku).",
+    "tags": ["Mawashi-geri", "Chūdan", "Haisoku"],
+    "focus": "Rotacja biodra",
+    "levels": [5, 8],
+    "aliases": [
+      "Mawashi-geri chūdan (haisoku)",
+      "Mawashi-geri chudan (haisoku)",
+      "Mawashi geri chudan (haisoku)"
     ],
     "infographic": "geri"
   },
@@ -1052,20 +1068,36 @@
     "infographic": "geri"
   },
   {
-    "id": "mawashi-geri-jodan-chusoku-haisoku",
-    "name": "Mawashi-geri jōdan (chūsoku, haisoku)",
+    "id": "mawashi-geri-jodan-chusoku",
+    "name": "Mawashi-geri jōdan (chūsoku)",
     "japanese": "回し蹴り上段",
     "reading": "mawaszi-geri dzodan",
     "category": "Kopnięcia",
-    "description": "Okrężne kopnięcie na wysokość głowy przodem stopy (chūsoku) lub podbiciem (haisoku).",
-    "tags": ["Mawashi-geri", "Jōdan", "Chūsoku", "Haisoku"],
+    "description": "Okrężne kopnięcie na wysokość głowy przodem podeszwy (chūsoku).",
+    "tags": ["Mawashi-geri", "Jōdan", "Chūsoku"],
     "focus": "Rotacja biodra i wysokość",
     "levels": [4, 6],
     "aliases": [
-      "Mawashi-geri jodan",
-      "Mawashi-geri jōdan (chūsoku, haisoku)",
-      "Mawashi-geri jodan (chusoku, haisoku)",
-      "Mawashi geri jodan (chusoku, haisoku)"
+      "Mawashi-geri jōdan (chūsoku)",
+      "Mawashi-geri jodan (chusoku)",
+      "Mawashi geri jodan (chusoku)"
+    ],
+    "infographic": "geri"
+  },
+  {
+    "id": "mawashi-geri-jodan-haisoku",
+    "name": "Mawashi-geri jōdan (haisoku)",
+    "japanese": "回し蹴り上段",
+    "reading": "mawaszi-geri dzodan",
+    "category": "Kopnięcia",
+    "description": "Okrężne kopnięcie na wysokość głowy podbiciem (haisoku).",
+    "tags": ["Mawashi-geri", "Jōdan", "Haisoku"],
+    "focus": "Rotacja biodra i wysokość",
+    "levels": [4, 6],
+    "aliases": [
+      "Mawashi-geri jōdan (haisoku)",
+      "Mawashi-geri jodan (haisoku)",
+      "Mawashi geri jodan (haisoku)"
     ],
     "infographic": "geri"
   },

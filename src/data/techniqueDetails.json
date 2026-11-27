@@ -1956,16 +1956,16 @@
         }
       ]
     },
-    "mawashi-geri-chudan-chusoku-haisoku": {
-      "translation": "Okrężne kopnięcie środkowe przodem podeszwy lub podbiciem.",
+    "mawashi-geri-chudan-chusoku": {
+      "translation": "Okrężne kopnięcie środkowe przednia część podeszwy.",
       "sections": [
         {
           "title": "Ruch i powierzchnia kontaktu",
-          "body": "Wyznacz łuk na wysokości korpusu. Wybierz jedną z dwóch powierzchni i odpowiednio ustaw palce oraz staw skokowy przed wykonaniem."
+          "body": "Wyznacz łuk na wysokości korpusu i ustaw przednią część podeszwy przed ruchem."
         },
         {
           "title": "Na co zwrócić uwagę",
-          "body": "Chūsoku i haisoku są alternatywnymi powierzchniami, nie dwoma kontaktami w jednym kopnięciu. Przećwicz każdą wersję osobno."
+          "body": "Chūsoku to przednia część podeszwy — palce nie przejmują kontaktu."
         }
       ],
       "nameParts": [
@@ -1984,6 +1984,33 @@
         {
           "term": "chūsoku",
           "polish": "przednia część podeszwy pod palcami stopy"
+        }
+      ]
+    },
+    "mawashi-geri-chudan-haisoku": {
+      "translation": "Okrężne kopnięcie środkowe podbicie.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Wyznacz łuk na wysokości korpusu i wypnij podbicie przed ruchem."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Haisoku to podbicie — kontakt przebiega grzbietem stopy, nie przodem podeszwy."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Mawashi",
+          "polish": "obrót, ruch okrężny"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        },
+        {
+          "term": "chūdan",
+          "polish": "poziom środkowy; chū — środek, dan — poziom"
         },
         {
           "term": "haisoku",
@@ -2045,16 +2072,16 @@
         }
       ]
     },
-    "mawashi-geri-jodan-chusoku-haisoku": {
-      "translation": "Okrężne kopnięcie górne przodem podeszwy lub podbiciem.",
+    "mawashi-geri-jodan-chusoku": {
+      "translation": "Okrężne kopnięcie górne przednia część podeszwy.",
       "sections": [
         {
           "title": "Ruch i powierzchnia kontaktu",
-          "body": "Ustaw powierzchnię stopy przed ruchem po łuku na wysokość głowy. Utrzymuj obrót nogi podporowej i nie wymuszaj zakresu w kolanie."
+          "body": "Ustaw powierzchnię stopy przed ruchem po łuku na wysokość głowy i utrzymaj obrót nogi podporowej."
         },
         {
           "title": "Na co zwrócić uwagę",
-          "body": "Wysoki poziom nie zmienia różnicy między przodem podeszwy a podbiciem. Dobierz ustawienie stopy przed przyspieszeniem łuku."
+          "body": "Chūsoku to przednia część podeszwy — palce nie przejmują kontaktu. Nie wymuszaj zakresu w kolanie."
         }
       ],
       "nameParts": [
@@ -2073,6 +2100,33 @@
         {
           "term": "chūsoku",
           "polish": "przednia część podeszwy pod palcami stopy"
+        }
+      ]
+    },
+    "mawashi-geri-jodan-haisoku": {
+      "translation": "Okrężne kopnięcie górne podbicie.",
+      "sections": [
+        {
+          "title": "Ruch i powierzchnia kontaktu",
+          "body": "Ustaw powierzchnię stopy przed ruchem po łuku na wysokość głowy i utrzymaj obrót nogi podporowej."
+        },
+        {
+          "title": "Na co zwrócić uwagę",
+          "body": "Haisoku to podbicie — kontakt przebiega grzbietem stopy, nie przodem podeszwy. Nie wymuszaj zakresu w kolanie."
+        }
+      ],
+      "nameParts": [
+        {
+          "term": "Mawashi",
+          "polish": "obrót, ruch okrężny"
+        },
+        {
+          "term": "geri",
+          "polish": "kopnięcie; forma keri używana w złożeniach"
+        },
+        {
+          "term": "jōdan",
+          "polish": "poziom górny; jō — góra, dan — poziom"
         },
         {
           "term": "haisoku",

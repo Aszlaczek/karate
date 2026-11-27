@@ -27,7 +27,7 @@ describe("zdjęcie postawy", () => {
     }
   });
 
-  it("nie pojawia się w modalu postawy z filmami", async () => {
+  it("pojawia się w galerii modalu postawy jako jedyne medium", async () => {
     const { container } = render(
       <GlossaryEntryModal
         entry={entry("fudo")}
@@ -37,12 +37,12 @@ describe("zdjęcie postawy", () => {
     );
 
     expect(container.querySelector("img.glossary-photo")).toBeNull();
-    expect(await screen.findByText("1 / 2")).toBeInTheDocument();
-    expect(screen.getAllByLabelText(/Nagranie z dojo/i).length).toBeGreaterThan(0);
-    expect(screen.queryByRole("img", { name: /zdjęcie postawy/i })).not.toBeInTheDocument();
+    expect(await screen.findByText("1 / 1")).toBeInTheDocument();
+    expect(await screen.findByRole("img", { name: /Fudo dachi: zdjęcie/i })).toBeInTheDocument();
+    expect(screen.queryByLabelText(/Nagranie z dojo/i)).not.toBeInTheDocument();
   });
 
-  it("dla postawy bez filmu pokazuje placeholder zamiast zdjęcia", async () => {
+  it("dla postawy bez galerii pokazuje placeholder zamiast zdjęcia", async () => {
     const { container } = render(
       <GlossaryEntryModal
         entry={entry("seiza")}

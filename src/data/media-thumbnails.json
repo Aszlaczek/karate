@@ -137,8 +137,8 @@
       "firstIsVideo": true
     },
     "haishu": {
-      "thumbnail": null,
-      "firstIsVideo": false
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/haishu/poster/haishu-chudan-f1.jpg",
+      "firstIsVideo": true
     },
     "age-jodan-tsuki": {
       "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/age-jodan-tsuki/poster/age-tsuki-jodan-f1.jpg",
@@ -284,8 +284,12 @@
       "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-gedan-haisoku/poster/mawashi-geri-haisoku-gedan-f1.jpg",
       "firstIsVideo": true
     },
-    "mawashi-geri-chudan-chusoku-haisoku": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku-haisoku/poster/mawashi-geri-chusoku-chudan-f1.jpg",
+    "mawashi-geri-chudan-chusoku": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-chusoku/poster/mawashi-geri-chusoku-chudan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "mawashi-geri-chudan-haisoku": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-chudan-haisoku/poster/mawashi-geri-haisoku-chudan-f1.jpg",
       "firstIsVideo": true
     },
     "ushiro-geri-chudan": {
@@ -296,8 +300,12 @@
       "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoko-geri-jodan/poster/yoko-geri-jodan-f1.jpg",
       "firstIsVideo": true
     },
-    "mawashi-geri-jodan-chusoku-haisoku": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku-haisoku/poster/mawashi-geri-chusoku-jodan-f1.jpg",
+    "mawashi-geri-jodan-chusoku": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-chusoku/poster/mawashi-geri-chusoku-jodan-f1.jpg",
+      "firstIsVideo": true
+    },
+    "mawashi-geri-jodan-haisoku": {
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mawashi-geri-jodan-haisoku/poster/mawashi-geri-haisoku-jodan-f1.jpg",
       "firstIsVideo": true
     },
     "ushiro-geri-jodan": {
@@ -305,7 +313,7 @@
       "firstIsVideo": true
     },
     "mae-kakato-geri": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/mae-kakato-geri/image/mae-geri-kakato-chusoku-s2-still.jpg",
+      "thumbnail": null,
       "firstIsVideo": false
     },
     "tobi-nidan-geri": {
@@ -317,8 +325,8 @@
       "firstIsVideo": true
     },
     "jodan-uchi-haisoku-geri": {
-      "thumbnail": null,
-      "firstIsVideo": false
+      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/jodan-uchi-haisoku-geri/poster/uchi-mawashi-geri-jodan-f1.jpg",
+      "firstIsVideo": true
     },
     "oroshi-uchi-kakato-geri": {
       "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/oroshi-uchi-kakato-geri/poster/oroshi-uchi-geri-kakato-f1.jpg",
@@ -535,67 +543,67 @@
       "firstIsVideo": false
     },
     "fudo": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/fudo/poster/fudo-dachi-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/stances/Fudo-Dachi.png",
+      "firstIsVideo": false
     },
     "musubi": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/musubi/poster/musibi-dachi-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/stances/Musubi-Dachi.png",
+      "firstIsVideo": false
     },
     "heiko": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/heiko/poster/heiko-dachi-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/stances/Heiko-Dachi.png",
+      "firstIsVideo": false
     },
     "zenkutsu-dachi": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/zenkutsu-dachi/poster/zenkutsu-dachi-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/stances/Zenkutsu-dachi.png",
+      "firstIsVideo": false
     },
     "kokutsu": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kokutsu/poster/kokutsu-dachi-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/stances/Kokutsu-dachi.png",
+      "firstIsVideo": false
     },
     "sanchin-dachi": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/sanchin-dachi/poster/sanchi-dachi-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/stances/Sanchin-Dachi.png",
+      "firstIsVideo": false
     },
     "kiba": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kiba/poster/kiba-dachi-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/stances/Kiba-Dachi.png",
+      "firstIsVideo": false
     },
     "neko-ashi": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/neko-ashi/poster/neko-ashi-dachi-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/stances/Neko-Ashi-Dachi.png",
+      "firstIsVideo": false
     },
     "kake": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kake/poster/Kake-dachi-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/stances/Kake-Dachi.png",
+      "firstIsVideo": false
     },
     "seiza": {
       "thumbnail": null,
       "firstIsVideo": false
     },
     "yoi": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/yoi/poster/yoi-dachi-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/stances/Yoi-Dachi.png",
+      "firstIsVideo": false
     },
     "tsuru-ashi": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/tsuru-ashi/poster/tsuru-ashi-dachi-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/stances/Tsuru-Ashi-Dachi.png",
+      "firstIsVideo": false
     },
     "moro-ashi": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/moro-ashi/poster/moro-ashi-dachi-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/stances/Moro-ashi-dachi.png",
+      "firstIsVideo": false
     },
     "heisoku": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/heisoku/poster/heisoku-dachi-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/stances/Heisoku-Dachi.png",
+      "firstIsVideo": false
     },
     "uchi-hachiji": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/uchi-hachiji/poster/uchi-hachi-ji-dachi-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/stances/Uchi-Hachi-Ji-Dachi.png",
+      "firstIsVideo": false
     },
     "seiken": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/seiken/image/seiken-piesc.jpg",
+      "thumbnail": "/images/glossary/human-parts/seiken-piesc.jpg",
       "firstIsVideo": false
     },
     "shuto": {
@@ -623,8 +631,8 @@
       "firstIsVideo": false
     },
     "haishu": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/haishu/poster/haishu-chudan-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": null,
+      "firstIsVideo": false
     },
     "shotei": {
       "thumbnail": null,
@@ -651,7 +659,7 @@
       "firstIsVideo": false
     },
     "sokuto": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/sokuto/image/sokuto-yoko-geri.jpg",
+      "thumbnail": "/images/glossary/sokuto-yoko-geri.jpg",
       "firstIsVideo": false
     },
     "heisoku-ashi": {
@@ -699,8 +707,8 @@
       "firstIsVideo": false
     },
     "kumite": {
-      "thumbnail": "https://pub-15e43c17d5f9495cbe873177fab1b70f.r2.dev/kumite/poster/kumite-kamae-hidari-f1.jpg",
-      "firstIsVideo": true
+      "thumbnail": "/images/glossary/trening-komendy/kumite.jpg",
+      "firstIsVideo": false
     },
     "bunkai": {
       "thumbnail": null,

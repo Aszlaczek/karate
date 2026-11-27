@@ -159,11 +159,12 @@ const ONE_VIDEO_TECHNIQUES = new Set([
   "seiken-shita-tsuki",
   "yoko-keage",
 ]);
-// Wpisy z jednym własnym zdjęciem zamiast filmu (jest też klatka techniki,
-// której jedyne nagranie zostało przeniesione do innej galerii).
-const IMAGE_ONLY_ENTRIES = new Set(["seiken", "mae-kakato-geri"]);
+// Słownik publikuje wyłącznie obrazy, techniki wyłącznie filmy.
 const allowedMedia = /\.(mp4|webm|mov|jpe?g|png|webp|gif|svg)$/i;
-const mediaStats = { techniques: { sets: 0, items: 0, videos: 0 }, glossary: { sets: 0, items: 0, videos: 0 } };
+const mediaStats = {
+  techniques: { sets: 0, items: 0, videos: 0 },
+  glossary: { sets: 0, items: 0, images: 0 },
+};
 
 const isRemoteSrc = (src) => /^https?:\/\//i.test(src);
 const publicFile = (src) => src.startsWith("/") && existsSync(join(root, "public", src.slice(1)));
@@ -178,8 +179,8 @@ const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 const legacyRootFor = (section, id, type) =>
   section === "techniques" ? `/${type === "video" ? "videos" : "images"}/techniques/${id}/`
-    : stanceIds.has(id) ? `/${type === "video" ? "videos" : "images"}/stances/`
-      : `/${type === "video" ? "videos" : "images"}/glossary/`;
+    // Słownik — także postawy — wskazuje lokalne pliki z public/images/glossary/.
+    : `/images/glossary/`;
 
 /** R2 używa kluczy `<id>/video|poster|image/<stem>`; localnie zostawiamy stare układy. */
 const mediaFolder = (kind) => (kind === "video" ? "video" : kind === "poster" ? "poster" : "image");
@@ -213,16 +214,19 @@ for (const [section, ids] of [["techniques", techIds], ["glossary", glossIds]]) 
     mediaStats[section].items += items.length;
     const videoCount = items.filter((item) => item?.type === "video").length;
     const imageCount = items.filter((item) => item?.type === "image").length;
-    const oneVideoException = section === "techniques" && ONE_VIDEO_TECHNIQUES.has(id);
-    const imageOnlyException = IMAGE_ONLY_ENTRIES.has(id);
-    if (imageOnlyException) {
-      if (videoCount !== 0 || imageCount !== 1)
-        critical.push(`${label}: wyjątek obrazu wymaga dokładnie 1 zdjęcia i 0 filmów`);
-    } else if (oneVideoException) {
-      if (videoCount !== 1 || items.length > 2)
-        critical.push(`${label}: wyjątek jednofilmowy wymaga 1 filmu i opcjonalnie 1 klatki`);
-    } else if (items.length < 2) {
-      warn.push(`${label}: galeria ma ${items.length} elementów (oczekiwano co najmniej 2)`);
+    if (section === "techniques") {
+      if (imageCount) critical.push(`${label}: techniki publikują wyłącznie filmy`);
+      const oneVideoException = ONE_VIDEO_TECHNIQUES.has(id);
+      if (oneVideoException) {
+        if (videoCount !== 1 || items.length !== 1)
+          critical.push(`${label}: wyjątek jednofilmowy wymaga dokładnie 1 filmu`);
+      } else if (items.length < 2) {
+        warn.push(`${label}: galeria ma ${items.length} filmów (oczekiwano co najmniej 2)`);
+      }
+    } else {
+      if (videoCount) critical.push(`${label}: słownik publikuje wyłącznie obrazy`);
+      if (!imageCount) warn.push(`${label}: galeria nie ma zdjęcia`);
+      else mediaStats.glossary.images += imageCount;
     }
 
     const seen = new Set();
@@ -500,7 +504,7 @@ p(
   "- zdjęcie Hero: **" + (existsSync(join(root, heroImage)) ? "lokalne `public/images/hero/osu-no-seishin.jpg`" : "BRAK") + "**; obrazy Unsplash w `src/`: **" + unsplashFiles.length + "**",
   "- techniki bez galerii (placeholder z kanji): **" + withoutGallery + "/" + techs.length + "**",
   "- galerie w `media.json`: **" + (mediaStats.techniques.sets + mediaStats.glossary.sets) + "** (techniki: " + mediaStats.techniques.sets + ", hasła słownika: " + mediaStats.glossary.sets + ")",
-  "- materiały w galeriach: **" + (mediaStats.techniques.items + mediaStats.glossary.items) + "** (w tym filmy: " + (mediaStats.techniques.videos + mediaStats.glossary.videos) + ") — galerie od 2 elementów, bez górnego limitu filmów; wyjątki: techniki z 1 filmem i `seiken` z 1 zdjęciem; pliki w R2 albo w `public/`",
+  "- materiały w galeriach: **" + (mediaStats.techniques.items + mediaStats.glossary.items) + "** (filmy technik: " + mediaStats.techniques.videos + ", zdjęcia słownika: " + mediaStats.glossary.images + ") — techniki od 2 filmów, bez górnego limitu (wyjątek: 2 techniki z 1 filmem); słownik wyłącznie obrazy lokalne, również pojedyncze; pliki w R2 albo w `public/`",
   "- dane na żądanie: **" + (chunkStats.techniques + chunkStats.glossary) + "** plików w `public/data/` (techniki: " + chunkStats.techniques + ", hasła: " + chunkStats.glossary + "); kafelki czytają tylko `media-thumbnails.json`, galerie i opisy wchodzą do bundle'u dopiero po otwarciu wpisu",
   "",
   "## 7. Statystyki",

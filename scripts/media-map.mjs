@@ -16,6 +16,10 @@ export const OVERRIDES = {
   "koken-uke-jodan-f2a": "koken-uke",
   "koken-uke-jodan-s1": "koken-uke",
   "koken-uke-jodan-s2": "koken-uke",
+  // Nagrania uchi nie są odmianą mawashi-geri, lecz osobną techniką.
+  "uchi-mawashi-geri-jodan-f1": "jodan-uchi-haisoku-geri",
+  "uchi-mawashi-geri-jodan-f2": "jodan-uchi-haisoku-geri",
+  "uchi-mawashi-geri-jodan-s1": "jodan-uchi-haisoku-geri",
 };
 
 /** Przykładowe nagrania, które nie trafiają do biblioteki. */
@@ -128,10 +132,18 @@ export const variantLabel = (name) => {
   return null;
 };
 
+/** Compared after normalization, so "chūsoku" and "chusoku" mean one variant. */
+const titleHasVariant = (title, variant) => {
+  const titleTokens = new Set(normalizeTokens(title));
+  return normalizeTokens(variant).every((token) => titleTokens.has(token));
+};
+
 export const describeMedia = (stem, title) => {
   const view = viewInfo(stem);
   const variant = variantLabel(stem);
-  const name = variant ? `${title} (${variant})` : title;
+  // Wariant z nazwy pliku jest zawsze widoczny, ale nie powtarza się, gdy
+  // nazwa techniki już go zawiera (np. "Mawashi-geri jōdan (haisoku)").
+  const name = variant && !titleHasVariant(title, variant) ? `${title} (${variant})` : title;
   return {
     label: `${name} — ${view.label}`,
     alt: `${name}: ${view.alt}. Nagranie z dojo.`,
@@ -241,6 +253,30 @@ export const selectCandidates = (names, limit = Infinity) =>
       return rankA - rankB || a.localeCompare(b);
     })
     .slice(0, limit);
+
+/**
+ * Kilka technik dzieli jedno folder archiwum. Nowe ID po podziale czytają
+ * surowe nagrania z folderu łączonej techniki, ale publikują je pod własnym
+ * kluczem R2 — bez przenoszenia plików w media-source/.
+ */
+const SOURCE_FOLDER_BY_ID = {
+  "mawashi-geri-chudan-chusoku": "mawashi-geri-chudan-chusoku-haisoku",
+  "mawashi-geri-chudan-haisoku": "mawashi-geri-chudan-chusoku-haisoku",
+  "mawashi-geri-jodan-chusoku": "mawashi-geri-jodan-chusoku-haisoku",
+  "mawashi-geri-jodan-haisoku": "mawashi-geri-jodan-chusoku-haisoku",
+  "jodan-uchi-haisoku-geri": "uchi-mawashi-geri-jodan",
+};
+
+/** Token w nazwie pliku wybierający jedną powierzchnię stopy po podziale. */
+const SURFACE_BY_ID = {
+  "mawashi-geri-chudan-chusoku": "chusoku",
+  "mawashi-geri-chudan-haisoku": "haisoku",
+  "mawashi-geri-jodan-chusoku": "chusoku",
+  "mawashi-geri-jodan-haisoku": "haisoku",
+};
+
+export const sourceFolderFor = (id) => SOURCE_FOLDER_BY_ID[id] ?? id;
+export const surfaceTokenFor = (id) => SURFACE_BY_ID[id] ?? null;
 
 /** Klucz R2 niezależny od nazwy repo i ścieżki base. */
 export const r2Key = (id, kind, stem) => `${id}/${kind}/${stem}`;

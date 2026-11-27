@@ -287,14 +287,17 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   bazują na `reading`, bo `term` może być polski. Nie generuj opisów w TSX.
   Źródła, ograniczenia etymologii i dalsza redakcja: `agents/TECHNIQUE_DETAILS.md`.
 
-### Galerie mediów (2026-11-23)
+### Galerie mediów (2026-11-27)
 
 - `src/data/media.json` ma dwie sekcje: `techniques` (klucz = id techniki)
-  i `glossary` (klucz = id hasła słownika, **również postawy**). Każdy wpis
-  to od 2 obiektów `MediaItem { type: "video"|"image", src, zone?, label, poster?, caption?, alt? }`
-  (liczba filmów nie jest ograniczona; pole `zone` = `jodan`/`chudan`/`gedan`).
-  `type` jest obowiązkowy — UI filtruje po nim („Wszystkie / Filmy / Zdjęcia”),
-  oznacza każdą miniaturę jako „▶ Film” / „▣ Zdjęcie” i audyt go waliduje.
+  i `glossary` (klucz = id hasła słownika, **również postawy**). Obie sekcje
+  mają galerie `MediaItem { type: "video"|"image", src, zone?, label, poster?, caption?, alt? }`,
+  ale **techniki publikują wyłącznie filmy** (od 2, bez górnego limitu;
+  wyjątki `seiken-shita-tsuki` i `yoko-keage`: po 1 filmie), a **słownik
+  wyłącznie zdjęcia** z lokalnych ścieżek `public/images/glossary/`
+  (1 zdjęcie jest dopuszczalne). Pole `zone` = `jodan`/`chudan`/`gedan`
+  albo brak strefy („Bez strefy”). `type` jest obowiązkowy — UI oznacza
+  każdą miniaturę jako „▶ Film” / „▣ Zdjęcie” i audyt go waliduje.
   `label` to nazwa miniaturki, `alt` opis dla czytnika ekranu (`aria-label`
   wideo), a `caption` — jedyny opcjonalny, widoczny podpis pod odtwarzaczem.
   Informacji o placeholderze nie wpisuj do `label`/`caption`, tylko do `alt`.
@@ -323,26 +326,32 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   przy błędzie). `src/data/index.ts` nie eksportuje już pełnych galerii. Audyt
   porównuje wygenerowane pliki i indeks z `media.json`.
   Główny chunk: 401,68 kB / 116,59 kB gzip (wcześniej 582,45 / 139,87).
-- Docelowe źródła to pełne URL-e R2: `<id>/video/<stem>.mp4`,
-  `<id>/poster/<stem>.jpg`, `<id>/image/<stem>.jpg`. `resolveMediaSrc()`
-  przepuszcza `https://…` bez dodawania bazy. Tryb lokalny nadal
-  używa `/videos/{techniques,stances,glossary}/…` i `/images/…`.
+- Docelowe źródła technik to pełne URL-e R2: `<id>/video/<stem>.mp4`
+  i `<id>/poster/<stem>.jpg`. Słownik wskazuje lokalne pliki
+  `/images/glossary/…` i nie ma już obrazów w R2 ani klatek filmów.
+  `resolveMediaSrc()` przepuszcza `https://…` bez dodawania bazy. Tryb lokalny
+  nadal używa `/videos/{techniques,stances,glossary}/…` i `/images/…`.
   Filmy i postery są zawsze 1080×1920 (9:16, z pasami zamiast ucinania,
-  `libx264 -preset slow -crf 18`, JPEG `-q:v 2`). Zdjęcia samodzielne
-  (`seiken`, `sokuto`) są kopiowane bez rekompresji z lokalnych oryginałów
-  1448×1086. Daje to około 1,1 GB w R2 (348 filmów, 362 obrazy) przy darmowym
-  limicie 10 GB-month;
-  egress jest free. `media:upload` próbuje 3 razy na plik (EPIPE bywa przejściowy).
+  `libx264 -preset slow -crf 18`, JPEG `-q:v 2`). Daje to 648 obiektów w R2
+  (324 filmy + 324 postery, około 1 GB) i 18 lokalnych zdjęć słownika przy
+  darmowym limicie 10 GB-month; egress jest free. `media:upload` próbuje
+  3 razy na plik (EPIPE bywa przejściowy).
 - Nowe nagrania: wrzuć pliki bezpośrednio do `media-source/videos/<id>/`
   (albo `<id>/video/`). Po ręcznym `mv` nie uruchamiaj `media:organize` —
-  cofnąłby przypisania. Sufiksy: `f` = przód, `s` = bok, `d` = detal,
+  cofnąłby przypisania. Jeden folder archiwum może zasilać kilka ID:
+  `mawashi-geri-{chudan,jodan}-chusoku-haisoku` dzieli się na osobne techniki
+  `mawashi-geri-{chudan,jodan}-{chusoku,haisoku}` wg tokenu w nazwie pliku,
+  a `uchi-mawashi-geri-jodan` mapuje na `jodan-uchi-haisoku-geri`
+  (`sourceFolderFor()` i `OVERRIDES` w `scripts/media-map.mjs`).
+  Sufiksy: `f` = przód, `s` = bok, `d` = detal,
   `b` = dodatkowe ujęcie, `a` = wariant ujęcia; `jodan`/`chudan`/`gedan` w nazwie
   wyznaczają strefę galerii (reszta ląduje w „Bez strefy"). Wybór obejmuje
-  **wszystkie** ujęcia w kolejności `f1 → s1 → f2 → s2 → …`.
+  **wszystkie** ujęcia w kolejności `f1 → s1 → f2 → s2 → …`, bez górnego limitu.
   Rozpoznawalne warianty techniki (`kakato`, `chusoku` → `chūsoku`, `haisoku`,
   `teisoku`, `shotei` → `shōtei`, `juji` → `jūji`, `morote`, `uchi`, `soto`,
   `hidari` → lewa, `migi` → prawa, `kamae`, `age`) trafiają zawsze do `label`
-  i `alt` jako `(wariant)` — również wtedy, gdy nazwa techniki już je zawiera.
+  i `alt` jako `(wariant)` — również wtedy, gdy nazwa techniki już je zawiera,
+  ale bez podwajania.
   Stare wygenerowane podpisy są rozpoznawane i przeliczane na nową regułę;
   opisy ręczne (np. „Kamae — lewa strona”) zostają nienaruszone.
   Nieprzypisane pliki zostają w `_nieprzypisane/` i nie trafiają do galerii.
@@ -354,40 +363,43 @@ Typy w `types.ts`, walidacja struktury przez przypisanie do `Level[]` /
   `R2_*`. `scripts/media-env.mjs` ładuje ten plik; środowisko/workflow mają
   pierwszeństwo, `R2_ENV_FILE` wskazuje inny plik. Nie commituj sekretów.
 - Publikacja: ustaw zmienne `R2_*` (patrz `media-source/README.md`), uruchom
-  `npm run media:prepare` (1080×1920 przez `ffmpeg-static`, postery q:v 2),
+  `npm run media:prepare` (1080×1920 przez `ffmpeg-static`, postery q:v 2;
+  techniki nie mają klatek, słownik zostaje lokalny),
   `npm run media:upload`, `npm run media:cleanup -- --apply`,
-   `R2_PUBLIC_BASE_URL=… npm run media:manifest`,
+  `R2_PUBLIC_BASE_URL=… npm run media:manifest`,
   potem `npm run media:check-remote` i `npm run check`. Generator zachowuje
   ręczne `label`/`alt`/`caption`. `media:prepare` czyta nagrania zarówno
   z `<id>/video/`, jak i bezpośrednio z `<id>/` — nie trzeba przenosić plików
-  ułożonych ręcznie. `MEDIA_PREPARE_ONLY=id1,id2 npm run media:prepare`
+  ułożonych ręcznie, a wpisy z `sourceFolderFor(id) !== id` czytają folder
+  źródłowy. `MEDIA_PREPARE_ONLY=id1,id2 npm run media:prepare`
   uzupełnia tylko wskazane ID w istniejącym `media-build/`.
-  Po zmianie nazwy folderu (`id`) usuń stary prefiks
-  poleceniem `npm run media:delete-prefix -- <stare-id>` (podgląd) i z
-  `--apply`; `media:cleanup` go nie wykryje. Audyt sprawdza minimum 2 elementy,
-  bez górnego limitu filmów, poprawne `zone` (wyjątki: techniki z 1 filmem,
-  `seiken` z 1 zdjęciem), rozszerzenia, folder
-  `video`/`poster`/`image`, istnienie pliku lokalnego albo HTTPS i poster.
+  Usunięte ID pozostają w `manifest-source.json` jako grupy z pustymi `items`,
+  żeby `media:cleanup -- --apply` usunął ich klucze R2; generator pomija puste
+  grupy. Stary prefiks bez śladu w manifeście usuwa
+  `npm run media:delete-prefix -- <stare-id>` (podgląd, potem `--apply`).
+  Audyt sprawdza: techniki wyłącznie filmy (min. 2, bez limitu; wyjątki
+  `seiken-shita-tsuki` i `yoko-keage` po 1), słownik wyłącznie obrazy lokalne
+  (także pojedyncze), poprawne `zone`, rozszerzenia, folder `video`/`poster`,
+  istnienie pliku lokalnego albo HTTPS i poster.
 - Nagrania `*-demo.mp4` i grafiki GenAI zostały usunięte z repozytorium
   oraz z R2 (przez `media:cleanup`).
 - `entry.image` w `glossary.json` wskazuje lokalne zdjęcia `stances/`
-  (łącznie z nowym `Seiza.jpg`) oraz `human-parts/` dla `haito`, `kakato`,
-  `chusoku`, `haisoku`, `teisoku` i `hiza`. Audyt sprawdza istnienie tych
-  plików w `public/`. Hasła `seiken` i `sokuto` zostają przy swoich
-  zdjęciach w R2 (bez duplikatu w karcie).
-- Zdjęcie postawy jest **wyłącznie miniaturką na kafelku** — `GlossaryCard`
-  czyta `entry.image`, ale `GlossaryEntryModal` nie dodaje go do galerii
-  i nie używa jako fallbacku. Modal startuje od filmu; gdy postawa nie ma
-  filmu (`seiza`), pokazuje placeholder z kanji i wymową. Klatki z filmów
-  zostają w galerii jako kolejne ujęcia.
-- W galerii `kumite` pliki `kumite-kamae-f1` i `kumite-kamae-migi-f1`
-  mają w `label`/`alt` oznaczenie odpowiednio lewej i prawej strony.
-  Reguła: brak `migi` w nazwie = lewa strona, `...-migi` = prawa.
+  (także `Seiza.jpg`), `human-parts/` dla `haito`, `kakato`, `chusoku`,
+  `haisoku`, `teisoku`, `hiza`, `seiken` i `sokuto`, `ustawienia-dloni/haishu.jpg`
+  oraz `trening-komendy/kumite.jpg`. Audyt sprawdza istnienie tych plików
+  w `public/`.
+- Zdjęcie postawy jest jedynym medium galerii słownika i jednocześnie
+  miniaturką kafelka — `GlossaryCard` czyta `entry.image`, a
+  `GlossaryEntryModal` pokazuje je w galerii („1 / 1”). Gdy hasło nie ma
+  zdjęcia ani galerii, modal pokazuje placeholder z kanji i wymową.
+- `haishu` istnieje równocześnie jako technika (5 filmów) i hasło słownika
+  (1 lokalne zdjęcie). Mapowanie źródeł wybiera sekcję `techniques`, więc
+  filmy trafiają do atlasu, a karta słownika korzysta z `entry.image`.
 
 - **Nowa technika:** dopis wpis w `techniques.json` (+ `aliases`, `levels`).
   Media dodawaj do galerii w `src/data/media.json` (patrz niżej); bez galerii
-  karta i modal pokazują placeholder z kanji. Pole `video` jest legacy i
-  zostaje jako awaryjne jedno medium.
+  karta i modal pokazują placeholder z kanji. Pola `image`/`video` w
+  `techniques.json` są usunięte — media mieszczą się wyłącznie w `media.json`.
 - **Nowy stopień / zmiana wymagań:** edytuj `levels.json` — karty pasów,
   panel wymagań, filtr stopni i nawigacja prev/next zaktualizują się same.
 - **Nowe hasło słownika:** dopis w `glossary.json` do właściwej kategorii —

@@ -45,7 +45,7 @@ describe("dane pobierane na żądanie", () => {
 
   it("indeks miniaturek nie wymaga pełnych galerii", () => {
     expect(getTechniqueCardMedia("seiken-morote-tsuki").thumbnail).toContain("/poster/");
-    expect(getGlossaryCardMedia("seiken").thumbnail).toContain("/seiken/image/");
+    expect(getGlossaryCardMedia("seiken").thumbnail).toContain("/images/glossary/");
     expect(getTechniqueCardMedia("nie-ma-mnie")).toEqual({
       thumbnail: null,
       firstIsVideo: false,

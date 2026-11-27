@@ -7,6 +7,8 @@ import {
   resolveId,
   r2Key,
   selectCandidates,
+  sourceFolderFor,
+  surfaceTokenFor,
   variantLabel,
   viewInfo,
   zoneOf,
@@ -27,7 +29,9 @@ describe("mapowanie nagrań", () => {
   });
 
   it("przypisuje techniki, postawy i hasła słownika", () => {
-    expect(resolveId("mawashi-geri-jodan-haisoku-f2.MP4", targets)?.id).toBe("mawashi-geri-jodan-chusoku-haisoku");
+    expect(resolveId("mawashi-geri-jodan-haisoku-f2.MP4", targets)?.id).toBe("mawashi-geri-jodan-haisoku");
+    expect(resolveId("mawashi-geri-chudan-chusoku-f1.MP4", targets)?.id).toBe("mawashi-geri-chudan-chusoku");
+    expect(resolveId("haishu-chudan-f1.MP4", targets)).toMatchObject({ id: "haishu", section: "techniques" });
     expect(resolveId("fudo-dachi-f1.MP4", targets)).toMatchObject({ id: "fudo", section: "glossary" });
     expect(resolveId("kamae-s1.MP4", targets)?.id).toBe("kamae");
     // Prefiks „koken uke” wygrywa z aliasem „jodan-uke” techniki seiken.
@@ -37,6 +41,15 @@ describe("mapowanie nagrań", () => {
   it("poprawia oczywiste literówki przez nadpisania", () => {
     expect(resolveId("hiraken-mawashi-uchi-f2.MP4", targets)?.id).toBe("hira-ken-mawashi-uchi");
     expect(resolveId("uchi-hachi-ji-dachi-f1.MP4", targets)?.id).toBe("uchi-hachiji");
+  });
+
+  it("czyta podzielone techniki z jednego folderu archiwum", () => {
+    expect(sourceFolderFor("mawashi-geri-jodan-haisoku")).toBe("mawashi-geri-jodan-chusoku-haisoku");
+    expect(sourceFolderFor("mawashi-geri-chudan-chusoku")).toBe("mawashi-geri-chudan-chusoku-haisoku");
+    expect(surfaceTokenFor("mawashi-geri-jodan-haisoku")).toBe("haisoku");
+    expect(surfaceTokenFor("mawashi-geri-chudan-chusoku")).toBe("chusoku");
+    expect(sourceFolderFor("jodan-uchi-haisoku-geri")).toBe("uchi-mawashi-geri-jodan");
+    expect(resolveId("uchi-mawashi-geri-jodan-f1.MP4", targets)?.id).toBe("jodan-uchi-haisoku-geri");
   });
 
   it("pozostawia pliki bez pewnego przypisania nieprzypisane", () => {
@@ -99,5 +112,14 @@ describe("mapowanie nagrań", () => {
       label: "Mae-geri chūdan chūsoku (kakato) — widok z przodu 1",
       alt: "Mae-geri chūdan chūsoku (kakato): widok z przodu 1. Nagranie z dojo.",
     });
+  });
+
+  it("nie powtarza wariantu, który jest już w nazwie techniki", () => {
+    expect(describeMedia("mawashi-geri-haisoku-jodan-f1.mp4", "Mawashi-geri jōdan (haisoku)")).toEqual({
+      label: "Mawashi-geri jōdan (haisoku) — widok z przodu 1",
+      alt: "Mawashi-geri jōdan (haisoku): widok z przodu 1. Nagranie z dojo.",
+    });
+    expect(describeMedia("uchi-mawashi-geri-jodan-f1.mp4", "Jōdan uchi haisoku-geri").label)
+      .toContain("Jōdan uchi haisoku-geri —");
   });
 });

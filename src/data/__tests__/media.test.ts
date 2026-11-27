@@ -11,6 +11,17 @@ describe("galerie mediów", () => {
     }
   });
 
+  it("publikuje techniki jako filmy, a słownik jako lokalne obrazy", () => {
+    for (const items of Object.values(media.techniques)) {
+      expect(items.every((item) => item.type === "video" && item.src.startsWith("https://"))).toBe(true);
+    }
+    for (const items of Object.values(media.glossary)) {
+      expect(items.length).toBeGreaterThan(0);
+      expect(items.every((item) => item.type === "image" && item.src.startsWith("/images/glossary/"))).toBe(true);
+    }
+    expect(media.techniques["mae-kakato-geri"]).toBeUndefined();
+  });
+
   it("udostępnia galerię techniki z posterem jako miniaturą karty", () => {
     const items = getTechniqueMedia("seiken-morote-tsuki");
 
@@ -26,32 +37,33 @@ describe("galerie mediów", () => {
     const all = Object.values(media.techniques).flat().concat(Object.values(media.glossary).flat());
 
     expect(all.some((item) => /-demo\.(mp4|jpg)|GenAI/i.test(item.src))).toBe(false);
-    expect(all.every((item) => item.src.startsWith("https://"))).toBe(true);
+    expect(Object.values(media.techniques).flat().every((item) => item.src.startsWith("https://"))).toBe(true);
   });
 
   it("udostępnia seiken jako jedno zdjęcie pięści", () => {
     const items = getGlossaryMedia("seiken");
 
     expect(items.map((item) => item.type)).toEqual(["image"]);
-    expect(items[0].src).toContain("/seiken/image/seiken-piesc.jpg");
+    expect(items[0].src).toBe("/images/glossary/human-parts/seiken-piesc.jpg");
     expect(getGlossaryCardMedia("seiken").thumbnail).toBe(items[0].src);
     expect(getGlossaryCardMedia("seiken").firstIsVideo).toBe(false);
   });
 
-  it("udostępnia galerię postawy z filmem i zdjęciem", () => {
+  it("udostępnia postawę jako lokalne zdjęcie", () => {
     const items = getGlossaryMedia("fudo");
 
-    expect(items.map((item) => item.type)).toEqual(["video", "image"]);
+    expect(items.map((item) => item.type)).toEqual(["image"]);
+    expect(items[0].src).toBe("/images/glossary/stances/Fudo-Dachi.png");
   });
 
-  it("podpisuje pozycje walki jako lewą i prawą stronę", () => {
-    const items = getGlossaryMedia("kumite");
-
-    expect(items).toHaveLength(2);
-    expect(items[0].label).toContain("lewa");
-    expect(items[1].label).toContain("prawa");
-    expect(items[0].alt).toContain("lewa strona");
-    expect(items[1].alt).toContain("prawa strona");
+  it("udostępnia kumite jako galerię, a haishu jako zdjęcie karty słownika", () => {
+    expect(getGlossaryMedia("kumite")).toMatchObject([
+      { type: "image", src: "/images/glossary/trening-komendy/kumite.jpg" },
+    ]);
+    const haishu = glossary.flatMap((category) => category.entries).find((entry) => entry.id === "haishu");
+    expect(haishu?.image).toBe("/images/glossary/ustawienia-dloni/haishu.jpg");
+    expect(getGlossaryMedia("haishu")).toHaveLength(0);
+    expect(getTechniqueMedia("haishu")).toHaveLength(5);
   });
 
   it("przypisuje zdjęcia human-parts do odpowiednich haseł", () => {
@@ -98,7 +110,13 @@ describe("galerie mediów", () => {
     expect(labels.some((label) => label.includes("(chūsoku)"))).toBe(true);
     expect(getTechniqueMedia("seiken-jodan-uke").some((item) => item.label.includes("(jūji)"))).toBe(true);
     expect(getTechniqueMedia("oroshi-soto-kakato-geri").every((item) => item.label.includes("(kakato)"))).toBe(true);
-    expect(getGlossaryMedia("kumite").map((item) => item.label)).toEqual(["Kamae — lewa strona", "Kamae — prawa strona"]);
+    for (const id of ["mawashi-geri-chudan-chusoku", "mawashi-geri-chudan-haisoku", "mawashi-geri-jodan-chusoku", "mawashi-geri-jodan-haisoku"]) {
+      const labels = getTechniqueMedia(id).map((item) => item.label);
+      const variant = id.endsWith("chusoku") ? "chūsoku" : "haisoku";
+      expect(labels.length).toBeGreaterThan(0);
+      expect(labels.every((label) => label.includes(`(${variant})`))).toBe(true);
+      expect(labels.some((label) => label.includes(`(${variant}) (${variant})`))).toBe(false);
+    }
   });
 
   it("publikuje nowe nagrania z archiwum", () => {
@@ -107,5 +125,25 @@ describe("galerie mediów", () => {
       expect(items.filter((item) => item.type === "video")).toHaveLength(2);
       expect(items[0].poster).toBeTruthy();
     }
+  });
+
+  it("publikuje podzielone techniki i nowe galerie", () => {
+    const counts = {
+      "mawashi-geri-chudan-chusoku": 2,
+      "mawashi-geri-chudan-haisoku": 4,
+      "mawashi-geri-jodan-chusoku": 4,
+      "mawashi-geri-jodan-haisoku": 4,
+    };
+    for (const [id, count] of Object.entries(counts)) {
+      expect(getTechniqueMedia(id)).toHaveLength(count);
+    }
+    const uchi = getTechniqueMedia("jodan-uchi-haisoku-geri");
+    expect(uchi).toHaveLength(3);
+    expect(uchi.every((item) => item.zone === "jodan")).toBe(true);
+    expect(uchi.every((item) => item.label.includes("Jōdan uchi haisoku-geri"))).toBe(true);
+
+    expect(getTechniqueMedia("haishu")).toHaveLength(5);
+    expect(getGlossaryMedia("haishu")).toHaveLength(0);
+    expect(techniques.some((item) => item.id === "mawashi-geri-chudan-chusoku-haisoku")).toBe(false);
   });
 });

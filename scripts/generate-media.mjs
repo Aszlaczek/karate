@@ -85,26 +85,32 @@ if (baseUrl && existsSync(join(root, sourcePath))) {
   const base = baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`;
   const manifest = { techniques: {}, glossary: {} };
   for (const [id, group] of Object.entries(source)) {
+    if (!group.items?.length) continue;
     const section = group.section === "techniques" ? "techniques" : "glossary";
-    manifest[section][id] = group.items.map((item) => {
-      const src = `${base}${item.key}`;
-      const zone = item.zone ?? zoneOf(item.key.split("/").pop());
-      const saved = bySrc.get(src) ?? byStem.get(stemOf(item.key.split("/").pop()));
-      // Opisy ręczne mają pierwszeństwo, ale poster zawsze wskazuje na nowy plik na R2.
-      const result = withSaved(
-        {
-          type: item.type,
-          src,
-          ...(zone ? { zone } : {}),
-          label: item.label,
-          ...(item.alt ? { alt: item.alt } : {}),
-        },
-        saved,
-      );
-      if (item.posterKey) result.poster = `${base}${item.posterKey}`;
-      else delete result.poster;
-      return result;
-    });
+    const items = group.items
+      // Techniki publikują wyłącznie filmy, słownik wyłącznie zdjęcia.
+      .filter((item) => section === "glossary" ? item.type === "image" : item.type === "video")
+      .map((item) => {
+        // Obrazy słownika mają jawnie zapisaną ścieżkę lokalną; media R2 używają klucza.
+        const src = item.src ?? `${base}${item.key}`;
+        const zone = item.zone ?? zoneOf(item.key.split("/").pop());
+        const saved = bySrc.get(src) ?? byStem.get(stemOf(item.key.split("/").pop()));
+        // Opisy ręczne mają pierwszeństwo, ale poster zawsze wskazuje na nowy plik na R2.
+        const result = withSaved(
+          {
+            type: item.type,
+            src,
+            ...(zone ? { zone } : {}),
+            label: item.label,
+            ...(item.alt ? { alt: item.alt } : {}),
+          },
+          saved,
+        );
+        if (item.posterKey && !item.src) result.poster = `${base}${item.posterKey}`;
+        else delete result.poster;
+        return result;
+      });
+    if (items.length) manifest[section][id] = items;
   }
   write(manifest, "R2");
   process.exit(0);

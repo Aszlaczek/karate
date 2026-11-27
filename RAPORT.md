@@ -17,11 +17,11 @@ Ostrzeżenia: **0**
 | bez stopnia (start) | 0 | 0 | 1 | 5 | — |
 | 10 kyu (10) | 9 | 9 | 3 | 0 | 1 |
 | 9 kyu (9) | 12 | 12 | 4 | 2 | 2 |
-| 8 kyu (8) | 16 | 16 | 2 | 0 | 3 |
+| 8 kyu (8) | 17 | 17 | 2 | 0 | 3 |
 | 7 kyu (7) | 17 | 17 | 2 | 0 | 4 |
-| 6 kyu (6) | 16 | 16 | 2 | 0 | 5 |
-| 5 kyu (5) | 11 | 11 | 1 | 0 | 6 |
-| 4 kyu (4) | 20 | 20 | 3 | 0 | 6 |
+| 6 kyu (6) | 17 | 17 | 2 | 0 | 5 |
+| 5 kyu (5) | 12 | 12 | 1 | 0 | 6 |
+| 4 kyu (4) | 21 | 21 | 3 | 0 | 6 |
 | 3 kyu (3) | 12 | 12 | 1 | 1 | 6 |
 | 2 kyu (2) | 14 | 14 | 0 | 0 | 8 |
 | 1 kyu (1) | 14 | 14 | 0 | 0 | 8 |
@@ -43,8 +43,8 @@ Brak kolizji ✅ (aliasy to obecnie tylko metadane — aplikacja nie linkuje po 
 
 ## 5. Pozycje wymagań bez techniki (typu `text` i `glossary`)
 
-**31 / 198** pozycji to opisy nielinkowane (etykieta, wiedza, próba).
-**19 / 198** pozycji to linki do haseł słownika (postawy).
+**31 / 202** pozycji to opisy nielinkowane (etykieta, wiedza, próba).
+**19 / 202** pozycji to linki do haseł słownika (postawy).
 
 - **bez stopnia** (5): Ukłon rei przy wejściu · Znaczenie słowa Osu · Bezpieczne zachowanie w dojo · Seiza i mokuso · Oddychanie i rozgrzewka
 - **9 kyu** (2): Dojo-kun i znaczenie Osu · Etykieta oraz bezpieczeństwo dojo
@@ -70,22 +70,22 @@ Z tego braki w atlasie do zadania **P1.6**: „Ushiro-mawashi-geri".
 
 ## 6. Media i zdjęcia
 
-- martwe pola `image`/`video` w `techniques.json`: **0/119** ✅ (media wyłącznie w `media.json`)
+- martwe pola `image`/`video` w `techniques.json`: **0/121** ✅ (media wyłącznie w `media.json`)
 - zdjęcie Hero: **lokalne `public/images/hero/osu-no-seishin.jpg`**; obrazy Unsplash w `src/`: **0**
-- techniki bez galerii (placeholder z kanji): **33/119**
-- galerie w `media.json`: **104** (techniki: 86, hasła słownika: 18)
-- materiały w galeriach: **362** (w tym filmy: 348) — galerie od 2 elementów, bez górnego limitu filmów; wyjątki: techniki z 1 filmem i `seiken` z 1 zdjęciem; pliki w R2 albo w `public/`
-- dane na żądanie: **187** plików w `public/data/` (techniki: 119, hasła: 68); kafelki czytają tylko `media-thumbnails.json`, galerie i opisy wchodzą do bundle'u dopiero po otwarciu wpisu
+- techniki bez galerii (placeholder z kanji): **32/121**
+- galerie w `media.json`: **106** (techniki: 89, hasła słownika: 17)
+- materiały w galeriach: **342** (filmy technik: 324, zdjęcia słownika: 18) — techniki od 2 filmów, bez górnego limitu (wyjątek: 2 techniki z 1 filmem); słownik wyłącznie obrazy lokalne, również pojedyncze; pliki w R2 albo w `public/`
+- dane na żądanie: **189** plików w `public/data/` (techniki: 121, hasła: 68); kafelki czytają tylko `media-thumbnails.json`, galerie i opisy wchodzą do bundle'u dopiero po otwarciu wpisu
 
 ## 7. Statystyki
 
 - poradniki: **4**, wydarzenia historyczne: **6**, ciekawostki: **6** (kompletność treści i źródeł sprawdzona)
-- szczegóły technik: **119/119**, szczegóły postaw: **15/15** (tłumaczenie, wszystkie człony nazwy, minimum dwie sekcje)
+- szczegóły technik: **121/121**, szczegóły postaw: **15/15** (tłumaczenie, wszystkie człony nazwy, minimum dwie sekcje)
 - stopni: **16** (start, 10–1 kyu, 1–5 dan)
-- technik łącznie: **119**
-- technik powiązanych z wymaganiami: **119** (poza wymaganiami: 0)
+- technik łącznie: **121**
+- technik powiązanych z wymaganiami: **121** (poza wymaganiami: 0)
 - haseł słownika w wymaganiach: **14**
-- aliasów łącznie: **268** (kolizje: 0)
+- aliasów łącznie: **272** (kolizje: 0)
 - haseł słownika: **68** w 8 kategoriach (Strefy: 3, Części ciała: 11, Postawy (dachi): 15, Ustawienia dłoni: 10, Ustawienia stóp: 6, Dojo i etykieta: 8, Trening i komendy: 10, Strój i sprzęt: 5)
 
 ## 8. Rekomendacje
